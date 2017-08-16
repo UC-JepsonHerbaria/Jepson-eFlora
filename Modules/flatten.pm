@@ -47,7 +47,7 @@ grep($qualified{$_}++,@CA);
 foreach $i (0 .. $#CA){
 $qualified{$CA[$i]} = $i;
 }
-#print join ("\n",sort bycaps keys %qualified);
+print join ("\n",sort bycaps keys %qualified);
 
 for $i (0 .. 34){
 vec($nullvec,$i,1) = 0;
@@ -151,8 +151,11 @@ if($loc=~s/\)//){ push(@parenstr, "$name:$string") if defined($qualified{$loc});
 	
 	if( m/exc\.? /){
 #warn "$_\n" if m/exc.*exc/;
+warn "$_\n" if m/possibly/;
 ##print "\nEL: $line\n$_\n";
 		s/except/exc/;
+		s/possibly//;#delete this which is not excluding the first region after it but before the next ','
+					#(CA (exc possibly CW, SW, DSon, elsewhere) --> CW is filled in but SW and DSON excepted before this was entered
 		($exception_string = $_)=~ s/.*exc[. ]+//;
 		$exception_string =~ s/.*except //;
 
