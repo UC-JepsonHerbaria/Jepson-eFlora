@@ -210,7 +210,7 @@ $prev=$_;
 	if(m/PR \(/){
 		if (m/PR (\([^)]+\))/){
 			$parens=$1;
-			unless($parens =~ /San J|SnJt|scattered/){
+			unless($parens =~ /San J|SnJt|scattered|desert slope/){
 s/PR (\([^)]+\))/$& (exc SnJt)/ unless m/SnJt/;
 				}
 			}
