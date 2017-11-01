@@ -1,4 +1,4 @@
-open(IN,"/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN,"/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
 ($code,$name)=split(/\t/);
@@ -23,7 +23,7 @@ use BerkeleyDB;
 
 @field_list=(
 "CAPTION",
-"EMBEDDED UNABRIDGED KEY LEAD",
+#"EMBEDDED UNABRIDGED KEY LEAD", added in the wrong place.  Deleted and added to below notes in this file and in eflora_display.php.  This refers to a single entry in Acer glabrum currently, which has an embedded key in the unabridged notes, JAA Dec 2016.
 "UNABRIDGED KEY LEAD",
 "TAXON AUTHOR",
 "COMMON NAME",
@@ -31,6 +31,9 @@ use BerkeleyDB;
 "TJM1 AUTHOR",
 "TJM2 AUTHOR",
 "TJMX AUTHOR",
+"TJMXX AUTHOR",
+"TJMXXX AUTHOR",
+"TJM4X AUTHOR",
 "AUTHORSHIP COMMENT",
 "HABIT+",
 "UNABRIDGED HABIT+",
@@ -85,9 +88,12 @@ use BerkeleyDB;
 "SPORES",
 "CHROMOSOMES",
 "UNABRIDGED CHROMOSOMES",
+"RARITY STATUS",
+#Rarity Status used to be below Ecology in eflora_display.php and this file; however 90% of all records in Eflora_treatments had RarityStatus above ecology.
+#This file and others will be changed to match Eflora_treatments, which was the easiest change to make.  There are 2090+ records out of order otherwise.
+#JAA, Nov 2016
 "ECOLOGY",
 "UNABRIDGED ECOLOGY",
-"RARITY STATUS",
 "ELEVATION",
 "BIOREGIONAL DISTRIBUTION",
 "UNABRIDGED BIOREGIONAL DISTRIBUTION",
@@ -108,6 +114,8 @@ use BerkeleyDB;
 "UNABRIDGED HORTICULTURAL INFORMATION",
 "NOTE",
 "NOTES",
+#"UNABRIDGED EMBEDDED LEAD ONE",
+#"UNABRIDGED EMBEDDED LEAD PRIME",
 "UNABRIDGED NOTE",
 "FLOWERING TIME",
 "FRUITING TIME",
@@ -124,11 +132,14 @@ foreach(keys(%field_list)){
 #die;
 open(OUT, ">eflora.in");
 
+
+
 undef ($/);
 foreach(@ARGV){
 	$file=$_;
 	open(IN,$file) || die "couldn't open $file\n";
 	$all_lines=<IN>;
+
 #converts windows line ends#
 #$all_lines=~s/\cM/\n/g;
 	$all_lines=~s/ *\r\n/\n/g;
@@ -136,10 +147,13 @@ foreach(@ARGV){
 		print "$file Open Office Text tag\n";
 	}
 	@all_pars=split(/\n\n+/,$all_lines);
+
 	#shift(@all_pars) if $all_pars[0]=~/UNABRIDGED/;
-	foreach(@all_pars){
+	foreach(@all_pars){      
 print OUT;
 ++$lc;
+
+
 next if m/^[aA]dmin/;
 next if m/^CAPTION/;
 next if m/^#/;
@@ -152,6 +166,7 @@ if (m/\b([A-Za-z]+) \1\b/){
 			#}
 		if(m/\n +/){
 			print "$file Space in blank line $_\n\n";
+			
 		}
 				if(m/eceased/){
 					print "$file deceased\n\n";
@@ -160,58 +175,73 @@ if (m/\b([A-Za-z]+) \1\b/){
 
 		unless(m/HABIT\+:/){
 			unless (m/\.\.\.\./){
-unless (m/Group/){
-				print "$file No HABIT line $_$lc \n\n";
-}
-			}
+				unless (m/Group/){
+					unless (m/(Key to Vegetative|Key to Pistillate|Key to Staminate)/){
+				print "$file No HABIT line $_$lc\n\n";
+				
 		}
+			}
+				}
+					}
 s/\[\[[^]]+\]//;
 		if(m/\[\[/){
 			print "$file unstripped comment $_\n\n";
 		}
 		if(m/^[A-Z][A-Z-]+ [a-z][a-z-]+/){
 			print "$file No designation of nativity $_\n\n";
+			
 		}
 #while (s/(.*)\b(woodlands|woods|pinyon-juniper|grasslands|faces|solitary|very|often|Shrubs|sometimes|tiny|waste places)\b(.*)/$1\U$2\E$3/){
 #print "$file Possible use of proscribed word <",$2, "> [$proscribed{$2}]  $1",uc($2), "$3\n\n";
 #}
-if(m/TAXON AUTHOR:.*,.* (&|and) /){
-print "$file \"et al.\" in authorship needed? $_\n\n";
-}
-if(m/^[A-Z][a-z]+ [a-z][a-z].*,.* (&|and) /){
-print "$file \"et al.\" in authorship needed? $_\n\n";
-}
+
+#### shortened authors to "et al." for the book. These have been expanded for the eFlora
+#### so this check is commented out
+#if(m/TAXON AUTHOR:.*,.* (&|and) /){
+#	print "$file \"et al.\" in authorship needed?\n$_\n\n";
+#}
+#if(m/^[A-Z][a-z]+ [a-z][a-z].*,.* (&|and) /){
+#	print "$file \"et al.\" in authorship needed?\n$_\n\n";
+#}
+#next;
+
+
 if(m/(.*)\nTAXON AUTHOR: (.*)/){
 $tax_name="$1 $2";
 $tax_name=~s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
-#Author followed by ex deleted
-			if(m/TAXON.* ex [A-Z]/ ||
-			/ ex [A-Z].*\nTAXON/){
-				print "$taxname $file Ex\n";
-$syn=$_;
-				s/\([^\)]*? ex /(/g;
-				s/[A-Z.]+ [A-Z][a-z.-]+ ex //g;
-				s/[A-Z][a-z.-]+ ex //g;
-
-				print "UNABRIDGED NOTE: Expanded author citation: $tax_name\n\n";
-			}
+###We used to remove expanded author names for the purpose of TJM2 book length
+###This is no longer a consideration, to the routine is removed
+#if(m/TAXON.* ex [A-Z]/ || / ex [A-Z].*\nTAXON/){
+#	print "$taxname $file Ex\n";
+#	$syn=$_;
+#	s/\([^\)]*? ex /(/g;
+#	s/[A-Z.]+ [A-Z][a-z.-]+ ex //g;
+#	s/[A-Z][a-z.-]+ ex //g;
+#	print "UNABRIDGED NOTE: Expanded author citation: $tax_name\n\n";
+#}
 
 
 		if(m/DISTRIBUTION OUTSIDE CALIFORNIA: (.+)/){
 			$doc=$&;
-$end_doc=$1;
-unless($end_doc=~/\. *$/){
-					print "$file\tDOC punct\t$end_doc\n\n";
-}
+			$end_doc=$1;
+			unless($end_doc=~/\. *$/){
+					print "$file\tDist outside California punct\t$end_doc\n\n";
+					;
+			}
 			if(m/BIOREGIONAL/){
 				unless(m/BIOREGIONAL.*; *$/m){
 					($punct)=m/(BIOREGIONAL.*\n.*)/;
-					print "$file\nDOC punct\n$punct\n\n";
+					print "$file -- Dist outside California punct -- $punct\n\n";
+					
 				}
+			}	
+			elsif(m/UNABRIDGED DISTRIBUTION OUTSIDE/){
+				print "known false positive: Distribution outside California but no Bioregional Distribution $doc\n";
 			}
 			else{
-				print "$file\nDOC no DB $doc\n\n";
+				print "$file\nDistribution outside California but no Bioregional Distribution $doc\n\n";
+				
 			}
 		}
 		elsif(m/BIOREGIONAL/){
@@ -219,6 +249,7 @@ unless($end_doc=~/\. *$/){
 				$punct="no dist";
 				($punct)=m/(BIOREGIONAL.*)/;
 				print "$file\nBioregional punctuation $punct\n\n";
+				 
 			}
 		}
 		s/([A-Za-z])_([A-Za-z])/$1&95;$2/g;
@@ -235,6 +266,16 @@ unless($end_doc=~/\. *$/){
 		#print;
 		next if m/^[Aa]dmin/;
 		@lines=split("\n",$_);
+
+$field_order=1;
+grep($field_list{$_}=$field_order++,@field_list);
+foreach(keys(%field_list)){
+#print "$_: $field_list{$_}\n";
+}
+
+		
+		
+		
 		if(m|^([A-Z][A-Z]+) +([a-z-]+) *\n|m){
 			$trinomial="$1 $2";
 #warn "flabba $trinomial\n";
@@ -253,8 +294,7 @@ EOP
 EOP
 				}
 				else{
-					print "1. NO ${name_link}<\n";
-					print "1. NO TNOAN\n" unless $TNOAN{${name_link}};
+					print "1. NO ${name_link}\t--\t1. NO TNOAN\n\n" unless $TNOAN{${name_link}};
 					$name_link= "";
 				}
 
@@ -273,14 +313,16 @@ EOP
 EOP
 				}
 				else{
-					print "2. NO $name_link\n";
-					print "2. NO TNOAN\n" unless $TNOAN{${name_link}};
+					print "2. NO $name_link\t--\tNO TNOAN\n\n" unless $TNOAN{${name_link}};
 					$name_link= "";
 				}
 #$store_treat_path{$name_link}=$outfile;
 #print "$name_link\n";
 			}
 			$last_tag="UNABRIDGED KEY LEAD";
+			
+			
+			
 			foreach $sortline (@lines[3 .. $#lines]){
 				$sortline=~s/ +$//;
 				if($sortline=~m/(pediceled|pedicle)/){
@@ -294,27 +336,34 @@ EOP
 				}
 				if($sortline=~m/(....,;)/){
 					print "$file punctuation problem $1 $sortline\n\n";
+					
 				}
 				if($sortline=~m/\d(mm|cm|m|dm)/){
 					print "$file missing space? $1 $sortline\n\n";
 				}
-				if($sortline=~m/(HABIT\+|FLOWERS?|INFLORESCENCE|FRUIT|SEEDS?|STEMS?|CHROMOSOMES|SPECIES IN GENUS|GENERA IN FAMILY|NOTE|TOXICITY|WEEDINESS|ELEVATION): .+[^.] *$/){
-					print "$file EOL punctuation problem\t$sortline\n\n" unless $sortline=~/UNABRIDGED|WEEDINESS/;
+				if($sortline=~m/(HABIT\+|FLOWERS?|INFLORESCENCE|FRUIT|SEEDS?|STEMS?|CHROMOSOMES|SPECIES IN GENUS|GENERA IN FAMILY|NOTE|TOXICITY|ELEVATION): .+[^.] *$/){
+					print "$file EOL punctuation problem\t$sortline\n\n" unless $sortline=~/UNABRIDGED/;
+					
 				}
 				if($sortline=~/ELEVATION/){
 #print "LAST: $last_line\n";
-					unless($last_line=~/; *$/){
-						print "$file EOL ELEV punctuation problem\t$last_line$sortline\n\n";
+					unless($last_line=~/; *$/ || $last_line=~/^RARITY STATUS/){
+							print "$file line before ELEV punctuation problem\t$last_line$sortline\n\n";
 					}
 				}
 				if($sortline=~m/HABIT\+: [a-z]/){
 					print "$file Capitalization problem $sortline\n\n";
 				}
-if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns/){
-					print "$file $1 Mtn Range problem $sortline\n\n";
-}
+				###I don't know what the "Mountain Range problem" is, D Baxter
+				
+				if(($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns/) && ($sortline =~ m/(Clark. *\(.*;|Clark Mtn Range|Clark Mtn.?,? .*range|Kingston.?,? .*[Mm]tns|Last Chance Range.?,? .*[Mm]tns|Panamint Range.?,? .*[Mm]tns|Santa Lucia Range.?,? .*[Mm]tns)/)){				
+					print "known false positive: mountain range problem\t--\t$sortline\n";
+				}	
+					elsif ($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns?/){
+						print "$file - mountain range problem\t--\t$sortline\n\n";
+				}
 				if($sortline=~m/HABIT\+: \d/){
-					print "$file \"Pl\" problem $sortline\n\n";
+					print "$file \"Pl\" problem - $sortline\n\n";
 				}
 				if($sortline=~m/TJM \(/){
 					#print "$file TJM space $sortline\n\n" unless $sortline=~/AUTHOR/;
@@ -327,63 +376,109 @@ if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panami
 				}
 				if($sortline=~m/_/){
 					if(m/(var\.|nothosubsp\.|subsp\.) [a-z]+/){
-						print "$file variety underline problem $_\n\n";
+						print "$file  - variety underline problem $_\n\n";
 					}
 				}
 				if($sortline=~m/ [,.;:] /){
 					print "$file  punctuation spacing  $sortline\n\n";
 				}
 				if($sortline=~m/[A-Z][a-z]+ Mt[^n]/){
-					print "$file  Mountain abbreviation $sortline\n\n";
+					print "$file  - Mountain abbreviation - $sortline\n\n";
+					
 				}
 				if($sortline=~m/ Mtns?\.[ ;,.:]./){
-					print "$file  Mountain punctuation $sortline\n\n";
+					print "$file  - Mountain punctuation - $sortline\n\n";
 				}
 				if($sortline=~m/ et al[^.]/){
-					print "$file  et al $sortline\n\n";
+					print "$file  - et al - $sortline\n\n";
 				}
 				if($sortline=~m/ (var|subspp*|spp*)\b[^.]/){
-					print "$file  species abbreviation $sortline\n\n";
+					print "$file   - species abbreviation - $sortline\n\n";
 				}
 				if($sortline=~m/&mathx[^;]/){
 					print "$file MATHX $sortline\n\n";
 				}
-				if($sortline=~m/([^-]\)[^\[\])0-9,.;: -])/){
-					print "$file probable paren spacing error =$1: $sortline\n\n" unless $sortline=~/(ob|sub)\)/;
+				
+				if(($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/) && ($sortline =~ m/(\(\d+\)\+- \d|\([01]\)few|\([01]\)several|\(mis\)|\)&deg|\)%|\(ob\)|\(un\)|\(sub\)|\(hemi\)|\(Dec\)Mar|\(Jan--Feb\)Mar|\(Jan\)Mar|\(Jan\)Apr|\(Feb\)Apr|\(Mar\)Apr|\(Apr\)May|\(May\)Jun|\(May\)Jul|\(May\)Aug|\(Jun\)Jul|\(Jun\)Aug|\(Jul\)Aug)/)){
+				#	print "known false positive: probable paren spacing error1 =$1: $sortline\n";
+					;
 				}
+					elsif($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/){
+					print "$file - probable paren spacing error1 =$1: $sortline\n\n";
+				}
+				
 				($open_brace)=($sortline=~s/([\[({])/$1/g);
 				($close_brace)=($sortline=~s/([)\]}])/$1/g);
 				unless($open_brace==$close_brace){
-					print "$file probable paren match error: $sortline\n\n";
+					print "$file - probable paren match error2: $sortline\n\n";
 				}
-				if($sortline=~m/\( /){
-					print "$file probable paren spacing error: $sortline\n\n";
+				
+				if($sortline =~ m/\( /){
+					print "$file - probable paren spacing error3: $sortline\n\n";
 				}
-				if($sortline=~m/(\d---\d)/){
-					print "$file probable em-dash error: $sortline\n\n";
+				
+				if(($sortline =~ m/(\d---\d)/) && ($sortline =~ m/(-\d-pin)/)){
+					print "known false positive: probable en-dash error4: $sortline\n\n";
 				}
-				if($sortline=~m/(\d-\d)/){
-					print "$file probable en-dash error: $sortline\n\n";
-				}
-				if($sortline=~m/([A-Za-z]--[A-Za-z])/){
-					unless ($sortline=~m/[A-Z][a-z][a-z]--[A-Z][a-z][a-z]/ || $sortline=~/TIME:/ || $sortline=~/few--/){
-						print "$file probable en-dash error =$1: $sortline\n\n";
+					elsif($sortline =~ m/(\d---\d)/){
+					print "$file - probable en-dash error4: $sortline\n\n";
 					}
+					
+				if(($sortline=~m/(\d-\d)/) && ($sortline =~ m/\/\d+-\d+\//)){
+					print "known false positive (dash in URL), probable en-dash error5: $sortline\n";
 				}
-				if($sortline=~m/(few-? to [a-z]+-)/){
-unless($sortline=~/few-.*to.*many-/){
-						print "$file probable en-dash error =$1: $sortline\n\n";
-}
+					elsif(($sortline=~m/(\d-\d)/) && ($sortline =~ m/Phytoneuron \d+-\d+/)){
+						print "known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: $sortline\n";
+					}
+					elsif($sortline=~m/(\d-\d)/){
+						print "$file - probable en-dash error5: $sortline\n\n";
+					}
+				
+				if(($sortline =~ m/([A-Za-z]--[A-Za-z])/) && (($sortline =~ m/[A-Z][a-z][a-z]--[A-Z][a-z][a-z]/ || $sortline =~ m/TIME:/ || $sortline =~ m/few--/ || $sortline =~ m/ummer--fall-flower/ || $sortline =~ m/winter--spring-flower/ ))){
+					#print "known false positive: probable en-dash error6 =$1: $sortline\n";
+					
 				}
+					elsif($sortline =~ m /([A-Za-z]--[A-Za-z])/){
+						print "$file - probable en-dash error6 =$1: $sortline\n\n";
+					}
+					
+				if(($sortline =~ m/(few-? to [a-z]+-)/) && ($sortline =~ m/(few-.*to.*many-|few-.*to.*several-)/)){
+				#	print "known false positive: probable en-dash error7 =$1: $sortline\n";
+					;
+				}
+					elsif($sortline =~ m/(few-? to [a-z]+-)/){
+						print "$file - probable en-dash error7 =$1: $sortline\n\n";
+					}
+				
 				if($sortline=~m/\blanceolate-(ovate|linear|elliptic|oblong|deltate)/ ){
-					print "$file lanceolate dash problem $1: $sortline\n\n";
+					print "$file - lanceolate dash problem $1: $sortline\n\n";
 				}
+				
 				if($sortline=~m/([\200-\377])/ ){
-					print "$file possible font problem $1: $sortline\n\n";
+					print "$file - possible font problem $1: $sortline\n\n"
 				}
+				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ #exclude taxa already in TJM2 in brackets and non-taxon bracketed info
+					if(($sortline =~ m/-> \[[A-Z]{2,}/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+						print "$file - possible UNABRIDGED KEY LEAD tag missing: $sortline\n\n";
+					}
+					
+					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z]+/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+	#					print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
+					}
+					elsif(($sortline =~ m/-> [A-Z]\. [a-z]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
+						print "known UNABRIDGED KEY LEAD tag $sortline\n";
+					}
+					
+					elsif(($sortline =~ m/-> \[[A-Z]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+	#					print "$file - possible UNABRIDGED KEY LEAD tag missing3: $sortline\n\n"	
+					}
+					elsif(($sortline =~ m/\[[varsubp]{3,5}\. /) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+	#					print "$file - possible UNABRIDGED KEY LEAD tag missing4: $sortline\n\n"	
+						}
+				}	
 				if($sortline=~m/TIME: [a-z]/ ){
 					unless($sortline=~m/(TIME: (Jun|Jul|Jan|Feb|Mar|Apr|May|Aug|Sep|Oct|Nov|Dec|Summer|Fall|Winter|Spring))/ ){
-						print "$file possible capitalization problem $1: $sortline\n\n";
+						print "$file  -possible date capitalization problem $1: $sortline\n\n";
 					}
 					if($sortline=~m/Jan--Dec/ ){
 						print "$file Jan--Dec -> All yr $sortline\n\n";
@@ -393,22 +488,20 @@ unless($sortline=~/few-.*to.*many-/){
 					}
 				}
 				if($sortline=~m/( _ )/ ){
-					print "$file possible underline spacing problem $1: $sortline\n\n";
+					print "$file  - possible underline spacing problem $1: $sortline\n\n";
 				}
-		#if($sortline=~m/( _ )/ ){
-			#print "$file possible underline spacing problem $1: $sortline\n\n";
-		#}
+
 				($tag=$sortline)=~s/:.*//;
 				$tag=~s/^([A-Z_\+]+) [^A-Z].*/$1/;
 				unless($field_list{$tag}){
 					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/){
-						print "$file unrecognized tag $tag $sortline\n\n" unless $tag=~/^\d+['.]/;
+						print "$file - unrecognized tag $tag $sortline\n\n" unless $tag=~/^\d+['.]/;
 					}
 				}
 				unless($field_list{$tag} > $field_list{$last_tag}){
-					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/ || $sortline=~/HORTIC/){
-						print "$file Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag $lc\n";
-						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;}
+					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/ || $sortline=~/HORTIC/ || $last_tag=~/UNABRIDGED KEY LEAD/){
+						print "$file - Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag $lc\n\n";
+						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;} #I have no clue what this line is doing.. dont think it works.. it is tossing out error for all unabridged ket leads
 						else{print "\n\n";}
 					}
 				}
