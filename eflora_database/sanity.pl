@@ -187,7 +187,7 @@ $tax_name="$1 $2";
 $tax_name=~s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
 ###We used to remove expanded author names for the purpose of TJM2 book length
-###This is no longer a consideration, to the routine is removed
+###This is no longer a consideration, so the routine is removed
 
 		if(m/DISTRIBUTION OUTSIDE CALIFORNIA: (.+)/){
 			$doc=$&;
@@ -469,7 +469,7 @@ EOP
 				unless($field_list{$tag} > $field_list{$last_tag}){
 					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/ || $sortline=~/HORTIC/ || $last_tag=~/UNABRIDGED KEY LEAD/){
 						print "$file - Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag $lc\n\n";
-						#I have no clue what this line is doing.. dont think it works.. it is tossing out error for all unabridged ket leads
+						#I have no clue what this line is doing.. dont think it works.. it is tossing out error for all unabridged key leads
 
 						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;} 						
 						
