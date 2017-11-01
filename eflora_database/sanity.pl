@@ -1,11 +1,11 @@
-open(IN,"tnoan.out") || die;
+open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
 ($code,$name)=split(/\t/);
 $TNOAN{$name}=$code;
 }
 use BerkeleyDB;
-tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/second_ed/TJM2/Jepson Manual2/TJM2 trmts received/7.0_Tom/tjm2post/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
+tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_input/temp/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
 %proscribed=(
 "woodlands","woodland",
 "woods","woodland",
@@ -110,6 +110,7 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/second_ed/TJM2/Jepson Man
 "CONING TIME",
 "AUTHORSHIP OF PARTS",
 "WEEDINESS",
+"SCIED",
 );
 $field_order=1;
 grep($field_list{$_}=$field_order++,@field_list);
@@ -223,6 +224,9 @@ unless($end_doc=~/\. *$/){
 		#print;
 		next if m/^[Aa]dmin/;
 		@lines=split("\n",$_);
+foreach(@lines){
+print "0. space at end of line: $_\n" if m/ $/;
+}
 		if(m|^([A-Z][A-Z]+) +([a-z-]+) *\n|m){
 			$trinomial="$1 $2";
 #warn "flabba $trinomial\n";
