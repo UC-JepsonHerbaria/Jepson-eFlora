@@ -1,0 +1,31 @@
+.taxonomy_table {
+	border-style: solid;
+	border-width: 1;
+	border-spacing: 0;
+	border-collapse: collapse;
+	frame: box;
+	rules: all;
+
+}
+
+/*td font attributes are copied from pageSubHeading in dropdowns.css*/
+.taxonomy_table td {
+	line-height:16px;
+	letter-spacing:0.05em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+
+	border-style: solid;
+        border-width: 1;
+
+	color: black;
+	padding: 5px;
+}
+
+/*used in jquery toggles for higher taxonomy */
+.initiallyHidden { display: none; }
+
+/*this method of hiding allows for getting the widths from the invisible table */
+.hidden { position: absolute; visibility: hidden; display: block; }  
+
