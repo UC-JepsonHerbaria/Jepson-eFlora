@@ -1,0 +1,75 @@
+known false positive (dash in URL), probable en-dash error5: UNABRIDGED REFERENCE: Davis, C.C., M. Latvis, D.L. Nickrent, K.J. Wurdach, and D.A. Baum. 2007. Floral gigantism in Rafflesiaceae. Science 315:1812; Nickrent, D.L., A. Blarer, Y.-L. Qiu, R. Vidal-Russell, and F.E. Anderson. 2004. Phylogenetic inference in Rafflesiales: the influence of rate heterogeneity and horizontal gene transfer. BMC Evolutionary Biology 2004, 4--40 (available at www.biomedcentral.com/1471-2148/4/40)
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Nesom 2006 FNANM 19:431--438; Strother et al. 2012 Phytoneuron 2012-52:1--5
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Pruski & Hartman 2012 Phytoneuron 2012-98:1--15
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I (Inyo Mtns), n DMtns (Panamint Range, Grapevine Mtns).
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SNF, SNH, Teh, TR, GB, DMtns (Panamint Range, New York Mtns);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SN, Teh, s SCoRO, TR, PR, DMtns (Panamint Range, Little San Bernardino Mtns), w edge DSon (rare);
+eflora_treatments.txt - mountain range problem	--	61. Calyx lobes 4--6 mm in fruit, cilia < 1 mm; inflorescence open proximally; W&I, ne DMtns (Clark Mtn Range) .....-> P. barnebyana
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I, ne DMtns (Clark Mtn Range);
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn);
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range);
+
+known false positive: mountain range problem	--	82. Ovary nonglandular-hairy; KR, NCoR, n CCo (Tassajara, Santa Lucia Range), w SnFrB (Mount Tamalpais; s Santa Cruz Mtns) .....-> subsp. canescens
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, New York Mtns);
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 29a. Leaflets > 21, at least on some leaves; inflorescence 10--35-flowered; southwestern Utah, Arizona, very near California .....-> A. tephrodes var. brachylobus
+known false positive: Distribution outside California but no Bioregional Distribution DISTRIBUTION OUTSIDE CALIFORNIA: Arizona to Oklahoma, Texas, northwestern Mexico, near California in western Arizona, possibly a waif in California.
+known false positive: Distribution outside California but no Bioregional Distribution DISTRIBUTION OUTSIDE CALIFORNIA: southwestern Utah, Arizona, very near California.
+known false positive: mountain range problem	--	123. Plant 4--7 dm; flower 13--15 mm; ne DMtns (Last Chance Range, Grapevine Mtns, Inyo Co.) .....-> L. holmgrenianus
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: ne DMtns (Last Chance Range, Grapevine Mtns, Inyo Co.);
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a. Petals 19--21 mm; leaf divided > 0.9 to base or midrib .....-> G. palmatum [evidently known only from +- urban environments in California]
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a' Petals 7--11 mm; leaf divided 0.5--0.6 to base .....-> G. pyrenaicum [neither naturalized nor escaped in California; collected only once, in 1914, on UC Berkeley campus]
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: c&s SNH, W&I, n DMtns (Panamint Range, Grapevine Mtns);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: ne DMtns (Clark Mtn Range, New York Mtns, Kingston Range).
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMoj (ne Clark Mtn Range);
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 4a. Stem generally prostrate to ascending, 2--4(6) dm; leaf lobes (0)5--7, margin flat; flowers generally 2--6 in leaf axils; petals generally 2 &times; > calyx; flower stalk in fruit >> calyx; fruit puberulent on back .....-> M. neglecta
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n DMtns (Death Valley region, e Inyo Co.; Clark Mtn Range, ne San Bernardino Co.), e DMoj exc DMtns.
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: NCoR, SnFrB, SCoR (Santa Lucia Range, Figueroa Mtn).
+
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: Based on molecular evidence, non-rosette terrestrial members of Primulaceae as treated in TJM (1993) removed to Myrsinaceae. Based on phylogenetic research, all California members of Myrsinaceae have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment.
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: UNABRIDGED NOTE: Recent molecular work has redefined Ericales. Non-rosette, terrestrial members of Primulaceae s.l. are now widely treated in Myrsinoideae or Myrsinaceae, which are further characterized by synapomorphies of dark dots or streaks on stems, leaves, or flowers, short corolla tubes, seeds immersed in the placenta, and -- for woody members -- wood lacking rays or with only multiseriate rays. Primulaceae, Myrsinaceae, Theophrastaceae, and Maesaceae (a recent segregate of tropical trees) constitute a closely related, monophyletic group. <I>Lysimachia</I> has been recognized (even by Linnaeus) as a rather complex group with close affinities to other genera (<I>Glaux</I>, for instance, has been shown to be an apetalous sp. of <I>Lysimachia</I>). Phylogenetic research (by Arne A. Anderberg and colleagues in Europe) on this and related genera indicated that they were actually specialized taxa that had evolved within <I>Lysimachia</I>, so that all California members of Myrsinaceae now have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment that now includes <I>Lysimachia arvensis</I>, <I>Lysimachia europaea</I>, <I>Lysimachia latifolia</I>, <I>Lysimachia maritima</I>, <I>Lysimachia minima</I>, and <I>Lysimachia monelli</I>, in addition to the two species previously treated in the genus.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e PR, e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges), se DMoj exc DMtns, e DSon;
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (e Clark Mtn Range, also base of range in Ivanpah Valley);
+
+known false positive: mountain range problem	--	NOTE: Highly variable, with > 90 taxa described; further study needed to determine if <I>Eschscholzia californica</I> subsp. <I>mexicana</I> (Greene) C. Clark (annual; cotyledons entire; DMtns), <I>Eschscholzia procera</I> Greene (pl large; southern SNF) deserve taxonomic recognition.
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (New York Mtns, Clark Mtn Range);
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Kingston Range, New York Mtns);
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: GB, w DMoj, e DMtns (Clark Mtn Range);
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, uncommon);
+
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: The combination Leptosiphon croceus (Eastw.) J.M. Porter & L.A. Johnson is not considered to have been validly published because the place of publication of the basionym was incorrectly cited by Porter & Johnson, a situation corrected by Strother & Kersh (Phytoneuron 2016-21: 1-2).
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Morgan et al. 2014 Phytoneuron 2014-63: 1--9
+eflora_treatments.txt - possible font problem �: BIOREGIONAL DISTRIBUTION: n SCoRO (“The Indians,” Santa Lucia Range, c Monterey Co.).
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 32a. Petals 7--10 mm; fruit beak 0.4--0.7 mm .....-> R. sardous
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range);
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn);
+
+eflora_treatments.txt - Out of order: UNABRIDGED NOTE: 1. Middle lobe of leaf triangular or triangular-ovate, widest at (or near?) base, strongly slender-acuminate, with many sharp teeth .....-> var. douglasii; 1' Middle lobe of leaf ovate, oblong, rhombic, or obovate, broadened well above its base; apices obtuse, acute, or short-acuminate; teeth few to many, blunt to sharp .....-> varieties <I>diffusum</I> and <I>glabrum</I>; If recognized taxonomically, plants with mericarp wings overlapping assignable to var. <I>greenei</I> A.C. Keller, reported as endemic to the Inyo Mountains and the eastern side of southern SN but plants with such fruit also occur in KR. Murray (Kalmia 7:1--20. 1976) and Shevock (TJM (1993)) reported that this var. has leaves like those of the so-called var. <I>torreyi</I> [var. <I>glabrum</I> sensu lato, see below], but in fact, this achene form is found on plants with the small, obtuse, few-toothed leaves of var. <I>diffusus</I> and on plants with the large, acute, many-toothed leaves of var. <I>glabrum</I> s. l. Justice (1995, 2002) reports that the character is commonly variable within populations, and the samaras even vary within some specimens; for instance, E. Carter 693 (CAS) from Trinity Co. has some fruit with parallel or connivent wings, while other fruit on the same specimen has wings diverging by angles up to 60&deg;. Since the fruit character is not correlated with any other characters and may be variable within populations or even on a single tree, Justice is surely correct in denying taxonomic status to var. <I>greenei</I>. : 89 tag=UNABRIDGED NOTE last tag=UNABRIDGED NOTE 8957
+
+
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 6a. Corolla generally pale violet (white); stellate hairs fine, generally sessile; inflorescence generally raceme-like; fruit 8--20 mm .....-> S. carolinense
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges);
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 17A' Spikelets loosely clustered, at least lowest spikelets distinct at arm's length; inflorescence narrow-oblong; peri lanceolate .....-> C. texensis
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 27A. Spikelets narrow-lanceolate to cylindric; fruit brown, smooth or lattice-like at 10--30&times;; rhizomes with longer internodes 5--30 mm .....-> E. parishii
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 2B. Plant 1--4 m; stem 4--10 mm diam, blunt-3-sided throughout to cylindric proximally, obscure-3-sided near inflorescence; spikelets 25--150+; perianth bristles 2--4, soft-hairy .....-> S. californicus
+known false positive: mountain range problem	--	31' Leaves channeled; nectary encircled by sparse, club-like hairs; stem occasionally twisted; n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns) .....-> C. kennedyi var. munzii
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: SnBr, e DMtns (Mid Hills, Clark Mtn Range, Ivanpah, New York mtns), waif elsewhere;
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, New York Mtns);
+eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+
