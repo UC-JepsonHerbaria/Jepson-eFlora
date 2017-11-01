@@ -62,6 +62,8 @@ CREATE TABLE eflora_taxa (
 	Toxicity TEXT,
 	Synonyms TEXT,
 	UnabridgedSynonyms TEXT,
+	Reference TEXT, 
+	UnabridgedReference TEXT,
 	Note TEXT,
 	UnabridgedNote TEXT,
 	FloweringTime TEXT,
@@ -72,10 +74,11 @@ CREATE TABLE eflora_taxa (
 	IsTerminalTaxon INTEGER,
 	HasKey INTEGER,
 	RevisionNumber TEXT,
+	RevisionDate TEXT,
 	DistCode TEXT,
 	DistArray TEXT,
-	AcceptedNameTID
-);
+	AcceptedNameTID INTEGER
+	);
 
 DROP TABLE eflora_illustrations;
 
@@ -137,12 +140,12 @@ CREATE TABLE eflora_distributions (
 	Wrn INTEGER
 );
 
---DROP TABLE eflora_synonymy;
---
---CREATE TABLE eflora_synonymy (
---	ID INTEGER PRIMARY KEY,
---	Synonym TEXT,
---	AcceptedName TEXT,
---	AcceptedTaxonID INTEGER
---);
+DROP TABLE eflora_synonymy;
+
+CREATE TABLE eflora_synonymy (
+	ID INTEGER PRIMARY KEY,
+	NativeStatus TEXT,
+	ScientificName TEXT,
+	AcceptedNameTID INTEGER
+);
 --these tables are CREATED in eflora.db

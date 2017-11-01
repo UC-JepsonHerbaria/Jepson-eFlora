@@ -3,7 +3,7 @@ use warnings;
 open(OUT, ">outputs/load_taxonomy_table.sql") || die;
 $data_path="/Users/davidbaxter/DATA";
 
-open(IN, "$data_path/eFlora/IJM_sequence.txt") || die;
+open(IN, "$data_path/eFlora/eFlora_database/IJM_sequence.txt") || die;
 while(<IN>){
 	$TaxonID = $FamilyID = $GenusID = $SpeciesID = "";
 	chomp;
