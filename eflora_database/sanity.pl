@@ -1,11 +1,11 @@
-open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN,"/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
 ($code,$name)=split(/\t/);
 $TNOAN{$name}=$code;
 }
 use BerkeleyDB;
-tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_input/temp/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
+#tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/Users/second_ed/TJM2/Jepson Manual2/TJM2 trmts received/7.0_Tom/tjm2post/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
 %proscribed=(
 "woodlands","woodland",
 "woods","woodland",
@@ -22,12 +22,15 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_i
 );
 
 @field_list=(
+"CAPTION",
+"EMBEDDED UNABRIDGED KEY LEAD",
 "UNABRIDGED KEY LEAD",
 "TAXON AUTHOR",
 "COMMON NAME",
 "UNABRIDGED COMMON NAME",
 "TJM1 AUTHOR",
 "TJM2 AUTHOR",
+"TJMX AUTHOR",
 "AUTHORSHIP COMMENT",
 "HABIT+",
 "UNABRIDGED HABIT+",
@@ -44,6 +47,7 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_i
 "FRONDS",
 "INFLORESCENCE",
 "STAMINATE HEAD",
+"RAY OR PISTILLATE FLOWER",
 "PISTILLATE OR BISEXUAL HEAD",
 "PISTILLATE HEAD",
 "STAMINATE INFLORESCENCE",
@@ -59,6 +63,8 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_i
 "PISTILLATE SPIKELET",
 "UNABRIDGED FLOWER",
 "FLOWER",
+"STAMINATE FLOWER",
+"PISTILLATE FLOWER",
 "RAY FLOWER",
 "DISK FLOWER",
 "UNABRIDGED DISK FLOWER",
@@ -67,8 +73,6 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"/Users/rlmoe/data/Interchange/_i
 "POLLEN CONE",
 "SEED CONE",
 "BISEXUAL FLOWER",
-"STAMINATE FLOWER",
-"PISTILLATE FLOWER",
 "FRUIT",
 "SEED",
 "SEEDS",
@@ -118,6 +122,7 @@ foreach(keys(%field_list)){
 #print "$_: $field_list{$_}\n";
 }
 #die;
+open(OUT, ">eflora.in");
 
 undef ($/);
 foreach(@ARGV){
@@ -133,7 +138,11 @@ foreach(@ARGV){
 	@all_pars=split(/\n\n+/,$all_lines);
 	#shift(@all_pars) if $all_pars[0]=~/UNABRIDGED/;
 	foreach(@all_pars){
+print OUT;
+++$lc;
 next if m/^[aA]dmin/;
+next if m/^CAPTION/;
+next if m/^#/;
 if (m/\b([A-Za-z]+) \1\b/){
 			print "ECHO $file $& \n\n";
 }
@@ -151,7 +160,9 @@ if (m/\b([A-Za-z]+) \1\b/){
 
 		unless(m/HABIT\+:/){
 			unless (m/\.\.\.\./){
-				print "$file No HABIT line $_\n\n";
+unless (m/Group/){
+				print "$file No HABIT line $_$lc \n\n";
+}
 			}
 		}
 s/\[\[[^]]+\]//;
@@ -224,24 +235,21 @@ unless($end_doc=~/\. *$/){
 		#print;
 		next if m/^[Aa]dmin/;
 		@lines=split("\n",$_);
-foreach(@lines){
-print "0. space at end of line: $_\n" if m/ $/;
-}
 		if(m|^([A-Z][A-Z]+) +([a-z-]+) *\n|m){
 			$trinomial="$1 $2";
 #warn "flabba $trinomial\n";
 			$epithet=$2;
 			$name_link=ucfirst(lc($trinomial));
 			$name_for_hc=$name_link;
-			if($NAME_CODE{$name_link}){
+			if($TNOAN{$name_link}){
 				$name_anchor=<<EOP;
-<a name="$NAME_CODE{$name_link}"> </a>
+<a name="$TNOAN{$name_link}"> </a>
 EOP
-				$store_treat_path{$NAME_CODE{$name_link}}=$outfile;
+				$store_treat_path{$TNOAN{$name_link}}=$outfile;
 				($consort_link=$name_link)=~s/ /%20/g;
 				s!(if verified,) !<a href="/cgi-bin/get_consort.pl?taxon_name=$consort_link">$1</a> !;
 				$name_link= <<EOP;
-<a href="/cgi-bin/get_cpn.pl?$NAME_CODE{$name_link}">[ICPN]</a>
+<a href="/cgi-bin/get_cpn.pl?$TNOAN{$name_link}">[ICPN]</a>
 EOP
 				}
 				else{
@@ -255,13 +263,13 @@ EOP
 				$name_link=ucfirst(lc("$1 $2 $3 $4"));
 				($consort_link=$name_link)=~s/ /%20/g;
 s!(if verified,) !<a href="/cgi-bin/get_consort.pl?taxon_name=$consort_link">$1</a> !;
-				if($NAME_CODE{$name_link}){
+				if($TNOAN{$name_link}){
 					$name_anchor=<<EOP;
-<a name="$NAME_CODE{$name_link}"> </a>
+<a name="$TNOAN{$name_link}"> </a>
 EOP
-				$store_treat_path{$NAME_CODE{$name_link}}=$outfile;
+				$store_treat_path{$TNOAN{$name_link}}=$outfile;
 				$name_link= <<EOP;
-<a href="/cgi-bin/get_cpn.pl?$NAME_CODE{$name_link}">[ICPN]</a>
+<a href="/cgi-bin/get_cpn.pl?$TNOAN{$name_link}">[ICPN]</a>
 EOP
 				}
 				else{
@@ -309,7 +317,7 @@ if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panami
 					print "$file \"Pl\" problem $sortline\n\n";
 				}
 				if($sortline=~m/TJM \(/){
-					print "$file TJM space $sortline\n\n" unless $sortline=~/AUTHOR/;
+					#print "$file TJM space $sortline\n\n" unless $sortline=~/AUTHOR/;
 				}
 				if($sortline=~m/TJM1/){
 					print "$file TJM1 $sortline\n\n" unless $sortline=~/AUTHOR/;
@@ -340,7 +348,7 @@ if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panami
 				if($sortline=~m/&mathx[^;]/){
 					print "$file MATHX $sortline\n\n";
 				}
-				if($sortline=~m/(\)[^\[\])0-9,.;: -])/){
+				if($sortline=~m/([^-]\)[^\[\])0-9,.;: -])/){
 					print "$file probable paren spacing error =$1: $sortline\n\n" unless $sortline=~/(ob|sub)\)/;
 				}
 				($open_brace)=($sortline=~s/([\[({])/$1/g);
@@ -363,7 +371,9 @@ if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panami
 					}
 				}
 				if($sortline=~m/(few-? to [a-z]+-)/){
+unless($sortline=~/few-.*to.*many-/){
 						print "$file probable en-dash error =$1: $sortline\n\n";
+}
 				}
 				if($sortline=~m/\blanceolate-(ovate|linear|elliptic|oblong|deltate)/ ){
 					print "$file lanceolate dash problem $1: $sortline\n\n";
@@ -397,8 +407,8 @@ if ($sortline=~m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panami
 				}
 				unless($field_list{$tag} > $field_list{$last_tag}){
 					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/ || $sortline=~/HORTIC/){
-						print "$file Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag";
-						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n";}
+						print "$file Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag $lc\n";
+						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;}
 						else{print "\n\n";}
 					}
 				}
@@ -407,3 +417,4 @@ $last_line=$sortline;
 			}
 		}
 	}
+
