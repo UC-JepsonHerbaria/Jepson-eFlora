@@ -5,7 +5,7 @@ chomp;
 $TNOAN{$name}=$code;
 }
 use BerkeleyDB;
-#tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/Users/second_ed/TJM2/Jepson Manual2/TJM2 trmts received/7.0_Tom/tjm2post/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
+
 %proscribed=(
 "woodlands","woodland",
 "woods","woodland",
@@ -23,7 +23,6 @@ use BerkeleyDB;
 
 @field_list=(
 "CAPTION",
-#"EMBEDDED UNABRIDGED KEY LEAD", added in the wrong place.  Deleted and added to below notes in this file and in eflora_display.php.  This refers to a single entry in Acer glabrum currently, which has an embedded key in the unabridged notes, JAA Dec 2016.
 "UNABRIDGED KEY LEAD",
 "TAXON AUTHOR",
 "COMMON NAME",
@@ -90,8 +89,6 @@ use BerkeleyDB;
 "UNABRIDGED CHROMOSOMES",
 "RARITY STATUS",
 #Rarity Status used to be below Ecology in eflora_display.php and this file; however 90% of all records in Eflora_treatments had RarityStatus above ecology.
-#This file and others will be changed to match Eflora_treatments, which was the easiest change to make.  There are 2090+ records out of order otherwise.
-#JAA, Nov 2016
 "ECOLOGY",
 "UNABRIDGED ECOLOGY",
 "ELEVATION",
@@ -114,8 +111,6 @@ use BerkeleyDB;
 "UNABRIDGED HORTICULTURAL INFORMATION",
 "NOTE",
 "NOTES",
-#"UNABRIDGED EMBEDDED LEAD ONE",
-#"UNABRIDGED EMBEDDED LEAD PRIME",
 "UNABRIDGED NOTE",
 "FLOWERING TIME",
 "FRUITING TIME",
@@ -141,14 +136,13 @@ foreach(@ARGV){
 	$all_lines=<IN>;
 
 #converts windows line ends#
-#$all_lines=~s/\cM/\n/g;
+
 	$all_lines=~s/ *\r\n/\n/g;
 	if($all_lines=~s/\xEF\xBB\xBF//){
 		print "$file Open Office Text tag\n";
 	}
 	@all_pars=split(/\n\n+/,$all_lines);
 
-	#shift(@all_pars) if $all_pars[0]=~/UNABRIDGED/;
 	foreach(@all_pars){      
 print OUT;
 ++$lc;
@@ -160,10 +154,6 @@ next if m/^#/;
 if (m/\b([A-Za-z]+) \1\b/){
 			print "ECHO $file $& \n\n";
 }
-# non-ASCII character 
-			#if(s/([^ -~])/>>>>>$1<<<<</g){
-				#print "ACCENT $file $_\n";
-			#}
 		if(m/\n +/){
 			print "$file Space in blank line $_\n\n";
 			
@@ -191,20 +181,6 @@ s/\[\[[^]]+\]//;
 			print "$file No designation of nativity $_\n\n";
 			
 		}
-#while (s/(.*)\b(woodlands|woods|pinyon-juniper|grasslands|faces|solitary|very|often|Shrubs|sometimes|tiny|waste places)\b(.*)/$1\U$2\E$3/){
-#print "$file Possible use of proscribed word <",$2, "> [$proscribed{$2}]  $1",uc($2), "$3\n\n";
-#}
-
-#### shortened authors to "et al." for the book. These have been expanded for the eFlora
-#### so this check is commented out
-#if(m/TAXON AUTHOR:.*,.* (&|and) /){
-#	print "$file \"et al.\" in authorship needed?\n$_\n\n";
-#}
-#if(m/^[A-Z][a-z]+ [a-z][a-z].*,.* (&|and) /){
-#	print "$file \"et al.\" in authorship needed?\n$_\n\n";
-#}
-#next;
-
 
 if(m/(.*)\nTAXON AUTHOR: (.*)/){
 $tax_name="$1 $2";
@@ -212,15 +188,6 @@ $tax_name=~s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
 ###We used to remove expanded author names for the purpose of TJM2 book length
 ###This is no longer a consideration, to the routine is removed
-#if(m/TAXON.* ex [A-Z]/ || / ex [A-Z].*\nTAXON/){
-#	print "$taxname $file Ex\n";
-#	$syn=$_;
-#	s/\([^\)]*? ex /(/g;
-#	s/[A-Z.]+ [A-Z][a-z.-]+ ex //g;
-#	s/[A-Z][a-z.-]+ ex //g;
-#	print "UNABRIDGED NOTE: Expanded author citation: $tax_name\n\n";
-#}
-
 
 		if(m/DISTRIBUTION OUTSIDE CALIFORNIA: (.+)/){
 			$doc=$&;
@@ -354,7 +321,6 @@ EOP
 				if($sortline=~m/HABIT\+: [a-z]/){
 					print "$file Capitalization problem $sortline\n\n";
 				}
-				###I don't know what the "Mountain Range problem" is, D Baxter
 				
 				if(($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns/) && ($sortline =~ m/(Clark. *\(.*;|Clark Mtn Range|Clark Mtn.?,? .*range|Kingston.?,? .*[Mm]tns|Last Chance Range.?,? .*[Mm]tns|Panamint Range.?,? .*[Mm]tns|Santa Lucia Range.?,? .*[Mm]tns)/)){				
 					print "known false positive: mountain range problem\t--\t$sortline\n";
@@ -400,7 +366,7 @@ EOP
 				}
 				
 				if(($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/) && ($sortline =~ m/(\(\d+\)\+- \d|\([01]\)few|\([01]\)several|\(mis\)|\)&deg|\)%|\(ob\)|\(un\)|\(sub\)|\(hemi\)|\(Dec\)Mar|\(Jan--Feb\)Mar|\(Jan\)Mar|\(Jan\)Apr|\(Feb\)Apr|\(Mar\)Apr|\(Apr\)May|\(May\)Jun|\(May\)Jul|\(May\)Aug|\(Jun\)Jul|\(Jun\)Aug|\(Jul\)Aug)/)){
-				#	print "known false positive: probable paren spacing error1 =$1: $sortline\n";
+					print "known false positive: probable paren spacing error1 =$1: $sortline\n";
 					;
 				}
 					elsif($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/){
@@ -435,7 +401,7 @@ EOP
 					}
 				
 				if(($sortline =~ m/([A-Za-z]--[A-Za-z])/) && (($sortline =~ m/[A-Z][a-z][a-z]--[A-Z][a-z][a-z]/ || $sortline =~ m/TIME:/ || $sortline =~ m/few--/ || $sortline =~ m/ummer--fall-flower/ || $sortline =~ m/winter--spring-flower/ ))){
-					#print "known false positive: probable en-dash error6 =$1: $sortline\n";
+					print "known false positive: probable en-dash error6 =$1: $sortline\n";
 					
 				}
 					elsif($sortline =~ m /([A-Za-z]--[A-Za-z])/){
@@ -443,7 +409,7 @@ EOP
 					}
 					
 				if(($sortline =~ m/(few-? to [a-z]+-)/) && ($sortline =~ m/(few-.*to.*many-|few-.*to.*several-)/)){
-				#	print "known false positive: probable en-dash error7 =$1: $sortline\n";
+					print "known false positive: probable en-dash error7 =$1: $sortline\n";
 					;
 				}
 					elsif($sortline =~ m/(few-? to [a-z]+-)/){
@@ -457,23 +423,25 @@ EOP
 				if($sortline=~m/([\200-\377])/ ){
 					print "$file - possible font problem $1: $sortline\n\n"
 				}
-				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ #exclude taxa already in TJM2 in brackets and non-taxon bracketed info
+				#exclude taxa already in TJM2 in brackets and non-taxon bracketed info
+				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ 
+				
 					if(($sortline =~ m/-> \[[A-Z]{2,}/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
 						print "$file - possible UNABRIDGED KEY LEAD tag missing: $sortline\n\n";
 					}
 					
 					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z]+/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-	#					print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
+						print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
 					}
 					elsif(($sortline =~ m/-> [A-Z]\. [a-z]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
 						print "known UNABRIDGED KEY LEAD tag $sortline\n";
 					}
 					
 					elsif(($sortline =~ m/-> \[[A-Z]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-	#					print "$file - possible UNABRIDGED KEY LEAD tag missing3: $sortline\n\n"	
+						print "$file - possible UNABRIDGED KEY LEAD tag missing3: $sortline\n\n"	
 					}
 					elsif(($sortline =~ m/\[[varsubp]{3,5}\. /) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-	#					print "$file - possible UNABRIDGED KEY LEAD tag missing4: $sortline\n\n"	
+						print "$file - possible UNABRIDGED KEY LEAD tag missing4: $sortline\n\n"	
 						}
 				}	
 				if($sortline=~m/TIME: [a-z]/ ){
@@ -501,7 +469,10 @@ EOP
 				unless($field_list{$tag} > $field_list{$last_tag}){
 					unless ($sortline =~/^\w*[0-9]['.]/ || $last_tag =~/RARITY/ || $sortline=~/HORTIC/ || $last_tag=~/UNABRIDGED KEY LEAD/){
 						print "$file - Out of order: $sortline : $field_list{$tag} tag=$tag last tag=$last_tag $lc\n\n";
-						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;} #I have no clue what this line is doing.. dont think it works.. it is tossing out error for all unabridged ket leads
+						#I have no clue what this line is doing.. dont think it works.. it is tossing out error for all unabridged ket leads
+
+						if($last_tag=~/UNABRIDGED KEY LEAD/){print " (default last tag\n\n" unless $sortline=~/UNABR/;} 						
+						
 						else{print "\n\n";}
 					}
 				}
