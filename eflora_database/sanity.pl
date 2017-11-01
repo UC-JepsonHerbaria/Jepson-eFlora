@@ -299,7 +299,7 @@ EOP
 					print "$file missing space? $1 $sortline\n\n";
 				}
 				if($sortline=~m/(HABIT\+|FLOWERS?|INFLORESCENCE|FRUIT|SEEDS?|STEMS?|CHROMOSOMES|SPECIES IN GENUS|GENERA IN FAMILY|NOTE|TOXICITY|WEEDINESS|ELEVATION): .+[^.] *$/){
-					print "$file EOL punctuation problem\t$sortline\n\n" unless $sortline=~/UNABRIDGED/;
+					print "$file EOL punctuation problem\t$sortline\n\n" unless $sortline=~/UNABRIDGED|WEEDINESS/;
 				}
 				if($sortline=~/ELEVATION/){
 #print "LAST: $last_line\n";
