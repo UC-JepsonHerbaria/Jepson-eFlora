@@ -1,11 +1,11 @@
 #content
-/eflora-database/eflora_treatments.txt
-/eflora-database/eflora.in
+/eflora_database/eflora_treatments.txt
+/eflora_database/eflora.in
 
 
 #generated files
 output/
-/eflora-database/output/
+/eflora_database/output/
 
 #from Mac OS X
 .DS_Store
