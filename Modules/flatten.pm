@@ -10,7 +10,7 @@ use Exporter;
 @CaR = ('CaRF','CaRH');
 @cSN = ('cSNF', 'cSNH');
 @nSN = ('nSNF', 'nSNH');
-@sSN = ('sSNF', 'sSNH');
+@sSN = ('sSNF', 'sSNH','Teh'); #added 'Teh' to this line recommended by Tom, because sSN by definition includes Teh, and there are taxa that have yellow flags in Teh that should not be
 @SNF=('nSNF','cSNF','sSNF');
 @SNH=('nSNH','cSNH','sSNH');
 @SN = (@SNF,@SNH,'Teh');
@@ -168,7 +168,7 @@ warn "$_\n" if m/possibly/;
 
 		@all_exceptions = split(/, /,$exception_string);
 
-#print "AE: ", join(" ",@all_exceptions),"\n";
+print "AE: ", join(" ",@all_exceptions),"\n";
 
 		foreach $exception (@all_exceptions){
 			if($exception eq "coast"){
@@ -249,7 +249,7 @@ sub adjkludge {
 local($_)=@_;
 $prev=$_;
 s/(adjacent [snew ]*DMoj)/$1 (exc DMtns)/;
-s/ D and adjacent CA.FP/ D, PR, TR, Teh, sSN/;
+s/ D and adjacent CA.FP/ D, PR, TR, sSN/; #used to read /D, PR, TR, Teh, sSN/, but sSN includes Teh, so this was changed also to match above
 s/nSNE, adjacent CA.FP/nSNE, sSNH/;
 ###warn "$prev\n";
 ###warn "$_\n" unless $_ eq $prev;
