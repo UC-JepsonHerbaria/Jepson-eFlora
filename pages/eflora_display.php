@@ -5,7 +5,7 @@ $TaxonID = htmlspecialchars($_GET["tid"]);
 require 'config/config.php';
 $db = new SQLite3($database_location);
 
-$results = $db->query('SELECT ID, ScientificName, TaxonAuthor, FormattedDisplayName, CommonName, NativeStatus, TJM2Author, ScientificEditor, Habit, PlantBody, Stem, SterileStem, FertileStem, Leaf, Spines, Inflorescence, StaminateHead, RayOrPistillateFlower, PistillateHead, StaminateInflorescence, PistillateOrBisexualInflorescence, PistillateInflorescence, Spikelet, FertileSpikelet, SterileSpikelet, DistalSpikelet, CentralSpikelet, LateralSpikelet, StaminateSpikelet, PistillateSpikelet, Flower, StaminateFlower, PistillateFlower, RayFlower, DiskFlower, Cone, PollenCone, SeedCone, BisexualFlower, Fruit, Seed, Sporangia, SporangiumCase, MaleSporangiumCase, FemaleSporangiumCase, Spores, Chromosomes, RarityStatus, Ecology, Elevation, BioregionalDistribution, OutsideCA, SpeciesInGenus, GeneraInFamily, Etymology, Toxicity, Synonyms, Note, UnabridgedNote, FloweringTime, FloweringTimeCode, FruitingTime, ConingTime, Weediness, IsTerminalTaxon, RevisionNumber, RevisionDate, DistCode, HasKey 
+$results = $db->query('SELECT ID, ScientificName, TaxonAuthor, FormattedDisplayName, CommonName, NativeStatus, TJM2Author, ScientificEditor, Habit, PlantBody, Stem, SterileStem, FertileStem, Leaf, Spines, Inflorescence, StaminateHead, RayOrPistillateFlower, PistillateHead, StaminateInflorescence, PistillateOrBisexualInflorescence, PistillateInflorescence, Spikelet, FertileSpikelet, SterileSpikelet, DistalSpikelet, CentralSpikelet, LateralSpikelet, StaminateSpikelet, PistillateSpikelet, Flower, StaminateFlower, PistillateFlower, RayFlower, DiskFlower, Cone, PollenCone, SeedCone, BisexualFlower, Fruit, Seed, Sporangia, SporangiumCase, MaleSporangiumCase, FemaleSporangiumCase, Spores, Chromosomes, RarityStatus, Ecology, Elevation, BioregionalDistribution, OutsideCA, SpeciesInGenus, GeneraInFamily, Etymology, Toxicity, Synonyms, Reference, UnabridgedReference, Note, UnabridgedNote, FloweringTime, FloweringTimeCode, FruitingTime, ConingTime, Weediness, IsTerminalTaxon, RevisionNumber, RevisionDate, DistCode, HasKey 
 						FROM eflora_taxa
 						WHERE TaxonID='.$TaxonID.''); //16711 is the TaxonID for Calochortus amabilis, for example
 
@@ -71,6 +71,8 @@ $GeneraInFamily = $row['GeneraInFamily'];
 $Etymology = $row['Etymology'];
 $Toxicity = $row['Toxicity'];
 $Synonyms = $row['Synonyms'];
+$Reference = $row['Reference'];
+$UnabridgedReference = $row['UnabridgedReference'];
 $Note = $row['Note'];
 $UnabridgedNote = $row['UnabridgedNote'];
 $FloweringTime = $row['FloweringTime'];
@@ -170,6 +172,8 @@ while ($row = $results->fetchArray()) {
 	$FamGeneraInFamily = $row['GeneraInFamily'];
 	$FamEtymology = $row['Etymology'];
 	$FamToxicity = $row['Toxicity'];
+	$FamReference = $row['Reference'];
+	$FamUnabridgedReference = $row['UnabridgedReference'];
 	$FamNote = $row['Note'];
 	$FamUnabridgedNote = $row['UnabridgedNote'];
 	$FamRevisionNumber  = $row['RevisionNumber'];
@@ -180,7 +184,7 @@ while ($row = $results->fetchArray()) {
 
 //query and assign genus info
 //Note that only Genus has "SpeciesInGenus"
-$results = $db->query('SELECT t.TaxonID, t.GenusID, g.TaxonID, g.ScientificName, g.TaxonAuthor, g.CommonName, g.TJM2Author, g.Habit, g.PlantBody, g.Stem, g.SterileStem, g.FertileStem, g.Leaf, g.Spines, g.Inflorescence, g.StaminateHead, g.RayOrPistillateFlower, g.PistillateHead, g.StaminateInflorescence, g.PistillateOrBisexualInflorescence, g.PistillateInflorescence, g.Spikelet, g.FertileSpikelet, g.SterileSpikelet, g.DistalSpikelet, g.CentralSpikelet, g.LateralSpikelet, g.StaminateSpikelet, g.PistillateSpikelet, g.Flower, g.StaminateFlower, g.PistillateFlower, g.RayFlower, g.DiskFlower, g.Cone, g.PollenCone, g.SeedCone, g.BisexualFlower, g.Fruit, g.Seed, g.Sporangia, g.SporangiumCase, g.MaleSporangiumCase, g.FemaleSporangiumCase, g.Spores, g.Chromosomes, g.SpeciesInGenus, g.Etymology, g.Toxicity, g.Synonyms, g.Note, g.UnabridgedNote, g.RevisionNumber, g.RevisionDate, g.HasKey
+$results = $db->query('SELECT t.TaxonID, t.GenusID, g.TaxonID, g.ScientificName, g.TaxonAuthor, g.CommonName, g.TJM2Author, g.Habit, g.PlantBody, g.Stem, g.SterileStem, g.FertileStem, g.Leaf, g.Spines, g.Inflorescence, g.StaminateHead, g.RayOrPistillateFlower, g.PistillateHead, g.StaminateInflorescence, g.PistillateOrBisexualInflorescence, g.PistillateInflorescence, g.Spikelet, g.FertileSpikelet, g.SterileSpikelet, g.DistalSpikelet, g.CentralSpikelet, g.LateralSpikelet, g.StaminateSpikelet, g.PistillateSpikelet, g.Flower, g.StaminateFlower, g.PistillateFlower, g.RayFlower, g.DiskFlower, g.Cone, g.PollenCone, g.SeedCone, g.BisexualFlower, g.Fruit, g.Seed, g.Sporangia, g.SporangiumCase, g.MaleSporangiumCase, g.FemaleSporangiumCase, g.Spores, g.Chromosomes, g.SpeciesInGenus, g.Etymology, g.Toxicity, g.Synonyms, g.Reference, g.UnabridgedReference, g.Note, g.UnabridgedNote, g.RevisionNumber, g.RevisionDate, g.HasKey
 						from eflora_taxonomy t, eflora_taxa g
 						WHERE t.TaxonID='.$TaxonID.' AND t.GenusID=g.TaxonID');
 
@@ -232,6 +236,8 @@ while ($row = $results->fetchArray()) {
 	$GenSpeciesInGenus = $row['SpeciesInGenus'];
 	$GenEtymology = $row['Etymology'];
 	$GenToxicity = $row['Toxicity'];
+	$GenReference = $row['Reference'];
+	$GenUnabridgedReference = $row['UnabridgedReference'];
 	$GenNote = $row['Note'];
 	$GenUnabridgedNote = $row['UnabridgedNote'];
 	$GenRevisionNumber = $row['RevisionNumber'];
@@ -241,7 +247,7 @@ while ($row = $results->fetchArray()) {
 
 //query and assign species info
 //Species has neither GeneraInFamily nor SpeciesInGenus
-$results = $db->query('SELECT t.TaxonID, t.SpeciesID, s.TaxonID, s.ScientificName, s.TaxonAuthor, s.CommonName, s.TJM2Author, s.Habit, s.PlantBody, s.Stem, s.SterileStem, s.FertileStem, s.Leaf, s.Spines, s.Inflorescence, s.StaminateHead, s.RayOrPistillateFlower, s.PistillateHead, s.StaminateInflorescence, s.PistillateOrBisexualInflorescence, s.PistillateInflorescence, s.Spikelet, s.FertileSpikelet, s.SterileSpikelet, s.DistalSpikelet, s.CentralSpikelet, s.LateralSpikelet, s.StaminateSpikelet, s.PistillateSpikelet, s.Flower, s.StaminateFlower, s.PistillateFlower, s.RayFlower, s.DiskFlower, s.Cone, s.PollenCone, s.SeedCone, s.BisexualFlower, s.Fruit, s.Seed, s.Sporangia, s.SporangiumCase, s.MaleSporangiumCase, s.FemaleSporangiumCase, s.Spores, s.Chromosomes, s.Etymology, s.Toxicity, s.Synonyms, s.Note, s.UnabridgedNote, s.RevisionNumber, s.RevisionDate
+$results = $db->query('SELECT t.TaxonID, t.SpeciesID, s.TaxonID, s.ScientificName, s.TaxonAuthor, s.CommonName, s.TJM2Author, s.Habit, s.PlantBody, s.Stem, s.SterileStem, s.FertileStem, s.Leaf, s.Spines, s.Inflorescence, s.StaminateHead, s.RayOrPistillateFlower, s.PistillateHead, s.StaminateInflorescence, s.PistillateOrBisexualInflorescence, s.PistillateInflorescence, s.Spikelet, s.FertileSpikelet, s.SterileSpikelet, s.DistalSpikelet, s.CentralSpikelet, s.LateralSpikelet, s.StaminateSpikelet, s.PistillateSpikelet, s.Flower, s.StaminateFlower, s.PistillateFlower, s.RayFlower, s.DiskFlower, s.Cone, s.PollenCone, s.SeedCone, s.BisexualFlower, s.Fruit, s.Seed, s.Sporangia, s.SporangiumCase, s.MaleSporangiumCase, s.FemaleSporangiumCase, s.Spores, s.Chromosomes, s.Etymology, s.Toxicity, s.Synonyms, s.Reference, s.UnabridgedReference, s.Note, s.UnabridgedNote, s.RevisionNumber, s.RevisionDate
 						from eflora_taxonomy t, eflora_taxa s
 						WHERE t.TaxonID='.$TaxonID.' AND t.SpeciesID=s.TaxonID');
 
@@ -292,6 +298,8 @@ while ($row = $results->fetchArray()) {
 	$SpecChromosomes = $row['Chromosomes'];
 	$SpecEtymology = $row['Etymology'];
 	$SpecToxicity = $row['Toxicity'];
+	$SpecReference = $row['Reference'];
+	$SpecUnabridgedReference = $row['UnabridgedReference'];
 	$SpecNote = $row['Note'];
 	$SpecUnabridgedNote = $row['UnabridgedNote'];
 	$SpecRevisionNumber  = $row['RevisionNumber'];
@@ -315,6 +323,17 @@ if (isset($TJM2Author)){ $JMAuthor = $TJM2Author;}
 	elseif (isset($FamTJM2Author)){ $JMAuthor = $FamTJM2Author;}
 	else {$JMAuthor = "";}
 $JMAuthor = str_replace(", except as noted", "", $JMAuthor);
+
+if (isset($Reference)){ $Ref = $Reference;}#there are no species references, genus reference is always passed down
+	elseif (isset($GenReference)){ $Ref = $GenReference;}
+	elseif (isset($FamReference)){ $Ref = $FamReference;}
+	else {$Ref = "";}
+
+if (isset($UnabridgedReference)){ $UnabRef = $UnabridgedReference;}#there are no species references, genus reference is always passed down
+	elseif (isset($GenUnabridgedReference)){ $UnabRef = $GenUnabridgedReference;}
+	elseif (isset($FamUnabridgedReference)){ $UnabRef = $FamUnabridgedReference;}
+	else {$UnabRef = "";}
+
 
 //RevNumber is inherited by species or genus, but not from the family
 //Because a family revision does not affect all species/genera within the family
@@ -352,7 +371,6 @@ exit();
 ?>
 
 <head><title>Jepson Herbarium: Jepson Flora Project: Jepson eFlora: <?php echo "$ScientificName"?></title> 
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 <link href="http://ucjeps.berkeley.edu/common/styles/dropdowns.css" rel="stylesheet" type="text/css" />
 <link href="common/css/jepson_eflora.css" rel="stylesheet" type="text/css" />
 
@@ -376,7 +394,8 @@ function initialize() {
   var kmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/jepcodes-v7.kmz", { suppressInfoWindows: true });
   kmlLayer.setMap(map);
 //  var pmlLayer = new google.maps.KmlLayer("http://herbaria4.herb.berkeley.edu/interchange/coords/"+TaxID+".kml", { });
-  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml?122", { });
+//  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml?122", { }); #the ?122 was causing the kmls to keep records that were yellow flagged from updating to blue flags when they were corrected, not sure why this was here
+  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml", { }); //deleting the ?122 fixes the erroneous yellow flags to turn to blue as they should be, and fixes some blue flags that should be yellow, this seemed to override the values in the KML's themselves which were correct
   pmlLayer.setMap(map);
 
 }
@@ -572,6 +591,8 @@ echo "<br>";
 
 if ($FamUnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$FamUnabridgedNote}</font><br>";}
 if ($FamTJM2Author){ echo "<b>eFlora Treatment Author:</b> {$FamTJM2Author}<br>";}
+if ($FamReference){ echo "<b>Reference:</b> {$FamReference}<br>";}
+if ($FamUnabridgedReference){ echo "<font color='blue'><b>Unabridged Reference:</b> {$FamUnabridgedReference}</font><br>";}
 if ($FamScientificEditor){ echo "<b>Scientific Editor:</b> {$FamScientificEditor}<br>";}
 echo "</blockquote></div>";
 
@@ -637,6 +658,9 @@ echo "<br>";
 
 if ($GenUnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$GenUnabridgedNote}</font><br>";}
 if ($GenTJM2Author){ echo "<b>eFlora Treatment Author:</b> {$GenTJM2Author}<br>";}
+if ($GenReference){ echo "<b>Reference:</b> {$GenReference}<br>";}
+if ($GenUnabridgedReference){ echo "<font color='blue'><b>Unabridged Reference:</b> {$GenUnabridgedReference}</font><br>";}
+
 echo "</div>";
 	
 	}
@@ -697,6 +721,9 @@ echo "<br>";
 
 if ($SpecUnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$SpecUnabridgedNote}</font><br>";}
 if ($SpecJMAuthor){ echo "<b>eFlora Treatment Author:</b> {$SpecJMAuthor}<br>";}
+if ($SpecReference){ echo "<b>Reference:</b> {$SpecReference}<br>";}
+if ($SpecUnabridgedReference){ echo "<font color='blue'><b>Unabridged Reference:</b> {$SpecUnabridgedReference}</font><br>";}
+
 echo "</div>";
 	}
 	echo "<br>";
@@ -778,6 +805,8 @@ echo "<br>";
 if ($Synonyms){ echo "<b>Synonyms:</b> {$Synonyms}<br>";}
 if ($UnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$UnabridgedNote}</font><br>";}
 if ($JMAuthor){ echo "<b>eFlora Treatment Author:</b> {$JMAuthor}<br>";}
+if ($Ref){ echo "<b>Reference:</b> {$Ref}<br>";}
+if ($UnabRef){ echo "<font color='blue'><b>Unabridged Reference:</b> {$UnabRef}</font><br>";}
 if ($ScientificEditor){ echo "<b>Scientific Editor:</b> {$ScientificEditor}<br>";}
 echo '<a href="http://ucjeps.berkeley.edu/cgi-bin/get_cpn.pl?'.$TaxonID.'"><b>Jepson Online Interchange</b></a><br>';
 if (isset($HasKey)){ echo "<b><a href='http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?key=".$TaxonID."'>Key to <i>".$ScientificName."</i></a></b></br>"; }
