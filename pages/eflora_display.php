@@ -319,10 +319,14 @@ if (isset($RevisionNumber)){ $RevNumber = $RevisionNumber;}
 
 //Before doing anything, if the TID isn't recognized, give a plain error screen
 if (!$ID){ //if TaxonID (pulled from URL) did not match a line in the database...
-	echo "<html xmlns='http://www.w3.org/1999/xhtml'>";
-	echo "Taxon not recognized TID=".$TaxonID.":  <a href='http://ucjeps.berkeley.edu/IJM.html'>Return to main search page</a>";
-	echo "</html>";
-	die();
+//	echo "<html xmlns='http://www.w3.org/1999/xhtml'>";
+//	echo "Taxon not recognized TID=".$TaxonID.":  <a href='http://ucjeps.berkeley.edu/IJM.html'>Return to main search page</a>";
+//	echo "</html>";
+//	die();
+
+header("Location: http://ucjeps.berkeley.edu/cgi-bin/get_cpn.pl?".$TaxonID, true, 301);
+exit();
+
 }
 ?>
 
@@ -359,7 +363,8 @@ function initialize() {
 
   var kmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/jepcodes-v7.kmz", { suppressInfoWindows: true });
   kmlLayer.setMap(map);
-  var pmlLayer = new google.maps.KmlLayer("http://herbaria4.herb.berkeley.edu/interchange/coords/"+TaxID+".kml", { });
+//  var pmlLayer = new google.maps.KmlLayer("http://herbaria4.herb.berkeley.edu/interchange/coords/"+TaxID+".kml", { });
+  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml?122", { });
   pmlLayer.setMap(map);
 
 }
@@ -932,7 +937,7 @@ if (is_null ($GenTaxonID)){
 <tr><td valign='bottom'>Geographic subdivisions for <?php echo "$ScientificName"?>:
 <br><?php echo "$BioregionalDistribution"?>
 </td>
-<td>Markers link to CCH specimen records. If the markers are obscured, reload the page [or change window size and reload]. Yellow markers indicate records that may provide evidence for eFlora range revision or may have georeferencing or identification issues.
+<td>Markers link to CCH specimen records. Yellow markers indicate records that may provide evidence for eFlora range revision or may have georeferencing or identification issues. Purple markers indicate specimens collected from a garden, greenhouse, or other non-wild location.
 <br><b><a href="http://ucjeps.berkeley.edu/consortium/about_yellow.html">READ ABOUT YELLOW FLAGS</a></b>
 </td></tr>
 <tr>
@@ -952,9 +957,12 @@ if (is_null ($GenTaxonID)){
 <td valign="top">Data provided by the participants of the Consortium of California Herbaria.
 <br>
 <?php echo '<a href="http://ucjeps.berkeley.edu/cgi-bin/get_consort.pl?taxon_name='.$ScientificName.'">View all CCH records</a>'?>
+
 <br><br>
 CCH collections by month<br> 
-<?php //a.k.a. "heath bars"
+
+<?php
+//a.k.a. "heath bars"
 //infra rank must be removed for the heath bar script
 $hb_name = str_replace(" subsp.", "", $ScientificName);
 $hb_name = str_replace(" var.", "", $hb_name);
@@ -966,9 +974,11 @@ else {
 	echo '<img border=1 src="http://ucjeps.berkeley.edu/cgi-bin/hb2.pl?name='.$hb_name.'&FT=">';
 }	
 ?>
+
 <br>Duplicates counted once; synonyms included.
 <br>Species do not include records of infraspecific taxa.
 <br>Blue line denotes eFlora flowering time.
+
 </td></tr>
 </table>
 
