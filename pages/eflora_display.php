@@ -58,9 +58,6 @@ $MaleSporangiumCase = $row['MaleSporangiumCase'];
 $FemaleSporangiumCase = $row['FemaleSporangiumCase'];
 $Spores = $row['Spores'];
 $Chromosomes = $row['Chromosomes'];
-//Rarity Status used to be below Ecology in sanity.pl and this file; however 90% of all records in Eflora_treatments had RarityStatus above ecology.
-//This file and others will be changed to match Eflora_treatments, which was the easiest change to make.  There are 2090+ records out of order otherwise.
-//JAA, Nov 2016
 $RarityStatus = $row['RarityStatus'];
 $Ecology = $row['Ecology'];
 $Elevation = $row['Elevation'];
@@ -349,11 +346,8 @@ if (isset($RevisionDate)){ $RevDate = $RevisionDate;}
 	
 //Before doing anything, if the TID isn't recognized, give a plain error screen
 if (!$ID){ //if TaxonID (pulled from URL) did not match a line in the database...
-//	echo "<html xmlns='http://www.w3.org/1999/xhtml'>";
-//	echo "Taxon not recognized TID=".$TaxonID.":  <a href='http://ucjeps.berkeley.edu/IJM.html'>Return to main search page</a>";
   echo "Taxon not recognized TID=".$TaxonID;
-//	echo "</html>";
-//	die();
+
 
 header("Location: http://ucjeps.berkeley.edu/cgi-bin/get_cpn.pl?".$TaxonID, true, 301);
 exit();
@@ -393,8 +387,6 @@ function initialize() {
 
   var kmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/jepcodes-v7.kmz", { suppressInfoWindows: true });
   kmlLayer.setMap(map);
-//  var pmlLayer = new google.maps.KmlLayer("http://herbaria4.herb.berkeley.edu/interchange/coords/"+TaxID+".kml", { });
-//  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml?122", { }); #the ?122 was causing the kmls to keep records that were yellow flagged from updating to blue flags when they were corrected, not sure why this was here
   var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml", { }); //deleting the ?122 fixes the erroneous yellow flags to turn to blue as they should be, and fixes some blue flags that should be yellow, this seemed to override the values in the KML's themselves which were correct
   pmlLayer.setMap(map);
 
@@ -910,7 +902,7 @@ if (isset($IllustrationFile)) {
 	  	if ($RevNumber){ echo $RevNumber.", ";}
 	  echo "http://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=".$TaxonID.", accessed on "?> <?php echo date ("F d, Y") ?>.
 </P>
-<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php if ($RevDate){ echo $RevDate.". ";} ?>. <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/eflora/, accessed on <?php echo date ("F d, Y")?>.</P>
+<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php if ($RevDate){ echo $RevDate.". ";} ?> <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/eflora/, accessed on <?php echo date ("F d, Y")?>.</P>
 
 
 <?php
