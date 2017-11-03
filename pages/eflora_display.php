@@ -456,7 +456,7 @@ $(document).ready(function(){
    <tr>
        <td>&nbsp;</td>
        <td>&nbsp;</td>
-       <td><span class="pageName"><a href="http://ucjeps.berkeley.edu/IJM.html">Jepson eFlora:</a> Taxon page</span>
+       <td><span class="pageName"><a href="http://ucjeps.berkeley.edu/eflora/">Jepson eFlora:</a> Taxon page</span>
 		<br>
 			<span class="pageAuthorLine">
 				<a href="http://ucjeps.berkeley.edu/IJM_fam_key.html">Key to families</a>
@@ -868,10 +868,11 @@ if (isset($IllustrationFile)) {
 
 <P class=bodyText>
 <?php echo "Citation for this treatment: ".$JMAuthor." ".date ("Y").". <i>".$ScientificName."</i>, ";
-if ($RevNumber){ echo $RevNumber.", ";} 
-echo "in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?tid=".$TaxonID.", accessed on"?> <?php echo date ("F d, Y") //will need to update link I think ?>.
+	  echo "in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, ";
+	  	if ($RevNumber){ echo $RevNumber.", ";}
+	  echo "http://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=".$TaxonID.", accessed on "?> <?php echo date ("F d, Y") ?>.
 </P>
-<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php echo date ("Y")?>. <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/IJM.html, accessed on <?php echo date ("F d, Y")?>.</P>
+<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php echo date ("Y")?>. <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/eflora/, accessed on <?php echo date ("F d, Y")?>.</P>
 
 
 <?php
@@ -883,6 +884,17 @@ if (is_null ($FamTaxonID)){
  }
 ?>
 
+<?php
+
+
+//for genus treatments, distribution and image pages are now excluded, they use to be displayed
+// Too many cultivated random images are showing non-california species on Genus pages
+//so exit out at this point
+if (is_null ($GenTaxonID)){
+	include('common/eflora_footer.php');
+ 	exit();
+ }
+?>
 
 <hr width=80%> 
 
@@ -891,17 +903,19 @@ require "$config_path"."calphotos_database_connection.php";
 
 $cp_ssp_name = str_replace(" subsp. ", " ssp. ", $ScientificName); //CalPhotos uses "ssp." and not "subsp."
 
+
 $result = mysqli_query($mysqli, "SELECT taxon, kwid, copyright FROM img 
 WHERE genre = 'Plant' 
 AND photographer IN ('Aaron E. Sims', 'Aaron Schusteff', 'Barry Breckling', 'Barry Rice', 'Carol W. Witham', 'Christopher Christie', 'Dana York', 'Dr. David A. Charlet', 'David Graber', 'Dean Kelch', 'Dieter Wilken', 'Gary A. Monroe', 'George W. Hartwell', 'Gerald and Buff Corsi', 'Harlan Lewis', 'Janell Hillman', 'James M. Andre', 'James Morefield', 'John Game', 'Julie Kierstead Nelson', 'Keir Morse', 'Larry Blakely', 'Lech Naumovich', 'Len Lindstrand III', 'Michael Charters', 'Michael G. Simpson', 'Neal Kramer', 'Bob Patterson', 'Robert E. Preston, Ph.D.', 'Roxanne Bittman', 'Ryan O\'Dell', 'Steve Matson', 'Steve Schoenig', 'Thomas M. Elder, M.D.', 'Thomas Stoughton', 'Toni Corelli', 'Tony Morosco', 'Dylan Neubauer')
 AND taxon LIKE '$cp_ssp_name%' 
-AND taxon NOT LIKE 'Echinopsis%' 
+AND captivity = '0'
+AND state LIKE 'CA'
 ORDER BY RAND() LIMIT 6;");
 
 //CalPhotos has specimens of the south American Cactus genus Echinopsis which the code above cannot distinguish from Echinops (asteraceae) at the genus level.
 //pcitures of the cactus are displaying on the genus page for Echinops
 //NOT LIKE line added to eliminate specimens of this genus from genus pages in the eFlora
-
+//AND state = '267588'
  if (!$result) {
     die("<p>Error in executing the CalPhotos query : " .
         mysql_error() . "</p>");
@@ -931,16 +945,6 @@ if (isset($kwid)){ //if there is no $kwid (i.e. no photos), do not print the "se
 	echo "<hr width=80%>";
 }
 ?>
-
-<?php
-//for genus treatments, distribution pages are excluded
-//so exit out at this point
-if (is_null ($GenTaxonID)){
-	include('common/eflora_footer.php');
- 	exit();
- }
-?>
-
 
 <!--distribution panes-->
 <table border=0>
