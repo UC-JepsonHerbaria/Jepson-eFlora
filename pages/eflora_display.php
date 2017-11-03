@@ -5,7 +5,7 @@ $TaxonID = htmlspecialchars($_GET["tid"]);
 require 'config/config.php';
 $db = new SQLite3($database_location);
 
-$results = $db->query('SELECT ID, ScientificName, TaxonAuthor, FormattedDisplayName, CommonName, NativeStatus, TJM2Author, ScientificEditor, Habit, PlantBody, Stem, SterileStem, FertileStem, Leaf, Spines, Inflorescence, StaminateHead, RayOrPistillateFlower, PistillateHead, StaminateInflorescence, PistillateOrBisexualInflorescence, PistillateInflorescence, Spikelet, FertileSpikelet, SterileSpikelet, DistalSpikelet, CentralSpikelet, LateralSpikelet, StaminateSpikelet, PistillateSpikelet, Flower, StaminateFlower, PistillateFlower, RayFlower, DiskFlower, Cone, PollenCone, SeedCone, BisexualFlower, Fruit, Seed, Sporangia, SporangiumCase, MaleSporangiumCase, FemaleSporangiumCase, Spores, Chromosomes, Ecology, RarityStatus, Elevation, BioregionalDistribution, OutsideCA, SpeciesInGenus, GeneraInFamily, Etymology, Toxicity, Synonyms, Note, UnabridgedNote, FloweringTime, FloweringTimeCode, FruitingTime, ConingTime, Weediness, IsTerminalTaxon, RevisionNumber, DistCode, HasKey 
+$results = $db->query('SELECT ID, ScientificName, TaxonAuthor, FormattedDisplayName, CommonName, NativeStatus, TJM2Author, ScientificEditor, Habit, PlantBody, Stem, SterileStem, FertileStem, Leaf, Spines, Inflorescence, StaminateHead, RayOrPistillateFlower, PistillateHead, StaminateInflorescence, PistillateOrBisexualInflorescence, PistillateInflorescence, Spikelet, FertileSpikelet, SterileSpikelet, DistalSpikelet, CentralSpikelet, LateralSpikelet, StaminateSpikelet, PistillateSpikelet, Flower, StaminateFlower, PistillateFlower, RayFlower, DiskFlower, Cone, PollenCone, SeedCone, BisexualFlower, Fruit, Seed, Sporangia, SporangiumCase, MaleSporangiumCase, FemaleSporangiumCase, Spores, Chromosomes, RarityStatus, Ecology, Elevation, BioregionalDistribution, OutsideCA, SpeciesInGenus, GeneraInFamily, Etymology, Toxicity, Synonyms, UnabridgedSynonyms, Note, UnabridgedNote, FloweringTime, FloweringTimeCode, FruitingTime, ConingTime, Weediness, IsTerminalTaxon, RevisionNumber, DistCode, HasKey 
 						FROM eflora_taxa
 						WHERE TaxonID='.$TaxonID.''); //16711 is the TaxonID for Calochortus amabilis, for example
 
@@ -58,8 +58,11 @@ $MaleSporangiumCase = $row['MaleSporangiumCase'];
 $FemaleSporangiumCase = $row['FemaleSporangiumCase'];
 $Spores = $row['Spores'];
 $Chromosomes = $row['Chromosomes'];
-$Ecology = $row['Ecology'];
+//Rarity Status used to be below Ecology in sanity.pl and this file; however 90% of all records in Eflora_treatments had RarityStatus above ecology.
+//This file and others will be changed to match Eflora_treatments, which was the easiest change to make.  There are 2090+ records out of order otherwise.
+//JAA, Nov 2016
 $RarityStatus = $row['RarityStatus'];
+$Ecology = $row['Ecology'];
 $Elevation = $row['Elevation'];
 $BioregionalDistribution = $row['BioregionalDistribution'];
 $OutsideCA = $row['OutsideCA'];
@@ -68,6 +71,7 @@ $GeneraInFamily = $row['GeneraInFamily'];
 $Etymology = $row['Etymology'];
 $Toxicity = $row['Toxicity'];
 $Synonyms = $row['Synonyms'];
+$UnabridgedSynonyms = $row['UnabridgedSynonyms'];
 $Note = $row['Note'];
 $UnabridgedNote = $row['UnabridgedNote'];
 $FloweringTime = $row['FloweringTime'];
@@ -113,7 +117,7 @@ while ($row = $results->fetchArray()) {
 
 //query and assign family info
 //Note that only Family has "GeneraInFamily" and "ScientificEditor"
-$results = $db->query('SELECT t.TaxonID, t.FamilyID, f.TaxonID, f.ScientificName, f.TaxonAuthor, f.CommonName, f.TJM2Author, f.ScientificEditor, f.Habit, f.PlantBody, f.Stem, f.SterileStem, f.FertileStem, f.Leaf, f.Spines, f.Inflorescence, f.StaminateHead, f.RayOrPistillateFlower, f.PistillateHead, f.StaminateInflorescence, f.PistillateOrBisexualInflorescence, f.PistillateInflorescence, f.Spikelet, f.FertileSpikelet, f.SterileSpikelet, f.DistalSpikelet, f.CentralSpikelet, f.LateralSpikelet, f.StaminateSpikelet, f.PistillateSpikelet, f.Flower, f.StaminateFlower, f.PistillateFlower, f.RayFlower, f.DiskFlower, f.Cone, f.PollenCone, f.SeedCone, f.BisexualFlower, f.Fruit, f.Seed, f.Sporangia, f.SporangiumCase, f.MaleSporangiumCase, f.FemaleSporangiumCase, f.Spores, f.Chromosomes, f.GeneraInFamily, f.Etymology, f.Toxicity, f.Synonyms, f.Note, f.UnabridgedNote, f.RevisionNumber, f.HasKey
+$results = $db->query('SELECT t.TaxonID, t.FamilyID, f.TaxonID, f.ScientificName, f.TaxonAuthor, f.CommonName, f.TJM2Author, f.ScientificEditor, f.Habit, f.PlantBody, f.Stem, f.SterileStem, f.FertileStem, f.Leaf, f.Spines, f.Inflorescence, f.StaminateHead, f.RayOrPistillateFlower, f.PistillateHead, f.StaminateInflorescence, f.PistillateOrBisexualInflorescence, f.PistillateInflorescence, f.Spikelet, f.FertileSpikelet, f.SterileSpikelet, f.DistalSpikelet, f.CentralSpikelet, f.LateralSpikelet, f.StaminateSpikelet, f.PistillateSpikelet, f.Flower, f.StaminateFlower, f.PistillateFlower, f.RayFlower, f.DiskFlower, f.Cone, f.PollenCone, f.SeedCone, f.BisexualFlower, f.Fruit, f.Seed, f.Sporangia, f.SporangiumCase, f.MaleSporangiumCase, f.FemaleSporangiumCase, f.Spores, f.Chromosomes, f.GeneraInFamily, f.Etymology, f.Toxicity, f.Synonyms, f.UnabridgedSynonyms, f.Note, f.UnabridgedNote, f.RevisionNumber, f.HasKey
 						from eflora_taxonomy t, eflora_taxa f
 						WHERE t.TaxonID='.$TaxonID.' AND t.FamilyID=f.TaxonID');
 
@@ -175,7 +179,7 @@ while ($row = $results->fetchArray()) {
 
 //query and assign genus info
 //Note that only Genus has "SpeciesInGenus"
-$results = $db->query('SELECT t.TaxonID, t.GenusID, g.TaxonID, g.ScientificName, g.TaxonAuthor, g.CommonName, g.TJM2Author, g.Habit, g.PlantBody, g.Stem, g.SterileStem, g.FertileStem, g.Leaf, g.Spines, g.Inflorescence, g.StaminateHead, g.RayOrPistillateFlower, g.PistillateHead, g.StaminateInflorescence, g.PistillateOrBisexualInflorescence, g.PistillateInflorescence, g.Spikelet, g.FertileSpikelet, g.SterileSpikelet, g.DistalSpikelet, g.CentralSpikelet, g.LateralSpikelet, g.StaminateSpikelet, g.PistillateSpikelet, g.Flower, g.StaminateFlower, g.PistillateFlower, g.RayFlower, g.DiskFlower, g.Cone, g.PollenCone, g.SeedCone, g.BisexualFlower, g.Fruit, g.Seed, g.Sporangia, g.SporangiumCase, g.MaleSporangiumCase, g.FemaleSporangiumCase, g.Spores, g.Chromosomes, g.SpeciesInGenus, g.Etymology, g.Toxicity, g.Synonyms, g.Note, g.UnabridgedNote, g.RevisionNumber, g.HasKey
+$results = $db->query('SELECT t.TaxonID, t.GenusID, g.TaxonID, g.ScientificName, g.TaxonAuthor, g.CommonName, g.TJM2Author, g.Habit, g.PlantBody, g.Stem, g.SterileStem, g.FertileStem, g.Leaf, g.Spines, g.Inflorescence, g.StaminateHead, g.RayOrPistillateFlower, g.PistillateHead, g.StaminateInflorescence, g.PistillateOrBisexualInflorescence, g.PistillateInflorescence, g.Spikelet, g.FertileSpikelet, g.SterileSpikelet, g.DistalSpikelet, g.CentralSpikelet, g.LateralSpikelet, g.StaminateSpikelet, g.PistillateSpikelet, g.Flower, g.StaminateFlower, g.PistillateFlower, g.RayFlower, g.DiskFlower, g.Cone, g.PollenCone, g.SeedCone, g.BisexualFlower, g.Fruit, g.Seed, g.Sporangia, g.SporangiumCase, g.MaleSporangiumCase, g.FemaleSporangiumCase, g.Spores, g.Chromosomes, g.SpeciesInGenus, g.Etymology, g.Toxicity, g.Synonyms, g.UnabridgedSynonyms, g.Note, g.UnabridgedNote, g.RevisionNumber, g.HasKey
 						from eflora_taxonomy t, eflora_taxa g
 						WHERE t.TaxonID='.$TaxonID.' AND t.GenusID=g.TaxonID');
 
@@ -235,7 +239,7 @@ while ($row = $results->fetchArray()) {
 
 //query and assign species info
 //Species has neither GeneraInFamily nor SpeciesInGenus
-$results = $db->query('SELECT t.TaxonID, t.SpeciesID, s.TaxonID, s.ScientificName, s.TaxonAuthor, s.CommonName, s.TJM2Author, s.Habit, s.PlantBody, s.Stem, s.SterileStem, s.FertileStem, s.Leaf, s.Spines, s.Inflorescence, s.StaminateHead, s.RayOrPistillateFlower, s.PistillateHead, s.StaminateInflorescence, s.PistillateOrBisexualInflorescence, s.PistillateInflorescence, s.Spikelet, s.FertileSpikelet, s.SterileSpikelet, s.DistalSpikelet, s.CentralSpikelet, s.LateralSpikelet, s.StaminateSpikelet, s.PistillateSpikelet, s.Flower, s.StaminateFlower, s.PistillateFlower, s.RayFlower, s.DiskFlower, s.Cone, s.PollenCone, s.SeedCone, s.BisexualFlower, s.Fruit, s.Seed, s.Sporangia, s.SporangiumCase, s.MaleSporangiumCase, s.FemaleSporangiumCase, s.Spores, s.Chromosomes, s.Etymology, s.Toxicity, s.Synonyms, s.Note, s.UnabridgedNote, s.RevisionNumber
+$results = $db->query('SELECT t.TaxonID, t.SpeciesID, s.TaxonID, s.ScientificName, s.TaxonAuthor, s.CommonName, s.TJM2Author, s.Habit, s.PlantBody, s.Stem, s.SterileStem, s.FertileStem, s.Leaf, s.Spines, s.Inflorescence, s.StaminateHead, s.RayOrPistillateFlower, s.PistillateHead, s.StaminateInflorescence, s.PistillateOrBisexualInflorescence, s.PistillateInflorescence, s.Spikelet, s.FertileSpikelet, s.SterileSpikelet, s.DistalSpikelet, s.CentralSpikelet, s.LateralSpikelet, s.StaminateSpikelet, s.PistillateSpikelet, s.Flower, s.StaminateFlower, s.PistillateFlower, s.RayFlower, s.DiskFlower, s.Cone, s.PollenCone, s.SeedCone, s.BisexualFlower, s.Fruit, s.Seed, s.Sporangia, s.SporangiumCase, s.MaleSporangiumCase, s.FemaleSporangiumCase, s.Spores, s.Chromosomes, s.Etymology, s.Toxicity, s.Synonyms, s.UnabridgedSynonyms, s.Note, s.UnabridgedNote, s.RevisionNumber
 						from eflora_taxonomy t, eflora_taxa s
 						WHERE t.TaxonID='.$TaxonID.' AND t.SpeciesID=s.TaxonID');
 
@@ -764,6 +768,7 @@ if ($Note){ echo "<b>Note:</b> {$Note} ";}
 echo "<br>";
 
 if ($Synonyms){ echo "<b>Synonyms:</b> {$Synonyms}<br>";}
+if ($UnabridgedSynonyms){ echo "<b>Unabridged Synonyms:</b> {$UnabridgedSynonyms}<br>";}
 if ($UnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$UnabridgedNote}</font><br>";}
 if ($JMAuthor){ echo "<b>eFlora Treatment Author:</b> {$JMAuthor}<br>";}
 if ($ScientificEditor){ echo "<b>Scientific Editor:</b> {$ScientificEditor}<br>";}
@@ -890,7 +895,12 @@ $result = mysqli_query($mysqli, "SELECT taxon, kwid, copyright FROM img
 WHERE genre = 'Plant' 
 AND photographer IN ('Aaron E. Sims', 'Aaron Schusteff', 'Barry Breckling', 'Barry Rice', 'Carol W. Witham', 'Christopher Christie', 'Dana York', 'Dr. David A. Charlet', 'David Graber', 'Dean Kelch', 'Dieter Wilken', 'Gary A. Monroe', 'George W. Hartwell', 'Gerald and Buff Corsi', 'Harlan Lewis', 'Janell Hillman', 'James M. Andre', 'James Morefield', 'John Game', 'Julie Kierstead Nelson', 'Keir Morse', 'Larry Blakely', 'Lech Naumovich', 'Len Lindstrand III', 'Michael Charters', 'Michael G. Simpson', 'Neal Kramer', 'Bob Patterson', 'Robert E. Preston, Ph.D.', 'Roxanne Bittman', 'Ryan O\'Dell', 'Steve Matson', 'Steve Schoenig', 'Thomas M. Elder, M.D.', 'Thomas Stoughton', 'Toni Corelli', 'Tony Morosco', 'Dylan Neubauer')
 AND taxon LIKE '$cp_ssp_name%' 
+AND taxon NOT LIKE 'Echinopsis%' 
 ORDER BY RAND() LIMIT 6;");
+
+//CalPhotos has specimens of the south American Cactus genus Echinopsis which the code above cannot distinguish from Echinops (asteraceae) at the genus level.
+//pcitures of the cactus are displaying on the genus page for Echinops
+//NOT LIKE line added to eliminate specimens of this genus from genus pages in the eFlora
 
  if (!$result) {
     die("<p>Error in executing the CalPhotos query : " .
