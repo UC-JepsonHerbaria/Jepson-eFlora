@@ -8,6 +8,10 @@
 #We allow noted names to appear multiple times in the search results, under different names
 #But if a name is under both SYNONYMS and NOTE in the same entry, it is recorded as a synonym
 
+use BerkeleyDB;
+use lib "/JEPS-master/Jepson-eFlora/Modules/";
+use CCH;
+
 #Load master taxon list for taxon ID matching
 open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 while(<IN>){
@@ -40,7 +44,7 @@ open(ERR, ">outputs/duplicated_synonyms_report.txt") || die;
 
 
 ###Loop through to load synonyms into the array, and print them to output
-open(IN, "/Users/davidbaxter/DATA/eFlora/eflora_treatments.txt") || die;
+open(IN, "eflora_treatments.txt") || die;
 while(<IN>){
      next if m/^#/; #skip lines that are commented out
      next if m/^Admin/;	#skip lines that start with Admin
@@ -66,27 +70,17 @@ $taxon_id=$TID{$name_for_matching};
 next unless $taxon_id;
 
 
-#Concatenate synonyms and unabridged synonyms
-if ($syn_string && $unabridged_syn_string){
-	$full_syn_string = "$syn_string; $unabridged_syn_string";
-}
-elsif ($syn_string){
-	$full_syn_string = $syn_string;
-}
-elsif ($unabridged_syn_string){
-	$full_syn_string = $unabridged_syn_string;
-}
-else{
-	$full_syn_string = "";
-}
+
 
 #This is to remove some HTML entities which otherwise mess with the semicolon delimiting
 #Those in author names don't matter since they are being stripped for searching
-$full_syn_string=~s/ &times; / X /;
-$full_syn_string=~s/&eacute;/e/;
+$syn_string=~s/ &times; / X /;
+$syn_string=~s/&eacute;/e/;
+$unabridged_syn_string=~s/ &times; / X /;
+$unabridged_syn_string=~s/&eacute;/e/;
 
 #Process synonyms as an array
-@synonyms=split(/; /,$full_syn_string,100);
+@synonyms=split(/; /,$syn_string,100);
 
 foreach $syn (@synonyms){
 	$stripped = &strip_name($syn);	
@@ -112,40 +106,46 @@ foreach $syn (@synonyms){
 #The NativeStatus column is used to differentiate synonyms from noted names
 print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, NativeStatus, AcceptedNameTID)
-VALUES('$stripped', 'Synonym', $taxon_id)
+VALUES('$stripped', 'Synonym (TJM2)', $taxon_id)
 ;
 
 EOP
 }
 #don't print outside this loop, otherwise you get one line per accepted taxon and not one per synonym
+
+#Process synonyms as an array
+@unabridgedsynonyms=split(/; /,$unabridged_syn_string,100);
+
+foreach $unabsyn (@unabridgedsynonyms){
+	$unabstripped = &strip_name($unabsyn);	
+	
+	#remove exceptional cases
+	#Eriogonum luteolum (Coville) M.E. Jones is ilegitimate, not to be confused with the legitimate Eriogonum luteolum Greene. Skip the illegitimate synonym
+	if ($unabstripped =~ /^Eriogonum luteolum$/){
+		print ERR "exceptional case skipped for synonymy: $unabstripped\n";
+		next;
+	}
+	
+	if($seen_unab{"$unabstripped\t$taxon_id"}++){
+		++$skipped{one};
+		print ERR "synonym repeated within the same entry: $unabstripped\n";
+		next;
+	}
+	elsif ($unabstripped =~ /^$accepted_name_list$/){
+		print ERR "synonym is an accepted name: $unabstripped\n";
+	}
+
+#Load the synonym name and the accepted name TID into ScientificName and AcceptedNameTID in the eflora_taxa table
+#By virtue of having an AcceptedTaxonTID, the webapps know they are not accepted names
+#The NativeStatus column is used to differentiate synonyms from noted names
+print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, NativeStatus, AcceptedNameTID)
+VALUES('$unabstripped', 'Synonym', $taxon_id)
+;
+
+EOP
 }
 
-###Then, loop through to load noted names into the array, and print them to output
-open(IN, "/Users/davidbaxter/DATA/eFlora/eflora_treatments.txt") || die;
-while(<IN>){
-     next if m/^#/; #skip lines that are commented out
-     next if m/^Admin/;	#skip lines that start with Admin
-
-$taxon_name= &get_taxon_name($_);
-$syn_string=&get_synonyms($_);
-$unabridged_syn_string=&get_unabridged_synonyms($_);
-
-#Process accepted names to match with TIDs
-$taxon_name=ucfirst(lc($taxon_name));
-$taxon_name=&strip_name($taxon_name);
-
-#Some families have alternate names in parens, e.g. "Asteraceae (Compositae)"
-#first, make sure the alternate name is capitalized correctly
-#then before matching to taxon ids, create a name_for_matching that removes the alternate name
-if ($taxon_name =~ /([A-Za-z]+) \((.*)\)/){ #can't have the parens as part of $2, otherwise the ucfirst function will target the open paren
-	$taxon_name = $1 . " " . "(" . ucfirst($2) . ")"; 
-} 
-$name_for_matching = $taxon_name;
-foreach ($name_for_matching){
-	s/ \(.*\)//;
-}
-$taxon_id=$TID{$name_for_matching};
-next unless $taxon_id;
 
 
 if(m/NOTE:.*_/){
@@ -170,6 +170,7 @@ VALUES('$noted_name', 'Noted Name', $taxon_id)
 EOP
 					}
 				}
+
 				while(s/_([A-Z][a-z-]+ [a-z-]+)_//){ #then grab the binomial names from the notes fields.
 					$noted_name = "$1";
 					if ($noted_name =~ /^$accepted_name_list$/){
@@ -190,29 +191,22 @@ EOP
 					}
 				}
 			}
-
+#don't print outside this loop, otherwise you get one line per accepted taxon and not one per synonym
 }
 
 
 ############################
-sub strip_name {
-	local($_) = @_;
-	s/^([A-Z][-a-z]+) (X?[-a-z]+).*(subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
-	s/^([A-Z][a-z]+) ([x ]*[-a-z]+).*/$1 $2/;
-	s/ssp\./subsp./;
-	return ($_);
-}
 
 sub get_taxon_name {
     my $par = shift; #each paragraph is separated by a blank line
     @lines=split(/\n/,$par); #the array of lines within a paragraph are values separated by a new line
-    if( $lines[0]=~/^NATIVE|NATURALIZED/){ #if the first line starts with...
+    if( $lines[0]=~/^(NATIVE|NATURALIZED)/){ #if the first line starts with...
         return $lines[1]; #the name is the contents of the second line
     }
     if( $lines[0]=~/^WAIF/){ #if the first line starts with...
         return $lines[1]; #the name is what's on the second line
     }
-    elsif($lines[1]=~/^(WAIF|AGRICULTURAL WEED|URBAN WEED|EXTIRPATED ALIEN|HISTORICAL WAIF|JFP-4|SPONTANEOUS HYBRID|JFP-8, does not occur in CA|GARDEN AND URBAN WEED|EXTIRPATED WAIF|AGRICULTURAL, GARDEN, OR URBAN WEED|URBAN WEED EXPECTED IN WILDLANDS|JFP-8, accepted name for taxon not occurring in California|JFP-4, URBAN WEED|GARDEN WEED|EXTIRPATED WEED|CULTIVATED PLANT|EXTIRPATED)/){
+    elsif($lines[1]=~/^(POSSIBLY IN CA|WAIF|EXTIRPATED ALIEN|EXTIRPATED WAIF|EXTIRPATED WEED|EXTIRPATED|HISTORICAL WAIF|SPONTANEOUS HYBRID|AGRICULTURAL WEED|GARDEN WEED|URBAN WEED|GARDEN AND URBAN WEED|AGRICULTURAL, GARDEN, OR URBAN WEED|URBAN WEED EXPECTED IN WILDLANDS)\n/){
         return $lines[2]; #elsif the second line starts with any of the above values, the name is what's on the third line
     }
     elsif($lines[0]=~/UNABRIDGED/){ #elsif the first line starts with "UNABRIDGED"
@@ -225,6 +219,8 @@ sub get_taxon_name {
         return "NULL"; #don't return anything for that paragraph
     }
 }
+
+
 
 sub get_synonyms {
 		my $par = shift;

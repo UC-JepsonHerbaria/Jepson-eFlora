@@ -17,7 +17,7 @@ while(<IN>){
 	$TID{$TID_Name} = "$TaxonID";
 	}
 
-open(IN, "$data_path/name_illus_pairs.txt") || die;
+open(IN, "name_illus_pairs.txt") || die;
 while(<IN>){
 	$image_file_name=$image_taxon_name="";
 	chomp;
