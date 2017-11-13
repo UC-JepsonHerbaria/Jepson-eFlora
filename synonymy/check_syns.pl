@@ -4,24 +4,23 @@
 
 
 use BerkeleyDB;
-$data_path	="/usr/local/web/ucjeps_data/";
-$CDL_nomsyn_file	="${data_path}CDL_taxsyn";
-	tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDONLY)|| die "$!";
-foreach(keys(%nomsyns)){
-print "$_ $nomsyns{$_}\n";
-}
+$data_path	="/input/";
+$CDL_taxsyn_file	="${data_path}CDL_taxsyn";
+	tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
+
+		foreach(keys(%taxsyns)){
+			print "$_ $taxsyns{$_}\n";
+		}
 die;
 if($lookfor){
-	#$lookfor=~s/ [xX] / $times /;
-	#$lookfor=~s/ $times([a-z])/ $times $1/;
-	if($nomsyns{lc($lookfor)}){
-		print "$nomsyns{lc($lookfor)}  \n";
-				@nomsyns=split(/\t/,$nomsyns{lc($lookfor)});
-				foreach(@nomsyns){
-					print "found $_ :  $nomsyns{$_}\n";
+	if($taxsyns{lc($lookfor)}){
+		print "$taxsyns{lc($lookfor)}  \n";
+				@taxsyns=split(/\t/,$taxsyns{lc($lookfor)});
+				foreach(@taxsyns){
+					print "found $_ :  $taxsyns{$_}\n";
 				}
-		}
+	}
 	else{
 print " not found $lookfor\n";
 	}
-	}
+}
