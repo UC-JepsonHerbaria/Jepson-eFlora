@@ -59,5 +59,24 @@ I used this method
 2. because it is quite fast (2 or 3  minutes compared with hours when I tried a real GIS solution)
 3. because it can be run without additional software (but that additional software would no doubt speed up a real GIS solution)
 
+David Baxter's December 2015 Notes on his modification of Dick Moe's original scripts:
+
+Heath bars:
+The script that generates the heath bar script (make_heath_bars.pl) needs to be automated.
+
+Right now:
+→ the live hb2.pl script lives on annie (i.e. ucjeps.berkeley.edu cgi-bin)
+→ The files used to regenerate the script include CDL_nomsyn and CDL_taxsyn. 
+These files are not generated on my computer, afaik. They are on herbaria4 under /Users/richardmoe/4_CDL_BUFFER/buffer/stats/, however nomsyn was last updated Mar 2014 and taxsyn on Dec 2011, so I don't know how they are updated.
+
+However, the syn files are also in ucjeps_data. nomsyn was updated Apr 27 2015 (a month ago, owner = rlmoe) but taxsyn has the same 2011 date, so something is updating the file on there.
+
+So, I need to figure out what is updating those files, and if there's any way to update the taxsyns. 
+From there, I need to decide where hb2 will be regenerated (either on my machine or on the server), make sure the required files are also in that place, then automate. 
+It uses those files but also uses the smasch_taxon_ids.txt file, which normally only lives on my machine
+
+My current (i.e. what I did in Dec 2013) junky solution was to just copy all the required files into one directory and run it there. I currently have this in davidbaxter/DATA/Requests/heath_bars/
+
+Ultimately: would it make sense to have the script pull directly from a CCH database instead of pre-rendering?
 
 
