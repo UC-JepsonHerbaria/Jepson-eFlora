@@ -1,3 +1,11 @@
+#make_heath_bar.pl was integrated into the install-cch.sh script by David Baxter.
+#the commands are as follows:
+#perl make_heath_bar.pl
+#mv hb2.pl /usr/local/web/ucjeps_cgi/hb2.pl
+#chmod a+x /usr/local/web/ucjeps_cgi/hb2.pl
+#echo "heath bars script refreshed and moved to ucjeps_cgi"
+
+
 open(IN, "_hb2.pl") || die;
 open(OUT, ">hb2.pl") || die;
 	while(<IN>){
@@ -11,26 +19,48 @@ use BerkeleyDB;
 $data_path	="/usr/local/web/ucjeps_data/ucjeps_data";
 
 #data files
-$CDL_name_list_file	="${data_path}/CDL_name_list.txt";
 $CDL_DBM_file	="${data_path}/CDL_DBM";
 $CDL_nomsyn_file	="${data_path}/CDL_nomsyn";
-$CDL_taxsyn_file	="${data_path}/CDL_taxsyn";  #this has not been modified since 2011, check to see how created
+#$CDL_taxsyn_file	="${data_path}/CDL_taxsyn";  #this has not been modified since 2011, check to see how created
+#this file had errors in it that could not be resolved.  This file has been a source of error in the heath bars for a number of years
+#there is no record of its creation and David Baxter could not recreate it during his tenure.  
+#The tax syn file and code below is now replaced with the same synonymy file that is used to create the KML's, CDL_nomsyn and 
+#tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
+#	while(($key,$value)=each(%taxsyns)){
+#		@syns=split(/\t/,$value);
+#			foreach $syn (@syns){
+#				$syn=~s/f\. //;
+#				$taxsyn{$syn}=$key;
+#				print "$syn becomes $key\n";
+#			}
+#	}
 
 tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDONLY)|| die "$!";
 	while(($key,$value)=each(%nomsyns)){
 		print "$key $value\n" if $key=~/carnosa/;
-	}
-	#die;
 
-tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
-	while(($key,$value)=each(%taxsyns)){
 		@syns=split(/\t/,$value);
 			foreach $syn (@syns){
-				$syn=~s/f\. //;
-				$taxsyn{$syn}=$key;
+				$NOMSYN{$syn}=$key;
 				print "$syn becomes $key\n";
 			}
-	}
+}
+	#die;
+
+
+open(IN, "eflora_KML_Moe/data_inputs/tax_syns_to_check") || die;
+while(<IN>){
+chomp;
+$_ = lc($_);
+$_ = s/ (nothosubsp\.|f\.|var\.|subsp\.) / /g;
+
+($syn, $accepted)=split(/\t/);
+	print "$syn $accepted\n" if $syn=~/littoralis/;
+			$accepted=$TAX_SYNS{$syn};
+}
+
+close (IN);
+
 
 tie %CDL, "BerkeleyDB::Hash", -Filename=>"$CDL_DBM_file", -Flags=>DB_RDONLY or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
 
@@ -41,11 +71,14 @@ open(IN, "${data_path}/smasch_taxon_ids.txt") || die "Couldn't open the TID file
 		$TNOAN{$code}=$name;
 	}
 
-#get list of relevent names
+#get list of relevent names, this is the old format that predates the eflora php scripts
 #<a href="/cgi-bin/get_IJM.pl?tid=29483">        Jacaranda mimosifolia</a><br>
 #<a href="/cgi-bin/get_IJM.pl?tid=4770"> Jacobaea vulgaris*</a><br>
 
 #list of accession IDs associated with mexican records, not updated since 2012
+#this file is now out of date and no longer removes RSA and CAS records due to the accession number change
+#this needs re-created, but in a new format, mainly a list of the specimens that have no coordinates and are from Mexico but the municipality is 'unknown'
+#these are the new problems taxa.  The rest of the Mexico specimens are removed based on the coordinates and county fields.
 open(IN,"eflora_KML_Moe/data_inputs/all_mex.txt") || die;
 	while(<IN>){
 		chomp;
@@ -56,7 +89,7 @@ open(IN,"eflora_KML_Moe/data_inputs/all_mex.txt") || die;
 while(($key,$value)=each(%CDL)){
 	@fields=split(/\t/,$value);
 	($taxon=$fields[0])=~s/.* //;
-	($taxon=$TNOAN{$taxon})=~s/(subsp\.|var\.|f\.) //;
+	($taxon=$TNOAN{$taxon})=~s/(nothosubsp\.|subsp\.|var\.|f\.) //;
 	#three criteria to exclude Baja California records based on accession_id, county and/or latitude
 	next if $exclude_mexican_records{$key};
 	
@@ -69,12 +102,17 @@ while(($key,$value)=each(%CDL)){
 			#warn "$taxon skipped, latitude south of California\n";
 			next;
 		}
+		
 	$taxon=lc($taxon);
 
-		if($taxsyn{$taxon}){
-			$taxon=$taxsyn{$taxon};
+		if($NOMSYN{$taxon}){
+			$taxon = $NOMSYN{$taxon};
 		}
-		
+		elsif ($TAX_SYNS{$taxon})
+			$taxon = $TAX_SYNS{$taxon};
+		}
+	
+	$fields[3] = =~s/ +//;
 	$collector=$fields[1];
 	$collector=~s/,? (and|&).*//;
 	$collector=~s/,.*//;
