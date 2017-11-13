@@ -92,4 +92,3 @@ $left += 24;
 print $im->gif;
 	}
 __END__
-
