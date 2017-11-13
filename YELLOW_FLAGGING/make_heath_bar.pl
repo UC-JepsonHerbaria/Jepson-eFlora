@@ -13,9 +13,9 @@ $CDL_DBM_file	="${data_path}/CDL_DBM";
 $CDL_nomsyn_file	="${data_path}/CDL_nomsyn";
 $CDL_taxsyn_file	="${data_path}/CDL_taxsyn";  #this has not been modified since 2011, check to see how created
 tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDONLY)|| die "$!";
-#while(($key,$value)=each(%nomsyns)){
-#print "$key $value\n" if $key=~/carnosa/;
-#}
+while(($key,$value)=each(%nomsyns)){
+print "$key $value\n" if $key=~/carnosa/;
+}
 #die;
 tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
 while(($key,$value)=each(%taxsyns)){
@@ -40,7 +40,7 @@ $TNOAN{$code}=$name;
 #<a href="/cgi-bin/get_IJM.pl?tid=4770"> Jacobaea vulgaris*</a><br>
 
 #list of accession IDs associated with mexican records
-open(IN,"data_inputs/all_mex.txt") || die;
+open(IN,"eflora_KML_Moe/data_inputs/all_mex.txt") || die;
 while(<IN>){
 chomp;
 $exclude_mexican_records{$_}++;
@@ -112,7 +112,7 @@ sub inverse_julian_day {
         my($jdate_tmp);
         my($m,$d,$y);
 
-        #carp("warning: julian date $jd pre-dates British use of Gregorian calendar\n") if ($jd < $brit_jd);
+        carp("warning: julian date $jd pre-dates British use of Gregorian calendar\n") if ($jd < $brit_jd);
 
         $jdate_tmp = $jd - 1721119;
         $y = (4 * $jdate_tmp - 1)/146097;
