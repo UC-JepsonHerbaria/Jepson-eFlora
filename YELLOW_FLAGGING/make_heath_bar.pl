@@ -23,9 +23,7 @@ $taxsyn{$syn}=$key;
 }
 }
 
-tie %CDL, "BerkeleyDB::Hash", -Filename=>"$CDL_DBM_file", -Flags=>DB_RDONLY or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
-
-open(IN,"/Users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
+open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die "Couldn't open the TID file\n";;
 while(<IN>){
 chomp;
 ($code,$name,@residue)=split(/\t/);
@@ -129,7 +127,7 @@ sub inverse_julian_day {
         my($jdate_tmp);
         my($m,$d,$y);
 
-        carp("warning: julian date $jd pre-dates British use of Gregorian calendar\n") if ($jd < $brit_jd);
+        #carp("warning: julian date $jd pre-dates British use of Gregorian calendar\n") if ($jd < $brit_jd);
 
         $jdate_tmp = $jd - 1721119;
         $y = (4 * $jdate_tmp - 1)/146097;
