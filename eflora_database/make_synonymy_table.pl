@@ -83,6 +83,25 @@ $unabridged_syn_string=~s/&eacute;/e/;
 @synonyms=split(/; /,$syn_string,100);
 
 foreach $syn (@synonyms){
+
+	#remove cases where a name is not acually a synonym in the synonym field, it is a misapplied name or an "in part" name, we only want full synonyms here
+	#these cases should be noted names instead.
+	#this has to be done before stripping to preserve the phrase.
+
+	if ($stripped =~ /( in part| misappl)/){
+		print ERR "synonym is an misapplied or 'in part' name: $stripped\n";
+		$stripped = &strip_name($syn); #strip the name
+
+	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, NativeStatus, AcceptedNameTID)
+VALUES('$stripped', 'Noted Name', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+	++$skipped{one};
+	}
+#process the rest as per normal
 	$stripped = &strip_name($syn);	
 	
 	#remove exceptional cases
@@ -91,6 +110,9 @@ foreach $syn (@synonyms){
 		print ERR "exceptional case skipped for synonymy: $stripped\n";
 		next;
 	}
+	
+
+	
 	
 	if($seen{"$stripped\t$taxon_id"}++){
 		++$skipped{one};
@@ -117,6 +139,22 @@ EOP
 @unabridgedsynonyms=split(/; /,$unabridged_syn_string,100);
 
 foreach $unabsyn (@unabridgedsynonyms){
+
+	if ($stripped =~ /( in part| misappl)/){
+		print ERR "synonym is an misapplied or 'in part' name: $stripped\n";
+		$stripped = &strip_name($syn); #strip the name
+
+	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, NativeStatus, AcceptedNameTID)
+VALUES('$stripped', 'Noted Name', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+	++$skipped{one};
+	}
+#process the rest as per normal
+
 	$unabstripped = &strip_name($unabsyn);	
 	
 	#remove exceptional cases
@@ -145,7 +183,7 @@ VALUES('$unabstripped', 'Synonym', $taxon_id)
 
 EOP
 }
-
+#don't print outside this loop, otherwise you get one line per accepted taxon and not one per synonym
 
 
 if(m/NOTE:.*_/){
@@ -168,7 +206,7 @@ VALUES('$noted_name', 'Noted Name', $taxon_id)
 ;
 
 EOP
-					}
+					}#don't print outside this loop, otherwise you get one line per accepted taxon and not one per synonym
 				}
 
 				while(s/_([A-Z][a-z-]+ [a-z-]+)_//){ #then grab the binomial names from the notes fields.
