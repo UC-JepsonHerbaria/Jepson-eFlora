@@ -1,11 +1,13 @@
 #content
 /eflora_database/eflora_treatments.txt
 /eflora_database/eflora.in
-
+/YELLOW_FLAGGING/yellow_flag_system.txt
 
 #generated files
 output/
 /eflora_database/output/
+/synonymy/output/
+/synonymy/input/
 
 #from Mac OS X
 .DS_Store
