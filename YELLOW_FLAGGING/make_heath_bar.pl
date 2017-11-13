@@ -32,6 +32,7 @@ $taxsyn{$syn}=$key;
 tie %CDL, "BerkeleyDB::Hash", -Filename=>"$CDL_DBM_file", -Flags=>DB_RDONLY or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
 
 #open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die "Couldn't open the TID file\n";;
+#open(IN,"/Users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
 #while(<IN>){
 #chomp;
 #($code,$name,@residue)=split(/\t/);
