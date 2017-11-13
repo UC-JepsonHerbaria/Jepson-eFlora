@@ -44,6 +44,7 @@ EOP
 }
 
 	$lookfor=lc($query->param('name'));
+	$lookfor=~s/ . / x /;
 		while(<DATA>){
 chomp;
 			if(m/^$lookfor\t/){
@@ -91,3 +92,4 @@ $left += 24;
 print $im->gif;
 	}
 __END__
+
