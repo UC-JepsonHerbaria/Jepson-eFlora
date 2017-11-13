@@ -4,7 +4,7 @@
 
 
 use BerkeleyDB;
-$data_path	="/input/";
+$data_path	="input/";
 $CDL_taxsyn_file	="${data_path}CDL_taxsyn";
 	tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
 
