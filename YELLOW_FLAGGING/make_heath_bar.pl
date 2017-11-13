@@ -1,4 +1,4 @@
-open(IN, "/Library/Webserver/CGI-Executables/HB2.pl") || die;
+open(IN, "/Library/Webserver/CGI-Executables/_HB2.pl") || die;
 open(OUT, ">HB2.pl") || die;
 while(<IN>){
 print OUT;
@@ -6,13 +6,19 @@ last if m/^__END__/;
 }
 close(IN);
 use BerkeleyDB;
-$data_path	="/Users/rlmoe/CDL_buffer/buffer/";
+$data_path	="/Users/richardmoe/4_CDL_BUFFER/buffer/";
 #data files
-$CDL_name_list_file	="${data_path}CDL_name_list.txt";
+#$CDL_name_list_file	="${data_path}CDL_name_list.txt";
 $CDL_DBM_file	="${data_path}CDL_DBM";
-$CDL_nomsyn_file	="/Users/rlmoe/CDL_buffer/buffer/stats/CDL_nomsyn";
-$CDL_taxsyn_file	="/Users/rlmoe/CDL_buffer/buffer/stats/CDL_taxsyn";
+$CDL_nomsyn_file	="/Users/richardmoe/4_CDL_BUFFER/buffer/stats/CDL_nomsyn";
+$CDL_taxsyn_file	="/Users/richardmoe/4_CDL_BUFFER/buffer/stats/CDL_taxsyn";
+tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/Users/richardmoe/4_CDL_BUFFER/buffer/CDL_TID_TO_NAME", -Flags=>DB_RDONLY)|| die "$!";
+
 tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDONLY)|| die "$!";
+#while(($key,$value)=each(%nomsyns)){
+#print "$key $value\n" if $key=~/carnosa/;
+#}
+#die;
 tie(%taxsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_taxsyn_file", -Flags=>DB_RDONLY)|| die "$!";
 while(($key,$value)=each(%taxsyns)){
 @syns=split(/\t/,$value);
@@ -23,18 +29,20 @@ $taxsyn{$syn}=$key;
 }
 }
 
+tie %CDL, "BerkeleyDB::Hash", -Filename=>"$CDL_DBM_file", -Flags=>DB_RDONLY or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
 
-open(IN,"/Users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
-while(<IN>){
-chomp;
-($code,$name,@residue)=split(/\t/);
-$TNOAN{$code}=$name;
-}
+#open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die "Couldn't open the TID file\n";;
+#while(<IN>){
+#chomp;
+#($code,$name,@residue)=split(/\t/);
+#$TNOAN{$code}=$name;
+#}
 #get list of relevent names
 #<a href="/cgi-bin/get_IJM.pl?tid=29483">        Jacaranda mimosifolia</a><br>
 #<a href="/cgi-bin/get_IJM.pl?tid=4770"> Jacobaea vulgaris*</a><br>
 foreach $letter (A .. Z){
-	open(IN, "/Users/rlmoe/IJM/IJM_index_${letter}.html") || die;
+	#open(IN, "/Users/richardmoe/4_IJM/2013/2013_JUNE/IJM_index_${letter}.html") || die;
+	open(IN, "${data_path}/stats/IJM_index_${letter}.html") || die;
 	while(<IN>){
 		next unless /tid=\d/;
 		next if m/\*<\/a>/;
@@ -44,30 +52,32 @@ foreach $letter (A .. Z){
 		s/(subsp\.|var\.|f\.) //;
 s/&times;/X /;
 $name=lc($_);
+#print "$name\n";
 		$wanted_name{$name}=$name;
 		if($nomsyns{$name}){
 			#print "$name: $nomsyns{$name}\n";
 			@syns=split(/\t/,$nomsyns{$name});
 			foreach $syn (@syns){
 				$wanted_name{$syn}=$name;
-#print <<EOP;
-				#>$syn< -> >$wanted_name{$syn}<
-#EOP
+print nowhere <<EOP;
+				>$syn< -> >$wanted_name{$syn}<
+EOP
 			}
 		}
 	}
 }
 
 foreach $name(%wanted_name){
-#print ">$name< -> >$wanted_name{$name}<\n";
+print nowhere ">$name< -> >$wanted_name{$name}<\n";
 }
 #die;
 
 
 
-open(IN, "/Users/rlmoe/CDL_buffer/buffer/CDL_main.in") || die;
-while(<IN>){
-	@fields=split(/\t/);
+#open(IN, "/Users/richardmoe/4_CDL_BUFFER/buffer/CDL_main.in") || die;
+#while(<IN>){
+while(($key,$value)=each(%CDL)){
+	@fields=split(/\t/,$value);
 	($taxon=$fields[0])=~s/.* //;
 	($taxon=$TNOAN{$taxon})=~s/(subsp\.|var\.|f\.) //;
 $taxon=lc($taxon);
@@ -94,14 +104,21 @@ $collector=$fields[1];
 $collector=~s/,? (and|&).*//;
 $collector=~s/,.*//;
 $collector=~s/^.*[A-Z][a-z].*//;
+#SKIP DUPS
 next if $seen{"$collector$taxon$fields[5]$fields[3]"}++;
-	next unless $fields[5];
+#REQUIRE DATE
+	unless ($fields[5]){
+#print "$key no fields[5]\n";
+next;
+}
+#REQUIRE COLL NUM
 	if($fields[3]){
 		#next if $seen{$fields[3].$fields[5]}++;
 			if ($year > $this_year){
 				warn "$year $_\n";
 				next;
 			}
+#REQUIRE SINGLE DAY DATE
 			if($fields[5]==$fields[6]){
 				my ($year,$month,$day)=inverse_julian_day($fields[5]);
         			$month=("",Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec)[$month];
@@ -111,6 +128,9 @@ next if $seen{"$collector$taxon$fields[5]$fields[3]"}++;
 			}
 
 	}
+else{
+#print "$key no fields[3]\n";
+}
 }
 #die;
 foreach $taxon (sort(keys(%store))){
