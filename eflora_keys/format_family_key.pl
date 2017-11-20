@@ -8,7 +8,7 @@ open(ERR, ">fam_key_error.txt") || die;
 
 
 
-open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -200,18 +200,19 @@ $indent=$indent_level;
 				s!--&gt; (.*[A-Z][a-z-]+ [a-z-]+_ (nothosubsp\.|subsp\.|var\.) _[a-z-]+.*)!<a href="/cgi-bin/get_IJM.pl?tid=$goto_code">.....&nbsp;$1</a>!;
 #warn "1 $_\n";
 			}
+
  ##ONAGRACEAE (_Ludwigia_) or PLANTAGINACEAE (_Veronica_)
 
 elsif(m/--&gt; [A-Z]+CEAE \(_([A-Z][a-z]+)_\) or [A-Z]+CEAE \(_([A-Z][a-z]+)_\)/){
-				$goto_code_A= $TNOAN{"$1"} || "C4";
-				$goto_code_B= $TNOAN{"$2"} || "C4";
-				s!--&gt; (.*)([A-Z][a-z-]+\]?)(.*)([A-Z][a-z]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>$3<a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$4</a>$5!;
-			}
+                                $goto_code_A= $TNOAN{"$1"} || "C4";
+                                $goto_code_B= $TNOAN{"$2"} || "C4";
+                                s!--&gt; (.*)([A-Z][a-z-]+\]?)(.*)([A-Z][a-z]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>$3<a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$4</a>$5!;
+                        }
 elsif(m/--&gt; ([A-Z]+ACEAE) or ([A-Z]+ACEAE)/){
-				$goto_code_A= $TNOAN{"$1"} || "C4";
-				$goto_code_B= $TNOAN{"$2"} || "C4";
-				s!--&gt; ([A-Z]+ACEAE)( or )([A-Z]+ACEAE)(.*)!.....&nbsp; <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$1</a>$2<a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$3</a>$4!;
-			}
+                                $goto_code_A= $TNOAN{"$1"} || "C4";
+                                $goto_code_B= $TNOAN{"$2"} || "C4";
+                                s!--&gt; ([A-Z]+ACEAE)( or )([A-Z]+ACEAE)(.*)!.....&nbsp; <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$1</a>$2<a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$3</a>$4!;
+                        }
 
  ##EUPHORBIACEAE (_Croton setigerus_)
  ##BALSAMINACEAE ([_Impatiens capensis_])
@@ -226,20 +227,23 @@ elsif(m/--&gt; ([A-Z]+ACEAE) or ([A-Z]+ACEAE)/){
 				$goto_code_B= $TNOAN{"$2"} || "C4";
 				$goto_code_C= $TNOAN{"$3"} || "C4";
 				s!--&gt; (.*)([A-Z][a-z-]+), ([A-Z][a-z]+), (A-Z][a-z-]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>, <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$3</a>, <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_C">$4</a>$5!;
-#warn "3 $_\n";
 			}
 			elsif(m!--&gt; .*([A-Z][a-z-]+)_, ([A-Z][a-z]+ [a-z]+)!){
 				$goto_code_A= $TNOAN{"$1"} || "C4";
 				$goto_code_B= $TNOAN{"$2"} || "C4";
 				s!--&gt; (.*)([A-Z][a-z-]+_\]?), (_[A-Z][a-z]+ [a-z]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>, <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$3</a>$4!;
-#warn "4 $_\n";
 			}
  ##BRASSICACEAE (_Nasturtium_, _Rorippa_)
 			elsif(m!--&gt; .*([A-Z][a-z-]+)_, ([A-Z][a-z]+)!){
 				$goto_code_A= $TNOAN{"$1"} || "C4";
 				$goto_code_B= $TNOAN{"$2"} || "C4";
 				s!--&gt; (.*)([A-Z][a-z-]+_\]?), (_[A-Z][a-z]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>, <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$3</a>$4!;
-#warn "5 $_\n";
+			}
+ ##ONAGRACEAE (_Ludwigia_) or PLANTAGINACEAE (_Veronica_)
+			elsif(m!--&gt; .*([A-Z][a-z-]+)_ or .* _([A-Z][a-z]+)_!){
+				$goto_code_A= $TNOAN{"$1"} || "C4";
+				$goto_code_B= $TNOAN{"$2"} || "C4";
+				s!--&gt; (.*)([A-Z][a-z-]+\]?)(.*)([A-Z][a-z]+)(.*)!.....&nbsp;$1 <a href="/cgi-bin/get_IJM.pl?tid=$goto_code_A">$2</a>$3<a href="/cgi-bin/get_IJM.pl?tid=$goto_code_B">$4</a>$5!;
 			}
  #Group 10
 			elsif( m!--&gt; (Group) (\d+)!){
