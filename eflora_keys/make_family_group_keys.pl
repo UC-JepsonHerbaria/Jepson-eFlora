@@ -1,15 +1,20 @@
 #<a name="Group1"></a><blockquote><h3><a name=Group1>Group 1</a>: Herbs; bulblets dispersed in place of seeds or frs; available specimens without fls</h3></blockquote>
-open(IN, "family_keys.html") || die;
+open(IN, "all_family_key.html") || die;
 open(OUT, ">IJM_fam_key.html") || die;
 
 while(<IN>){
+s!<a href="#Group(\d+)">!<a href="\/IJM_key_Group${1}.html">!g;
 	if(m/<a name="Group(\d+)/){
 		$gp=$1;
 print OUT <<EOP;
+<br>
+Copyright &copy; 2013 Regents of the University of California
 </body>
 </html>
 EOP
 		open(OUT, ">IJM_key_Group${gp}.html") || die;
+#<P class="keyText" style="padding-left : 7 ;"><a href="#12'">2.</a><a name="12."> </a> Bulblets [small bulbs or corms that are dispersed in place of seeds or fruits] formed in place of flowers in inflorescence or inflorescence-like cluster <a href="#Group1">.....&nbsp;Group 1</a>
+
 		print OUT<<EOP;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><title>Jepson Herbarium: Jepson Flora Project: Jepson eFlora: Key to Group$gp</title> 
@@ -81,6 +86,9 @@ EOP
        <td>&nbsp;</td>
        <td>&nbsp;</td>
        <td width="100%"><span class="pageName"><a href="/IJM.html">Jepson eFlora</a></span><br /><br />
+<br>
+Citation for the whole project: Jepson Flora Project (eds.) [year] Jepson eFlora, http://ucjeps.berkeley.edu/IJM.html [accessed on month, day, year] 
+<br>
 <a href="/IJM_fam_key.html">Key to groups</a>
        <br />
 
