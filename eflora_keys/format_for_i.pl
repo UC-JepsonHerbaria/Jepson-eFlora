@@ -10,7 +10,7 @@ $unlinked= unlink 'IJM.hash', 'IJM_key.hash', 'name_to_code.hash';
 #die "failed to unlink hashes\n" unless $unlinked==2;
 
 #http://www.rareplants.cnps.org/detail/65.html
-open(IN, "/Users/rlmoe/IJM/CNPS_ID.txt") || die;
+open(IN, "/Users/richardmoe/4_IJM/CNPS_ID.txt") || die;
 while(<IN>){
 	chomp;
 	($id,$name)=split(/\t/);
@@ -27,13 +27,19 @@ tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_C
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
 tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
-open(IN,"/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt") || die;
+open(IN,"/Users/richardmoe/4_data/interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
 	chomp;
 	($name, $code)=split(/\n/);
 	$NAME_CODE{$name}=$code;
 }
+#These not in ICPN yet
+$NAME_CODE{"Sphaeropteris cooperi"}=98705;
+$NAME_CODE{"Navarretia paradoxiclara"}=98885;
+$NAME_CODE{"Navarretia paradoxinota"}=98884;
+$NAME_CODE{"Navarretia propinqua"}=34456;
+$NAME_CODE{"Primula clevelandii var. clevelandii"}=98883;
 
 
 #foreach(keys(%NAME_CODE)){
@@ -47,11 +53,11 @@ while(<IN>){
 #open(IN,"/users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
 
 
-open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
-	s/X /&times;/;
+	  s/&times; */X /;
 	($code,$name,@residue)=split(/\t/);
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
@@ -60,6 +66,7 @@ $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
 close(IN);
 #foreach(keys(%TNOAN)){
+#print "$_\n" if m/acutidens/;
 #print "$_\n";
 #}
 #die;
@@ -75,6 +82,7 @@ close(IN);
 "UNABRIDGED COMMON NAME",
 "TJM1 AUTHOR",
 "TJM2 AUTHOR",
+"TJMX AUTHOR",
 "HABIT+",
 "UNABRIDGED HABIT+",
 "PLANT BODY",
@@ -294,8 +302,10 @@ warn "reading from $file\n";
 	@all_pars=split(/\n\n+/,$all_lines);
 	$element=0;
 	foreach(@all_pars){
+#$name_anchor= "999999";
 next if m/^#/;
 warn "$_\n" if $seen_line{$_}++;
+next if m/^Admin/;
 next if m/^PROOF:/;
 next if m/^CAPTION:/;
 next if m/ENCELIA farinosa &times; E. frutescens/;
@@ -437,7 +447,7 @@ print qq{3 >$key_genus $key_species< code=$goto_code\n\n};
 				$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
 if($goto_code eq "C6"){
-print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
+#print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
 #die;
 }
 				print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
@@ -538,6 +548,9 @@ print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
 				s!--&gt; *(.*)! .....&nbsp;$1!;
 }
 			elsif( m!--&gt; .*see .*lead \d!){
+				s!--&gt; *(.*)! .....&nbsp;$1!;
+}
+			elsif( m!--&gt; .*see _[A-Z]!){
 				s!--&gt; *(.*)! .....&nbsp;$1!;
 }
 else{
@@ -685,7 +698,10 @@ $_=&il_to_html($_);
 		}
 		elsif(s/^UNABRIDGED *\n//){$exclude=1;};
 		$nativity=qq{<font size="1"><b>$nativity</b></font>} if $nativity;
-		s|TJM2 AUTHOR:(.*)|<h4>$1</h4>|i;
+if(m/TJMX AUTHOR/i){
+		s|(TJM2 AUTHOR:.*\n)||i;
+}
+		s|TJM[X2] AUTHOR:(.*)|<h4>$1</h4>|i;
 		s|(TJM1 AUTHOR:.*)||i;
 		s|(TJM\(1993\) AUTHOR:.*)||i;
 		s|^FAMILY: *||;
@@ -852,6 +868,7 @@ $accessions[0]=~s/&//;
 #SAGITTARIA montevidensis Cham. & Schltdl. subsp. calycina
 $key_species=$2;
 			$name_link=ucfirst(lc("$1 $2 $3 $4"));
+			$name_link=~s/ x / X /;
 #print "1 NL $name_link\n";
 $name_for_hc=$name_link;
 				($consort_link=$name_link)=~s/ /%20/g;
@@ -884,10 +901,11 @@ $name_link= "flabba0";
 ############GET hybrid name for links
 		elsif(m|^([A-Z][A-Z]+) +(&times;[a-z-]+) *\n|m){
 			$trinomial="$1 $2";
-$trinomial=~s/&times;/× /;
+$trinomial=~s/&times;/X /;
 #print "flabba $trinomial\n";
 			$epithet=$2;
 			$name_link=ucfirst(lc($trinomial));
+			$name_link=~s/ x / X /;
 #print "2 NL $name_link\n";
 $name_for_hc=$name_link;
 			if($TNOAN{$name_link}){
@@ -908,6 +926,11 @@ unless($name_link=~/\b(subsp\.|var\.|f\.)\b/){$last_species=$name_anchor;}
 <a href="/cgi-bin/get_cpn.pl?$NAME_CODE{$name_link}">[Online Interchange]</a>
 EOP
 			}
+else{
+if($name_link=~/Quercus x/i){
+warn "$name_link\n";
+}
+}
 }
 ############GET name for links
 		elsif(m|^([A-Z][A-Z]+) +([a-z-]+) *\n|m){
@@ -916,6 +939,7 @@ $key_species=$2;
 #print "flabba $trinomial\n";
 			$epithet=$2;
 			$name_link=ucfirst(lc($trinomial));
+			$name_link=~s/ x / X /;
 #print "2 NL $name_link\n";
 $name_for_hc=$name_link;
 		if($TNOAN{$name_link}){
@@ -1005,6 +1029,7 @@ s!(<center><font size="4"><b>[A-Z]\. [a-z-]+)(.*(nothosubsp\.|subsp\.|var\.|f\.)
 if($hc){
 #print "$hc\t";
 	if($name_for_hc){
+	$name_for_hc=~s/ . / X /;
 #print "$name_for_hc\t";
 		if($NAME_CODE{$name_for_hc}){
 			#print "$NAME_CODE{$name_for_hc}";
@@ -1014,7 +1039,7 @@ if($hc){
 			print ERR <<EOP;
 HC=$hc
 name_link=$name_for_hc
-NAME_CODE= $NAME_CODE{$name_for_hc}
+NAME_CODE= $NAME_CODE{$name_for_hc}  NO NAME CODE FOR $name_for_hc
 
 EOP
 		}
@@ -1022,7 +1047,7 @@ EOP
 	else{
 		print ERR <<EOP;
 HC=$hc
-name_link=$name_for_hc
+name_link=$name_for_hc NO NAME FOR HC
 NAME_CODE= $NAME_CODE{$name_for_hc}
 
 EOP
@@ -1030,7 +1055,7 @@ EOP
 }
 else{
 print ERR <<EOP;
-HC=$hc
+HC=$hc NO HC
 name_link=$name_for_hc
 NAME_CODE= $NAME_CODE{$name_for_hc}
 
@@ -1101,18 +1126,22 @@ s/<br>\n<br>/\n<br>/g;
 #print "NAME ANCHOR: $name_anchor $NAN{$name_anchor}\n";
 $sequence_string="$last_family, $last_genus";
 $nan=$NAN{$name_anchor};
+#print "1: $sequence_string $nan\n";
 if($nan=~m/(.*) (subsp\.|var\.|f\.).*/){
 	$nan_species=$TNOAN{$1};
 	if($IJM{$nan_species}){
 		$sequence_string .= ", $nan_species, $name_anchor";
+#print "2: $sequence_string $nan\n";
 	}
 	else{
 		$sequence_string .= ", $name_anchor";
+#print "3: $sequence_string $nan\n";
 		#push(@name_sequence,$name_anchor);
 	}
 }
 else{
 		$sequence_string .= ", $name_anchor";
+#print "4: $sequence_string $nan\n";
 }
 push(@name_sequence,$sequence_string);
 s/<\/blockquote/$rarity<\/blockquote/;
