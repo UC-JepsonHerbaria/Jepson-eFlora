@@ -1,6 +1,3 @@
-#formatter for eFlora that expects input with expanded abbreviations
-
-
 open(warn_cnps, ">CNPS_warning.txt") || die;
 warn <<EOP;
 NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
@@ -13,7 +10,7 @@ $unlinked= unlink 'IJM.hash', 'IJM_key.hash', 'name_to_code.hash';
 #die "failed to unlink hashes\n" unless $unlinked==2;
 
 #http://www.rareplants.cnps.org/detail/65.html
-open(IN, "/Users/davidbaxter/DATA/Interchange/CNPS_ID.txt") || die;
+open(IN, "/Users/richardmoe/4_IJM/CNPS_ID.txt") || die;
 while(<IN>){
 	chomp;
 	($id,$name)=split(/\t/);
@@ -26,11 +23,11 @@ $IJM=();
 tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_CREATE )|| die "Stopped; couldnt open IJM_key\n";
 
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/temp/name_to_code.hash name_to_code.hash";
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";	#tnoan.out superseded by smasch_taxon_ids.txt
+#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";	#tnoan.out superseded by smasch_taxon_ids.txt
+#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
 tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
-open(IN,"../Interchange/_input/output/flat_dbm_4.txt") || die;
+open(IN,"/Users/richardmoe/4_data/interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
 	chomp;
@@ -53,9 +50,10 @@ $NAME_CODE{"Primula clevelandii var. clevelandii"}=98883;
 #EOP
 #}
 #die;
+#open(IN,"/users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
 
 
-open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -63,8 +61,6 @@ while(<IN>){
 	($code,$name,@residue)=split(/\t/);
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
-$name=~s/ X / &times;/;
-	$TNOAN{$name}=$code;
 }
 $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
@@ -291,7 +287,6 @@ $pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for public viewing </
 #$file="all_files.all";
 #$file="all_revised_files.post.txt";
 #$file="eflora.tmp";
-#$file="eflora_expanded.txt";
 $file="eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
@@ -345,312 +340,286 @@ s/\nPROOF: .*//;
 		s//-/g;
 ###################### KEYS ##########################
 if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups/ || m/^Key to Groups Based Primarily on Flowering Material/|| m/^Key to Groups Based on Fruiting Material/|| m/^Key to Pistillate Plants/|| m/^Key to Staminate Plants/|| m/^Key to Vegetative Plants/ || m/^Group \d+ *\n/){
+
 	$uk="";
 	print ERR "$file KEY $&\n\n";
 	++$genus;
 	@lines=split(/\n/);
-	$lines[$#lines]="" if $lines[$#lines]=~/^PROOF:/;
-	$indent_level=-1;
-	if ($lines[0]=~s/UNABRIDGED KEY/Unabridged key/){
-		print "$lines[0]\n";
-		$uk=shift(@lines);
-		print ERR "UK: $uk\n\n";
-		$exclude=1;
-	}
-	if ($lines[0]=~/Group \d+/ && $lines[1]=~/^[A-Z]/){
-		print ERR "KEY $lines[0] $lines[0]\n\n";
-		$uk=shift(@lines);
-		$uk .= " ";
-		$uk .= shift(@lines);
-		print ERR "KEY $lines[0] $lines[0]]\n\n";
-	}
-	if ($lines[0]=~/Key to (Groups|genera|California|pistillate|staminate)/i){
-		print ERR "KEY $lines[0]\n\n";
-		$uk=shift(@lines);
-		print ERR "KEY $lines[0]\n\n";
-	}
-	if ($lines[0]=~/^Group \d/){
-		print ERR "KEY $lines[0]\n\n";
-		$uk=shift(@lines);
-		print ERR "KEY $lines[0]\n\n";
-	}
-	if ($lines[0]=~/^SALIX Key/){
-		print ERR "KEY $lines[0]\n\n";
-		$uk=shift(@lines);
-		print ERR "KEY $lines[0]\n\n";
-	}
-	
-	
-	foreach(@lines[0 .. $#lines]){
-		if(m/--[0-9]+\(--[0-9]/ || m/[0-9]--\)[0-9]+--/){
-			s/(--[0-9]+\()--([0-9]+)/$1$2/g;
-			s/([0-9]+)--\)([0-9]+--)/$1)$2/g;
+$lines[$#lines]="" if $lines[$#lines]=~/^PROOF:/;
+$indent_level=-1;
+		if ($lines[0]=~s/UNABRIDGED KEY/Unabridged key/){
+			print "$lines[0]\n";
+			$uk=shift(@lines);
+print ERR "UK: $uk\n\n";
+			$exclude=1;
 		}
-		s/([0-9])-([0-9])/$1&ndash;$2/;
-		s/---/&mdash;/g;
-		s/\.+[-_]*>/--&gt;/g;
-		s/-->/--&gt;/g;
-		
-		########setting the indent level for the line
-		#if it starts with a number followed by a period, increase the $indent_level by one and set the $indent
-		if(s|^(\d+)([.])|<a href="#$genus${1}'">$1$2</a><a name="$genus$1$2"> </a>|){
-			#$indent=$1;
-			#$indent-=1;
-			$indent_level +=1;
-			$indent_level{$1}=$indent_level;
-			print nowhere "$1$2\n$indent_level\n\n";
-			$indent=$indent_level;
+		if ($lines[0]=~/Group \d+/ && $lines[1]=~/^[A-Z]/){
+			print ERR "KEY $lines[0] $lines[0]\n\n";
+			$uk=shift(@lines);
+			$uk .= " ";
+$uk .= shift(@lines);
+			print ERR "KEY $lines[0] $lines[0]]\n\n";
 		}
-		#if it starts with a number followed by a prime symbol ('), set $indent_level to $indent_level{$1} (i.e. the same as the indent level in the previous block of code
-		if(s|^(\d+)(['])|<a href="#$genus${1}.">$1$2</a><a name="$genus$1$2"> </a>|){
-			#$indent=$1;
-			#$indent-=1;
-			$indent_level = $indent_level{$1};
-			print nowhere "$1$2\n$indent_level\n\n";
-			$indent=$indent_level;
+		if ($lines[0]=~/Key to (Groups|genera|California|pistillate|staminate)/i){
+			print ERR "KEY $lines[0]\n\n";
+			$uk=shift(@lines);
+			print ERR "KEY $lines[0]\n\n";
 		}
-		###NOTE: Leads beginning with "UNABRIDGED KEY LEAD: " are skipped here, and given a default indent level later on
-		#############
-		
-		
-		#indent is multiplied by 7 to give the amount of indent	
-		$indent*=7;
-		if(m!--&gt; *(\d*)([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)!){
-			$key_species=$3;
-			$key_rank=$4;
-			$key_infra=$5;
-			$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C4";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"}|| $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C4";
-			s!--&gt; *(\d*)([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3 $4 $5</a>!;
-			print ERR qq{1 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+		if ($lines[0]=~/^Group \d/){
+			print ERR "KEY $lines[0]\n\n";
+			$uk=shift(@lines);
+			print ERR "KEY $lines[0]\n\n";
 		}
-		#1' Ann; lvs narrowly elliptic to ovate or obovate.....-> [P. ruderale var. macrocephalum]
-		elsif(m!--&gt; *(\d*)\[([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!){
-			$key_species=$3;
-			$key_rank=$4;
-			$key_infra=$5;
-			$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C5";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"}|| $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C5";
-			s!--&gt; *(\d*)\[([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3 $4 $5]</a>!;
-			print ERR qq{2 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+		if ($lines[0]=~/^SALIX Key/){
+			print ERR "KEY $lines[0]\n\n";
+			$uk=shift(@lines);
+			print ERR "KEY $lines[0]\n\n";
 		}
-		elsif( m!--&gt; *(most )([A-Z]). ([&;a-z-]+)!){
-			$key_species=$3;
-			#$key_species=~s/&times;/× /;
-			$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
-			if($goto_code eq "C6"){
-				print qq{3 >$key_genus $key_species< code=$goto_code\n\n};
+		foreach(@lines[0 .. $#lines]){
+			if(m/--[0-9]+\(--[0-9]/ || m/[0-9]--\)[0-9]+--/){
+				s/(--[0-9]+\()--([0-9]+)/$1$2/g;
+				s/([0-9]+)--\)([0-9]+--)/$1)$2/g;
 			}
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
-			print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
-			s!--&gt; *(most )([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
-		}
-		elsif( m!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!){
-			$key_species=$3;
-			$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
-			if($goto_code eq "C6"){
-				#print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
-				#die;
+
+			s/([0-9])-([0-9])/$1&ndash;$2/;
+			s/---/&mdash;/g;
+			s/\.+[-_]*>/--&gt;/g;
+			s/-->/--&gt;/g;
+			if(s|^(\d+)([.])|<a href="#$genus${1}'">$1$2</a><a name="$genus$1$2"> </a>|){
+				#$indent=$1;
+				#$indent-=1;
+$indent_level +=1;
+$indent_level{$1}=$indent_level;
+print nowhere <<EOP;
+$1$2
+$indent_level
+
+EOP
+$indent=$indent_level;
 			}
-			print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
-			s!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
-		}
-		elsif(m!--&gt; *(\d*)([A-Z][A-Z]+)!){
-			$key_genus=ucfirst(lc($2));
-			$goto_code= $TNOAN{$key_genus} || "C7";
-			#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C7";
-			print ERR qq{4 $key_genus code=$goto_code\n\n};
-			s!--&gt; *(\d*)([A-Z][A-Z]+)!<a href="#$goto_code">.....&nbsp;$1 $2</a>!;
-		}
-		elsif(m!--&gt; *\[(\d*)([A-Z][A-Z]+).*\]!){
-			$key_genus=ucfirst(lc($2));
-			$goto_code=$TNOAN{$key_genus} || "C8";
-			#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C8";
-			print ERR qq{5 $key_genus code=$goto_code\n\n};
-			s!--&gt; *\[(\d*)([A-Z][A-Z]+)(.*\])!<a href="#$goto_code">.....&nbsp;[$2$3</a>!;
-		}
-		elsif(m!--&gt; *(nothosubsp\.|subsp\.|var\.) ([a-z-]+)!){
-			$key_rank=$1;
-			$key_infra=$2;
-			$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"} || $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
-			print ERR qq{6 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
-			s!--&gt; *(nothosubsp\.|subsp\.|var\.) ([a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2</a>! ;
-		}
-		elsif(m!--&gt; *\[(nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!){
-			$key_rank=$1;
-			$key_infra=$2;
-			$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"} || $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
-			print ERR qq{7 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
-			s!--&gt; *\[(nothosubsp\.|subsp\.|var\.) ([a-z-]+\])!<a href="#$goto_code">.....&nbsp;[$1 $2]</a>! ;
-		}
-		elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)\]!){
-			$key_species=$3;
-			#$key_species=~s/&times;/× /;
-			$goto_code= $TNOAN{"$key_genus $key_species"} || "C9";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C9";
-			print ERR qq{8 $key_genus $key_species code=$goto_code\n\n};
-			s!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3]</a>!;
-		}
-		elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+);.*\]!){
-			$key_species=$3;
-			#$key_species=~s/&times;/× /;
-			$goto_code= $TNOAN{"$key_genus $key_species"} || "C10";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C10";
-			print ERR qq{9 $key_genus $key_species code=$goto_code\n\n};
-			s!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)(;.*)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3$4]</a>!;
-		}
-		elsif(m!--&gt; *\[(\d*)([A-Z][a-z]+).*\]!){
-			$key_genus=ucfirst(lc($2));
-			$goto_code=$TNOAN{$key_genus} || "C11a";
-			#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C11a";
-			print ERR qq{10 $key_genus code=$goto_code\n\n};
-			s!--&gt; *\[(\d*)([A-Z][a-z]+)(.*\])!<a href="#$goto_code">.....&nbsp;[$2$3</a>!;
-		}
-		elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([^ ]+) *\(.*!){
-			$key_genus=ucfirst(lc($2));
-			$key_species=$3;
-			#$key_species=~s/ *$//;
-			$goto_code= $TNOAN{"$key_genus $key_species"} || "C11";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C11";
-			print ERR qq{11 $key_genus code=$goto_code\n\n};
-			s!--&gt; *(\d*)([A-Z][a-z]+)(.*)(\(.*)!<a href="#$goto_code">.....&nbsp;$2$3</a>$4!;
-		}
-		elsif(m!--&gt; *(Group) (.*)!){
-			#$key_genus=ucfirst(lc($1)) . "$2";
-			#$goto_code=$key_genus;
-			print ERR qq{12 $key_genus code=$goto_code\n\n};
-			s!--&gt; *(\d*)([A-Z][a-z]+) (.*)!<a href="#Group$3">.....&nbsp;$2 $3</a>!;
-		}
-		elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+) (var\.|subsp\.) ([a-z]+)(.*)!){
-			$key_genus=ucfirst(lc($2));
-			$target="$2 $3 $4 $5";
-			$goto_code= $TNOAN{$target} || "C2a";
-			print ERR qq{12a $target code=$goto_code   $_\n\n};
-			s!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
-		}
-		elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+)(.*)!){
-			$key_genus=ucfirst(lc($2));
-			$target="$2 $3";
-			$goto_code= $TNOAN{$target} || "C2b";
-			print ERR qq{12b $target code=$goto_code $_\n\n};
-			##s!--&gt; *(\d*)([A-Z][a-z]+) (a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
-			#s!--&gt; *(\d*)([A-Z][a-z]+) (a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
-			#print ERR qq{12b $target code=$goto_code $_\n\n};
-			s!--&gt; *(\d*)([A-Z][a-z]+ [a-z]+)!<a href="#$goto_code">.....&nbsp;$2</a>!;
-			#print ERR qq{12b $target code=$goto_code $_\n\n};
+			if(s|^(\d+)(['])|<a href="#$genus${1}.">$1$2</a><a name="$genus$1$2"> </a>|){
+				#$indent=$1;
+				#$indent-=1;
+$indent_level = $indent_level{$1};
+print nowhere <<EOP;
+$1$2
+$indent_level
 
-			#12b Elymus multisetus code=24122 <a href="#ALE33.">33'</a><a name="ALE33'"> </a> Per; spikelets 2(3--4) per node --&gt; Elymus multisetus
-		}
-		elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*)!){
-			$key_genus=ucfirst(lc($2));
-			$goto_code= $TNOAN{$key_genus} || "C2";
-			#$goto_code=$NAME_CODE{"$key_genus $3"} || $TNOAN{"$key_genus $3"} || "C2";
-			print ERR qq{12 $key_genus code=$goto_code\n\n};
-			s!--&gt; *(\d*)([A-Z][a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2$3</a>!;
-		}
-
-		#13. Pinnae fan-shaped, texture delicate, deep green; outer margins finely toothed or crenate; occurring in or very near saturated substrate .....-> sun forms of B. crenulatum(2), see also lead 9
-		#6. Trophophore and sporophore joined well below mid-lf, gen at ground level.....-> small or shade pls of _Botrychium simplex_(2) or _Botrychium pumicola_(2), see lead 3 for separation of taxa
-		#<a href="#AO6'">6.</a><a name="AO6."> </a> Trophophore and sporophore joined well below mid-lf, gen at ground level--&gt; small or shade pls of _Botrychium simplex_(2) or _Botrychium pumicola_(2), see lead 3 for separation of taxa
-		elsif( m!--&gt;.*_([A-Z].) ([&;a-z-]+)_!){
-			$key_species=$2;
-			#$key_species=~s/&times;/× /;
-			$goto_code= $TNOAN{"$key_genus $key_species"} || "C12";
-			#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C12";
-			print ERR qq{13 $key_genus $key_species code=$goto_code\n\n};
-			s!--&gt; (.*)_([A-Z]). ([&;a-z-]+)_!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
-		}
-		#1. Fl radial; calyx, corolla gen inconspicuous; petals free or fused, lobes not overlapped in bud; stamens 5--many, often long-exserted; lf 2-pinnate (simple in alien _Acacia_).....-> Group 1: Mimosoideae
-		elsif( m!--&gt; *Group \d+: ([^ ]+)!){
-			$goto_code=$1;
-			s!--&gt; *(Group \d+: )([A-Z][a-z]+) *(.*)!<a href="#$goto_code">.....&nbsp;$1 $2 $3</a>!;
-		}
-		elsif( m!--&gt; \[(.*) &times; (.*)!){
-			s!--&gt; *(.*)! .....&nbsp;$1!;
-		}
-		elsif( m!--&gt; .*see .*lead \d!){
-			s!--&gt; *(.*)! .....&nbsp;$1!;
-		}
-		elsif( m!--&gt; .*see _[A-Z]!){
-			s!--&gt; *(.*)! .....&nbsp;$1!;
-		}
-		else{
-			print ERR "$_ C4\n\n" if m/--&gt;/;
-		}
-		
-		if(m/--[0-9]+\(--[0-9]/ || m/[0-9]--\)[0-9]+--/){
-			s/(--[0-9]+\()--([0-9]+)/$1$2/g;
-			s/([0-9]+)--\)([0-9]+--)/$1)$2/g;
-		}
-		s/--([^&])/&ndash;$1/g;
-		s|\+/-|&plusmn;|g;
-		s|\+-|&plusmn;|g;
-		s/ > or =/ &ge;/g;
-		
-		########Substitute in the correct indent and styling (based on $indent, or if UNABRIDGED KEY LEAD
-		if($exclude){
-			s!^!\n<P class="keyText" style="padding-left : $indent ; color:blue">!;
-		}
-		elsif(m/UNABRIDGED KEY LEAD/){
-			#s!^!\n<P class="keyText" style="padding-left : $indent ; color:blue">!;
-		}
-		else{
-			s!^!\n<P class="keyText" style="padding-left : $indent ;">!;
-		}
-		#######
-		
-		#s!^!\n<br>$indent!;
-		s/([A-Za-z])_([A-Za-z])/$1&95;$2/g;
-		while(s/_/<I>/){
-			s/_/<\/I>/;
-		}
-		s/&95;/_/g;
-		s/\.\.\.\.\.&nbsp; +/.....&nbsp;/;
-	}
-	$_=join("\n",@lines);
-
-	#if(s/^[0-9]+[abc]?[.']/<br>$&/mg){
-	#s//-/g;
-	#s/…/.../g;
-	##1' Involucel tube with 8 valve-like openings; st shaggy-hairy; corolla blue; pl gen ann...-> [S. stellata]
-	#s/--&gt;( *)\[([A-Z]\. [a-z].*)\]/--&gt;[<I>$2<\/I>]/g;
-	#s/--&gt;(.*)\[(.*)\]/--&gt;<I>$1<\/I> [$2]/g;
-	#s/--&gt; *(subsp\.|var\.|f\.) (.*)/--&gt;<!-- -->$1 <I>$2<\/I>/g;
-	#s/--&gt;([^<\[].*)/--&gt;<I>$1<\/I>/g;
-	#s/--&gt; *<I> *([A-Z()234]+) *<\/I>/--&gt; $1/g;
-	#s/(--&gt;.* [a-z]+) (var\.|subsp\.|f\.) /$1<\/i> $2 <i>/g;
-
-	#substitute out the "UNABRIDGED KEY LEAD: " prefix and make the text blue 
-	s/UNABRIDGED KEY LEAD: (.*)/<font color=\"blue\">$1<\/font>/g;
-	if(s/UNABRIDGED KEY/<br>Unabridged key/g){
-		#s/$/<\/font>/gm;
-		#$exclude=1;
-	}
-	s/UNABRIDGED\n//;
-	s/  +/ /g;
-	#print OUT "flabba1<blockquote>$_<\/blockquote>\n";
-	if($exclude==1){
-		print ERR "KEY: $name_anchor\n\n";
-		$IJM_key{$name_anchor} = "<font color=\"blue\"><blockquote>$_<\/blockquote></font>";
-	}
-	else{
-		foreach($uk){
+EOP
+$indent=$indent_level;
+			}
+			#$indent= "&nbsp;" x $indent;
+			$indent*=7;
+			if(m!--&gt; *(\d*)([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)!){
+				$key_species=$3;
+				$key_rank=$4;
+				$key_infra=$5;
+				$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C4";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"}|| $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C4";
+				s!--&gt; *(\d*)([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3 $4 $5</a>!;
+				print ERR qq{1 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+			}
+#1' Ann; lvs narrowly elliptic to ovate or obovate.....-> [P. ruderale var. macrocephalum]
+			elsif(m!--&gt; *(\d*)\[([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!){
+				$key_species=$3;
+				$key_rank=$4;
+				$key_infra=$5;
+				$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C5";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"}|| $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "C5";
+				s!--&gt; *(\d*)\[([A-Z]). ([a-z-]+) (nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3 $4 $5]</a>!;
+				print ERR qq{2 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+			}
+			elsif( m!--&gt; *(most )([A-Z]). ([&;a-z-]+)!){
+				$key_species=$3;
+#$key_species=~s/&times;/× /;
+				$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
+if($goto_code eq "C6"){
+print qq{3 >$key_genus $key_species< code=$goto_code\n\n};
+#die;
+}
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
+				print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
+				s!--&gt; *(most )([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
+			}
+			elsif( m!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!){
+				$key_species=$3;
+#$key_species=~s/&times;/× /;
+				$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
+if($goto_code eq "C6"){
+#print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
+#die;
+}
+				print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
+				s!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
+			}
+			elsif(m!--&gt; *(\d*)([A-Z][A-Z]+)!){
+				$key_genus=ucfirst(lc($2));
+				$goto_code= $TNOAN{$key_genus} || "C7";
+				#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C7";
+				print ERR qq{4 $key_genus code=$goto_code\n\n};
+				s!--&gt; *(\d*)([A-Z][A-Z]+)!<a href="#$goto_code">.....&nbsp;$1 $2</a>!;
+			}
+			elsif(m!--&gt; *\[(\d*)([A-Z][A-Z]+).*\]!){
+				$key_genus=ucfirst(lc($2));
+				$goto_code=$TNOAN{$key_genus} || "C8";
+				#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C8";
+				print ERR qq{5 $key_genus code=$goto_code\n\n};
+				s!--&gt; *\[(\d*)([A-Z][A-Z]+)(.*\])!<a href="#$goto_code">.....&nbsp;[$2$3</a>!;
+			}
+			elsif(m!--&gt; *(nothosubsp\.|subsp\.|var\.) ([a-z-]+)!){
+				$key_rank=$1;
+				$key_infra=$2;
+				$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"} || $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
+				print ERR qq{6 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+				s!--&gt; *(nothosubsp\.|subsp\.|var\.) ([a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2</a>! ;
+			}
+			elsif(m!--&gt; *\[(nothosubsp\.|subsp\.|var\.) ([a-z-]+)\]!){
+				$key_rank=$1;
+				$key_infra=$2;
+				$goto_code= $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species $key_rank $key_infra"} || $TNOAN{"$key_genus $key_species $key_rank $key_infra"} || "flabba : $key_genus : $key_species : $key_rank $key_infra";
+				print ERR qq{7 $key_genus $key_species $key_rank $key_infra code=$goto_code\n\n};
+				s!--&gt; *\[(nothosubsp\.|subsp\.|var\.) ([a-z-]+\])!<a href="#$goto_code">.....&nbsp;[$1 $2]</a>! ;
+			}
+			elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)\]!){
+				$key_species=$3;
+#$key_species=~s/&times;/× /;
+				$goto_code= $TNOAN{"$key_genus $key_species"} || "C9";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C9";
+				print ERR qq{8 $key_genus $key_species code=$goto_code\n\n};
+				s!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3]</a>!;
+			}
+			elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+);.*\]!){
+				$key_species=$3;
+#$key_species=~s/&times;/× /;
+				$goto_code= $TNOAN{"$key_genus $key_species"} || "C10";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C10";
+				print ERR qq{9 $key_genus $key_species code=$goto_code\n\n};
+				s!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)(;.*)\]!<a href="#$goto_code">.....&nbsp;$1 [$2. $3$4]</a>!;
+			}
+			elsif(m!--&gt; *\[(\d*)([A-Z][a-z]+).*\]!){
+				$key_genus=ucfirst(lc($2));
+				$goto_code=$TNOAN{$key_genus} || "C11a";
+				#$goto_code=$NAME_CODE{$key_genus} || $TNOAN{$key_genus} || "C11a";
+				print ERR qq{10 $key_genus code=$goto_code\n\n};
+				s!--&gt; *\[(\d*)([A-Z][a-z]+)(.*\])!<a href="#$goto_code">.....&nbsp;[$2$3</a>!;
+			}
+			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*) *\(.*!){
+				$key_genus=ucfirst(lc($2));
+				$key_species=$3;
+#$key_species=~s/ *$//;
+				$goto_code= $TNOAN{"$key_genus $key_species"} || "C11";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C11";
+				print ERR qq{11 $key_genus code=$goto_code\n\n};
+				s!--&gt; *(\d*)([A-Z][a-z]+)(.*)(\(.*)!<a href="#$goto_code">.....&nbsp;$2$3</a>$4!;
+			}
+			elsif(m!--&gt; *(Group) (.*)!){
+				#$key_genus=ucfirst(lc($1)) . "$2";
+				#$goto_code=$key_genus;
+				print ERR qq{12 $key_genus code=$goto_code\n\n};
+				s!--&gt; *(\d*)([A-Z][a-z]+) (.*)!<a href="#Group$3">.....&nbsp;$2 $3</a>!;
+			}
+			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*)!){
+				$key_genus=ucfirst(lc($2));
+				$goto_code= $TNOAN{$key_genus} || "C2";
+				#$goto_code=$NAME_CODE{"$key_genus $3"} || $TNOAN{"$key_genus $3"} || "C2";
+				print ERR qq{12 $key_genus code=$goto_code\n\n};
+				s!--&gt; *(\d*)([A-Z][a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2$3</a>!;
+			}
+#13. Pinnae fan-shaped, texture delicate, deep green; outer margins finely toothed or crenate; occurring in or very near saturated substrate .....-> sun forms of B. crenulatum(2), see also lead 9
+#6. Trophophore and sporophore joined well below mid-lf, gen at ground level.....-> small or shade pls of _Botrychium simplex_(2) or _Botrychium pumicola_(2), see lead 3 for separation of taxa
+#<a href="#AO6'">6.</a><a name="AO6."> </a> Trophophore and sporophore joined well below mid-lf, gen at ground level--&gt; small or shade pls of _Botrychium simplex_(2) or _Botrychium pumicola_(2), see lead 3 for separation of taxa
+			elsif( m!--&gt;.*_([A-Z].) ([&;a-z-]+)_!){
+				$key_species=$2;
+#$key_species=~s/&times;/× /;
+				$goto_code= $TNOAN{"$key_genus $key_species"} || "C12";
+				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C12";
+				print ERR qq{13 $key_genus $key_species code=$goto_code\n\n};
+				s!--&gt; (.*)_([A-Z]). ([&;a-z-]+)_!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
+			}
+#1. Fl radial; calyx, corolla gen inconspicuous; petals free or fused, lobes not overlapped in bud; stamens 5--many, often long-exserted; lf 2-pinnate (simple in alien _Acacia_).....-> Group 1: Mimosoideae
+			elsif( m!--&gt; *Group \d+: ([^ ]+)!){
+				$goto_code=$1;
+				s!--&gt; *(Group \d+: )([A-Z][a-z]+) *(.*)!<a href="#$goto_code">.....&nbsp;$1 $2 $3</a>!;
+}
+			elsif( m!--&gt; \[(.*) &times; (.*)!){
+				s!--&gt; *(.*)! .....&nbsp;$1!;
+}
+			elsif( m!--&gt; .*see .*lead \d!){
+				s!--&gt; *(.*)! .....&nbsp;$1!;
+}
+			elsif( m!--&gt; .*see _[A-Z]!){
+				s!--&gt; *(.*)! .....&nbsp;$1!;
+}
+else{
+print ERR "$_ C4\n\n" if m/--&gt;/;
+;
+}
+			if(m/--[0-9]+\(--[0-9]/ || m/[0-9]--\)[0-9]+--/){
+				s/(--[0-9]+\()--([0-9]+)/$1$2/g;
+				s/([0-9]+)--\)([0-9]+--)/$1)$2/g;
+			}
+			s/--([^&])/&ndash;$1/g;
+			s|\+/-|&plusmn;|g;
+			s|\+-|&plusmn;|g;
+			s/ > or =/ &ge;/g;
+			if($exclude || m/UNABRIDGED KEY LEAD/){
+				s!^!\n<P class="keyText" style="padding-left : 10 ; color:blue">!;
+			}
+			else{
+				s!^!\n<P class="keyText" style="padding-left : $indent ;">!;
+			}
+			#s!^!\n<br>$indent!;
+			s/([A-Za-z])_([A-Za-z])/$1&95;$2/g;
 			while(s/_/<I>/){
 				s/_/<\/I>/;
 			}
-			s/---/&mdash;/g;
-			s/--/&ndash;/g;
-			s|\+-|&plusmn;|g;
-			s/Group (\d+[A-Z]?)/<a name=Group$1>Group $1<\/a>/;
+ 			s/&95;/_/g;
+			s/\.\.\.\.\.&nbsp; +/.....&nbsp;/;
 		}
-		print ERR "KEY: $name_anchor\n\n";
-		$IJM_key{$name_anchor}.= "<blockquote><h3>$uk</h3>$_<\/blockquote>";
-	}
-	next;
+		$_=join("\n",@lines);
+
+		#if(s/^[0-9]+[abc]?[.']/<br>$&/mg){
+		#s//-/g;
+			#s/…/.../g;
+##1' Involucel tube with 8 valve-like openings; st shaggy-hairy; corolla blue; pl gen ann...-> [S. stellata]
+			#s/--&gt;( *)\[([A-Z]\. [a-z].*)\]/--&gt;[<I>$2<\/I>]/g;
+			#s/--&gt;(.*)\[(.*)\]/--&gt;<I>$1<\/I> [$2]/g;
+ 			#s/--&gt; *(subsp\.|var\.|f\.) (.*)/--&gt;<!-- -->$1 <I>$2<\/I>/g;
+			#s/--&gt;([^<\[].*)/--&gt;<I>$1<\/I>/g;
+			#s/--&gt; *<I> *([A-Z()234]+) *<\/I>/--&gt; $1/g;
+			#s/(--&gt;.* [a-z]+) (var\.|subsp\.|f\.) /$1<\/i> $2 <i>/g;
+
+		s/UNABRIDGED KEY LEAD: (.*)/<font color=\"blue\">$1<\/font>/g;
+		if(s/UNABRIDGED KEY/<br>Unabridged key/g){
+			#s/$/<\/font>/gm;
+			$exclude=1;
+		}
+		s/UNABRIDGED\n//;
+		s/  +/ /g;
+			#print OUT "flabba1<blockquote>$_<\/blockquote>\n";
+		if($exclude==1){
+			print ERR "KEY: $name_anchor\n\n";
+			$IJM_key{$name_anchor} = "<font color=\"blue\"><blockquote>$_<\/blockquote></font>";
+		}
+		else{
+foreach($uk){
+			while(s/_/<I>/){
+				s/_/<\/I>/;
+			}
+s/---/&mdash;/g;
+s/--/&ndash;/g;
+			s|\+-|&plusmn;|g;
+s/Group (\d+[A-Z]?)/<a name=Group$1>Group $1<\/a>/;
 }
+			print ERR "KEY: $name_anchor\n\n";
+$_=&il_to_html($_);
+			$IJM_key{$name_anchor}.= "<blockquote><h3>$uk</h3>$_<\/blockquote>";
+		}
+			next;
+	}
 ######################################################
 ######################################################
 		$exclude=0;
@@ -730,19 +699,14 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 		elsif(s/^UNABRIDGED *\n//){$exclude=1;};
 		$nativity=qq{<font size="1"><b>$nativity</b></font>} if $nativity;
 if(m/TJMX AUTHOR/i){
-		s|(TJM2 AUTHOR:.*\n)||i; #TJMX AUTHOR line has priority over TJM2 AUTHOR
+		s|(TJM2 AUTHOR:.*\n)||i;
 }
-if(m/TJMXX AUTHOR/i){
-		s|(TJM2 AUTHOR:.*\n)||i; #TJMXX AUTHOR line has priority over both TJM2 AUTHOR and TJMX AUTHOR
-		s|(TJMX AUTHOR:.*\n)||i;
-}
-		s|TJM[2X]X? AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR"
+		s|TJM[X2] AUTHOR:(.*)|<h4>$1</h4>|i;
 		s|(TJM1 AUTHOR:.*)||i;
 		s|(TJM\(1993\) AUTHOR:.*)||i;
 		s|^FAMILY: *||;
 		s|SCIED: *|&mdash;|;
 		s|UNABRIDGED COMMON NAME: (.*)|<font size="3" color="blue">\U$1\E</font>|;
-		s|COMMON NAME: (.*) (\(Group.*\))|<font size="3">\U$1\E $2</font>| or
 		s|COMMON NAME: (.*)|<font size="3">\U$1\E</font>|;
 		s|(<font size="3">.*) OR |$1 or |;
 s/FR&EACUTE/FR&Eacute/;
@@ -1062,18 +1026,17 @@ s!(<center><font size="4"><b>[A-Z]\. [a-z-]+)(.*(nothosubsp\.|subsp\.|var\.|f\.)
 		$nds=~s/[.; ]*$//;
 		$hc=&get_hcode($nds);
 		die "$nds: $hc return hcode problem\n" unless length($hc)==10;
-
 if($hc){
 #print "$hc\t";
 	if($name_for_hc){
-		$name_for_hc=~s/ . / X /;
+	$name_for_hc=~s/ . / X /;
 #print "$name_for_hc\t";
 		if($NAME_CODE{$name_for_hc}){
 			#print "$NAME_CODE{$name_for_hc}";
 			$new_hc{$NAME_CODE{$name_for_hc}}=$hc;
 		}
-	else{
-		print ERR <<EOP;
+		else{
+			print ERR <<EOP;
 HC=$hc
 name_link=$name_for_hc
 NAME_CODE= $NAME_CODE{$name_for_hc}  NO NAME CODE FOR $name_for_hc
@@ -1111,11 +1074,10 @@ print ERR "$ceae $name_for_hc  NO Bioregional distribution line\n\n";
 
 		s/UNABRIDGED BIOREGIONAL DISTRIBUTION:(.*)/<br><font color="blue">Unabridged bioregional distribution: $1<\/font><br>/;
 		s/BIOREGIONAL DISTRIBUTION: of sp./Distribution in CA of sp./;
-		s/BIOREGIONAL DISTRIBUTION: (.*)/$1/;
+		s/BIOREGIONAL DISTRIBUTION: (.*)/&dist_expand($1)/e;
 		s/UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/<br><font color="blue">Unabridged distribution outside California: $1<\/font><br>/;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA: of sp./Distribution outside CA of sp./;
-		#s/BIOREGIONAL DISTRIBUTION: (.*)/&dist_expand($1)/e;
-		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/$1/;
+		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/&dist_expand($1)/e;
 		#s/^NOTE[()S]*: (.*)/&dist_expand($1)/em;
 		s/^NOTE[()S]*: (.*)/$1/em;
 		s/AUTHORSHIP OF PARTS: /<P>/;
@@ -1200,16 +1162,16 @@ $IJM{$name_anchor}= "$_\n<P>";
 #}
 open(OUT, ">IJM_sequence.txt");
 foreach(@name_sequence){
-	@elements=split(/, /,$_);
-	%seen=();
-	foreach(@elements){
-		next unless /\d/;
-		next if $seen{$_}++;
-		print OUT "$_, ";
-	}
-	print OUT "\n";
-}
+@elements=split(/, /,$_);
+%seen=();
+foreach(@elements){
+next unless /\d/;
+next if $seen{$_}++;
+print OUT "$_, ";
 
+}
+print OUT "\n";
+}
 untie(%IJM);
 untie(%IJM_key);
   #system "rsync -e 'ssh -ax' -avz IJM*.hash  rlmoe\@herbaria4.herb.berkeley.edu:/Library/WebServer/ucjeps_data/";
@@ -1246,9 +1208,9 @@ sub format_syns {
 		s/^([^ ]+ [^ ]+)/<i>$1<\/i>/;
 		s/subsp. ([^ ]+)/subsp. <i>$1<\/i>/;
 		s/var. ([^ ]+)/var. <i>$1<\/i>/;
-		s/f\. ex /f._ex /;
-		s/ f\. ([^ ]+)/ f. <i>$1<\/i>/;
-		s/f\._ex /f. ex /;
+		s/f. ex /f._ex /;
+		s/f. ([^ ]+)/f. <i>$1<\/i>/;
+		s/f._ex /f. ex /;
 	}
 	$syns=join("; ", @syns);
 	$syns=~s/^\[//;
@@ -1377,8 +1339,6 @@ local($_) = @_;
 
 s/Eur\./Europe./;
 s/\ball yr\b/all year/;
-s/ yr\b/ year/g;
-s/ yrs\b/ years/g;
 s/trop, subtrop S.Am/tropical, subtropical South America/;
 s/subtrop, trop mtns/subtropical, tropical mountains/;
 s/trop\) regions/tropical) regions/;
@@ -1448,37 +1408,22 @@ s/\blvs\b/leaves/g;
 
 s/\bann\b/annual/g;
 s/\b([Bb])ien\b/$1iennial/g;
-if(m/....\bper\b......../i){
-$per=$&;
-s/\(Per\)/(Perennial herb)/g;
-
-s/Per vine/Perennial vine/g;
-s/Per mat/Perennial mat/g;
-s/Per /Perennial herb /g;
-s/\bper\?/perennial herb?/g;
-s/\[([pP])er\]/[$1erennial herb]/g;
-s/\b([pP])er([.;,])/$1erennial herb$2/g;
-s/\b([pP])er (to|from|in|with|or|and|gen|\[|\()\b/$1erennial herb $2/g;
-s/\bper\)/perennial herb)/g;
-s/\bor per\b/or perennial herb/g;
-s/\band per\b/and perennial herb/g;
-s/\bif per\b/if perennial herb/g;
-s/([,;]) per\b/$1 perennial herb/g;
-s/ to per\b/ to perennial herb/g;
-s/\[to per\]/[to perennial herb]/g;
-s/montane per\b/montane perennial herb/g;
-s/lived per\b/lived perennial herb/g;
-s/Rhizomed per\b/Rhizomed perennial herb/g;
-s/slender per\b/slender perennial herb/g;
-s/\bper \[/perennial herb [/g;
-#unless(m/erennial/){
-#print "$per\n";
-#}
+if(m/\bper\b/){
+s/\bper\)/perennial herb)/;
+s/\bper to\b/perennial herbs to/;
+s/\bor per\b/or perennial herb/;
+s/\band per\b/and perennial herb/;
+s/\bif per\b/if perennial herb/;
+s/([,;]) per\b/$1 perennial herb/;
+s/\bper([.,])/perennial herb$1/;
+s/ to per\b/ to perennial herb/;
+s/montane per\b/montane perennial herb/;
+s/lived per\b/lived perennial herb/;
+s/Rhizomed per\b/Rhizomed perennial herb/;
+s/slender per\b/slender perennial herb/;
 }
 s/\bexc\.?\b/except/g;
 if(m/\bincl\b/){
-s/\(incl\)/(included)/g;
-	s/incl albino/including albino/;
 	s/incl within/included within/g;
 	s/reports not incl CA/reports not including California/;
 	s/Plants incl hybrids/Plants including hybrids/;
@@ -1490,16 +1435,16 @@ s/\(incl\)/(included)/g;
 
 
 	s/or incl /or included /g;
-	s/([Ss]tigmas) incl or /$1 included or /g;
-	s/Stamens incl or /Stamens included or /g;
-	s/Stamens incl$/Stamens included/g;
+	s/([Ss]tigmas) incl or /$1 included or /;
+	s/Stamens incl or /Stamens included or /;
+	s/Stamens incl$/Stamens included/;
 	s/incl *<a /included <a /g;
 
 
 
 
 
-s/not incl app/not including app/g;
+s/not incl app/not including app/;
 s/\bincl([<,.,;])/included$1/g;
 #s/\bincl (in|to|or)\b/included $1/g;
 #s/\bwith incl\b/with included/g;
@@ -1510,38 +1455,38 @@ s/\bincl([<,.,;])/included$1/g;
 #s/does not incl\b/does not include/g;
 #s/\bincl\b/including/g;
 s/genus incl taxa/genus includes taxa/;
-s/\bincls spur/includes spur/g;
-s/\bincl (at|as)/included $1/g;
-s/not incl _/not include _/g;
-s/previously incl _/previously included _/g;
-s/\bincl hybrids/include hybrids/g;
-s/\bincl here/included here/g;
-s/\bincl several/include several/g;
-s/\bincl \.\.\.\.\./included ...../g;
-s/\bincl \(/included (/g;
-s/(that|May|to|not|Previously) incl /$1 include /g;
-s/\bincl in /included in /g;
-s/\bincl or /included or /g;
-s/\bincl to /included to /g;
-s/\bincl,/included,/g;
-s/\bincl;/included;/g;
-s/spp\. incl/spp. included/g;
-s/or incl exc/or included exc/g;
+s/\bincls spur/includes spur/;
+s/\bincl (at|as)/included $1/;
+s/not incl _/not include _/;
+s/previously incl _/previously included _/;
+s/\bincl hybrids/include hybrids/;
+s/\bincl here/included here/;
+s/\bincl several/include several/;
+s/\bincl \.\.\.\.\./included ...../;
+s/\bincl \(/included (/;
+s/(that|May|to|not|Previously) incl /$1 include /;
+s/\bincl in /included in /;
+s/\bincl or /included or /;
+s/\bincl to /included to /;
+s/\bincl,/included,/;
+s/\bincl;/included;/;
+s/spp\. incl/spp. included/;
+s/or incl exc/or included exc/;
 s/netted with incl/netted with included/;
-s/\bincl stamens/included stamens/g;
-s/_ incl pls that/_ includes plants that/g;
-s/stamens incl within/stamens included within/g;
-s/previously incl genera/previously included genera/g;
+s/\bincl stamens/included stamens/;
+s/_ incl pls that/_ includes plants that/;
+s/stamens incl within/stamens included within/;
+s/previously incl genera/previously included genera/;
 s/([Cc]haracters) incl relative/$1 include relative/;
-s/style incl\b/style included/g;
-s/ and incl / and included /g;
-s/, incl under/, included under/g;
-s/subsp. incl the/subsp. include the/g;
-s/would incl var/would include var/g;
-s/incl genes/includes genes/g;
-s/Characters incl calyx/Characters include calyx/g;
-s/\bincl\b/including/g;
-s/Anthers incl\b/Anthers included/g;
+s/style incl\b/style included/;
+s/ and incl / and included /;
+s/, incl under/, included under/;
+s/subsp. incl the/subsp. include the/;
+s/would incl var/would include var/;
+s/incl genes/includes genes/;
+s/Characters incl calyx/Characters include calyx/;
+s/\bincl\b/including/;
+s/Anthers incl\b/Anthers included/;
 }
 s/\bincls/includes/g;
 s/\bAnn\b/Annual/g;
