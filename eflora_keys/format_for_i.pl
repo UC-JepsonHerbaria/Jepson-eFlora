@@ -694,7 +694,7 @@ if(m/TJM4X AUTHOR/i){ #this was not added to this file when the XXX authors were
 		s|(TJMXX AUTHOR:.*\n)||i;
 		s|(TJMXXX AUTHOR:.*\n)||i;
 }
-		s|TJM[2]X* AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR"
+		s|TJM[42X]X* AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR" "TJM4X AUTHOR"
 		s|(TJM1 AUTHOR:.*)||i;
 		s|(TJM\(1993\) AUTHOR:.*)||i;
 		s|^FAMILY: *||;
