@@ -1,17 +1,39 @@
-open(IN, "tnoan.out") || die;
+open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
-s/× /&times;/;
-($tid,$name)=split(/\t/);
-$TID{$name}=$tid;
+s/X /&times;/;
+($code,$name,@residue)=split(/\t/);
+$TID{$name}=$code;
+$TNOAN{$code}=$name;
 }
+$TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
+#open(IN, "/users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
+#while(<IN>){
+#chomp;
+#s/× /&times;/;
+#($tid,$name)=split(/\t/);
+#$TID{$name}=$tid;
+#$TNOAN{$tid}=$name;
+#}
 close(IN);
 $TID{"Centaurea jacea nothosubsp. pratensis"}=93858;
-open(IN, "index_full2.tmp") || die;
+#<a href="/cgi-bin/get_IJM.pl?tid=66839">	Achnatherum occidentale*</a><br>
+open(IN,"index_suppl") || die;
+while(<IN>){
+	if(m/(\d+)">\t([^\*]+\*)/){
+		$last_code=$1;
+		$tid=$2;
+		$code{$tid}=$last_code;
+	}
+else{
+die $_;
+}
+}
+open(IN, "index_full.tmp") || die;
 while(<IN>){
 chomp;
 if(m/\*/){
-$code{$_}=$last_code;
+$code{$_}.="$last_code,";
 }
 else{
 if($TID{$_}){
@@ -24,8 +46,8 @@ warn "No code for $_\n";
 }
 }
 foreach $i (A .. Z){
-open($i, ">IJM_index_${i}.html");
-print $i <<EOP;
+	open($i, ">IJM_index_${i}.html");
+	print $i <<EOP;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Jepson Herbarium: Jepson Flora Project: eFlora index for $i</title> 
@@ -146,15 +168,40 @@ EOP
 }
 #<a href="/cgi-bin/get_IJM.pl?tid=11531">	*Abies magnifica var. shastensis</a> (under Abies procera)<br>
 foreach (sort(keys(%code))){
-$outfile=substr($_,0,1);
-print $outfile <<EOP;
+	$outfile=substr($_,0,1);
+	$code{$_}=~s/,$//;
+	if(m/\*/){
+%seen=();
+		@codes=split(/,/,$code{$_});
+		if($#codes==0){
+			print $outfile <<EOP;
+<a href="/cgi-bin/get_IJM.pl?tid=$code{$_}">	$_</a> (under $TNOAN{$codes[0]})<br>
+EOP
+		}
+		else{
+			foreach $syn(@codes[0]){
+				unless($seen{$syn}++){
+					print $outfile qq{ <a href="/cgi-bin/get_IJM.pl?tid=$syn">	$_</a> (under $TNOAN{$syn}) };
+				}
+			}
+			foreach $syn(@codes[1 .. $#codes]){
+				unless($seen{$syn}++){
+					print $outfile qq{ <a href="/cgi-bin/get_IJM.pl?tid=$syn">	(under $TNOAN{$syn})</a> };
+				}
+			}
+			print $outfile "<br>\n";
+		}
+	}
+	else{
+		print $outfile <<EOP;
 <a href="/cgi-bin/get_IJM.pl?tid=$code{$_}">	$_</a><br>
 EOP
+	}
 }
 foreach $i (A .. Z){
 print "$i\n";
 close($i);
 open(OUT, ">>IJM_index_${i}.html")|| die;
-print OUT qq{<br><span class="copyrightText">&nbsp;&nbsp;Copyright &copy; 2011 Regents of the University of California</span></body></html>};
+print OUT qq{<br><span class="copyrightText">&nbsp;&nbsp;Copyright &copy; 2012 Regents of the University of California</span></body></html>};
 close(OUT);
 }
