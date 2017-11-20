@@ -1,3 +1,6 @@
+#formatter for eFlora that expects input with expanded abbreviations
+
+
 open(warn_cnps, ">CNPS_warning.txt") || die;
 warn <<EOP;
 NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
@@ -61,6 +64,8 @@ while(<IN>){
 	($code,$name,@residue)=split(/\t/);
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
+$name=~s/ X / &times;/;
+	$TNOAN{$name}=$code;
 }
 $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
@@ -287,6 +292,7 @@ $pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for public viewing </
 #$file="all_files.all";
 #$file="all_revised_files.post.txt";
 #$file="eflora.tmp";
+#$file="eflora_expanded.txt";
 $file="eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
@@ -506,7 +512,7 @@ if($goto_code eq "C6"){
 				print ERR qq{10 $key_genus code=$goto_code\n\n};
 				s!--&gt; *\[(\d*)([A-Z][a-z]+)(.*\])!<a href="#$goto_code">.....&nbsp;[$2$3</a>!;
 			}
-			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*) *\(.*!){
+			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([^ ]+) *\(.*!){
 				$key_genus=ucfirst(lc($2));
 				$key_species=$3;
 #$key_species=~s/ *$//;
@@ -520,6 +526,31 @@ if($goto_code eq "C6"){
 				#$goto_code=$key_genus;
 				print ERR qq{12 $key_genus code=$goto_code\n\n};
 				s!--&gt; *(\d*)([A-Z][a-z]+) (.*)!<a href="#Group$3">.....&nbsp;$2 $3</a>!;
+			}
+			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+) (var\.|subsp\.) ([a-z]+)(.*)!){
+				$key_genus=ucfirst(lc($2));
+$target="$2 $3 $4 $5";
+				$goto_code= $TNOAN{$target} || "C2a";
+				print ERR qq{12a $target code=$goto_code   $_\n\n};
+				s!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
+			}
+			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) ([a-z]+)(.*)!){
+				$key_genus=ucfirst(lc($2));
+$target="$2 $3";
+				$goto_code= $TNOAN{$target} || "C2b";
+				print ERR qq{12b $target code=$goto_code $_\n\n};
+				##s!--&gt; *(\d*)([A-Z][a-z]+) (a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
+				#s!--&gt; *(\d*)([A-Z][a-z]+) (a-z]+)(.*)!<a href="#$goto_code">.....&nbsp;$2 $3$4</a>!;
+				#print ERR qq{12b $target code=$goto_code $_\n\n};
+				s!--&gt; *(\d*)([A-Z][a-z]+ [a-z]+)!<a href="#$goto_code">.....&nbsp;$2</a>!;
+				#print ERR qq{12b $target code=$goto_code $_\n\n};
+
+
+#12b Elymus multisetus code=24122 <a href="#ALE33.">33'</a><a name="ALE33'"> </a> Per; spikelets 2(3--4) per node --&gt; Elymus multisetus
+
+
+
+
 			}
 			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*)!){
 				$key_genus=ucfirst(lc($2));
@@ -615,7 +646,7 @@ s/--/&ndash;/g;
 s/Group (\d+[A-Z]?)/<a name=Group$1>Group $1<\/a>/;
 }
 			print ERR "KEY: $name_anchor\n\n";
-$_=&il_to_html($_);
+#$_=&il_to_html($_);
 			$IJM_key{$name_anchor}.= "<blockquote><h3>$uk</h3>$_<\/blockquote>";
 		}
 			next;
@@ -707,6 +738,7 @@ if(m/TJMX AUTHOR/i){
 		s|^FAMILY: *||;
 		s|SCIED: *|&mdash;|;
 		s|UNABRIDGED COMMON NAME: (.*)|<font size="3" color="blue">\U$1\E</font>|;
+		s|COMMON NAME: (.*) (\(Group.*\))|<font size="3">\U$1\E $2</font>| or
 		s|COMMON NAME: (.*)|<font size="3">\U$1\E</font>|;
 		s|(<font size="3">.*) OR |$1 or |;
 s/FR&EACUTE/FR&Eacute/;
@@ -1074,10 +1106,11 @@ print ERR "$ceae $name_for_hc  NO Bioregional distribution line\n\n";
 
 		s/UNABRIDGED BIOREGIONAL DISTRIBUTION:(.*)/<br><font color="blue">Unabridged bioregional distribution: $1<\/font><br>/;
 		s/BIOREGIONAL DISTRIBUTION: of sp./Distribution in CA of sp./;
-		s/BIOREGIONAL DISTRIBUTION: (.*)/&dist_expand($1)/e;
+		s/BIOREGIONAL DISTRIBUTION: (.*)/$1/;
 		s/UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/<br><font color="blue">Unabridged distribution outside California: $1<\/font><br>/;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA: of sp./Distribution outside CA of sp./;
-		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/&dist_expand($1)/e;
+		#s/BIOREGIONAL DISTRIBUTION: (.*)/&dist_expand($1)/e;
+		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/$1/;
 		#s/^NOTE[()S]*: (.*)/&dist_expand($1)/em;
 		s/^NOTE[()S]*: (.*)/$1/em;
 		s/AUTHORSHIP OF PARTS: /<P>/;
@@ -1208,9 +1241,9 @@ sub format_syns {
 		s/^([^ ]+ [^ ]+)/<i>$1<\/i>/;
 		s/subsp. ([^ ]+)/subsp. <i>$1<\/i>/;
 		s/var. ([^ ]+)/var. <i>$1<\/i>/;
-		s/f. ex /f._ex /;
-		s/f. ([^ ]+)/f. <i>$1<\/i>/;
-		s/f._ex /f. ex /;
+		s/f\. ex /f._ex /;
+		s/ f\. ([^ ]+)/ f. <i>$1<\/i>/;
+		s/f\._ex /f. ex /;
 	}
 	$syns=join("; ", @syns);
 	$syns=~s/^\[//;
@@ -1339,6 +1372,8 @@ local($_) = @_;
 
 s/Eur\./Europe./;
 s/\ball yr\b/all year/;
+s/ yr\b/ year/g;
+s/ yrs\b/ years/g;
 s/trop, subtrop S.Am/tropical, subtropical South America/;
 s/subtrop, trop mtns/subtropical, tropical mountains/;
 s/trop\) regions/tropical) regions/;
@@ -1408,22 +1443,37 @@ s/\blvs\b/leaves/g;
 
 s/\bann\b/annual/g;
 s/\b([Bb])ien\b/$1iennial/g;
-if(m/\bper\b/){
-s/\bper\)/perennial herb)/;
-s/\bper to\b/perennial herbs to/;
-s/\bor per\b/or perennial herb/;
-s/\band per\b/and perennial herb/;
-s/\bif per\b/if perennial herb/;
-s/([,;]) per\b/$1 perennial herb/;
-s/\bper([.,])/perennial herb$1/;
-s/ to per\b/ to perennial herb/;
-s/montane per\b/montane perennial herb/;
-s/lived per\b/lived perennial herb/;
-s/Rhizomed per\b/Rhizomed perennial herb/;
-s/slender per\b/slender perennial herb/;
+if(m/....\bper\b......../i){
+$per=$&;
+s/\(Per\)/(Perennial herb)/g;
+
+s/Per vine/Perennial vine/g;
+s/Per mat/Perennial mat/g;
+s/Per /Perennial herb /g;
+s/\bper\?/perennial herb?/g;
+s/\[([pP])er\]/[$1erennial herb]/g;
+s/\b([pP])er([.;,])/$1erennial herb$2/g;
+s/\b([pP])er (to|from|in|with|or|and|gen|\[|\()\b/$1erennial herb $2/g;
+s/\bper\)/perennial herb)/g;
+s/\bor per\b/or perennial herb/g;
+s/\band per\b/and perennial herb/g;
+s/\bif per\b/if perennial herb/g;
+s/([,;]) per\b/$1 perennial herb/g;
+s/ to per\b/ to perennial herb/g;
+s/\[to per\]/[to perennial herb]/g;
+s/montane per\b/montane perennial herb/g;
+s/lived per\b/lived perennial herb/g;
+s/Rhizomed per\b/Rhizomed perennial herb/g;
+s/slender per\b/slender perennial herb/g;
+s/\bper \[/perennial herb [/g;
+#unless(m/erennial/){
+#print "$per\n";
+#}
 }
 s/\bexc\.?\b/except/g;
 if(m/\bincl\b/){
+s/\(incl\)/(included)/g;
+	s/incl albino/including albino/;
 	s/incl within/included within/g;
 	s/reports not incl CA/reports not including California/;
 	s/Plants incl hybrids/Plants including hybrids/;
@@ -1435,16 +1485,16 @@ if(m/\bincl\b/){
 
 
 	s/or incl /or included /g;
-	s/([Ss]tigmas) incl or /$1 included or /;
-	s/Stamens incl or /Stamens included or /;
-	s/Stamens incl$/Stamens included/;
+	s/([Ss]tigmas) incl or /$1 included or /g;
+	s/Stamens incl or /Stamens included or /g;
+	s/Stamens incl$/Stamens included/g;
 	s/incl *<a /included <a /g;
 
 
 
 
 
-s/not incl app/not including app/;
+s/not incl app/not including app/g;
 s/\bincl([<,.,;])/included$1/g;
 #s/\bincl (in|to|or)\b/included $1/g;
 #s/\bwith incl\b/with included/g;
@@ -1455,38 +1505,38 @@ s/\bincl([<,.,;])/included$1/g;
 #s/does not incl\b/does not include/g;
 #s/\bincl\b/including/g;
 s/genus incl taxa/genus includes taxa/;
-s/\bincls spur/includes spur/;
-s/\bincl (at|as)/included $1/;
-s/not incl _/not include _/;
-s/previously incl _/previously included _/;
-s/\bincl hybrids/include hybrids/;
-s/\bincl here/included here/;
-s/\bincl several/include several/;
-s/\bincl \.\.\.\.\./included ...../;
-s/\bincl \(/included (/;
-s/(that|May|to|not|Previously) incl /$1 include /;
-s/\bincl in /included in /;
-s/\bincl or /included or /;
-s/\bincl to /included to /;
-s/\bincl,/included,/;
-s/\bincl;/included;/;
-s/spp\. incl/spp. included/;
-s/or incl exc/or included exc/;
+s/\bincls spur/includes spur/g;
+s/\bincl (at|as)/included $1/g;
+s/not incl _/not include _/g;
+s/previously incl _/previously included _/g;
+s/\bincl hybrids/include hybrids/g;
+s/\bincl here/included here/g;
+s/\bincl several/include several/g;
+s/\bincl \.\.\.\.\./included ...../g;
+s/\bincl \(/included (/g;
+s/(that|May|to|not|Previously) incl /$1 include /g;
+s/\bincl in /included in /g;
+s/\bincl or /included or /g;
+s/\bincl to /included to /g;
+s/\bincl,/included,/g;
+s/\bincl;/included;/g;
+s/spp\. incl/spp. included/g;
+s/or incl exc/or included exc/g;
 s/netted with incl/netted with included/;
-s/\bincl stamens/included stamens/;
-s/_ incl pls that/_ includes plants that/;
-s/stamens incl within/stamens included within/;
-s/previously incl genera/previously included genera/;
+s/\bincl stamens/included stamens/g;
+s/_ incl pls that/_ includes plants that/g;
+s/stamens incl within/stamens included within/g;
+s/previously incl genera/previously included genera/g;
 s/([Cc]haracters) incl relative/$1 include relative/;
-s/style incl\b/style included/;
-s/ and incl / and included /;
-s/, incl under/, included under/;
-s/subsp. incl the/subsp. include the/;
-s/would incl var/would include var/;
-s/incl genes/includes genes/;
-s/Characters incl calyx/Characters include calyx/;
-s/\bincl\b/including/;
-s/Anthers incl\b/Anthers included/;
+s/style incl\b/style included/g;
+s/ and incl / and included /g;
+s/, incl under/, included under/g;
+s/subsp. incl the/subsp. include the/g;
+s/would incl var/would include var/g;
+s/incl genes/includes genes/g;
+s/Characters incl calyx/Characters include calyx/g;
+s/\bincl\b/including/g;
+s/Anthers incl\b/Anthers included/g;
 }
 s/\bincls/includes/g;
 s/\bAnn\b/Annual/g;
