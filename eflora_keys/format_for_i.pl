@@ -1,6 +1,15 @@
 #formatter for eFlora that expects input with expanded abbreviations
 
 
+#Zeltnera arizonica is a native that is extirpated.  It is not parsing into the index or onto species pages in the flora.  This code below does not accept this format:
+#NATIVE
+#EXTIRPATED
+#ZELTNERA arizonica
+#TAXON AUTHOR: (A. Gray) G. Mans.
+#Native species check for Native on line 0 and report the name on line 1, this is skipping the taxon name in this case.
+
+
+
 open(warn_cnps, ">CNPS_warning.txt") || die;
 warn <<EOP;
 NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
@@ -30,7 +39,7 @@ tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_C
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";	#tnoan.out superseded by smasch_taxon_ids.txt
 tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
-open(IN,"../Interchange/_input/output/flat_dbm_4.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/Interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
 	chomp;
@@ -38,20 +47,22 @@ while(<IN>){
 	$NAME_CODE{$name}=$code;
 }
 #These not in ICPN yet
-$NAME_CODE{"Sphaeropteris cooperi"}=98705;
-$NAME_CODE{"Navarretia paradoxiclara"}=98885;
-$NAME_CODE{"Navarretia paradoxinota"}=98884;
-$NAME_CODE{"Navarretia propinqua"}=34456;
-$NAME_CODE{"Primula clevelandii var. clevelandii"}=98883;
 
 
-#foreach(keys(%NAME_CODE)){
-#print <<EOP;
-#name: $_
-#code: $NAME_CODE{$_}
-#
-#EOP
-#}
+#These used to be in above list, but now appear to be in ICPN
+#$NAME_CODE{"Sphaeropteris cooperi"}=98705;
+#$NAME_CODE{"Navarretia paradoxiclara"}=98885;
+#$NAME_CODE{"Navarretia paradoxinota"}=98884;
+#$NAME_CODE{"Navarretia propinqua"}=34456;
+#$NAME_CODE{"Primula clevelandii var. clevelandii"}=98883;
+
+foreach(keys(%NAME_CODE)){
+print <<EOP;
+name: $_
+code: $NAME_CODE{$_}
+
+EOP
+}
 #die;
 
 
@@ -87,6 +98,9 @@ close(IN);
 "TJM1 AUTHOR",
 "TJM2 AUTHOR",
 "TJMX AUTHOR",
+"TJMXX AUTHOR",
+"TJMXXX AUTHOR",
+"AUTHORSHIP COMMENT",  #this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016
 "HABIT+",
 "UNABRIDGED HABIT+",
 "PLANT BODY",
@@ -102,6 +116,7 @@ close(IN);
 "FRONDS",
 "INFLORESCENCE",
 "STAMINATE HEAD",
+"RAY OR PISTILLATE FLOWER", #this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016
 "PISTILLATE OR BISEXUAL HEAD",
 "PISTILLATE HEAD",
 "STAMINATE INFLORESCENCE",
@@ -115,8 +130,10 @@ close(IN);
 "LATERAL SPIKELET",
 "STAMINATE SPIKELET",
 "PISTILLATE SPIKELET",
+"UNABRIDGED FLOWER", #this was present in sanity.pl and eflora_display.php, added here DEC2016
 "FLOWER",
-"RAY OR PISTILLATE FLOWER",
+"STAMINATE FLOWER",  #this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016
+"PISTILLATE FLOWER",  #this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016, "RAY OR PISTILLATE FLOWER",
 "RAY FLOWER",
 "DISK FLOWER",
 "UNABRIDGED DISK FLOWER",
@@ -124,10 +141,7 @@ close(IN);
 "CONES",
 "POLLEN CONE",
 "SEED CONE",
-"BISEXUAL FLOWER",
-"STAMINATE FLOWER",
-"PISTILLATE FLOWER",
-"PISTILLATE OR BISEXUAL FLOWER",
+"BISEXUAL FLOWER", #"STAMINATE FLOWER", "PISTILLATE FLOWER", "PISTILLATE OR BISEXUAL FLOWER",  this is not even a tag in the current eflora_treatments, DEC2016
 "FRUIT",
 "SEED",
 "SEEDS",
@@ -140,9 +154,25 @@ close(IN);
 "SPORES",
 "CHROMOSOMES",
 "UNABRIDGED CHROMOSOMES",
+"RARITY STATUS",
+"ECOLOGY",
+"UNABRIDGED ECOLOGY", #Rarity Status used to be below Ecology in eflora_display.php and this file; however 90% of all records in Eflora_treatments had RarityStatus above ecology. #This file and others will be changed to match Eflora_treatments, which was the easiest change to make.  There are 2090+ records out of order otherwise. JAA, Nov 2016
+"ELEVATION",
+"BIOREGIONAL DISTRIBUTION",
+"UNABRIDGED BIOREGIONAL DISTRIBUTION",
+"DISTRIBUTION OUTSIDE CALIFORNIA",
+"UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA",
+"SPECIES IN GENUS",
+"UNABRIDGED SPECIES IN GENUS",
+"GENERA IN FAMILY",
+"UNABRIDGED GENERA IN FAMILY",
+"ETYMOLOGY",
+"UNABRIDGED ETYMOLOGY",
+"TOXICITY",
+"SYNONYMS",
+"UNABRIDGED SYNONYMS", #"SYNONYM", There is no field for SYNONYM in eflora_treatments, JAA DEC2016
 "ECOLOGY",
 "UNABRIDGED ECOLOGY",
-"RARITY STATUS",
 "ELEVATION",
 "BIOREGIONAL DISTRIBUTION",
 "UNABRIDGED BIOREGIONAL DISTRIBUTION",
@@ -157,23 +187,27 @@ close(IN);
 "TOXICITY",
 "SYNONYMS",
 "UNABRIDGED SYNONYMS",
-"SYNONYM",
 "REFERENCE",
 "UNABRIDGED REFERENCE",
 "HORTICULTURAL INFORMATION",
 "UNABRIDGED HORTICULTURAL INFORMATION",
 "NOTE",
 "NOTES",
-"AUTHORSHIP COMMENT",
+"REFERENCE",
+"UNABRIDGED REFERENCE",
+"HORTICULTURAL INFORMATION",
+"UNABRIDGED HORTICULTURAL INFORMATION",
+"NOTE",
+"NOTES", #"AUTHORSHIP COMMENT",  
 "UNABRIDGED NOTE",
 "FLOWERING TIME",
-"CONING TIME",
-"FLOWERING TIMES",
-"FRUITING TIME",
-"WEEDINESS",
+"FRUITING TIME",#this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016
+"CONING TIME", #"FLOWERING TIMES",this is not even a tag in the current eflora_treatments, DEC2016, #"FRUITING TIME", #"WEEDINESS",
 "AUTHORSHIP OF PARTS",
+"WEEDINESS",#this was out of order in this file compared to sanity.pl and eflora_display.php, added here DEC2016
 "SCIED"
 );
+
 
 %terms=(
 "PISTILLATE FLS","<b>Pistillate flowers</b>",
@@ -185,8 +219,7 @@ close(IN);
 "LATERAL SPIKELET","<b>Lateral spikelet</b>",
 "STAMINATE SPIKELET","<b>Staminate spikelet</b>",
 "ST","<b>Stem</b>",
-"INFL","<b>Inflorescence</b>",
-"PISTILLATE OR BISEXUAL FL","<b>Pistillate or bisexual flower</b>",
+"INFL","<b>Inflorescence</b>", #"PISTILLATE OR BISEXUAL FL","<b>Pistillate or bisexual flower</b>",
 "STAMINATE FLS","<b>Staminate flowers</b>",
 "FERTILE SPIKELET","<b>Fertile spikelet</b>",
 "PISTILLATE FL","<b>Pistillate flower</b>",
@@ -745,6 +778,22 @@ if(m/TJMXX AUTHOR/i){
 		s|COMMON NAME: (.*) (\(Group.*\))|<font size="3">\U$1\E $2</font>| or
 		s|COMMON NAME: (.*)|<font size="3">\U$1\E</font>|;
 		s|(<font size="3">.*) OR |$1 or |;
+		
+if(m/TJMXXX AUTHOR/i){ #this was not added to this file when the XXX authors were added by David to sanity.pl and eFlora_display.php, DEC2016
+		s|(TJM2 AUTHOR:.*\n)||i; #TJMXXX AUTHOR line has priority over both TJM2 AUTHOR and TJMX and TJMXX AUTHOR
+		s|(TJMX AUTHOR:.*\n)||i;
+		s|(TJMXX AUTHOR:.*\n)||i;
+}
+		s|TJM[2X]X?X? AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR" or "TJMXXX AUTHOR"
+		s|(TJM1 AUTHOR:.*)||i;
+		s|(TJM\(1993\) AUTHOR:.*)||i;
+		s|^FAMILY: *||;
+		s|SCIED: *|&mdash;|;
+		s|UNABRIDGED COMMON NAME: (.*)|<font size="3" color="blue">\U$1\E</font>|;
+		s|COMMON NAME: (.*) (\(Group.*\))|<font size="3">\U$1\E $2</font>| or
+		s|COMMON NAME: (.*)|<font size="3">\U$1\E</font>|;
+		s|(<font size="3">.*) OR |$1 or |;
+		
 s/FR&EACUTE/FR&Eacute/;
 		if(s|^([A-Z]+ACEAE) \(([A-Z][a-z]+)\)$|<center><font size="4"><b>$1 ($2)</b></font>|ms){
 			$key_genus=$1;
@@ -814,7 +863,7 @@ $last_genus="";
 		s|^([A-Z]+ +\[[A-Z][a-z]+\])$|<center><font size="4"><b>$1</b></font>|ms;
 		s|UNABRIDGED HABIT\+: *(.*)|<font color="blue">$1</font>|;
 		s|UNABRIDGED ECOLOGY: *(.*)|<font color="blue">$1</font>|;
-		s|EMBEDDED UNABRIDGED KEY LEAD: *(.*)|<br><font color="blue">$1</font><br>|g;
+		#s|EMBEDDED UNABRIDGED KEY LEAD: *(.*)|<br><font color="blue">$1</font><br>|g;
 		s|HABIT\+: *|<br>$nativity</center><blockquote>| && s/$/\n$unabridged_lines<\/blockquote>/;
 		#s|HABIT\+: *|<br><font size="1"><b>$nativity</b></font></center><blockquote>| && s/$/\n<\/blockquote>/;
 		#s|HABIT\+: *|<br><font size="1"><b>$nativity</b></font></center>flabba2<blockquote>| && s/$/\n<\/blockquote>/;
@@ -875,7 +924,7 @@ $last_genus="";
 		s/REFERENCE[S()]*: (.*)/[$1]/;
 		while(s/UNABRIDGED NOTE[()S]*:(.*)/<br><font color="blue">Unabridged note: $1<\/font><br>/){
 	 #s!((UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!<a href="http://ucjeps.berkeley.edu/cgi-bin/new&95;detail.pl?accn&95;num=$1">$1</a>!g;
-	 @accessions=m!((?:UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!g;
+	 @accessions=m!((?:UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS-BOT-BC|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!g;
 grep(s/^/&dup=/,@accessions);
 if(@accessions){
 $accessions[0]=~s/&//;
@@ -1164,22 +1213,22 @@ s/<br>\n<br>/\n<br>/g;
 #print "NAME ANCHOR: $name_anchor $NAN{$name_anchor}\n";
 $sequence_string="$last_family, $last_genus";
 $nan=$NAN{$name_anchor};
-#print "1: $sequence_string $nan\n";
+print "$nan => $sequence_string \n";
 if($nan=~m/(.*) (subsp\.|var\.|f\.).*/){
 	$nan_species=$TNOAN{$1};
 	if($IJM{$nan_species}){
 		$sequence_string .= ", $nan_species, $name_anchor";
-#print "2: $sequence_string $nan\n";
+print "$nan => $sequence_string \n";
 	}
 	else{
 		$sequence_string .= ", $name_anchor";
-#print "3: $sequence_string $nan\n";
+print "$nan => $sequence_string \n";
 		#push(@name_sequence,$name_anchor);
 	}
 }
 else{
 		$sequence_string .= ", $name_anchor";
-#print "4: $sequence_string $nan\n";
+print "$nan => $sequence_string \n";
 }
 push(@name_sequence,$sequence_string);
 s/<\/blockquote/$rarity<\/blockquote/;
@@ -1209,6 +1258,20 @@ foreach(@name_sequence){
 	}
 	print OUT "\n";
 }
+
+open(OUT, ">IJM_sequence_names.txt");
+foreach(@name_sequence){
+	@elements=split(/, /,$_);
+	%seen=();
+	foreach(@elements){
+		print OUT "$NAN{$name_anchor} => ";
+		next unless /\d/;
+		next if $seen{$_}++;
+		print OUT "$_, ";
+	}
+	print OUT "\n";
+}
+
 
 untie(%IJM);
 untie(%IJM_key);
@@ -1246,9 +1309,9 @@ sub format_syns {
 		s/^([^ ]+ [^ ]+)/<i>$1<\/i>/;
 		s/subsp. ([^ ]+)/subsp. <i>$1<\/i>/;
 		s/var. ([^ ]+)/var. <i>$1<\/i>/;
-		s/f\. ex /f._ex /;
+		s/ f\. ex /filius ex /;
 		s/ f\. ([^ ]+)/ f. <i>$1<\/i>/;
-		s/f\._ex /f. ex /;
+#		s/f\._ex /f. ex /;
 	}
 	$syns=join("; ", @syns);
 	$syns=~s/^\[//;
