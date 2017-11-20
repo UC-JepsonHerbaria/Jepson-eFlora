@@ -4,7 +4,12 @@
 #mv hb2.pl /usr/local/web/ucjeps_cgi/hb2.pl
 #chmod a+x /usr/local/web/ucjeps_cgi/hb2.pl
 #echo "heath bars script refreshed and moved to ucjeps_cgi"
+use BerkeleyDB;
 
+
+my $today=scalar(localtime());
+#my $date = localtime->ymd;
+warn "Today is $today\n";
 
 open(IN, "_hb2.pl") || die;
 open(OUT, ">hb2.pl") || die;
@@ -14,8 +19,7 @@ open(OUT, ">hb2.pl") || die;
 	}
 close(IN);
 
-use BerkeleyDB;
-
+open(OUT2, ">heath_bar_output_$today.txt") || die;
 $data_path	="/usr/local/web/ucjeps_data/ucjeps_data";
 
 #data files
@@ -37,12 +41,12 @@ $CDL_nomsyn_file	="${data_path}/CDL_nomsyn";
 
 tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDONLY)|| die "$!";
 	while(($key,$value)=each(%nomsyns)){
-		print "$key $value\n" if $key=~/carnosa/;
+		#print "$key $value\n" if $key=~/carnosa/;
 
 		@syns=split(/\t/,$value);
 			foreach $syn (@syns){
 				$NOMSYN{$syn}=$key;
-				print "$syn becomes $key\n";
+				#print OUT2 "$syn becomes $key\n";
 			}
 }
 	#die;
@@ -51,15 +55,19 @@ tie(%nomsyns, "BerkeleyDB::Hash", -Filename=>"$CDL_nomsyn_file", -Flags=>DB_RDON
 open(IN, "eflora_KML_Moe/data_inputs/tax_syns_to_check") || die;
 while(<IN>){
 chomp;
-$_ = lc($_);
-$_ = s/ (nothosubsp\.|f\.|var\.|subsp\.) / /g;
+($taxsyn, $accepted)=split(/\t/);
+		$taxsyn =~ s/ (nothosubsp\.|f\.|var\.|subsp\.) / /g;
+		$taxsyn = lc($taxsyn);
 
-($syn, $accepted)=split(/\t/);
-	print "$syn $accepted\n" if $syn=~/littoralis/;
-			$accepted=$TAX_SYNS{$syn};
+		$accepted =~ s/ (nothosubsp\.|f\.|var\.|subsp\.) / /g;
+		$accepted = lc($accepted);
+
+	print "$taxsyn $accepted\n" if $taxsyn =~ m/littoralis/;
+			$TAX_SYNS{$taxsyn} = $accepted;
+			$TAX_ACC{$accepted} = $taxsyn;
 }
 
-close (IN);
+
 
 
 tie %CDL, "BerkeleyDB::Hash", -Filename=>"$CDL_DBM_file", -Flags=>DB_RDONLY or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
@@ -70,15 +78,16 @@ open(IN, "${data_path}/smasch_taxon_ids.txt") || die "Couldn't open the TID file
 		($code,$name,@residue)=split(/\t/);
 		$TNOAN{$code}=$name;
 	}
-
+close(IN);
 #get list of relevent names, this is the old format that predates the eflora php scripts
 #<a href="/cgi-bin/get_IJM.pl?tid=29483">        Jacaranda mimosifolia</a><br>
 #<a href="/cgi-bin/get_IJM.pl?tid=4770"> Jacobaea vulgaris*</a><br>
 
-#list of accession IDs associated with mexican records, not updated since 2012
+#list of accession IDs associated with mexican records, not updated since 2015
 #this file is now out of date and no longer removes RSA and CAS records due to the accession number change
 #this needs re-created, but in a new format, mainly a list of the specimens that have no coordinates and are from Mexico but the municipality is 'unknown'
 #these are the new problems taxa.  The rest of the Mexico specimens are removed based on the coordinates and county fields.
+#in reality, this should be a single list, generated from the CCH loading scripts, so this does not have to be maintained by hand.
 open(IN,"eflora_KML_Moe/data_inputs/all_mex.txt") || die;
 	while(<IN>){
 		chomp;
@@ -86,10 +95,29 @@ open(IN,"eflora_KML_Moe/data_inputs/all_mex.txt") || die;
 	}
 	close(IN);
 
+open(IJM_name_list, "eflora_KML_Moe/data_inputs/accepted_name_list.txt") || die; #output from the current eflora database script with accepted names
+warn "reading Accepted names\n";
+while(<IJM_name_list>){
+chomp;
+@ACCEPTED=split(/\t/,$_);
+$accName = $ACCEPTED[0];
+$accName =~ s/(nothosubsp\.|ssp\.|subsp\.|var\.|f\.) //;
+$accName = lc($accName);
+
+$ACC{$accName}++;
+
+}
+	close(IJM_name_list);
+#die;
 while(($key,$value)=each(%CDL)){
 	@fields=split(/\t/,$value);
-	($taxon=$fields[0])=~s/.* //;
-	($taxon=$TNOAN{$taxon})=~s/(nothosubsp\.|subsp\.|var\.|f\.) //;
+	$tid=$fields[0];
+	next unless $TNOAN{$tid};	
+
+	$sciName = $TNOAN{$tid};
+
+	$sciName =~ s/(nothosubsp\.|ssp\.|subsp\.|var\.|f\.) //;
+	#$sciName =~ s/.* //; #this was in the original code, not sure what it was supposed to do; looks like it eliminates any string with a space afterwards
 	#three criteria to exclude Baja California records based on accession_id, county and/or latitude
 	next if $exclude_mexican_records{$key};
 	
@@ -103,25 +131,44 @@ while(($key,$value)=each(%CDL)){
 			next;
 		}
 		
-	$taxon=lc($taxon);
-
-		if($NOMSYN{$taxon}){
-			$taxon = $NOMSYN{$taxon};
-		}
-		elsif ($TAX_SYNS{$taxon})
-			$taxon = $TAX_SYNS{$taxon};
+	next if $sciName =~ m/aceae$/; #skip specimens ID'd only to family
+	next if $sciName =~ m/^[A-z][a-z-]+$/;	#skip specimens ID'd only to genera
+	
+	$sciName=lc($sciName);
+	
+	foreach ($sciName){
+		next if $ACC{$sciName};
+			unless($NOMSYN{$sciName}){
+				print OUT2 "$sciName\tnot in NomSyn Table\n";
+			}
+			unless ($TAX_SYNS{$sciName}){
+				print OUT2 "$sciName\tnot in TaxSyn Table\n";
+			}
+	}	
+		
+		if($NOMSYN{$sciName}){
+			$sciName = $NOMSYN{$sciName};
 		}
 	
-	$fields[3] = =~s/ +//;
-	$collector=$fields[1];
-	$collector=~s/,? (and|&).*//;
-	$collector=~s/,.*//;
-	$collector=~s/^.*[A-Z][a-z].*//;
-	$collector=~s/ +//;
-	next if $seen{"$collector$taxon$fields[5]$fields[3]"}++;
+		if ($TAX_SYNS{$sciName}){
+			print OUT2 "$sciName ===> $TAX_SYNS{$sciName}\n" unless $seen3{$sciName}++;
+			$sciName = $TAX_SYNS{$sciName};
+			print "$sciName\n" unless $seen2{$sciName}++; #for screen output
+		}
+
+			
+	
+	next unless $fields[1];
 	next unless $fields[5];
+	next if $fields[3] =~ m/[^0-9.]/; #skip non-numeric collection numbers, as these are errors.
+	$fields[3] =~s/ +//g;
+	next if $seen{"$sciName$fields[5]$fields[3]"}++;
+	
+	print OUT2 "==>Heath_Bar_unique_identifier: $sciName$fields[5]$fields[3]\n";
+	
+	
 	if($fields[3]){
-		#next if $seen{$fields[3].$fields[5]}++;
+		#next if $seen4{$fields[3].$fields[5]}++;
 		if ($year > $this_year){
 			warn "$year $_\n";
 			next;
@@ -131,11 +178,12 @@ while(($key,$value)=each(%CDL)){
         		$month=("",Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec)[$month];
 				warn "$fields[5]>>>$_\n" unless $month;
 
-			$store{$taxon}{$month}++;
-			$total{$taxon}++;
+			$store{$sciName}{$month}++;
+			$total{$sciName}++;
 		}
 	}
 }
+
 
 #fields[1] = collectors
 #fields[2] = CNUM_prefix
@@ -145,15 +193,13 @@ while(($key,$value)=each(%CDL)){
 #fields[6] = LJD
 
 #die;
-	foreach $taxon (sort(keys(%store))){
-		print OUT "$taxon\t";
-		#print "$TNOAN{$taxon}\t";
-		
-		foreach $month (Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec){
-		#print  int(100 * $store{$taxon}{$month}/$total{$taxon}),"\t";
-		print OUT  $store{$taxon}{$month},"\t";
-		}
-	print OUT "($total{$taxon})\n";
+	foreach $sciName (sort(keys(%store))){
+		print OUT "$sciName\t";
+			foreach $month (Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec){
+				print OUT  $store{$sciName}{$month},"\t";
+			}
+		print OUT2 "$sciName\tn=$total{$sciName}\n";
+		print OUT "($total{$sciName})\n"; 
 	}
 	
 sub inverse_julian_day {

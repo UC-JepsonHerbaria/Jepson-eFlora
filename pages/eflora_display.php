@@ -387,7 +387,8 @@ function initialize() {
 
   var kmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/jepcodes-v7.kmz", { suppressInfoWindows: true });
   kmlLayer.setMap(map);
-  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+".kml", { }); //deleting the ?122 fixes the erroneous yellow flags to turn to blue as they should be, and fixes some blue flags that should be yellow, this seemed to override the values in the KML's themselves which were correct
+  var pmlLayer = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+TaxID+"_1.kml", { }); //deleting the ?122 fixes the erroneous yellow flags to turn to blue as they should be, and fixes some blue flags that should be yellow, this seemed to override the values in the KML's themselves which were correct
+	//added a '_1' to force flush the cached maps.  Maps that are blank are erroneously not being generated and I can instantly tell the changes.  each time the eflora KMLs are updated, this number changes.
   pmlLayer.setMap(map);
 
 }
@@ -902,7 +903,7 @@ if (isset($IllustrationFile)) {
 	  	if ($RevNumber){ echo $RevNumber.", ";}
 	  echo "http://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=".$TaxonID.", accessed on "?> <?php echo date ("F d, Y") ?>.
 </P>
-<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php if ($RevDate){ echo $RevDate.". ";} ?> <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/eflora/, accessed on <?php echo date ("F d, Y")?>.</P>
+<P class=bodyText>Citation for the whole project: Jepson Flora Project (eds.) <?php echo date ("Y") ?>, <em>Jepson eFlora</em>,  http://ucjeps.berkeley.edu/eflora/, accessed on <?php echo date ("F d, Y")?>.</P>
 
 
 <?php

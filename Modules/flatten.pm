@@ -6,6 +6,7 @@ use Exporter;
 #assumes hierarchicality of SNE, DMoj, and MP
 #adds n & s ChI
 #sorts differently, ignoring latitudinal descriptors
+
 @NCoR = ('NCoRO','NCoRI','NCoRH');
 @CaR = ('CaRF','CaRH');
 @cSN = ('cSNF', 'cSNH');
@@ -13,17 +14,22 @@ use Exporter;
 @sSN = ('sSNF', 'sSNH','Teh'); #added 'Teh' to this line recommended by Tom, because sSN by definition includes Teh, and there are taxa that have yellow flags in Teh that should not be
 @SNF=('nSNF','cSNF','sSNF');
 @SNH=('nSNH','cSNH','sSNH');
+@SNE = ('WaI','SNE'); #moved
 @SN = (@SNF,@SNH,'Teh');
 @GV = ('ScV','SnJV');
 @TR = ('WTR','SnGb','SnBr');
 @ChI = ('nChI','sChI');
 @PR = ('PR', 'SnJt');
+@PRW = ('PR'); #special code for just Athryium filix-femina, for excluding PR and including SnJt
 @SW = ('SCo',@ChI,@PR,@TR);
+@SCoRO =  ('SCoRO'); #added
+@SCoRI =  ('SCoRI'); #added
 @SCoR =  ('SCoRO','SCoRI');
+@SCo = ('SCo'); #added
 @CW = (@SCoR, 'CCo','SnFrB');
 @NW = (@NCoR, 'KR', 'NCo');
 @MP = ('Wrn','MP');
-@SNE = ('WaI','SNE');
+#@SNE was here
 @GB = (@MP, @SNE);
 @DMoj = ('DMoj', 'DMtns');
 @D = (@DMoj,'DSon');
@@ -52,32 +58,13 @@ print join ("\n",sort bycaps keys %qualified);
 for $i (0 .. 34){
 vec($nullvec,$i,1) = 0;
 }
-#print &get_hcode("CaRH, SNH (esp e slope), GB"), "\n";
-#die
-
-#open(IN,"markup_plusFT") || die;
-#$/="";
-#while(<IN>){
-#if(m/NDS>(.*)<\/NDS>/){
-#$nds=$1;
-#if(m/<HCODE>(.*)<\/HCODE>/){
-#$hcode=$1;
-#$new_hcode=&get_hcode($nds);
-#unless($hcode eq $new_hcode){
-#($comment)=m/<comment>(.*)<\/comment>/;
-#print <<EOP;
-#$nds
-#$hcode
-#$new_hcode
-#$comment
-#
-#EOP
-#}
-#}
-#}
-#}
-#
-
+print "s SNF, CCo, SCoRO, SCo, WTR, SnGb, nw PR==>";
+print &get_hcode("s SNF, CCo, SCoRO, SCo, WTR, SnGb, nw PR"), "\n";
+print "CaR, SCoR, SnGb, PR, GB, w edge DSon==>";
+print &get_hcode("CaR, SCoR, SnGb, PR, GB, w edge DSon"), "\n";
+print "CA-FP (exc Teh, ScV, SCoRI, SCo, WTR, PR exc SnJt), MP==>";
+print &get_hcode("CA-FP (exc Teh, ScV, SCoRI, SCo, WTR, PR exc SnJt), MP"), "\n";
+#die;
 
 
 sub get_hcode {
@@ -149,17 +136,18 @@ if($loc=~s/\)//){ push(@parenstr, "$name:$string") if defined($qualified{$loc});
  		}
 	}
 	
-	if( m/exc\.? /){
+	if( m/exc\.? /){ #this does not work when there are two 'exc' in an exception
 #warn "$_\n" if m/exc.*exc/;
 warn "$_\n" if m/possibly/;
-##print "\nEL: $line\n$_\n";
+print "\nEL: $line\n$_\n";
+		s/exc Teh, ScV, SCoRI, SCo, WTR, PR exc SnJt\), /exc Teh, ScV, SCoRI, SCo, WTR, PRW), /; #fix the code for the one record where 'exc' appears twice and causes the exclusion to fail
 		s/except/exc/;
 		s/possibly//;#delete this which is not excluding the first region after it but before the next ','
 					#(CA (exc possibly CW, SW, DSon, elsewhere) --> CW is filled in but SW and DSON excepted before this was entered
 		($exception_string = $_)=~ s/.*exc[. ]+//;
 		$exception_string =~ s/.*except //;
 
-##print "ES: $exception_string\n";
+print "ES: $exception_string\n";
 
 		$exception_string =~ s/\).*//;
 
@@ -209,22 +197,23 @@ return unpack("H*", pack("b*",unpack ("b*", $distvec)));
 sub PRkludge{
 local($_)=@_;
 $prev=$_;
-				unless(m/exc[e ]+PR/){
-	if(m/PR \(/){
-		if (m/PR (\([^)]+\))/){
-			$parens=$1;
-			unless($parens =~ /San J|SnJt|scattered|desert slope/){
-s/PR (\([^)]+\))/$& (exc SnJt)/ unless m/SnJt/;
-				}
+
+	unless(m/exc[^)]+PR/){
+		if(m/PR \(/){
+			if (m/PR (\([^)]+\))/){
+				$parens=$1;
+					unless($parens =~ /San J|SnJt|scattered|desert slope/){
+						s/PR (\([^)]+\))/$& (exc SnJt)/ unless m/SnJt/;
+					}
 			}
 		}
-				elsif(m/n&?e PR/){
-s/PR/PR (incl SnJt)/;
+		elsif(m/n&?e PR/){
+			s/PR/PR (incl SnJt)/;
 		}
-				else{
-					s/([a-z] PR)/$1 (exc SnJt)/ unless m/SnJt/;
-				}
-}
+		else{
+			s/([a-z] PR)/$1 (exc SnJt)/ unless m/SnJt/;
+		}
+	}
 #print "\n\n$prev\n$_\n" unless $_ eq $prev;
 
 $_;
@@ -232,6 +221,7 @@ $_;
 sub edgekludge {
 local($_)=@_;
 $prev=$_;
+s/([swen]* edge DSon)/DSon/; #added
 s/([swen]* edge D\b)/$1 (exc DMtns)/;
 s/([swen]* edge DMoj)/$1 (exc DMtns)/;
 s/(D \([swen]* edge\))/$1 (exc DMtns)/;
@@ -256,15 +246,6 @@ s/nSNE, adjacent CA.FP/nSNE, sSNH/;
 $_;
 }
 
-#sub SNkludge {
-#local($_)=@_;
-#s/([scn])([scnwe]+) (SN[HF]?)/$1$3/;
-#s/[nwsec]-([snc])\b/$1/g;
-#s/([scn]) (SN[^E])/$1$2/g;
-#s/([scn]) (SN)$/$1$2/g;
-#s/([scn])&([scn])(SN[HF]?)/$1$3, $2$3/g;
-#$_;
-#}
 sub SNkludge {
 local($_)=@_;
 #$key=$_;
