@@ -1,7 +1,8 @@
 #3. Basal vestigial spikelets 1(2); spikelets gradually narrowing distally .....-> [A. geniculata, incl A. ovata]
 
 
-open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(OUT, ">index_full.tmp") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -15,15 +16,16 @@ $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
 close(IN);
 
 $/="";
-	$filename=$ARGV;
-while(<>){
+	$filename="eflora_treatments.txt";
+open(IN, $filename) || die;
+while(<IN>){
 		if(m/([A-Z]+ACEAE)/){
 			$family=$1;
 			#print "$family\n";
 		}
     		if(m/([A-Z-]+ .*)\nTAXON AUTHOR/){
         		$name=&strip_name($1);
-			print "$name\n";
+			print OUT "$name\n";
 			$LAN=$name;
         		$TJM2{$name}="$filename\n";
         		while(s/SYNONYMS: +(.*)//){
@@ -35,7 +37,7 @@ s/probably //;
 					s/Expanded author citation: //;
                 			s/_//g;
                 			$TJM2{&strip_name($_)}.="$LAN\n";
-                			print &strip_name($_),"*\n";
+                			print OUT &strip_name($_),"*\n";
             			}
         		}
 			if(m/NOTE:.*_/){
@@ -52,7 +54,7 @@ s/probably //;
     		}
     		elsif(m/(NATIVE|NATURALIZED)\n([A-Z-]+ .*)/){
         		$name=&strip_name($2);
-			print "$name\n";
+			print OUT "$name\n";
 			$LAN=$name;
         		$TJM2{$name}="$filename\n";
         		while(s/SYNONYMS: +(.*)//){
@@ -61,7 +63,7 @@ s/probably //;
 					s/Expanded author citation: //;
                 			s/_//g;
                 			$TJM2{&strip_name($_)}.="$LAN\n";
-                			print &strip_name($_), "*\n";
+                			print OUT &strip_name($_), "*\n";
             			}
         		}
 			if(m/NOTE:.*_/){
@@ -72,7 +74,7 @@ s/probably //;
 					$TJM2{$1}.="$LAN\n";
 				}
 				if(m/_/){
-					"print $line$_\n";
+					warn  " SUPPL? $line$_\n";
 				}
 			}
 		}
@@ -118,8 +120,8 @@ $store{$storeit}=$key_name;
 		}
 	}
 }
-open(OUT, ">complete_index.html") || die;
-print OUT <<EOP;
+#open(OUT, ">complete_index.html") || die;
+print NOWHERE <<EOP;
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -186,9 +188,9 @@ EOP
 foreach(sort{$store{$a} cmp $store{$b} || $a cmp $b}(keys(%store))){
 next if m/r\.t\. clausen/;
 next if m/d\.r\. dewey/;
-print OUT "$_\n";
+print NOWHERE "$_\n";
 }
-print OUT <<EOP;
+print NOWHERE <<EOP;
 </body>
 </html>
 EOP
