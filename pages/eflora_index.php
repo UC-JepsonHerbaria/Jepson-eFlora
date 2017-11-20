@@ -9,7 +9,12 @@ $db = new SQLite3($database_location);
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><title>Jepson Herbarium: Jepson Flora Project: Jepson eFlora Search</title>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> 
+<!--<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">--> 
+<!--This above line has been in here for an unknown length of time, but it effectively stops all search engines from indexing this page for display in searches
+no eFlora pages will come up in searches in Google with this in here, and neither will species pages from eFlora.  CalFlora will remain the top result if this is kept.
+The alternate search, like search_IJM.pl, is the only one comming up
+in google as of August 2017.  This alternate page, however, is dated and a bit ugly, especially compared to CalFlora.  I am sprucing it up with images from CalPhotos, so it will remain.
+This is now commented out so this page will be indexed and species pages will now hopefully be included in Google searches -->
 <link href="http://ucjeps.berkeley.edu/common/styles/dropdowns.css" rel="stylesheet" type="text/css" />
 
 <!-- Google analytics -->
