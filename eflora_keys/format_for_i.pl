@@ -33,11 +33,6 @@ while(<IN>){
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
 $IJM=();
 tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_CREATE )|| die "Stopped; couldnt open IJM_key\n";
-
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/temp/name_to_code.hash name_to_code.hash";
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";	#tnoan.out superseded by smasch_taxon_ids.txt
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
-#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";	#tnoan.out superseded by smasch_taxon_ids.txt
 tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
 open(IN, "/Users/davidbaxter/DATA/Interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
@@ -48,14 +43,7 @@ while(<IN>){
 }
 #These not in ICPN yet
 
-
-#These used to be in above list, but now appear to be in ICPN
-#$NAME_CODE{"Sphaeropteris cooperi"}=98705;
-#$NAME_CODE{"Navarretia paradoxiclara"}=98885;
-#$NAME_CODE{"Navarretia paradoxinota"}=98884;
-#$NAME_CODE{"Navarretia propinqua"}=34456;
-#$NAME_CODE{"Primula clevelandii var. clevelandii"}=98883;
-
+#
 foreach(keys(%NAME_CODE)){
 print <<EOP;
 name: $_
@@ -66,7 +54,7 @@ EOP
 #die;
 
 
-open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids_cch.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -77,18 +65,15 @@ while(<IN>){
 $name=~s/ X / &times;/;
 	$TNOAN{$name}=$code;
 }
-$TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
-$NAN{93858}="Centaurea jacea nothosubsp. pratensis";
+
 close(IN);
-#foreach(keys(%TNOAN)){
-#print "$_\n" if m/acutidens/;
-#print "$_\n";
-#}
+
+foreach(keys(%TNOAN)){
+print "$_\n" if m/acutidens/;
+print "$_\n";
+}
 #die;
 
-#$NAME_CODE{"Woodsiaceae"}=93775;
-#converts all .post.txt files to html files for display. Writes output to WEB folder
-#$suffix="post.txt";
 
 @field_list=(
 "UNABRIDGED KEY LEAD",
@@ -273,64 +258,15 @@ close(IN);
 $field_order=1;
 grep($field_list{$_}=$field_order++,@field_list);
 
-#opendir(DIR,".");
-#@files=@ARGV;
-#chomp(@files);
-#if($files[$#files]=~/editor/i){
-#$viewers="editor";
-#pop(@files);
-#}
-#if($#files==0){
-#$single_file=shift(@files);
-#}
-#if($viewers=~/editor/i){
-#$explanatory_header=<<EOH;
- #<p class="bodyText">This treatment has undergone both technical and scientific editing within the Jepson Flora Project. Please forward any comments or corrections you may have to the Scientific Editor, Dr. Thomas Rosatti (<a href="mailto:rosatti\@berkeley.edu?subject=Second_edition_comments$taxon">rosatti\@berkeley.edu</a>).<br /> &nbsp;<br /> 
-#Text appearing in blue on this page will not appear in the printed book; it will be displayed only on the Web.
-#</P>
-#EOH
-#$pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for editorial viewing </span><br />};
-#}
-#else{
-#$explanatory_header=<<EOH;
-#<p class="bodyText">This treatment has undergone both technical and scientific editing within the Jepson Flora Project and is, in the view of the author or authors as well as the Jepson Flora Project Staff and the Jepson Flora Project Editors, ready for public viewing. Please forward any comments or corrections you may have to the Scientific Editor, Dr. Thomas Rosatti (<a href="mailto:rosatti\@berkeley.edu?subject=Second_edition_comments$taxon">rosatti\@berkeley.edu</a>).<br /> 
-#<P>
-#Text appearing in blue on this page will not appear in the printed book; it will be displayed only on the Web.
-#<br>
-#Specimen numbers are hyperlinked to records in the Consortium of California Herbaria data view where possible. Taxa are hyperlinked to entries in the Jepson Interchange via the "[Online Interchange]" link.
-#<br><b> Citation: [Author] 2011 (in press). [Genus]. In B. G. Baldwin et al. (eds.), The Jepson Manual: Vascular Plants of California. Univ. of California Press, Berkeley. Retrieved from ucjeps.berkeley.edu/jepsonmanual/review/ on [date]</b>
-#
-
-#EOH
 $pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for public viewing </span><br />};
-#}
 
-#unless(@files){
-
-
-
-
-
-#@files=(<DATA>);
-#chomp(@files);
-#}
-#@files=$single_file if $single_file;
-#die "you might have to rename a .trdone file .post.txt\n" unless @files;
-#foreach $file (@files){
-	#warn $file, "\n";
-#$file=ucfirst($file);
-#next if $file =~/#/;
-
-#$file="all_files.all";
-#$file="all_revised_files.post.txt";
-#$file="eflora.tmp";
-#$file="eflora_expanded.txt";
 $file="eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 warn "reading from $file\n";
 
 	$all_lines=<IN>;
+	
 #converts windows line ends#
 	$all_lines=~s/\xEF\xBB\xBF//;
 	$all_lines=~s/ *\r\n/\n/g;
@@ -340,6 +276,7 @@ warn "reading from $file\n";
 	@all_pars=split(/\n\n+/,$all_lines);
 	$element=0;
 	foreach(@all_pars){
+	
 #$name_anchor= "999999";
 next if m/^#/;
 warn "$_\n" if $seen_line{$_}++;
@@ -645,16 +582,6 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 	}
 	$_=join("\n",@lines);
 
-	#if(s/^[0-9]+[abc]?[.']/<br>$&/mg){
-	#s//-/g;
-	#s/…/.../g;
-	##1' Involucel tube with 8 valve-like openings; st shaggy-hairy; corolla blue; pl gen ann...-> [S. stellata]
-	#s/--&gt;( *)\[([A-Z]\. [a-z].*)\]/--&gt;[<I>$2<\/I>]/g;
-	#s/--&gt;(.*)\[(.*)\]/--&gt;<I>$1<\/I> [$2]/g;
-	#s/--&gt; *(subsp\.|var\.|f\.) (.*)/--&gt;<!-- -->$1 <I>$2<\/I>/g;
-	#s/--&gt;([^<\[].*)/--&gt;<I>$1<\/I>/g;
-	#s/--&gt; *<I> *([A-Z()234]+) *<\/I>/--&gt; $1/g;
-	#s/(--&gt;.* [a-z]+) (var\.|subsp\.|f\.) /$1<\/i> $2 <i>/g;
 
 	#substitute out the "UNABRIDGED KEY LEAD: " prefix and make the text blue 
 	s/UNABRIDGED KEY LEAD: (.*)/<font color=\"blue\">$1<\/font>/g;
@@ -716,6 +643,10 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 			$nativity=qq{WAIF};
 		$exclude=1;
 		}
+		elsif(s/UNABRIDGED\nPOSSIBLY IN CA//){
+			$nativity=qq{POSSIBLY IN CA};
+		$exclude=1;
+		}
 		elsif(s/^UNABRIDGED\nHISTORICAL WAIF//){
 			$nativity=qq{HISTORICAL WAIF};
 		$exclude=1;
@@ -724,28 +655,16 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 			$nativity=qq{WAIF};
 		$exclude=1;
 		}
-		elsif(s/UNABRIDGED\nJFP-8, (.*)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nJFP-4, (URBAN WEED)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\s+JFP-4//){
-			$nativity=qq{AGRICULTURAL, GARDEN, OR URBAN WEED};
-		$exclude=1;
-		}
 		elsif(s/UNABRIDGED\n(CULTIVATED PLANT|AGRICULTURAL WEED)//){
 			$nativity=qq{$1};
 		$exclude=1;
 		}
 		elsif(s/UNABRIDGED\nEXTIRPATED (WAIF|ALIEN)//){
-			$nativity=qq{$1 (extirpated)};
+			$nativity=qq{$1 (EXTIRPATED)};
 		$exclude=1;
 		}
 		elsif(s/UNABRIDGED\nNATURALIZED\nEXTIRPATED//){
-			$nativity=qq{NATURALIZED (extirpated)};
+			$nativity=qq{NATURALIZED (EXTIRPATED)};
 		$exclude=1;
 		}
 		elsif(s/NATIVE OR NATURALIZED//){
@@ -755,7 +674,7 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 			$nativity=qq{NATURALIZED};
 		}
 		elsif(s/NATIVE\nEXTIRPATED//){
-			$nativity=qq{NATIVE (extirpated)};
+			$nativity=qq{NATIVE (EXTIRPATED)};
 		}
 		elsif(s/NATIVE//){
 			$nativity=qq{NATIVE};
@@ -769,22 +688,13 @@ if(m/TJMXX AUTHOR/i){
 		s|(TJM2 AUTHOR:.*\n)||i; #TJMXX AUTHOR line has priority over both TJM2 AUTHOR and TJMX AUTHOR
 		s|(TJMX AUTHOR:.*\n)||i;
 }
-		s|TJM[2X]X? AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR"
-		s|(TJM1 AUTHOR:.*)||i;
-		s|(TJM\(1993\) AUTHOR:.*)||i;
-		s|^FAMILY: *||;
-		s|SCIED: *|&mdash;|;
-		s|UNABRIDGED COMMON NAME: (.*)|<font size="3" color="blue">\U$1\E</font>|;
-		s|COMMON NAME: (.*) (\(Group.*\))|<font size="3">\U$1\E $2</font>| or
-		s|COMMON NAME: (.*)|<font size="3">\U$1\E</font>|;
-		s|(<font size="3">.*) OR |$1 or |;
-		
-if(m/TJMXXX AUTHOR/i){ #this was not added to this file when the XXX authors were added by David to sanity.pl and eFlora_display.php, DEC2016
-		s|(TJM2 AUTHOR:.*\n)||i; #TJMXXX AUTHOR line has priority over both TJM2 AUTHOR and TJMX and TJMXX AUTHOR
+if(m/TJM4X AUTHOR/i){ #this was not added to this file when the XXX authors were added by David to sanity.pl and eFlora_display.php, DEC2016
+		s|(TJM2 AUTHOR:.*\n)||i; #TJM4X AUTHOR line has priority over both TJM2 AUTHOR and TJMX and TJMXX AUTHOR
 		s|(TJMX AUTHOR:.*\n)||i;
 		s|(TJMXX AUTHOR:.*\n)||i;
+		s|(TJMXXX AUTHOR:.*\n)||i;
 }
-		s|TJM[2X]X?X? AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR" or "TJMXXX AUTHOR"
+		s|TJM[2]X* AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR"
 		s|(TJM1 AUTHOR:.*)||i;
 		s|(TJM\(1993\) AUTHOR:.*)||i;
 		s|^FAMILY: *||;
@@ -798,19 +708,7 @@ s/FR&EACUTE/FR&Eacute/;
 		if(s|^([A-Z]+ACEAE) \(([A-Z][a-z]+)\)$|<center><font size="4"><b>$1 ($2)</b></font>|ms){
 			$key_genus=$1;
 			$key_genus=ucfirst(lc($key_genus));
-			#if($NAME_CODE{$key_genus}){
-				##s/<center>/<a name="$NAME_CODE{$key_genus}"> <\/a>\n\n<center>/;
-				#$name_anchor= $NAME_CODE{$key_genus};
-#print "1\n" if $name_anchor==76377;
-				#if($key_genus=~/aceae\b/){
-					#$last_family=$name_anchor;
-#$last_genus="";
-				#}
-				#else{
-					#$last_genus=$name_anchor;
-##$last_species="";
-#}
-			#}
+
 			if($TNOAN{$key_genus}){
 				#s/<center>/<a name="$TNOAN{$key_genus}"> <\/a>\n\n<center>/;
 				$name_anchor=  $TNOAN{$key_genus};
@@ -830,19 +728,8 @@ $last_genus="";
 		if(s|^([A-Z]+)$|<center><font size="4"><b>$1</b></font>|ms){
 			$key_genus=$1;
 			$key_genus=ucfirst(lc($key_genus));
-			#if($NAME_CODE{$key_genus}){
-				##s/<center>/<a name="$NAME_CODE{$key_genus}"> <\/a>\n\n<center>/;
-				#$name_anchor=  $NAME_CODE{$key_genus};
-#print "3\n" if $name_anchor==76377;
-				#if($key_genus=~/aceae\b/){
-					#$last_family=$name_anchor;
-#$last_genus="";
-				#}
-				#else{
-					#$last_genus=$name_anchor;
-##$last_species="";
-#}
-			#}
+
+
 			if($TNOAN{$key_genus}){
 				#s/<center>/<a name="$TNOAN{$key_genus}"> <\/a>\n\n<center>/;
 				$name_anchor=   $TNOAN{$key_genus};
@@ -859,14 +746,11 @@ $last_genus="";
 			
 			else {print ERR "$key_genus not found in lists\n\n";}
 		}
-		#s|^([A-Z]+)$|<center><font size="4"><b>$1</b></font>|ms;
+
 		s|^([A-Z]+ +\[[A-Z][a-z]+\])$|<center><font size="4"><b>$1</b></font>|ms;
 		s|UNABRIDGED HABIT\+: *(.*)|<font color="blue">$1</font>|;
 		s|UNABRIDGED ECOLOGY: *(.*)|<font color="blue">$1</font>|;
-		#s|EMBEDDED UNABRIDGED KEY LEAD: *(.*)|<br><font color="blue">$1</font><br>|g;
 		s|HABIT\+: *|<br>$nativity</center><blockquote>| && s/$/\n$unabridged_lines<\/blockquote>/;
-		#s|HABIT\+: *|<br><font size="1"><b>$nativity</b></font></center><blockquote>| && s/$/\n<\/blockquote>/;
-		#s|HABIT\+: *|<br><font size="1"><b>$nativity</b></font></center>flabba2<blockquote>| && s/$/\n<\/blockquote>/;
 		s/FLOWERING TIMES?: of sp./Flowering times of sp./;
 		s/FLOWERING TIMES?: *//;
 		s/FRUITING TIMES?: *//;
@@ -923,7 +807,7 @@ $last_genus="";
 		s/REFERENCE[S()]*: \[(.*)\]/[$1]/;
 		s/REFERENCE[S()]*: (.*)/[$1]/;
 		while(s/UNABRIDGED NOTE[()S]*:(.*)/<br><font color="blue">Unabridged note: $1<\/font><br>/){
-	 #s!((UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!<a href="http://ucjeps.berkeley.edu/cgi-bin/new&95;detail.pl?accn&95;num=$1">$1</a>!g;
+
 	 @accessions=m!((?:UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS-BOT-BC|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!g;
 grep(s/^/&dup=/,@accessions);
 if(@accessions){
@@ -958,15 +842,8 @@ $key_species=$2;
 $name_for_hc=$name_link;
 				($consort_link=$name_link)=~s/ /%20/g;
 s!(if verified,) !<a href="/cgi-bin/get_consort.pl?taxon_name=$consort_link">$1</a> !;
-			#if($NAME_CODE{$name_link}){
-#$name_anchor=   $NAME_CODE{$name_link};
-#print "5\n" if $name_anchor==76377;
-#unless($name_link=~/\b(subsp\.|var\.|f\.)\b/){$last_species=$name_anchor;}
-#
-#$name_link= <<EOP;
-#<a href="/cgi-bin/get_cpn.pl?$NAME_CODE{$name_link}">[Online Interchange]</a>
-#EOP
-			#}
+
+
 			if($TNOAN{$name_link}){
 $name_anchor=  $TNOAN{$name_link};
 #print "6\n" if $name_anchor==76377;
@@ -1163,9 +1040,7 @@ print ERR "$ceae $name_for_hc  NO Bioregional distribution line\n\n";
 		s/BIOREGIONAL DISTRIBUTION: (.*)/$1/;
 		s/UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/<br><font color="blue">Unabridged distribution outside California: $1<\/font><br>/;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA: of sp./Distribution outside CA of sp./;
-		#s/BIOREGIONAL DISTRIBUTION: (.*)/&dist_expand($1)/e;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/$1/;
-		#s/^NOTE[()S]*: (.*)/&dist_expand($1)/em;
 		s/^NOTE[()S]*: (.*)/$1/em;
 		s/AUTHORSHIP OF PARTS: /<P>/;
 		s/AUTHORSHIP COMMENT: /<P>/;
@@ -1275,7 +1150,7 @@ foreach(@name_sequence){
 
 untie(%IJM);
 untie(%IJM_key);
-  #system "rsync -e 'ssh -ax' -avz IJM*.hash  rlmoe\@herbaria4.herb.berkeley.edu:/Library/WebServer/ucjeps_data/";
+
 print <<EOP;
 Provide a brief precis of the changes.
 Default, if you provide nothing, will be "Minor corrections"
@@ -1564,14 +1439,6 @@ s/\(incl\)/(included)/g;
 
 s/not incl app/not including app/g;
 s/\bincl([<,.,;])/included$1/g;
-#s/\bincl (in|to|or)\b/included $1/g;
-#s/\bwith incl\b/with included/g;
-##s\b/CVS incl\b\./CVS including/; # error in JM
-##s/\bincl\. var\./including var./; # error in JM
-##s/\bincl\.GR/including GR/; # error in JM
-#s/are not incl\b/are not included/g;
-#s/does not incl\b/does not include/g;
-#s/\bincl\b/including/g;
 s/genus incl taxa/genus includes taxa/;
 s/\bincls spur/includes spur/g;
 s/\bincl (at|as)/included $1/g;
@@ -1614,7 +1481,6 @@ s/\b([Gg])en\b/$1enerally/g;
 s/\besp\b/especially/g;
 s/\blf\b/leaf/g;
 s|([Ii])n cult\b|$1n cultivation|;
-#s/\bcult\b/cultivated/g;
 s/rice cult /rice cultivation /;
 s/(escapes?) cult\b/$1 cultivation/;
 s/(of|into|outside|after|in|In|from) cult\b/$1 cultivation/;
