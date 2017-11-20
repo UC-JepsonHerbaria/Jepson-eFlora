@@ -8,6 +8,7 @@ output/
 /eflora_database/outputs/
 /synonymy/output/
 /synonymy/input/
+/YELLOW_FLAGGING/output/
 
 #from Mac OS X
 .DS_Store
