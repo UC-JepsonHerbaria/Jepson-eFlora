@@ -1,12 +1,19 @@
 #3. Basal vestigial spikelets 1(2); spikelets gradually narrowing distally .....-> [A. geniculata, incl A. ovata]
 
-open(IN,"tnoan.out") || die;
+
+open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+local($/)="\n";
 while(<IN>){
-chomp;
-s/× /&times;/;
-($code,$name)=split(/\t/);
-$TNOAN{$name}=$code;
+	chomp;
+	s/X /&times;/;
+	($code,$name,@residue)=split(/\t/);
+	$TNOAN{$name}=$code;
+	$NAN{$code}=$name;
 }
+$TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
+$NAN{93858}="Centaurea jacea nothosubsp. pratensis";
+close(IN);
+
 $/="";
 	$filename=$ARGV;
 while(<>){
@@ -20,8 +27,11 @@ while(<>){
 			$LAN=$name;
         		$TJM2{$name}="$filename\n";
         		while(s/SYNONYMS: +(.*)//){
+s/Sedum dendroideum .* subsp. praealtum.*/Sedum dendroideum subsp. praealtum/;
+s/Gaura odorata Sess&eacute; ex Lag., misappl./Gaura odorata/;
             			@syns=split(/; +/,$1);
             			foreach(@syns){
+s/probably //;
 					s/Expanded author citation: //;
                 			s/_//g;
                 			$TJM2{&strip_name($_)}.="$LAN\n";
@@ -188,8 +198,21 @@ close(OUT);
 
 sub strip_name{
 local($_) = @_;
+s/ ex [A-Z][a-z.]+//;
        s/^([A-Z][-A-Za-z]+) (X?[-a-z]+).*\b(nothosubsp\.|subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
 s/^([A-Z][A-Za-z]+) ([x ]*[-a-z]+).*/$1 $2/;
 s/ssp\./subsp./;
+s/ C.E. B.*//;
+s/ Thuill.,.*//;
+s/ A. Nelson.*//;
+s/Probably //;
+s/ Engelm\..*//;
+s/ Gankin .*//;
+s/ Roof.*//;
+s/ Borb&aacute;s.*//;
+s/ \(Aiton.*//;
+s/ Brot.*//;
+s/ \(Gould.*//;
+s/ \(Vasey.*//;
 return (ucfirst(lc($_)));
 }
