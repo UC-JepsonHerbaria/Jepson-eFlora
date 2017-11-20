@@ -1,3 +1,4 @@
+open(warn_cnps, ">CNPS_warning.txt") || die;
 warn <<EOP;
 NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
 EOP
@@ -8,36 +9,64 @@ $genus="AA";
 $unlinked= unlink 'IJM.hash', 'IJM_key.hash', 'name_to_code.hash';
 #die "failed to unlink hashes\n" unless $unlinked==2;
 
+#http://www.rareplants.cnps.org/detail/65.html
+open(IN, "CNPS_ID.txt") || die;
+while(<IN>){
+chomp;
+($id,$name)=split(/\t/);
+#$name=~s/ssp\./subsp./;
+$CNPS_URL{$name}="http://www.rareplants.cnps.org/detail/${id}.html";
+}
+
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
 $IJM=();
 tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_CREATE )|| die "Stopped; couldnt open IJM_key\n";
 
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/temp/name_to_code.hash name_to_code.hash";
 #system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
-system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
-system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
+#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt flat_dbm_4.txt";
+#system "rsync -e 'ssh -ax' -avz  rlmoe\@herbaria4.herb.berkeley.edu:/Users/rlmoe/CDL_buffer/buffer/tnoan.out tnoan.out";
 tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
-open(IN,"flat_dbm_4.txt") || die;
+open(IN,"/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
 chomp;
-($name, $code)=split(/\t/);
+($name, $code)=split(/\n/);
 $NAME_CODE{$name}=$code;
 }
-open(IN,"tnoan.out") || die;
-$/="\n";
+
+
+#foreach(keys(%NAME_CODE)){
+#print <<EOP;
+#name: $_
+#code: $NAME_CODE{$_}
+#
+#EOP
+#}
+#die;
+#open(IN,"/users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
+
+
+open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+local($/)="\n";
 while(<IN>){
 chomp;
-($code,$name)=split(/\t/);
+s/X /&times;/;
+($code,$name,@residue)=split(/\t/);
 $TNOAN{$name}=$code;
 $NAN{$code}=$name;
 }
 $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
 close(IN);
-$NAME_CODE{"Woodsiaceae"}=93775;
+#foreach(keys(%TNOAN)){
+#print "$_\n";
+#}
+#die;
+
+#$NAME_CODE{"Woodsiaceae"}=93775;
 #converts all .post.txt files to html files for display. Writes output to WEB folder
-$suffix="post.txt";
+#$suffix="post.txt";
 
 @field_list=(
 "UNABRIDGED KEY LEAD",
@@ -75,6 +104,7 @@ $suffix="post.txt";
 "STAMINATE SPIKELET",
 "PISTILLATE SPIKELET",
 "FLOWER",
+"RAY OR PISTILLATE FLOWER",
 "RAY FLOWER",
 "DISK FLOWER",
 "UNABRIDGED DISK FLOWER",
@@ -186,6 +216,7 @@ $suffix="post.txt";
 "SEED CONES","<b>Seed cones</b>",
 "STS","<b>Stems</b>",
 "PISTILLATE OR RAY FLS","<b>Pistillate or ray flowers</b>",
+"RAY OR PISTILLATE FL","<b>Ray or pistillate flower</b>",
 "INFLS","<b>Inflorescences</b>",
 "SPORES","<b>Spores</b>",
 "STERILE ST","<b>Sterile stem</b>",
@@ -245,10 +276,13 @@ $pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for public viewing </
 #$file=ucfirst($file);
 #next if $file =~/#/;
 
-$file="all_files.all";
-$file="all_revised_files.post.txt";
+#$file="all_files.all";
+#$file="all_revised_files.post.txt";
+#$file="eflora.tmp";
+$file="eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
+warn "reading from $file\n";
 
 	$all_lines=<IN>;
 #converts windows line ends#
@@ -260,6 +294,7 @@ $file="all_revised_files.post.txt";
 	@all_pars=split(/\n\n+/,$all_lines);
 	$element=0;
 	foreach(@all_pars){
+warn "$_\n" if $seen_line{$_}++;
 next if m/^PROOF:/;
 next if m/^CAPTION:/;
 next if m/ENCELIA farinosa &times; E. frutescens/;
@@ -385,17 +420,25 @@ $indent=$indent_level;
 			}
 			elsif( m!--&gt; *(most )([A-Z]). ([&;a-z-]+)!){
 				$key_species=$3;
-$key_species=~s/&times;/× /;
+#$key_species=~s/&times;/× /;
 				$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
+if($goto_code eq "C6"){
+print qq{3 >$key_genus $key_species< code=$goto_code\n\n};
+#die;
+}
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
 				print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
 				s!--&gt; *(most )([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
 			}
 			elsif( m!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!){
 				$key_species=$3;
-$key_species=~s/&times;/× /;
+#$key_species=~s/&times;/× /;
 				$goto_code=$TNOAN{"$key_genus $key_species"} || "C6";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C6";
+if($goto_code eq "C6"){
+print qq{3.1 >$key_genus $key_species< code=$goto_code\n\n};
+#die;
+}
 				print ERR qq{3 $key_genus $key_species code=$goto_code\n\n};
 				s!--&gt; *(\d*)([A-Z]). ([&;a-z-]+)!<a href="#$goto_code">.....&nbsp;$1 $2. $3</a>!;
 			}
@@ -431,7 +474,7 @@ $key_species=~s/&times;/× /;
 			}
 			elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+)\]!){
 				$key_species=$3;
-$key_species=~s/&times;/× /;
+#$key_species=~s/&times;/× /;
 				$goto_code= $TNOAN{"$key_genus $key_species"} || "C9";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C9";
 				print ERR qq{8 $key_genus $key_species code=$goto_code\n\n};
@@ -439,7 +482,7 @@ $key_species=~s/&times;/× /;
 			}
 			elsif( m!--&gt; *\[(\d*)([A-Z]). ([&;a-z-]+);.*\]!){
 				$key_species=$3;
-$key_species=~s/&times;/× /;
+#$key_species=~s/&times;/× /;
 				$goto_code= $TNOAN{"$key_genus $key_species"} || "C10";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C10";
 				print ERR qq{9 $key_genus $key_species code=$goto_code\n\n};
@@ -455,7 +498,7 @@ $key_species=~s/&times;/× /;
 			elsif(m!--&gt; *(\d*)([A-Z][a-z]+) (.*) *\(.*!){
 				$key_genus=ucfirst(lc($2));
 				$key_species=$3;
-$key_species=~s/ *$//;
+#$key_species=~s/ *$//;
 				$goto_code= $TNOAN{"$key_genus $key_species"} || "C11";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C11";
 				print ERR qq{11 $key_genus code=$goto_code\n\n};
@@ -479,7 +522,7 @@ $key_species=~s/ *$//;
 #<a href="#AO6'">6.</a><a name="AO6."> </a> Trophophore and sporophore joined well below mid-lf, gen at ground level--&gt; small or shade pls of _Botrychium simplex_(2) or _Botrychium pumicola_(2), see lead 3 for separation of taxa
 			elsif( m!--&gt;.*_([A-Z].) ([&;a-z-]+)_!){
 				$key_species=$2;
-$key_species=~s/&times;/× /;
+#$key_species=~s/&times;/× /;
 				$goto_code= $TNOAN{"$key_genus $key_species"} || "C12";
 				#$goto_code=$NAME_CODE{"$key_genus $key_species"} || $TNOAN{"$key_genus $key_species"} || "C12";
 				print ERR qq{13 $key_genus $key_species code=$goto_code\n\n};
@@ -727,6 +770,7 @@ $last_genus="";
 		s/FRUITING TIMES?: *//;
 		s/CONING TIMES?: *//;
 		s!^((STAMINATE|PISTILLATE|BISEXUAL|RAY|DISK) ?FLOWER(S?:?))!"<br><b>" . ucfirst(lc($1)) .  "</b> "!msge;
+		s!^(RAY OR PISTILLATE FLOWER(S?:?))!"<br><b>" . ucfirst(lc($1)) .  "</b> "!msge;
 		s!^(SPIKELET):? +!<br><b>Spikelet:</b> !msg;
 		s!^((CENTRAL|LATERAL|DISTAL|FERTILE|STERILE|STAMINATE|PISTILLATE) SPIKELET):? +!"<br><b>" . ucfirst(lc($1)) .  ":</b> "!msge;
 		s!^((STAMINATE|PISTILLATE) HEAD):? +!"<br><b>" . ucfirst(lc($1)) .  "</b> "!msge;
@@ -754,8 +798,8 @@ $last_genus="";
 		s|^SPINE:?|<br><b>Spine:</b> |m;
 		s|^FLOWER:?|<br><b>Flower:</b> |m;
 		s|^INFLORESCENCE:?|<br><b>Inflorescence:</b> |m;
-		s!((PISTILLATE OR BISEXUAL) INFLORESCENCES?:?)!"<br><b>" . ucfirst(lc($1)) .  ":</b> "!msge;
-		s!((STAMINATE|PISTILLATE) ?INFLORESCENCE(S?:?))!"<br><b>" . ucfirst(lc($1)) .  ":</b> "!msge;
+		s!((PISTILLATE OR BISEXUAL) INFLORESCENCES?:?)!"<br><b>" . ucfirst(lc($1)) .  "</b> "!msge;
+		s!((STAMINATE|PISTILLATE) ?INFLORESCENCE(S?:?))!"<br><b>" . ucfirst(lc($1)) .  "</b> "!msge;
 		s|^FRUIT(S?:?)|<br><b>Fruit:</b> |m;
 		s/UNABRIDGED GENERA IN FAMILY: *(.*)/<br><font color="blue">Unabridged genera in family: $1<\/font><br>/;
 
@@ -777,9 +821,15 @@ $last_genus="";
 		s/REFERENCE[S()]*: \[(.*)\]/[$1]/;
 		s/REFERENCE[S()]*: (.*)/[$1]/;
 		while(s/UNABRIDGED NOTE[()S]*:(.*)/<br><font color="blue">Unabridged note: $1<\/font><br>/){
-	 s!((UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!<a href="http://ucjeps.berkeley.edu/cgi-bin/new&95;detail.pl?accn&95;num=$1">$1</a>!g;
+	 #s!((UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!<a href="http://ucjeps.berkeley.edu/cgi-bin/new&95;detail.pl?accn&95;num=$1">$1</a>!g;
+	 @accessions=m!((?:UCR|UCD|JEPS|UC|CHSC|RSA|POM|SD|CAS|SJSU|HSC|PGM|SBBG|UCSB|UCSC|CDA|IRVC)\d+)!g;
+grep(s/^/&dup=/,@accessions);
+if(@accessions){
+$accessions[0]=~s/&//;
+	 $URL=qq{<a href="/cgi-bin/get_consort.pl?} . join("",@accessions) ."\"";
 
-	 s/The following accessions/The following (and possibly other) accessions/;
+	 s/(The following .*if verified,)/$URL>$1<\/a>/;
+}
 	 }
 		if(m/UNABRIDGED SYNONYMS?: *(.+)/){
 			$syns=&format_syns($1);
@@ -891,6 +941,7 @@ EOP
 			}
 			else{
 				print ERR "1. NO TNOAN ${name_link}<\n\n";
+die "Missing name in TNOAN: $name_link. Terminating load\n";
 $name_link= "flabba2";
 			}
 
@@ -931,11 +982,18 @@ s!(<center><font size="4"><b>[A-Z]\. [a-z-]+)(.*(nothosubsp\.|subsp\.|var\.|f\.)
 		s/ECOLOGY: of sp./Ecology of sp./;
 		s/ECOLOGY: / /;
 		if(s/RARITY STATUS: (SYMBOL \d).?//){
-$rarity="{CNPS listed}";
-}
-else{
-$rarity="";
-}
+			($cnps_name=$name_for_hc)=~s/subsp\./ssp./;
+			if($CNPS_URL{$cnps_name}){
+				$rarity="<a href=\"$CNPS_URL{$cnps_name}\">{CNPS list}</a>";
+			}
+			else{
+				print warn_cnps "no URL for $cnps_name\n";
+				$rarity="{CNPS listed}";
+			}
+		}
+		else{
+			$rarity="";
+		}
 		s/ELEVATION: *of sp./Elevation of sp./;
 		s/ELEVATION: *//;
 	if (m/^BIOREGIONAL DISTRIBUTION: (.*)/m){
@@ -994,7 +1052,8 @@ print ERR "$ceae $name_for_hc  NO Bioregional distribution line\n\n";
 		s/UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/<br><font color="blue">Unabridged distribution outside California: $1<\/font><br>/;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA: of sp./Distribution outside CA of sp./;
 		s/DISTRIBUTION OUTSIDE CALIFORNIA:(.*)/&dist_expand($1)/e;
-		s/^NOTE[()S]*: *//m;
+		#s/^NOTE[()S]*: (.*)/&dist_expand($1)/em;
+		s/^NOTE[()S]*: (.*)/$1/em;
 		s/AUTHORSHIP OF PARTS: /<P>/;
 		s/AUTHORSHIP COMMENT: /<P>/;
 		s//-/g;
@@ -1085,7 +1144,27 @@ print OUT "\n";
 }
 untie(%IJM);
 untie(%IJM_key);
-  system "rsync -e 'ssh -ax' -avz IJM*.hash  rlmoe\@herbaria4.herb.berkeley.edu:/Library/WebServer/ucjeps_data/";
+  #system "rsync -e 'ssh -ax' -avz IJM*.hash  rlmoe\@herbaria4.herb.berkeley.edu:/Library/WebServer/ucjeps_data/";
+print <<EOP;
+Provide a brief precis of the changes.
+Default, if you provide nothing, will be "Minor corrections"
+EOP
+$/="\n";
+$precis=<>;
+$precis="Minor corrections" unless $precis=~/../;
+$date=localtime();
+open(HISTORY, ">>IJM_update_history.html") || die;
+print HISTORY <<EOP;
+<br>$date: $precis
+EOP
+close(HISTORY);
+print <<EOP;
+Now I'll try to make a list of species for each genus
+using the index.
+EOP
+system "perl make_genus_lists.pl";
+
+
 sub format_syns {
 	local($syns)=shift;
 	#print "$syns\n";
@@ -1093,8 +1172,8 @@ sub format_syns {
 	#print "$syns\n";
 	@syns=split(/; +/,$syns);
 	foreach(@syns){
-s/ *$//;
-s/<\/?b>//g;
+		s/ *$//;
+		s/<\/?b>//g;
 		s/^([^ ]+ X +)/<i>$1<\/i>/;
 		s/^([^ ]+ [^ ]+)/<i>$1<\/i>/;
 		s/subsp. ([^ ]+)/subsp. <i>$1<\/i>/;
@@ -1113,14 +1192,45 @@ s/<\/?b>//g;
 }
 sub dist_expand{
 local($_)=@_;
+s/\bAR\b/Arkansas/g;
+s/\bTN\b/Tennessee/g;
+s/\bNB\b/New Brunswick/g;
+s/\bNC\b/North Carolina/g;
+s/\bMO\b/Missouri/g;
+s/\bHI\b/Hawaii/g;
+s/\bFL\b/Florida/g;
+s/\bPE\b/Prince Edward Island/g;
+s/\bQC\b/Quebec/g;
+s/\bS.Africa\b/South Africa/g;
 s/\bWY\b/Wyoming/g;
+s/\bMI\b/Michigan/g;
+s/\bMA\b/Massachusetts/g;
+s/\bIN\b/Indiana/g;
+s/\bIL\b/Illinois/g;
+s/\bNJ\b/New Jersey/g;
+s/\bMN\b/Minnesota/g;
+s/\bMS\b/Mississippi/g;
+s/\bNY\b/New York/g;
+s/\bSK\b/Saskatchewan/g;
+s/\bMB\b/Manitoba/g;
+s/\bNL\b/Newfoundland/g;
+s/\bAB\b/Alberta/g;
+s/\bYT\b/Yukon/;
+s/\bNS\b/Nova Scotia/;
+s/\bON\b/Ontario/;
+s/\bVA\b/Virginia/;
+s/\bNE\b/Nebraska/;
+s/subtrop\./subtropics./;
+s/C\.Am/Central America/;
 s/\bWA\b/Washington/g;
 s/\bw-+c/west-central/g;
 s/\bUT\b/Utah/g;
 s/\bTX\b/Texas/g;
 s/\btemp\b/temperate/g;
 s/\bSD\b/South Dakota/g;
+s/\bND\b/North Dakota/g;
 s/\bs-+c/south-central/g;
+s/\bLA\b/Louisiana/g;
 s/\bOR\b/Oregon/g;
 s/\bOK\b/Oklahoma/g;
 s/\bNV\b/Nevada/g;
@@ -1137,7 +1247,8 @@ s/\bCan\b/Canada/g;
 s/\bEur\b/Europe/g;
 s/\bN\.Am\b/North America/g;
 s/\bS\.Am\b/South America/g;
-s/\bB\.C\b\.?/British Columbia/g;
+s/\bBC\b/British Columbia/g;
+s/Rocky Mtns/Rocky Mountains/;
 s/\bBaja CA\b/Baja California/g;
 s/\bAZ\b/Arizona/g;
 s/\bCO\b/Colorado/g;
@@ -1188,12 +1299,50 @@ s/\bDMtns\b/Desert Mountains/g;
 s/\bDSon\b/Sonoran Desert/g;
 s/\bCA\b/California/g;
 s/\bSnBr\b/San Bernardino Mountains/g;
+s/\bUS\b/United States/g;
 s/$/<map>/;
 $_;
 }
 
 sub il_to_html {
 local($_) = @_;
+
+s/Eur\./Europe./;
+s/\ball yr\b/all year/;
+s/trop, subtrop S.Am/tropical, subtropical South America/;
+s/subtrop, trop mtns/subtropical, tropical mountains/;
+s/trop\) regions/tropical) regions/;
+s/trop spp.\]/tropical spp.]/;
+s/subtrop Am\b/subtropical America/;
+s/trop Afr\b/tropical Africa/;
+s/trop s hemisphere/tropical southern hemisphere/;
+s/trop S.Am\b/tropical South America/;
+s/trop Am\b/tropical America/;
+s/temp Am\b/temperate America/;
+s/temp, subtrop n hemisphere/temperate, subtropical northern hemisphere/;
+s/subtrop coasts,/subtropical coasts/;
+s/\bpantrop\b/pantropical/;
+s/trop Asia/tropical Asia/;
+s/subtrop mtns/subtropical mountains/;
+s/trop mtns/tropical mountains/;
+s/trop Australia/tropical Australia/;
+s/trop, subtrop e Asia/tropical, subtropical eastern Asia/;
+s/subtrop Asia/subtropical Asia/;
+s/subtrop sw US/subtropical southwestern United States/;
+s/trop N.Am\b/tropical North America/;
+s/subtrop N.Am\b/subtropical North America/;
+s/trop Am/tropical America/;
+s/trop areas/tropical areas/;
+s/trop and s Afr\b/tropical and southern Africa/;
+s/trop weed/tropical weed/;
+s/trop, subtrop Am\b/tropical, subtropical America/;
+s/trop, temp Am\b/tropical, temperate America/;
+s/trop Eurasia/tropical Eurasia/;
+s/\btrop\b/tropics/;
+s/\btrops\b/tropics/;
+s/ temp\b/ temperate/;
+
+
 s/ in fl arran/ in floral arran/g;
 s/ fl tube/ floral tube/g;
 s/ fl sts/ flowering stems/g;
@@ -1209,18 +1358,21 @@ s/may fl 1st/may flower first/g;
 s/ fl first/ flowering first/g;
 s/ fl 1st/ flowering first/g;
 s/ fl at / flowering at /g;
+s/ by fl\b/ by flowering/;
 
+s/(summer|spring|fall)-fl\b/$1-flowering/g;
 s/\bst\b/stem/g;
 s/\bsts\b/stems/g;
 s/\bfl\b/flower/g;
 s/\bfls\b/flowers/g;
 s/\bfld\b/flowered/g;
 s/\b([Pp]l)(s?)\b/$1ant$2/g;
-s/\.plant/.pl/;
+s/\.plant/.pl/g;
 s/\bfr\b/fruit/g;
 s/\bfrs\b/fruits/g;
 s/\be\b/eastern/g unless m/e[.;]/ ;
 s/\blflets\b/leaflets/g;
+s/\blfy\b/leafy/g;
 s/\blflet\b/leaflet/g;
 s/\blvs\b/leaves/g;
 
@@ -1242,6 +1394,26 @@ s/slender per\b/slender perennial herb/;
 }
 s/\bexc\.?\b/except/g;
 if(m/\bincl\b/){
+	s/incl within/included within/g;
+	s/reports not incl CA/reports not including California/;
+	s/Plants incl hybrids/Plants including hybrids/;
+	s/not incl in /not included in /g;
+	s/Previously incl in/Previously included in/g;
+	s/not incl phyllary/not including phyllary/;
+	s/monophyly incl recognition/monophyly include recognition/;
+
+
+
+	s/or incl /or included /g;
+	s/([Ss]tigmas) incl or /$1 included or /;
+	s/Stamens incl or /Stamens included or /;
+	s/incl *<a /included <a /g;
+
+
+
+
+
+s/not incl app/not including app/;
 s/\bincl([<,.,;])/included$1/g;
 #s/\bincl (in|to|or)\b/included $1/g;
 #s/\bwith incl\b/with included/g;
@@ -1261,7 +1433,7 @@ s/\bincl here/included here/;
 s/\bincl several/include several/;
 s/\bincl \.\.\.\.\./included ...../;
 s/\bincl \(/included (/;
-s/(that|May|to|not|Previously) incl /$1 include/;
+s/(that|May|to|not|Previously) incl /$1 include /;
 s/\bincl in /included in /;
 s/\bincl or /included or /;
 s/\bincl to /included to /;
@@ -1275,7 +1447,7 @@ s/_ incl pls that/_ includes plants that/;
 s/stamens incl within/stamens included within/;
 s/previously incl genera/previously included genera/;
 s/([Cc]haracters) incl relative/$1 include relative/;
-s/style incl/style included/;
+s/style incl\b/style included/;
 s/ and incl / and included /;
 s/, incl under/, included under/;
 s/subsp. incl the/subsp. include the/;
@@ -1283,6 +1455,7 @@ s/would incl var/would include var/;
 s/incl genes/includes genes/;
 s/Characters incl calyx/Characters include calyx/;
 s/\bincl\b/including/;
+s/Anthers incl\b/Anthers included/;
 }
 s/\bincls/includes/g;
 s/\bAnn\b/Annual/g;
@@ -1291,7 +1464,7 @@ s/\bPer\b/Perennial/g;
 s/\b([Gg])en\b/$1enerally/g;
 s/\besp\b/especially/g;
 s/\blf\b/leaf/g;
-s|([Ii])n cult\b|In cultivation|;
+s|([Ii])n cult\b|$1n cultivation|;
 #s/\bcult\b/cultivated/g;
 s/rice cult /rice cultivation /;
 s/(escapes?) cult\b/$1 cultivation/;
@@ -1300,12 +1473,10 @@ s/\bcult\b/cultivated/;
 s/infl(s)?\b/inflorescence$1/g;
 s/Vars\./Varieties/g;
 s/\blfless\b/leafless/g;
-s/\bocc\b (agricultural|escape|waif|weed)/occasional $1/g;
+s/\bocc\b (agricultural|escape|waif|weed)\b/occasional $1/g;
 s/\bocc\b/occasionally/g;
 s/\born\b/ornamental/g;
 
-s/\btrop\b/tropical/g;
-s/\bsubtrop\b/subtropical/g;
 s/\bAfr\b/Africa/g;
 s/N\. ?Am\b/North America/g;
 s/S\. ?Am\b/South America/g;
