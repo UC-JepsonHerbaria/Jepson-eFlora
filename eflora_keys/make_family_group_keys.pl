@@ -3,7 +3,7 @@ open(IN, "all_family_key.html") || die;
 open(OUT, ">IJM_fam_key.html") || die;
 
 while(<IN>){
-s!<a href="#Group(\d+)">!<a href="\/IJM_key_Group${1}.html">!g;
+s!<a href="#Group(\d+)">!<a href="/IJM_keys/IJM_key_Group${1}.html">!g;
 	if(m/<a name="Group(\d+)/){
 		$gp=$1;
 print OUT <<EOP;
