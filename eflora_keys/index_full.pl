@@ -1,7 +1,7 @@
 #3. Basal vestigial spikelets 1(2); spikelets gradually narrowing distally .....-> [A. geniculata, incl A. ovata]
 
 
-open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 open(OUT, ">index_full.tmp") || die;
 local($/)="\n";
 while(<IN>){
@@ -19,6 +19,7 @@ $/="";
 	$filename="eflora_treatments.txt";
 open(IN, $filename) || die;
 while(<IN>){
+
 		if(m/([A-Z]+ACEAE)/){
 			$family=$1;
 			#print "$family\n";
@@ -26,6 +27,7 @@ while(<IN>){
     		if(m/([A-Z-]+ .*)\nTAXON AUTHOR/){
         		$name=&strip_name($1);
 			print OUT "$name\n";
+			
 			$LAN=$name;
         		$TJM2{$name}="$filename\n";
         		while(s/SYNONYMS: +(.*)//){
@@ -40,11 +42,11 @@ s/probably //;
                 			print OUT &strip_name($_),"*\n";
             			}
         		}
-			if(m/NOTE:.*_/){
+			if(m/NOTE: .*_/){
 				while(s/_([A-Z][a-z-]+ [a-z-]+)_[^_]+(var\.|subsp\.|nothosubsp\.|f\.) _([a-z-]+)_//){
 					$TJM2{"$1 $2 $3"}.="$LAN\n";
 				}
-				while(s/_([A-Z][a-z-]+ [a-z-]+)_//){
+				while(s/_([A-Z][a-z-]+ [a-z-&;]+)_//){#added "&;" to include instances of &times; in Note field for hybrids
 					$TJM2{$1}.="$LAN\n";
 				}
 				if(m/_/){
@@ -66,11 +68,12 @@ s/probably //;
                 			print OUT &strip_name($_), "*\n";
             			}
         		}
-			if(m/NOTE:.*_/){
+			if(m/NOTE: .*_/){
+					
 				while(s/_([A-Z][a-z-]+ [a-z-]+)_[^_]+(var\.|subsp\.|nothosubsp\.|f\.) _([a-z-]+)_//){
 					$TJM2{"$1 $2 $3"}.="$LAN\n";
 				}
-				while(s/_([A-Z][a-z-]+ [a-z-]+)_//){
+				while(s/_([A-Z][a-z-]+ [a-z-&;]+)_//){ #added "&;" in brackets to account for hybrids with $times; added before species name
 					$TJM2{$1}.="$LAN\n";
 				}
 				if(m/_/){
@@ -216,5 +219,12 @@ s/ \(Aiton.*//;
 s/ Brot.*//;
 s/ \(Gould.*//;
 s/ \(Vasey.*//;
+#added Dec2016
+s/ \([lL]emmon\) [Ll]emmon//;
+#s/ [Gg]reene$//;
+s/Poa &times;limosa scribn. & t. a. williams/Poa &times;limosa/;
+s/[Gg]reene, pro sp\.//;
+
+
 return (ucfirst(lc($_)));
 }
