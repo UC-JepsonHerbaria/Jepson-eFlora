@@ -10,12 +10,12 @@ $unlinked= unlink 'IJM.hash', 'IJM_key.hash', 'name_to_code.hash';
 #die "failed to unlink hashes\n" unless $unlinked==2;
 
 #http://www.rareplants.cnps.org/detail/65.html
-open(IN, "CNPS_ID.txt") || die;
+open(IN, "/Users/rlmoe/IJM/CNPS_ID.txt") || die;
 while(<IN>){
-chomp;
-($id,$name)=split(/\t/);
+	chomp;
+	($id,$name)=split(/\t/);
 #$name=~s/ssp\./subsp./;
-$CNPS_URL{$name}="http://www.rareplants.cnps.org/detail/${id}.html";
+	$CNPS_URL{$name}="http://www.rareplants.cnps.org/detail/${id}.html";
 }
 
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
@@ -30,9 +30,9 @@ tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags     
 open(IN,"/Users/rlmoe/data/interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
-chomp;
-($name, $code)=split(/\n/);
-$NAME_CODE{$name}=$code;
+	chomp;
+	($name, $code)=split(/\n/);
+	$NAME_CODE{$name}=$code;
 }
 
 
@@ -50,11 +50,11 @@ $NAME_CODE{$name}=$code;
 open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
-chomp;
-s/X /&times;/;
-($code,$name,@residue)=split(/\t/);
-$TNOAN{$name}=$code;
-$NAN{$code}=$name;
+	chomp;
+	s/X /&times;/;
+	($code,$name,@residue)=split(/\t/);
+	$TNOAN{$name}=$code;
+	$NAN{$code}=$name;
 }
 $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 $NAN{93858}="Centaurea jacea nothosubsp. pratensis";
@@ -294,6 +294,7 @@ warn "reading from $file\n";
 	@all_pars=split(/\n\n+/,$all_lines);
 	$element=0;
 	foreach(@all_pars){
+next if m/^#/;
 warn "$_\n" if $seen_line{$_}++;
 next if m/^PROOF:/;
 next if m/^CAPTION:/;
@@ -1407,6 +1408,7 @@ if(m/\bincl\b/){
 	s/or incl /or included /g;
 	s/([Ss]tigmas) incl or /$1 included or /;
 	s/Stamens incl or /Stamens included or /;
+	s/Stamens incl$/Stamens included/;
 	s/incl *<a /included <a /g;
 
 
