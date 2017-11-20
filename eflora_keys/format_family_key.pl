@@ -1,12 +1,22 @@
 open(ERR, ">fam_key_error.txt") || die;
-open(IN,"/users/rlmoe/CDL_buffer/buffer/tnoan.out") || die;
-$/="\n";
+
+
+
+
+
+
+
+
+
+open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+local($/)="\n";
 while(<IN>){
-chomp;
-($code,$name)=split(/\t/);
+	chomp;
+	s/X /&times;/;
+	($code,$name,@residue)=split(/\t/);
 $name=uc($name) if $name=~/aceae$/;
-$TNOAN{$name}=$code;
-$NAN{$code}=$name;
+	$TNOAN{$name}=$code;
+	$NAN{$code}=$name;
 }
 $file="eflora_fam_key.tmp";
 	undef($/);
@@ -77,7 +87,7 @@ print <<EOP;
 <br>
 Contact: Comments on these keys should be sent to Tom Rosatti, Scientific Editor (rosatti\@berkeley.edu).
 <br>
-Citation: Jepson Flora Project. 2012 (v. 1.0). Jepson eFlora, Key to Families, by D.J. Keil, http://ucjeps.berkeley.edu/IJM.html [accessed on month, day, year] 
+Citation: Jepson Flora Project. 2013 (v. 1.0). Jepson eFlora, Key to Families, by D.J. Keil, http://ucjeps.berkeley.edu/IJM.html [accessed on month, day, year] 
 <br>
 Cite the print version of the second edition of The Jepson Manual as: Baldwin, B. G., D. H. Goldman, D. J. Keil, R. Patterson, T. J. Rosatti, and D. H. Wilken, editors. 2012. The Jepson manual: vascular plants of California, second edition. University of California Press, Berkeley. 
 
@@ -125,6 +135,7 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 
 	$uk="";
 	print ERR "$file KEY $&\n\n";
+print "\n\n\n";
 	++$genus;
 	@lines=split(/\n/);
 $indent_level=-1;
@@ -197,7 +208,7 @@ warn "1 $_\n";
 			elsif(m!--&gt;.*ACEAE \(\[?_([A-Z][a-z-]+ [a-z-]+)!){
 				$goto_code= $TNOAN{"$1"} || "C4";
 				s!--&gt; (.*[A-Z][a-z-]+ [a-z-]+_\]?\))!<a href="/cgi-bin/get_IJM.pl?tid=$goto_code">.....&nbsp;$1</a>!;
-warn "$_\n";
+warn "2 $_\n";
 			}
  ##PLANTAGINACEAE (_Antirrhinum_, _Dopatrium_, _Nuttallanthus_)
 			elsif(m!--&gt; .*([A-Z][a-z-]+), ([A-Z][a-z]+), (A-Z][a-z-]+)!){
