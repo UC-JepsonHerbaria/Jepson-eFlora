@@ -8,7 +8,7 @@ open(ERR, ">fam_key_error.txt") || die;
 
 
 
-open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -18,7 +18,7 @@ $name=uc($name) if $name=~/aceae$/;
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
 }
-$file="eflora_fam_key.tmp";
+$file="eflora_family_key.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 print <<EOP;
@@ -83,13 +83,11 @@ print <<EOP;
        <td width="100%"><span class="pageName"><a href="/IJM.html">Jepson eFlora</a></span><br /><br />
        <br />
    	  
-  <p class="bodyText">This text currently parallels  <i>The Jepson Manual: Vascular Plants of California, Second Edition</i> that is now in press at the University of California Press.
-<br>
 Contact: Comments on these keys should be sent to Tom Rosatti, Scientific Editor (rosatti\@berkeley.edu).
 <br>
-Citation: Jepson Flora Project. 2013 (v. 1.0). Jepson eFlora, Key to Families, by D.J. Keil, http://ucjeps.berkeley.edu/IJM.html [accessed on month, day, year] 
-<br>
-Cite the print version of the second edition of The Jepson Manual as: Baldwin, B. G., D. H. Goldman, D. J. Keil, R. Patterson, T. J. Rosatti, and D. H. Wilken, editors. 2012. The Jepson manual: vascular plants of California, second edition. University of California Press, Berkeley. 
+Citation for the whole project: Jepson Flora Project (eds.) [year] Jepson eFlora, http://ucjeps.berkeley.edu/IJM.html [accessed on month, day, year] 
+
+
 
 </td>
 </tr>
@@ -118,7 +116,7 @@ s/\nPROOF: .*//;
 		s/’/'/g;
 		s/</&lt;/g;
 		s//-/g;
-if(s/(Key to California Plant Families)\nTJM2_AUTHOR: (.*)/<h3 align=center>$1<\/h3><h4 align=center>$2<\/h4>/){
+if(s/(Key to California Plant Families)\nTJMX AUTHOR: (.*)/<h3 align=center>$1<\/h3><h4 align=center>$2<\/h4>/){
 print;
 }
 if(s/KEY_PAR: /<P>/){
@@ -200,7 +198,7 @@ $indent=$indent_level;
 			if(m!--&gt;.*([A-Z][a-z-]+ [a-z-]+)_ (nothosubsp\.|subsp\.|var\.) _([a-z-]+)!){
 				$goto_code= $TNOAN{"$1 $2 $3"} || "C4";
 				s!--&gt; (.*[A-Z][a-z-]+ [a-z-]+_ (nothosubsp\.|subsp\.|var\.) _[a-z-]+.*)!<a href="/cgi-bin/get_IJM.pl?tid=$goto_code">.....&nbsp;$1</a>!;
-warn "1 $_\n";
+#warn "1 $_\n";
 			}
 
  ##EUPHORBIACEAE (_Croton setigerus_)
@@ -208,7 +206,7 @@ warn "1 $_\n";
 			elsif(m!--&gt;.*ACEAE \(\[?_([A-Z][a-z-]+ [a-z-]+)!){
 				$goto_code= $TNOAN{"$1"} || "C4";
 				s!--&gt; (.*[A-Z][a-z-]+ [a-z-]+_\]?\))!<a href="/cgi-bin/get_IJM.pl?tid=$goto_code">.....&nbsp;$1</a>!;
-warn "2 $_\n";
+#warn "2 $_\n";
 			}
  ##PLANTAGINACEAE (_Antirrhinum_, _Dopatrium_, _Nuttallanthus_)
 			elsif(m!--&gt; .*([A-Z][a-z-]+), ([A-Z][a-z]+), (A-Z][a-z-]+)!){
