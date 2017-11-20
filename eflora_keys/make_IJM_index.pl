@@ -1,4 +1,4 @@
-open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
 s/X /&times;/;
@@ -10,7 +10,7 @@ $TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
 close(IN);
 $TID{"Centaurea jacea nothosubsp. pratensis"}=93858;
 #<a href="/cgi-bin/get_IJM.pl?tid=66839">	Achnatherum occidentale*</a><br>
-open(IN,"../2013/index_suppl") || die;
+open(IN,"index_suppl") || die;
 while(<IN>){
 	if(m/(\d+)">\t([^\*]+\*)/){
 		$last_code=$1;
@@ -195,6 +195,6 @@ foreach $i (A .. Z){
 print "$i\n";
 close($i);
 open(OUT, ">>IJM_index_${i}.html")|| die;
-print OUT qq{<br><span class="copyrightText">&nbsp;&nbsp;Copyright &copy; 2012 Regents of the University of California</span></body></html>};
+print OUT qq{<br><span class="copyrightText">&nbsp;&nbsp;Copyright &copy; 2017 Regents of the University of California</span></body></html>};
 close(OUT);
 }
