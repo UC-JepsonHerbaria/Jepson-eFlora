@@ -27,8 +27,8 @@ IJM_key_Group7.html
 IJM_key_Group8.html
 IJM_key_Group9.html
 IJM_sequence.txt
-name_to_code.hash
-IJM.hash
+output/name_to_code.hash
 IJM_update_history.html
-IJM_key.hash
-JEPS_elev.hash
+output/IJM_key.hash
+output/IJM_expanded.hash
+output/JEPS_elev.hash

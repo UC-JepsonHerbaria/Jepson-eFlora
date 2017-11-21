@@ -13,6 +13,8 @@ echo "making stats table"
 perl get_summary_stats.pl > IJM_stats.html
 echo "making JEPS_elev.hash"
 perl get_elev.pl
+echo "making expanded key hash"
+perl expand_key_gloss.pl
 
 echo "making tar file"   
 tar -c -f IJM.tar -T IJM_tar_list

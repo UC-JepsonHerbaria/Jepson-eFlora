@@ -16,6 +16,7 @@ NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
 EOP
 use BerkeleyDB;
 open (ERR, ">ijm_error.txt");
+use lib "/JEPS-master/Jepson-eFlora/Modules/";
 use flatten;
 $genus="AA";
 $unlinked= unlink 'IJM.hash', 'IJM_key.hash', 'name_to_code.hash';
@@ -30,10 +31,10 @@ while(<IN>){
 	$CNPS_URL{$name}="http://www.rareplants.cnps.org/detail/${id}.html";
 }
 
-tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
+tie(%IJM, "BerkeleyDB::Hash", -Filename=>"output/IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
 $IJM=();
-tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"IJM_key.hash", -Flags      => DB_CREATE )|| die "Stopped; couldnt open IJM_key\n";
-tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
+tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"output/IJM_key.hash", -Flags      => DB_CREATE )|| die "Stopped; couldnt open IJM_key\n";
+tie(%NAME_CODE, "BerkeleyDB::Hash", -Filename=>"output/name_to_code.hash" , -Flags      => DB_CREATE )|| die "Stopped; couldnt open name code\n";
 open(IN, "/Users/davidbaxter/DATA/Interchange/_input/output/flat_dbm_4.txt") || die;
 $/="";
 while(<IN>){
@@ -260,7 +261,7 @@ grep($field_list{$_}=$field_order++,@field_list);
 
 $pageAuthorLine=qq{<span class="pageAuthorLine">Treatments for public viewing </span><br />};
 
-$file="eflora_treatments.txt";
+$file="/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 warn "reading from $file\n";
@@ -684,17 +685,25 @@ if( m/^1\./ || m/^UNABRIDGED KEY/ || m/^Group \d+[A-Z]?[.:]/ || m/^Key to Groups
 if(m/TJMX AUTHOR/i){
 		s|(TJM2 AUTHOR:.*\n)||i; #TJMX AUTHOR line has priority over TJM2 AUTHOR
 }
+
 if(m/TJMXX AUTHOR/i){
 		s|(TJM2 AUTHOR:.*\n)||i; #TJMXX AUTHOR line has priority over both TJM2 AUTHOR and TJMX AUTHOR
 		s|(TJMX AUTHOR:.*\n)||i;
 }
+
+if(m/TJMXXX AUTHOR/i){ #this was not added to this file when the XXX authors were added by David to sanity.pl and eFlora_display.php, DEC2016
+		s|(TJM2 AUTHOR:.*\n)||i; #TJM4X AUTHOR line has priority over both TJM2 AUTHOR and TJMX and TJMXX AUTHOR
+		s|(TJMX AUTHOR:.*\n)||i;
+		s|(TJMXX AUTHOR:.*\n)||i;
+}
+
 if(m/TJM4X AUTHOR/i){ #this was not added to this file when the XXX authors were added by David to sanity.pl and eFlora_display.php, DEC2016
 		s|(TJM2 AUTHOR:.*\n)||i; #TJM4X AUTHOR line has priority over both TJM2 AUTHOR and TJMX and TJMXX AUTHOR
 		s|(TJMX AUTHOR:.*\n)||i;
 		s|(TJMXX AUTHOR:.*\n)||i;
 		s|(TJMXXX AUTHOR:.*\n)||i;
 }
-		s|TJM[42X]X* AUTHOR:(.*)|<h4>$1</h4>|i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR" "TJM4X AUTHOR"
+		s/TJM(4X|2|X+) AUTHOR:(.*)/<h4>$2<\/h4>/i; # "TJM2 AUTHOR", "TJMX AUTHOR" or "TJMXX AUTHOR" "TJM4X AUTHOR"
 		s|(TJM1 AUTHOR:.*)||i;
 		s|(TJM\(1993\) AUTHOR:.*)||i;
 		s|^FAMILY: *||;

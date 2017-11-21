@@ -3,87 +3,67 @@
 
 $/="";
 while(<DATA>){
-	($term,$desc)=m/^(.*)\n([^\000]+)/;
-	++$termcount;
-	$desc=~s/\n/ /g;
-	$desc=~s/ *$//;
-	if ($desc=~/1\./ && $desc !~/2\./){
-		print "1 not 2 $_\n";
-	}
-	if ($term=~/[()]/){
-		($first,$second)=m/(.*) \((.*)\)/;
-		$first_term=$termcount;
-		$uc_first_term=++$termcount;
-		$second_term=++$termcount;
-		$uc_second_term=++$termcount;
-		$ucf=ucfirst($first);
-		$ucs=ucfirst($second);
-		print NOWHERE  <<EOP;
+($term,$desc)=m/^(.*)\n([^\000]+)/;
+++$termcount;
+$desc=~s/\n/ /g;
+$desc=~s/ *$//;
+if ($desc=~/1\./ && $desc !~/2\./){
+print;
+}
+if ($term=~/[()]/){
+($first,$second)=m/(.*) \((.*)\)/;
+$first_term=$termcount;
+$second_term=++$termcount;
+$ucf=ucfirst($first);
+$ucs=ucfirst($second);
+print <<EOP;
 $first_term\t$first\t$desc
 $second_term\t$second\t$desc
 EOP
-		$prog.=<<EOP;
-s|\\b$first\\b|<$first_term>|;
-s|\\b$ucf\\b|<$uc_first_term>|;
-s|\\b$second\\b|<$second_term>|;
-s|\\b$ucs\\b|<$uc_second_term>|;
+$prog.=<<EOP;
+if(s|\\b$first\\b|<$first_term>|){next;}
+if(s|\\b$ucf\\b|<$first_term>|){next;}
+if(s|\\b$second\\b|<$second_term>|){next;}
+if(s|\\b$ucs\\b|<$second_term>|){next;}
 EOP
-($first_anchor_term=$first)=~s/ \(.*//;
-		$next_prog .=<<EOP;
-s|<$first_term>|<a href="/IJM_glossary.html#$first_anchor_term" title="$desc" style=color:#003366; text-decoration=none">$first</a>|g;
-s|<$uc_first_term>|<a href="/IJM_glossary.html#$first_anchor_term" title="$desc" style=color:#003366; text-decoration=none">$ucf</a>|g;
-s|<$second_term>|<a href="/IJM_glossary.html#$first_anchor_term" title="$desc" style=color:#003366; text-decoration=none">$second</a>|g;
-s|<$uc_second_term>|<a href="/IJM_glossary.html#$first_anchor_term" title="$desc" style=color:#003366; text-decoration=none">$ucs</a>|g;
-EOP
-	}
-	else{
-		$u_term=ucfirst($term);
-		$u_termcount =$termcount++;
-		print NOWHERE  <<EOP;
+}
+else{
+$uterm=ucfirst($term);
+print <<EOP;
 $termcount\t$term\t$desc
-$u_termcount\t$u_term\t$desc
 EOP
-$anchor_term=$term;
-		$next_prog .=<<EOP;
-s|<$termcount>|<a href="/IJM_glossary.html#$anchor_term" title="$desc" style=color:#003366; text-decoration=none">$term</a>|g;
-s|<$u_termcount>|<a href="/IJM_glossary.html#$anchor_term" title="$desc" style=color:#003366; text-decoration=none">$u_term</a>|g;
+$prog.=<<EOP;
+if(s|\\b$term\\b|<$termcount>|){next;}
+if(s|\\b$uterm\\b|<$termcount>|){next;}
 EOP
-		$prog.=<<EOP;
-s|\\b$term\\b|<$termcount>|;
-s|\\b$u_term\\b|<$u_termcount>|;
-EOP
-	}
+}
 }
 $prog = <<EOP;
 while((\$key,\$value)=each(\%TREAT)){
-#next unless \$key==49;
-\$value=~s/style=/stYle=/g;
 \@words=split(/\\n/,\$value);
 foreach(\@words){
-if(m/^<P/){
-#print "\$_\\n\\n";;
+last if m/<JDS/;
+last if m/<SP_IN/;
+next if m/"/;
+if(m/^[A-Za-z]/){
 $prog
-$next_prog
-#print "\$_\\n\\n";
-}
-else{
-#print "\\t\\t\$_\\n\\n";
 }
 }
-\$contents=join("\\n\\n",\@words);
+\$contents=join("",\@words);
 \$NEWTREAT{\$key}=\$contents;
 print \$key;
 }
 EOP
 print $prog;
+#$/="";
 #die;
-
 use BerkeleyDB;
 $file="output/IJM_key.hash";
-$newfile="output/IJM_key_expanded.hash";
+$newfile="output/IJM_expanded.hash";
 tie(%TREAT, "BerkeleyDB::Hash", -Filename=>$file, -Flags=>DB_RDONLY)|| die "$file: $!";
 tie(%NEWTREAT, "BerkeleyDB::Hash", -Filename=>$newfile, -Flags=>DB_CREATE)|| die "$newfile: $!";
 eval ($prog);
+
 __END__
 abaxial
 Side or surface of a structure away from the axis distal to the point at which the structure is borne (e.g., lower surface of a leaf, outer surface of a petal). (see adaxial)
