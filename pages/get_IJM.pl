@@ -17,19 +17,18 @@ $today=~s/^[^ ]* //;
 $today=~s/\d\d:\d\d:\d\d //;
 
 
+#TAXON_ID HASH LOADED
+#This used to call a file tnoan.out which has not been updated since 2014.  Therefore no new taxa were ever processed by this file from 2015-2016
+#this code now calls on the smasch_taxon_ids file to create the TNOAN variable
+#open(IN,"${data_path}tnoan.out") || die;
 
-
-
-
-
-open(IN,"${data_path}tnoan.out") || die;
+open(IN, "${data_path}smasch_taxon_ids.txt") || die;
 while(<IN>){
 	chomp;
-	($code,$name)=split(/\t/);
+	($code,$name,@residue)=split(/\t/);
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
 }
-close(IN);
 
 
 $TID= $query->param('tid') || $query->param('key');
@@ -46,26 +45,22 @@ EOP
 $citation=<<EOP;
 Citation for this treatment:  [Author of taxon treatment] 2014. $cite_name, Revision 2, in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?tid=$TID, accessed on $today
 EOP
-
-	} elsif($cite_name=~m/(Eriastrum|Linanthus|Carex|Juncus)/){
+}
+	elsif($cite_name=~m/(Eriastrum|Linanthus|Carex|Juncus)/){
 $citation=<<EOP;
 Citation for this treatment:  [Author of taxon treatment] 2015. $cite_name, Revision 3, in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?tid=$TID, accessed on $today
 EOP
-
-	} elsif($cite_name=~m/(Athyrium|Blechnum|Struthiopteris|Cystopteris|Adiantum|Pentagramma|Bahia|Picradeniopsis|Amauriopsis|Hymenothrix|Eriodictyon|Ceanothus)/){
+}
+	elsif($cite_name=~m/(Athyrium|Blechnum|Struthiopteris|Cystopteris|Adiantum|Pentagramma|Bahia|Picradeniopsis|Amauriopsis|Hymenothrix|Eriodictyon|Ceanothus)/){
 $citation=<<EOP;
 Citation for this treatment:  [Author of taxon treatment] 2016. $cite_name, Revision 4, in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?tid=$TID, accessed on $today
 EOP
-
-	} else{
+}
+	else{
 $citation=<<EOP;
 Citation for this treatment:  [Author of taxon treatment] 2012. $cite_name, in Jepson Flora Project (eds.) <em>Jepson eFlora</em>, http://ucjeps.berkeley.edu/cgi-bin/get_IJM.pl?tid=$TID, accessed on $today
 EOP
 }
-
-
-
-
 
 
 ###This is the block that is executed if they give the parameter 'tid'
@@ -312,14 +307,7 @@ $entry=~s/orth\. variety/orth. var./g;
 #print "<P>&nbsp;<P>$entry";
 print "<h2>Key to $NAN{$TID}</h2>";
 unless($NAN{$TID}=~/aceae$/){ #i.e. print the list of species, unless the name matches /aceae/ and therefore is a family
-#	print <<EOP;
-#	<FORM>
-#	<SELECT WIDTH=20 onChange="JumpToIt(this)">
-#	<OPTION VALUE="None">List of species in $NAN{$TID}
-#	@taxa
-#	</SELECT>
-#	</FORM>
-#EOP
+
 	print <<EOP;
 	<FORM>
 	<SELECT WIDTH=20 onChange="window.location=this.value">
