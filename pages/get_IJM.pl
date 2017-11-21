@@ -4,6 +4,7 @@ use CGI;
 $query = new CGI;                        # create new CGI object
 $data_path	="/usr/local/web/ucjeps_data/ucjeps_data/";
 
+#tie(%IJM, "BerkeleyDB::Hash", -Filename=>"${data_path}IJM_expanded_hash")|| die "Stopped; couldnt open IJM_exapanded\n";
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"${data_path}IJM.hash")|| die "Stopped; couldnt open IJM\n";
 tie(%IJM_key, "BerkeleyDB::Hash", -Filename=>"${data_path}IJM_key.hash")|| die "Stopped; couldnt open IJM_key\n";
 
