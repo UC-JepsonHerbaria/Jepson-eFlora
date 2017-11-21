@@ -1,112 +1,100 @@
-$/="";
-open(IN, "update/flat_dbm_6") || die;
-open(OUT, ">get_elev.out") || die;
-@treat=(<IN>);
-@treat=reverse(@treat);
-
-$complete_name="";
-
-foreach(@treat){
-	if(m|<family_name>\s*(.*)\s*</family_name>|){
+open(IN,"tnoan.out") || die;
+while(<IN>){
+chomp;
+($code,$name)=split(/\t/);
+$TNOAN{$name}=$code;
+}
+foreach $file (@ARGV){
+	undef($/);
+	open(IN,$file) || die "couldn't open $file\n";
+	$all_lines=<IN>;
+#converts windows line ends#
+	$all_lines=~s/\xEF\xBB\xBF//;
+	$all_lines=~s/ *\r\n/\n/g;
+	$all_lines=~s/ +/ /g;
+	@all_pars=split(/\n\n+/,$all_lines);
+	foreach(@all_pars){
+($first_line)=m/^(.*)/;
+if(m/([A-Z]+ACEAE)/){
+$family=$1;
+#print "$family\n";
+}
+if( m/NATIVE/){
+$nativity="N";
+}
+else{
+$nativity="A";
+}
+    if(m/([A-Z-]+ .*)\nTAXON AUTHOR/){
+        $name=&strip_name($1);
+    }
+    elsif(m/(NATIVE|NATURALIZED)\n([A-Z-]+ .*)/){
+        $name=&strip_name($2);
+}
+else{
+warn "skipping $first_line following $name\n";
 next;
+}
+#print "$name\n" if $nativity eq "N";
+#next;
+			if(($elevation)=m/ELEVATION: (.*)/){
+if(m/UNABR.*elevation/){
+$comment=2;
+}
+else{
+$comment=1;
+}
+$max_e=$min_e="";
+				if($elevation=~m/([0-9-]+)--([0-9-]+)/){
+					$max_e=$2; $min_e=$1;
+				}
+				elsif($elevation=~m/<=? *([0-9]+)/){
+					$max_e=$1; $min_e=0;
+				}
+				elsif($elevation=~m/>=? *([0-9]+)/){
+					$max_e=4300; $min_e=$1;
+				}
+				elsif($elevation=~m/\+- *([0-9]+)/){
+					$max_e=$1; $min_e=$1;
+				}
+				elsif($elevation=~m/(^[0-9]+) m/){
+					$max_e=$1; $min_e=$1;
+				}
+else{
+print "$name $elevation\n";
+}
+					$max_e=0 if $max_e <0;
+					$min_e=0 if $min_e <0;
+					$max_e= $min_e=0 if $elevation=~/below.*tide/;
+				$native{$name}{max}=$max_e;
+				$native{$name}{min}=$min_e;
+				print "$name\tACC\t$min_e\t$max_e\t$comment\t$nativity\n";
+				if(m/SYNONYMS: (.*)/){
+					while(s/SYNONYMS: +(.*)//){
+                                		@syns=split(/; +/,$1);
+                                		foreach(@syns){
+                                        		s/Expanded author citation: //;
+                                        		s/_//g;
+next if s/, .*//;
+                                        		print &strip_name($_), "\tSYN\t$min_e\t$max_e\t$comment\t$nativity\n";
+                                		}
+                        		}
+				}
+			}
+		}
 	}
-	if (m/<genus_name>([^<]+)/){
-		$genus=$1;
-next;
-	}
-
-	if(m/sp_par/){
-		$taxaut="";
-	#<sp_name origin="native">A. septentrionale</sp_name>
-#<taxaut>(L.) Hoffm.</taxaut>
-		if(m/<sp_name origin="(native|intro)">([^<]+)/){
-			($spname=$2)=~s/[A-Z]\. +//;
-			($taxaut)=m|<taxaut>\s*(.*)\s*</taxaut>|;
-			$complete_name="$genus $spname $taxaut";
-			$spname .= " $taxaut";
-		}
-		elsif(m/<infrasp_name origin="(native|intro)">([^<]+)/){
-			$i_n=$2;
-			($taxaut)=m|<taxaut>\s*(.*)\s*</taxaut>|;
-			$complete_name="$genus $spname $i_n $taxaut";
-	#<infrasp_name origin="native">var. tenuissimus</infrasp_name>
-#<taxaut>Mert. & Koch</taxaut>&quad;
-		}
-
-		elsif(m/<infrasp_name origin="(native|intro)" style="full_name">[A-Z]\. +([a-z-]+.*?(var\.|ssp\.) [^<]+)/){
-			$i_n=$2;
-			($taxaut)=m|<taxaut>\s*(.*)\s*</taxaut>|;
-			$complete_name="$genus $i_n $taxaut";
-#<infrasp_name origin="native" style="full_name">A. trichomanes  L.  ssp. trichomanes</infrasp_name>
-		}
-
-		elsif(m/<phase_name>([^<]+)/){
-			$complete_name="$genus $1";
-		}
-		else{
-			($name)=m/^(.*\n.*)/;
-			warn "$name sp_par without species element\n";
-		}
-$elev="";
-$range=$max=$min="";
-	if(m/<elevation>([^<]+)/){
-$range=$elev=$1;
-$max=$min="";
-$range=~s/&lt; /0--/;
-$range=~s/&plus_minus; //;
-$range=~s/gen //;
-$range=~s/&gt; (\d+)/$1--4300/;
-$range=~s/probably //;
-if($range=~/([-\d]+)--([-\d]+)/){
-$min=$1; $max=$2;
-}
-elsif($range=~/([-\d]+)/){
-$min=$1; $max=$1;
-}
-$range= "$min\t$max\t$elev";
-print "$range\n" unless $seen{$range}++;
-}
-	elsif(m/<elevation asin/){
-$range="\t\tas in species";
-}
-	elsif(m/Habitat.*of sp\b/){
-$range="\t\tas in species";
-}
-	elsif(m/Range.*of sp\b/){
-$range="\t\tas in species";
-}
-$complete_name=~s/  */ /g;
-$complete_name=~s/  *$//g;
-$complete_name=~s/&mathx;/X-/g;
-$complete_name=~s/ssp\./subsp./g;
-$complete_name=&strip_name($complete_name);
-$range=~s/&gt;/>/;
-$range=~s/&lt;/</;
-print OUT "$complete_name\t$range\n";
-	}
+foreach $name (sort(keys(%native))){
+#print "$TNOAN{$name} $native{$name}{max}\n" if ($native{$name}{max} && $native{$name}{max}< 300);
 }
 sub strip_name{
-#Aloe saponaria (Aiton) Haw. x A. striata Haw.
-#Encelia farinosa x Encelia frutescens
-#Trifolium variegatum Nutt. phase 1
-#Fragaria x ananassa Duchesne var. cuneifolia (Nutt. ex Howell) Staudt, pro nm.
-	local($_) = @_;
-s/^([A-Z])([^ ]+)/$1\L$2/;
-#warn "SAPONARIA: $_" if m/saponaria/;
-	s/^ *//;
-	s/ x / × /;
-s/^([A-Z])([A-Z]+)/$1\L$2/;
-s/^x ([A-Z][a-z]+ [a-z]+).*/× $1/;
-s/Fragaria × ananassa Duchesne var. cuneifolia.*/Fragaria × ananassa var. cuneifolia/ ||
-s/Trifolium variegatum Nutt. phase (\d)/Trifolium variegatum phase $1/ ||
-s/Aloe saponaria.*striata.*/Aloe saponaria × Aloe striata/ ||
-s/Encelia farinosa . Encelia frutescens/Encelia farinosa × Encelia frutescens/ ||
-	s/^([A-Z][a-z]+) (X?[-a-z]+).*(subsp.) ([-a-z]+).*(var\.) ([-a-z]+).*/$1 $2 $3 $4 $5 $6/ ||
-	s/^([A-Z][a-z]+ [a-z]+) (× [-A-Z][a-z]+ [a-z]+).*/$1 $2/ ||
-	s/^([A-Z][a-z]+) (× [-a-z]+).*/$1 $2/ ||
-	s/^([A-Z][a-z]+) (X?[-a-z]+).*(ssp\.|var\.|f\.|subsp.) ([-a-z]+).*/$1 $2 $3 $4/ ||
-	s/^([A-Z][a-z]+) (X?[-a-z]+).*/$1 $2/||
-	s/^([A-Z][a-z]+) [A-Z(].*/$1/;
-warn "SAPONARIA: $_" if m/saponaria/;
-	return ($_);
+local($_) = @_;
+			s/ {\/.*//;
+			s/\/{.*//;
+			s/ *{.*//;
+s/&times;/× /;
+       s/^([A-Z][-A-Za-z]+) (X?[-a-z]+).*\b(nothosubsp\.|subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z]+) ([x ]*[-a-z]+).*/$1 $2/;
+s/ (subsp\.|var\.|f\.) / /;
+#return ucfirst((lc($_)));
+return (lc($_));
 }
