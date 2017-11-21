@@ -1,4 +1,4 @@
-open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 while(<IN>){
 	chomp;
 	s/X /&times;/;
