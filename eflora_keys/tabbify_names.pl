@@ -1,6 +1,9 @@
 #takes input from get_TJM2_names.pl
-open(IN, "/Users/richardmoe/4_IJM/post/TJM1_NAMES") || die;
+open(IN, "/Users/davidbaxter/DATA/Interchange/TJM1_NAMES") || die;
 #Abies	magnifica	Andr. Murray	var.	shastensis	Lemmon	PINACEAE
+
+my $LN = 0;
+
 while(<IN>){
 chomp;
 ($genus,$species,$binomial_author,$infra_rank, $infra)=split(/\t/);
@@ -13,8 +16,12 @@ $TJM1{$tjm1_name}++;
 $/="";
 open(OUT, ">accepted_names.out");
 		print OUT  <<EOP;
-nativity\tfamily\tgenus\tspecies\tspecies_author\tinfraspecific_rank\tinfraspecific_epithet\tinfraspecific_author\tname_minus_authors\tname_plus_authors\texpanded_name\tsynonyms\tcommon\tTJM1/TJM2\tmajor_clade\tendemicity
+LN\tnativity\tfamily\tgenus\tspecies\tspecies_author\tinfraspecific_rank\tinfraspecific_epithet\tinfraspecific_author\tname_minus_authors\tname_plus_authors\texpanded_name\tsynonyms\tcommon\tTJM1/TJM2\tmajor_clade\tendemicity
 EOP
+open(OUT2, ">/Users/davidbaxter/DATA/eFlora/yellow_flag_processing/eflora_KML_Moe/data_inputs/eFlora_name_list.txt");#opens file for use in KML creation
+open(OUT3, ">eFlora_names_problems.txt");
+
+
 while(<>){
 if(s/clade: (.+)\n//){
 $clade=$1;
@@ -49,119 +56,168 @@ $syn="";
 		($family, $genus, $species)=@name_atoms[0 .. 2];
 $genus=ucfirst(lc($genus));
 	s/^[^ ]+ //;
-#ANACARDIACEAE RHUS integrifolia (Nutt.) Rothr.
+
+
+#kluge for the one problem names
+#ENCELIA farinosa &times; E. frutescens
+if(m/ENCELIA farinosa &times; /){
+	print OUT2 "Encelia farinosa X Encelia frutescens\n";
+	print OUT  <<EOP;
+$LN\tSPONTANEOUS HYBRID\tASTERACEAE\tEncelia\tfarinosa &times; E. frutescens\t\t\t\t\tEncelia farinosa &times; E. frutescens\tEncelia farinosa &times; E. frutescens\t\t\t\tTJM1\tEUDICOTS\t0
+EOP
+
+}
+#skip the one CULTIVATED PLANT from JFP-9 that has a species page
+if(m/Asclepias curassavica/i){
+	next;
+
+}
+
+#Downingia yina, Astragalus nuttallianus var. austrinus, Astragalus tephrodes var. brachylobus are JFP-8 taxa that are not in California and should not be on the accepted names list
+if(m/(Downingia yina|Astragalus nuttallianus var\. austrinus|Astragalus tephrodes var. brachylobus)/i){
+	next;
+
+}
+
+#ANACARDIACEAE RHUS integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.
 #PLANTAGINACEAE KECKIELLA ternata (A. Gray) Straw
 #RANUNCULACEAE THALICTRUM sparsiflorum Fisch. & C.A. Mey.
-	if(m/^[A-Z][A-Z-]+ [a-z&;-]+ (.*)/ &! m/^.* (var\.|subsp\.|f\.) [a-z]/){
-		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"}= join(" ",@name_atoms[3 .. $#name_atoms]);
-$nan="$genus $species";
-$fullname= "$nan $b_author";
-foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
-s/^ *//;
-s/ *$//;
-s/  +/ /g;
-s/ The following.*//;
-s/ There are .*//;
-s/ If .*//;
-s/; proposed.*//;
-s/ used for.*//;
-s/_//g;
-}
-if($TJM1{$nan}){
-$TJM1="TJM1";
-}
-else{
-$TJM1="TJM2";
-}
-
+elsif(m/^[A-Z][A-Z-]+ [a-z&;-]+ (.*)/ &! m/^.* (var\.|subsp\.|f\.|nothosubsp\.) [a-z]/){
+	if (m/RHUS integrifolia/){ #fix one problematic 'filius' author name that does not parse correctly
+		print OUT2	"Rhus integrifolia\n";
 		print OUT  <<EOP;
-$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
+$LN\tNATIVE\tANACARDIACEAE\tRhus\tintegrifolia\t(Nutt.) Benth. & Hook. filius ex Rothr.\t\t\t\tRhus integrifolia\tRhus integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.\t\t\tLEMONADE BERRY\tTJM2\tEUDICOTS\t0
+EOP
+		}
+	else{
+		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"}= join(" ",@name_atoms[3 .. $#name_atoms]);
+		$nan="$genus $species";
+		$fullname= "$nan $b_author";
+		foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
+		s/^ *//;
+		s/ *$//;
+		s/  +/ /g;
+		s/ The following.*//;
+		s/ There are .*//;
+		s/ If .*//;
+		s/; proposed.*//;
+		s/ used for.*//;
+		s/_//g;
+		}
+		if($TJM1{$nan}){
+			$TJM1="TJM1";
+		}
+		else{
+			$TJM1="TJM2";
+		}
+			print OUT2 "$nan\t$TJM1\n";
+			print OUT  <<EOP;
+$LN\t$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
 EOP
 		$binomial_author{"$name_atoms[1] $name_atoms[2]"}= $b_author;
+	}
 }
+
 #AUTONYM
-elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.) \2\b/){
-$infra_rank=$4;
-$infra=$2;
-$b_author=$3;
-unless(length($b_author)>1){
-		$b_author= join(" ",@name_atoms[5 .. $#name_atoms]);
-}
-unless(length($b_author)>1){
-		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"};
-}
-unless(length($b_author)>1){
-print "NO BA $aname\n";
-}
-$nan="$genus $species $infra_rank $infra";
-$fullname= "$genus $species $b_author $infra_rank $infra";
-foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
-s/^ *//;
-s/ *$//;
-s/  +/ /g;
-s/ The following.*//;
-s/ There are .*//;
-s/ If .*//;
-s/; proposed.*//;
-s/ used for.*//;
-s/_//g;
-}
-if($TJM1{$nan}){
-$TJM1="TJM1";
-}
-else{
-$TJM1="TJM2";
-}
-				print OUT  <<EOP;
-$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
-EOP
-
-		$binomial_author{"$name_atoms[1] $name_atoms[2]"}= $b_author;
-}
-
-
-
-elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.) ([^ ]+) (.*)/){
+elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.|nothosubsp\.) \2\b/){
 	$infra_rank=$4;
-	$infra=$5;
-	$infra_author=$6;
+	$infra=$2;
 	$b_author=$3;
 	unless(length($b_author)>1){
-		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"};
-		#print "NEW BA $aname\n";
+		$b_author= join(" ",@name_atoms[5 .. $#name_atoms]);
 	}
-$nan="$genus $species $infra_rank $infra";
-$fullname= "$genus $species $b_author $infra_rank $infra $infra_author";
+	unless(length($b_author)>1){
+		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"};
+	}
+	unless(length($b_author)>1){
+		print "NO BA $aname\n";
+	}
+	$nan="$genus $species $infra_rank $infra";
+	$fullname= "$genus $species $b_author $infra_rank $infra";
+	foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
+		s/^ *//;
+		s/ *$//;
+		s/  +/ /g;
+		s/ The following.*//;
+		s/ There are .*//;
+		s/ If .*//;
+		s/; proposed.*//;
+		s/ used for.*//;
+		s/_//g;
+	}
+	if($TJM1{$nan}){
+		$TJM1="TJM1";
+	}
+	else{
+		$TJM1="TJM2";
+	}
+	print OUT2 "$nan\t$TJM1\n";
+	print OUT  <<EOP;
+$LN\t$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
+EOP
 
-foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
-s/^ *//;
-s/ *$//;
-s/  +/ /g;
-s/ The following.*//;
-s/ There are .*//;
-s/ If .*//;
-s/; proposed.*//;
-s/ used for.*//;
-s/_//g;
+	$binomial_author{"$name_atoms[1] $name_atoms[2]"}= $b_author;
 }
-if($TJM1{$nan}){
-$TJM1="TJM1";
-}
-else{
-$TJM1="TJM2";
-}
-				print OUT  <<EOP;
-$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
+
+elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.|nothosubsp\.) ([^ ]+) (.*)/){
+	if (m/RHUS integrifolia/){ #fix one problematic filius author name that does not parse correctly
+		print OUT2	"Rhus integrifolia\n";
+		print OUT  <<EOP;
+$LN\tNATIVE\tANACARDIACEAE\tRhus\tintegrifolia\t(Nutt.) Benth. & Hook. filius ex Rothr.\t\t\t\tRhus integrifolia\tRhus integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.\t\t\tLEMONADE BERRY\tTJM2\tEUDICOTS\t0
+EOP
+		}
+	else{
+		$infra_rank=$4;
+		$infra=$5;
+		$infra_author=$6;
+		$b_author=$3;
+		unless(length($b_author)>1){
+			$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"};
+			#print "NEW BA $aname\n";
+		}
+		$nan="$genus $species $infra_rank $infra";
+		$fullname= "$genus $species $b_author $infra_rank $infra $infra_author";
+
+		foreach($family, $genus, $species, $b_author, $infra_rank, $infra, $infra_author, $nan, $fullname, $ename){
+		s/^ *//;
+		s/ *$//;
+		s/  +/ /g;
+		s/ The following.*//;
+		s/ There are .*//;
+		s/ If .*//;
+		s/; proposed.*//;
+		s/ used for.*//;
+		s/_//g;
+		}
+		if($TJM1{$nan}){
+			$TJM1="TJM1";
+		}
+		else{
+			$TJM1="TJM2";
+		}
+	
+		print OUT2 "$nan\t$TJM1\n";
+		
+		print OUT  <<EOP;
+$LN\t$nativity\t$family\t$genus\t$species\t$b_author\t$infra_rank\t$infra\t$infra_author\t$nan\t$fullname\t$ename\t$syn\t$common\t$TJM1\t$clade\t$endemicity
 EOP
 
 		$binomial_author{"$name_atoms[1] $name_atoms[2]"}= $b_author;
+	}
 }
+
 else{
-print "$aname\n$_\n\n";
+	warn "problems---$aname\n$_\n\n";
+	print OUT3 "problems\t$aname\t$_\n";
 }
 
 
 }
+
+close(IN);
+close(OUT);
+close(OUT2);
+close(OUT3);
 #	if(m/ (var\.|subsp\.) /){
 ##ASPLENIACEAE ASPLENIUM trichomanes subsp. trichomanes L.
 ##OPHIOGLOSSACEAE BOTRYCHIUM simplex var. compositum (Lasch) Milde
@@ -212,3 +268,4 @@ print "$aname\n$_\n\n";
 #		$b_author=join(" ",@name_atoms[3 .. $#name_atoms]);
 #		$binomial_author{"$name_atoms[1] $name_atoms[2]"}= join(" ",@name_atoms[3 .. $#name_atoms]);
 #	}
+
