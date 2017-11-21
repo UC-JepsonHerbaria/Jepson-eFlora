@@ -1,6 +1,7 @@
+open(IN,"eflora_treatments.txt") || die;
 #undef($/);
 $/="";
-while(<>){
+while(<IN>){
 next if m/^Admin/i;
 #next if m/^UNABR/i;
 s/PROOF:.*\n//;
