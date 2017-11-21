@@ -1,5 +1,5 @@
 #takes input from get_TJM2_names.pl
-open(IN, "TJM1_NAMES") || die;
+open(IN, "../post/TJM1_NAMES") || die;
 #Abies	magnifica	Andr. Murray	var.	shastensis	Lemmon	PINACEAE
 while(<IN>){
 chomp;
