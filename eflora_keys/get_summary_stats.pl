@@ -65,7 +65,7 @@ print <<EOP;
 
 
 <head><title>Jepson Herbarium: Jepson Flora Project: Jepson eFlora: Table of Contents</title> 
-<link href="http://ucjeps.berkeley.edu/common/styles/style_main_tjm2.css" rel="stylesheet" type="text/css" />
+<link href="http://ucjeps.berkeley.edu/common/styles/dropdowns.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -84,68 +84,12 @@ print <<EOP;
 <body>
 
 <!-- Begin banner -->
-<table class="banner" width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-      <td colspan="5" align="center" valign="middle">&nbsp;</td>
-    </tr>
+<?php include(\$_SERVER['DOCUMENT_ROOT'].'/common/php/header_jeps.php'); ?>
+<!-- End banner -->
 
-  <tr>
-      <td rowspan="4" width="12" align="center" valign="middle"></td>
-      <td rowspan="3" width="120" align="center" valign="middle">
-        <a href="http://ucjeps.berkeley.edu/jeps/"><img src="http://ucjeps.berkeley.edu/common/images/logo_jeps_80.png" alt="Jepson Herbarium (JEPS)" width="80" height="79" border="0" /></a></td>
-    <td align="center">&nbsp;</td>
-    <td rowspan="3" width="120" align="center" valign="middle"></td>
-    <td rowspan="4" width="12" align="center" valign="middle"></td>
-  </tr>
-    <tr>
-
-    <td align="center" valign="middle"><span class="bannerTitle">The Jepson Herbarium</span><br /></td>
-  </tr>
-
-    <tr>
-     <td align="center" valign="top"><a href="http://www.berkeley.edu" class="bannerTagLine">University of California, Berkeley</a></td>
-   </tr>
-
-     <tr>
-     <td colspan="3" align="center"></td>
-
-   </tr>
-     
-   <tr>
-       <td height="8" colspan="5" align="center">&nbsp;</td>
-     </tr>
-   <tr class="bannerBottomBorder">
-     	<td colspan="6" height="3"></td>
-  </tr>
-
-    <tr>
-
-    <td colspan="6"><img src="http://ucjeps.berkeley.edu/common/images/common_spacer.gif" alt="" width="1" height="1" border="0" /></td>
-  </tr>
-  </table>
-  <!-- End banner -->
-
-  <!-- Beginning of horizontal menu -->
-  <table class=horizMenu width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-    <td height="21" width="640" align="right">
-
-      <a href="http://ucjeps.berkeley.edu/main/directory.html" class="horizMenuActive">Directory</a>
-  	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://ucjeps.berkeley.edu/news/" class="horizMenuActive">News</a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://ucjeps.berkeley.edu/main/sitemap.html" class="horizMenuActive">Site Map</a>	
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://ucjeps.berkeley.edu/" class="horizMenuActive">Home</a>	
-    </td>
-
-<td />
-  </tr>
-   <tr>
-       <td colspan="6" bgcolor="#9FBFFF"><img src="http://ucjeps.berkeley.edu/common/images/common_spacer.gif" alt="" width="1" height="1" border="0" /></td>
-     </tr>
- </table>
- <!-- End of horizontal menu -->
+<!-- Beginning of horizontal menu -->
+<?php include(\$_SERVER['DOCUMENT_ROOT'].'/common/php/globalnav.php'); ?>
+<!-- End of horizontal menu -->
 
  <table border="0">
    <tr>
@@ -236,13 +180,19 @@ Minimum-rank taxa uncertain as to nativity: Typha angustifolia   (TYPHACEAE), Xa
 <tr><th>Species:</th><td>$native_sp_count ($naturalized_sp_count) [$waif_sp_count]</td></tr>
 <tr><th>Minimum-rank taxa:</th><td>$native_MRT_count ($naturalized_MRT_count) [$waif_MRT_count]</td></tr>
 </table>
+<P>
+<B>NOTE</B>: The counts for native and naturalized species are higher here than in the print manual because of species for which there are multiple infraspecific taxa, but only one has a California range. In these cases, <em>The Jepson Manual</em>/Jepson eFlora only has a treatment at the infra level and not at the species level (For example, see <a href="http://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=54615"><em>Astragalus allochrousa</em> var. <em>playanus</em></a>). These cases were not counted in the species totals in the print manual but are included here.
+
 </td></tr></table>
 
 
 
 
 </table>
-Copyright &copy; 2013 Regents of the University of California
+<!-- Begin footer -->
+<?php include(\$_SERVER['DOCUMENT_ROOT'].'/common/php/footer.php'); ?>
+<!-- End footer -->
+<!--Copyright &copy; 2013 Regents of the University of California-->
 </body></html>
 
 EOP
