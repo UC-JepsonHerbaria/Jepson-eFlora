@@ -4,7 +4,7 @@ use BerkeleyDB;
                 -Filename => $filename,
         or die "Cannot open file $filename: $! $BerkeleyDB::Error\n" ;
 
-open(IN,"/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN,"/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
 while(<IN>){
 chomp;
 ($code,$name)=split(/\t/);
@@ -49,6 +49,9 @@ while(<IN>){
 				if($elevation=~m/([0-9-]+)--([0-9-]+)/){
 					$max_e=$2; $min_e=$1;
 				}
+				elsif($elevation=~m/([0-9-]+), ([0-9-]+)/){ #added to parse the elevation range for B. serpenticola which is 1100, 2100 m
+					$max_e=$2; $min_e=$1;
+				}
 				elsif($elevation=~m/<=? *([0-9]+)/){
 					$max_e=$1; $min_e=0;
 				}
@@ -69,7 +72,7 @@ while(<IN>){
 				$max_e= $min_e=0 if $elevation=~/below.*tide/;
 				$native{$name}{max}=$max_e;
 				$native{$name}{min}=$min_e;
-				print "$name\t$min_e\t$max_e\n";
+				#print "$name\t$min_e\t$max_e\n";
 $jeps_elev{$name}="$min_e\t$max_e";
 				if(m/SYNONYMS: (.*)/){
 					while(s/SYNONYMS: +(.*)//){
@@ -80,7 +83,7 @@ $jeps_elev{$name}="$min_e\t$max_e";
 							next if s/, .*//;
                                         		$name= &strip_name($_);
 $jeps_elev{$name}="$min_e\t$max_e";
-                                        		print "$name\t$min_e\t$max_e\n";
+                                        		#print "$name\t$min_e\t$max_e\n";
                                 		}
                         		}
 				}
