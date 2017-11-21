@@ -10,6 +10,7 @@ output/
 /synonymy/input/
 /YELLOW_FLAGGING/output/
 /eflora_keys/output/
+/eflora_keys/input_files/
 
 #from Mac OS X
 .DS_Store
