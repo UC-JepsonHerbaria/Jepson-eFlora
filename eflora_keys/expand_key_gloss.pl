@@ -51,7 +51,7 @@ $prog
 }
 \$contents=join("",\@words);
 \$NEWTREAT{\$key}=\$contents;
-print \$key;
+print \$key\\n;
 }
 EOP
 print $prog;

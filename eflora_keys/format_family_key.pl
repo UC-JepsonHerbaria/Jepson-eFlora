@@ -1,4 +1,4 @@
-open(ERR, ">fam_key_error.txt") || die;
+open(ERR, ">output/fam_key_error.txt") || die;
 
 
 
@@ -8,7 +8,7 @@ open(ERR, ">fam_key_error.txt") || die;
 
 
 
-open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids_cch.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -18,7 +18,7 @@ $name=uc($name) if $name=~/aceae$/;
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
 }
-$file="eflora_family_key.txt";
+$file="input_files/eflora_family_key.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 print <<EOP;
