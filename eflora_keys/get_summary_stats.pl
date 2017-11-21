@@ -241,6 +241,8 @@ Minimum-rank taxa uncertain as to nativity: Typha angustifolia   (TYPHACEAE), Xa
 
 
 
-</table></body></html>
+</table>
+Copyright &copy; 2013 Regents of the University of California
+</body></html>
 
 EOP
