@@ -4,7 +4,7 @@ open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
-	s/X /&times;/;
+	#s/X /&times;/;
 	($code,$name,@residue)=split(/\t/);
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
@@ -18,7 +18,8 @@ while(<IN>){
 	next if m/\*/;
 	chomp;
 	($genus=$_)=~s/ .*//;
-s/&times;/\327 /;
+#s/&times;/\327 /;
+s/&times;/X /;
 	if($TNOAN{$_}){
 		$g_list{$TNOAN{$genus}}.="$TNOAN{$_},";
 	}
@@ -29,9 +30,16 @@ warn "$_\n";
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
 foreach(keys(%g_list)){
 $g_list{$_}="<sp_list>".join(",",sort {$NAN{$a} cmp $NAN{$b}}(split(/,/,$g_list{$_})))."</sp_list>";
-#print "$NAN{$_}: $g_list{$_}\n";
+print "$NAN{$_}: $g_list{$_}\n";
 if($IJM{$_}){
+
+
+
 $IJM{$_}.= $g_list{$_};
+#$IJM{$_}=~ s!<sp_list>.*</sp_list>!$g_list{$_}!;
+
+
+
 #print "YES $NAN{$_}: $g_list{$_}\n";
 #$IJM{$_}=~ s/<\/splist>/<\/sp_list>/;
 }
