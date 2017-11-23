@@ -1,6 +1,6 @@
 use BerkeleyDB;
 
-open(IN, "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+open(IN, "/Users/richardmoe/4_data/taxon_ids/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;
@@ -29,12 +29,13 @@ warn "$_\n";
 tie(%IJM, "BerkeleyDB::Hash", -Filename=>"IJM.hash", -Flags      => DB_CREATE)|| die "Stopped; couldnt open IJM\n";
 foreach(keys(%g_list)){
 $g_list{$_}="<sp_list>".join(",",sort {$NAN{$a} cmp $NAN{$b}}(split(/,/,$g_list{$_})))."</sp_list>";
-print "$NAN{$_}: $g_list{$_}\n";
+#print "$NAN{$_}: $g_list{$_}\n";
 if($IJM{$_}){
 $IJM{$_}.= $g_list{$_};
+#print "YES $NAN{$_}: $g_list{$_}\n";
 #$IJM{$_}=~ s/<\/splist>/<\/sp_list>/;
 }
 else{
-print "$NAN{$_}: $g_list{$_}\n";
+print "NO $NAN{$_}: $g_list{$_}\n";
 }
 }
