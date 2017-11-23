@@ -10,12 +10,12 @@
 
 
 
-open(warn_cnps, ">CNPS_warning.txt") || die;
+open(warn_cnps, ">output/CNPS_warning.txt") || die;
 warn <<EOP;
 NEED TO ADD IN AUTHORS WHERE THEY WERE DEEMED UNNECESSARY FOR PRINTED BOOK
 EOP
 use BerkeleyDB;
-open (ERR, ">ijm_error.txt");
+open (ERR, ">output/ijm_error.txt");
 use lib "/JEPS-master/Jepson-eFlora/Modules/";
 use flatten;
 $genus="AA";
@@ -55,7 +55,7 @@ EOP
 #die;
 
 
-open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids_cch.txt") || die;
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;

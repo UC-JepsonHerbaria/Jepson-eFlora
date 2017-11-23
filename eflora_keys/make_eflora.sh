@@ -1,12 +1,12 @@
-#index_full.pl, make_IJM_index.pl, used to be run at this point.  These scripts have been depreciated due to the indices being created by the SQL script
+#index_full.pl, make_IJM_index.pl, make_search_word_list.pl, used to be run at this point.  These scripts have been depreciated due to the indices being created by the SQL script
 
 echo "making hashes from treatments"
 perl format_for_i.pl
 echo "making key hashes from treatments"
 perl format_family_key.pl > all_family_key.html
 perl make_family_group_keys.pl
-echo "making search word list"
-perl make_search_word_list.pl
+#echo "making search word list"
+#make_search_word_list.pl used to be run at this point.  These scripts have been depreciated due to the indices and search word list being created by the SQL script
 echo "making name table"
 perl get_TJM2_names.pl | perl tabbify_names.pl
 echo "making stats table"
@@ -49,4 +49,4 @@ mv IJM_key_Group6.html output/
 mv IJM_key_Group7.html output/
 mv IJM_key_Group8.html output/
 mv IJM_key_Group9.html output/
-
+mv IJM.tar output/

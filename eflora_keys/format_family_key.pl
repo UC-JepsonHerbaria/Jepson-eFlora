@@ -552,14 +552,6 @@ s/\bexc\.?\b/except/g;
 if(m/\bincl\b/){
 s/not incl app/not including app/;
 s/\bincl([<,.,;])/included$1/g;
-#s/\bincl (in|to|or)\b/included $1/g;
-#s/\bwith incl\b/with included/g;
-##s\b/CVS incl\b\./CVS including/; # error in JM
-##s/\bincl\. var\./including var./; # error in JM
-##s/\bincl\.GR/including GR/; # error in JM
-#s/are not incl\b/are not included/g;
-#s/does not incl\b/does not include/g;
-#s/\bincl\b/including/g;
 s/genus incl taxa/genus includes taxa/;
 s/\bincls spur/includes spur/;
 s/\bincl (at|as)/included $1/;

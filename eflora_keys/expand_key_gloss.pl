@@ -1,5 +1,3 @@
-#Replace the DATA section with a new glossary, or make changes to the data section
-#The first_term second term cleverness is not necessary for this pruned version. It should handle sporangium (sporangia)
 
 $/="";
 while(<DATA>){
@@ -51,9 +49,11 @@ $prog
 }
 \$contents=join("",\@words);
 \$NEWTREAT{\$key}=\$contents;
-print \$key\\n;
 }
 EOP
+
+print "$key\n";
+
 print $prog;
 #$/="";
 #die;
