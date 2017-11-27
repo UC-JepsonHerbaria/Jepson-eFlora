@@ -11,8 +11,7 @@ while(<IN>){
 	$TNOAN{$name}=$code;
 	$NAN{$code}=$name;
 }
-$TNOAN{"Centaurea jacea nothosubsp. pratensis"}=93858;
-$NAN{93858}="Centaurea jacea nothosubsp. pratensis";
+
 close(IN);
 
 $/="";

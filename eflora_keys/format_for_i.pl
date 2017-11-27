@@ -1177,7 +1177,7 @@ print <<EOP;
 Now I'll try to make a list of species for each genus
 using the index.
 EOP
-system "perl make_genus_lists.pl";
+#system "perl make_genus_lists.pl"; this will not work as long as the full index script is not running
 
 
 sub format_syns {

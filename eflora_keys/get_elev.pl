@@ -1,5 +1,5 @@
 use BerkeleyDB;
- my $filename = "JEPS_elev.hash";
+ my $filename = "output/JEPS_elev.hash";
     tie %jeps_elev, "BerkeleyDB::Hash",
                 -Filename => $filename,
         or die "Cannot open file $filename: $! $BerkeleyDB::Error\n" ;
@@ -12,7 +12,7 @@ $TNOAN{$name}=$code;
 }
 open(WARNING,">stderr.txt") || die;
 $/="";
-$file="eflora_treatments.txt";
+$file="/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt";
 open(IN,$file) || die "couldn't open $file\n";
 while(<IN>){
 	($first_line)=m/^(.*)/;
@@ -99,7 +99,7 @@ local($_) = @_;
 			s/ {\/.*//;
 			s/\/{.*//;
 			s/ *{.*//;
-s/&times;/× /;
+s/&times;/X /;
        s/^([A-Z][-A-Za-z]+) (X?[-a-z]+).*\b(nothosubsp\.|subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
 s/^([A-Z][A-Za-z]+) ([x ]*[-a-z]+).*/$1 $2/;
 s/ (subsp\.|var\.|f\.) / /;

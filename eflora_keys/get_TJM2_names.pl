@@ -1,4 +1,4 @@
-open(IN,"eflora_treatments.txt") || die;
+open(IN,"/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt") || die;
 #undef($/);
 $/="";
 while(<IN>){
