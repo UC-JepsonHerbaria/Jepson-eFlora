@@ -339,9 +339,12 @@ if (isset($RevisionNumber)){ $RevNumber = $RevisionNumber;}
 	elseif (isset($GenRevisionNumber)){ $RevNumber = $GenRevisionNumber;}
 	else {$RevNumber = "";}
 
+//RevNumber is inherited by species or genus or family, unlike above
+//Because a family revision date can be displayed but sometimes not passed down to genus
 if (isset($RevisionDate)){ $RevDate = $RevisionDate;}
 	elseif (isset($SpecRevisionDate)){ $RevDate = $SpecRevisionDate;}
 	elseif (isset($GenRevisionDate)){ $RevDate = $GenRevisionDate;}
+	elseif (isset($FamRevisionDate)){ $RevDate = $FamRevisionDate;}
 	else {$RevDate = "";}
 	
 //Before doing anything, if the TID isn't recognized, give a plain error screen
@@ -713,7 +716,7 @@ if ($SpecNote){ echo "<b>Note:</b> {$SpecNote} ";}
 echo "<br>";
 
 if ($SpecUnabridgedNote){ echo "<font color='blue'><b>Unabridged Note:</b> {$SpecUnabridgedNote}</font><br>";}
-if ($SpecJMAuthor){ echo "<b>eFlora Treatment Author:</b> {$SpecJMAuthor}<br>";}
+if ($SpecTJM2Author){ echo "<b>eFlora Treatment Author:</b> {$SpecTJM2Author}<br>";}
 if ($SpecReference){ echo "<b>Reference:</b> {$SpecReference}<br>";}
 if ($SpecUnabridgedReference){ echo "<font color='blue'><b>Unabridged Reference:</b> {$SpecUnabridgedReference}</font><br>";}
 
