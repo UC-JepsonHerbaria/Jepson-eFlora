@@ -2,15 +2,6 @@
 
 ## Detailed List of Files and Notes
 
-### alter_hcode.pl
-
-- Jepson Manual Second Edition version of the script.
-- Does not read from the eflora text file.
-- Uses the screen output of `get_all_dist`, which was copied to the DATA section.
-- Used until late 2015 to create the hash file `nomsyn_hcode_hash`.
-- David Baxter replaced this hash file with a text file `tid_dist_string.out`.
-- not all scripts were updated by David to use his new text file before he left, so parts of the eFlora and ICPN were using an older copy of the hash file up until early 2017.
-
 ### alter_nomsyn_hcodes.pl
 
 - Jepson Manual First Edition version of the script.
@@ -101,7 +92,7 @@ Input files:
 
 `region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
 
-Outputs to file: `bioregion.hcode6'
+Outputs to file: `tid_dist_string.out'
 
 ### get_all_dist_local.pl
 
