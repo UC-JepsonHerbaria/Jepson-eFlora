@@ -2,20 +2,23 @@
 
 ## Detailed List of Files and Notes
 
-### alter_nomsyn_hcode.pl
+### alter_nomsyn_hcodes.pl
 
 - Jepson Manual First Edition version of the script.
 - Does not convert the eflora text file distribution string.
 - Convert names to the `taxon_id`.
 - Stores the names and the HCODE strings in the hash file `nomsyn_hcode_hash`.
-- Script remained unchanged since at least 2008
-- Superseded by `alter_hcode.pl` around 2013
+- Script remained unchanged from 2008 until early 2013.
+- Superseded by `alter_hcode.pl` around 2013.
 
 ### alter_hcode.pl
 
 - Jepson Manual Second Edition version of the script.
-- Does not read from the eflora text file
+- Does not read from the eflora text file.
 - Uses the screen output of `get_all_dist`, which was copied to the DATA section.
+- Used until late 2015 to create the hash file `nomsyn_hcode_hash`.
+- David Baxter replaced this hash file with a text file `tid_dist_string.out`.
+- not all scripts were updated by David to use his new text file before he left, so parts of the eFlora and ICPN were using an older copy of the hash file up until early 2017.
 
 ### get_all_dist.pl
 
@@ -26,7 +29,7 @@ Synonyms are assigned the range of the accepted name.
 #### April 2012 Version, written by Dick Moe
 
 Extracts the Distribution string from the eflora_treatments.txt file. 
-Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing.
+Outputs the data to the screen for copying to a file for the next step of yellow-flag processing.
 
 - Does not convert the string to a hexadecimal or expanded presence/absence code.
 - Does not use the module `Flatten.pm`.
@@ -55,8 +58,9 @@ Output to screen:
 - Uses the module `Flatten.pm`.
 - Convert names to the `taxon_id`.
 - Does not label the distribution string as the variable, HCODE.
-- the output was added to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
-
+- The output was added to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
+- The bioregion.hode output file had at least 6 updates.  Only the last version (bioregion.hcode6) of this script was recovered in the archives.
+- The exact `get_all_dist.pl` script that created bioregion.hcode6 was not saved to the archive, the 2013 version is an intermediate version that David was in the middle of modifying
 
 Input files:
 
@@ -68,7 +72,7 @@ Input files:
 
 `region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
 
-Outputs to file: `bioregion.hash'
+Outputs to file: `bioregion.hcode6'
 
 
 ### get_all_dist_local.pl
