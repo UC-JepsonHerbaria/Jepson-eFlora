@@ -63,7 +63,6 @@ Output to screen:
 - Now converts the string to a hexadecimal or expanded presence/absence code.
 - Uses the module `flatten.pm`.
 - Convert names to the `taxon_id`.
-- Does not label the distribution string as the variable, HCODE.
 - The output was added to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
 - The bioregion.hode output file had at least 6 updates.  Only the last version (bioregion.hcode6) of this script was recovered in the archives.
 - The exact `get_all_dist.pl` script that created bioregion.hcode6 was not saved to the archive, the 2013 version is an intermediate version that David was in the middle of modifying
@@ -82,14 +81,46 @@ Input files:
 
 Outputs to file: `bioregion.hcode6'
 
-#### March 2015 Version, modified by David Baxter
+#### 2014 Version, modified by David Baxter
 
+- Continues to convert the string to a hexadecimal or expanded presence/absence code.
+- Uses the module `flatten.pm`.
+- Convert names to the `taxon_id`.
+- Useage of the term `HCODE` or `hcode` replaced with `dist_string`
+- bioregion.hcode6 superseded by `tid_dist_string.out`
+- Output no longer to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
+- The CDL_DBM section is commented out and appears further development was stopped
+
+Input files:
+
+`CDL_nomsyn` = hash file of taxon_id's and nomenclatural synonyms, created by CCH bulkloader
+
+`tax_syns_to_check` = file of taxonomic synonyms from the ICPN
+
+`smasch_taxon_ids.txt` = table of taxon_id's and taxon names
+
+`region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
+
+Outputs to file: `bioregion.hcode6'
 
 ### get_all_dist_local.pl
 
 ### get_all_dist_annie.pl
 
 
+### region_table.txt
+
+- Text file, tab delimited
+- field[0] = List of all the California bioregion codes
+- field[1] = X,Y pixel coordinate for each of the regions to fill in on the `gd1.gif` pixel boundary-line map of California
+- field[2] = color code to apply for each whitespace region on `gd1.gif` map
+- field[3] = full name of the bioregion
+- field[4] = full name of the province the bioregion is within
+- gd1.gif map superseded in late 2015 by `gd1_2015.gif` map, changed to revise the KR - CaRF boundary
+- David Baxter's version of `gd1_2015.gif` was corrupted sometime in 2016, when the line turned a shade of grey instead of black
+	* the lines must be black (0,0,0) for the yellow flagging script to detect points that fall on black lines so it can reposition them to colored pixels
+- `gd1_2015.gif` superseded by `gd1_2015_black.gif` in Jan 2017 after the lines were converted to black (0,0,0) in Photoshop.
+- additional rows added in 2017 to fill in whitespace after the map was further edited to eliminate white pixel block present due to conversion from the original KML map
 
 
 # Yellow Flag Archived Notes

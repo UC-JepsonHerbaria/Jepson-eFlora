@@ -6,7 +6,7 @@ use BerkeleyDB;
 
 #Open file of tax syns in the form of syn [tab] accepted name
 
-open(IN,"/users/richardmoe/4_CDL_buffer/buffer/tax_syns_to_check") || die;
+open(IN,"tax_syns_to_check") || die;
 while(<IN>){
 	chomp;
 	($syn,$accepted)=split(/\t/);
@@ -15,7 +15,7 @@ while(<IN>){
 close(IN);
 
 #tie the CCH nomenclatural synonym file
-tie(%NS, "BerkeleyDB::Hash", -Filename=>"/users/richardmoe/4_CDL_buffer/buffer/CDL_nomsyn")|| die "Stopped; couldnt open name_to_code\n";
+tie(%NS, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/CDL_nomsyn")|| die "Stopped; couldnt open name_to_code\n";
 
 #Read in the taxon ids
 open(IN,"smasch_taxon_ids.txt") || die;
@@ -37,7 +37,7 @@ vec($nullvec,$i,1) = 0;
 use flatten;
 
 #Now get the names and ranges
-$file="/users/richardmoe/4_IJM/eflora_treatments.txt";
+$file="eflora_treatments.txt";
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 
@@ -54,7 +54,7 @@ $file="/users/richardmoe/4_IJM/eflora_treatments.txt";
 		s/{\/.*?}//g;
 		#s/([0-9])-([0-9])/$1&ndash;$2/g;
 s/PROOF:.*\n?//g;
-#next unless m/lemmonii/;
+#next unless m/ERICAMERIA ophitidis/;
 		$exclude=0;
 		#if(m/^UNABRIDGED/){$exclude=1;};
 		if(s/UNABRIDGED\nURBAN WEED EXPECTED IN WILDLANDS//){
@@ -138,8 +138,13 @@ s/PROOF:.*\n?//g;
 
 		if (m/DISTRIBUTION/){
 			($cal_dist)=m/BIOREGIONAL DISTRIBUTION: (.*)/;
+#print "1. $cal_dist\n";
 			$cal_dist=~s/[.; ]*$//;
+#print "2. $cal_dist\n";
+$cal_dist=~s/\//, /g;
+#print "2'. $cal_dist\n";
 			$hc=&get_hcode($cal_dist);
+#print "3. $hc\n";
 ##################### $hc becomes a bit-vector here!
 			$hc = pack("b*", unpack("b*",pack("H*",$hc)));
 
@@ -162,14 +167,16 @@ s/PROOF:.*\n?//g;
 						#print "$name_for_hc not found (TS name)\n"
 					}
 #also store under subsp. if var. and vice versa
-					if($name_for_hc=~s/var\./subsp./){
+					if($name_for_hc=~s/var\./subsp\./){
+#print "$name_for_hc\n";
 						if($DIST_STRING{$TNOAN{$name_for_hc}}){
 							$DIST_STRING{$TNOAN{$name_for_hc}}|=$hc;
 						}
 						else{
 							$DIST_STRING{$TNOAN{$name_for_hc}}=$hc;
 						}
-						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp.).*//){
+						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp\.).*//){
+#print "$name_for_infra\n";
 							if($DIST_STRING{$TNOAN{$name_for_infra}}){
 								$DIST_STRING{$TNOAN{$name_for_infra}}|=$hc;
 							}
@@ -178,14 +185,14 @@ s/PROOF:.*\n?//g;
 							}
 						}
 					}
-					elsif($name_for_hc=~s/subsp\./var./){
+					elsif($name_for_hc=~s/subsp\./var\./){
 						if($DIST_STRING{$TNOAN{$name_for_hc}}){
 							$DIST_STRING{$TNOAN{$name_for_hc}}|=$hc;
 						}
 						else{
 							$DIST_STRING{$TNOAN{$name_for_hc}}=$hc;
 						}
-						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp.).*//){
+						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp\.).*//){
 							if($DIST_STRING{$TNOAN{$name_for_infra}}){
 								$DIST_STRING{$TNOAN{$name_for_infra}}|=$hc;
 							}
@@ -195,81 +202,81 @@ s/PROOF:.*\n?//g;
 						}
 					}
 #moved to later to accumulate properly
-			if($TS{$name_for_hc}){
-				@TS=split(/\t/,$TS{$name_for_hc});
-				foreach(@TS){
+#			if($TS{$name_for_hc}){
+#				@TS=split(/\t/,$TS{$name_for_hc});
+#				foreach(@TS){
 ##warn "TS is $_  AN=$name_for_hc\n";
-					if($TNOAN{$_}){
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
-						}
-						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
-						}
-
-					}
-					else{
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
-						}
-						else{
-							$DIST_STRING{$_}=$hc;
-						}
-					}
-				}
-			}
-			($ns=$name_for_hc)=~s/(var\.|subsp\.|f\.) //;
-			$ns=lc($ns);
-			#warn "$ns\n";
-			if($NS{$ns}){
-				#warn "$NS{$ns}\n";
-				@NS=split(/\t/,$NS{$ns});
-				foreach(@NS){
-					$_=ucfirst($_);
-					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp. $3/;
-					#print "$_\t$cal_dist\t$hc\n" if m/../;
-					if($TNOAN{$_}){
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
-						}
-						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
-						}
-					}
-					else{
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
-						}
-						else{
-							$DIST_STRING{$_}=$hc;
-						}
-					}
-					s/([A-Z][a-z]+) ([a-z]+) subsp. ([a-z]+)/$1 $2 var. $3/;
-					#print "$_\t$cal_dist\t$hc\n" if m/../;
-					if($TNOAN{$_}){
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
-						}
-						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
-						}
-					}
-					else{
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
-						}
-						else{
-							$DIST_STRING{$_}=$hc;
-						}
-					}
-				}
-			}
+#					if($TNOAN{$_}){
+#						if($DIST_STRING{$TNOAN{$_}}){
+#							$DIST_STRING{$TNOAN{$_}}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$TNOAN{$_}}=$hc;
+#						}
+#
+#					}
+#					else{
+#						if($DIST_STRING{$_}){
+#							$DIST_STRING{$_}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$_}=$hc;
+#						}
+#					}
+#				}
+#			}
+#			($ns=$name_for_hc)=~s/(var\.|subsp\.|f\.) //;
+#			$ns=lc($ns);
+#			#warn "$ns\n";
+#			if($NS{$ns}){
+#				#warn "$NS{$ns}\n";
+#				@NS=split(/\t/,$NS{$ns});
+#				foreach(@NS){
+#					$_=ucfirst($_);
+#					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp. $3/;
+#					#print "$_\t$cal_dist\t$hc\n" if m/../;
+#					if($TNOAN{$_}){
+#						if($DIST_STRING{$TNOAN{$_}}){
+#							$DIST_STRING{$TNOAN{$_}}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$TNOAN{$_}}=$hc;
+#						}
+#					}
+#					else{
+#						if($DIST_STRING{$_}){
+#							$DIST_STRING{$_}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$_}=$hc;
+#						}
+#					}
+#					s/([A-Z][a-z]+) ([a-z]+) subsp. ([a-z]+)/$1 $2 var. $3/;
+#					#print "$_\t$cal_dist\t$hc\n" if m/../;
+#					if($TNOAN{$_}){
+#						if($DIST_STRING{$TNOAN{$_}}){
+#							$DIST_STRING{$TNOAN{$_}}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$TNOAN{$_}}=$hc;
+#						}
+#					}
+#					else{
+#						if($DIST_STRING{$_}){
+#							$DIST_STRING{$_}|=$hc;
+#						}
+#						else{
+#							$DIST_STRING{$_}=$hc;
+#						}
+#					}
+#				}
+#			}
 	
 
 #Synonym lines from eFlora
         		while(s/SYNONYMS: +(.*)//){
-				s/Sedum dendroideum .* subsp. praealtum.*/Sedum dendroideum subsp. praealtum/;
-				s/Gaura odorata Sess&eacute; ex Lag., misappl./Gaura odorata/;
+				#s/Sedum dendroideum .* subsp. praealtum.*/Sedum dendroideum subsp. praealtum/;
+				#s/Gaura odorata Sess&eacute; ex Lag., misappl./Gaura odorata/;
             			@syns=split(/; +/,$1);
             			foreach(@syns){
 #s/\327/X/g;
@@ -346,7 +353,7 @@ s/PROOF:.*\n?//g;
 				foreach(@NS){
 s/ *\327 */ /g;
 					$_=ucfirst($_);
-					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp. $3/;
+					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp\. $3/;
 					#print "$_\t$cal_dist\t$hc\n" if m/../;
 					if($TNOAN{$_}){
 						if($DIST_STRING{$TNOAN{$_}}){
@@ -364,7 +371,7 @@ s/ *\327 */ /g;
 							$DIST_STRING{$_}=$hc;
 						}
 					}
-					s/([A-Z][a-z]+) ([a-z]+) subsp. ([a-z]+)/$1 $2 var. $3/;
+					s/([A-Z][a-z]+) ([a-z]+) subsp\. ([a-z]+)/$1 $2 var. $3/;
 					#print "$_\t$cal_dist\t$hc\n" if m/../;
 					if($TNOAN{$_}){
 						if($DIST_STRING{$TNOAN{$_}}){
@@ -389,8 +396,12 @@ s/ *\327 */ /g;
 
 
 
+#foreach(sort(keys(%DIST_STRING))){
+#print "$_ $CODE_TO_NAME{$_}\n";
+#}
+#die;
 ###############################assign string of regions to TID
-open(OUT, ">bioregion.hcode6") || die;
+open(OUT, ">tid_dist_string.out") || die;
 
 {
 local($/="\n");
@@ -457,31 +468,31 @@ print OUT  "\n";
 }
 close(OUT);
 ##die;
-
-tie %DBM, "BerkeleyDB::Hash", -Filename => "/users/richardmoe/Desktop/CDL_DBM" or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
-while(($key,$value)=each(%DBM)){
-#print "$key: $value\n";
-	@fields=split(/\t/,$value);
-	if($fields[12]){
-#skip genera;
-		next if $CODE_TO_NAME{$fields[0]}=~/[A-Z][a-z-]+ *$/;
-#Use the species if there's a dist for the hybrid
-		if($CODE_TO_NAME{$fields[0]}=~/ X /){
-			($species=$CODE_TO_NAME{$fields[0]})=~s/ X / /;
-			if($DIST_STRING{$TNOAN{$species}}){
-				$fields[0]=$TNOAN{$species};
-			}
-		}
-
-		if($DIST_STRING{$fields[0]}){
+#
+#tie %DBM, "BerkeleyDB::Hash", -Filename => "/users/richardmoe/Desktop/CDL_DBM" or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
+#while(($key,$value)=each(%DBM)){
+##print "$key: $value\n";
+#	@fields=split(/\t/,$value);
+#	if($fields[12]){
+##skip genera;
+#		next if $CODE_TO_NAME{$fields[0]}=~/[A-Z][a-z-]+ *$/;
+##Use the species if there's a dist for the hybrid
+#		if($CODE_TO_NAME{$fields[0]}=~/ X /){
+#			($species=$CODE_TO_NAME{$fields[0]})=~s/ X / /;
+#			if($DIST_STRING{$TNOAN{$species}}){
+#				$fields[0]=$TNOAN{$species};
+#			}
+#		}
+#
+#		if($DIST_STRING{$fields[0]}){
 ##do some map thing
-		}
-		else{
-			#print "$CODE_TO_NAME{$fields[0]}\n"
-		}
-	}
-#print "$key $fields[0]\n" unless $CODE_TO_NAME{$fields[0]};
-}
+#		}
+#		else{
+#			#print "$CODE_TO_NAME{$fields[0]}\n"
+#		}
+#	}
+##print "$key $fields[0]\n" unless $CODE_TO_NAME{$fields[0]};
+#}
 
 sub strip_name{
 local($_) = @_;
