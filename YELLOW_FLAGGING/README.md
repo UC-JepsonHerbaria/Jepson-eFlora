@@ -4,11 +4,16 @@
 
 ### get_all_dist.pl
 
+####April 2012 Version, written by Dick Moe
+
 Extracts the Distribution string from the eflora_treatments.txt file. 
-Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing
+Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing.
+
 
 - Does not convert the string to a hexadecimal or expanded presence/absence code.
-- Does not use the module Flatten.pm
+- Does not use the module `Flatten.pm`.
+- Does not appear to convert names to the `taxon_id`, although the code is present to do so.
+- Does not label the distribution string as the variable, HCODE.
 
 Input files:
 
