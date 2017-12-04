@@ -88,15 +88,108 @@ Input files:
 
 `tax_syns_to_check` = file of taxonomic synonyms from the ICPN
 
-`smasch_taxon_ids.txt` = table of taxon_id's and taxon names
+`smasch_taxon_ids.txt` = table of taxon_id's to taxon names
 
 `region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
 
 Outputs to file: `tid_dist_string.out'
 
+
+#### 2015 Version, modified by David Baxter
+
+- Continues to convert the string to a hexadecimal or expanded presence/absence code.
+- Uses the module `flatten.pm`.
+- Convert names to the `taxon_id`.
+- Comments out usage of `smasch_taxon_ids.txt` and uses the hash file `name_to_code`
+- revises the the nativity status from If-then statements to perl 's/' replace strings
+- adds a new section that exludes synonyms with an indication of misapplication or other synonym qualifier
+- removes the data section at the end that converts the `dist_string` into a hex code
+
+Input files:
+
+`CDL_nomsyn` = hash file of taxon_id's and nomenclatural synonyms, created by CCH bulkloader
+
+`tax_syns_to_check` = file of taxonomic synonyms from the ICPN
+
+`name_to_code` = hash table of names to taxon_id's
+
+`region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
+
+Outputs to file: `tid_dist_string.out'
+
+#### 2016 Version, modified by Jason Alexander
+
+- Continues to convert the string to a hexadecimal or expanded presence/absence code.
+- Uses the module `flatten.pm`.
+- Convert names to the `taxon_id`.
+- Uses the hash file `name_to_code` and the hash file `CDL_TID_TO_NAME`
+- Replaces the old strip name function with the revised, and expanded strip name function from CCH.pm
+
+Input files:
+
+`CDL_nomsyn` = hash file of taxon_id's and nomenclatural synonyms, created by CCH bulkloader
+
+`tax_syns_to_check` = file of taxonomic synonyms from the ICPN
+
+`name_to_code` = hash table of names to taxon_id's
+
+`CDL_TID_TO_NAME` = hash table of taxon_id's to taxon names
+
+`region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
+
+Outputs to file: `tid_dist_string.out'
+
+
 ### get_all_dist_local.pl
 
+- Modernizes the code to add names and synonyms across all databases, not just CCH.
+- re-adds some code comparing and printing to screen how old the eflora SQLite database is compared to the eflora treatments file.  
+This was coded by David and added to some of the previous verions of `get_all_dist.pl`.
+- added some additional perl replace lines above the misapplied synonym section to correct some long-standing errors
+- removes the `strip_name` function at the end of the file and uses `strip_name` from the `CCH.pm` module instead
+- prints hcode output to 5 different versions of the tid/taxon anme/hcode file
+	*this was done to accomodate the needs of other scripts that no longer had updated text or hash files.
+	*the way these 5 were originally created by Dick Moe has been lost and David never attempted to recreate them
+
+Input files:
+
+`CDL_nomsyn` = hash file of taxon_id's and nomenclatural synonyms, created by CCH bulkloader
+
+`ICPN_tax_syns_list.txt` = file of taxonomic synonyms from the ICPN
+
+`EFLORA_tax_syns_list.txt` = file of taxonomic synonyms from the eFlora
+
+`tax_syns_to_check` = file of taxonomic synonyms not in ICPN or eFlora
+
+`smasch_taxon_ids_CCH.txt` = text file of taxon id's to taxon names, pared down to just those used in ICPN, CCH, and eflora.
+Full file is `smasch_taxon_ids.txt`
+
+`name_to_code` = hash table of names to taxon_id's
+
+`CDL_TID_TO_NAME` = hash table of taxon_id's to taxon names
+
+`eflora_treatments.txt`
+
+`eflora.db`
+
+`region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
+
+Output files: `cumulative_synonym_file.txt` = text file of all the synonyms processed by the above files, for reference and error checking purposes
+
+`nomsyn_HCODE_cch_out.txt` = tab file of all names plus synonyms versus the hcode of the accepted name in the eFlora
+
+`tid_HCODE_cch_out.txt` = tab file of the `taxon_id` versus the hcode of all the synonyms and accepted names in above table
+
+`tid_DIST_STRING_cch_out.txt`	= tab file of the `taxon_id` versus the full text distribution string for all taxa in the eflora
+
+`tnoan_DIST_STRING_out.txt`	= tab file of the taxon name (no authors) versus the full text distribution string for all taxa in the eflora
+
+
 ### get_all_dist_annie.pl
+
+- Same as `get_all_dist_local.pl`, but has the directory structure for Annie.  
+This is for running the script during yellow flag creation after updating the CCH
+- Outputs the print lines of the code to a file for uploading to BIM to document changes and look for errors after each CCH and eflora refresh
 
 
 ### region_table.txt
