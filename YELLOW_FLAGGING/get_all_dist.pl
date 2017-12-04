@@ -18,7 +18,7 @@ close(IN);
 tie(%NS, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/CDL_nomsyn")|| die "Stopped; couldnt open name_to_code\n";
 
 #Read in the taxon ids
-#open(IN,"smasch_taxon_ids.txt") || die;
+#open(IN,"data_inputs/smasch_taxon_ids.txt") || die;
 #while(<IN>){
 	#chomp;
 	#s/× /&times;/;
@@ -29,6 +29,12 @@ tie(%NS, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/
 #close(IN);
 
 tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/name_to_code", -Flags=>DB_RDONLY)|| die "$!";
+#print "26556 $TNOAN{26556}\n";
+#foreach (keys(%TNOAN)){
+#next unless m/canariensis/;
+#print "$_: $TNOAN{$_}\n";
+#}
+#die;
 
 
 $nullvec="";
@@ -36,11 +42,19 @@ for $i (0 .. 39){
 vec($nullvec,$i,1) = 0;
 }
 
-use lib '/home/jason/eFlora/data_inputs/';
+
 use flatten;
 
 #Now get the names and ranges
-$file="eflora_treatments.txt";
+$file="data_inputs/eflora_treatments.txt";
+$raw_mod_time=(stat($file))[9];
+$db_file="/usr/local/web/ucjeps_data/ucjeps_data/eflora.db";
+$db_mod_time=(stat($db_file))[9];
+$time_diff=($db_mod_time - $raw_mod_time)/86400;
+print <<EOP;
+eflora_treatments.txt is $time_diff days older than working database
+EOP
+#die;
 	undef($/);
 	open(IN,$file) || die "couldn't open $file\n";
 
@@ -89,7 +103,7 @@ s/PROOF:.*\n?//g;
 			$hc=&get_hcode($cal_dist);
 #if( $name_for_hc=~/Eriogonum.*polyanthum/i){
 if ($TNOAN{$name_for_hc}){
-print "$TNOAN{$name_for_hc} eflora_treatments.txt\t$hc\n";
+#print "$TNOAN{$name_for_hc} eflora_treatments.txt\t$hc\n";
 }
 else{
 warn "$name_for_hc no code\n";
@@ -308,7 +322,7 @@ print "4. $_ $name_for_hc : $hstr\n";
 
 
 ###############################assign string of regions to TID
-open(OUT, ">tid_dist_string.out") || die;
+open(OUT, ">outputs/tid_dist_string.out") || die;
 
 {
 local($/="\n");
