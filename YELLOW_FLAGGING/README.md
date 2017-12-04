@@ -4,11 +4,15 @@
 
 ### get_all_dist.pl
 
+This reads the eFlora treatment file, storing bioregions against taxon IDs. 
+Species containing infras are given the sum of included infras. 
+Synonyms are assigned the range of the accepted name. 
+
 ####April 2012 Version, written by Dick Moe
 
 Extracts the Distribution string from the eflora_treatments.txt file. 
 Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing.
-
+The Jepson Manual First Edition pages converted this distribution code to a string, but the files that did so were named something other than this.
 
 - Does not convert the string to a hexadecimal or expanded presence/absence code.
 - Does not use the module `Flatten.pm`.
@@ -30,6 +34,26 @@ Output to screen:
 `$cal_dist` = California distribution, raw data from `eflora_treatments`, no conversion
 
 `$extra_cal_dist` = distribution outside California, raw data from `eflora_treatments`, no conversion
+
+####March 2013 Version, written by Dick Moe
+
+- Now converts the string to a hexadecimal or expanded presence/absence code.
+- Uses the module `Flatten.pm`.
+- Convert names to the `taxon_id`.
+- Does not label the distribution string as the variable, HCODE.
+
+Input files:
+
+`CDL_nomsyn` = hash file of taxon_id's and nomenclatural synonyms, created by CCH bulkloader
+
+`tax_syns_to_check` = file of taxonomic synonyms from the ICPN
+
+`smasch_taxon_ids.txt` = table of taxon_id's and taxon names
+
+`region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
+
+Outputs to file: `tid_dist_string.out'
+
 
 ### get_all_dist_local.pl
 
