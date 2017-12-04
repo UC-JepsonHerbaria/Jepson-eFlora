@@ -4,19 +4,26 @@
 
 ### get_all_dist.pl
 
-Extracts the Distribution string from the eflora_treatments.txt file. Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing
+Extracts the Distribution string from the eflora_treatments.txt file. 
+Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing
 
 - Does not convert the string to a hexadecimal or expanded presence/absence code.
 - Does not use the module Flatten.pm
 
 Input files:
+
 `name_to_code.hash`
+
 `tnoan.out`
 
 Output to screen:
+
 `$name_for_hc\t$cal_dist\t$extra_cal_dist\n`
+
 `$name_for_hc` = taxon name, no authors, from the `eflora_treatments`
+
 `$cal_dist` = California distribution, raw data from `eflora_treatments`, no conversion
+
 `$extra_cal_dist` = distribution outside California, raw data from `eflora_treatments`, no conversion
 
 ### get_all_dist_local.pl
