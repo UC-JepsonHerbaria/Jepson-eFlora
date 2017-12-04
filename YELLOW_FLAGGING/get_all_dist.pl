@@ -18,15 +18,18 @@ close(IN);
 tie(%NS, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/CDL_nomsyn")|| die "Stopped; couldnt open name_to_code\n";
 
 #Read in the taxon ids
-open(IN,"smasch_taxon_ids.txt") || die;
-while(<IN>){
-	chomp;
-	s/× /&times;/;
-	($code,$name)=split(/\t/);
-	$TNOAN{$name}=$code;
-	$CODE_TO_NAME{$code}=$name;
-}
-close(IN);
+#open(IN,"smasch_taxon_ids.txt") || die;
+#while(<IN>){
+	#chomp;
+	#s/× /&times;/;
+	#($code,$name)=split(/\t/);
+	#$TNOAN{$name}=$code;
+	#$CODE_TO_NAME{$code}=$name;
+#}
+#close(IN);
+
+tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/usr/local/web/ucjeps_data/ucjeps_data/name_to_code", -Flags=>DB_RDONLY)|| die "$!";
+
 
 $nullvec="";
 for $i (0 .. 39){
@@ -52,84 +55,27 @@ $file="eflora_treatments.txt";
 	$element=0;
 	foreach(@all_pars){
 		s/{\/.*?}//g;
-		#s/([0-9])-([0-9])/$1&ndash;$2/g;
 s/PROOF:.*\n?//g;
-#next unless m/ERICAMERIA ophitidis/;
-		$exclude=0;
-		#if(m/^UNABRIDGED/){$exclude=1;};
-		if(s/UNABRIDGED\nURBAN WEED EXPECTED IN WILDLANDS//){
-			$nativity=qq{URBAN WEED (expected in wildlands)};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\n(AGRICULTURAL, GARDEN, OR URBAN WEED)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nSPONTANEOUS HYBRID//){
-			$nativity=qq{SPONTANEOUS HYBRID};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nGARDEN WEED//){
-			$nativity=qq{GARDEN WEED};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nGARDEN AND URBAN WEED//){
-			$nativity=qq{GARDEN AND URBAN WEED};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nURBAN WEED//){
-			$nativity=qq{URBAN WEED};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\s+WAIF//){
-			$nativity=qq{WAIF};
-		$exclude=1;
-		}
-		elsif(s/^UNABRIDGED\nHISTORICAL WAIF//){
-			$nativity=qq{HISTORICAL WAIF};
-		$exclude=1;
-		}
-		elsif(s/^WAIF//){
-			$nativity=qq{WAIF};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nJFP-[78], (.*)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nJFP-4, (URBAN WEED)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\s+JFP-4//){
-			$nativity=qq{AGRICULTURAL, GARDEN, OR URBAN WEED};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\n(CULTIVATED PLANT|AGRICULTURAL WEED)//){
-			$nativity=qq{$1};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nEXTIRPATED (WAIF|ALIEN)//){
-			$nativity=qq{$1 (extirpated)};
-		$exclude=1;
-		}
-		elsif(s/UNABRIDGED\nNATURALIZED\nEXTIRPATED//){
-			$nativity=qq{NATURALIZED (extirpated)};
-		$exclude=1;
-		}
-		elsif(s/NATIVE OR NATURALIZED//){
-			$nativity=qq{NATIVE OR NATURALIZED};
-		}
-		elsif(s/NATURALIZED//){
-			$nativity=qq{NATURALIZED};
-		}
-		elsif(s/NATIVE\nEXTIRPATED//){
-			$nativity=qq{NATIVE (extirpated)};
-		}
-		elsif(s/NATIVE//){
-			$nativity=qq{NATIVE};
-		}
-		elsif(s/^UNABRIDGED *\n//){$exclude=1;};
+		s/UNABRIDGED\nURBAN WEED EXPECTED IN WILDLANDS//;
+		s/UNABRIDGED\n(AGRICULTURAL, GARDEN, OR URBAN WEED)//;
+		s/UNABRIDGED\nSPONTANEOUS HYBRID//;
+		s/UNABRIDGED\nGARDEN WEED//;
+		s/UNABRIDGED\nGARDEN AND URBAN WEED//;
+		s/UNABRIDGED\nURBAN WEED//;
+		s/UNABRIDGED\s+WAIF//;
+		s/^UNABRIDGED\nHISTORICAL WAIF//;
+		s/^WAIF//;
+		s/UNABRIDGED\nJFP-[78], (.*)//;
+		s/UNABRIDGED\nJFP-4, (URBAN WEED)//;
+		s/UNABRIDGED\s+JFP-4//;
+		s/UNABRIDGED\n(CULTIVATED PLANT|AGRICULTURAL WEED)//;
+		s/UNABRIDGED\nEXTIRPATED (WAIF|ALIEN)//;
+		s/UNABRIDGED\nNATURALIZED\nEXTIRPATED//;
+		s/NATIVE OR NATURALIZED//;
+		s/NATURALIZED//;
+		s/NATIVE\nEXTIRPATED//;
+		s/NATIVE//;
+		s/^UNABRIDGED *\n//;
 		s|^([A-Z]+ACEAE) $|<center><font size="4"><b>$1</b></font>|ms;
 		s|^([A-Z]+ACEAE) \((.*)\)$|<center><font size="4"><b>$1 ($2)</b></font>|ms;
 		if(m/\n([A-Z][A-Z-]+ [a-z&][;a-z-]+.*)/){
@@ -138,15 +84,22 @@ s/PROOF:.*\n?//g;
 
 		if (m/DISTRIBUTION/){
 			($cal_dist)=m/BIOREGIONAL DISTRIBUTION: (.*)/;
-#print "1. $cal_dist\n";
 			$cal_dist=~s/[.; ]*$//;
-#print "2. $cal_dist\n";
-$cal_dist=~s/\//, /g;
-#print "2'. $cal_dist\n";
+			$cal_dist=~s/\//, /g;
 			$hc=&get_hcode($cal_dist);
-#print "3. $hc\n";
+#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+if ($TNOAN{$name_for_hc}){
+print "$TNOAN{$name_for_hc} eflora_treatments.txt\t$hc\n";
+}
+else{
+warn "$name_for_hc no code\n";
+}
 ##################### $hc becomes a bit-vector here!
 			$hc = pack("b*", unpack("b*",pack("H*",$hc)));
+#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+#$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+#print "1. $name_for_hc : $hstr\n";
+#}
 
 #Taxon ids index the DIST_STRING hash, which contains a bit-vector; "|=" adds to the vector if it already exists
 					if($TNOAN{$name_for_hc}){
@@ -201,76 +154,10 @@ $cal_dist=~s/\//, /g;
 							}
 						}
 					}
-#moved to later to accumulate properly
-#			if($TS{$name_for_hc}){
-#				@TS=split(/\t/,$TS{$name_for_hc});
-#				foreach(@TS){
-##warn "TS is $_  AN=$name_for_hc\n";
-#					if($TNOAN{$_}){
-#						if($DIST_STRING{$TNOAN{$_}}){
-#							$DIST_STRING{$TNOAN{$_}}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$TNOAN{$_}}=$hc;
-#						}
-#
-#					}
-#					else{
-#						if($DIST_STRING{$_}){
-#							$DIST_STRING{$_}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$_}=$hc;
-#						}
-#					}
-#				}
-#			}
-#			($ns=$name_for_hc)=~s/(var\.|subsp\.|f\.) //;
-#			$ns=lc($ns);
-#			#warn "$ns\n";
-#			if($NS{$ns}){
-#				#warn "$NS{$ns}\n";
-#				@NS=split(/\t/,$NS{$ns});
-#				foreach(@NS){
-#					$_=ucfirst($_);
-#					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp. $3/;
-#					#print "$_\t$cal_dist\t$hc\n" if m/../;
-#					if($TNOAN{$_}){
-#						if($DIST_STRING{$TNOAN{$_}}){
-#							$DIST_STRING{$TNOAN{$_}}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$TNOAN{$_}}=$hc;
-#						}
-#					}
-#					else{
-#						if($DIST_STRING{$_}){
-#							$DIST_STRING{$_}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$_}=$hc;
-#						}
-#					}
-#					s/([A-Z][a-z]+) ([a-z]+) subsp. ([a-z]+)/$1 $2 var. $3/;
-#					#print "$_\t$cal_dist\t$hc\n" if m/../;
-#					if($TNOAN{$_}){
-#						if($DIST_STRING{$TNOAN{$_}}){
-#							$DIST_STRING{$TNOAN{$_}}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$TNOAN{$_}}=$hc;
-#						}
-#					}
-#					else{
-#						if($DIST_STRING{$_}){
-#							$DIST_STRING{$_}|=$hc;
-#						}
-#						else{
-#							$DIST_STRING{$_}=$hc;
-#						}
-#					}
-#				}
-#			}
+#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+#$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+#print "2. $name_for_hc : $hstr\n";
+#}
 	
 
 #Synonym lines from eFlora
@@ -279,6 +166,22 @@ $cal_dist=~s/\//, /g;
 				#s/Gaura odorata Sess&eacute; ex Lag., misappl./Gaura odorata/;
             			@syns=split(/; +/,$1);
             			foreach(@syns){
+#Skip synonyms with an indication of misapplication or other synonym qualifier
+next if m/, misappl/;
+next if m/, as treated by Munz/;
+next if m/, illeg/;
+next if m/, in part/;
+next if m/, incl vars/;
+next if m/, ined/;
+next if m/, inval/;
+next if m/, nom\. ambig/;
+next if m/, nom\. nud/;
+next if m/, nom\. rej/;
+next if m/, nom\. superfl/;
+next if m/, not Hemsl/;
+next if m/, orth\. var/;
+next if m/, poss\. illeg/;
+next if m/, possibly misappl/;
 #s/\327/X/g;
 					s/probably //;
 					s/Expanded author citation: //;
@@ -304,6 +207,10 @@ $cal_dist=~s/\//, /g;
 					}
             			}
         		}
+#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+#$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+#print "3. $_ $name_for_hc : $hstr\n";
+#}
     		}
 
 
@@ -393,13 +300,13 @@ s/ *\327 */ /g;
 			}
 
 	}
+if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+print "4. $_ $name_for_hc : $hstr\n";
+}
 
 
 
-#foreach(sort(keys(%DIST_STRING))){
-#print "$_ $CODE_TO_NAME{$_}\n";
-#}
-#die;
 ###############################assign string of regions to TID
 open(OUT, ">tid_dist_string.out") || die;
 
@@ -467,32 +374,6 @@ print OUT "$regions[$r],";
 print OUT  "\n";
 }
 close(OUT);
-##die;
-#
-#tie %DBM, "BerkeleyDB::Hash", -Filename => "/users/richardmoe/Desktop/CDL_DBM" or die "Cannot open file CDL_DBM: $! $BerkeleyDB::Error\n" ;
-#while(($key,$value)=each(%DBM)){
-##print "$key: $value\n";
-#	@fields=split(/\t/,$value);
-#	if($fields[12]){
-##skip genera;
-#		next if $CODE_TO_NAME{$fields[0]}=~/[A-Z][a-z-]+ *$/;
-##Use the species if there's a dist for the hybrid
-#		if($CODE_TO_NAME{$fields[0]}=~/ X /){
-#			($species=$CODE_TO_NAME{$fields[0]})=~s/ X / /;
-#			if($DIST_STRING{$TNOAN{$species}}){
-#				$fields[0]=$TNOAN{$species};
-#			}
-#		}
-#
-#		if($DIST_STRING{$fields[0]}){
-##do some map thing
-#		}
-#		else{
-#			#print "$CODE_TO_NAME{$fields[0]}\n"
-#		}
-#	}
-##print "$key $fields[0]\n" unless $CODE_TO_NAME{$fields[0]};
-#}
 
 sub strip_name{
 local($_) = @_;
@@ -505,26 +386,4 @@ $_=~s/ x / X /;
 s/\327/X/;
 $_;
 }
-
-__END__
-$nullvec="";
-for $i (0 .. 39){
-vec($nullvec,$i,1) = 0;
-}
-$hc ="0000000000";
-$distvec = $nullvec;
-	#translate hex code to bit vector
-print unpack("b*",pack("H*",$hc)), "\n";
-$testvec{'SP'} = pack("b*", unpack("b*",pack("H*",$hc)));
-$hc ="ff00000000";
-$distvec2 = pack("b*", unpack("b*",pack("H*",$hc)));
-$testvec{'SP'} |= $distvec2;
-$bitstr = unpack ("b*", $testvec{'SP'});
-print $bitstr, "\n";
-$hc ="ffff000000";
-$testvec{'SP'}  |= pack("b*", unpack("b*",pack("H*",$hc)));
-$bitstr = unpack ("b*", $testvec{'SP'});
-print $bitstr, "\n";
-$hstr= unpack("H*", pack("b*",unpack ("b*", $testvec{'SP'})));
-print "$hstr\n";
 
