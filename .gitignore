@@ -2,6 +2,9 @@
 /eflora_database/eflora_treatments.txt
 /eflora_database/eflora.in
 /YELLOW_FLAGGING/yellow_flag_system.txt
+/eflora_database/eflora.db
+/eflora_keys/accepted_names.out
+
 
 #generated files
 output/
