@@ -2,15 +2,6 @@
 
 ## Detailed List of Files and Notes
 
-### alter_nomsyn_hcodes.pl
-
-- Jepson Manual First Edition version of the script.
-- Does not convert the eflora text file distribution string.
-- Convert names to the `taxon_id`.
-- Stores the names and the HCODE strings in the hash file `nomsyn_hcode_hash`.
-- Script remained unchanged from 2008 until early 2013.
-- Superseded by `alter_hcode.pl` around 2013.
-
 ### alter_hcode.pl
 
 - Jepson Manual Second Edition version of the script.
@@ -19,6 +10,15 @@
 - Used until late 2015 to create the hash file `nomsyn_hcode_hash`.
 - David Baxter replaced this hash file with a text file `tid_dist_string.out`.
 - not all scripts were updated by David to use his new text file before he left, so parts of the eFlora and ICPN were using an older copy of the hash file up until early 2017.
+
+### alter_nomsyn_hcodes.pl
+
+- Jepson Manual First Edition version of the script.
+- Does not convert the eflora text file distribution string.
+- Convert names to the `taxon_id`.
+- Stores the names and the HCODE strings in the hash file `nomsyn_hcode_hash`.
+- Script remained unchanged from 2008 until early 2013.
+- Superseded by `alter_hcode.pl` around 2013.
 
 ### bioreg_plus_hcode.pl
 - Jepson Manual First Edition version of the script.
@@ -67,6 +67,8 @@ Output to screen:
 - The output was added to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
 - The bioregion.hode output file had at least 6 updates.  Only the last version (bioregion.hcode6) of this script was recovered in the archives.
 - The exact `get_all_dist.pl` script that created bioregion.hcode6 was not saved to the archive, the 2013 version is an intermediate version that David was in the middle of modifying
+- This script opens the CCH hash database CDL_DBM, looks for all the species in fields[0] and assigns biocodes to the names
+- Apparently under development at this stage, "do some map thing" is not explained if the HCODE string is found for a name.
 
 Input files:
 
@@ -79,6 +81,8 @@ Input files:
 `region_table.txt` = table of california bioregions, for conversion of distribution string to hexadecimal and expanded presence/absence code
 
 Outputs to file: `bioregion.hcode6'
+
+#### March 2015 Version, modified by David Baxter
 
 
 ### get_all_dist_local.pl
