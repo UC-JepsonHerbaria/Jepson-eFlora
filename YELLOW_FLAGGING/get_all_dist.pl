@@ -6,7 +6,7 @@ use BerkeleyDB;
 
 #Open file of tax syns in the form of syn [tab] accepted name
 
-open(IN,"tax_syns_to_check") || die;
+open(IN,"data_inputs/tax_syns_to_check") || die;
 while(<IN>){
 	chomp;
 	($syn,$accepted)=split(/\t/);
@@ -36,7 +36,7 @@ for $i (0 .. 39){
 vec($nullvec,$i,1) = 0;
 }
 
-
+use lib '/home/jason/eFlora/data_inputs/';
 use flatten;
 
 #Now get the names and ranges
@@ -312,7 +312,7 @@ open(OUT, ">tid_dist_string.out") || die;
 
 {
 local($/="\n");
-open(IN, "region_table.txt") || die;
+open(IN, "data_inputs/region_table.txt") || die;
 @regions=();
 #print join(" ",@regions),"\n";
 while(<IN>){
