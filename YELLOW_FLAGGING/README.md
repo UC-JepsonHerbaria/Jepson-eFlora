@@ -20,6 +20,12 @@
 - David Baxter replaced this hash file with a text file `tid_dist_string.out`.
 - not all scripts were updated by David to use his new text file before he left, so parts of the eFlora and ICPN were using an older copy of the hash file up until early 2017.
 
+### bioreg_plus_hcode.pl
+- Jepson Manual First Edition version of the script.
+- Seems to have been superseded by `alter_nomsyn_hcodes.pl`.
+- An output of the eflora names and the distribution string from the eflora text file was added to the DATA section.
+- Converted the string as is into a formatted bioregion hcode.
+
 ### get_all_dist.pl
 
 This reads the eFlora treatment file, storing bioregions against taxon IDs. 
@@ -32,7 +38,7 @@ Extracts the Distribution string from the eflora_treatments.txt file.
 Outputs the data to the screen for copying to a file for the next step of yellow-flag processing.
 
 - Does not convert the string to a hexadecimal or expanded presence/absence code.
-- Does not use the module `Flatten.pm`.
+- Does not use the module `flatten.pm`.
 - Does not appear to convert names to the `taxon_id`, although the code is present to do so.
 - Does not label the distribution string as the variable, HCODE.
 
@@ -55,7 +61,7 @@ Output to screen:
 #### March 2013 Version, written by Dick Moe
 
 - Now converts the string to a hexadecimal or expanded presence/absence code.
-- Uses the module `Flatten.pm`.
+- Uses the module `flatten.pm`.
 - Convert names to the `taxon_id`.
 - Does not label the distribution string as the variable, HCODE.
 - The output was added to the end of the `alter_hcode.pl` and `alter_nomsyn_hcode.pl` to create various hcode hash files used by othe processing scripts
