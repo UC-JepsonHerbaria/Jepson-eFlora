@@ -1,8 +1,8 @@
 # Yellow Flag Scripts
 
-##Detailed List of Files and Notes
+## Detailed List of Files and Notes
 
-###get_all_dist.pl
+### get_all_dist.pl
 
 Extracts the Distribution string from the eflora_treatments.txt file. Outputs the data to the screen for copying to a file for the next step of yellow-flagging processing
 
@@ -19,13 +19,13 @@ Output to screen:
 `$cal_dist` = California distribution, raw data from `eflora_treatments`, no conversion
 `$extra_cal_dist` = distribution outside California, raw data from `eflora_treatments`, no conversion
 
-###get_all_dist_local.pl
+### get_all_dist_local.pl
 
-###get_all_dist_annie.pl
+### get_all_dist_annie.pl
 
-#Yellow Flag Archived Notes
+# Yellow Flag Archived Notes
 
-##The Yellow Flagging System by Dick Moe (circa 2012)
+## The Yellow Flagging System by Dick Moe (circa 2012)
 
 here is how the yellow flags get assigned.
 
