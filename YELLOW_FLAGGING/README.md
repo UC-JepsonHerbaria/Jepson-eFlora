@@ -8,6 +8,7 @@
 - Does not convert the eflora text file distribution string.
 - Convert names to the `taxon_id`.
 - Stores the names and the HCODE strings in the hash file `nomsyn_hcode_hash`.
+- Script remained unchanged since at least 2008
 - Superseded by `alter_hcode.pl` around 2013
 
 ### alter_hcode.pl
@@ -105,10 +106,8 @@ Each taxon in the eFlora is associated with the string of ultimate
 bioregions inferred from the distribution statement. Non-minimal-rank
 taxa are given the sum of the distributions of their included MRT.
 
-The coordinates of each record are plotted out on the base map
-with the color of the pixel of the coordinates detected and converted
-to the pertinent bioregion. If the color is black, the coordinates are on
-a line, and an attempt is made to move off the line.
+The coordinates of each record are plotted out on the base map with the color of the pixel of the coordinates detected and converted to the pertinent bioregion. 
+If the color is black, the coordinates are on a line, and an attempt is made to move off the line.
 
 There is an intermediate file constructed that consists of all records with coordinates
 in this form:
@@ -138,16 +137,20 @@ I used this method
 2. because it is quite fast (2 or 3  minutes compared with hours when I tried a real GIS solution)
 3. because it can be run without additional software (but that additional software would no doubt speed up a real GIS solution)
 
-##Notes on The Yellow Flagging System by David Baxter (circa 2015)
-###(David Baxter's December 2015 Notes on his modification of Dick Moe's original scripts)
+## Notes on The Yellow Flagging System by David Baxter (circa 2015)
+
+### (David Baxter's December 2015 Notes on his modification of Dick Moe's original scripts)
 
 Heath bars:
 The script that generates the heath bar script `make_heath_bars.pl` needs to be automated.
 
 Right now:
-→ the live `hb2.pl` script lives on annie (i.e. `ucjeps.berkeley.edu` cgi-bin)
-→ The files used to regenerate the script include `CDL_nomsyn` and `CDL_taxsyn`. 
-These files are not generated on my computer, afaik. They are on herbaria4 under `/Users/richardmoe/4_CDL_BUFFER/buffer/stats/`, however `CDLnomsyn` was last updated Mar 2014 and `CDLtaxsyn` on Dec 2011, so I don't know how they are updated. However, these syn files are also in `ucjeps_data`. `CDLnomsyn` was updated Apr 27 2015 (a month ago, owner = rlmoe) but taxsyn has the same 2011 date, so something is updating the file on there.
+- the live `hb2.pl` script lives on annie (i.e. `ucjeps.berkeley.edu` cgi-bin)
+- The files used to regenerate the script include `CDL_nomsyn` and `CDL_taxsyn`. 
+
+These files are not generated on my computer, afaik. 
+They are on herbaria4 under `/Users/richardmoe/4_CDL_BUFFER/buffer/stats/`, however `CDLnomsyn` was last updated Mar 2014 and `CDLtaxsyn` on Dec 2011, so I don't know how they are updated. 
+However, these syn files are also in `ucjeps_data`. `CDLnomsyn` was updated Apr 27 2015 (a month ago, owner = rlmoe) but taxsyn has the same 2011 date, so something is updating the file on there.
 
 So, I need to figure out what is updating those files, and if there's any way to update the taxsyns. 
 From there, I need to decide where hb2 will be regenerated (either on my machine or on the server), make sure the required files are also in that place, then automate. 
