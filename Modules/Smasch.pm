@@ -6,12 +6,14 @@ use Exporter;
 ####patterns######
 $genus = '[A-Z][a-z-]+';
 $species = '[a-z-]+';
-$rank = 'var\.?|ssp\.?|subsp\.?|f\.|forma';
+$rank = 'subvar\.?|var\.?|ssp\.?|subsp\.?|f\.|forma';
 $infra = '[a-z-]+';
 $author = '.*';
 ########
 sub load_collectors {
 $collector_file= "collectors_id";
+$time= -C "$collector_file";
+print "Collector file ", int($time)," days old\n";
 warn "Loading collectors\n";
 	my($name);
 	open(COLL,"$collector_file") || die "couldn't open $collector_file";
@@ -28,6 +30,8 @@ sub load_data {
 		%datafile=();
 %seen=();
 warn "I need to load data from several files.\nLoading specimen data from $datafile\n";
+$time= -C "$datafile";
+print "Data file ", int($time)," days old\n";
 	open (DATA_FILE,$datafile) || die "couldn't open $datafile\n";
 	local($/)="";
 	while(<DATA_FILE>){
@@ -57,11 +61,13 @@ s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
 
 sub load_be{
-	open(IN,"../DATA/tnoan.out") || die;
+$time= -C "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt";
+print "TNOAN file ", int($time)," days old\n";
+	open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
 warn "Loading name elements recognized by SMASCH\n";
 	while(<IN>){
 		chomp;
-		($id,$name)=split(/\t/);
+		($id,$name,@residue)=split(/\t/);
 next if $id==115;
 next if $id==12460;
 next if $id==134;
@@ -94,14 +100,17 @@ close(IN);
 warn "OK. I'm ready to record numbers.\n";
 }
 sub load_noauth_name {
-	open(IN,"../DATA/tnoan.out") || die;
+$time= -C "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt";
+
+print "TNOAN file ", int($time)," days old\n";
+	open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+
 	while(<IN>){
 		chomp;
 		($id,$name)=split(/\t/);
 next if $id==115;
 next if $id==12460;
 next if $id==134;
-next if $id==166;
 next if $id==3746;
 next if $id==173;
 next if $id==26133;
@@ -205,6 +214,8 @@ Population_biology=>24,
 Associated_species=>53,
 Micromorphology=>19,
 Other_label_numbers=>55,
+Type_status=>56,
+VTM=>41,
 );
 %magic_no =(
 'Mounted_on_paper'=>1,
@@ -247,7 +258,7 @@ open(OUT,">bulkload.err") || die "couldn't open the error file\n";
 		#print "found >$_<\n";
 		}
 		foreach(split(/ /)){
-			next if m/(f\.|subsp\.|var\.)/;
+			next if m/(subvar\.|f\.|subsp\.|var\.)/;
 			print "$tnum: $_ is unrecognized BE\n" unless $BE{$_};
 			warn "$tnum: $_ is unrecognized name element\n" unless $BE{$_};
 			$NO_BE{$_}++ unless $BE{$_};
@@ -276,12 +287,13 @@ s/Rech\. f./Rech./g;
 s/Schult\. f./Schult./g;
 s/Schultes f./Schultes/g;
 #Name: Quercus ×macdonaldii Greene
-s/^([A-Z][A-Za-z]+) (X?[-a-z]+).*(subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z]+) (X?[-a-z]+).*?(subvar\.|subsp\.|ssp\.|var\.|f\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
 s/^([A-Z][A-Za-z]+) × ?([-a-z]+) .+/$1 × $2/||
 s/^([A-Z][A-Za-z]+) × ?([-a-z]+)/$1 × $2/||
 s/^([A-Z][A-Za-z]+) (X?[-a-z]+) .+/$1 $2/||
 s/^([A-Z][A-Za-z]+) (indet\.|sp\.)/$1 indet./||
 s/^([A-Z][A-Za-z]+) (X?[-a-z]+)/$1 $2/||
+s/^([A-Z][A-Za-z]+) (X [-a-z]+)/$1 $2/||
 s/^([A-Z][A-Za-z]+) (.+)/$1/;
 s/ssp\./subsp./;
 s/ +$//;
@@ -347,8 +359,13 @@ sub verify_author{
 sub get_TRS{
 #T/R/Section: 3S 30E 24 SE/4
 local($_)=@_;
+#s/TRS: //;
 my($coords)="";
 my($coord_notes)="";
+s/(.*); (\d.*)/$2; $1/;
+if(s/; (.*)//){
+$coord_notes=$1;
+}
 				if(m/T(\d+[NSEW]) +R(\d+[NSEW])/){
 					$coords= $1 . $2;
 					if(m/R\d+[NSEW] (.*[Ss]ect[.ion]+ (\d+))/){
@@ -372,6 +389,9 @@ my($coord_notes)="";
 				elsif(m/^(\d+[NS]) *(\d+[EW]) *(\d+)$/){
 				
 					$coords = $1 . $2 .$3;
+				}
+				elsif(m/^(\d+[NS]) *(\d+[EW])$/){
+					$coords = $1 . $2;
 				}
 				elsif(m/^(\d+[NS]) *(\d+[EW]) *(\d+) (.*)$/){
 					$coords = $1 . $2 .$3;
@@ -420,9 +440,25 @@ $coords=~s/0(\d\d)/$1/g;
 sub get_elev{
 	local($_) = shift;
 s/about //;
-				s/feet/ft/ ||
-				s/meters?/m/ ||
-				s/([-\d]+)\.?0*$/$1 ft/;
+   s/[\[\]]//g;
+   s/ca\.//;
+   s/Â±//;
+   s/&lt;</;
+   s/.plusmn;//;
+  s/.quot;//g;
+   s/(\d),(\d)/$1$2/;
+   s/(\d)-(\d)/$1 - $2/;
+				unless(m/(feet|ft|m|meters)\.? *$/){
+					return("");
+				}
+				unless(m/\d/){
+					return("");
+				}
+				s/feet/ft/;
+				s/ft\./ft/;
+				s/m\./m/;
+				s/meters?/m/;
+				s/([-\d]+)\.?0* *ft/$1 ft/;
 				s/(\d+) (ft|m) below .*/-$1 $2/;
 $_;
 }
@@ -437,6 +473,8 @@ warn "Starting lat: $ls :  $_\n";
 					s/ca\. //;
 					s/;$//;
 					$old=$_;
+s/NN/N/;
+s/WW/W/;
 s/ (\d) *([NS])/ 0$1$2/;
 s/0(\d\d)/$1/g;
 s/ 60 *([NS])/ 59.5$1/;
@@ -472,7 +510,7 @@ $decimal=&convert_to_decimal($degree);
 return($decimal, $degree);
 }
 else{
-warn "Unanticipated latitude nulled: $_\n";
+warn "7 Unanticipated latitude nulled: $_\n";
 return ("","");
 }
 				s!\.(\d+)['m]!"m" . int($1/100 * 60) ."s"!e;
@@ -523,6 +561,9 @@ local($degree)="";
 local($_)=shift;
 s/ to *$//;
 $ls=$_;
+if(s/^-//){
+warn "$ls :  $_\n";
+}
 if(s/^(\d+)[^0-9]+ (\d+)[^0-9]+ /$1 $2 /){
 warn "Starting long: $ls :  $_\n";
 }
@@ -540,7 +581,7 @@ if(m/^([01]?\d\d?) *([EW])$/){
 $decimal=$1; $degree="$1$2";
 if($decimal > 180){
 $decimal=$degree="";
-warn "Unanticipated longitude nulled: $_\n";
+warn "1 Unanticipated longitude nulled: $_\n";
 }
 $decimal="-$decimal";
 return($decimal, $degree);
@@ -550,7 +591,7 @@ $degree="$1 $2$3";
 $decimal=&convert_to_decimal($degree);
 if($decimal > 180){
 $decimal=$degree="";
-warn "Unanticipated longitude nulled: $_\n";
+warn "2 Unanticipated longitude nulled: $_\n";
 }
 $decimal="-$decimal";
 return($decimal, $degree);
@@ -561,7 +602,7 @@ $decimal=&convert_to_decimal($degree);
 #print "converted: $decimal\n";
 if($decimal > 180){
 $decimal=$degree="";
-warn "Unanticipated longitude nulled: $_\n";
+warn "3 Unanticipated longitude nulled: $_\n";
 }
 $decimal="-$decimal";
 return($decimal, $degree);
@@ -573,7 +614,7 @@ $ch=1/3600 * $4;
 $decimal=$decimal + $ch;
 if($decimal > 180){
 $decimal=$degree="";
-warn "Unanticipated longitude nulled: $_\n";
+warn "4 Unanticipated longitude nulled: $_\n";
 }
 $decimal="-$decimal";
 return($decimal, $degree);
@@ -584,13 +625,13 @@ $degree="$1 $2 ${second}$4";
 $decimal=&convert_to_decimal($degree);
 if($decimal > 180){
 $decimal=$degree="";
-warn "Unanticipated longitude nulled: $_\n";
+warn "5 Unanticipated longitude nulled: $_\n";
 }
 $decimal="-$decimal";
 return($decimal, $degree);
 }
 else{
-warn "Unanticipated longitude nulled: $_\n";
+warn "6 Unanticipated longitude nulled: $_\n";
 return ("","");
 }
 				s!\.(\d+)['m]!"m" . int($1/100 * 60) ."s"!e;
