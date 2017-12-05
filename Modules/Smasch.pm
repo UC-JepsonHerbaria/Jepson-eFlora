@@ -12,8 +12,6 @@ $author = '.*';
 ########
 sub load_collectors {
 $collector_file= "collectors_id";
-$time= -C "$collector_file";
-print "Collector file ", int($time)," days old\n";
 warn "Loading collectors\n";
 	my($name);
 	open(COLL,"$collector_file") || die "couldn't open $collector_file";
@@ -30,8 +28,6 @@ sub load_data {
 		%datafile=();
 %seen=();
 warn "I need to load data from several files.\nLoading specimen data from $datafile\n";
-$time= -C "$datafile";
-print "Data file ", int($time)," days old\n";
 	open (DATA_FILE,$datafile) || die "couldn't open $datafile\n";
 	local($/)="";
 	while(<DATA_FILE>){
@@ -61,9 +57,7 @@ s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
 
 sub load_be{
-$time= -C "../tnoan.out";
-print "TNOAN file ", int($time)," days old\n";
-	open(IN,"../tnoan.out") || die;
+	open(IN,"../DATA/tnoan.out") || die;
 warn "Loading name elements recognized by SMASCH\n";
 	while(<IN>){
 		chomp;
@@ -100,9 +94,7 @@ close(IN);
 warn "OK. I'm ready to record numbers.\n";
 }
 sub load_noauth_name {
-$time= -C "../tnoan.out";
-print "TNOAN file ", int($time)," days old\n";
-	open(IN,"../tnoan.out") || die;
+	open(IN,"../DATA/tnoan.out") || die;
 	while(<IN>){
 		chomp;
 		($id,$name)=split(/\t/);
@@ -213,7 +205,6 @@ Population_biology=>24,
 Associated_species=>53,
 Micromorphology=>19,
 Other_label_numbers=>55,
-Type_status=>56,
 );
 %magic_no =(
 'Mounted_on_paper'=>1,
@@ -429,9 +420,6 @@ $coords=~s/0(\d\d)/$1/g;
 sub get_elev{
 	local($_) = shift;
 s/about //;
-				unless(m/(feet|ft|m|meters)\.? *$/){
-				return("");
-				}
 				s/feet/ft/ ||
 				s/meters?/m/ ||
 				s/([-\d]+)\.?0*$/$1 ft/;
@@ -449,8 +437,6 @@ warn "Starting lat: $ls :  $_\n";
 					s/ca\. //;
 					s/;$//;
 					$old=$_;
-s/NN/N/;
-s/WW/W/;
 s/ (\d) *([NS])/ 0$1$2/;
 s/0(\d\d)/$1/g;
 s/ 60 *([NS])/ 59.5$1/;
@@ -537,9 +523,6 @@ local($degree)="";
 local($_)=shift;
 s/ to *$//;
 $ls=$_;
-if(s/^-//){
-warn "$ls :  $_\n";
-}
 if(s/^(\d+)[^0-9]+ (\d+)[^0-9]+ /$1 $2 /){
 warn "Starting long: $ls :  $_\n";
 }
