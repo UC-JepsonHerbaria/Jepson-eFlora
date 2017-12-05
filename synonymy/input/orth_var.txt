@@ -1,0 +1,469 @@
+#This file is separated into three sections, each titled starting with a "#".
+#The first are general spelling variants that need to be altered in CCH to match the eFlora variants
+#Others are names that will likely be adopted by the eFlora in the future because the accepted spelling is not official
+#according to the international code.
+#The second section are name variant with and without hypens.  Many compound names with hypens are no longer accepted by the international code.
+#The last section are names where the suffix has changed due to a change in the recognition of a genus name gender (for example Nama demissum ==> Nama demissa)
+
+#Format: orthographic variant[tab]accepted name[tab]where orthographic used (optional if known)
+
+#spelling variants
+Aira major subsp. cespitosa	Aira major subsp. caespitosa	TROPICOS
+Allium diabloense	Allium diabolense	JM
+Amauria brandegeana	Amauria brandegeeana
+Amsinckia spectabilis var. nicolai	Amsinckia spectabilis var. sancti-nicolai	TROPICOS
+Anagallis arvensis var. coerulea	Anagallis arvensis var. caerulea
+Aplopappus bloomeri	Haplopappus bloomeri
+Aplopappus linearifolius	Haplopappus linearifolius
+Arabis blepharophylla var. macdonaldiana	Arabis blepharophylla var. mcdonaldiana	TROPICOS
+Argythamnia clariana	Argythamnia claryana
+Aster adscendens	Aster ascendens
+Aster greatai	Aster greatae
+Aster greatei	Aster greatae
+Astragalus clarianus	Astragalus claranus	JM
+Astragalus mojavensis	Astragalus mohavensis
+Astragalus mojavensis var. hemigyrus	Astragalus mohavensis var. hemigyrus
+Astragalus mojavensis var. mojavensis	Astragalus mohavensis var. mohavensis
+Astragalus oophorous	Astragalus oophorus	JM
+Atriplex joaquiniana	Atriplex joaquinana
+Bicuculla chrysantha	Bikukulla chrysantha
+Bidens leucantha	Bidens leucanthema	TROPICOS
+Bidens leucantha f. discoidea 	Bidens leucanthema f. discoidea	TROPICOS
+Bidens leucantha var. leucantha	Bidens leucanthema var. leucanthema	TROPICOS
+Bidens leucantha var. pilosa 	Bidens leucanthema var. pilosa	TROPICOS
+Bidens leucantha var. sundaica	Bidens leucanthema var. sundaica	TROPICOS
+Bigelovia acradenia	Bigelowia acradenia
+Bigelovia arborescens	Bigelowia arborescens
+Bigelovia brachylepis	Bigelowia brachylepis
+Bigelovia intricata	Bigelowia intricata
+Bigelovia menziesii	Bigelowia menziesii
+Bigelovia vaseyi	Bigelowia vaseyi
+Bikukulla ochroleuca	Bicuculla ochroleuca
+Bikukulla uniflora	Bicuculla uniflora
+Bromus brizaeformis	Bromus briziformis	TROPICOS
+Carex hystricina	Carex hystericina	JM
+Carnegia gigantea	Carnegiea gigantea
+Castilleja linariaefolia	Castilleja linariifolia
+Castilleja linariaefolia f. omnipubescens	Castilleja linariifolia f. omnipubescens
+Castilleja shastensis	Castilleja shastense
+Chaenactis douglasii var. achilleaefolia	Chaenactis douglasii var. achilleifolia
+Choritheca luteola	Goodmania luteola	Unpublished genus name by Goodman
+Ciclospermum leptophyllum	Cyclospermum leptophyllum
+Ciclospermum nodiflorum	Cyclospermum nodiflorum
+Cistus salvifolius	Cistus salviifolius
+Clarkia mosquinii subsp. xerophylla	Clarkia mosquinii subsp. xerophila	JM
+Collinsia bartsiaefolia	Collinsia bartsiifolia	TROPICOS, JM
+Collinsia bartsiaefolia var. alba	Collinsia bartsiifolia var. alba	TROPICOS
+Collinsia bartsiaefolia var. bartsiaefolia	Collinsia bartsiifolia var. bartsiifolia	TROPICOS
+Collinsia bartsiaefolia var. davidsonii	Collinsia bartsiifolia var. davidsonii	TROPICOS
+Collinsia bartsiaefolia var. hirsuta	Collinsia bartsiifolia var. hirsuta	TROPICOS
+Collinsia bartsiaefolia var. stricta	Collinsia bartsiifolia var. stricta
+Cowania mexicana subsp. stansburiana	Cowania mexicana subsp. stansburyana
+Cowania mexicana var. stansburiana	Cowania mexicana var. stansburyana
+Cowania stansburiana	Cowania stansburyana
+Cynodon transvalensis	Cynodon transvaalensis
+Deschampsia caespitosa	Deschampsia cespitosa
+Deschampsia caespitosa subsp. beringensis	Deschampsia cespitosa subsp. beringensis
+Deschampsia caespitosa subsp. caespitosa	Deschampsia cespitosa subsp. cespitosa
+Deschampsia caespitosa subsp. holciformis	Deschampsia cespitosa subsp. holciformis
+Deschampsia caespitosa var. caespitosa	Deschampsia cespitosa var. cespitosa
+Ditaxis brandegei	Ditaxis brandegeei
+Ditaxis clariana	Ditaxis claryana	CP
+Dudleya cespitosa	Dudleya caespitosa	SMASCH
+Epilobium halleanum	Epilobium hallianum	TROPICOS
+Eriastrum brandegeae	Eriastrum brandegeeae	TROPICOS
+Eriophyllum lanatum var. achillaeoides	Eriophyllum lanatum var. achillioides	TROPICOS; JM manual spells this as achilleoides
+Eriophyllum staechadifolium var. artmisiaefolium	Eriophyllum staechadifolium var. artemisiifolium	TROPICOS
+Eriophyllum stoechadifolium	Eriophyllum staechadifolium	SMASCH
+Eriophyllum stoechadifolium var. artemisiaefolium	Eriophyllum staechadifolium var. artemisiifolium	TROPICOS
+Eriophyllum stoechadifolium var. artemisiifolium	Eriophyllum staechadifolium var. artemisiifolium	TROPICOS
+Eriophyllum stoechadifolium var. depressum	Eriophyllum staechadifolium var. depressum	TROPICOS
+Eriophyllum stoechadifolium var. stoechadifolium	Eriophyllum staechadifolium var. staechadifolium	TROPICOS
+Eryngium alismaefolium	Eryngium alismifolium
+Erythronium multiscapoidea	Erythronium multiscapideum	TROPICOS
+Erythronium multiscapoideum	Erythronium multiscapideum	TROPICOS
+Eupatorium urticaefolium	Eupatorium urticifolium	TROPICOS
+Euphorbia serpillifolia var. serpillifolia	Euphorbia serpyllifolia	var. serpyllifolia
+Euphorbia serpillifolia	Euphorbia serpyllifolia
+Chamaesyce serpillifolia subsp. hirtula	Chamaesyce serpyllifolia subsp. hirtula
+Euphorbia serpillifolia var. hirtula	Euphorbia serpyllifolia var. hirtula
+Euphorbia serpillifolia subsp. hirtula	Euphorbia serpyllifolia var. hirtula
+Chamaesyce serpillifolia	Chamaesyce serpyllifolia
+Chamaesyce serpillifolia subsp. serpillifolia	Chamaesyce serpyllifolia subsp. serpyllifolia
+Gaertnera chamissonis	Gaertneria chamissonis
+Giliastrum rigidula	Giliastrum rigidulum
+Giliastrum rigidulum subsp. rigidulum	Giliastrum rigidula subsp. rigidula
+Gymnogonum spinescens	Goodmania luteola	Unpublished genus name by Parry
+Heleocharis geniculata	Eleocharis geniculata
+Heleocharis montevidensis	Eleocharis montevidensis
+Heleocharis obtusa	Eleocharis obtusa
+Heleocharis pachycarpa	Eleocharis pachycarpa
+Heleocharis palustris	Eleocharis palustris
+Heleocharis parvula	Eleocharis parvula
+Heleocharis quadrangulata	Eleocharis quadrangulata
+Heleocharis rostellata	Eleocharis rostellata
+Hemizonia congesta subsp. luzulaefolia	Hemizonia congesta subsp. luzulifolia	TROPICOS
+Hemizonia congesta var. luzulaefolia	Hemizonia congesta var. luzulifolia	TROPICOS
+Heteranthemis viscidehirta	Heteranthemis viscidihirta	TROPICOS spells this with a "e", ICPN with and "i", going with ICPN
+Heuchera cespitosa	Heuchera caespitosa
+Hypochoeris glabra	Hypochaeris glabra
+Hypochoeris radicata	Hypochaeris radicata
+Juncus leseurii	Juncus lescurii
+Juncus lesuerii var. lesuerii	Juncus lescurii	var. lescurii	JM
+Juncus lesuerii var. tracyi	Juncus lescurii	var. tracyi	JM
+Juncus lesueurii	Juncus lescurii	JM
+Juncus lesueurii var. lesueurii	Juncus lescurii	var. lescurii	JM
+Juncus lesueurii var. tracyi	Juncus lescurii	var. tracyi	JM
+Kicksia elatine	Kickxia elatine
+Kicksia spuria	Kickxia spuria
+Lewisia leana	Lewisia leeana	JM
+Lupinus holmgrenanus	Lupinus holmgrenianus	CP
+Lupinus littoralis var. varicolor	Lupinus littoralis var. variicolor
+Lupinus varicolor	Lupinus variicolor	SMASCH
+Monotropa hypopithys	Monotropa hypopitys	JM
+Monotropa hypopithys var. hypopithys	Monotropa hypopitys var. hypopitys	JM
+Monotropa hypopithys subsp. hypopithys	Monotropa hypopitys subsp. hypopitys	JM
+Monotropa hypopithys var. americana	Monotropa hypopitys var. americana	JM
+Monotropa hypopithys var. latisquama	Monotropa hypopitys var. latisquama	JM
+Monotropa hypopithys var. rubra	Monotropa hypopitys var. rubra	JM
+Monotropa hypopithys subsp. lanuginosa	Monotropa hypopitys subsp. lanuginosa	JM
+Nierembergia caerulea	Nierembergia coerulea
+Oenothera caespitosa	Oenothera cespitosa	
+Oenothera caespitosa subsp. crinita	Oenothera cespitosa subsp. crinita	
+Oenothera caespitosa subsp. marginata	Oenothera cespitosa subsp. marginata	
+Oenothera caespitosa var. crinita	Oenothera cespitosa var. crinita	
+Oenothera caespitosa var. marginata	Oenothera cespitosa var. marginata
+Oenothera clavaeformis	Oenothera claviformis
+Oenothera clavaeformis  subsp. lancifolia	Oenothera claviformis subsp. lancifolia
+Oenothera clavaeformis subsp. aurantiaca	Oenothera claviformis subsp. aurantiaca
+Oenothera clavaeformis subsp. clavaeformis	Oenothera claviformis subsp. claviformis
+Oenothera clavaeformis subsp. funerea	Oenothera claviformis subsp. funerea
+Oenothera clavaeformis var. aurantiaca	Oenothera claviformis var. aurantiaca
+Oenothera clavaeformis var. aurantiacus	Oenothera claviformis var. aurantiaca
+Oenothera clavaeformis var. clavaeformis	Oenothera claviformis var. claviformis
+Oenothera clavaeformis var. purpurascens	Oenothera claviformis var. purpurascens
+Pellaea andromedaefolia	Pellaea andromedifolia
+Pellaea andromedaefolia var. andromedaefolia	Pellaea andromedifolia var. andromedifolia
+Pellaea andromedaefolia var. pubescens	Pellaea andromedifolia var. pubescens
+Perityle brandegeana	Perityle brandegeeana
+Phacelia malvaefolia	Phacelia malvifolia	TROPICOS
+Phacelia cedrosencis	Phacelia cedrosensis
+Phacelia eisenii var. brandegeana	Phacelia eisenii var. brandegeeana	JM
+Phlox cespitosa	Phlox caespitosa	JM
+Phlox cespitosa subsp. condensata	Phlox caespitosa subsp. condensata
+Phlox cespitosa subsp. pulvinata	Phlox caespitosa subsp. pulvinata	JM
+Phlox cespitosa var. condensata	Phlox caespitosa var. condensata JM
+Physalis angulata var. lanceifolia	Physalis angulata var. lancifolia	JM
+Physalis hederaefolia	Physalis hederifolia
+Physalis hederaefolia var. cordifolia	Physalis hederifolia var. cordifolia
+Physalis hederaefolia var. fendleri	Physalis hederifolia var. fendleri
+Physalis lanceifolia	Physalis lancifolia	JM
+Piperia unalaschensis	Piperia unalascensis	TROPICOS
+Polygonum phytolaccaefolia	Polygonum phytolaccifolium	TROPICOS
+Polygonum phytolaccaefolium	Polygonum phytolaccifolium	TROPICOS
+Polygonum spergulariaeforme	Polygonum spergulariiforme	TROPICOS
+Portulaca oleracea subsp. papillato-stellulata	Portulaca oleracea subsp. papillatostellulata	TROPICOS
+Pteris andromedaefolia	Pteris andromedifolia
+Purshia stansburiana	Purshia stansburyana
+Quercus X kinselae	Quercus X kinseliae
+Quercus X moreha	Quercus X morehus
+Salsola X gobicola	Salsola gobicola
+Sambucus cerulea	Sambucus caerulea
+Sambucus cerulea var. cerulea	Sambucus caerulea var. caerulea
+Sambucus cerulea var. neomexicana	Sambucus caerulea var. neomexicana
+Sambucus coerulea	Sambucus caerulea
+Sambucus coerulea var. coerulea	Sambucus caerulea var. caerulea	
+Sambucus mexicana subsp. cerulea	Sambucus mexicana subsp. caerulea
+Sambucus mexicana var. cerulea	Sambucus mexicana var. caerulea	
+Sambucus nigra subsp. cerulea	Sambucus nigra subsp. caerulea	
+Sambucus nigra var. cerulea	Sambucus nigra var. caerulea
+Schobera occidentalis	Schoberia occidentalis
+Setaria adhaerens var. vertillata	Setaria adhaerens var. verticillata
+Sidalcea malvaeflora	Sidalcea malviflora
+Sidalcea malvaeflora subsp. asprella	Sidalcea malviflora subsp. asprella
+Sidalcea malvaeflora subsp. californica	Sidalcea malviflora subsp. californica
+Sidalcea malvaeflora subsp. celata	Sidalcea malviflora subsp. celata
+Sidalcea malvaeflora subsp. dolosa	Sidalcea malviflora subsp. dolosa
+Sidalcea malvaeflora subsp. elegans	Sidalcea malviflora subsp. elegans
+Sidalcea malvaeflora subsp. laciniata	Sidalcea malviflora subsp. laciniata
+Sidalcea malvaeflora subsp. malvaeflora	Sidalcea malviflora subsp. malviflora
+Sidalcea malvaeflora subsp. nana	Sidalcea malviflora subsp. nana
+Sidalcea malvaeflora subsp. patula	Sidalcea malviflora subsp. patula
+Sidalcea malvaeflora subsp. purpurea	Sidalcea malviflora subsp. purpurea
+Sidalcea malvaeflora subsp. purpurea	Sidalcea malviflora subsp. purpurea
+Sidalcea malvaeflora subsp. sparsifolia	Sidalcea malviflora subsp. sparsifolia
+Sidalcea malvaeflora var. asprella	Sidalcea malviflora var. asprella
+Sidalcea malvaeflora var. californica	Sidalcea malviflora var. californica
+Sidalcea malvaeflora var. celata	Sidalcea malviflora var. celata
+Sidalcea malvaeflora var. malvaeflora	Sidalcea malviflora var. malviflora
+Sidalcea malvaeflora var. oregana 	Sidalcea malviflora var. oregana
+Sidalcea malvaeflora var. laciniata	Sidalcea malviflora var. laciniata
+Simsia lagasceiformis	Simsia lagascaeformis
+Simsia lagasciformis	Simsia lagascaeformis
+Spirodela polyrrhiza	Spirodela polyrhiza	TROPICOS
+Spirodela polyrrhiza var. masonii	Spirodela polyrhiza var. masonii	TROPICOS
+Spirodela polyrrhiza var. polyrrhiza	Spirodela polyrhiza var. polyrhiza	TROPICOS
+Trifolium willdenowii	Trifolium willdenovii
+Vaccinium caespitosum	Vaccinium cespitosum	JM
+Vaccinium caespitosum var. caespitosum	Vaccinium cespitosum var. caespitosum	JM
+Vaccinium caespitosum var. arbuscula	Vaccinium cespitosum var. arbuscula	JM
+Vaccinium caespitosum var. paludicola	Vaccinium cespitosum var. paludicola	JM
+Zizyphus lycoides	Ziziphus lycioides
+Zizyphus lycoides var. canescens	Ziziphus lycioides var. canescens
+Zizyphus obtusifolia	Ziziphus obtusifolia
+Zizyphus obtusifolia var. canescens	Ziziphus obtusifolia var. canescens
+Zizyphus parryi	Ziziphus parryi
+Zizyphus parryi var. microphylla	Ziziphus parryi var. microphylla
+Zizyphus parryi var. parryi	Ziziphus parryi var. parryi
+Zizyphus zizyphus	Ziziphus zizyphus
+Zygadenus	Zigadenus
+Zygadenus brevibracteatus	Zigadenus brevibracteatus
+Zygadenus diegoensis	Zigadenus diegoensis
+Zygadenus exaltatus	Zigadenus exaltatus
+Zygadenus fontanus	Zigadenus fontanus
+Zygadenus fremontii	Zigadenus fremontii
+Zygadenus fremontii var. brevibracteatus	Zigadenus fremontii var. brevibracteatus
+Zygadenus fremontii var. minor	Zigadenus fremontii var. minor
+Zygadenus micranthus	Zigadenus micranthus
+Zygadenus paniculatus	Zigadenus paniculatus
+Zygadenus venenosus	Zigadenus venenosus
+Zygadenus venenosus var. venenosus	Zigadenus venenosus var. venenosus
+
+
+#Elymus farctus subsp. boreali-atlanticus (Simonet & Guin.) Melderis, do not change this hyphen, ICPN, TROPICOS
+#compound species name latin variants without dashes
+Antirrhinum vexillo-calyculatum subsp. vexillo-calyculatum	Antirrhinum vexillocalyculatum subsp. vexillocalyculatum	
+Antirrhinum vexillo-calyculatum	Antirrhinum vexillocalyculatum	JM
+Gnaphalium luteo-album	Gnaphalium luteoalbum	JM
+Pseudognaphalium luteo-album	Pseudognaphalium luteoalbum	TROPICOS
+Grindelia fraxino-pratensis	Grindelia fraxinipratensis	JM
+Carex albo-nigra	Carex albonigra
+Elytrigia juncea subsp. boreo-atlantica	Elytrigia juncea subsp. boreoatlantica	TROPICOS
+Elymus farctus subsp. boreo-atlanticus	Elymus farctus subsp. boreoatlanticus	TROPICOS
+Malephora crocea var. purpureo-crocea	Malephora crocea var. purpureocrocea	FNA
+Echinochloa crusgalli var. frumentacea	Echinochloa crus-galli var. frumentacea
+Echinochloa crusgalli var. crusgalli	Echinochloa crus-galli var. crus-galli
+Echinochloa crusgalli 	Echinochloa crus-galli
+Portulaca oleracea subsp. granulato-stellulata	Portulaca oleracea subsp. granulatostellulata
+Portulaca granulato-stellulata	Portulaca granulatostellulata
+Gilia inconspicua subsp. austro-occidentalis	Gilia inconspicua subsp. austrooccidentalis
+Gilia austro-occidentalis	Gilia austrooccidentalis
+
+
+#nomenclatural suffix variants
+#Allium lacunosum var. kernense	Allium lacunosum var. kernensis	TROPICOS, keep this null, JEP recognizes kernense
+#Castilleja applegatei subsp. martinii	Castilleja applegatei subsp. martini	TROPICOS;IPNI, keep this null, JEP recgnizes martinii
+#Castilleja martinii	Castilleja martini	TROPICOS;IPNI	keep this null, JEP recgnizes martinii
+#Castilleja martinii var. martinii	Castilleja martini var. martini	TROPICOS;IPNI	keep this null, JEP recgnizes martinii
+#Ribes nevadense	Ribes nevadaense	TROPICOS, keep this null, JEP recognizes nevadense
+#Ribes nevadense var. nevadense	Ribes nevadaense var. nevadaense	TROPICOS, keep this null, JEP recognizes nevadense
+Ribes nevadaensis	Ribes nevadaense	original spelling by Kellogg, not used, TROPICOS
+Ribes nevadaensis var. nevadaensis	Ribes nevadaense var. nevadaense	original spelling by Kellogg, not used, TROPICOS
+#Eriogonum microthecum	Eriogonum microtheca
+#Eriogonum microthecum var. alpinum	Eriogonum microtheca var. alpinum
+#Eriogonum microthecum var. ambiguum	Eriogonum microtheca var. ambiguum
+#Eriogonum microthecum var. corymbosoides	Eriogonum microtheca var. corymbosoides
+#Eriogonum microthecum var. johnstonii	Eriogonum microtheca var. johnstonii
+#Eriogonum microthecum var. lacus-ursi	Eriogonum microtheca var. lacus-ursi
+#Eriogonum microthecum var. lapidicola	Eriogonum microtheca var. lapidicola
+#Eriogonum microthecum var. laxiflorum	Eriogonum microtheca var. laxiflorum
+#Eriogonum microthecum var. panamintense	Eriogonum microtheca var. panamintense
+#Eriogonum microthecum var. schoolcraftii	Eriogonum microtheca var. schoolcraftii
+#Eriogonum microthecum var. simpsonii	Eriogonum microtheca var. simpsonii
+#Eriogonum microthecum var. foliosum	Eriogonum microtheca var. foliosum
+Acaena novae-zelandica	Acaena novae-zelandiae
+Aconogonon davisae var. davisae	Aconogonon davisiae var. davisiae
+Adelinia grande	Adelinia grandis	TROPICOS
+Allium sharsmithae	Allium sharsmithiae	CP
+Ampelodesmos mauritanica	Ampelodesmos mauritanicus	JM
+Amsinckia intermedia var. eastwoodae	Amsinckia intermedia var. eastwoodiae
+Aponogeton distachyon	Aponogeton distachyos	JM
+Aponogeton distachyus	Aponogeton distachyos	JM
+Arctostaphylos parryana subsp. deserticum	Arctostaphylos parryana subsp. desertica	JM; TROPCICOS
+Aster squamatum	Aster squamatus
+Astragalus trichopodus subsp. antiselli	Astragalus trichopodus subsp. antisellii
+Cardionema ramosissima	Cardionema ramosissimum	TROPICOS
+Castilleja gleasonii	Castilleja gleasoni	 JM
+Ceanothus ferrisae	Ceanothus ferrisiae	CP
+Chenopodium berlandieri subsp. zschackii	Chenopodium berlandieri subsp. zschackei	JM
+Chenopodium berlandieri var. zschackii	Chenopodium berlandieri var. zschackei	JM;SMASCH;CP
+Cordylanthus rigidus subsp. setigerus	Cordylanthus rigidus subsp. setiger	
+Croton setigerus	Croton setiger	
+Deinandra bacigalupi	Deinandra bacigalupii
+Dodecatheon clevelandi	Dodecatheon clevelandii	JM; TROPCICOS
+Dodecatheon clevelandi var. insulare	Dodecatheon clevelandii var. insulare	TROPCICOS
+Dodecatheon clevelandi var. clevelandi	Dodecatheon clevelandii var. clevelandii	TROPCICOS
+Encelia actonii	Encelia actoni	
+Encelia virginensis subsp. actonii	Encelia virginensis subsp. actoni
+Encelia virginensis var. actonii	Encelia virginensis var. actoni
+Erechtites arguta	Erechtites argutus
+Erechtites glomerata	Erechtites glomeratus	JM
+Erechtites hieracifolia	Erechtites hieraciifolius	JM
+Erechtites hieracifolia var. hieracifolia	Erechtites hieraciifolius var. hieraciifolius	JM
+Erechtites minima	Erechtites minimus		
+Eremocarpus setigerus	Eremocarpus setiger
+Eriastrum brandegeae	Eriastrum brandegeeae	CP
+Eriogonum cespitosum	Eriogonum caespitosum
+Eriophorum criniger	Eriophorum crinigerum	JM
+Eryngium pendletonensis	Eryngium pendletonense	CNPS
+Fritillaria brandegei	Fritillaria brandegeei	CP
+Habenaria leucostachys var. viridis	Habenaria leucostachys var. virida	TROPICOS
+Hedeoma costata var. pulchellum	Hedeoma costata var. pulchella
+Hedeoma matomianum	Hedeoma matomiana
+Hedeoma nanum	Hedeoma nana
+Hedeoma nanum subsp. californicum	Hedeoma nana subsp. californica
+Hedeoma nanum subsp. macrocalyx	Hedeoma nana subsp. macrocalyx
+Hedeoma nanum subsp. mexicanum	Hedeoma nana subsp. mexicana
+Hedeoma nanum subsp. nanum	Hedeoma nana subsp. nana
+Hedeoma quercetorum	Hedeoma quercetora
+Hedeoma tenuiflorum	Hedeoma tenuiflora
+Hibiscus lasiocarpus	Hibiscus lasiocarpos	JM; CP;SMASCH
+Hibiscus lasiocarpus var. californicus	Hibiscus lasiocarpos var. californicus
+Hibiscus lasiocarpus var. lasiocarpus	Hibiscus lasiocarpos var. lasiocarpos
+Hibiscus lasiocarpus var. occidentalis	Hibiscus lasiocarpos var. occidentalis
+Koeleria gerardii	Koeleria gerardi
+Leptospermum laevigata	Leptospermum laevigatum	SMASCH
+Lithocarpus densiflora	Lithocarpus densiflorus
+Lithocarpus densiflora subsp. echinoides	Lithocarpus densiflorus subsp. echinoides
+Lithocarpus densiflora var. echinoides	Lithocarpus densiflorus var. echinoides
+Lupinus formosus var. clemensae	Lupinus formosus var. clemensiae
+Lysichiton americanum	Lysichiton americanus	CP
+Lysichiton americanum	Lysichiton americanus	TROPICOS
+Marah fabaceus	Marah fabacea	JM
+Marah fabaceus var. agrestis	Marah fabacea var. agrestis	JM
+Marah horridus	Marah horrida	JM
+Marah macrocarpus	Marah macrocarpa	JM
+Marah macrocarpus var. macrocarpus	Marah macrocarpa var. macrocarpa	JM
+Marah macrocarpus var. major	Marah macrocarpa var. major	JM
+Marah macrocarpus var. micranthus	Marah macrocarpa var. micrantha	TROPICOS
+Marah oreganus	Marah oregana	JM
+Melilotus alba	Melilotus albus	CP
+Melilotus indica	Melilotus indicus	CP
+Nama aretioides var. californicum	Nama aretioides var. californica
+Nama aretioides var. multiflorum	Nama aretioides var. multiflora
+Nama argenteum	Nama argentea
+Nama arizonicum	Nama arizonica	
+Nama californicum	Nama californica	
+Nama carnosum	Nama carnosa	
+Nama demissum	Nama demissa	
+Nama demissum var. covillei	Nama demissa var. covillei	
+Nama demissum var. demissum	Nama demissa var. demissa	
+Nama demissum var. deserti	Nama demissa var. deserti	
+Nama densum	Nama densa	
+Nama densum var. densum	Nama densa var. densa	
+Nama densum var. parviflorum	Nama densa var. parviflora	
+Nama depressum	Nama depressa	
+Nama dichotomum	Nama dichotoma	
+Nama dichotomum var. dichotomum	Nama dichotoma var. dichotoma	
+Nama foliosum	Nama foliosa	
+Nama hispidum	Nama hispida	
+Nama hispidum var. hispidum	Nama hispida var. hispida	
+Nama hispidum var. mentzelii	Nama hispida var. mentzelii	
+Nama hispidum var. revolutum	Nama hispida var. revoluta	
+Nama hispidum var. spathulatum	Nama hispida var. spathulata	
+Nama humifuscum	Nama humifusca	
+Nama humifusum	Nama humifusca	
+Nama jamaicense	Nama jamaicensis	
+Nama macranthum	Nama macrantha	
+Nama origanifolium	Nama origanifolia	
+Nama origanifolium var. origanifolium	Nama origanifolia var. origanifolia	
+Nama origanifolium var. pedunculatum	Nama origanifolia var. pedunculata	
+Nama parvifolium	Nama parvifolia	
+Nama pusillum	Nama pusilla	
+Nama retrorsum	Nama retrorsa	
+Nama sandwicense	Nama sandwicensis	
+Nama sandwicense var. laysanicum	Nama sandwicensis var. laysanica	
+Nama sandwicense var. sandwicense	Nama sandwicensis var. sandwicensis	
+Nama spathulatum	Nama spathulata	
+Nama stenocarpum	Nama stenocarpa	
+Nama stenophyllum	Nama stenophylla	
+Nama stenophyllum var. egenum	Nama stenophylla var. egena	
+Nama stenophyllum var. flavescens	Nama stenophylla var. flavescens	
+Nama stenophyllum var. stenophyllum	Nama stenophylla var. stenophylla	
+Nama systylum	Nama systyla	
+Nama tenue	Nama tenuis	
+Nama torynophyllum	Nama torynophylla	
+Nama undulatum	Nama undulata	
+Nama xylopodum	Nama xylopoda
+Nassella formicara	Nassella formicarum	JM
+Nuphar luteum	Nuphar lutea
+Nuphar luteum 	Nuphar lutea	TROPICOS
+Nuphar luteum subsp. luteum	Nuphar lutea subsp. lutea	TROPICOS
+Nuphar luteum subsp. macrophyllum 	Nuphar lutea subsp. macrophylla	TROPICOS
+Nuphar luteum subsp. orbiculatum 	Nuphar lutea subsp. orbiculata	TROPICOS
+Nuphar luteum subsp. ozarkanum 	Nuphar lutea subsp. ozarkana	TROPICOS
+Nuphar luteum subsp. polysepalum	Nuphar lutea subsp. polysepala
+Nuphar luteum subsp. polysepalum 	Nuphar lutea subsp. polysepala	TROPICOS
+Nuphar luteum subsp. pumilum 	Nuphar lutea subsp. pumila	TROPICOS
+Nuphar luteum subsp. sagittifolium 	Nuphar lutea subsp. sagittifolia	TROPICOS
+Nuphar luteum subsp. ulvaceum 	Nuphar lutea subsp. ulvacea	TROPICOS
+Nuphar luteum subsp. variegatum 	Nuphar lutea subsp. variegata	TROPICOS
+Nuphar luteum var. luteum	Nuphar lutea var. lutea	TROPICOS
+Nuphar luteum var. pumilum 	Nuphar lutea var. pumila	TROPICOS
+Nuphar polysepalum	Nuphar polysepala
+Orobanche ludoviciana var. latilobus	Orobanche ludoviciana var. latiloba	
+Oxycoccus oxycoccus	Oxycoccus oxycoccos	TROPICOS
+Petasites palmata	Petasites palmatus	TROPICOS
+Petrophyton acuminatum	Petrophytum acuminatum
+Petrophyton caespitosum	Petrophytum caespitosum
+Petrophyton caespitosum subsp. acuminatum	Petrophytum caespitosum subsp. acuminatum
+Petrophyton caespitosum subsp. caespitosum	Petrophytum caespitosum subsp. caespitosum
+Petrophyton caespitosum var. caespitosum	Petrophytum caespitosum var. caespitosum
+Petrophyton caespitosum var. elatius	Petrophytum caespitosum var. elatius
+Petrophyton cinerascens	Petrophytum cinerascens
+Petrophyton elatius	Petrophytum elatius
+Petrophyton hendersonii	Petrophytum hendersonii
+Pityopus californica	Pityopus californicus	SMASCH;JM;CP
+Planodes virginicum	Planodes virginica	
+Platycodon grandiflorum	Platycodon grandiflorus	TROPICOS
+Platycodon grandiflorum var. grandiflorum	Platycodon grandiflorus var. grandiflorum	TROPICOS
+Platycodon grandiflorum var. mariesii	Platycodon grandiflorus var. mariesii	TROPICOS
+Psorothamnus arborescens var. simplifolius	Psorothamnus arborescens var. simplicifolius	
+Quercus vaccinifolia	Quercus vacciniifolia	FNA; JM
+Quercus wislizenii	Quercus wislizeni	FNA
+Quercus wislizenii subsp. frutescens	Quercus wislizeni subsp. frutescens
+Quercus wislizenii subsp. wislizenii	Quercus wislizeni subsp. wislizeni
+Quercus wislizenii var. frutescens	Quercus wislizeni var. frutescens
+Quercus wislizenii var. wislizenii	Quercus wislizeni var. wislizeni
+Spergularia bocconei	Spergularia bocconi
+Spergularia bocconii	Spergularia bocconi
+Stipa mauritanicus	Stipa mauritanica
+Streptanthus longisiliqus	Streptanthus longisiliquus	CNPS
+Stylocline gnaphalioides	Stylocline gnaphaloides	JM
+Triglochin concinnum	Triglochin concinna	
+Triglochin concinnum var. concinnum	Triglochin concinna var. concinna	
+Triglochin concinnum var. debile	Triglochin concinna var. debilis	
+Triglochin maritimum	Triglochin maritima
+Triglochin palustre	Triglochin palustris	
+Triglochin striatum	Triglochin striata	
+Ulex europaea	Ulex europaeus
+Xylosma congestum	Xylosma congesta	TROPICOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
