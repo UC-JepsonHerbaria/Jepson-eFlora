@@ -1,0 +1,658 @@
+
+DUPS and problem records deleted from SMASCH:
+101144	Blepharipappus scaber	Blepharipappus scaber Hook. duplicate taxon ID
+101149	Eriastrum signatum	Eriastrum signatum D.Gowen
+101138	Streptanthus tortuosus var. truei	Streptanthus tortuosus var. truei Al-Shehbaz	bad taxon name, this is subsp. truei only
+101204	Nitella	Nitella
+100456	Eriastrum signatum	Eriastrum signatum D. Gowen duplicate taxon ID
+65634	Salix cordata var. rigida	Salix cordata	rigida	Muhl.	Andersson	var	0
+65635	Salix cordata var. rigida	Salix cordata	rigida	Muhl.	B. Boivin	var	0
+57772	Dodecatheon pulchellum var. watsonii	Dodecatheon pulchellum	watsonii	Tidestr.	C. L. Hitchc.	var	0
+57773	Dodecatheon pulchellum var. watsonii	Dodecatheon pulchellum	watsonii	Tidestr.	Reveal	var	0
+101158	Nama californica	Nama californica (A. Gray) J. Bacon
+100465	Nama californica	Nama californica (A. Gray) J. Bacon duplicate taxon ID
+101155	Leptosiphon nuttallii subsp. pubescens	Leptosiphon nuttallii subsp. pubescens (R. Patt.) J.M. Porter & L.A. Johnson
+#100462	Leptosiphon nuttallii subsp. pubescens	Leptosiphon nuttallii subsp. pubescens (R. Patt.) J.M. Porter & L.A. Johnson duplicate taxon ID
+#99562	Hazardia stenolepis	Hazardia stenolepis (H.M. Hall) Hoover duplicate taxon ID
+3187	Hazardia stenolepis	Hazardia	stenolepis	H. M. Hall	Hoover	sp	0
+79359	Senkenbergia	Nyctaginaceae	Senkenbergia	unknown	Schauer	gen	0
+78997	Monardella linoides subsp. stricta	Monardella linoides	stricta	unknown	Parish	subsp	0
+93943	Perantha	UNDETERMINED	Perantha	unknown	unknown	gen	0
+101147	Cryptantha muricata var. denticulata	Cryptantha muricata var. denticulata (Greene) I.M.Johnst.
+88517	Stemonurus malaccensis	Stemonurus	malaccensis	Mast.	Sleumer	sp	0
+93949	Titanotrichum	UNDETERMINED	Titanotrichum	unknown	unknown	gen	0
+101160	Sanicula crassicaulis	Sanicula crassicaulis Poepp. ex DC.
+#93867	Dictyota	UNDETERMINED	Dictyota	unknown		gen	0
+#93868	Dilophus	UNDETERMINED	Dilophus	unknown		gen	0
+#93869	Padina	UNDETERMINED	Padina	unknown		gen	0
+93870	Matisia	UNDETERMINED	Matisia	unknown		gen	0
+93871	Pleocnemia	UNDETERMINED	Pleocnemia	unknown		gen	0
+93872	Psomiocarpa	UNDETERMINED	Psomiocarpa	unknown		gen	0
+93873	Ctenitopsis	UNDETERMINED	Ctenitopsis	unknown		gen	0
+93874	Leucostegia	UNDETERMINED	Leucostegia	unknown		gen	0
+93875	Egenolfia	UNDETERMINED	Egenolfia	unknown		gen	0
+93876	Stenosemia	UNDETERMINED	Stenosemia	unknown		gen	0
+93877	Aenigmopteris	UNDETERMINED	Aenigmopteris	unknown		gen	0
+93878	Coryphopteris	UNDETERMINED	Coryphopteris	unknown		gen	0
+93879	Paesia	UNDETERMINED	Paesia	unknown		gen	0
+93880	Schizoloma	UNDETERMINED	Schizoloma	unknown		gen	0
+93881	Meringium	UNDETERMINED	Meringium	unknown		gen	0
+93882	Lepisanthes	UNDETERMINED	Lepisanthes	unknown		gen	0
+93883	Plerandra	UNDETERMINED	Plerandra	unknown		gen	0
+93884	Arthrophyllum	UNDETERMINED	Arthrophyllum	unknown		gen	0
+93885	Pterocymbium	UNDETERMINED	Pterocymbium	unknown		gen	0
+93886	Lockhartia	UNDETERMINED	Lockhartia	unknown		gen	0
+93887	Parishia	UNDETERMINED	Parishia	unknown		gen	0
+93888	Melanochyla	UNDETERMINED	Melanochyla	unknown		gen	0
+93889	Mostacillastrum	UNDETERMINED	Mostacillastrum	unknown		gen	0
+93890	Apama	UNDETERMINED	Apama	unknown		gen	0
+93891	Seorsus	UNDETERMINED	Seorsus	unknown		gen	0
+93892	Babingtonia	UNDETERMINED	Babingtonia	unknown		gen	0
+93893	Tremacron	UNDETERMINED	Tremacron	unknown		gen	0
+93894	Oreocharis	UNDETERMINED	Oreocharis	unknown		gen	0
+93896	Hemiboea	UNDETERMINED	Hemiboea	unknown		gen	0
+93897	Briggsia	UNDETERMINED	Briggsia	unknown		gen	0
+93898	Chirita	UNDETERMINED	Chirita	unknown		gen	0
+93899	Corallodiscus	UNDETERMINED	Corallodiscus	unknown		gen	0
+93900	Didissandra	UNDETERMINED	Didissandra	unknown		gen	0
+93902	Alsomitra	UNDETERMINED	Alsomitra	unknown		gen	0
+93903	Erythropalum	UNDETERMINED	Erythropalum	unknown		gen	0
+93904	Zinowiewia	UNDETERMINED	Zinowiewia	unknown		gen	0
+93905	Rzedowskia	UNDETERMINED	Rzedowskia	unknown		gen	0
+93906	Rhabdothamnopsis	UNDETERMINED	Rhabdothamnopsis	unknown		gen	0
+93907	Stigmatopteris	UNDETERMINED	Stigmatopteris	unknown		gen	0
+93908	Phymatosorus	UNDETERMINED	Phymatosorus	unknown		gen	0
+93909	Abrodictyum	UNDETERMINED	Abrodictyum	unknown		gen	0
+93910	Didymoglossum	UNDETERMINED	Didymoglossum	unknown		gen	0
+93911	Macroglena	UNDETERMINED	Macroglena	unknown		gen	0
+93912	Cephalomanes	UNDETERMINED	Cephalomanes	unknown		gen	0
+93913	Crepidomanes	UNDETERMINED	Crepidomanes	unknown		gen	0
+93914	Gonocormus	UNDETERMINED	Gonocormus	unknown		gen	0
+85376	Sticherus	Gleicheniaceae	Sticherus	unknown	L.	gen	0
+77829	Aphyllon	Orobanchaceae	Aphyllon	unknown	Mitch.	gen	0
+100334	Nepenthes
+100348	Puya
+100301	Bolelia	
+100321	Hardenbergia
+100308	Clusia
+100311	Crotalaria
+100310	Corymbia
+100336	Oncidium
+100317	Euryops	
+100344	Pneumonanthe
+100341	Philibertia	
+101632	Leptomeria
+77464	Pentagramma	Pteridaceae	Pentagramma	unknown	Yatsk., Windham, & E. Wollenw.	gen	0
+79040	Pteridaceae		Pteridaceae	unknown	Kirchn.	fam	0
+85378	Thelypteris	Pteridaceae	Thelypteris	unknown	Adans.	gen	0
+85448	Gleichenia	Gleicheniaceae	Gleichenia	unknown	Sm.	gen	0
+85743	Aulomyrcia	Myrtaceae	Aulomyrcia	unknown	O. Berg	gen	0
+86440	Spongiosperma	Apocynaceae	Spongiosperma	unknown	Zarucchi	gen	0
+100980	Crucianella
+100782	Spermolepis
+85515	Rheedia	Clusiaceae	Rheedia	unknown	L.	gen	0
+85621	Cephalocereus	Cactaceae	Cephalocereus	unknown	Pfeiff.	gen	0
+85370	Pithecolobium	Fabaceae	Pithecolobium	unknown	Benth.	gen	0
+85368	Samanea	Fabaceae	Samanea	unknown	Merr.	gen	0
+85681	Relbunium	Rubiaceae	Relbunium	unknown	Benth. & Hook. f.	gen	0
+78088	Chrysolepis	Fagaceae	Chrysolepis	unknown	Hjelmq.	gen	0
+89842	Aglaia elliptica	Aglaia	elliptica	unknown	Blume	sp	0
+101631	Helianthemum nummularium	Helianthemum nummularium (Cav.) Losa & Rivas Goday
+101634	Melaleuca huegelii	Melaleuca huegelii Endl.
+101635	Kleinia ficoides	Kleinia ficoides Haw.
+101639	Quillaja saponaria	Quillaja saponaria Molina
+101610	Eucalyptus prava	Eucalyptus prava L. A. S. Johnson & K. D. Hill
+101611	Salvia scabrida	Salvia scabrida Pohl
+101637	Eucalyptus stricklandii	Eucalyptus stricklandii Maiden
+99210	Chara	Chara L.
+101633	Cryptantha ramosissima	Cryptantha ramosissima Greene 
+101636	Stuckenia filiformis subsp. filiformis	Stuckenia filiformis subsp. filiformis 
+101638	Tessaria borealis	Tessaria borealis Torr. & A. Gray
+93855	Glyceria X occidentalis	Glyceria	occidentalis	Piper	J. C. Nelson	sp	1
+93854	Platanus X hispanica	Platanus	hispanica	unknown	Muenchh.	sp	1
+93856	Origanum X majoricum	Origanum	majoricum	unknown	Cambess.	sp	1
+93857	Mentha X rotundifolia	Mentha	rotundifolia	L.	Huds.	sp	1
+93859	Ambrosia X platyspina	Ambrosia	platyspina	Seaman	Strother & B. G. Baldwin	sp	1
+93860	Cylindropuntia X fosbergii	Cylindropuntia	fosbergii	C. B. Wolf	Rebman, M. A. Baker, & Pinkava	sp	1
+93861	Grindelia X paludosa	Grindelia	paludosa	unknown	Greene	sp	1
+#12196	X Agropogon littoralis	X Agropogon	littoralis	Sm.	C. E. Hubb.	sp	1
+#98372	X Elyhordeum californicum	X Elyhordeum	californicum	Bowden	Elyhordeum californicum Barkworth		0
+#24071	X Elyhordeum macounii	X Elyhordeum	macounii	Vasey	Barkworth & Dewey	sp	1
+#24074	X Elyhordeum stebbinsianum	X Elyhordeum	stebbinsianum	Bowden	Bowden	sp	1
+#24076	X Elyleymus aristatus	X Elyleymus	aristatus	Merr.	Barkworth & Dewey	sp	1
+#40036	X Pseudelymus saxicola	X Pseudelymus	saxicola	Scribn. & J. G. Sm.	Barkworth & Dewey	sp	1
+30861	Leymus X multiflorus	Leymus	multiflorus	Gould	Barkworth & R. J. Atkins	sp	1
+101375	Leymus X multiflorus	Leymus x multiflorus (Gould) Barkworth & R.J.Atkins
+101461	Aristida peninsularis	Aristida peninsularis Hitchc.
+#20349	Coriandrum sativum	Coriandrum	sativum	unknown	L.	sp	0
+#99976	Silene krantzii	Silene krantzii T. R. Stoughton duplicate taxon ID
+#98671	Collomia tinctoria var. luxuriosa	Collomia tinctoria var. luxuriosa		not a published combination
+#98674	Eriogonum apiculatum var. galbinum	Eriogonum apiculatum var. galbinum	not a published combination
+#98675	Eriogonum rupicola	Eriogonum rupicola	not a published combination
+#98676	Eriogonum umbellatum var. nelsonii	Eriogonum umbellatum var. nelsonii	not a published combination
+#98677	Erysimum insulare var. grandifolium	Erysimum insulare var. grandifolium	not a published combination
+#98681	Leptosiphon androsaceus subsp. micranthus	Leptosiphon androsaceus subsp. micranthus	not a published combination
+#98685	Lotus argophyllus var. traskiae	Lotus argophyllus var. traskiae	not a published combination
+#98689	Microsteris gracilis subsp. humilior	Microsteris gracilis subsp. humilior	not a published combination
+#98693	Phacelia imbricata var. hansenii	Phacelia imbricata var. hansenii	not a published combination
+#98696	Phacelia tanacetifolia var. tenuisecta	Phacelia tanacetifolia var. tenuisecta	not a published combination
+#98697	Rhamnus tomentella var. ursina	Rhamnus tomentella var. ursina	not a published combination
+#98698	Salix lasiolepis var. tracyi	Salix lasiolepis var. tracyi	not a published combination
+#98699	Selaginella arizonica subsp. eremophila	Selaginella arizonica subsp. eremophila	not a published combination
+#98700	Senna eremophila	Senna eremophila	not a published combination
+#98701	Symphyotrichum foliaceum var. lyallii	Symphyotrichum foliaceum var. lyallii	not a published combination
+#98702	Triteleia grandiflora subsp. howellii	Triteleia grandiflora Lindl. subsp. howellii	not a published combination
+#81595	Lupinus elatus var. viridulus	Lupinus elatus	viridulus	unknown	unknown	var	0	not a published combination
+#81596	Lupinus elatus var. elatus	Lupinus elatus	elatus	unknown	I. M. Johnst.	var	0	not a published combination
+#97602	Dilophus flabellatus	Dilophus	flabellatus	unknown	Collins	sp	0	algae
+#98473	Arabis X divaricarpa	Arabis	divaricarpa	unknown	A. Nelson	sp	1
+#94054	Dictyota stolonifera	Dictyota	stolonifera	unknown	Dawson	sp	0
+#94055	Dilophus stoloniferus	Dilophus	stoloniferus	Dawson	Schnetter & Bula	sp	0
+#94056	Dictyota concrescens	Dictyota	concrescens	unknown	Taylor	sp	0
+#94057	Padina crispata	Padina	crispata	unknown	Thivy	sp	0
+#94058	Dictyota cribrosa	Dictyota	cribrosa	unknown	Setchell & Gardner	sp	0
+#94059	Dictyota binghamiae	Dictyota	binghamiae	unknown	J. Agardh	sp	0
+#94060	Padina caulescens	Padina	caulescens	unknown	Thivy	sp	0
+#94061	Padina mexicana	Padina	mexicana	unknown	Dawson	sp	0
+101661	Polygonum aviculare var. buxifolium	Polygonum aviculare var. buxifolium Ledeb.
+93825	Polygonum aviculare var. buxifolium	Polygonum aviculare	buxifolium	unknown	Ledeb.	var	0
+52641	Rhamnus smithii subsp. typica	Rhamnus smithii	typica	unknown	C. B. Wolf	subsp	0
+84668	Peltigera polydactyla var. typica	Peltigera polydactyla	typica	unknown	J. W. Thomson	var	0
+99351	Zostera marina f. typica	Zostera marina f. typica Setch
+101490	Dudleya attenuata subsp. typica	Dudleya attenuata subsp. typica Moran
+62695	Orobanche uniflora var. typica	Orobanche uniflora	typica	unknown	Achey	var	0
+62689	Orobanche multiflora var. typica	Orobanche multiflora	typica	unknown	Munz	var	0
+62674	Orobanche fasciculata var. typica	Orobanche fasciculata	typica	unknown	Achey	var	0
+62492	Oenothera runcinata var. typica	Oenothera runcinata	typica	unknown	Munz	var	0
+62477	Oenothera multijuga var. typica	Oenothera multijuga	typica	unknown	Munz	var	0
+62497	Oenothera serrulata var. typica	Oenothera serrulata	typica	unknown	Munz	var	0
+62486	Oenothera perennis var. typica	Oenothera perennis	typica	unknown	Munz	var	0
+62480	Oenothera pallida var. typica	Oenothera pallida	typica	unknown	Munz	var	0
+62465	Oenothera lavandulifolia var. typica	Oenothera lavandulifolia	typica	unknown	Munz	var	0
+62453	Oenothera hartwegii var. typica	Oenothera hartwegii	typica	unknown	Munz	var	0
+62432	Oenothera deltoides var. typica	Oenothera deltoides	typica	unknown	Munz	var	0
+62399	Oenothera cardiophylla var. typica	Oenothera cardiophylla	typica	unknown	Munz	var	0
+62380	Nyssa sylvatica var. typica	Nyssa sylvatica	typica	unknown	Fernald	var	0
+61656	Lyrocarpa coulteri var. typica	Lyrocarpa coulteri	typica	unknown	Rollins	var	0
+61161	Ludwigia glandulosa var. typica	Ludwigia glandulosa	typica	unknown	Munz	var	0
+61158	Ludwigia alternifolia var. typica	Ludwigia alternifolia	typica	unknown	Munz	var	0
+60888	Lindernia dubia var. typica	Lindernia dubia	typica	unknown	Pennell	var	0
+59516	Gerardia tenuifolia var. typica	Gerardia tenuifolia	typica	unknown	Pennell	var	0
+59497	Gerardia paupercula var. typica	Gerardia paupercula	typica	unknown	Pennell	var	0
+59403	Gaura villosa var. typica	Gaura villosa	typica	unknown	Munz	var	0
+59394	Gaura gracilis var. typica	Gaura gracilis	typica	unknown	Munz	var	0
+59392	Gaura coccinea var. typica	Gaura coccinea	typica	unknown	Munz	var	0
+59248	Fremontia californica var. typica	Fremontia californica	typica	unknown	M. Harvey	var	0
+59053	Euphorbia skottsbergii var. typica	Euphorbia skottsbergii	typica	unknown	Sherff	var	0
+59030	Euphorbia olowaluana var. typica	Euphorbia olowaluana	typica	unknown	Sherff	var	0
+59021	Euphorbia multiformis var. typica	Euphorbia multiformis	typica	unknown	Sherff	var	0
+58987	Euphorbia degeneri var. typica	Euphorbia degeneri	typica	unknown	Sherff	var	0
+58967	Euphorbia celastroides var. typica	Euphorbia celastroides	typica	unknown	Sherff	var	0
+59006	Euphorbia hookeri var. typica	Euphorbia hookeri	typica	unknown	Sherff	var	0
+59003	Euphorbia hillebrandii var. typica	Euphorbia hillebrandii	typica	unknown	Sherff	var	0
+58998	Euphorbia fendleri var. typica	Euphorbia fendleri	typica	unknown	L. C. Wheeler	var	0
+58955	Euphorbia atrococca var. typica	Euphorbia atrococca	typica	unknown	Sherff	var	0
+58120	Eleocharis acicularis var. typica	Eleocharis acicularis	typica	unknown	Svens.	var	0
+57919	Draba spectabilis var. typica	Draba spectabilis	typica	unknown	C. L. Hitchc.	var	0
+57914	Draba reptans var. typica	Draba reptans	typica	unknown	C. L. Hitchc.	var	0
+57852	Draba cuneifolia var. typica	Draba cuneifolia	typica	unknown	C. L. Hitchc.	var	0
+57843	Draba crassifolia var. typica	Draba crassifolia	typica	unknown	C. L. Hitchc.	var	0
+57827	Draba asprella var. typica	Draba asprella	typica	unknown	C. L. Hitchc.	var	0
+57149	Cryptantha nana var. typica	Cryptantha nana	typica	unknown	Payson	var	0
+57135	Cryptantha jamesii var. typica	Cryptantha jamesii	typica	unknown	Payson	var	0
+51078	Ivesia lycopodioides subsp. typica	Ivesia lycopodioides	typica	unknown	D. D. Keck	subsp	0
+51774	Oenothera longissima subsp. typica	Oenothera longissima	typica	unknown	Munz	subsp	0
+52156	Phlox andicola subsp. typica	Phlox andicola	typica	unknown	Wherry	subsp	0
+52214	Phlox longifolia subsp. typica	Phlox longifolia	typica	unknown	Wherry	subsp	0
+52223	Phlox multiflora subsp. typica	Phlox multiflora	typica	unknown	Wherry	subsp	0
+52499	Potentilla glandulosa subsp. typica	Potentilla glandulosa	typica	unknown	D. D. Keck	subsp	0
+54181	Arabis divaricarpa var. typica	Arabis divaricarpa	typica	unknown	Rollins	var	1
+54188	Arabis fernaldiana var. typica	Arabis fernaldiana	typica	unknown	Rollins	var	0
+55391	Calamagrostis canadensis var. typica	Calamagrostis canadensis	typica	unknown	Stebbins	var	0 not a valid combination
+56731	Collomia debilis var. typica	Collomia debilis	typica	unknown	Payson	var	0
+56389	Chelone glabra var. typica	Chelone glabra	typica	unknown	Pennell	var	0
+49440	Botrychium lanceolatum subsp. typicum	Botrychium lanceolatum	typicum	unknown	R. T. Clausen	subsp	0
+#49447	Botrychium simplex subsp. typicum	Botrychium simplex	typicum	unknown	R. T. Clausen	subsp	0
+54216	Arabis lemmonii var. typica	Arabis lemmonii	typica	unknown	Rollins	var	0
+#74327	Marsilea vestiva var. vestiva	Marsilea vestiva	vestiva	unknown	unknown	var	0 misspelling
+#74158	Carex viridula subsp. brachyrrhyncha var. brachyrrhyncha	Carex viridula subsp. brachyrrhyncha	brachyrrhyncha	unknown	B. Schmid	var	0
+#74159	Dalea versicolor subsp. versicolor var. versicolor	Dalea versicolor subsp. versicolor	versicolor	unknown	Zucc.	var	0
+#74160	Dryas octopetala subsp. punctata var. punctata	Dryas octopetala subsp. punctata	punctata	unknown	Hultén	var	0
+#74161	Eriophorum angustifolium subsp. subarcticum var. subarcticum	Eriophorum angustifolium subsp. subarcticum	subarcticum	unknown	Kartesz & Gandhi	var	0
+#74162	Lathyrus nevadensis subsp. lanceolatus var. lanceolatus	Lathyrus nevadensis subsp. lanceolatus	lanceolatus	unknown	C. L. Hitchc.	var	0
+#74163	Phyllanthus pentaphyllus subsp. pentaphyllus var. pentaphyllus	Phyllanthus pentaphyllus subsp. pentaphyllus	pentaphyllus	unknown	Griseb.	var	0
+#74164	Ruellia caroliniensis subsp. ciliosa var. ciliosa	Ruellia caroliniensis subsp. ciliosa	ciliosa	unknown	R. W. Long	var	0
+#74166	Silene bernardina subsp. maguirei var. maguirei	Silene bernardina subsp. maguirei	maguirei	unknown	Bocquet	var	0
+#74168	Streptopus streptopoides subsp. streptopoides var. streptopoides	Streptopus streptopoides subsp. streptopoides	streptopoides	unknown	Frye & Rigg	var	0
+#74169	Toona ciliata subsp. ciliata var. ciliata	Toona ciliata subsp. ciliata	ciliata	unknown	Roemer	var	0
+#69745	Marsilea vestiva	Marsilea	vestiva	unknown	unknown	sp	0 misspelling
+101177	Cryptantha nevadensis var. nevadensis	Cryptantha nevadensis var. nevadensis 
+#57150	Cryptantha nevadensis var. nevadensis	Cryptantha nevadensis	nevadensis	unknown	A. Nelson & P. B. Kenn.	var	0
+101176	Cryptantha muricata var. jonesii	Cryptantha muricata var. jonesii (A.Gray) I.M.Johnst.
+#57144	Cryptantha muricata var. jonesii	Cryptantha muricata	jonesii	A. Gray	I. M. Johnst.	var	0
+3726	Lasthenia californica	Lasthenia	californica	unknown	Lindl.	sp	0
+101154	Lasthenia californica	Lasthenia californica DC. ex Lindl.
+#31473	Lomatium utriculatum	Lomatium	utriculatum	Torr. & A. Gray	J. M. Coult. & Rose	sp	0
+101156	Lomatium utriculatum	Lomatium utriculatum (Nutt. ex Torr. & A. Gray) J.M. Coult. & Rose
+100454	Eremothera boothii subsp. boothii	Eremothera boothii subsp. boothii 
+100455	Eremothera boothii subsp. condensata	Eremothera boothii subsp. condensata (Munz) W.L. Wagner & Hoch
+#89261	Eremothera boothii subsp. boothii	Eremothera boothii	boothii	unknown	W. L. Wagner & Hoch	subsp	0
+#89262	Eremothera boothii subsp. condensata	Eremothera boothii	condensata	Munz	W. L. Wagner & Hoch	subsp	0
+100442	Acmispon wrangelianus	Acmispon wrangelianus (Fisch. & C.A. Mey.) D.D. Sokoloff
+#82483	Acmispon wrangelianus	Acmispon	wrangelianus	Fisch. & C. A. Mey.	D. D. Sokoloff	sp	0
+#80581	Purshia stansburiana	Purshia	stansburiana	Torr.	Henr.	sp	0
+#45272	Spirodela polyrhiza	Spirodela	polyrrhiza	L.	Schleid.	sp	0
+89144	Spirodela polyrhiza	Spirodela	polyrhiza	L.	Schleid.	sp	0
+#34053	Muehlenbeckia hastatula	Muehlenbeckia	hastatula	Sm.	I. M. Johnst.	sp	0
+80733	Muehlenbeckia hastulata	Muehlenbeckia	hastulata	Sm.	I. M. Johnst.	sp	0
+101162	Townsendia scapigera	Townsendia scapigera D.C.Eaton
+#5436	Townsendia scapigera	Townsendia	scapigera	unknown	D. C. Eaton	sp	0	
+#30549	Lepidium nitidum	Lepidium	nitidum	unknown	Nutt.	sp	0
+101373	Lepidium nitidum	Lepidium nitidum Nutt.	
+#28274	Hilaria rigida	Hilaria	rigida	Thurb.	Scribn.	sp	0	
+101150	Hilaria rigida	Hilaria rigida (Thurb.) Benth. ex Scribn.
+#24928	Eriogonum saxatile	Eriogonum	saxatile	unknown	S. Watson	sp	0
+101590	Eriogonum saxatile	Eriogonum saxatile S.Watson	
+#24286	Ephedra trifurca	Ephedra	trifurca	unknown	S. Watson	sp	0	
+101148	Ephedra trifurca	Ephedra trifurca Torr. ex S.Watson
+101702	Choritheca luteola	Choritheca luteola (Parry) Goodman NOT IN ICPN
+100887	Gymnogonum spinescens	Gymnogonum spinescens (Parry) Reveal & Ertter	NOT IN ICPN
+78538	Sidalcea malviflora var. sparsifolia	Sidalcea malviflora	sparsifolia	unknown	C. L. Hitchc.	var	0	NOT IN ICPN, MAYBE not a valid variety
+101659	Polygonum aviculare subsp. buxiforme	Polygonum aviculare subsp. buxiforme (Small) Costea & Tardif
+31559	Lotus argyraeus	Lotus	argyraeus	Greene	Greene	sp	0
+67265	Trifolium dasyphyllum var. uintense	Trifolium dasyphyllum	uintense	Rydb.	Isely	var	0
+96591	Pleopeltis fallacissima	Pleopeltis	fallacissima	Maxon	A. R. Sm. & Tejero, comb. ined.	sp	0
+37963	Phyllanthus distichus	Phyllanthus	distichus	unknown	Hook. & Arn.	sp	0
+100948	Phacelia magellanica f. virgata	Phacelia magellanica f. virgata (Greene) Dorn
+28852	Hyptis americana	Hyptis	americana	Aubl.	Urb.	sp	0
+2946	Solidago microphylla	Solidago	microphylla	Greene	Bush	sp	0
+96685	Elaphoglossum rosenstockii	Elaphoglossum	rosenstockii	unknown	Rosenst.	sp	0
+21059	Crocus vernus	Crocus	vernus	unknown	Mill.	sp	0
+101645	Psorothamnus emoryi var. emoryi	Psorothamnus emoryi (A. Gray) Rydb. var. emoryi
+101614	Geranium incanum var. multifidum	Geranium incanum var. multifidum (Sweet) Hilliard & B. L. Burtt
+64514	Prunus domestica var. insititia	Prunus domestica	insititia	L.	B. Boivin	var	1
+100466	Pentagramma triangularis subsp. rebmanii	Pentagramma triangularis subsp. rebmanii Winner & M.G. Simpson
+25114	Erysimum angustatum	Erysimum	angustatum	unknown	Greene	sp	0
+98714	Eritrichium micromeres	Eritrichium micromeres A.Gray
+57769	Dodecatheon pulchellum var. alaskanum	Dodecatheon pulchellum	alaskanum	Hultén	Reveal	var	0
+33604	Mimulus peduncularis	Mimulus	peduncularis	unknown	Benth.	sp	0
+101674	Anagallis arvensis f. azurea	Anagallis arvensis L. f. azurea Hyl.
+96721	Goniophlebium niponicum	Goniophlebium	niponicum	Mett.	Bedd.	sp	0
+96219	Asplenium setisectum	Asplenium	setisectum	unknown	Brause	sp	0
+15730	Blechnum polypodioides	Blechnum	polypodioides	Sw.	Kuhn	sp	0
+101671	Saxifraga occidentalis var. rufidula	Saxifraga occidentalis var. rufidula (Small) C.L. Hitchc.
+67653	Viola primulifolia var. oxyceras	Viola primulifolia	oxyceras	S. Watson	Jeps.	var	0 NOT PUBLISHED NAME, TROPICOS,IPNI
+88670	Wedelia pascalioides	Wedelia	pascalioides	Grisebach	B. L. Turner	sp	0
+95861	Cyathea mollis	Cyathea	mollis	unknown	Rosenst.	sp	0
+101691	Macfadyena unguis-cati	Macfadyena unguis-cati (L.) A.H. Gentry	CULT
+12451	Aletris japonica	Aletris	japonica	unknown	Houtt.	sp	0
+96254	Megalastrum lunense	Megalastrum	lunense	Christ	A.R. Sm. & R.C. Moran	sp	0
+41357	Rhynchospora tenuis	Rhynchospora	tenuis	unknown	Link	sp	0
+59365	Galium spurium var. vaillantii	Galium spurium	vaillantii	DC.	Beck	var	0
+79397	Cynanchum racemosum	Cynanchum	racemosum	unknown	Brandegee	sp	0
+67412	Triteleia grandiflora var. howellii	Triteleia grandiflora	howellii	S. Watson	Hoover	var	0
+101700	Brodiaea rosea subsp. vallicola	Brodiaea rosea Baker subsp. vallicola R.E.Preston	NOT IN ICPN
+100463	Leymus multiflorus	Leymus multiflorus (Gould) Barkworth & R.J. Atkins
+101178	Cyperus vegetus	Cyperus vegetus Willd.
+101186	Stuckenia striata	Stuckenia striata (Ruiz & Pav.) Holub
+101539	Stachys rigida subsp. rigida	Stachys rigida subsp. rigida 
+71177	Arnica chamissonis subsp. foliosa var. foliosa	Arnica chamissonis subsp. foliosa	foliosa	unknown	Maguire	var	0
+101380	Malacothrix xanti	Malacothrix xanti A. Gray
+85860	Eupatorium urticifolium	Eupatorium	urticifolium	unknown	L.	sp	0
+85862	Eupatorium urticifolium var. urticifolium	Eupatorium urticifolium	urticifolium	unknown	L.	var	0
+79133	Trifolium gymnocarpon subsp. plummerae	Trifolium gymnocarpon	plummerae	S. Watson	J. M. Gillett	subsp	0
+99376	Lupinus densiflorus var. aureus	Lupinus ensiflorus Benth. var. aureus (Kellogg) Munz
+89884	Acanthogonum polygonoides var. longispina	Acanthogonum polygonoides	longispina	unknown	Goodman	var	0
+80480	Chrysothamnus viscidiflorus var. stenophyllus	Chrysothamnus viscidiflorus	stenophyllus	A. Gray	H. M. Hall	var	0
+81371	Opuntia microdasys	Opuntia	microdasys	unknown	Lehm.	sp	0
+85318	Hedeoma nana var. californica	Hedeoma nana var. californica	unknown	W. S. Stewart	var	0 no varieties in this species, just subsp.
+85319	Hedeoma nana var. nana	Hedeoma nana	nana	unknown	Briq.	var	0
+15256	Atriplex littoralis	Atriplex	littoralis	Jacq.	Fawcett & Rendle	sp	0
+27764	Hedeoma ciliata	Hedeoma	ciliata	unknown	Benth.	sp	0
+93808	Myoporum 'Pacificum'	Myoporum	'Pacificum'	unknown	unknown	sp	0
+23276	Downingia cuspidata	Downingia	cuspidata	Greene	Jeps.	sp	0		Homonym
+29650	Juncus elliottii	Juncus	elliottii	unknown	Chapm.	sp	0
+101077	Juncus elliottii	Juncus elliottii Chapm.
+100088	Cylindropuntia ganderi subsp. ganderi	Cylindropuntia ganderi subsp. ganderi  INVLAID COMBINATION; TROPICOS
+7337	Erigeron pumilus subsp. intermedius var. gracilior	Erigeron pumilus subsp. intermedius	gracilior	unknown	Cronquist	var	0
+7320	Erigeron peregrinus subsp. peregrinus var. dawsonii	Erigeron peregrinus subsp. peregrinus	dawsonii	unknown	Greene	var	0
+7321	Erigeron peregrinus subsp. peregrinus var. peregrinus	Erigeron peregrinus subsp. peregrinus	peregrinus	Pursh	Greene	var	0
+7322	Erigeron peregrinus subsp. peregrinus var. thompsonii	Erigeron peregrinus subsp. peregrinus	thompsonii	J. W. Thompson	Cronquist	var	0
+6029	Erigeron pumilus subsp. typicus	Erigeron pumilus	typicus	unknown	Cronquist	subsp	0
+61342	Lupinus latifolius subsp. viridifolius var. barbatus	Lupinus latifolius subsp. viridifolius	barbatus	L. F. Hend.	Munz	var	0
+61343	Lupinus latifolius subsp. viridifolius var. viridifolius	Lupinus latifolius subsp. viridifolius	viridifolius	A. Heller	C. P. Sm.	var	0
+61381	Lupinus lyallii subsp. lyallii var. fruticulosus	Lupinus lyallii subsp. lyallii	fruticulosus	Greene	C. P. Sm.	var	0
+61382	Lupinus lyallii subsp. lyallii var. lyallii	Lupinus lyallii subsp. lyallii	lyallii	unknown	A. Gray	var	0
+61383	Lupinus lyallii subsp. lyallii var. macroflorus	Lupinus lyallii subsp. lyallii	macroflorus	unknown	Cox	var	0
+61384	Lupinus lyallii subsp. lyallii var. roguensis	Lupinus lyallii subsp. lyallii	roguensis	unknown	Cox	var	0
+61385	Lupinus lyallii subsp. lyallii var. villosus	Lupinus lyallii subsp. lyallii	villosus	unknown	Jeps.	var	0
+6435	Arnica chamissonis subsp. chamissonis var. chamissonis	Arnica chamissonis subsp. chamissonis	chamissonis	unknown	Less.	var	0
+6436	Arnica chamissonis subsp. chamissonis var. interior	Arnica chamissonis subsp. chamissonis	interior	unknown	Maguire	var	0
+6437	Arnica chamissonis subsp. foliosa var. andina	Arnica chamissonis subsp. foliosa	andina	Nutt.	Ediger & Barkl.	var	0
+6440	Arnica chamissonis subsp. foliosa var. bernardina	Arnica chamissonis subsp. foliosa	bernardina	Greene	Maguire	var	0
+6441	Arnica chamissonis subsp. foliosa var. incana	Arnica chamissonis subsp. foliosa	incana	A. Gray	Hultén	var	0
+6443	Arnica chamissonis subsp. foliosa var. maguirei	Arnica chamissonis subsp. foliosa	maguirei	A. Nelson	Maguire	var	0
+6476	Artemisia campestris subsp. borealis var. purshii	Artemisia campestris subsp. borealis	purshii	Hook.	Cronquist	var	0
+6478	Artemisia campestris subsp. borealis var. scouleriana	Artemisia campestris subsp. borealis	scouleriana	Hook.	Cronquist	var	0
+6479	Artemisia campestris subsp. borealis var. wormskioldii	Artemisia campestris subsp. borealis	wormskioldii	Hook.	Cronquist	var	0
+6628	Aster lanceolatus subsp. lanceolatus var. hirsuticaulis	Aster lanceolatus subsp. lanceolatus	hirsuticaulis	unknown	Semple & Chmiel.	var	0
+6629	Aster lanceolatus subsp. lanceolatus var. interior	Aster lanceolatus subsp. lanceolatus	interior	Wiegand	Semple & Chmiel.	var	0
+6632	Aster lanceolatus subsp. lanceolatus var. lanceolatus	Aster lanceolatus subsp. lanceolatus	lanceolatus	unknown	Willd.	var	0
+6637	Aster lanceolatus subsp. lanceolatus var. latifolius	Aster lanceolatus subsp. lanceolatus	latifolius	unknown	Semple & Chmiel.	var	0
+7920	Machaeranthera canescens subsp. canescens var. ambigua	Machaeranthera canescens subsp. canescens	ambigua	unknown	B. L. Turner	var	0
+7921	Machaeranthera canescens subsp. canescens var. canescens	Machaeranthera canescens subsp. canescens	canescens	Pursh	A. Gray	var	0
+7931	Machaeranthera canescens subsp. canescens var. incana	Machaeranthera canescens subsp. canescens	incana	Lindl.	A. Gray	var	0
+7933	Machaeranthera canescens subsp. canescens var. leucanthemifolia	Machaeranthera canescens subsp. canescens	leucanthemifolia	Greene	S. L. Welsh	var	0
+7934	Machaeranthera canescens subsp. canescens var. sessiliflora	Machaeranthera canescens subsp. canescens	sessiliflora	Nutt.	B. L. Turner	var	0
+7935	Machaeranthera canescens subsp. canescens var. shastensis	Machaeranthera canescens subsp. canescens	shastensis	A. Gray	B. L. Turner	var	0
+7939	Machaeranthera canescens subsp. canescens var. ziegleri	Machaeranthera canescens subsp. canescens	ziegleri	Munz	B. L. Turner	var	0
+7940	Machaeranthera canescens subsp. glabra var. aristata	Machaeranthera canescens subsp. glabra	aristata	Eastw.	B. L. Turner	var	0
+7944	Machaeranthera canescens subsp. glabra var. glabra	Machaeranthera canescens subsp. glabra	glabra	unknown	A. Gray	var	0
+7946	Machaeranthera canescens subsp. glabra var. nebraskana	Machaeranthera canescens subsp. glabra	nebraskana	unknown	B. L. Turner	var	0
+7953	Machaeranthera pinnatifida subsp. gooddingii var. gooddingii	Machaeranthera pinnatifida subsp. gooddingii	gooddingii	A. Nelson	B. L. Turner & R. L. Hartm.	var	0
+7954	Machaeranthera pinnatifida subsp. gooddingii var. paradoxa	Machaeranthera pinnatifida subsp. gooddingii	paradoxa	unknown	B. L. Turner & R. L. Hartm.	var	0
+7955	Machaeranthera pinnatifida subsp. pinnatifida var. chihuahuana	Machaeranthera pinnatifida subsp. pinnatifida	chihuahuana	unknown	B. L. Turner & R. L. Hartm.	var	0
+7956	Machaeranthera pinnatifida subsp. pinnatifida var. glaberrima	Machaeranthera pinnatifida subsp. pinnatifida	glaberrima	Rydb.	B. L. Turner & R. L. Hartm.	var	0
+7957	Machaeranthera pinnatifida subsp. pinnatifida var. pinnatifida	Machaeranthera pinnatifida subsp. pinnatifida	pinnatifida	Hook.	Shinners	var	0
+8064	Picris hieracioides subsp. hieracioides var. alpina	Picris hieracioides subsp. hieracioides	alpina	unknown	Koidzumi	var	0
+8065	Picris hieracioides subsp. hieracioides var. hieracioides	Picris hieracioides subsp. hieracioides	hieracioides	unknown	L.	var	0
+8094	Prenanthes racemosa subsp. racemosa var. pinnatifida	Prenanthes racemosa subsp. racemosa	pinnatifida	unknown	A. Gray	var	0
+8095	Prenanthes racemosa subsp. racemosa var. racemosa	Prenanthes racemosa subsp. racemosa	racemosa	unknown	Michx.	var	0
+8396	Solidago rugosa subsp. rugosa var. rugosa	Solidago rugosa subsp. rugosa	rugosa	unknown	Mill.	var	0
+8397	Solidago rugosa subsp. rugosa var. sphagnophila	Solidago rugosa subsp. rugosa	sphagnophila	unknown	Graves	var	0
+8398	Solidago rugosa subsp. rugosa var. villosa	Solidago rugosa subsp. rugosa	villosa	Pursh	Fernald	var	0
+8401	Solidago simplex subsp. randii var. gillmanii	Solidago simplex subsp. randii	gillmanii	A. Gray	Ringius	var	0
+8407	Solidago simplex subsp. randii var. racemosa	Solidago simplex subsp. randii	racemosa	Greene	Ringius	var	0
+8410	Solidago simplex subsp. randii var. randii	Solidago simplex subsp. randii	randii	Porter	Kartesz & Gandhi	var	0
+8411	Solidago simplex subsp. simplex var. chlorolepis	Solidago simplex subsp. simplex	chlorolepis	Fernald	Ringius	var	0
+8413	Solidago simplex subsp. simplex var. nana	Solidago simplex subsp. simplex	nana	A. Gray	Ringius	var	0
+8417	Solidago simplex subsp. simplex var. simplex	Solidago simplex subsp. simplex	simplex	unknown	Kunth	var	0
+8481	Tetramolopium arenarium subsp. arenarium var. arenarium	Tetramolopium arenarium subsp. arenarium	arenarium	A. Gray	Hbd.	var	0
+8482	Tetramolopium arenarium subsp. arenarium var. confertum	Tetramolopium arenarium subsp. arenarium	confertum	unknown	Sherff	var	0
+8484	Tetramolopium consanguineum subsp. leptophyllum var. kauense	Tetramolopium consanguineum subsp. leptophyllum	kauense	unknown	Lowrey	var	0
+8485	Tetramolopium consanguineum subsp. leptophyllum var. leptophyllum	Tetramolopium consanguineum subsp. leptophyllum	leptophyllum	unknown	Sherff	var	0
+8489	Tetramolopium humile subsp. humile var. humile	Tetramolopium humile subsp. humile	humile	A. Gray	Hbd.	var	0
+8491	Tetramolopium humile subsp. humile var. sublaeve	Tetramolopium humile subsp. humile	sublaeve	unknown	Sherff	var	0
+8585	Xanthisma texanum subsp. texanum var. orientale	Xanthisma texanum subsp. texanum	orientale	unknown	Semple	var	0
+8586	Xanthisma texanum subsp. texanum var. texanum	Xanthisma texanum subsp. texanum	texanum	unknown	DC.	var	0
+53625	Agastache pallidiflora subsp. neomexicana var. havardii	Agastache pallidiflora subsp. neomexicana	havardii	A. Gray	R. W. Sanders	var	0
+53626	Agastache pallidiflora subsp. neomexicana var. neomexicana	Agastache pallidiflora subsp. neomexicana	neomexicana	Briq.	R. W. Sanders	var	0
+53627	Agastache pallidiflora subsp. pallidiflora var. gilensis	Agastache pallidiflora subsp. pallidiflora	gilensis	unknown	R. W. Sanders	var	0
+53628	Agastache pallidiflora subsp. pallidiflora var. greenei	Agastache pallidiflora subsp. pallidiflora	greenei	Briq.	R. W. Sanders	var	0
+53629	Agastache pallidiflora subsp. pallidiflora var. pallidiflora	Agastache pallidiflora subsp. pallidiflora	pallidiflora	A. Heller	Rydb.	var	0
+54106	Apocynum androsaemifolium subsp. androsaemifolium var. androsaemifolium	Apocynum androsaemifolium subsp. androsaemifolium	androsaemifolium	unknown	L.	var	0
+54107	Apocynum androsaemifolium subsp. androsaemifolium var. griseum	Apocynum androsaemifolium subsp. androsaemifolium	griseum	Greene	Bég. & Bel.	var	0
+54108	Apocynum androsaemifolium subsp. androsaemifolium var. incanum	Apocynum androsaemifolium subsp. androsaemifolium	incanum	unknown	A. DC.	var	0
+54109	Apocynum androsaemifolium subsp. pumilum var. pumilum	Apocynum androsaemifolium subsp. pumilum	pumilum	unknown	A. Gray	var	0
+54110	Apocynum androsaemifolium subsp. pumilum var. tomentellum	Apocynum androsaemifolium subsp. pumilum	tomentellum	Greene	B. Boivin	var	0
+54111	Apocynum androsaemifolium subsp. pumilum var. woodsonii	Apocynum androsaemifolium subsp. pumilum	woodsonii	unknown	B. Boivin	var	0
+54363	Arenaria lanuginosa subsp. lanuginosa var. lanuginosa	Arenaria lanuginosa subsp. lanuginosa	lanuginosa	Michx.	Rohrb.	var	0
+54364	Arenaria lanuginosa subsp. lanuginosa var. longipedunculata	Arenaria lanuginosa subsp. lanuginosa	longipedunculata	unknown	Duncan	var	0
+54371	Arenaria macradenia subsp. macradenia var. arcuifolia	Arenaria macradenia subsp. macradenia	arcuifolia	unknown	Maguire	var	0
+54372	Arenaria macradenia subsp. macradenia var. kuschei	Arenaria macradenia subsp. macradenia	kuschei	Eastw.	Maguire	var	0
+54373	Arenaria macradenia subsp. macradenia var. macradenia	Arenaria macradenia subsp. macradenia	macradenia	unknown	S. Watson	var	0
+54994	Atriplex argentea subsp. argentea var. argentea	Atriplex argentea subsp. argentea	argentea	unknown	Nutt.	var	0
+54995	Atriplex argentea subsp. argentea var. caput-medusae	Atriplex argentea subsp. argentea	caput-medusae	Eastw.	Fosberg	var	0
+54996	Atriplex argentea subsp. argentea var. hillmanii	Atriplex argentea subsp. argentea	hillmanii	unknown	M. E. Jones	var	0
+55325	Bromus inermis subsp. inermis var. divaricatus	Bromus inermis subsp. inermis	divaricatus	unknown	Rohlena	var	0
+55326	Bromus inermis subsp. inermis var. inermis	Bromus inermis subsp. inermis	inermis	unknown	Leyss.	var	0
+55327	Bromus inermis subsp. pumpellianus var. arcticus	Bromus inermis subsp. pumpellianus	arcticus	Scribn. & Merr.	Wagnon	var	0
+55328	Bromus inermis subsp. pumpellianus var. pumpellianus	Bromus inermis subsp. pumpellianus	pumpellianus	Scribn.	C. L. Hitchc.	var	0
+55329	Bromus inermis subsp. pumpellianus var. purpurascens	Bromus inermis subsp. pumpellianus	purpurascens	Hook.	Wagnon	var	0
+55382	Cakile edentula subsp. edentula var. edentula	Cakile edentula subsp. edentula	edentula	Bigelow	Hook.	var	0
+55383	Cakile edentula subsp. edentula var. lacustris	Cakile edentula subsp. edentula	lacustris	unknown	Fernald	var	0
+55425	Calamagrostis stricta subsp. stricta var. borealis	Calamagrostis stricta subsp. stricta	borealis	Laestad.	Hartm.	var	0
+55426	Calamagrostis stricta subsp. stricta var. stricta	Calamagrostis stricta subsp. stricta	stricta	Timm	Koeler	var	0
+55500	Caltha leptosepala subsp. leptosepala var. leptosepala	Caltha leptosepala subsp. leptosepala	leptosepala	unknown	DC.	var	0
+55501	Caltha leptosepala subsp. leptosepala var. sulfurea	Caltha leptosepala subsp. leptosepala	sulfurea	unknown	C. L. Hitchc.	var	0
+55530	Calystegia occidentalis subsp. occidentalis var. occidentalis	Calystegia occidentalis subsp. occidentalis	occidentalis	A. Gray	Brummitt	var	0
+55562	Campanula gieseckiana subsp. gieseckiana var. arctica	Campanula gieseckiana subsp. gieseckiana	arctica	Lange	Böcher	var	0
+55563	Campanula gieseckiana subsp. gieseckiana var. gieseckiana	Campanula gieseckiana subsp. gieseckiana	gieseckiana	unknown	Schult.	var	0
+55575	Cannabis sativa subsp. sativa var. sativa	Cannabis sativa subsp. sativa	sativa	unknown	L.	var	0
+55576	Cannabis sativa subsp. sativa var. spontanea	Cannabis sativa subsp. sativa	spontanea	unknown	Vavilov	var	0
+55726	Carex glareosa subsp. glareosa var. amphigena	Carex glareosa subsp. glareosa	amphigena	unknown	Fernald	var	0
+55727	Carex glareosa subsp. glareosa var. glareosa	Carex glareosa subsp. glareosa	glareosa	unknown	Wahlenb.	var	0
+55794	Carex marina subsp. pseudolagopina var. pseudolagopina	Carex marina subsp. pseudolagopina	pseudolagopina	Sørensen	Böcher	var	0
+55795	Carex marina subsp. pseudolagopina var. solida	Carex marina subsp. pseudolagopina	solida	Sørensen	Böcher	var	0
+55942	Carex viridula subsp. brachyrrhyncha var. elatior	Carex viridula subsp. brachyrrhyncha	elatior	Schltdl.	Crins	var	0
+55943	Carex viridula subsp. brachyrrhyncha var. saxilittoralis	Carex viridula subsp. brachyrrhyncha	saxilittoralis	A. Robertson	Crins	var	0
+56161	Cerastium alpinum subsp. alpinum var. alpinum	Cerastium alpinum subsp. alpinum	alpinum	unknown	L.	var	0
+56162	Cerastium alpinum subsp. alpinum var. glanduliferum	Cerastium alpinum subsp. alpinum	glanduliferum	unknown	W. D. J. Koch	var	0
+56163	Cerastium alpinum subsp. lanatum var. lanatum	Cerastium alpinum subsp. lanatum	lanatum	Lam.	Hegetschw.	var	0
+56164	Cerastium alpinum subsp. lanatum var. robustum	Cerastium alpinum subsp. lanatum	robustum	unknown	Hultén	var	0
+56165	Cerastium alpinum subsp. lanatum var. strigosum	Cerastium alpinum subsp. lanatum	strigosum	unknown	Hultén	var	0
+56181	Cerastium arvense subsp. velutinum var. velutinum	Cerastium arvense subsp. velutinum	velutinum	Raf.	Britton	var	0
+56182	Cerastium arvense subsp. velutinum var. villosum	Cerastium arvense subsp. velutinum	villosum	Darl.	Hollick & Britt.	var	0
+56185	Cerastium beeringianum subsp. beeringianum var. beeringianum	Cerastium beeringianum subsp. beeringianum	beeringianum	unknown	Cham. & Schltdlvar	0
+56186	Cerastium beeringianum subsp. beeringianum var. glabratum	Cerastium beeringianum subsp. beeringianum	glabratum	unknown	Hultén	var	0
+56187	Cerastium beeringianum subsp. beeringianum var. grandiflorum	Cerastium beeringianum subsp. beeringianum	grandiflorum	Fenzl	Hultén	var	0
+56263	Chamaecrista nictitans subsp. nictitans var. aspera	Chamaecrista nictitans subsp. nictitans	aspera	Elliott	H. S. Irwin & Barneby	var	0
+56264	Chamaecrista nictitans subsp. nictitans var. diffusa	Chamaecrista nictitans subsp. nictitans	diffusa	DC.	H. S. Irwin & Barneby	var	0
+56265	Chamaecrista nictitans subsp. nictitans var. jaliscensis	Chamaecrista nictitans subsp. nictitans	jaliscensis	Greenm.	H. S. Irwin & Barneby	var	0
+56266	Chamaecrista nictitans subsp. nictitans var. leptadenia	Chamaecrista nictitans subsp. nictitans	leptadenia	Greenm.	Gandhi & Hatch	var	0
+56267	Chamaecrista nictitans subsp. nictitans var. nictitans	Chamaecrista nictitans subsp. nictitans	nictitans	L.	Moench	var	0
+56268	Chamaecrista nictitans subsp. patellaria var. glabrata	Chamaecrista nictitans subsp. patellaria	glabrata	Vogel	H. S. Irwin & Barneby	var	0
+56269	Chamaecrista nictitans subsp. patellaria var. patellaria	Chamaecrista nictitans subsp. patellaria	patellaria	Colladon	Kartesz & Gandhi	var	0
+56306	Chamaesyce deltoidea subsp. deltoidea var. adhaerens	Chamaesyce deltoidea subsp. deltoidea	adhaerens	Small	Burch	var	0
+56307	Chamaesyce deltoidea subsp. deltoidea var. deltoidea	Chamaesyce deltoidea subsp. deltoidea	deltoidea	Chapm.	Small	var	0
+56611	Claytonia perfoliata subsp. perfoliata var. nubigena	Claytonia perfoliata subsp. perfoliata	nubigena	Greene	Poelln.	var	0
+56612	Claytonia perfoliata subsp. perfoliata var. perfoliata	Claytonia perfoliata subsp. perfoliata	perfoliata	unknown	Willd.	var	0
+56613	Claytonia perfoliata subsp. perfoliata var. utahensis	Claytonia perfoliata subsp. perfoliata	utahensis	Rydb.	Poelln.	var	0
+57462	Dalea versicolor subsp. versicolor var. sessilis	Dalea versicolor subsp. versicolor	sessilis	A. Gray	Barneby	var	0
+57824	Draba arctica subsp. ostenfeldii var. ostenfeldii	Draba arctica subsp. ostenfeldii	ostenfeldii	Ekman	Kartesz & Gandhi	var	0
+57825	Draba arctica subsp. ostenfeldii var. ovibovina	Draba arctica subsp. ostenfeldii	ovibovina	unknown	Ekman	var	0
+57943	Dryas octopetala subsp. octopetala var. angustifolia	Dryas octopetala subsp. octopetala	angustifolia	unknown	C. L. Hitchc.	var	0
+57944	Dryas octopetala subsp. octopetala var. kamtschatica	Dryas octopetala subsp. octopetala	kamtschatica	Juz.	Hultén	var	0
+57945	Dryas octopetala subsp. octopetala var. octopetala	Dryas octopetala subsp. octopetala	octopetala	unknown	L.	var	0
+57946	Dryas octopetala subsp. punctata var. glabrata	Dryas octopetala subsp. punctata	glabrata	unknown	Hultén	var	0
+57947	Dryas octopetala subsp. punctata var. viscida	Dryas octopetala subsp. punctata	viscida	unknown	Hultén	var	0
+58734	Eriogonum strictum subsp. proliferum var. anserinum	Eriogonum strictum subsp. proliferum	anserinum	Greene	R. J. Davis	var	0
+58735	Eriogonum strictum subsp. proliferum var. glabrum	Eriogonum strictum subsp. proliferum	glabrum	unknown	C. L. Hitchc.	var	0
+58736	Eriogonum strictum subsp. proliferum var. greenei	Eriogonum strictum subsp. proliferum	greenei	A. Gray	Reveal	var	0
+58737	Eriogonum strictum subsp. proliferum var. proliferum	Eriogonum strictum subsp. proliferum	proliferum	Torr. & A. Gray	C. L. Hitchc.	var	0
+58810	Eriophorum angustifolium subsp. subarcticum var. coloratum	Eriophorum angustifolium subsp. subarcticum	coloratum	unknown	Hultén	var	0
+58811	Eriophorum angustifolium subsp. subarcticum var. majus	Eriophorum angustifolium subsp. subarcticum	majus	unknown	F. W. Schultz	var	0
+59168	Festuca rubra subsp. secunda var. mediana	Festuca rubra subsp. secunda	mediana	unknown	Pavlick	var	0
+59169	Festuca rubra subsp. secunda var. secunda	Festuca rubra subsp. secunda	secunda	J. Presl	Scribn.	var	0
+59571	Githopsis pulchella subsp. pulchella var. glabra	Githopsis pulchella subsp. pulchella	glabra	Jeps.	Morin	var	0
+59572	Githopsis pulchella subsp. pulchella var. pulchella	Githopsis pulchella subsp. pulchella	pulchella	unknown	Vatke	var	0
+59893	Hedysarum boreale subsp. boreale var. boreale	Hedysarum boreale subsp. boreale	boreale	unknown	Nutt.	var	0
+59894	Hedysarum boreale subsp. boreale var. gremiale	Hedysarum boreale subsp. boreale	gremiale	Rollins	Northstrom & Welsh	var	0
+60200	Ipomopsis spicata subsp. orchidacea var. cephaloidea	Ipomopsis spicata subsp. orchidacea	cephaloidea	Rydb.	Wilken & Hartman	var	0
+60201	Ipomopsis spicata subsp. orchidacea var. orchidacea	Ipomopsis spicata subsp. orchidacea	orchidacea	Brand	Dorn	var	0
+60338	Juncus castaneus subsp. castaneus var. castaneus	Juncus castaneus subsp. castaneus	castaneus	unknown	Sm.	var	0
+60339	Juncus castaneus subsp. castaneus var. pallidus	Juncus castaneus subsp. castaneus	pallidus	unknown	Buchenau	var	0
+60627	Lathyrus nevadensis subsp. lanceolatus var. nuttallii	Lathyrus nevadensis subsp. lanceolatus	nuttallii	S. Watson	C. L. Hitchc.	var	0
+60628	Lathyrus nevadensis subsp. lanceolatus var. parkeri	Lathyrus nevadensis subsp. lanceolatus	parkeri	H. St. John	C. L. Hitchc.	var	0
+60629	Lathyrus nevadensis subsp. lanceolatus var. pilosellus	Lathyrus nevadensis subsp. lanceolatus	pilosellus	M. Peck	C. L. Hitchc.	var	0
+60630	Lathyrus nevadensis subsp. lanceolatus var. puniceus	Lathyrus nevadensis subsp. lanceolatus	puniceus	unknown	C. L. Hitchc.	var	0
+60641	Lathyrus polymorphus subsp. polymorphus var. hapemanii	Lathyrus polymorphus subsp. polymorphus	hapemanii	A. Nelson	C. L. Hitchc.	var	0
+60642	Lathyrus polymorphus subsp. polymorphus var. polymorphus	Lathyrus polymorphus subsp. polymorphus	polymorphus	unknown	Nutt.	var	0
+60791	Lesquerella kingii subsp. kingii var. cobrensis	Lesquerella kingii subsp. kingii	cobrensis	unknown	Rollins & E. A. Shaw	var	0
+60792	Lesquerella kingii subsp. kingii var. kingii	Lesquerella kingii subsp. kingii	kingii	unknown	S. Watson	var	0
+60793	Lesquerella lasiocarpa subsp. berlandieri var. berlandieri	Lesquerella lasiocarpa subsp. berlandieri	berlandieri	A. Gray	Payson	var	0
+60794	Lesquerella lasiocarpa subsp. berlandieri var. hispida	Lesquerella lasiocarpa subsp. berlandieri	hispida	S. Watson	Rollins & E. A. Shaw	var	0
+60971	Lobelia cardinalis subsp. cardinalis var. cardinalis	Lobelia cardinalis subsp. cardinalis	cardinalis	unknown	L.	var	0
+60972	Lobelia cardinalis subsp. cardinalis var. meridionalis	Lobelia cardinalis subsp. cardinalis	meridionalis	unknown	Bowden	var	0
+60973	Lobelia cardinalis subsp. graminea var. graminea	Lobelia cardinalis subsp. graminea	graminea	Lam.	McVaugh	var	0
+60974	Lobelia cardinalis subsp. graminea var. phyllostachya	Lobelia cardinalis subsp. graminea	phyllostachya	Engelm.	McVaugh	var	0
+60975	Lobelia cardinalis subsp. graminea var. propinqua	Lobelia cardinalis subsp. graminea	propinqua	Paxton unknown	Bowden	var	0
+61202	Lupinus arbustus subsp. arbustus var. arbustus	Lupinus arbustus subsp. arbustus	arbustus	unknown	Lindl.	var	0
+61203	Lupinus arbustus subsp. arbustus var. montanus	Lupinus arbustus subsp. arbustus	montanus	Howell	D. B. Dunn	var	0
+61227	Lupinus argenteus subsp. argenteus var. argenteus	Lupinus argenteus subsp. argenteus	argenteus	unknown	Pursh	var	0
+61228	Lupinus argenteus subsp. argenteus var. laxiflorus	Lupinus argenteus subsp. argenteus	laxiflorus	Lindl.	Dorn	var	0
+61236	Lupinus arizonicus subsp. arizonicus var. arizonicus	Lupinus arizonicus subsp. arizonicus	arizonicus	S. Watson	S. Watson	var	0
+61237	Lupinus arizonicus subsp. arizonicus var. barbatulus	Lupinus arizonicus subsp. arizonicus	barbatulus	C. P. Sm.	I. M. Johnst.	var	0
+61421	Lupinus parviflorus subsp. myrianthus var. fulvomaculatus	Lupinus parviflorus subsp. myrianthus	fulvomaculatus	Payson	Harmon	var	0
+61422	Lupinus parviflorus subsp. myrianthus var. myrianthus	Lupinus parviflorus subsp. myrianthus	myrianthus	Greene	Harmon	var	0
+61424	Lupinus perennis subsp. perennis var. occidentalis	Lupinus perennis subsp. perennis	occidentalis	unknown	S. Watson	var	0
+61425	Lupinus perennis subsp. perennis var. perennis	Lupinus perennis subsp. perennis	perennis	unknown	L.	var	0
+61432	Lupinus polyphyllus subsp. polyphyllus var. grandifolius	Lupinus polyphyllus subsp. polyphyllus	grandifolius	J. Agardh	Torr. & A. Grayvar	0
+61433	Lupinus polyphyllus subsp. polyphyllus var. pallidipes	Lupinus polyphyllus subsp. polyphyllus	pallidipes	A. Heller	C. P. Sm.	var	0
+61434	Lupinus polyphyllus subsp. polyphyllus var. polyphyllus	Lupinus polyphyllus subsp. polyphyllus	polyphyllus	unknown	Lindl.	var	0
+61459	Lupinus sericeus subsp. sericeus var. egglestonianus	Lupinus sericeus subsp. sericeus	egglestonianus	unknown	C. P. Sm.	var	0
+61460	Lupinus sericeus subsp. sericeus var. flexuosus	Lupinus sericeus subsp. sericeus	flexuosus	J. Agardh	C. P. Sm.	var	0
+61461	Lupinus sericeus subsp. sericeus var. maximus	Lupinus sericeus subsp. sericeus	maximus	unknown	Fleak & D. Dunn	var	0
+61462	Lupinus sericeus subsp. sericeus var. sericeus	Lupinus sericeus subsp. sericeus	sericeus	unknown	Pursh	var	0
+61533	Luzula multiflora subsp. multiflora var. contracta	Luzula multiflora subsp. multiflora	contracta	unknown	Kartesz & Gandhi	var	0
+61534	Luzula multiflora subsp. multiflora var. kjellmanioides	Luzula multiflora subsp. multiflora	kjellmanioides	unknown	Taylor & MacBryde	var	0
+61535	Luzula multiflora subsp. multiflora var. kobayasii	Luzula multiflora subsp. multiflora	kobayasii	Satake	Samuelsson	var	0
+61536	Luzula multiflora subsp. multiflora var. multiflora	Luzula multiflora subsp. multiflora	multiflora	Ehrh.	Lej.	var	0
+62107	Monarda citriodora subsp. citriodora var. attenuata	Monarda citriodora subsp. citriodora	attenuata	unknown	Scora	var	0
+62108	Monarda citriodora subsp. citriodora var. citriodora	Monarda citriodora subsp. citriodora	citriodora	unknown	Lag.	var	0
+62109	Monarda citriodora subsp. citriodora var. parva	Monarda citriodora subsp. citriodora	parva	unknown	Scora	var	0
+62112	Monarda fistulosa subsp. fistulosa var. fistulosa	Monarda fistulosa subsp. fistulosa	fistulosa	unknown	L.	var	0
+62113	Monarda fistulosa subsp. fistulosa var. longepetiolata	Monarda fistulosa subsp. fistulosa	longepetiolata	unknown	B. Boivin	var	0
+62114	Monarda fistulosa subsp. fistulosa var. maheuxii	Monarda fistulosa subsp. fistulosa	maheuxii	unknown	B. Boivin	var	0
+62115	Monarda fistulosa subsp. fistulosa var. menthifolia	Monarda fistulosa subsp. fistulosa	menthifolia	Graham	Fernald	var	0
+62116	Monarda fistulosa subsp. fistulosa var. mollis	Monarda fistulosa subsp. fistulosa	mollis	L.	Benth.	var	0
+62117	Monarda fistulosa subsp. fistulosa var. rubra	Monarda fistulosa subsp. fistulosa	rubra	unknown	A. Gray	var	0
+62118	Monarda fistulosa subsp. fistulosa var. stipitatoglandulosa	Monarda fistulosa subsp. fistulosa	stipitatoglandulosa	Waterf.	Scora	var	0
+62123	Monarda punctata subsp. punctata var. arkansana	Monarda punctata subsp. punctata	arkansana	E. M. McClint. & Epling	Shinners	var	0
+62124	Monarda punctata subsp. punctata var. coryi	Monarda punctata subsp. punctata	coryi	E. M. McClint. & Epling	Shinners	var	0
+62125	Monarda punctata subsp. punctata var. intermedia	Monarda punctata subsp. punctata	intermedia	E. M. McClint. & Epling	Waterf.	var	0
+62127	Monarda punctata subsp. punctata var. occidentalis	Monarda punctata subsp. punctata	occidentalis	Epling	E. J. Palmer & Steyerm.	var	0
+62128	Monarda punctata subsp. punctata var. punctata	Monarda punctata subsp. punctata	punctata	unknown	L.	var	0
+62129	Monarda punctata subsp. punctata var. stanfieldii	Monarda punctata subsp. punctata	stanfieldii	Small	Cory	var	0
+62130	Monarda punctata subsp. punctata var. villicaulis	Monarda punctata subsp. punctata	villicaulis	Pennell	E. J. Palmer & Steyerm.	var	0
+62131	Monarda punctata subsp. punctata var. viridissima	Monarda punctata subsp. punctata	viridissima	Correll	Scora	var	0
+63107	Pedicularis canadensis subsp. canadensis var. canadensis	Pedicularis canadensis subsp. canadensis	canadensis	unknown	L.	var	0
+63108	Pedicularis canadensis subsp. canadensis var. dobbsii	Pedicularis canadensis subsp. canadensis	dobbsii	unknown	Fernald	var	0
+63632	Phyllanthus pentaphyllus subsp. pentaphyllus var. floridanus	Phyllanthus pentaphyllus subsp. pentaphyllus	floridanus	unknown	G. L. Webster	var	0
+64407	Potentilla hookeriana subsp. hookeriana var. furcata	Potentilla hookeriana subsp. hookeriana	furcata	Porsild	Hultén	var	0
+64408	Potentilla hookeriana subsp. hookeriana var. hookeriana	Potentilla hookeriana subsp. hookeriana	hookeriana	unknown	Lehm.	var	0
+64409	Potentilla hookeriana subsp. hookeriana var. umanakensis	Potentilla hookeriana subsp. hookeriana	umanakensis	unknown	Hultén	var	0
+64601	Psychotria hexandra subsp. hexandra var. hexandra	Psychotria hexandra subsp. hexandra	hexandra	unknown	Mann	var	0
+64602	Psychotria hexandra subsp. hexandra var. hirta	Psychotria hexandra subsp. hexandra	hirta	unknown	Wawra	var	0
+64603	Psychotria hexandra subsp. hexandra var. kealiae	Psychotria hexandra subsp. hexandra	kealiae	unknown	Fosberg	var	0
+64604	Psychotria hexandra subsp. oahuensis var. hosakana	Psychotria hexandra subsp. oahuensis	hosakana	unknown	Fosberg	var	0
+64605	Psychotria hexandra subsp. oahuensis var. oahuensis	Psychotria hexandra subsp. oahuensis	oahuensis	unknown	O. Deg. & Fosberg	var	0
+64606	Psychotria hexandra subsp. oahuensis var. rockii	Psychotria hexandra subsp. oahuensis	rockii	unknown	Fosberg	var	0
+64614	Ptelea trifoliata subsp. angustifolia var. angustifolia	Ptelea trifoliata subsp. angustifolia	angustifolia	Benth.	M. E. Jones	var	0
+64615	Ptelea trifoliata subsp. angustifolia var. persicifolia	Ptelea trifoliata subsp. angustifolia	persicifolia	Greene	V. L. Bailey	var	0
+64616	Ptelea trifoliata subsp. pallida var. cognata	Ptelea trifoliata subsp. pallida	cognata	Greene	Kearney & Peebles	var	0
+64617	Ptelea trifoliata subsp. pallida var. confinis	Ptelea trifoliata subsp. pallida	confinis	Greene	V. L. Bailey	var	0
+64618	Ptelea trifoliata subsp. pallida var. lutescens	Ptelea trifoliata subsp. pallida	lutescens	Greene	V. L. Bailey	var	0
+64619	Ptelea trifoliata subsp. pallida var. pallida	Ptelea trifoliata subsp. pallida	pallida	Greene	V. L. Bailey	var	0
+64620	Ptelea trifoliata subsp. trifoliata var. mollis	Ptelea trifoliata subsp. trifoliata	mollis	unknown	Torr. & A. Gray	var	0
+64621	Ptelea trifoliata subsp. trifoliata var. trifoliata	Ptelea trifoliata subsp. trifoliata	trifoliata	unknown	L.	var	0
+65308	Rosa stellata subsp. mirifica var. erlansoniae	Rosa stellata subsp. mirifica	erlansoniae	unknown	W. H. Lewis	var	0
+65309	Rosa stellata subsp. mirifica var. mirifica	Rosa stellata subsp. mirifica	mirifica	Greene	Cockerell	var	0
+65413	Rubus ursinus subsp. ursinus var. ursinus	Rubus ursinus subsp. ursinus	ursinus	unknown	Cham. & Schltdl.	var	0
+65430	Ruellia caroliniensis subsp. caroliniensis var. caroliniensis	Ruellia caroliniensis subsp. caroliniensis	caroliniensis	J. F. Gmel.	Steud.	var	0
+65431	Ruellia caroliniensis subsp. caroliniensis var. serrulata	Ruellia caroliniensis subsp. caroliniensis	serrulata	unknown	Tharp & Barkl.	var	0
+65432	Ruellia caroliniensis subsp. caroliniensis var. succulenta	Ruellia caroliniensis subsp. caroliniensis	succulenta	Small	R. W. Long	var	0
+65433	Ruellia caroliniensis subsp. ciliosa var. cinerascens	Ruellia caroliniensis subsp. ciliosa	cinerascens	Fernald	Kartesz & Gandhi	var	0
+65434	Ruellia caroliniensis subsp. ciliosa var. heteromorpha	Ruellia caroliniensis subsp. ciliosa	heteromorpha	Fernald	R. W. Long	var	0
+65607	Salix brachycarpa subsp. brachycarpa var. brachycarpa	Salix brachycarpa subsp. brachycarpa	brachycarpa	unknown	Nutt.	var	0
+65608	Salix brachycarpa subsp. brachycarpa var. fullertonensis	Salix brachycarpa subsp. brachycarpa	fullertonensis	C. K. Schneid.	Argus	var	0
+65609	Salix brachycarpa subsp. brachycarpa var. psammophila	Salix brachycarpa subsp. brachycarpa	psammophila	unknown	Raup	var	0
+65704	Salix glauca subsp. glauca var. acutifolia	Salix glauca subsp. glauca	acutifolia	Hook.	C. K. Schneid.	var	0
+65705	Salix glauca subsp. glauca var. glauca	Salix glauca subsp. glauca	glauca	unknown	L.	var	0
+65706	Salix glauca subsp. glauca var. villosa	Salix glauca subsp. glauca	villosa	Hook.	Andersson	var	0
+66030	Saxifraga cespitosa subsp. cespitosa var. cespitosa	Saxifraga cespitosa subsp. cespitosa	cespitosa	unknown	L.	var	0
+66031	Saxifraga cespitosa subsp. cespitosa var. emarginata	Saxifraga cespitosa subsp. cespitosa	emarginata	Small	Rosend.	var	0
+66378	Silene bernardina subsp. maguirei var. rigidula	Silene bernardina subsp. maguirei	rigidula	B. L. Rob.	Tiehm	var	0
+66379	Silene bernardina subsp. maguirei var. sierrae	Silene bernardina subsp. maguirei	sierrae	C. L. Hitchc. & Maguire	Bocquet	var	0
+66400	Silene menziesii subsp. menziesii var. menziesii	Silene menziesii subsp. menziesii	menziesii	unknown	Hook.	var	0
+66401	Silene menziesii subsp. menziesii var. viscosa	Silene menziesii subsp. menziesii	viscosa	Greene	C. L. Hitchc. & Maguire	var	0
+66416	Silene scouleri subsp. pringlei var. concolor	Silene scouleri subsp. pringlei	concolor	Greene	C. L. Hitchc. & Maguire	var	0
+66417	Silene scouleri subsp. pringlei var. eglandulosa	Silene scouleri subsp. pringlei	eglandulosa	unknown	C. L. Hitchc. & Maguire	var	0
+66418	Silene scouleri subsp. pringlei var. grisea	Silene scouleri subsp. pringlei	grisea	unknown	C. L. Hitchc. & Maguire	var	0
+66419	Silene scouleri subsp. pringlei var. leptophylla	Silene scouleri subsp. pringlei	leptophylla	unknown	C. L. Hitchc. & Maguire	var	0
+66420	Silene scouleri subsp. pringlei var. pringlei	Silene scouleri subsp. pringlei	pringlei	S. Watson	Kartesz & Gandhi	var	0
+66421	Silene scouleri subsp. scouleri var. pacifica	Silene scouleri subsp. scouleri	pacifica	Eastw.	C. L. Hitchc.	var	0
+66422	Silene scouleri subsp. scouleri var. scouleri	Silene scouleri subsp. scouleri	scouleri	unknown	Hook.	var	0
+66550	Solidago simplex subsp. randii var. monticola	Solidago simplex subsp. randii	monticola	Porter	Ringius	var	0
+66551	Solidago simplex subsp. randii var. ontarioensis	Solidago simplex subsp. randii	ontarioensis	Ringius	Ringius	var	0
+66834	Stipa nelsonii subsp. nelsonii var. longiaristata	Stipa nelsonii subsp. nelsonii	longiaristata	unknown	Barkworth & Maze	var	0
+66835	Stipa nelsonii subsp. nelsonii var. nelsonii	Stipa nelsonii subsp. nelsonii	nelsonii	unknown	Scribn.	var	0
+66875	Streptopus streptopoides subsp. streptopoides var. brevipes	Streptopus streptopoides subsp. streptopoides	brevipes	Baker	Fassett	var	0
+67194	Toona ciliata subsp. ciliata var. australis	Toona ciliata subsp. ciliata	australis	F. Muell.	C. DC.	var	0
+74845	Atriplex patula subsp. patula var. japonica	Atriplex patula subsp. patula	japonica	unknown	unknown	var	0
+74846	Atriplex patula subsp. patula var. patula	Atriplex patula subsp. patula	patula	unknown	L.	var	0
+74848	Erigeron chrysopsidis subsp. chrysopsidis var. brevifolius	Erigeron chrysopsidis subsp. chrysopsidis	brevifolius	unknown	unknown	var	0
+74849	Erigeron chrysopsidis subsp. chrysopsidis var. chrysopsidis	Erigeron chrysopsidis subsp. chrysopsidis	chrysopsidis	unknown	A. Gray	var	0
+74851	Erigeron peregrinus subsp. callianthemus var. hirsuta	Erigeron peregrinus subsp. callianthemus	hirsuta	unknown	unknown	var	0
+74854	Sarracenia purpurea subsp. purpurea var. burkii	Sarracenia purpurea subsp. purpurea	burkii	unknown	unknown	var	0
+74855	Sarracenia purpurea subsp. purpurea var. purpurea	Sarracenia purpurea subsp. purpurea	purpurea	unknown	L.	var	0
+55644	Carex atlantica var. capillaceae		Carex atlantica	capillaceae		L. H. Bailey	Cronquist	var	0
+55644	Carex atlantica var. capillaceae	Carex atlantica	capillaceae	L. H. Bailey	Cronquist	var	0
+98449	Elymus farctus subsp. boreo-atlanticus	Elymus farctus	boreo-atlanticus	Simonet & Guin.	Melderis	subsp	0
+98301	Cheilanthes parishiorum	Cheilanthes	parishiorum	unknown	Davenp. 	sp	0
+53938	Amsinckia spectabilis var. nicolai	Amsinckia spectabilis	nicolai	Jeps. 	Munz	var	0
+82580	Trifolium virescens subsp. boreale	Trifolium virescens	boreale	unknown	Rand. Morgan	subsp	0 TAXON not described	
+82581	Trifolium virescens subsp. virescens	Trifolium virescens	virescens	unknown	Greene	subsp	0	TAXON not described
+94431	Larrea divaricata subsp. arenaria	Larrea divaricata	arenaria	L. D. Benson	Felger	subsp	0 error
+50131	Deschampsia cespitosa subsp. genuina	Deschampsia cespitosa	genuina	Rchb. 	Volkart	subsp	0	
+75953	Platanthera unalascensis var. unalascensis	Platanthera unalascensis	unalascensis	unknown	Kurtz	var	0	TAXON not described
+63994	Platanthera unalascensis var. maritima	Platanthera unalascensis	maritima	Greene	Correll	var	0	TAXON not described in this genus, this is Habenaria
+48811	Yucca californica	Yucca	californica	unknown	Lemmon	sp	0
+48797	Yucca californica	Yucca	californica	unknown	Baker	sp	0
+100452	Cyperus esculentus var. hermannii	Cyperus esculentus var. hermannii (Buckley) Britton
+49837	Chamaesyce serpyllifolia subsp. hirtella	Chamaesyce serpyllifolia	hirtella	S. Watson	Koutnik	subsp	0
+50506	Euphorbia serpyllifolia subsp. hirtella	Euphorbia serpyllifolia	hirtella	S. Watson	Oudejans	subsp	0
+59050	Euphorbia serpyllifolia var. hirtella	Euphorbia serpyllifolia	hirtella	S. Watson	L. C. Wheeler	var	0
+
+
+
+Problem duplicates still need resolved:
+
+6361	Antennaria alpina var. megacephala	Antennaria alpina	megacephala	Fernald	Hultén	var	0
+6362	Antennaria alpina var. megacephala	Antennaria alpina	megacephala	Fernald	S. L. Welsh	var	0
+947	Antennaria monocephala	Antennaria	monocephala	unknown	DC.	sp	0
+1055	Antennaria monocephala	Antennaria	monocephala	Torr. & A. Gray	Greene	sp	0
+55963	Carya ovalis var. hirsuta	Carya ovalis	hirsuta	Ashe	Sarg.	var	0
+55964	Carya ovalis var. hirsuta	Carya ovalis	hirsuta	Ashe	B. Boivin	var	1
+55968	Carya ovalis var. odorata	Carya ovalis	odorata	R. S. Marsh	Sarg.	var	0
+55969	Carya ovalis var. odorata	Carya ovalis	odorata	R. S. Marsh	B. Boivin	var	1
+56405	Chenopodium ambrosioides var. anthelminticum	Chenopodium ambrosioides	anthelminticum	L.	Aellen	var	0
+56406	Chenopodium ambrosioides var. anthelminticum	Chenopodium ambrosioides	anthelminticum	L.	A. Gray	var	0
+19738	Cleome speciosa	Cleome	speciosa	unknown	Raf.	sp	0
+19739	Cleome speciosa	Cleome	speciosa	unknown	Kunth	sp	0
+56200	Ceratophyllum demersum var. apiculatum	Ceratophyllum demersum	apiculatum	Cham.	Asch.	var	0
+56201	Ceratophyllum demersum var. apiculatum	Ceratophyllum demersum	apiculatum	Cham.	Garcke	var	0
+18706	Ceratochloa marginata	Ceratochloa	marginata	Steud.	B. D. Jacks.	sp	0
+18707	Ceratochloa marginata	Ceratochloa	marginata	Steud.	W. A. Weber	sp	0
+96275	Cyathea multiflora	Cyathea	multiflora	unknown	Sm.	sp	
+95847	Cyathea multiflora	Cyathea	multiflora	unknown	J. E. Sm.	sp	0
+2697	Erigeron unalaschkensis	Erigeron	unalaschkensis	DC.	Vierh.	sp	0
+2747	Erigeron unalaschkensis	Erigeron	unalaschkensis	unknown	Less.	sp	0
+25852	Festuca filiformis	Festuca	filiformis	unknown	Lam.	sp	0
+25799	Festuca filiformis	Festuca	filiformis	unknown	Pourret	sp	0
+31774	Lupinus tenellus	Lupinus	tenellus	unknown	G. Don	sp	0
+31775	Lupinus tenellus	Lupinus	tenellus	unknown	J. Agardh	sp	0
+36314	Paronychia pulvinata	Paronychia	pulvinata	unknown	A. Gray	sp	0
+36294	Paronychia pulvinata	Paronychia	pulvinata	Small	Pax & K. Hoffm.	sp	0
+64028	Poa arctica var. vivipara	Poa arctica	vivipara	unknown	Hook.	var	0
+64031	Poa arctica var. vivipara	Poa arctica	vivipara	unknown	Hultén	var	0
+62891	Panicum commonsianum var. addisonii	Panicum commonsianum	addisonii	Nash	Fernald	var	0
+62892	Panicum commonsianum var. addisonii	Panicum commonsianum	addisonii	Nash	Pohl	var	0
+40730	Quercus X dubia	Quercus	dubia	unknown	Ashe	sp	1
+40600	Quercus X dubia	Quercus	dubia	unknown	Trel.	sp	1
+66396	Silene lanceolata var. angustifolia	Silene lanceolata	angustifolia	unknown	Hbd.	var	0
+80595	Silene laciniata var. angustifolia	Silene laciniata	angustifolia	unknown	C. L. Hitchc. & Maguire	var	0
+45369	Stachys ciliata	Stachys	ciliata	unknown	Benth.	sp	0
+45347	Stachys ciliata	Stachys	ciliata	unknown	Epling	sp	0
+67309	Trifolium longipes var. pedunculatum	Trifolium longipes	pedunculatum	Rydb.	C. L. Hitchc.	var	0
+67310	Trifolium longipes var. pedunculatum	Trifolium longipes	pedunculatum	Rydb.	Isely	var	0
+67334	Trifolium parryi var. montanense	Trifolium parryi	montanense	Rydb.	Isely	var	0
+67335	Trifolium parryi var. montanense	Trifolium parryi	montanense	Rydb.	S. L. Welsh	var	0
+46605	Tillaea minima	Tillaea	minima	unknown	Gay	sp	0
+46606	Tillaea minima	Tillaea	minima	unknown	Hook. & Arn.	sp	0
+67376	Trillium pusillum var. texanum	Trillium pusillum	texanum	Buckley	C. F. Reed	var	0
+67377	Trillium pusillum var. texanum	Trillium pusillum	texanum	Buckley	Reveal & Broome	var	0
+48057	Vicia trifida	Vicia	trifida	unknown	F. G. Dietr.	sp	0
+48058	Vicia trifida	Vicia	trifida	unknown	Rydb.	sp	0
+48743	Xyris flexuosa	Xyris	flexuosa	unknown	Chapm.	sp	0
+48711	Xyris flexuosa	Xyris	flexuosa	unknown	Elliott	sp	0
+48710	Xyris arenicola	Xyris	arenicola	unknown	Small	sp	0
+48726	Xyris arenicola	Xyris	arenicola	unknown	Miq.	sp	0
+8593	Xanthium strumarium var. wootonii	Xanthium strumarium	wootonii	Cockerell	M. Peck	var	0
+8594	Xanthium strumarium var. wootonii	Xanthium strumarium	wootonii	Cockerell	W. C. Martin & C. R. Hutchins	var	0
+88617	Yucca rigida	Yucca	rigida	Engelm.	Trel.	sp	0
+87842	Yucca rigida	Yucca	rigida	unknown	Trel.	sp	0
+48791	Yucca rupicola	Yucca	rupicola	unknown	Trel.	sp	0
+48794	Yucca rupicola	Yucca	rupicola	unknown	Scheele	sp	0
+
+
