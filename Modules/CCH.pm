@@ -6,7 +6,7 @@
 
 package CCH;
 require Exporter;
-use Text::Unidecode qw(unidecode);
+#use Text::Unidecode qw(unidecode);
 
 @ISA = ('Exporter');
 @EXPORT = qw(
@@ -344,7 +344,7 @@ our $infra = '[a-z-]+';
 our $author = '.*';
 
 
-open(IN, "/Users/davidbaxter/DATA/collectors_id_new.txt") || die "CCH.pm couldnt open collectors_id_new\n";
+open(IN, "/JEPS-master/CCH/bulkload/data_files/collectors_id_new.txt") || die "CCH.pm couldnt open collectors_id_new\n";
 while(<IN>){
 	chomp;
 	($collID,$orig,$standard)=split(/\t/);
@@ -355,7 +355,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/Users/davidbaxter/DATA/Interchange/ICPN_accepted.txt") || die "CCH.pm couldnt open ICPN accepted names\n";
+open(IN, "/JEPS-master/Interchange/output/ICPN_accepted.txt") || die "CCH.pm couldnt open ICPN accepted names\n";
 while(<IN>){
 	chomp;
 	($good,@rest)=split(/ /);
@@ -364,7 +364,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/Users/davidbaxter/DATA/alter_names") || die "CCH.pm couldnt open alter_names\n";
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/alter_names") || die "CCH.pm couldnt open alter_names\n";
 while(<IN>){
 	chomp;
 	($bad, $good, $AltNote)=split(/\t/);
@@ -374,7 +374,7 @@ while(<IN>){
 close(IN);
 
 
-open(IN, "/Users/davidbaxter/DATA/orth_var.txt") || die "CCH.pm couldn't open orth_var\n";
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/orth_var.txt") || die "CCH.pm couldn't open orth_var\n";
 while(<IN>){
 	chomp;
 	($orth, $accept)=split(/\t/);
@@ -382,7 +382,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/Users/davidbaxter/DATA/nomen_rej.txt") || die "CCH.pm couldn't open illigitimate name file\n";
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/nomen_rej.txt") || die "CCH.pm couldn't open illigitimate name file\n";
 while(<IN>){
 	chomp;
 	($rejected, $accepted)=split(/\t/);
@@ -390,7 +390,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/Users/davidbaxter/DATA/mosses") || die "CCH.pm couldnt open mosses for non-vascular exclusion $!\n";
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/mosses.txt") || die "CCH.pm couldnt open mosses for non-vascular exclusion $!\n";
 while(<IN>){
 	chomp;
 	$exclude{$_}++;
@@ -400,7 +400,7 @@ s/\W.*//;
 close(IN);
 
 #load licenses from license file into %LICENSE
-my $license_file = '/Users/davidbaxter/DATA/CCH_scripts/data_files/licenses.txt';
+my $license_file = '/JEPS-master/CCH/bulkload/data_files/licenses.txt';
 my $default_license = 'https://creativecommons.org/licenses/by-nd/4.0/';
 open(IN,$license_file) or die "$!\n";
 while(<IN>){
@@ -426,7 +426,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/Users/davidbaxter/DATA/max_county_elev.txt") || die;
+open(IN, "/JEPS-master/CCH/bulkload/data_files/max_county_elev.txt") || die;
 while(<IN>){
         @fields=split(/\t/);
         $fields[3]=~s/\+//;
@@ -1487,12 +1487,12 @@ $cnum=uc($cnum);
 }
 
 sub load_noauth_name {
-$time2= -C "/Users/davidbaxter/DATA/smasch_taxon_ids.txt";
-$time= -C "/Users/davidbaxter/DATA/smasch_taxon_ids_CCH.txt";
+$time2= -C "/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids.txt";
+$time= -C "/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids_CCH.txt";
 
 print "Master Taxon name file ", int($time2)," days old\n";
 print "CCH Taxon name file ", int($time)," days old\n";
-	open(IN,"/Users/davidbaxter/DATA/smasch_taxon_ids_CCH.txt") || die;
+	open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids_CCH.txt") || die;
 	while(<IN>){
 		chomp;
 next if m/^#/;
@@ -1531,7 +1531,7 @@ next if m/^#/;
 	}
 
 
-	open(IN2,"/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
+	open(IN2,"/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids.txt") || die;
 	while(<IN2>){
 		chomp;
 next if m/^#/;
