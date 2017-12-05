@@ -13,7 +13,7 @@ These were centralized within these modules to reduce the size of perl scripts b
 
 ### Smasch.pm
 
-- This is the original module created for use with the SMASCH database and the first versions of the CCH.
+- This is the original module created for use with the SMASCH database.
 - This file was been edited from 2013-2016, removing key sections of code and adding it to CCH.pm.
 - It is unclear why CCH.pm was created such that two modules are now required to do overlapping tasks.
 The merge appears to be unfinished
@@ -22,4 +22,7 @@ The merge appears to be unfinished
 
 ### CCH.pm
 
-- This is the replacement module created for use with 2012 and newer versions of the CCH.
+- This is the original module created for use with the first versions of the CCH database.
+- This is now the combined, replacement module for use in all databases.
+- Most features of Smasch.pm have been added to this module.
+- New code has been added by removing repetitive code from CCH loading modules.
