@@ -61,9 +61,9 @@ s/^([A-Z])([A-Z]+)/$1\L$2/;
 }
 
 sub load_be{
-$time= -C "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt";
+$time= -C "/Users/richardmoe/4_DATA/taxon_ids/smasch_taxon_ids.txt";
 print "TNOAN file ", int($time)," days old\n";
-	open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+	open(IN,"/Users/richardmoe/4_DATA/taxon_ids/smasch_taxon_ids.txt") || die;
 warn "Loading name elements recognized by SMASCH\n";
 	while(<IN>){
 		chomp;
@@ -100,10 +100,11 @@ close(IN);
 warn "OK. I'm ready to record numbers.\n";
 }
 sub load_noauth_name {
-$time= -C "/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt";
+$time= -C "/Users/richardmoe/4_DATA/taxon_ids/smasch_taxon_ids.txt";
 
 print "TNOAN file ", int($time)," days old\n";
-	open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
+	open(IN,"/Users/richardmoe/4_DATA/taxon_ids/smasch_taxon_ids.txt") || die;
+	#open(IN,"/Users/rlmoe/data/taxon_ids/smasch_taxon_ids.txt") || die;
 
 	while(<IN>){
 		chomp;
