@@ -100,6 +100,7 @@ if(m/[scnwe] SN[^E]/ ||  m/[scnwe] SN$/){
 s/waif in [^ ]+//;
 	s/ ?\(?[Ff]ormerly[^)]+\)//;
 	s/([ns]) ChI/$1ChI/g;
+	s/[dD]eltaic GV \(?[Suisun]*\)?/GV/; #fix for Grindelia x paludosa
 	s/n (DMoj)/$1 (exc DMtns)/ unless m/DMtns/;
 	s/(n SNE)/$1 (exc WaI)/ unless m/W&I/;
 s/MP \(caves in Lava[^)]+\)/MP (exc Wrn)/ unless m/Wrn/;
