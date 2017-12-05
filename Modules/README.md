@@ -11,7 +11,7 @@ These were centralized within these modules to reduce the size of perl scripts b
 - For the most pat, the script remained unchanged from creation until 2016.
 - Revisions to the script were made in late 2016 and early 2017 because it was found by Tom Rosatti that agreed-upon changes to some bioregion parsing (i.e. PR exc SnJt versus PR) were not made.
 
-### SMASCH.pm
+### Smasch.pm
 
 - This is the original module created for use with the SMASCH database and the first versions of the CCH.
 - This file was been edited from 2013-2016, removing key sections of code and adding it to CCH.pm.
