@@ -1,0 +1,142 @@
+
+#These names that are in the ICPN and have an associated treatment page in the Interchange, however
+#we do not want ot use these names in the eFlora or CCH.  We want them to map to the accepted name
+#The name below this line are in JFP-1b but now have been validly published and can be used, but still may be on rejected for CA eFlora, we do not modify these.  These are treated in synonymy tables.
+#Achnatherum lemmonii var. lemmonii
+#Achnatherum lemmonii var. pubescens
+#Argyrochosma limitanea var. limitanea
+#Aristida ternipes var. hamulosa
+#Athyrium alpestre var. americanum
+#Athyrium alpestre subsp. americanum	not on ICPN, but this is a published combination
+#Orobanche cooperi subsp. latiloba
+
+#FILE: DATA\nomen_rej.txt
+#Format: rejected name[tab]accepted name[tab]note
+#The names below this line are all JFP-1b ranked in ICPN: unpublished, invalidly published, illegitimate, or rejected name for taxon native to CA (total=104)
+#For taxa that do not have an specific accepted name in the ICPN treatment, the name is reduced to just the genus.
+#In CCH, the full unmodified name will appear in the annotation line for the current determination
+Allium serpentinum	Allium
+Amsinckia menziesii var. intermedia	Amsinckia intermedia
+Arctostaphylos trinitensis	Arctostaphylos	(no specimens in CCH)
+Asplenium trichomanes-ramosum	Asplenium viride
+Aster breweri var. breweri	Aster breweri	(no specimens in CCH)
+Aster breweri var. multibracteata	Aster breweri	(no specimens in CCH)
+Aster eastwoodiae	Aster	(no specimens in CCH)
+Athyrium alpestre	Athyrium distentifolium
+Atriplex natrophila	Atriplex
+Botrychium simplex var. fontanum	Botrychium simplex
+Calochortus clavatus var. arcuatus	Calochortus clavatus var. gracilis		(no specimens in CCH)
+Carex gianonei	Carex
+Caulanthus heterophyllus var. pseudosimulans	Caulanthus heterophyllus
+Caulanthus sierrae	Caulanthus
+Ceanothus X arcuatus	Ceanothus arcuatus	(no specimens in CCH)
+Ceanothus arboreus var. glabra	Ceanothus arboreus	(no specimens in CCH)
+Ceanothus velutinus var. hookeri	Ceanothus velutinus	(no specimens in CCH)
+Cuscuta vivipara	Cuscuta nevadensis	(no specimens in CCH)
+Deinandra ramosissima	Deinandra fasciculata	(no specimens in CCH)
+Diplacus longiflorus subsp. lompocensis	Mimulus aurantiacus	(no specimens in CCH)
+Dodecatheon pulchellum subsp. monanthum	Dodecatheon pulchellum var. monanthum	(no specimens in CCH)
+Erigeron acris subsp. debilis	Erigeron nivalis	(no specimens in CCH)
+Erigeron angustatus	Erigeron greenei	(no specimens in CCH)
+Eriogonum apiculatum var. galbinum	Eriogonum apiculatum	(no specimens in CCH)
+Eriogonum diabolis	Eriogonum
+Eriogonum hooveri	Eriogonum clavatum	(no specimens in CCH)
+Eriogonum nudum var. oblanceolatum	Eriogonum nudum var. nudum	(no specimens in CCH)
+Eriogonum nudum var. pineum	Eriogonum nudum var. regirivum
+Eriogonum saltutorium	Eriogonum luteolum var. saltuarium
+Eriogonum sarmentosum	Eriogonum 	(no specimens in CCH)
+Eriogonum umbellatum var. nelsonii	Eriogonum umbellatum var. nelsoniorum	(no specimens in CCH)
+Eryngium globosum	Eryngium spinosepalum
+Eryngium globosum var. medium	Eryngium castrense
+Erysimum capitatum subsp. angustatum	Erysimum capitatum var. capitatum
+Erysimum capitatum subsp. capitatum	Erysimum capitatum var. capitatum
+Erysimum capitatum subsp. lompocense	Erysimum capitatum var. capitatum
+Erysimum capitatum subsp. perenne	Erysimum perenne
+Erysimum insulare subsp. suffrutescens	Erysimum suffrutescens
+Erysimum insulare var. grandifolium	Erysimum suffrutescens	(no specimens in CCH)
+Erysimum menziesii subsp. concinnum	Erysimum concinnum
+Erysimum menziesii subsp. eurekense	Erysimum menziesii
+Erysimum menziesii subsp. menziesii	Erysimum menziesii
+Erysimum menziesii subsp. yadonii	Erysimum menziesii
+Festuca howellii	Festuca elmeri
+Fraxinus trifoliata	Fraxinus parryi	(no specimens in CCH)
+Fritillaria affinis var. affinis	Fritillaria affinis	(no specimens in CCH)
+Fritillaria affinis var. tristulis	Fritillaria affinis
+Fritillaria lanceolata var. tristulis	Fritillaria affinis	(no specimens in CCH)
+Funastrum cynanchoides subsp. heterophyllum	Funastrum cynanchoides var. hartwegii
+Gilia grinnellii	Gilia cana
+Gilia sabulosa	Gilia	(no specimens in CCH)
+Gnaphalium bicolor	Pseudognaphalium biolettii
+Gnaphalium collinum	Euchiton gymnocephalus
+Euchiton collinus	Euchiton gymnocephalus	(no specimens in CCH)
+Guillenia lemmonii	Caulanthus anceps
+Hesperolinon serpentinum	Hesperolinon
+Hutchinsia procumbens	Hornungia procumbens
+Hymenoclea salsola var. patula	Hymenoclea salsola var. fasciculata
+Isoetes tenella	Isoetes
+Juncus effusus var. australis	Juncus effusus subsp. austrocalifornicus
+Lotus sylvestris	Lotus
+Lupinus andersonii var. mariposanus	Lupinus adsurgens
+Lupinus fulcratus var. undulatus	Lupinus adsurgens var. undulatus
+Malva assurgentiflora subsp. assurgentiflora	Malva assurgentiflora	(no specimens in CCH)
+Malva assurgentiflora subsp. glabra	Malva assurgentiflora	(no specimens in CCH)
+Malva dendromorpha	Malva arborea	(no specimens in CCH)
+Mentzelia arenaria	Mentzelia 	(no specimens in CCH)
+Mentzelia deserticola	Mentzelia desertorum
+Microseris laciniata var. siskiyouensis	Microseris laciniata subsp. siskiyouensis
+Microsteris gracilis subsp. humilior	Microsteris gracilis
+Mimulus hooveri	Mimulus
+Monardella diaboli	Monardella
+Mulgedium pulchellum	Lactuca tatarica subsp. pulchella
+Nama arizonica	Nama
+Packera buekii	Packera subnuda	(no specimens in CCH)
+Packera cymbalarioides	Packera streptanthifolia	(no specimens in CCH)
+Packera streptanthifolia var. rubricaulis	Packera streptanthifolia var. streptanthifolia	(no specimens in CCH)
+Phlox rhizomata	Phlox
+Plagiobothrys chorisianus var. undulatus	Plagiobothrys undulatus
+Plagiobothrys myosotoides subsp. verrucosus	Plagiobothrys verrucosus	(no specimens in CCH; some under P. myosotoides)
+Potamogeton filiformis subsp. alpinus	Potamogeton filiformis var. alpinus
+Pseudobahia bahiifolia var. pinnatifida	Pseudobahia heermannii
+Pseudognaphalium bicolor	Pseudognaphalium biolettii
+Quercus celata	Quercus parvula var. shrevei	(no specimens in CCH)
+Quercus dunnii	Quercus palmeri
+Rubus ursinus var. typicus	Rubus ursinus	(no specimens in CCH)
+Salix lasiolepis var. tracyi	Salix tracyi	(no specimens in CCH)
+Salvia X palmeri	Salvia	(no specimens in CCH)
+Sanguisorba occidentalis	Sanguisorba annua
+Sedum paradisum	Sedum obtusatum subsp. paradisum
+Selaginella arizonica subsp. eremophila	 Selaginella eremophila	(no specimens in CCH)
+Sisyrinchium grandiflorum	Sisyrinchium douglasii
+Streptanthus shastensis	Streptanthus longisiliquus	(no specimens in CCH)
+Trifolium albopurpureum subsp. columbinum	Trifolium albopurpureum
+Trifolium variegatum var. polyodon	Trifolium polyodon
+Trifolium variegatum var. pusillum	Trifolium variegatum
+Trifolium variegatum var. subsalinum	Trifolium variegatum
+Triteleia grandiflora subsp. howellii	Triteleia grandiflora	(no specimens in CCH)
+Valeriana scouleri	Valeriana sitchensis subsp. scouleri
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
