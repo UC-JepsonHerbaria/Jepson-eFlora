@@ -593,6 +593,10 @@ DUPS and problem records deleted from SMASCH:
 49837	Chamaesyce serpyllifolia subsp. hirtella	Chamaesyce serpyllifolia	hirtella	S. Watson	Koutnik	subsp	0
 50506	Euphorbia serpyllifolia subsp. hirtella	Euphorbia serpyllifolia	hirtella	S. Watson	Oudejans	subsp	0
 59050	Euphorbia serpyllifolia var. hirtella	Euphorbia serpyllifolia	hirtella	S. Watson	L. C. Wheeler	var	0
+64860	Ranunculus canus var. typicus	Ranunculus canus	typicus	unknown	L. D. Benson	var	0
+64862	Ranunculus cardiophyllus var. typicus	Ranunculus cardiophyllus	typicus	unknown	L. D. Benson	var	0
+64868	Ranunculus cymbalaria var. typicus	Ranunculus cymbalaria	typicus	unknown	L. D. Benson	var	0
+64903	Ranunculus gmelinii var. typicus	Ranunculus gmelinii	typicus	unknown	L. D. Benson	var	0
 
 
 

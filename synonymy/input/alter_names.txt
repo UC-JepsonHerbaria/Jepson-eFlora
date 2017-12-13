@@ -764,6 +764,7 @@ Brassic tournefortii	Brassica tournefortii
 Brickellia longifolia vr. multiflora	Brickellia longifolia var. multiflora
 Brickellia oblongifolia var. linearifolia	Brickellia oblongifolia var. linifolia
 Brodaea laxa	Brodiaea laxa
+Brodea elegans	Brodiaea elegans
 Brodiaea claifornica subsp. californica	Brodiaea californica subsp. californica
 Brodiaea coronaria var. coronia	Brodiaea coronaria var. coronaria
 Brodiaea elegans var. autralis	Brodiaea elegans var. australis
@@ -4658,12 +4659,16 @@ Ranunculus californicus &gt;&gt; occidentalis	Ranunculus californicus
 Ranunculus camus	Ranunculus canus
 Ranunculus canus var. blankenshipii	Ranunculus canus var. blankinshipii
 Ranunculus canus var. ludovicienanus	Ranunculus canus var. ludovicianus
+Ranunculus canus var. typicus	Ranunculus canus var. canus
 Ranunculus cymbalaria saximontanus	Ranunculus cymbalaria var. saximontanus
 Ranunculus cymbalaria var. saximontanis	Ranunculus cymbalaria var. saximontanus
+Ranunculus cymbalaria var. typicus	Ranunculus cymbalaria var. cymbalaria
+Ranunculus cardiophyllus var. typicus	Ranunculus cardiophyllus var. cardiophyllus
 Ranunculus escholtzii	Ranunculus eschscholtzii
 Ranunculus escholtzii var. oxynotus	Ranunculus eschscholtzii var. oxynotus
 Ranunculus eschscholzii	Ranunculus eschscholtzii
 Ranunculus eschsoltzii var. oxynotus	Ranunculus eschscholtzii var. oxynotus
+Ranunculus gmelinii var. typicus	Ranunculus gmelinii var. gmelinii
 Ranunculus hydrocharioides	Ranunculus hydrocharoides
 Ranunculus occidentalis var. rattani	Ranunculus occidentalis var. rattanii
 Ranunculus occidentalis/californicus	Ranunculus occidentalis
@@ -5475,6 +5480,7 @@ Triteleia ixioides subsp. uniofolia	Triteleia ixioides subsp. unifolia
 Triteleia ixioidesixioides	Triteleia ixioides
 Triteleia ixioies	Triteleia ixioides
 Triteleia ixoides	Triteleia ixioides
+Tritelia laxa	Triteleia laxa
 Triteleia lilacina var. lilacina	Triteleia lilacina
 Triteleia lilacinum	Triteleia lilacina
 Triteleida clementina	Triteleia clementina

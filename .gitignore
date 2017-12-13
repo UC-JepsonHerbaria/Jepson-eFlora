@@ -1,23 +1,23 @@
 #content
-/eflora_database/eflora_treatments.txt
-/eflora_database/eflora.in
-/YELLOW_FLAGGING/yellow_flag_system.txt
-/eflora_database/eflora.db
-/eflora_keys/accepted_names.out
-/pages/readme.docx
-/eflora_database/TJM2_Errata.txt
-/YELLOW_FLAGGING/region_files-2013_YF_directory/
+eflora_database/eflora_treatments.txt
+eflora_database/eflora.in
+YELLOW_FLAGGING/yellow_flag_system.txt
+eflora_database/eflora.db
+eflora_keys/accepted_names.out
+pages/readme.docx
+eflora_database/TJM2_Errata.txt
+YELLOW_FLAGGING/region_files-2013_YF_directory/
 Jepson_conifers.html
 
 #generated files
-/eflora_database/sanity_error.txt
-/output/
-/eflora_database/outputs/
-/synonymy/output/
-/YELLOW_FLAGGING/output/
-/eflora_database/2017Additions/
-/eflora_keys/output/
-/eflora_keys/input_files/
+eflora_database/sanity_error.txt
+output/
+eflora_database/outputs/
+synonymy/output/
+YELLOW_FLAGGING/output/
+eflora_database/2017Additions/
+eflora_keys/output/
+eflora_keys/input_files/
 
 #from Mac OS X
 .DS_Store

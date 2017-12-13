@@ -4,7 +4,6 @@
 
 use BerkeleyDB;
 use lib "/JEPS-master/Jepson-eFlora/Modules/";
-use CCH;
 use flatten;
 #Open file of tax syns in the form of syn [tab] accepted name
 
@@ -97,7 +96,7 @@ vec($nullvec,$i,1) = 0;
 }
 
 #Now get the names and ranges
-open(OUT3, ">outputs/cumulative_synonym_file.txt") || die;
+open(OUT3, ">output/cumulative_synonym_file.txt") || die;
 $file="/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt";
 $raw_mod_time=(stat($file))[9];
 $db_file="/JEPS-master/Jepson-eFlora/eflora_database/eflora.db";
@@ -112,16 +111,17 @@ EOP
 
 	$all_lines=<IN>;
 #converts windows line ends#
-	$all_lines=~s/\xEF\xBB\xBF//;
-	$all_lines=~s/ *\r\n/\n/g;
-	$all_lines=~s/ +/ /g;
-	$all_lines=~s/UNABRIDGED REFERENCES/UNABRIDGED REFERENCE/g;
+	$all_lines =~ s/\xEF\xBB\xBF//;
+	$all_lines =~ s/ *\r\n/\n/g;
+	$all_lines =~ s/ +/ /g;
+	$all_lines =~ s/UNABRIDGED REFERENCES/UNABRIDGED REFERENCE/g;
 	
 	@all_pars=split(/\n\n+/,$all_lines);
 	$element=0;
 	foreach(@all_pars){
 		s/{\/.*?}//g;
-s/PROOF:.*\n?//g;
+		s/PROOF:.*\n?//g;
+
 		s/UNABRIDGED\nURBAN WEED EXPECTED IN WILDLANDS//;
 		s/UNABRIDGED\n(AGRICULTURAL, GARDEN, OR URBAN WEED)//;
 		s/UNABRIDGED\nSPONTANEOUS HYBRID//;
@@ -129,11 +129,9 @@ s/PROOF:.*\n?//g;
 		s/UNABRIDGED\nGARDEN AND URBAN WEED//;
 		s/UNABRIDGED\nURBAN WEED//;
 		s/UNABRIDGED\s+WAIF//;
-		s/^UNABRIDGED\nHISTORICAL WAIF//;
+		s/UNABRIDGED\nHISTORICAL WAIF//;
 		s/^WAIF//;
-		s/UNABRIDGED\nJFP-[78], (.*)//;
-		s/UNABRIDGED\nJFP-4, (URBAN WEED)//;
-		s/UNABRIDGED\s+JFP-4//;
+		s/UNABRIDGED\nPOSSIBLY IN CA//;
 		s/UNABRIDGED\n(CULTIVATED PLANT|AGRICULTURAL WEED)//;
 		s/UNABRIDGED\nEXTIRPATED (WAIF|ALIEN)//;
 		s/UNABRIDGED\nNATURALIZED\nEXTIRPATED//;
@@ -142,13 +140,15 @@ s/PROOF:.*\n?//g;
 		s/NATIVE\nEXTIRPATED//;
 		s/NATIVE//;
 		s/^UNABRIDGED *\n//;
-		s|^([A-Z]+ACEAE) $|<center><font size="4"><b>$1</b></font>|ms;
-		s|^([A-Z]+ACEAE) \((.*)\)$|<center><font size="4"><b>$1 ($2)</b></font>|ms;
-		if(m/\n([A-Z][A-Z-]+ [a-z][a-z-]+.*)/){
+		s/^([A-Z]+ACEAE) $/<center><font size="4"><b>$1<\/b><\/font>/ms;
+		s/^([A-Z]+ACEAE) \((.*)\)$/<center><font size="4"><b>$1 ($2)<\/b><\/font>/ms;
+		if(m/\n([&;times]*[A-Z][A-Z-]+ [&;times]*[a-z-]+.*)/){ #added the X for hybrid names, so they parse correctly
 			$name_1 = ucfirst(lc($1));
-			$name_for_hc=&CCH::strip_name($name_1);
-		}
-
+			#print "name found: $name_1\n";
+			$name_for_hc=&strip_name($name_1);
+			print "$name_1\n";
+		}			
+			
 		if (m/DISTRIBUTION/){
 			($cal_dist)=m/BIOREGIONAL DISTRIBUTION: (.*)/;
 			$cal_dist=~s/[.; ]*$//;
@@ -157,20 +157,22 @@ s/PROOF:.*\n?//g;
 									# which is messing up the hcode process for the region just after this but before the ','
 			$hc=&get_hcode($cal_dist);
 print OUT3 "01-$name_for_hc\taccepted\teflora\n";	
-#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-if ($TNOAN{$name_for_hc}){
-print "$name_for_hc\t($TNOAN{$name_for_hc})\t$hc\t($cal_dist)\t$file\n";
 
-}
-else{
-warn "$name_for_hc no code\n";
-}
+	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+		if ($TNOAN{$name_for_hc}){
+		print "$name_for_hc\t($TNOAN{$name_for_hc})\t$hc\t($cal_dist)\t$file\n";
+		}
+		else{
+		warn "$name_for_hc no code\n";
+		}
+	}
 ##################### $hc becomes a bit-vector here!
 			$hc = pack("b*", unpack("b*",pack("H*",$hc)));
-#if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-#$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-#print "1. $name_for_hc : $hstr\n";
-#}
+
+	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+		$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+		print "1. $name_for_hc : $hstr\n";
+	}
 
 #Taxon ids index the DIST_STRING hash, which contains a bit-vector; "|=" adds to the vector if it already exists
 					if($TNOAN{$name_for_hc}){
@@ -229,10 +231,10 @@ print OUT3 "$name_for_altB\t$name_for_hc\teflora_synonyms==>alternate infra rank
 							}
 						}
 					
-if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-print "2. $name_for_hc : $hstr\n";
-}
+	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+		$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+		print "2. $name_for_hc : $hstr\n";
+	}
 				}	
 
 #Synonym lines from eFlora
@@ -475,13 +477,13 @@ print "8. $_ $name_for_hc : $hstr\n";
 	}	
 	
 ###############################assign string of regions to TID
-open(OUT4, ">outputs/nomsyn_HCODE_cch_out.txt") || die;
-open(OUT2, ">outputs/tid_HCODE_cch_out.txt") || die;
-open(OUT, ">outputs/tid_DIST_STRING_cch_out.txt") || die;
-open(OUT5, ">outputs/tnoan_DIST_STRING_out.txt") || die;
+open(OUT4, ">output/nomsyn_HCODE_cch_out.txt") || die;
+open(OUT2, ">output/tid_HCODE_cch_out.txt") || die;
+open(OUT, ">output/tid_DIST_STRING_cch_out.txt") || die;
+open(OUT5, ">output/tnoan_DIST_STRING_out.txt") || die;
 {
 local($/="\n");
-open(IN, "/Users/davidbaxter/DATA/eFlora/yellow_flag_processing/eflora_KML_Moe/data_inputs/region_table.txt") || die;
+open(IN, "region_table.txt") || die;
 @regions=();
 #print join(" ",@regions),"\n";
 while(<IN>){
@@ -617,3 +619,94 @@ close(OUT3);
 close(OUT4);
 close(OUT5);
 
+
+sub strip_name{
+local($_) = @_;
+
+#add additional 'filial' authorities at this point so they parse correctly, JAA
+s/Ait\. f\./Ait. filius/g;
+s/Backh\. f\./Backh. filius/g;
+s/Baker f\./Baker filius/g;
+s/Bakh\. f\./Bakh. filius/g;
+s/Balf\. f\./Balf. filius/g;
+s/Burm\. f\./Burm. filius/g;
+s/Brunner,? f\./Brunner filius/g;
+s/Celakovsky f\./L.F. Celak./g;
+s/Delar\. f\./Delar. filius/g;
+s/Forst\. f\./Forst. filius/g;
+s/Gaertn\. f\./Gaertn. filius/g;
+s/Gagnaire f\./Gagnaire filius/g;
+s/Haage f\./Haage filius/g;
+s/Haller f\./Haller filius/g;
+s/Hallier f\./Hallier filius/g;
+s/Harr\. f\./Harr. filius/g;
+s/Hedw\. f\./Hedw. filius/g;
+s/Hirats\. f\./Hirats. filius/g;
+s/Hook\. f\./Hook. filius/g;
+s/Hooker f\./Hooker filius/g; #some people dont abbreviate Hooker
+s/Jacq\. f\./Jacq. filius/g;
+s/Kickx f\./Kickx filius/g;
+s/Kampm\. f\./Kampm. filius/g;
+s/Keng f\./Keng filius/g;
+s/Klokov f\./Klokov filius/g;
+#s/L\. f\. sulcat/f. sulcat/g;
+
+s/L\. f\. var./L. filius var./g;
+s/L\. f\. subsp./L. filius subsp./g;
+s/L\. f\./L. filius/g;
+s/L\. *filius azure/L. f. azure/g; #fix special cases where L. f. is a forma name not filius, Anagallis arvensis L. f. azurea Hyl.
+s/L\. *filius vine/L. f. vine/g; #fix special cases where L. f. is a forma name not filius, Allium vineale L. f. vineale
+s/L\. *filius comp/L. f. comp/g; #fix special cases where L. f. is a forma name not filius, Allium vineale L. f. compactum L.
+s/L\. *filius tome/L. f. tome/g; #fix special cases where L. f. is a forma name not filius, Acer rubrum L. f. tomemtosum L. 
+s/L\. *filius sang/L. f. sang/g; #fix special cases where L. f. is a forma name not filius, Acer negundo L. f. sanguineum L. Martin
+s/L\. *filius masc/L. f. masc/g; #fix special cases where L. f. is a forma name not filius, Orchis morio L. f. mascula L.
+s/L\. *filius lute/L. f. lute/g; #fix special cases where L. f. is a forma name not filius, Ophrys insectifera L. f. luteomarginata L. Lewis
+s/L\. *filius micr/L. f. micr/g; #fix special cases where L. f. is a forma name not filius, Jasminum humile L. f. microphyllum L.C. Chia
+s/L\. *filius sask/L. f. sask/g; #fix special cases where L. f. is a forma name not filius, Carex capillaris L. f. saskatschewana (Boeckeler) L.H. Bailey
+s/L\. *filius negl/L. f. negl/g; #fix special cases where L. f. is a forma name not filius, Celtis occidentalis L. f. neglecta L.
+s/L\. *filius duri/L. f. duri/g; #fix special cases where L. f. is a forma name not filius, Eryngium campestre L. f. duriberum L.
+s/L\. *filius glab/L. f. glab/g; #fix special cases where L. f. is a forma name not filius, Dioscorea villosa L. f. glabrata L.
+s/L\. *filius prae/L. f. prae/g; #fix special cases where L. f. is a forma name not filius, Silphium trifoliatum L. f. praecisum L.M. Perry
+s/L\. *filius pinn/L. f. pinn/g; #fix special cases where L. f. is a forma name not filius, Quercus alba L. f. pinntifida L.
+s/L\. *filius sulc/L. f. sulc/g; #fix special cases where L. f. is a forma name not filius, Zostera marina L. f. sulcatifolia Setchell
+s/L\. *filius pinn/L. f. vill/g; #fix special cases where L. f. is a forma name not filius, Cardiospermum corindum L. f. villosum (Mill.) Radlk
+s/Lestib\. f\./Lestib. filius/g;
+s/Lindb\. f\./Lindb. filius/g;
+s/Lindm\. f\./Lindm. filius/g;
+s/Luer f\./Luer filius/g;
+s/Michx\. f\./F. Michx./g;
+s/Michaux f\./F. Michx./g;
+s/Occhioni f\./Occhioni filius/g;
+s/Pearsall f\./Pearsall filius/g;
+s/Phil\. f\./Phil. filius/g;
+s/Rchb\. f\./Rchb. filius/g;
+s/Rech\. f\./Rech. filius/g;
+s/Rehb\. f\./Rehb. filius/g;
+s/Reichenb\. f\./Reichenb. filius/g;
+s/Reichenbach f\./Reichenbach filius/g;
+s/Scheuchzer f\./Scheuchzer filius/g;
+s/Schultes f\./Schultes filius/g;
+s/Schult\. f\./Schult. filius/g;
+s/Wallr\. f\./Wallr. filius/g;
+s/Wendl\. f\./Wendl. filius/g;
+
+s/^&times;([A-Z][A-Z-]+)/X $1/;
+
+$_= ucfirst(lc($_));
+
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) ?.* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) &times;([-a-z]+) .+/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) &times;([-a-z]+)/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) .+/$1 $2/||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+)/$1 $2/||
+s/^X ([A-Z]?[a-z-]+) ([-a-z]+) (.+)/X ucfirst(lc($1) $2/||
+s/^X ([A-Z]?[a-z-]+) ([-a-z]+)/X ucfirst(lc($1) $2/||
+s/^([A-Z][A-Za-z-]+) (.+)/$1/;
+s/ +/ /;
+s/ +$//;
+s/^ +//;
+
+
+
+$_;
+}

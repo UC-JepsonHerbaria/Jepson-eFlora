@@ -277,6 +277,8 @@ our %cult=(
 'Origanum vulgare var. prismaticum'=>'P',
 'Osteomeles schwerinae'=>'P',
 'Ozothamnus diosmifolius'=>'P',
+'Parthenocissus tricuspidata'=>'P',
+'Parthenocissus tricuspidata var. veitchi'=>'P',
 'Paulownia kawakamii'=>'P',
 'Paederia lanuginosa'=>'P',
 'Pentas lanceolata var. coccinea'=>'P',
@@ -364,7 +366,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/alter_names") || die "CCH.pm couldnt open alter_names\n";
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/alter_names.txt") || die "CCH.pm couldnt open alter_names\n";
 while(<IN>){
 	chomp;
 	($bad, $good, $AltNote)=split(/\t/);
