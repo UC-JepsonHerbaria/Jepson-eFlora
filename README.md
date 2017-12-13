@@ -250,7 +250,6 @@ List of treatment fields that are exported
 "CONING TIME",
 "WEEDINESS",
 
-
 One complication from using my usual line matching subroutines in the full getter is that, since you are unable to match against the beginning of a line in the paragraph matching, you cannot get "STEM:" without also getting "STERILE STEM:", "FERTILE STEM:" etc.
 
 To circumvent this, I matched affected paragraphs like:
@@ -291,3 +290,98 @@ Fields that will be used for the quilt page:
 	IsTerminalTaxon 
 Genus and Family will be grabbed using the eflora_taxonomy table
 
+
+Full list of fields from originalflat file loading script written by Dick Moe
+Conversion notes written by David Baxter in 2014
+
+(Scientific Name -> no field title since always at top of paragraph)
+"TAXON AUTHOR",
+"COMMON NAME",
+"UNABRIDGED COMMON NAME",?
+"TJM1 AUTHOR" > only used once (as "Author"). Do not load
+"TJM2 AUTHOR",
+"TJMX AUTHOR",? > probably replaces TJM2 if there's both
+"AUTHORSHIP COMMENT",none
+"HABIT+",
+"UNABRIDGED HABIT+",none, put under habit
+"PLANT BODY",
+"STEM",
+"STEMS",
+"STERILE STEM",
+"FERTILE STEM",
+"LEAF",
+"LEAVES",
+"SPINE",
+"SPINES",
+"FROND", > not used
+"FRONDS", > not used
+"INFLORESCENCE",
+"STAMINATE HEAD",
+"RAY OR PISTILLATE FLOWER",
+"PISTILLATE OR BISEXUAL HEAD", > not used
+"PISTILLATE HEAD",
+"STAMINATE INFLORESCENCE",
+"PISTILLATE OR BISEXUAL INFLORESCENCE",
+"PISTILLATE INFLORESCENCE",
+"SPIKELET",
+"FERTILE SPIKELET",
+"STERILE SPIKELET",
+"DISTAL SPIKELET",
+"CENTRAL SPIKELET",
+"LATERAL SPIKELET",
+"STAMINATE SPIKELET",
+"PISTILLATE SPIKELET",
+"UNABRIDGED FLOWER", > put under flower
+"FLOWER",
+"STAMINATE FLOWER",
+"PISTILLATE FLOWER",
+"RAY FLOWER",
+"DISK FLOWER",
+"UNABRIDGED DISK FLOWER", > append to Disk Flower
+"CONE",
+"CONES",
+"POLLEN CONE",
+"SEED CONE",
+"BISEXUAL FLOWER",
+"FRUIT",
+"SEED",
+"SEEDS",
+"SPORANGIUM",
+"SPORANGIA",
+"SPORANGIUM CASES",
+"SPORANGIUM CASE",
+"MALE SPORANGIUM CASE",
+"FEMALE SPORANGIUM CASE",
+"SPORES",
+"CHROMOSOMES", (including for now although not useful for ID)
+"UNABRIDGED CHROMOSOMES", (need to concat with above)
+"ECOLOGY",
+"UNABRIDGED ECOLOGY", > ignore, or ideally replaces Ecology
+"RARITY STATUS",
+"ELEVATION",
+"BIOREGIONAL DISTRIBUTION",
+"UNABRIDGED BIOREGIONAL DISTRIBUTION", >replaces bioregional distribution
+"DISTRIBUTION OUTSIDE CALIFORNIA",
+"UNABRIDGED DISTRIBUTION OUTSIDE CALIFORNIA", > replaces above
+"SPECIES IN GENUS",
+"UNABRIDGED SPECIES IN GENUS", > replaces above
+"GENERA IN FAMILY",
+"UNABRIDGED GENERA IN FAMILY", > replaces above
+"ETYMOLOGY", > prob no need for species page
+"UNABRIDGED ETYMOLOGY", > replaces above
+"TOXICITY",
+"SYNONYMS",
+"UNABRIDGED SYNONYMS",
+"REFERENCE", > won't include, won't export unless required
+"UNABRIDGED REFERENCE", > concat with above
+"HORTICULTURAL INFORMATION", > leave out
+"UNABRIDGED HORTICULTURAL INFORMATION", > none
+"NOTE",
+"NOTES", > not used, hopefully deprecated
+"UNABRIDGED NOTE", for now load separate from "Note"
+"FLOWERING TIME",
+"FRUITING TIME",
+"CONING TIME",
+"AUTHORSHIP OF PARTS", > none in treatments file 
+"WEEDINESS",
+"SCIED", > not for simplified display
