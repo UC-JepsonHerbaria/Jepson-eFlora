@@ -10,18 +10,18 @@ perl make_taxonomy_table.pl
 perl make_distribution_table.pl
 perl make_synonymy_table.pl
 echo "insert taxa into main table"
-sqlite3 eflora.db < outputs/load_main_table.sql
+sqlite3 eflora.db < output/load_main_table.sql
 echo "insert illustration table"
-sqlite3 eflora.db < outputs/load_illustration_table.sql
+sqlite3 eflora.db < output/load_illustration_table.sql
 echo "insert taxonomy table"
-sqlite3 eflora.db < outputs/load_taxonomy_table.sql
+sqlite3 eflora.db < output/load_taxonomy_table.sql
 echo "insert bioregion distribution table"
-sqlite3 eflora.db < outputs/load_distribution_table.sql
+sqlite3 eflora.db < output/load_distribution_table.sql
 echo "insert synonyms into main table"
-sqlite3 eflora.db < outputs/load_synonymy_table.sql
+sqlite3 eflora.db < output/load_synonymy_table.sql
 echo "create database indexes"
 sqlite3 eflora.db < create_indexes.sql
 
 #echo "cleaning up intermediate files"
-#rm -v outputs/accepted_name_list.txt
-#rm -v outputs/dist_codes.txt
+#rm -v output/accepted_name_list.txt
+#rm -v output/dist_codes.txt

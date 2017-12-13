@@ -1,6 +1,6 @@
 #use warnings;
 
-open(OUT, ">outputs/load_illustration_table.sql") || die;
+open(OUT, ">output/load_illustration_table.sql") || die;
 $data_path="/Users/davidbaxter/DATA";
 
 #load Taxon IDs for all taxa

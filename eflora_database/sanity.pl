@@ -1,4 +1,4 @@
-open(IN,"/Users/davidbaxter/DATA/smasch_taxon_ids.txt") || die;
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids_CCH.txt") || die;
 while(<IN>){
 chomp;
 ($code,$name)=split(/\t/);
@@ -33,6 +33,7 @@ use BerkeleyDB;
 "TJMXX AUTHOR",
 "TJMXXX AUTHOR",
 "TJM4X AUTHOR",
+"TJM5X AUTHOR",
 "AUTHORSHIP COMMENT",
 "HABIT+",
 "UNABRIDGED HABIT+",
@@ -207,15 +208,15 @@ $tax_name=~s/^([A-Z])([A-Z]+)/$1\L$2/;
 				print "known false positive: Distribution outside California but no Bioregional Distribution $doc\n";
 			}
 			else{
-				print "$file\nDistribution outside California but no Bioregional Distribution $doc\n\n";
+				print "$file\tDistribution outside California but no Bioregional Distribution $doc\n\n";
 				
 			}
 		}
 		elsif(m/BIOREGIONAL/){
-			unless(m/BIOREGIONAL.*\. *$/m){
+			unless(m/BIOREGIONAL.*[^;]$/m){
 				$punct="no dist";
 				($punct)=m/(BIOREGIONAL.*)/;
-				print "$file\nBioregional punctuation $punct\n\n";
+				print "$file\tBioregional punctuation $punct\n\n";
 				 
 			}
 		}
@@ -322,10 +323,10 @@ EOP
 					print "$file Capitalization problem $sortline\n\n";
 				}
 				
-				if(($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns/) && ($sortline =~ m/(Clark. *\(.*;|Clark Mtn Range|Clark Mtn.?,? .*range|Kingston.?,? .*[Mm]tns|Last Chance Range.?,? .*[Mm]tns|Panamint Range.?,? .*[Mm]tns|Santa Lucia Range.?,? .*[Mm]tns)/)){				
+				if(($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark)/) && ($sortline =~ m/(Clark. *\(.*;|Clark Mtn Range|Clark Mtn.?,? .*range|Kingston.?,? .*[Mm]tns|Last Chance Range.?,? .*[Mm]tns|Panamint Range.?,? .*[Mm]tns|Santa Lucia Range.?,? .*[Mm]tns?)/)){				
 					print "known false positive: mountain range problem\t--\t$sortline\n";
 				}	
-					elsif ($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark) .*[Mm]tns?/){
+					elsif ($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston) .*[Mm]tns?/){
 						print "$file - mountain range problem\t--\t$sortline\n\n";
 				}
 				if($sortline=~m/HABIT\+: \d/){
@@ -366,8 +367,8 @@ EOP
 				}
 				
 				if(($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/) && ($sortline =~ m/(\(\d+\)\+- \d|\([01]\)few|\([01]\)several|\(mis\)|\)&deg|\)%|\(ob\)|\(un\)|\(sub\)|\(hemi\)|\(Dec\)Mar|\(Jan--Feb\)Mar|\(Jan\)Mar|\(Jan\)Apr|\(Feb\)Apr|\(Mar\)Apr|\(Apr\)May|\(May\)Jun|\(May\)Jul|\(May\)Aug|\(Jun\)Jul|\(Jun\)Aug|\(Jul\)Aug)/)){
-					print "known false positive: probable paren spacing error1 =$1: $sortline\n";
-					;
+					#print "known false positive: probable paren spacing error1 =$1: $sortline\n";
+					
 				}
 					elsif($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/){
 					print "$file - probable paren spacing error1 =$1: $sortline\n\n";
@@ -401,7 +402,7 @@ EOP
 					}
 				
 				if(($sortline =~ m/([A-Za-z]--[A-Za-z])/) && (($sortline =~ m/[A-Z][a-z][a-z]--[A-Z][a-z][a-z]/ || $sortline =~ m/TIME:/ || $sortline =~ m/few--/ || $sortline =~ m/ummer--fall-flower/ || $sortline =~ m/winter--spring-flower/ ))){
-					print "known false positive: probable en-dash error6 =$1: $sortline\n";
+					#print "known false positive: probable en-dash error6 =$1: $sortline\n";
 					
 				}
 					elsif($sortline =~ m /([A-Za-z]--[A-Za-z])/){
@@ -426,18 +427,22 @@ EOP
 				#exclude taxa already in TJM2 in brackets and non-taxon bracketed info
 				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ 
 				
-					if(($sortline =~ m/-> \[[A-Z]{2,}/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+					if(($sortline =~ m/-> \[[A-Z-]{2,}/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
 						print "$file - possible UNABRIDGED KEY LEAD tag missing: $sortline\n\n";
 					}
 					
-					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z]+/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-						print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
+					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z-]+/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+						unless ($sortline =~ m/\[(A\. spinosus|A\. blitum|A\. caudatus|A\. viridis|A\. cruentus|A\. hypochondriacus|A\. fruticosa|A\. trifida|A\. annua|
+								M\. verna|D. reptans|D. nemorosa|O. robusta|L. erinus|L. etrusca|C. diffusum|D. plumarius|S. subulata|S. pendula|S. pseudatocion
+								C. tricolor|C. multicava|C. ovata)/){#known key leads from the printed manual, skip these false positives;
+							print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
+						}
 					}
-					elsif(($sortline =~ m/-> [A-Z]\. [a-z]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
+					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z-]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
 						print "known UNABRIDGED KEY LEAD tag $sortline\n";
 					}
 					
-					elsif(($sortline =~ m/-> \[[A-Z]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+					elsif(($sortline =~ m/-> \[[A-Z-]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
 						print "$file - possible UNABRIDGED KEY LEAD tag missing3: $sortline\n\n"	
 					}
 					elsif(($sortline =~ m/\[[varsubp]{3,5}\. /) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){

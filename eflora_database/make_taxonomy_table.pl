@@ -1,6 +1,6 @@
 use warnings;
 
-open(OUT, ">outputs/load_taxonomy_table.sql") || die;
+open(OUT, ">output/load_taxonomy_table.sql") || die;
 $data_path="/JEPS-master/Jepson-eFlora";
 
 open(IN, "$data_path/eflora_keys/IJM_sequence.txt") || die;

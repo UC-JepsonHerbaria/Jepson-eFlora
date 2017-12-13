@@ -1,680 +1,243 @@
+eflora_treatments.txt  - et al - REFERENCE: Feist et al 2017 Phytotaxa 316:95--98; Carlson et al 2011 Aliso 29: 105--114; Constance & Ertter 1996 Madro&ntilde;o 43:515--521
 
-eflora_treatments.txt - Out of order: UNABRIDGED NOTE: 1. Middle lobe of leaf triangular or triangular-ovate, widest at (or near?) base, strongly slender-acuminate, with many sharp teeth .....-> var. douglasii; 1' Middle lobe of leaf ovate, oblong, rhombic, or obovate, broadened well above its base; apices obtuse, acute, or short-acuminate; teeth few to many, blunt to sharp .....-> varieties <I>diffusum</I> and <I>glabrum</I>; If recognized taxonomically, plants with mericarp wings overlapping assignable to var. <I>greenei</I> A.C. Keller, reported as endemic to the Inyo Mountains and the eastern side of southern SN but plants with such fruit also occur in KR. Murray (Kalmia 7:1--20. 1976) and Shevock (TJM (1993)) reported that this var. has leaves like those of the so-called var. <I>torreyi</I> [var. <I>glabrum</I> sensu lato, see below], but in fact, this achene form is found on plants with the small, obtuse, few-toothed leaves of var. <I>diffusus</I> and on plants with the large, acute, many-toothed leaves of var. <I>glabrum</I> s. l. Justice (1995, 2002) reports that the character is commonly variable within populations, and the samaras even vary within some specimens; for instance, E. Carter 693 (CAS) from Trinity Co. has some fruit with parallel or connivent wings, while other fruit on the same specimen has wings diverging by angles up to 60&deg;. Since the fruit character is not correlated with any other characters and may be variable within populations or even on a single tree, Justice is surely correct in denying taxonomic status to var. <I>greenei</I>. : 89 tag=UNABRIDGED NOTE last tag=UNABRIDGED NOTE 8957
-eflora_treatments.txt - mountain range problem	--	61. Calyx lobes 4--6 mm in fruit, cilia < 1 mm; inflorescence open proximally; W&I, ne DMtns (Clark Mtn Range) .....-> P. barnebyana
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (e Clark Mtn Range, also base of range in Ivanpah Valley);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: GB, w DMoj, e DMtns (Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: NCoR, SnFrB, SCoR (Santa Lucia Range, Figueroa Mtn).
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I, ne DMtns (Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMoj (ne Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, uncommon);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (New York Mtns, Clark Mtn Range);
-eflora_treatments.txt - mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges);
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10' Petals entire .....-> [S. pseudatocion]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10. Leaf narrowly lanceolate; head 5--7 mm wide; gland above petiole base not obvious, < 1 mm wide .....-> [A. retinodes]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10. Leaflets +- 12--20; flowers 2--6; seeds 2 .....-> [V. disperma]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10. Petals 2-lobed .....-> [S. pendula]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11' Flowers 1 .....-> [O. purpurea]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11' Pedicel 4--15 mm; leaf palmately 3--9 lobed; style 1.2--1.6 mm; fruit lobes +- parallel (or fruit +- round) .....-> [V. triphyllos]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11. Flowers in umbel-like cyme .....-> [O. bowiei]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11. Leaf blade unlobed or palmately 3--5-lobed .....-> [A. trifida]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 13. Flowers 1--3, crowded at tip of inflorescence axis; fruit hairy, margins ciliate; stipules unlobed, dentate .....-> [V. bithynica]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 14' Stem segment strongly glaucous, +- silvery-blue, round, > 25 cm wide .....-> [O. robusta]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 14. Glumes 1 or 2, generally < 0.5 mm, vein 0 .....-> [M. schreberi]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 15. Heads nodding; annual, aromatic; leaves 2--3-pinnately divided .....-> [A. annua]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 15. Seed +- white; leaves lanceolate .....-> [E. rigida]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Calyx generally obliquely attached but only +- lopsided-swollen at base; flower length when pressed +- 3--3.5 &times; width; fruit 6--7 mm wide .....-> [V. cracca]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Leaf abaxially glabrous (in youth sometimes sparsely hairy), base strongly cordate, often revolute; fr on axillary peduncle (25-)35--65(-100) mm .....-> [Q. robur]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Seed with +- worm-like papillae (smooth), gray-brown; leaves obovate to +- round .....-> [E. myrsinites]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 17' Leaf tip deeply notched to 2-lobed; seeds shiny, only margins dotted .....-> [A. blitum subsp. emarginatus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 17' Pedicel hairs reflexed, appressed, nonglandular; mericarp hairs sparse, 0.2--0.7 mm .....-> [G. texanum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 17. Leaf tip entire or +- notched; seeds dull, dotted .....-> [A. viridis]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 18. Leaves cauline; leaf blades narrowly oblanceolate to widely elliptic; plant narrowly erect; flowers white to pink or red; se DMoj .....-> [E. polycladon]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 2' Calyx 5--7 mm; fruit dark purple-black .....-> [C. parqui]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 2' Stamens generally in 2 whorls; sepals unequal (largest +- 2 &times; smallest in width) .....-> [P. heterotepala]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 2' Upper sinus of corolla >> lateral; flower bracts not leaf-like .....-> [L. erinus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 20' Hairs +- straight on distal stems, abaxial leaf faces; seed <= 2.1 mm wide, finely tubercled .....-> [E. dentata] (2)
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 20. Hairs recurved on distal stems, abaxial leaf faces; seed >= 2.2 mm wide, coarsely tubercled .....-> [E. davidii] (2)
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 21. Inflorescence main axis generally drooping or nodding; perianth parts widely spoon-shaped, margins overlapping, tip obtuse to rounded .....-> [A. caudatus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 22' Inflorescence erect, lateral axes thick, stiff, 9--20(30) cm, 1.2--2 cm wide; bracts 3--5(6) mm; fruit tip gradually narrowed .....-> [A. hypochondriacus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 22. Bud erect; petal base generally with a red spot .....-> [O. stricta subsp. stricta]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 22. Inflorescence erect to flexible, lateral axes thin, flexible, 3--8(12) cm, 0.5--1 cm wide; bracts 1.8--2.5 mm; fruit tip abruptly narrowed to a beak .....-> [A. cruentus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 23. Anthers 2.5--5 mm; spikelets lance-linear, narrowing only slightly towards tip; lower leaf sheaths with dense, softly appressed hairs; spikelets generally purple-tinged .....-> [B. arvensis]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 25. Stem 3--30 mm diam, hollow, inflated below middle; bulb generally 5--10 cm diam; flowers 100--500 .....-> [A. cepa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Corolla 1.4--4 cm, center yellow, perimeter blue-purple, white between .....-> [C. tricolor]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Corolla generally with 0 spots but with darker green veins adaxially .....-> [P. viscosa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Flower, fruit sessile or nearly so; fruit including wings glabrous except for pubescence on stigmatic surface in notch; bark split into ridges or plates that seldom curve together; generally some branches with corky warts or wings .....-> [U. minor]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Hypanthium glabrous in flower; new growth rusty-hairy; leaves on vigorous shoots narrow-oblong-elliptic .....-> [P. crenulata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Involucre in flower short-hairy at base, glabrous on lobes, in fruit 10--15 mm .....-> [M. nyctaginea]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Leaf entire to 3-lobed, lobes 0--1 per side; bracts persistent; pedicel 4--12 mm; stamens 20--25; seed 2--2.2 mm, rough .....-> [R. odorata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Petal limb 8--15 mm, tip divided to narrow segments .....-> [D. plumarius subsp. plumarius]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Shrub; stems erect; leaf obovate, petiole +- 0; pedicel 8--12 mm; petals generally 5, 7--10 mm .....-> [C. ovata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Basal vestigial spikelets 1(2); spikelets gradually narrowing distally .....-> [A. geniculata, including <I>A. ovata</I>]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Calyx lobes unequal, 2 longer; corolla 1--2 mm diam, white .....-> [M. verna]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Corolla 5--6 mm .....-> [V. lathyroides]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Flowers 5--9(15); fruit red .....-> [A. aethiopicus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Fruit not prickly, +- 1--1.5 cm wide .....-> [M. scutellata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Hypanthium hairy in flower; new growth gray-hairy; leaves on vigorous shoots generally elliptic .....-> [P. coccinea]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Leaf membranous, hairs 0 or sparse; petals pink-purple .....-> [P. zonale]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Leaf pale gray-green, no odor when crushed; petals dark red to purple-black .....-> [P. tenuifolium]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Pedicel 7--17 mm, slender; flower, fruit drooping; fruit wing margin densely ciliate; bark split into ridges that mostly curve together at their ends; branches never with corky outgrowths .....-> [U. americana]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Perennial herb from woody base; leaf linear to oblanceolate .....-> [L. purpurea]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Perennial herb; stems erect or decumbent; leaf ovate to wide-elliptic, petiole 5--20 mm; pedicel 3--8 mm; petals generally 4, 3--4 mm .....-> [C. multicava subsp. multicava]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Twigs winged; 2&deg; leaflets >= 10 mm .....-> [A. decurrens]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 35. Sepals spreading .....-> [R. acris]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4' Leaf main axis with raised glands at most 1&deg; leaflet pairs and generally between; fruit +- hairy, dark brown .....-> [A. mearnsii]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Flower parts 4(5); sepals with 0 hairs exceeding tip; bracts not scarious or rarely with minute scarious tip; pedicels in fruit generally > sepals .....-> [C. diffusum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Fruit oblong to club-shaped, hairs sparse, soft .....-> [P. argemone]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Inflorescence umbel-like in fruit .....-> [D. reptans]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Lower calyx lobes >= corolla tube; seed generally smooth, 1 side flattened, with raised, rough, irregular border .....-> [A. orontium]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Stipules 3--6 mm, persistent; twigs generally dull-yellow-brown-hairy; racemes terminal .....-> [G. maderensis]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 44. Base of stem bulbous, corm-like .....-> [R. bulbosus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5' Leaf margins minutely glandular, base pairs forming cup .....-> [S. subulata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Anthers generally with some blue or purple .....-> [P. longifolia]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. At least leaf veins, margins pubescent; each lobe with 0--1(2), large, rounded teeth per side; fruit wings widely spreading 160--200&deg; .....-> [A. campestre]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Bracts subtending cyathia each red proximally, green distally; stem glabrous .....-> [E. cyathophora]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Corolla 25--45 mm .....-> [A. majus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Fruit tip beaked, edges strongly concave .....-> [P. fowleri subsp. fowleri]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Leaves generally widest near middle, tips generally obtuse or abruptly soft-pointed; petals generally ovate, 4--5 mm .....-> [P. atalantioides]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Mid and distal cauline leaves oblanceolate, +- clasping; bracts among heads generally < clusters; involucre 3.5--4 mm; phyllaries in 4--5 series .....-> [G. stachydifolia]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 52. Corolla cream; inflorescence ovate to spheric, 1--2.5 cm; leaflets elliptic to oblanceolate; stipules long-tapered .....-> [T. alexandrinum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6' Banner puberulent abaxially; fruit hairs not from conspicuous tubercles .....-> [V. pannonica]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6' Cauline leaves 4--12(15); pedicels 7--28(35) mm, > fruit .....-> [D. nemorosa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6' Hairs +- straight, spreading on distal stems, abaxial leaf faces; seed <= 2.1 mm wide, finely tubercled .....-> [E. dentata] (2)
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Hairs recurved on distal stems, abaxial leaf faces; seed >= 2.2 mm wide, coarsely tubercled .....-> [E. davidii] (2)
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Petals <= 10 mm, <= sepals .....-> [H. androsaemum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Sepal hairs directed basally; petals < 0.8 cm .....-> [E. cygnorum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Stipular spines present; heads 1 .....-> [A. paradoxa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Wings of inflorescence axes 5--20 mm wide; leaf-like bracts 0 at stem branch points .....-> [L. brassicifolium]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Leaf <= 1.5 mm wide, tip spine-like .....-> [A. verticillata]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Leaf linear or narrow- to oblong-lanceolate, acuminate; corolla white, lobes 7--8 mm; fruit puberulent, with thread-like prickles .....-> [A. fruticosa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Perennial herb; corollas 5--12 mm; pedicels ascending in fruit .....-> [L. monelli]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Plant erect; margins of lower leaves not curled; inflorescence 3--12-flowered .....-> [P. vitifolium]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Hypanthium 4--8 mm; petals 5--10 mm; fruit base tapered .....-> [O. rosea]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Leaf > 4 mm wide, tip not spine-like .....-> [A. podalyriifolia]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Ocreae leaf-like distally .....-> [P. orientalis]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Plant prostrate to sprawling; margins of lower leaves irregularly curled; inflorescence 8--20-flowered .....-> [P. capitatum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Stem flexible, arched or decumbent, cymosely branched distally; leaves generally pinnately divided; heads 2--3; beak of fruit +- 2 &times; body; disturbed areas .....-> [C. bursifolia]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8' Corolla yellow-white tinged +- purple, strongly 2-lipped; stamens, style well exserted .....-> [L. etrusca]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8' Leaf blade base long-tapered; flower clusters 1--4(5), in terminal 1.5 cm of branch tips; calyx glabrous .....-> [L. sventenii]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8' Leaves petioled, petiole 1--4 mm; leaves ovate to broadly lanceolate; petals 15--30 mm .....-> [H. hookerianum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8. Leaf blade base generally cordate; flower clusters 2--4, in terminal 0.5 cm of branch tips; calyx sparsely hairy .....-> [L. preauxii]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8. Stem with 2--6 strong ridges per side; fruit < 2.5 mm, < 75% perianth; inflorescence generally orange-red; flower < internodes .....-> [J. anthelatus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 9. Inflorescence star-shaped, 1--2.5 cm; flower bracts reduced .....-> [T. resupinatum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 9. Nodes with 2 spines .....-> [A. spinosus]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 9. Petiole base 4--8 mm; raceme, occasionally panicle of 10--30 heads .....-> [A. pycnantha]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 11' Ocrea (6)8--12 mm, distally disintegrating to fibers, veins obvious; lateral veins of leaves raised adaxially .....-> [subsp. rurivagum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 11. Ocrea (3)4--8 mm, distally disintegrating +- completely, veins obscure; lateral veins of leaves visible but not raised adaxially .....-> [subsp. neglectum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 23. Spikelets not producing leafy bulblets .....-> [subsp. bulbosa]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 41' Peduncles glabrous; n SNH (introduced but now extirpated) .....-> [var. glabratum]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 9. Ocreae generally +- persistent distally, especially on upper leaves; perianth 0.9--1.3(1.5) &times; as long as wide, +- pouched at base .....-> [subsp. buxiforme]
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: 1. Middle lobe of leaf triangular or triangular-ovate, widest at (or near?) base, strongly slender-acuminate, with many sharp teeth .....-> var. douglasii; 1' Middle lobe of leaf ovate, oblong, rhombic, or obovate, broadened well above its base; apices obtuse, acute, or short-acuminate; teeth few to many, blunt to sharp .....-> varieties <I>diffusum</I> and <I>glabrum</I>; If recognized taxonomically, plants with mericarp wings overlapping assignable to var. <I>greenei</I> A.C. Keller, reported as endemic to the Inyo Mountains and the eastern side of southern SN but plants with such fruit also occur in KR. Murray (Kalmia 7:1--20. 1976) and Shevock (TJM (1993)) reported that this var. has leaves like those of the so-called var. <I>torreyi</I> [var. <I>glabrum</I> sensu lato, see below], but in fact, this achene form is found on plants with the small, obtuse, few-toothed leaves of var. <I>diffusus</I> and on plants with the large, acute, many-toothed leaves of var. <I>glabrum</I> s. l. Justice (1995, 2002) reports that the character is commonly variable within populations, and the samaras even vary within some specimens; for instance, E. Carter 693 (CAS) from Trinity Co. has some fruit with parallel or connivent wings, while other fruit on the same specimen has wings diverging by angles up to 60&deg;. Since the fruit character is not correlated with any other characters and may be variable within populations or even on a single tree, Justice is surely correct in denying taxonomic status to var. <I>greenei</I>.
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: A 2nd subsp. [subsp. <I>niveus</I>] occurs in western Baja California.
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: A 3rd subsp. [subsp. <I>fallax</I> Heiser] occurs from Nevada to Colorado, Arizona.
-eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: A 3rd subsp. [subsp. <I>rydbergii</I> (Britton) R.W. Long] occurs in north-central United States and southern Canada.
-eflora_treatments.txt - possible font problem â: BIOREGIONAL DISTRIBUTION: n SCoRO (â€œThe Indians,â€ Santa Lucia Range, c Monterey Co.).
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 17A' Spikelets loosely clustered, at least lowest spikelets distinct at arm's length; inflorescence narrow-oblong; peri lanceolate .....-> C. texensis
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 27A. Spikelets narrow-lanceolate to cylindric; fruit brown, smooth or lattice-like at 10--30&times;; rhizomes with longer internodes 5--30 mm .....-> E. parishii
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 29a. Leaflets > 21, at least on some leaves; inflorescence 10--35-flowered; southwestern Utah, Arizona, very near California .....-> A. tephrodes var. brachylobus
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 2B. Plant 1--4 m; stem 4--10 mm diam, blunt-3-sided throughout to cylindric proximally, obscure-3-sided near inflorescence; spikelets 25--150+; perianth bristles 2--4, soft-hairy .....-> S. californicus
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 32a. Petals 7--10 mm; fruit beak 0.4--0.7 mm .....-> R. sardous
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a' Petals 7--11 mm; leaf divided 0.5--0.6 to base .....-> G. pyrenaicum [neither naturalized nor escaped in California; collected only once, in 1914, on UC Berkeley campus]
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a. Petals 19--21 mm; leaf divided > 0.9 to base or midrib .....-> G. palmatum [evidently known only from +- urban environments in California]
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 4a. Stem generally prostrate to ascending, 2--4(6) dm; leaf lobes (0)5--7, margin flat; flowers generally 2--6 in leaf axils; petals generally 2 &times; > calyx; flower stalk in fruit >> calyx; fruit puberulent on back .....-> M. neglecta
-known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 6a. Corolla generally pale violet (white); stellate hairs fine, generally sessile; inflorescence generally raceme-like; fruit 8--20 mm .....-> S. carolinense
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: Based on molecular evidence, non-rosette terrestrial members of Primulaceae as treated in TJM (1993) removed to Myrsinaceae. Based on phylogenetic research, all California members of Myrsinaceae have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment.
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: The combination Leptosiphon croceus (Eastw.) J.M. Porter & L.A. Johnson is not considered to have been validly published because the place of publication of the basionym was incorrectly cited by Porter & Johnson, a situation corrected by Strother & Kersh (Phytoneuron 2016-21: 1-2).
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Morgan et al. 2014 Phytoneuron 2014-63: 1--9
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Nesom 2006 FNANM 19:431--438; Strother et al. 2012 Phytoneuron 2012-52:1--5
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Pruski & Hartman 2012 Phytoneuron 2012-98:1--15
-known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: UNABRIDGED NOTE: Recent molecular work has redefined Ericales. Non-rosette, terrestrial members of Primulaceae s.l. are now widely treated in Myrsinoideae or Myrsinaceae, which are further characterized by synapomorphies of dark dots or streaks on stems, leaves, or flowers, short corolla tubes, seeds immersed in the placenta, and -- for woody members -- wood lacking rays or with only multiseriate rays. Primulaceae, Myrsinaceae, Theophrastaceae, and Maesaceae (a recent segregate of tropical trees) constitute a closely related, monophyletic group. <I>Lysimachia</I> has been recognized (even by Linnaeus) as a rather complex group with close affinities to other genera (<I>Glaux</I>, for instance, has been shown to be an apetalous sp. of <I>Lysimachia</I>). Phylogenetic research (by Arne A. Anderberg and colleagues in Europe) on this and related genera indicated that they were actually specialized taxa that had evolved within <I>Lysimachia</I>, so that all California members of Myrsinaceae now have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment that now includes <I>Lysimachia arvensis</I>, <I>Lysimachia europaea</I>, <I>Lysimachia latifolia</I>, <I>Lysimachia maritima</I>, <I>Lysimachia minima</I>, and <I>Lysimachia monelli</I>, in addition to the two species previously treated in the genus.
 known false positive (dash in URL), probable en-dash error5: UNABRIDGED REFERENCE: Davis, C.C., M. Latvis, D.L. Nickrent, K.J. Wurdach, and D.A. Baum. 2007. Floral gigantism in Rafflesiaceae. Science 315:1812; Nickrent, D.L., A. Blarer, Y.-L. Qiu, R. Vidal-Russell, and F.E. Anderson. 2004. Phylogenetic inference in Rafflesiales: the influence of rate heterogeneity and horizontal gene transfer. BMC Evolutionary Biology 2004, 4--40 (available at www.biomedcentral.com/1471-2148/4/40)
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Stem flexible, arched or decumbent, cymosely branched distally; leaves generally pinnately divided; heads 2--3; beak of fruit +- 2 &times; body; disturbed areas .....-> [C. bursifolia]
+
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Nesom 2006 FNANM 19:431--438; Strother et al. 2012 Phytoneuron 2012-52:1--5
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Mid and distal cauline leaves oblanceolate, +- clasping; bracts among heads generally < clusters; involucre 3.5--4 mm; phyllaries in 4--5 series .....-> [G. stachydifolia]
+
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate or discoid, 1 or in few- to many-headed cyme-like or panicle-like cluster; peduncle +- elongated; involucre hemispheric; phyllaries +- equal or weakly graduated in 2--3 series, free, green; receptacle paleate, palea folded around and falling with fruit.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: A 3rd subsp. [subsp. <I>fallax</I> Heiser] occurs from Nevada to Colorado, Arizona.
+
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads discoid [radiate], in few- to many-headed cyme-like clusters; involucre obconic to widely bell-shaped; phyllaries in 2--3 series, +- equal, scarious-margined; receptacle flat or rounded, generally epaleate.
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate, 1 or in few- to many-headed cyme-like clusters; peduncle +- long; involucre hemispheric or bell-shaped; phyllaries in 2 series, outer +- spreading, thick, green, +- fleshy, inner thin, membranous; receptacle flat to rounded, paleate; palea flat, scarious.
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Pruski & Hartman 2012 Phytoneuron 2012-98:1--15
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I (Inyo Mtns), n DMtns (Panamint Range, Grapevine Mtns).
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate [discoid], 1 or in few- to many-headed cyme-like clusters; phyllaries in 2--6 equal to very unequal series, free; receptacle flat to conic, paleate; paleae entire, folded around ovaries.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SNF, SNH, Teh, TR, GB, DMtns (Panamint Range, New York Mtns);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SN, Teh, s SCoRO, TR, PR, DMtns (Panamint Range, Little San Bernardino Mtns), w edge DSon (rare);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Calyx lobes unequal, 2 longer; corolla 1--2 mm diam, white .....-> [M. verna]
+
+known false positive: mountain range problem	--	61. Calyx lobes 4--6 mm in fruit, cilia < 1 mm; inflorescence open proximally; W&I, ne DMtns (Clark Mtn Range) .....-> P. barnebyana
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I, ne DMtns (Clark Mtn Range);
+known false positive: probable en-dash error7 =few- to many-: 6' Branched hairs forked, few- to many-rayed, or tree-like; fruit arc-shaped to straight, reflexed to pendent or spreading (erect), 1--6 mm wide .....-> BOECHERA (2)
+known false positive: probable en-dash error7 =few- to many-: STEM: decumbent or erect, 1--4(5.5) dm, simple or base few- to many-branched, branched distally; proximally stiff hairy.
+known false positive: probable en-dash error7 =few- to several-: FRUIT: silique, dehiscent, linear to lanceolate, cylindric, +- 4-angled, or flat parallel to septum, generally constricted between seeds, segmented; terminal segment 1- or 2-seeded or seeds 0; proximal segment few- to several-seeded, valves prominently 3--7-veined; stigma 2-lobed.
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: terminal; few- to many-flowered, dense, or 1--few-flowered, open; involucre bracts 2--6, linear to ovate; pedicels 0--25 mm.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10' Petals entire .....-> [S. pseudatocion]
+
+known false positive: probable en-dash error7 =few- to several-: INFLORESCENCE: terminal, few- to several-flowered; bracts scarious; pedicels ascending to erect, in fruit +- straight.
+known false positive: probable en-dash error7 =few- to many-: PISTILLATE INFLORESCENCE: bracts in fruit 2.5--3.5 mm, fused proximally, ovate to diamond-shaped, tip acute, few- to many-dentate.
+known false positive: probable en-dash error7 =few- to many-: STEM: spreading to erect, occasionally rooting at base; few- to many-branched.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Corolla 1.4--4 cm, center yellow, perimeter blue-purple, white between .....-> [C. tricolor]
+
+known false positive: probable en-dash error7 =few- to several-: INFLORESCENCE: umbel-like, sessile, few- to several-flowered; bracts 4, +- 1 cm, +- not showy, +- brown, generally with yellow margins, ephemeral; pedicel +- 1 cm, soft-white-hairy.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range);
+known false positive: mountain range problem	--	82. Ovary nonglandular-hairy; KR, NCoR, n CCo (Tassajara, Santa Lucia Range), w SnFrB (Mount Tamalpais; s Santa Cruz Mtns) .....-> subsp. canescens
+eflora_treatments.txt	Bioregional punctuation BIOREGIONAL DISTRIBUTION: e KR;
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Bracts subtending cyathia each red proximally, green distally; stem glabrous .....-> [E. cyathophora]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Hairs recurved on distal stems, abaxial leaf faces; seed >= 2.2 mm wide, coarsely tubercled .....-> [E. davidii] (2)
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6' Hairs +- straight, spreading on distal stems, abaxial leaf faces; seed <= 2.1 mm wide, finely tubercled .....-> [E. dentata] (2)
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 15. Seed +- white; leaves lanceolate .....-> [E. rigida]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Seed with +- worm-like papillae (smooth), gray-brown; leaves obovate to +- round .....-> [E. myrsinites]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 20. Hairs recurved on distal stems, abaxial leaf faces; seed >= 2.2 mm wide, coarsely tubercled .....-> [E. davidii] (2)
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 20' Hairs +- straight on distal stems, abaxial leaf faces; seed <= 2.1 mm wide, finely tubercled .....-> [E. dentata] (2)
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, New York Mtns);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Twigs winged; 2&deg; leaflets >= 10 mm .....-> [A. decurrens]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4' Leaf main axis with raised glands at most 1&deg; leaflet pairs and generally between; fruit +- hairy, dark brown .....-> [A. mearnsii]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Stipular spines present; heads 1 .....-> [A. paradoxa]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Leaf > 4 mm wide, tip not spine-like .....-> [A. podalyriifolia]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Leaf <= 1.5 mm wide, tip spine-like .....-> [A. verticillata]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 9. Petiole base 4--8 mm; raceme, occasionally panicle of 10--30 heads .....-> [A. pycnantha]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10. Leaf narrowly lanceolate; head 5--7 mm wide; gland above petiole base not obvious, < 1 mm wide .....-> [A. retinodes]
+
 known false positive: Distribution outside California but no Bioregional Distribution DISTRIBUTION OUTSIDE CALIFORNIA: Arizona to Oklahoma, Texas, northwestern Mexico, near California in western Arizona, possibly a waif in California.
 known false positive: Distribution outside California but no Bioregional Distribution DISTRIBUTION OUTSIDE CALIFORNIA: southwestern Utah, Arizona, very near California.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Stipules 3--6 mm, persistent; twigs generally dull-yellow-brown-hairy; racemes terminal .....-> [G. maderensis]
+
 known false positive: mountain range problem	--	123. Plant 4--7 dm; flower 13--15 mm; ne DMtns (Last Chance Range, Grapevine Mtns, Inyo Co.) .....-> L. holmgrenianus
-known false positive: mountain range problem	--	31' Leaves channeled; nectary encircled by sparse, club-like hairs; stem occasionally twisted; n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns) .....-> C. kennedyi var. munzii
-known false positive: mountain range problem	--	82. Ovary nonglandular-hairy; KR, NCoR, n CCo (Tassajara, Santa Lucia Range), w SnFrB (Mount Tamalpais; s Santa Cruz Mtns) .....-> subsp. canescens
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: SnBr, e DMtns (Mid Hills, Clark Mtn Range, Ivanpah, New York mtns), waif elsewhere;
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: W&I (Inyo Mtns), n DMtns (Panamint Range, Grapevine Mtns).
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: c&s SNH, W&I, n DMtns (Panamint Range, Grapevine Mtns);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, New York Mtns);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Kingston Range, New York Mtns);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e PR, e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges), se DMoj exc DMtns, e DSon;
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n DMtns (Death Valley region, e Inyo Co.; Clark Mtn Range, ne San Bernardino Co.), e DMoj exc DMtns.
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: ne DMtns (Clark Mtn Range, New York Mtns, Kingston Range).
 known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: ne DMtns (Last Chance Range, Grapevine Mtns, Inyo Co.);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SN, Teh, s SCoRO, TR, PR, DMtns (Panamint Range, Little San Bernardino Mtns), w edge DSon (rare);
-known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: s SNF, SNH, Teh, TR, GB, DMtns (Panamint Range, New York Mtns);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Fruit not prickly, +- 1--1.5 cm wide .....-> [M. scutellata]
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a. Stipules generally divided +- to base into a cluster of bristles .....-> [M. orbicularis]
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 3a' Stipules dentate .....-> [M. scutellata]3a' Stipules dentate .....-> [M. scutellata]
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 9. Inflorescence star-shaped, 1--2.5 cm; flower bracts reduced .....-> [T. resupinatum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 52. Corolla cream; inflorescence ovate to spheric, 1--2.5 cm; leaflets elliptic to oblanceolate; stipules long-tapered .....-> [T. alexandrinum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Corolla 5--6 mm .....-> [V. lathyroides]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6' Banner puberulent abaxially; fruit hairs not from conspicuous tubercles .....-> [V. pannonica]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 10. Leaflets +- 12--20; flowers 2--6; seeds 2 .....-> [V. disperma]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 13. Flowers 1--3, crowded at tip of inflorescence axis; fruit hairy, margins ciliate; stipules unlobed, dentate .....-> [V. bithynica]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Calyx generally obliquely attached but only +- lopsided-swollen at base; flower length when pressed +- 3--3.5 &times; width; fruit 6--7 mm wide .....-> [V. cracca]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 16. Leaf abaxially glabrous (in youth sometimes sparsely hairy), base strongly cordate, often revolute; fr on axillary peduncle (25-)35--65(-100) mm .....-> [Q. robur]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Sepal hairs directed basally; petals < 0.8 cm .....-> [E. cygnorum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 17' Pedicel hairs reflexed, appressed, nonglandular; mericarp hairs sparse, 0.2--0.7 mm .....-> [G. texanum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Leaf membranous, hairs 0 or sparse; petals pink-purple .....-> [P. zonale]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Plant prostrate to sprawling; margins of lower leaves irregularly curled; inflorescence 8--20-flowered .....-> [P. capitatum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Plant erect; margins of lower leaves not curled; inflorescence 3--12-flowered .....-> [P. vitifolium]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: c&s SNH, W&I, n DMtns (Panamint Range, Grapevine Mtns);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Petals <= 10 mm, <= sepals .....-> [H. androsaemum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8' Leaves petioled, petiole 1--4 mm; leaves ovate to broadly lanceolate; petals 15--30 mm .....-> [H. hookerianum]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: ne DMtns (Clark Mtn Range, New York Mtns, Kingston Range).
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMoj (ne Clark Mtn Range);
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 4a' Stem erect, (5)10--20(30) dm; leaf lobes generally 5, margin wavy; flowers 2--8 in leaf axils; petals generally +- > calyx; flower stalk in fruit < calyx; fruit glabrous on back .....-> [M. verticillata var. crispa]
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n DMtns (Death Valley region, e Inyo Co.; Clark Mtn Range, ne San Bernardino Co.), e DMoj exc DMtns.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: NCoR, SnFrB, SCoR (Santa Lucia Range, Figueroa Mtn).
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: Based on molecular evidence, non-rosette terrestrial members of Primulaceae as treated in TJM (1993) removed to Myrsinaceae. Based on phylogenetic research, all California members of Myrsinaceae have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment.
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: UNABRIDGED NOTE: Recent molecular work has redefined Ericales. Non-rosette, terrestrial members of Primulaceae s.l. are now widely treated in Myrsinoideae or Myrsinaceae, which are further characterized by synapomorphies of dark dots or streaks on stems, leaves, or flowers, short corolla tubes, seeds immersed in the placenta, and -- for woody members -- wood lacking rays or with only multiseriate rays. Primulaceae, Myrsinaceae, Theophrastaceae, and Maesaceae (a recent segregate of tropical trees) constitute a closely related, monophyletic group. <I>Lysimachia</I> has been recognized (even by Linnaeus) as a rather complex group with close affinities to other genera (<I>Glaux</I>, for instance, has been shown to be an apetalous sp. of <I>Lysimachia</I>). Phylogenetic research (by Arne A. Anderberg and colleagues in Europe) on this and related genera indicated that they were actually specialized taxa that had evolved within <I>Lysimachia</I>, so that all California members of Myrsinaceae now have been transferred to <I>Lysimachia</I> (Manns & Anderberg 2009 Willdenowia 39:49--54 and Cholewa 2014 Phytoneuron 2014-28: 1--2), as reflected in this revised treatment that now includes <I>Lysimachia arvensis</I>, <I>Lysimachia europaea</I>, <I>Lysimachia latifolia</I>, <I>Lysimachia maritima</I>, <I>Lysimachia minima</I>, and <I>Lysimachia monelli</I>, in addition to the two species previously treated in the genus.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7' Perennial herb; corollas 5--12 mm; pedicels ascending in fruit .....-> [L. monelli]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e PR, e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges), se DMoj exc DMtns, e DSon;
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Involucre in flower short-hairy at base, glabrous on lobes, in fruit 10--15 mm .....-> [M. nyctaginea]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Hypanthium 4--8 mm; petals 5--10 mm; fruit base tapered .....-> [O. rosea]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 21. Bud erect; petal base generally with a red spot .....-> [O. stricta subsp. stricta]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (e Clark Mtn Range, also base of range in Ivanpah Valley);
+eflora_treatments.txt - possible font problem â: COMMON NAME: ROBBINSâ€™ BROOMRAPE
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11. Flowers in umbel-like cyme .....-> [O. bowiei]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11' Flowers 1 .....-> [O. purpurea]
+
 known false positive: mountain range problem	--	NOTE: Highly variable, with > 90 taxa described; further study needed to determine if <I>Eschscholzia californica</I> subsp. <I>mexicana</I> (Greene) C. Clark (annual; cotyledons entire; DMtns), <I>Eschscholzia procera</I> Greene (pl large; southern SNF) deserve taxonomic recognition.
-known false positive: probable en-dash error6 =: 11' Bracts few--many, +- throughout inflorescence; corolla limb 2--3 mm diam; nutlet generally arched or folded
-known false positive: probable en-dash error6 =: 11' Shrub, not rhizomatous, not forming colonies; heads in terminal flat-topped or pyramidal panicle-like clusters in summer--fall-flowering pls, in smaller lateral clusters in spring-flowering plants; fruit glabrous .....-> B. salicifolia subsp. salicifolia
-known false positive: probable en-dash error6 =: 12' Stem 20--60 cm, stout; flowers generally > 50; perianth generally white; ovary crests white or green; flower Apr--Jun; SCoRI, n WTR
-known false positive: probable en-dash error6 =: 12. Stem (10)+- 20(35) cm, slender; flowers generally 10--30; perianth generally pink to lavender (white); ovary crests purple; flower Mar--Apr; s SNF, Teh, SnJV, SnFrB, SCoR, WTR .....-> var. howellii
-known false positive: probable en-dash error6 =: 15' Style appendage > stigma; rays 1--20; flower (Jul)Aug--Dec
-known false positive: probable en-dash error6 =: 15. Style appendage +- = stigma; rays 0--3; flower Mar--Jun .....-> E. cooperi var. cooperi (2)
-known false positive: probable en-dash error6 =: 19' Style appendage >= stigma; rays 1--30; flower (Jul)Aug--Dec (<I>Ericameria pinifolia</I> occasionally flowering in spring)
-known false positive: probable en-dash error6 =: 19. Style appendage +- = stigma; rays 0--3; flower Mar--Jun .....-> E. cooperi var. cooperi (2)
-known false positive: probable en-dash error6 =: 2' Leaves 12--18.5 mm wide, tip generally notched; seed smooth or with weak longitudinal ridges; plants of subtidal waters, rooted generally 4--17 m below mean low tide; flower (May)Aug, fruit Sep--Oct .....-> Z. pacifica
-known false positive: probable en-dash error6 =: 29' Sepals bright blue; flower Feb--May; plants on 15--35&deg; slopes .....-> subsp. thornei
-known false positive: probable en-dash error6 =: 29. Sepals white to light blue; flower Jan--Apr; plants on 0--15&deg; slopes .....-> subsp. kinkiense
-known false positive: probable en-dash error6 =: 3' Plant generally < 4(5) dm; lateral veins of cauline leaves obscure; generally spring-moist places of plains, foothills; flower Apr--Jun
-known false positive: probable en-dash error6 =: 3. Plant 4--15 dm; lateral veins of cauline leaves conspicuous; wet places in mtns; flower Jun--Aug .....-> M. ciliata var. stomatechoides
-known false positive: probable en-dash error6 =: 41' Nutlet +- tubercled, dull, 0.8--2 mm, abaxial cross-ribs few--many; corolla limb generally <= 2 mm or > 5 mm diam
-known false positive: probable en-dash error6 =: 46' Fruit generally fragile, symmetric at base, generally rapidly dehiscent; flower generally Apr--Sep
-known false positive: probable en-dash error6 =: 46. Fruit hard, generally oblique at base, tardily dehiscent; flower generally Mar--Apr
-known false positive: probable en-dash error6 =: 6' Involucre 2.5--3 mm, generally +- purple proximally, base cobwebby; phyllaries in 3--4(5) series, outer ovate-triangular, 1/2--2/3 &times; inner, acute; flower Mar--Apr .....-> G. stagnalis
-known false positive: probable en-dash error6 =: 6. Involucre 3--3.5 mm, not purple, base generally +- glabrous to occasionally sparsely cobwebby; phyllaries in 5--7 series, outer ovate-triangular, 1/3--1/2 &times; inner, acute-acuminate; flower Jun--Jul .....-> G. calviceps
-known false positive: probable en-dash error6 =: 9' Flowers few--many in elongate raceme; fruit dehiscing base to tip
-known false positive: probable en-dash error6 =: FLOWER: calyx lobes, petals 4 [(5)]; hypanthium prolonged above ovary, base often long-acuminate; ovaries chambers generally 2, each few--many-ovuled.
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Apr)May--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Apr)May--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Dec)Mar--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Feb)Apr--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Jan)Apr--May(Jul)
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Jan)Mar--Jun(Oct)
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Jan--Feb)Mar--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Jun)Jul--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Mar)Apr--Jun, Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: (Mar)Apr--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: (May)Jul--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: (May)Jun--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: After summer rain, (Jun)Aug--Nov(Jan)
-known false positive: probable en-dash error6 =: FLOWERING TIME: All year, mostly May--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Aug(Sep--Nov)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul(Oct, at lower elevations, DMoj)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul(Sep)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul(all year)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul, Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jul, Sep--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun, Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun, Oct--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun, Sep--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun, Sep--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Jun, fruiting Aug--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May (generally 2 weeks after <I>Parkinsonia florida</I>)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May (generally 2 weeks before <I>Parkinsonia microphylla</I>)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May(Jun)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May(Oct)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May, Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--May, fruiting Sep--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Apr--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Aug--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Jun, Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Dec--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Early Feb--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Evidently unrecorded in California, May--Jul in TX, +- all year in southern Texas
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Apr, after Sep--Oct rain
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Aug(Oct--Dec)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Jul(Nov--Apr in se California)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Jun, Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--May(Jun)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--May, Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Feb--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Apr--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Apr--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Apr--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Apr--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Aug--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Feb--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jul--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jul--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jul--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jun--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jun--Oct(+- all year)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Jun--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Mar--Jul(+- all year in cultivation)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Mar--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Mar--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally May--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally May--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Generally Oct--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Apr(May), Jun--Sep(Nov), possibly year round in cultivation.
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Jun, Aug--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Jun, Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--May(Sep)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--May, Jul--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--May, Oct--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--May, Sep--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jan--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jul--Sept
-known false positive: probable en-dash error6 =: FLOWERING TIME: July--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun, fruiting Sep--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Aug(Sep)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Jul(Oct--Nov)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Oct?
-known false positive: probable en-dash error6 =: FLOWERING TIME: Jun--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late Apr--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late Apr--early Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late Mar--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late May--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late May--late Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late spring--early fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late spring--early summer
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late spring--fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late spring--summer
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late spring--winter
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late winter--early spring
-known false positive: probable en-dash error6 =: FLOWERING TIME: Late winter--fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Apr(fall)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Apr, Nov--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jul, Oct--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun(Aug)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun(Jan)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun(Oct)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun, Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun, Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun, Oct--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun, Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Jun, Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May(Aug)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May(Jun)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May(fall)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May, Nov--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--May, Oct--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Oct(Dec)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Oct(Dec?)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mar--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Aug(Oct)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul(Oct)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul(Sep)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul, Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul, Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul, fruiting Nov--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul, fruiting Oct--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jul, fruiting Oct--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun(Aug)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun(Jul)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun(est)
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, Aug--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, Sep--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, fruiting Oct--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Jun, fruiting Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: May--Sep
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mid Feb--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mid Jan--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mid-summer--fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Mostly Dec--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov, probably other times in California, +- Sep--Jan in southern Africa
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Aug
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Nov--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Jul
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Oct--Nov(in Italy)
-known false positive: probable en-dash error6 =: FLOWERING TIME: Probably Mar--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Apr
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Dec
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Feb
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Jan
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Jun
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Mar
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--May
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Nov
-known false positive: probable en-dash error6 =: FLOWERING TIME: Sep--Oct
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--early fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--early summer
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--late summer
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--summer
-known false positive: probable en-dash error6 =: FLOWERING TIME: Spring--winter
-known false positive: probable en-dash error6 =: FLOWERING TIME: Summer--early fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Summer--fall
-known false positive: probable en-dash error6 =: FLOWERING TIME: Summer--winter
-known false positive: probable en-dash error6 =: FRUIT: nutlet 1--1.8 mm, ovate, dull to shiny; abaxial cross-ribs prominent, irregular-net-like, prickles (0)few--many, slender, barb-tipped, +- in columns, 0 adaxially; scar near base, +- triangular, 25--60% fruit length, deep-concave.
-known false positive: probable en-dash error6 =: FRUITING TIME: Apr--Aug
-known false positive: probable en-dash error6 =: FRUITING TIME: Apr--Jul
-known false positive: probable en-dash error6 =: FRUITING TIME: Apr--Jun
-known false positive: probable en-dash error6 =: FRUITING TIME: Apr--May
-known false positive: probable en-dash error6 =: FRUITING TIME: Apr--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Aug--Apr
-known false positive: probable en-dash error6 =: FRUITING TIME: Aug--Nov
-known false positive: probable en-dash error6 =: FRUITING TIME: Aug--Oct
-known false positive: probable en-dash error6 =: FRUITING TIME: Aug--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Feb--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Jul--Aug
-known false positive: probable en-dash error6 =: FRUITING TIME: Jul--Nov
-known false positive: probable en-dash error6 =: FRUITING TIME: Jul--Oct
-known false positive: probable en-dash error6 =: FRUITING TIME: Jul--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Jun--Aug
-known false positive: probable en-dash error6 =: FRUITING TIME: Jun--Jul
-known false positive: probable en-dash error6 =: FRUITING TIME: Jun--Nov
-known false positive: probable en-dash error6 =: FRUITING TIME: Jun--Oct
-known false positive: probable en-dash error6 =: FRUITING TIME: Jun--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Mar--Jun
-known false positive: probable en-dash error6 =: FRUITING TIME: Mar--May
-known false positive: probable en-dash error6 =: FRUITING TIME: Mar--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: May--Aug
-known false positive: probable en-dash error6 =: FRUITING TIME: May--Jul
-known false positive: probable en-dash error6 =: FRUITING TIME: May--Jun
-known false positive: probable en-dash error6 =: FRUITING TIME: May--Oct
-known false positive: probable en-dash error6 =: FRUITING TIME: May--Sep
-known false positive: probable en-dash error6 =: FRUITING TIME: Sep--Nov
-known false positive: probable en-dash error6 =: FRUITING TIME: Sep--Oct
-known false positive: probable en-dash error6 =: INFLORESCENCE: few--many, generally 2--27 cm including peduncle; spike 0.5--3.5 cm, generally short-cylindric, woolly; peduncle not grooved, hairs generally +- spreading (ascending), each in diam generally << to = 2 &times; those on leaves; bract not exserted, +- = calyx, ovate to round, green midrib generally reaching tip.
-known false positive: probable en-dash error6 =: INFLORESCENCE: few--many-flowered, generally exceeded by leaves.
-known false positive: probable en-dash error6 =: INFLORESCENCE: heads few--generally many in +- flat-topped to panicle-like cluster; involucre 6--10 mm, phyllaries in 4--6 series, densely glandular.
-known false positive: probable en-dash error6 =: INFLORESCENCE: heads generally paired, +- sessile or occasionally 1 short-peduncled above (1)2 leaves, 5--15 mm wide, few--many-flowered, ovate or spheric; peduncle 0 or 1; pedicels 0.
-known false positive: probable en-dash error6 =: INFLORESCENCE: heads in terminal flat-topped or pyramidal panicle-like cluster in summer--fall-flowering pls, in smaller lateral clusters in spring-flowering plants; involucre hemispheric; phyllaries 2--4 mm, awl-shaped to lanceolate, irregularly toothed, green or +- red-tinged, tips obtuse to long-tapered.
-known false positive: probable en-dash error6 =: INFLORESCENCE: open, branches few--several, strigose; pedicel 12--23 mm in fruit.
-known false positive: probable en-dash error6 =: INFLORESCENCE: open, branches few--several; pedicel 3--9+ mm in fruit.
-known false positive: probable en-dash error6 =: INFLORESCENCE: open, branches few--several; pedicel 6--12 mm in fruit.
-known false positive: probable en-dash error6 =: LEAF: cauline 4--6 cm, 6--13 mm wide, lanceolate to oblanceolate, teeth few--many on proximal, +- 0 on distal.
-known false positive: probable en-dash error6 =: LEAF: proximally opposite, 2--10+ pairs in Feb--Apr, otherwise alternate, petioled, blades proximally lance-linear to lanceolate, distally elliptic or lanceolate to +- deltate or ovate, entire or toothed, minutely strigose to silky-hairy, sometimes coarse-erect-hairy, generally gland-dotted, 3-veined.
-known false positive: probable en-dash error6 =: NOTE: Close to <I>Orthocarpus</I>, distinguished by inflorescence, calyx, stamens; generally flowers Jul--Sep. Other taxa in TJM (1993) moved to <I>Chloropyron</I>, <I>Dicranostegia</I>.
-known false positive: probable en-dash error6 =: NOTE: Cones present Dec--Apr.
-known false positive: probable en-dash error6 =: NOTE: Cones present Feb--Jun.
-known false positive: probable en-dash error6 =: NOTE: Cones present Mar--Apr, Jul--Aug.
-known false positive: probable en-dash error6 =: NOTE: Cones present Mar--Apr.
-known false positive: probable en-dash error6 =: NOTE: Cones present Mar--Jun.
-known false positive: probable en-dash error6 =: NOTE: Formerly included in <I>Cordylanthus</I>. Close to <I>Dicranostegia</I>, together forming the <I>Pseudocordylanthus</I> clade (see Tank et al. 2009); distinguished by salt-tolerant ecology, inflorescence, calyx, stamens; flowers May--Nov.
-known false positive: probable en-dash error6 =: NOTE: Fruiting Jun--Apr.
-known false positive: probable en-dash error6 =: NOTE: Generally deciduous Jun--Feb.
-known false positive: probable en-dash error6 =: NOTE: Plants of coast ranges, relative to plants of desert, taller, may have different ecological tolerances. Cones present Mar--Apr.
-known false positive: probable en-dash error6 =: NOTE: Summer--fall-flowering forms (inflorescence terminal, leaves mostly toothed) formerly separated from winter--spring-flowering forms (inflorescence lateral, leaves +- entire).
-known false positive: probable en-dash error6 =: NOTE: Variable, hybridization common. Many species declining from habitat destruction, collecting; few thrive in gardens. Generally flowers May--Aug.
-known false positive: probable en-dash error6 =: SEED: few--several.
-known false positive: probable en-dash error6 =: SEED: mature Aug--Dec.
-known false positive: probable en-dash error6 =: SEED: mature Aug--Sep.
-known false positive: probable en-dash error6 =: SEED: mature Sep--Oct.
-known false positive: probable en-dash error6 =: STEM: 0.5--10 cm, branches few--many, throughout, slender; coarse-strigose, hairs generally ascending.
-known false positive: probable en-dash error6 =: STEM: decumbent to ascending, few--many.
-known false positive: probable en-dash error6 =: STEM: decumbent to erect, few--many-branched, short-stiff-hairy, generally glandular.
-known false positive: probable en-dash error6 =: STEM: erect, 2--8 dm, few--many-branched.
-known false positive: probable en-dash error6 =: STEM: few--several, 1--3 dm, clustered, +- unbranched.
+known false positive: mountain range problem	--	NOTE: Variable; further study needed to determine if <I>Eschscholzia minutiflora</I> subsp. <I>covillei</I> (Greene) C. Clark (petals 6--18 mm; 2n=24; northern and central DMoj), <I>Eschscholzia minutiflora</I> subsp. <I>twisselmannii</I> C. Clark & M. Faull (petals 10--26 mm; 2n=12; western DMoj) deserve taxonomic recognition.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Fruit oblong to club-shaped, hairs sparse, soft .....-> [P. argemone]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 2' Stamens generally in 2 whorls; sepals unequal (largest +- 2 &times; smallest in width) .....-> [P. heterotepala]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Leaf pale gray-green, no odor when crushed; petals dark red to purple-black .....-> [P. tenuifolium]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 4. Lower calyx lobes >= corolla tube; seed generally smooth, 1 side flattened, with raised, rough, irregular border .....-> [A. orontium]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Corolla 25--45 mm .....-> [A. majus]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Perennial herb from woody base; leaf linear to oblanceolate .....-> [L. purpurea]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (New York Mtns, Clark Mtn Range);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Kingston Range, New York Mtns);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 11' Pedicel 4--15 mm; leaf palmately 3--9 lobed; style 1.2--1.6 mm; fruit lobes +- parallel (or fruit +- round) .....-> [V. triphyllos]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 6. Wings of inflorescence axes 5--20 mm wide; leaf-like bracts 0 at stem branch points .....-> [L. brassicifolium]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8. Leaf blade base generally cordate; flower clusters 2--4, in terminal 0.5 cm of branch tips; calyx sparsely hairy .....-> [L. preauxii]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8' Leaf blade base long-tapered; flower clusters 1--4(5), in terminal 1.5 cm of branch tips; calyx glabrous .....-> [L. sventenii]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: GB, w DMoj, e DMtns (Clark Mtn Range);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, uncommon);
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: NOTE: The combination Leptosiphon croceus (Eastw.) J.M. Porter & L.A. Johnson is not considered to have been validly published because the place of publication of the basionym was incorrectly cited by Porter & Johnson, a situation corrected by Strother & Kersh (Phytoneuron 2016-21: 1-2).
+known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: REFERENCE: Morgan et al. 2014 Phytoneuron 2014-63: 1--9
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 18. Leaves cauline; leaf blades narrowly oblanceolate to widely elliptic; plant narrowly erect; flowers white to pink or red; se DMoj .....-> [E. polycladon]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 41' Peduncles glabrous; n SNH (introduced but now extirpated) .....-> [var. glabratum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 7. Ocreae leaf-like distally .....-> [P. orientalis]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Fruit tip beaked, edges strongly concave .....-> [P. fowleri subsp. fowleri]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 9. Ocreae generally +- persistent distally, especially on upper leaves; perianth 0.9--1.3(1.5) &times; as long as wide, +- pouched at base .....-> [subsp. buxiforme]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 11. Ocrea (3)4--8 mm, distally disintegrating +- completely, veins obscure; lateral veins of leaves visible but not raised adaxially .....-> [subsp. neglectum]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 11' Ocrea (6)8--12 mm, distally disintegrating to fibers, veins obvious; lateral veins of leaves raised adaxially .....-> [subsp. rurivagum]
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 32a' Petals 4--5 mm; fruit beak +- 0.3 mm .....-> [R. trilobus]
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 35. Sepals spreading .....-> [R. acris]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 44. Base of stem bulbous, corm-like .....-> [R. bulbosus]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Leaf entire to 3-lobed, lobes 0--1 per side; bracts persistent; pedicel 4--12 mm; stamens 20--25; seed 2--2.2 mm, rough .....-> [R. odorata]
+
 known false positive: probable en-dash error7 =few- to many-: 11' Plant generally tufted to matted from a few- to many-branched caudex; resinous odor strong; leaflets often > 10-toothed or -lobed; fruit often < 2 mm; generally non-serpentine
 known false positive: probable en-dash error7 =few- to many-: 15' Leaflets +- palmately veined at base, wedge-shaped or +- round-ovate, +- unevenly few- to many-toothed or -lobed
-known false positive: probable en-dash error7 =few- to many-: 6' Branched hairs forked, few- to many-rayed, or tree-like; fruit arc-shaped to straight, reflexed to pendent or spreading (erect), 1--6 mm wide .....-> BOECHERA (2)
-known false positive: probable en-dash error7 =few- to many-: 7. Leaflets < 8 per side; stems hanging to +- matted; caudex few- to many-branched; rock outcrops
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: 5--15 cm, few- to many-flowered.
 known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: dense or +- open, few- to many-flowered; pedicels generally 1--6 mm.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: few- to many-flowered.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: few- to many-flowered; peduncle 3--15 cm; bracts leaf-like, simple.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads discoid [radiate], in few- to many-headed cyme-like clusters; involucre obconic to widely bell-shaped; phyllaries in 2--3 series, +- equal, scarious-margined; receptacle flat or rounded, generally epaleate.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate [discoid], 1 or in few- to many-headed cyme-like clusters; phyllaries in 2--6 equal to very unequal series, free; receptacle flat to conic, paleate; paleae entire, folded around ovaries.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate or discoid, 1 or in few- to many-headed cyme-like or panicle-like cluster; peduncle +- elongated; involucre hemispheric; phyllaries +- equal or weakly graduated in 2--3 series, free, green; receptacle paleate, palea folded around and falling with fruit.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: heads radiate, 1 or in few- to many-headed cyme-like clusters; peduncle +- long; involucre hemispheric or bell-shaped; phyllaries in 2 series, outer +- spreading, thick, green, +- fleshy, inner thin, membranous; receptacle flat to rounded, paleate; palea flat, scarious.
+known false positive: probable en-dash error7 =few- to many-: 7. Leaflets < 8 per side; stems hanging to +- matted; caudex few- to many-branched; rock outcrops
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range);
 known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: open, few- to many-flowered; pedicels 7--30 mm, generally +- S-shaped in fruit.
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: few- to many-flowered.
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: few- to many-flowered.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Hypanthium hairy in flower; new growth gray-hairy; leaves on vigorous shoots generally elliptic .....-> [P. coccinea]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Hypanthium glabrous in flower; new growth rusty-hairy; leaves on vigorous shoots narrow-oblong-elliptic .....-> [P. crenulata]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Leaves generally widest near middle, tips generally obtuse or abruptly soft-pointed; petals generally ovate, 4--5 mm .....-> [P. atalantioides]
+
 known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: panicle of few- to many-flowered clusters.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. At least leaf veins, margins pubescent; each lobe with 0--1(2), large, rounded teeth per side; fruit wings widely spreading 160--200&deg; .....-> [A. campestre]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: UNABRIDGED NOTE: 1. Middle lobe of leaf triangular or triangular-ovate, widest at (or near?) base, strongly slender-acuminate, with many sharp teeth .....-> var. douglasii; 1' Middle lobe of leaf ovate, oblong, rhombic, or obovate, broadened well above its base; apices obtuse, acute, or short-acuminate; teeth few to many, blunt to sharp .....-> varieties <I>diffusum</I> and <I>glabrum</I>; If recognized taxonomically, plants with mericarp wings overlapping assignable to var. <I>greenei</I> A.C. Keller, reported as endemic to the Inyo Mountains and the eastern side of southern SN but plants with such fruit also occur in KR. Murray (Kalmia 7:1--20. 1976) and Shevock (TJM (1993)) reported that this var. has leaves like those of the so-called var. <I>torreyi</I> [var. <I>glabrum</I> sensu lato, see below], but in fact, this achene form is found on plants with the small, obtuse, few-toothed leaves of var. <I>diffusus</I> and on plants with the large, acute, many-toothed leaves of var. <I>glabrum</I> s. l. Justice (1995, 2002) reports that the character is commonly variable within populations, and the samaras even vary within some specimens; for instance, E. Carter 693 (CAS) from Trinity Co. has some fruit with parallel or connivent wings, while other fruit on the same specimen has wings diverging by angles up to 60&deg;. Since the fruit character is not correlated with any other characters and may be variable within populations or even on a single tree, Justice is surely correct in denying taxonomic status to var. <I>greenei</I>.
+
+eflora_treatments.txt - Out of order: UNABRIDGED NOTE: 1. Middle lobe of leaf triangular or triangular-ovate, widest at (or near?) base, strongly slender-acuminate, with many sharp teeth .....-> var. douglasii; 1' Middle lobe of leaf ovate, oblong, rhombic, or obovate, broadened well above its base; apices obtuse, acute, or short-acuminate; teeth few to many, blunt to sharp .....-> varieties <I>diffusum</I> and <I>glabrum</I>; If recognized taxonomically, plants with mericarp wings overlapping assignable to var. <I>greenei</I> A.C. Keller, reported as endemic to the Inyo Mountains and the eastern side of southern SN but plants with such fruit also occur in KR. Murray (Kalmia 7:1--20. 1976) and Shevock (TJM (1993)) reported that this var. has leaves like those of the so-called var. <I>torreyi</I> [var. <I>glabrum</I> sensu lato, see below], but in fact, this achene form is found on plants with the small, obtuse, few-toothed leaves of var. <I>diffusus</I> and on plants with the large, acute, many-toothed leaves of var. <I>glabrum</I> s. l. Justice (1995, 2002) reports that the character is commonly variable within populations, and the samaras even vary within some specimens; for instance, E. Carter 693 (CAS) from Trinity Co. has some fruit with parallel or connivent wings, while other fruit on the same specimen has wings diverging by angles up to 60&deg;. Since the fruit character is not correlated with any other characters and may be variable within populations or even on a single tree, Justice is surely correct in denying taxonomic status to var. <I>greenei</I>. : 90 tag=UNABRIDGED NOTE last tag=UNABRIDGED NOTE 8968
+
+
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 2' Calyx 5--7 mm; fruit dark purple-black .....-> [C. parqui]
+
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: few- to many-flowered; peduncle 3--15 cm; bracts leaf-like, simple.
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Corolla generally with 0 spots but with darker green veins adaxially .....-> [P. viscosa]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 5. Anthers generally with some blue or purple .....-> [P. longifolia]
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 6a' Corolla generally purple (white); stellate hairs coarse, some stalked; inflorescence generally branched; fruit > 20 mm .....-> [S. dimidiatum]
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Pedicel 7--17 mm, slender; flower, fruit drooping; fruit wing margin densely ciliate; bark split into ridges that mostly curve together at their ends; branches never with corky outgrowths .....-> [U. americana]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3' Flower, fruit sessile or nearly so; fruit including wings glabrous except for pubescence on stigmatic surface in notch; bark split into ridges or plates that seldom curve together; generally some branches with corky warts or wings .....-> [U. minor]
+
 known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: spikes, few- to many-flowered, peduncled; flowers +- sunken into axis.
-known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: terminal; few- to many-flowered, dense, or 1--few-flowered, open; involucre bracts 2--6, linear to ovate; pedicels 0--25 mm.
-known false positive: probable en-dash error7 =few- to many-: PISTILLATE INFLORESCENCE: bracts in fruit 2.5--3.5 mm, fused proximally, ovate to diamond-shaped, tip acute, few- to many-dentate.
-known false positive: probable en-dash error7 =few- to many-: STEM: decumbent or erect, 1--4(5.5) dm, simple or base few- to many-branched, branched distally; proximally stiff hairy.
-known false positive: probable en-dash error7 =few- to many-: STEM: spreading to erect, occasionally rooting at base; few- to many-branched.
-known false positive: probable en-dash error7 =few- to several-: FRUIT: silique, dehiscent, linear to lanceolate, cylindric, +- 4-angled, or flat parallel to septum, generally constricted between seeds, segmented; terminal segment 1- or 2-seeded or seeds 0; proximal segment few- to several-seeded, valves prominently 3--7-veined; stigma 2-lobed.
-known false positive: probable en-dash error7 =few- to several-: INFLORESCENCE: terminal, few- to several-flowered; bracts scarious; pedicels ascending to erect, in fruit +- straight.
-known false positive: probable en-dash error7 =few- to several-: INFLORESCENCE: umbel-like, sessile, few- to several-flowered; bracts 4, +- 1 cm, +- not showy, +- brown, generally with yellow margins, ephemeral; pedicel +- 1 cm, soft-white-hairy.
-known false positive: probable paren spacing error1 =(0)few: 30. Nutlet shiny; prickles (0)few, on ridges abaxially .....-> P. austiniae
-known false positive: probable paren spacing error1 =(0)few: FRUIT: nutlet 1--1.8 mm, ovate, dull to shiny; abaxial cross-ribs prominent, irregular-net-like, prickles (0)few--many, slender, barb-tipped, +- in columns, 0 adaxially; scar near base, +- triangular, 25--60% fruit length, deep-concave.
-known false positive: probable paren spacing error1 =(0)few: LEAF: +- sessile, 5--10 mm, 2--5 mm wide, narrowly triangular-ovate, margin occasionally faintly wavy, teeth (0)few to several.
-known false positive: probable paren spacing error1 =(0)few: LEAF: 14--30 mm, 2--7 mm wide, lanceolate, dentate to serrate (entire), teeth (0)few to several, rarely 0; abaxially +- gold-gland-dotted.
-known false positive: probable paren spacing error1 =(1)few: INFLORESCENCE: flowers (1)few; bracts 1/4--1/3 &times; calyx tube, obovate, abruptly acuminate or truncate; pedicels 8--25 mm.
-known false positive: probable paren spacing error1 =(1)several: INFLORESCENCE: 1, terminal [(> 1, some in leaf axils)], branched, umbel-like [head-like or of 1 spikelet]; inflorescence bracts (1)several, longest < to > inflorescence, leaf-like; spikelets 1--5 [> 5], 2--5 mm, 1--1.5 mm wide, cylindric; flower bracts 6--30[50], 1.5--2 mm, spiraled, each with 1 flower in axil, puberulent, midrib keeled, tip shallow-notched or not, mucronate or not.
-known false positive: probable paren spacing error1 =(1)several: INFLORESCENCE: peduncles (1)several; involucre bracts 1.7--3 mm, generally < 0.5 mm wide, lance-linear to lanceolate; pedicel 0.5--5 cm.
-known false positive: probable paren spacing error1 =(10)+- 2: 12. Stem (10)+- 20(35) cm, slender; flowers generally 10--30; perianth generally pink to lavender (white); ovary crests purple; flower Mar--Apr; s SNF, Teh, SnJV, SnFrB, SCoR, WTR .....-> var. howellii
-known false positive: probable paren spacing error1 =(10)+- 2: STEM: (10)+- 20(35) cm, slender.
-known false positive: probable paren spacing error1 =(Apr)May: FLOWERING TIME: (Apr)May--Jul
-known false positive: probable paren spacing error1 =(Apr)May: FLOWERING TIME: (Apr)May--Oct
-known false positive: probable paren spacing error1 =(Dec)Mar: FLOWERING TIME: (Dec)Mar--Aug
-known false positive: probable paren spacing error1 =(Feb)Apr: FLOWERING TIME: (Feb)Apr--Jul
-known false positive: probable paren spacing error1 =(Jan)Apr: FLOWERING TIME: (Jan)Apr--May(Jul)
-known false positive: probable paren spacing error1 =(Jan)Mar: FLOWERING TIME: (Jan)Mar--Jun(Oct)
-known false positive: probable paren spacing error1 =(Jan--Feb)Mar: FLOWERING TIME: (Jan--Feb)Mar--May
-known false positive: probable paren spacing error1 =(Jul)Aug: 15' Style appendage > stigma; rays 1--20; flower (Jul)Aug--Dec
-known false positive: probable paren spacing error1 =(Jul)Aug: 19' Style appendage >= stigma; rays 1--30; flower (Jul)Aug--Dec (<I>Ericameria pinifolia</I> occasionally flowering in spring)
-known false positive: probable paren spacing error1 =(Jun)Aug: FLOWERING TIME: After summer rain, (Jun)Aug--Nov(Jan)
-known false positive: probable paren spacing error1 =(Jun)Jul: FLOWERING TIME: (Jun)Jul--Aug
-known false positive: probable paren spacing error1 =(Mar)Apr: FLOWERING TIME: (Mar)Apr--Jun, Sep--Oct
-known false positive: probable paren spacing error1 =(Mar)Apr: FLOWERING TIME: (Mar)Apr--May
-known false positive: probable paren spacing error1 =(May)Aug: 2' Leaves 12--18.5 mm wide, tip generally notched; seed smooth or with weak longitudinal ridges; plants of subtidal waters, rooted generally 4--17 m below mean low tide; flower (May)Aug, fruit Sep--Oct .....-> Z. pacifica
-known false positive: probable paren spacing error1 =(May)Jul: FLOWERING TIME: (May)Jul--Oct
-known false positive: probable paren spacing error1 =(May)Jun: FLOWERING TIME: (May)Jun--Aug
-known false positive: probable paren spacing error1 =(hemi): INFLORESCENCE: heads discoid, 1--7, in cyme-like clusters; involucre 3--7 cm diam, (hemi)spheric; phyllaries many, in 8--10+ series, spine-tipped, outer generally spreading or reflexed; receptacle epaleate, deeply pitted.
-known false positive: probable paren spacing error1 =(mis): NOTE: California plants previously (mis)identified as <I>Ipomoea nil</I> (L.) Roth; in California, evidence of naturalization lacking, possibly occurring only as agricultural weed.
-known false positive: probable paren spacing error1 =(ob): 10' Leaves linear to (ob)lanceolate, 2--9 mm wide; anther sacs 1.5--2.2 mm .....-> P. roezlii
-known false positive: probable paren spacing error1 =(ob): 13' Flowers 1--many; hypanthium 2.5--5.5 mm wide at flower, 7--15(20) mm wide at fruit, spheric to (ob)ovoid; achenes 3--5 mm
-known false positive: probable paren spacing error1 =(ob): 14' Leaves linear to oblong, (ob)ovate, or +- round
-known false positive: probable paren spacing error1 =(ob): 15' Seed gray to tan or +- brown; leaves linear to (ob)lanceolate .....-> E. virgata
-known false positive: probable paren spacing error1 =(ob): 15. Prickles generally thick-based, generally curved (straight), few to many; leaflets and leaf axis generally +- shaggy-hairy, hairs to 1 mm; pedicel generally +- hairy; hypanthium generally (ob)ovoid, glabrous to sparsely hairy, neck 2--4.5 mm wide at flower .....-> R. californica
-known false positive: probable paren spacing error1 =(ob): 16' Calyx 3--6.5 mm, lobes (ob)lanceolate to round, pointed tip 0.2--1.5 mm; leaves lanceolate, 1--6.5 cm, 5--17 mm wide .....-> var. azureus
-known false positive: probable paren spacing error1 =(ob): 16' Seed generally pitted or surface shallowly net-like, occasionally +- smooth; leaves elliptic to (ob)ovate or spoon-shaped
-known false positive: probable paren spacing error1 =(ob): 17' Leaves linear to narrowly (ob)lanceolate, 0.5--5 mm wide, generally with axillary leaf clusters
-known false positive: probable paren spacing error1 =(ob): 17. Leaves narrowly (ob)lanceolate, 2--7.5 mm wide, rarely with axillary leaf clusters .....-> var. purdyi
-known false positive: probable paren spacing error1 =(ob): 18' Basal leaves generally lance-linear to (ob)lanceolate in outline; corolla 4--9 mm, pale yellow to yellow; fruit 1.2--1.8 mm, ribs extending to tip
-known false positive: probable paren spacing error1 =(ob): 18. Middle and distal leaves oblong to ovate to (ob)lanceolate, generally < 6 &times; longer than wide
-known false positive: probable paren spacing error1 =(ob): 20' Leaf linear or elliptic to (ob)ovate, not sharp to touch, generally thin
-known false positive: probable paren spacing error1 =(ob): 26' Plant 15--60 cm; distal cauline leaves (ob)lanceolate, 15--70 mm; anther sacs 0.5--1 mm; calyx 3--5 mm
-known false positive: probable paren spacing error1 =(ob): 28' Leaves best developed on basal, sterile stems, (ob)lanceolate to obovate, cauline leaves ascending, not arching-recurved .....-> P. procerus (2)
-known false positive: probable paren spacing error1 =(ob): 3' Leaves thread-like or linear to oblong or (ob)lanceolate, 0.5--10 mm wide; phyllary tips acute to obtuse or rounded; flowers 3--14 .....-> C. viscidiflorus
-known false positive: probable paren spacing error1 =(ob): 3. Main leaves tomentose or silvery; clustered leaves +- (ob)lanceolate .....-> T. canescens
-known false positive: probable paren spacing error1 =(ob): 4' Heads in crowded or open, flat-topped, panicle-, raceme-, or spike-like clusters; involucre +- spheric, (ob)ovoid, or urn-shaped; ray flowers (1)3--13(14)
-known false positive: probable paren spacing error1 =(ob): 4. Petals +- <= sepals, +- elliptic-(ob)ovate; stem and pedicel hairs generally glandular .....-> D. glandulosa
-known false positive: probable paren spacing error1 =(ob): 4. Stem densely leafy; distal leaves (ob)ovate, 2-pinnately divided into linear segments .....-> var. implicata
-known false positive: probable paren spacing error1 =(ob): 41' Heads in raceme-like, panicle-like, or +- flat-topped cluster; cauline leaves linear to (ob)lanceolate or obovate, grass-like or not
-known false positive: probable paren spacing error1 =(ob): 49. Leaf linear, oblong, or narrowly (ob)lanceolate, tapered to indistinct petiole
-known false positive: probable paren spacing error1 =(ob): 5' Leaf >= 10 mm, linear to (ob)ovate; dunes, openings in coastal scrub and woodland; CCo, SnFrB, s SCoRO
-known false positive: probable paren spacing error1 =(ob): 53' Leaf generally (ob)ovate to lanceolate, elliptic, or +- round (to needle-like in <I>Galium stellatum</I>), generally widest proximal to middle
-known false positive: probable paren spacing error1 =(ob): 53' Leaf linear to (ob)ovate or +- round, basal and cauline or all cauline, faces +- alike, generally green to gray on 1 or both faces; inflorescence +- dense; corolla +- pale yellow, yellow-white, or +- pink; fruit not glandular
-known false positive: probable paren spacing error1 =(ob): 6. Involucre bell-shaped, 2--4 mm diam; phyllaries gray-hairy, +- widely (ob)ovate; flowers > 15; leaves green to gray-green adaxially; widespread .....-> A. douglasiana
-known false positive: probable paren spacing error1 =(ob): 6. Leaf blade elliptic to (ob)ovate, base obtuse; flowers 1(2), appearing before leaves; tree, roadsides, streambanks, chaparral as waif .....-> P. cerasifera
-known false positive: probable paren spacing error1 =(ob): 6. Main leaves narrowly (ob)lanceolate, finally deciduous, base not hardened; pappus 0 .....-> T. comosa (2)
-known false positive: probable paren spacing error1 =(ob): 7' Leaves best developed on basal sterile stems, these (ob)lanceolate to obovate, cauline leaves ascending (folded lengthwise), not arching-recurved (see 29 for vars.) .....-> P. procerus (2)
-known false positive: probable paren spacing error1 =(ob): 72' Leaf lanceolate to (ob)ovate or round
-known false positive: probable paren spacing error1 =(ob): 8' Plant +- erect, sparsely to moderately hairy; leaves green, linear to narrowly (ob)lanceolate, acute to obtuse, largest 2--7(8) mm wide; main stem +- erect; lateral and terminal branches ascending, < 1.5 mm diam; plant of +- stabilized to semi-stabilized dunes
-known false positive: probable paren spacing error1 =(ob): 8' Stem (1)2--5 dm; mid-stem leaves (ob)lanceolate or narrowly lance-triangular, generally flat; inner pappus bristles generally >= disk corolla .....-> H. villosa
-known false positive: probable paren spacing error1 =(ob): 8. Plant prostrate to mounded, moderately to densely hairy; leaves appearing pale green, oblanceolate to (ob)ovate, obtuse, largest 5--15 mm wide; main stem decumbent; lateral and terminal branches erect, short, > 1.5 mm diam; plant of active dunes .....-> subsp. crispa
-known false positive: probable paren spacing error1 =(ob): 9. Annual; rhizomes 0; spikelets in open spikes; flower bracts brown to red-brown; fruit (ob)ovoid .....-> C. bipartitus
-known false positive: probable paren spacing error1 =(ob): 9. Mid-stem leaves (ob)lanceolate, +- moderately strigose (not bristly), glandular; CaR, SN, MP .....-> var. minor
-known false positive: probable paren spacing error1 =(ob): FLOWER: calyx 1.5--4.5 mm, lobes (ob)ovate; corolla 6--10 mm, blue-purple, +- glabrous, floor +- white, white- to yellow-hairy; anther sacs 0.3--0.5 mm, widely spreading; staminode glabrous or sparsely orange-yellow-hairy.
-known false positive: probable paren spacing error1 =(ob): FLOWER: calyx 3--5 mm, lobes narrowly oblong to (ob)ovate; corolla 9--14 mm, blue to purple, glabrous (except white- to yellow-hairy floor); anther sacs 0.5--0.8 mm, dehiscing full length; staminode densely golden-yellow-hairy.
-known false positive: probable paren spacing error1 =(ob): FLOWER: calyx 3--6.5 mm, lobes (ob)lanceolate to round, pointed tip 0.2--1.5 mm.
-known false positive: probable paren spacing error1 =(ob): FLOWER: calyx 4.2--8 mm, lobes lance-acuminate to (ob)ovate; corolla 23--40 mm, blue, glabrous; anther sacs 2.2--3 mm, dehiscing at proximal end to 1/2--2/3 their length, inner margins long-hairy; staminode glabrous.
-known false positive: probable paren spacing error1 =(ob): FLOWER: sepals +- alike, oblong to (ob)lanceolate, generally curved over column and lip, generally 3-veined, lower generally fused at base, mentum present or not; lateral petals spreading or curved toward lip, lip not spurred, entire to 3-lobed, spreading to reflexed; column generally convex adaxially, concave abaxially, curved over lip.
-known false positive: probable paren spacing error1 =(ob): FRUIT: (ob)ovoid, generally 3-angled, brown, generally not beaked.
-known false positive: probable paren spacing error1 =(ob): FRUIT: 1--1.5 mm, (ob)ovoid, 2-sided, fine-pitted.
-known false positive: probable paren spacing error1 =(ob): FRUIT: generally 8--15(20) mm wide, generally (ob)ovoid; sepals generally erect, persistent; achenes generally 3.5--4.5 mm.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: flower clusters 1--5 in terminal spike, 15--30 mm wide; generally subtended by leaves; bracts 7--15 mm, 3--8 mm wide, broadly lanceolate to (ob)ovate, soft-hairy, straw-colored or purple.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads 3--15+, in +- narrow clusters; involucre 5--18 mm diam, hemispheric or bell-shaped; phyllaries overlapping in 4--5 series, 6--13 mm, (ob)lanceolate to oblong, (+-) glabrous.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads disciform, (4)7--11 mm diam, nodding, slender-peduncled in raceme-like or few-branched, panicle-like cluster; phyllaries widely (ob)ovate, sparsely hairy, margins +- black, scarious.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads disciform, 2--4 mm diam, bell-shaped, erect to +- nodding along branches of leafy-bracted panicle-like clusters; phyllaries +- widely (ob)ovate, gray-tomentose, margins wide, transparent.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads disciform, < 5 mm diam, nodding, short-peduncled along branches of leafy, +- narrow, panicle-like cluster; phyllaries widely (ob)ovate, sparsely canescent, margins wide, scarious.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads disciform, < 5.5 mm diam, nodding, sessile or short-peduncled in raceme-like or narrow, panicle-like cluster; phyllaries elliptic to widely (ob)ovate, often +- purple and dotted with yellow glands, generally +- glabrous, margins widely scarious.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads disciform, < 7 mm diam, generally nodding, sessile to short-peduncled along branches of narrow, +- dense to open, diffuse panicle-like cluster; phyllaries lanceolate to (ob)ovate, densely gray tomentose, margins narrowly transparent.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads discoid, 2--6; peduncle 1--10 mm; involucre bell-shaped; phyllaries 3--4, +- 5 mm, linear to (ob)lanceolate.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads generally 3--6; peduncle generally 3--8 mm, tomentose, bract generally 1, narrow; involucre +- 8 mm, +- widely bell-shaped; phyllaries 5(6), elliptic to (ob)ovate, often unequal.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads radiate, disciform, or discoid, nodding in bud, 1 or in open, +- flat-topped cluster; peduncle slender; involucre 3--7 mm, generally bell-shaped; phyllaries in 2--3(4) series, graduated or +- equal, lanceolate to (ob)ovate, green, margins widely scarious; receptacle flat to slightly convex, epaleate.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: heads radiate, disciform, or discoid; involucres cylindric or obconic to bell-shaped; phyllaries graduated in 5--9 series, linear to (ob)lanceolate, tips erect or generally recurved; receptacle flat, pitted, epaleate.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: outer phyllaries lanceolate to (ob)ovate, glabrous to densely long-soft hairy.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: peduncle +- glabrous in age, base of head +- hairy; involucre 10--30 mm in flower, 20--35 mm in fruit; phyllaries generally rosy-purple except margin (all green or spotted), with +- darker midstripe; outer lanceolate to (ob)ovate, generally long-tapered, glabrous or hairs white-opaque, glandless, margin generally ciliate to woolly (especially proximally); inner generally +- elongating in fruit.
-known false positive: probable paren spacing error1 =(ob): INFLORESCENCE: peduncle generally 5--6 mm wide, infrequently bracted; involucre generally 3--5 cm; phyllaries generally rosy-purple, rarely purple-spotted; outer often exceeding inner in flower, lanceolate to (ob)ovate, generally obtuse to acute, entire to toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- (ob)lanceolate, sometimes glandular; basal petioled, 6--30 cm, dentate; cauline sessile, reduced.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- 1--19 cm, elliptic to (ob)lanceolate, generally toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- 5--21 cm; blade +- narrowly (ob)lanceolate, +- entire to spiny-serrate, puberulent.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- basal (much reduced distally on stem); main blades 5--30 mm, elliptic to (ob)ovate, (sub)entire, glabrous, green.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- opposite, in axillary clusters on older stems; blade 5--20 mm, (ob)lanceolate to narrowly (ob)ovate, base tapered, margin generally entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- sessile, generally clasping, 10--65 mm, narrowly elliptic to (ob)ovate.
-known false positive: probable paren spacing error1 =(ob): LEAF: +- tomentose or woolly; basal 3--12 cm, (ob)lanceolate, sharply dentate to cut; cauline few, clasping, reduced.
-known false positive: probable paren spacing error1 =(ob): LEAF: 0.5--4 mm wide, linear to narrowly (ob)lanceolate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 0.5--5 mm wide, linear to narrowly (ob)lanceolate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 0.7--4.5 cm, 5--15 mm wide, (ob)ovate to widely spoon-shaped, entire or toothed, gland-dotted or sometimes with stalked glands, otherwise glabrous, minutely scabrous, or tomentose, gray-green.
-known false positive: probable paren spacing error1 =(ob): LEAF: 1--11 cm, linear to elliptic or (ob)ovate, entire to deeply pinnately lobed, densely tomentose.
-known false positive: probable paren spacing error1 =(ob): LEAF: 1--25 cm, (ob)lanceolate, entire or serrate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 1--4 cm, +- elliptic to (ob)ovate, generally entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: 1--7.5 cm, 0.5--10 mm wide, thread-like or linear to oblong or (ob)lanceolate, 1--5-veined, flat or twisted, often wavy-margined, (+- gray-)green, +- sticky.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--20 mm, 4--7 mm wide, narrowly (ob)ovate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--30 mm (including petiole, 0--7 mm), 2--4 mm wide, linear to narrowly (ob)lanceolate, thin, sparsely hairy, green, margin wavy.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--35 mm; blade +- narrowly (ob)lanceolate, tapered to petiole, entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--40 mm (including petiole, (3)5--7(8) mm), 5--15 mm wide, oblanceolate to (ob)ovate, fleshy, obtuse, sparsely to densely tomentose, appearing glaucous, margin wavy.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--40 mm, 3--7 mm wide, +- fleshy, narrowly (ob)lanceolate, obtuse, green, sparsely to moderately hairy, margins strongly wavy.
-known false positive: probable paren spacing error1 =(ob): LEAF: 10--70 mm, thread-like to narrowly (ob)lanceolate, glabrous to tomentose, gland-dotted or not.
-known false positive: probable paren spacing error1 =(ob): LEAF: 15--50 mm, linear-oblong to (ob)lanceolate, hairy.
-known false positive: probable paren spacing error1 =(ob): LEAF: 2--10 cm; lower short-petioled, (ob)ovate; upper +- narrowly ovate, clasping.
-known false positive: probable paren spacing error1 =(ob): LEAF: 2--5 cm, (ob)lanceolate to narrowly obovate, generally abruptly pointed, +- entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: 2--6 cm, (ob)lanceolate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 2--7.5 mm wide, narrowly (ob)lanceolate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 20--30 mm, (4)5--10 mm wide, lanceolate to broadly (ob)lanceolate, faces pale green, acute at base, adaxially +- glabrous to sparsely puberulent, abaxially sparsely puberulent (especially veins).
-known false positive: probable paren spacing error1 =(ob): LEAF: 20--45 mm, generally +- (ob)ovate, +- glabrous or hairy, +- entire; petiole 2--6 mm.
-known false positive: probable paren spacing error1 =(ob): LEAF: 20--80(110) mm; blade generally < petiole, (ob)lanceolate to narrowly elliptic, entire; proximal-most sometimes lobed to irregularly compound.
-known false positive: probable paren spacing error1 =(ob): LEAF: 4--14 cm, (ob)ovate, thick, obtuse, +- serrate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 4--15 cm; mid-cauline largest, (ob)lanceolate, strongly 3-veined, +- densely scabrous to short-hairy.
-known false positive: probable paren spacing error1 =(ob): LEAF: 7--60 mm, lanceolate or elliptic to (ob)ovate.
-known false positive: probable paren spacing error1 =(ob): LEAF: 8--30 mm; proximal-most opposite to subopposite; blade +- narrowly (ob)lanceolate, tapered to petiole, entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: > 5, 5--17 cm, (ob)lanceolate to elliptic, acuminate, abaxially puberulent; petioles 0.
-known false positive: probable paren spacing error1 =(ob): LEAF: alternate and generally clustered in axils, linear to (ob)lanceolate, sometimes persisting as stiff spines, glabrous to tomentose.
-known false positive: probable paren spacing error1 =(ob): LEAF: alternate, 2--12 cm, 1--12 mm wide, linear to (ob)lanceolate, leathery, resin-dotted, entire, 3--5-veined, margins scabrous.
-known false positive: probable paren spacing error1 =(ob): LEAF: alternate, sessile to +- clasping, (ob)ovate to elliptic, acute to acuminate, base +- oblique, cordate to acute, main veins >=3, converging.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal (cauline); blade linear to (ob)ovate or +- round, base tapered to reniform, margin entire or toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal +- 4--10 cm, +- (ob)lanceolate, leathery, generally +- coarsely dentate or cut, glabrous; cauline reduced, generally entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal +- fleshy, lance-linear to ovate, wavy-lobed, base slightly narrowed; proximal generally (ob)lanceolate, toothed, short lobed, or parted to midrib, distal reduced, generally ear-like at base.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal 10--20 cm, narrowly (ob)lanceolate to spoon-shaped, entire or dentate, +- densely tomentose, especially when young; green at flower; cauline sessile, +- clasping, gradually reduced distally on stem, becoming bract-like.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal 5--36 cm, (ob)lanceolate to widely elliptic, entire to serrate, petiole tomentose; cauline clasping, reduced, generally serrate, glabrous.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal and cauline, sometimes in rosettes, alternate, linear to (ob)lanceolate or spoon-shaped, narrowed or expanded at base, entire, adaxially generally green, +- glabrous, abaxially generally silvery-tomentose.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal and proximal cauline sessile or +- petioled, (ob)lanceolate, entire, mid-cauline lance-triangular, stiff, often reflexed, margin +- inrolled (especially large plants), distal much reduced; blade occasionally +- clasping, +- sparsely scabrous to bristly, +- densely glandular especially distally.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal and proximal cauline sessile, 0 by flowering, mid-cauline (ob)lanceolate, entire, +- glabrous to densely bristly or glandular, distal wider.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal blades 10--50 cm, lance-linear to (ob)lanceolate or nearly deltate, short-strigose, scabrous, or short rough-hairy, occasionally appearing varnished.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal blades 25--45 cm, oblong lanceolate to (ob)ovate, glabrous to finely stalked-glandular, occasionally short-soft-hairy, shiny.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal not fleshy, generally (ob)lanceolate to (ob)ovate, toothed, lobed, or divided, lobe tips wide-acute to acuminate; cauline generally lobed, tip generally acute; distal-most seldom notably reduced, toothed or lobed.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal not fleshy, generally (ob)lanceolate, teeth or short lobes +- equal, well spaced; distal much reduced, 2--4-toothed at base.
-known false positive: probable paren spacing error1 =(ob): LEAF: basal withering before flower; cauline 6--10, 3--8 cm, 2--3 mm wide, blade linear to linear-(ob)lanceolate, largest at mid-stem, base +- expanded.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline 10--30 mm, +- (ob)lanceolate, generally folded lengthwise, weakly serrate.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline 3--5 pairs, +- sessile, most proximal generally largest, blade 4--20 cm, (ob)lanceolate to (ob)ovate, entire to unevenly dentate.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline 4--10 pairs, sessile or short-petioled, 5--20(30) cm, blade (ob)lanceolate, +- entire, distal +- reduced.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline generally 3--4 pairs, +- widely petioled, distal-most smaller, subsessile, blade 1--5+ cm, (ob)ovate to +- cordate, +- entire to weakly lobed, +- thick, often fleshy and +- red.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline, alternate, sessile to short-petioled, linear to (ob)ovate, entire or toothed, distally occasionally reduced to bracts.
-known false positive: probable paren spacing error1 =(ob): LEAF: cauline, generally alternate [opposite], petioled or +- sessile, blade (ob)lanceolate or oval to (ob)ovate or deltate, 1--3-pinnately lobed or dissected, or distal entire, minutely scabrous or strigose to silky-hairy [woolly], generally gland-dotted.
-known false positive: probable paren spacing error1 =(ob): LEAF: clustered at nodes, 10--40 mm, linear to (ob)ovate, fleshy or not, green to appearing glaucous, sparsely hairy to densely tomentose, margin wavy.
-known false positive: probable paren spacing error1 =(ob): LEAF: compound, 12--33(50) cm, +- long-shaggy-hairy or glabrous; petioles 3--7(9) cm, channeled; leaflets (3)5--7, 4--11(14) cm, 2.4--7.5 cm wide, ovate or oblong-(ob)ovate, broadly wedge-shaped to +- rounded at base, acuminate at tip, entire to +- serrate, lateral leaflets +- sessile, terminal leaflet +- larger, stalk to 10--35 mm.
-known false positive: probable paren spacing error1 =(ob): LEAF: deciduous; petiole 5--20 mm; blade 30--70 mm, elliptic to (ob)ovate, crenate-serrate, base obtuse, tip acute to obtuse.
-known false positive: probable paren spacing error1 =(ob): LEAF: decurrent or sessile to petioled, 10--35 mm, 2--10 mm wide, linear to narrowly (ob)ovate, entire, +- green, silvery, or ash-gray.
-known false positive: probable paren spacing error1 =(ob): LEAF: entire; basal leaves many, (15)20--75 mm, (2)4--32 mm wide, (ob)ovate, petioled; cauline leaves lanceolate to obovate, sessile, clasping.
-known false positive: probable paren spacing error1 =(ob): LEAF: entire; basal leaves many, (ob)lanceolate to obovate; distal cauline leaves < basal, narrowly lanceolate to narrowly ovate.
-known false positive: probable paren spacing error1 =(ob): LEAF: evergreen; blade 2--4 cm, (ob)ovate, leathery, adaxially dark green, glabrous, abaxially with sessile, yellow glands, base acute, tip wide, lobes 0 or sparse, shallow, teeth 0 or sparse.
-known false positive: probable paren spacing error1 =(ob): LEAF: generally basal (reduced distally on stem); main blades 7--20 mm, widely (ob)ovate to +- round, (sub)entire, glaucous; petiole 1.5--6 mm.
-known false positive: probable paren spacing error1 =(ob): LEAF: generally basal, generally reduced distally, short-petioled; main blades, 10--40 mm, (ob)ovate, finely serrate.
-known false positive: probable paren spacing error1 =(ob): LEAF: generally cauline; distal leaves 15--70 mm, linear to (ob)lanceolate, generally folded lengthwise, entire.
-known false positive: probable paren spacing error1 =(ob): LEAF: generally opposite, distal sometimes alternate, petioled or sessile; blades thread-like to (ob)ovate or deltate, generally entire, rarely toothed (in California), +- minutely scabrous [glabrous], gland-dotted (in California).
-known false positive: probable paren spacing error1 =(ob): LEAF: generally sessile, 10--25 mm, linear to narrowly (ob)lanceolate, obtuse to acute, entire to irregularly toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: generally whorled in 3s (occasionally few opposite); blade 15--60 mm, linear to narrowly (ob)lanceolate, acutely tapered at both ends, often folded and curved, margin generally 5--11-toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: leaflets generally (5)7--9; terminal leaflet +- 10--30 mm, elliptic to (ob)ovate, tip +- obtuse.
-known false positive: probable paren spacing error1 =(ob): LEAF: main leaves <= 4 cm, +- (ob)lanceolate, tomentose to silvery; clustered leaves like (generally <) main leaves.
-known false positive: probable paren spacing error1 =(ob): LEAF: mid-stem leaves (ob)lanceolate, +- moderately strigose (not bristly), glandular.
-known false positive: probable paren spacing error1 =(ob): LEAF: mostly cauline at flower, alternate, sessile (in California), generally 1-veined, linear or elliptic to (ob)ovate or spoon-shaped, entire, toothed, or 1--2-pinnately lobed, minutely coarse-hairy to long-soft-hairy, generally glandular.
-known false positive: probable paren spacing error1 =(ob): LEAF: narrowly (ob)lanceolate to ovate, entire to toothed, obtuse at tip.
-known false positive: probable paren spacing error1 =(ob): LEAF: not crowded, 4--10(15) mm wide, oblong to (ob)lanceolate, base clasping, not decurrent, flat or margin slightly curled under, often wavy, adaxial face +- bright green, tomentose or not, densely stalked-glandular, abaxially generally white-tomentose.
-known false positive: probable paren spacing error1 =(ob): LEAF: oblong to (ob)lanceolate, generally flat, entire or finely toothed; base tapered.
-known false positive: probable paren spacing error1 =(ob): LEAF: opposite proximally, alternate distally, linear to (ob)lanceolate or ovate, entire to wavy-dentate or shallowly lobed.
-known false positive: probable paren spacing error1 =(ob): LEAF: opposite, subsessile; main leaves 10--40 mm, +- (ob)lanceolate, generally serrate.
-known false positive: probable paren spacing error1 =(ob): LEAF: opposite; blade 10--35 mm, (ob)lanceolate to narrowly (ob)ovate, base wedge-shaped, margin entire to 3--5-toothed.
-known false positive: probable paren spacing error1 =(ob): LEAF: petiole 0--3 mm; blade 15--25(45) mm, 3--8(15) mm wide, elliptic to (ob)ovate or spoon-shaped, generally +- strigose to minutely scabrous, gland-dotted.
-known false positive: probable paren spacing error1 =(ob): LEAF: petiole 2--6 mm; blade 1--2.5 cm, +- widely (ob)ovate, thin, +- serrate, abaxial areoles glabrous, lateral veins 3--6.
-known false positive: probable paren spacing error1 =(ob): LEAF: petiole 2--7 cm; blade 3--9 cm, widely elliptic to +- (ob)ovate or triangular-(ob)ovate, acuminate.
-known false positive: probable paren spacing error1 =(ob): LEAF: petiole 5--8(11) mm; blade 2--6 cm, elliptic to (ob)ovate, leathery, +- serrate or crenate, rolled under, abaxially white-woolly, lateral veins 5--7(8).
-known false positive: probable paren spacing error1 =(ob): LEAF: petiole not purple; blade (6)10--30 cm, +- oblanceolate, obtuse to long-tapered, entire or few-toothed or -lobed; lobes 1--4 pairs, (ob)lanceolate, generally angled towards leaf tip or spreading; glabrous and glaucous to densely hairy.
-known false positive: probable paren spacing error1 =(ob): LEAF: proximal +- (ob)lanceolate, tapered to base, generally entire, generally flat, +- densely bristly-strigose with hairs generally < 1 mm, glandless to densely glandular, distal tapered to +- clasping, not strongly reduced.
-known false positive: probable paren spacing error1 =(ob): LEAF: proximal cauline alternate, sessile; blade 2--6 cm, linear to (ob)lanceolate, acute, entire, glabrous; distal-most cauline whorled.
-known false positive: probable paren spacing error1 =(ob): LEAF: simple, oblong to (ob)ovate, generally serrate, deciduous; stipules generally 0; petiole 0--short.
-known false positive: probable paren spacing error1 =(ob): LEAF: subopposite or in 3s, subsessile; main leaves 5--16 mm, (ob)lanceolate to widely obovate, entire or finely serrate towards tip.
-known false positive: probable paren spacing error1 =(sub): 12. Leaf (sub)palmately to ternately compound
-known false positive: probable paren spacing error1 =(sub): 15' Leaf (sub)palmate
-known false positive: probable paren spacing error1 =(sub): 3' Calyx, corolla (4)5-lobed; cauline leaves generally (sub)opposite or some alternate; nectary pits 2 per corolla lobe --- stem generally < 1 m, < 1 cm diam .....-> SWERTIA
-known false positive: probable paren spacing error1 =(sub): ECOLOGY: Open alluvial flats or fans, scree, near snow banks, limestone cliffs, forest openings, (sub)alpine meadows, rocky or talus slopes, streambanks;
-known false positive: probable paren spacing error1 =(sub): HABIT+: Plant (4)6--14(23) dm, (sub)glabrous, not sticky when fresh.
-known false positive: probable paren spacing error1 =(sub): LEAF: (sub)palmate; basal generally 1.5--5 cm, leaflets generally 5, central 10--20 mm, narrow-obovate, distally 5--9-toothed +- 1/2 to midvein, white-tomentose abaxially, +- green and strigose adaxially.
-known false positive: probable paren spacing error1 =(sub): LEAF: 20--75 mm; basal leaves well developed; distal cauline leaves lanceolate, (sub)entire.
-known false positive: probable paren spacing error1 =(sub): LEAF: basal +- petioled; cauline generally (sub)opposite or some alternate, < basal, bases not fused-sheathing.
-known false positive: probable paren spacing error1 =(sub): LEAF: cauline; proximal-most scale-like; largest (at mid stem) short-petioled, blade 30--50 mm, ovate, (sub)entire.
-known false positive: probable paren spacing error1 =(sub): LEAF: generally basal, obovate, (sub)entire; cauline leaves 10--20 mm, ovate to +- round, base widely wedge-shaped.
-known false positive: probable paren spacing error1 =(sub): LEAF: generally lance-deltate, +- entire to serrate, (sub)glabrous adaxially, densely hairy abaxially, generally strongly mottled.
-known false positive: probable paren spacing error1 =(sub): LEAF: thick, 25--65 mm; distal leaves +- narrowly lanceolate, (sub)entire, generally folded lengthwise or inrolled.
-known false positive: probable paren spacing error1 =(sub): SPECIES IN GENUS: +- 7 species: (sub)tropical America, Caribbean.
-known false positive: probable paren spacing error1 =(un): INFLORESCENCE: heads obscurely radiate or disciform, in +- flat-topped or raceme- or panicle-like clusters; involucres +- obconic, 2--7+ mm diam; phyllaries 20--40+ in 2--4 series, appressed, generally reflexed in fruit, linear to lanceolate, +- (un)equal, margins +- membranous, abaxial face +- green, minutely hairy, generally glandular, midvein not orange to brown; receptacle +- flat, pitted or smooth, epaleate.
-known false positive: probable paren spacing error1 =)%: FLOWER: perianth 2.2--3.1 mm, green, margins pink to red, tube 26--40(42)% of length, lobes often not overlapped, oblong, +- hood-shaped; veins branched, thickened to strongly so.
-known false positive: probable paren spacing error1 =)%: LEAF: +- summer-deciduous if conditions dry; blade (5)10--20(40) cm, oblong-ovate, +- membranous to +- firm, midrib adaxially hairy, segments serrate, tips generally acute to obtuse, veins free to 35(50)% fused.
-known false positive: probable paren spacing error1 =)&deg: 2' Pinnules cut or lobed often < 1/4 way to base, margins at base converging at 90--180(240)&deg;, sori (and false indusia) with yellowish exudate among sporangia
-known false positive: probable paren spacing error1 =)&deg: 9' Side margins of basal pinnae converging at 30--120(160)&deg;; pinnae generally well-spaced to touching
-known false positive: probable paren spacing error1 =)&deg: FLOWER: petals +- white, lilac-blushed or not, keel tip purple, banner 5.2--7.6 mm, recurved +- 45(80)&deg;, keel 3.8--4.8 mm.
-known false positive: probable paren spacing error1 =)&deg: INFLORESCENCE: glabrous; pedicels spreading to descending at 70--90(100)&deg; angle, 4--10(15) mm.
-known false positive: probable paren spacing error1 =)&deg: INFLORESCENCE: sparsely to densely hairy, generally glandular; pedicels spreading to ascending at 20--60(80)&deg; angle, (7)10--18(23) mm.
-known false positive: probable paren spacing error1 =)&deg: LEAF: 20--50(70+) cm; stipe red-brown to +- black; blade 2--3-pinnate; pinnules cut or lobed often < 1/4 way to base, generally with < 4 +- irregular lobes, margins at base converging at 90--180(240)&deg;, dark stalk color often ending +- abruptly at base of ultimate segments, midvein forked into +- equal branches, not along margin.
-known false positive: probable paren spacing error1 =)&deg: LEAF: generally (7)20--40(50+) cm; stipe dark brown to +- black; blade 2--3-pinnate; pinnules cut or lobed often > 1/4 way to base, often with < 4 +- irregular lobes, margins at base converging at 45--90(+)&deg;, stipe color often extending gradually into base, midvein often part way along 1 margin.
-known false positive: probable paren spacing error1 =)&deg: LEAF: sporophore, trophophore joined distal to mid-leaf; trophophore stalk (2)5--10(15) mm, blade 1-pinnate, generally 2--5 cm, < 1.5 cm wide, linear to oblong, firm, dull, pale green, pinnae +- ascending, 3--6 pairs, fan- or wedge-shaped, not midribbed, side margins of basal pinnae converging at 50--100(120)&deg;, outer margins +- entire to coarsely toothed or lobed; sporophore 1-pinnate, deltate, branches spreading, stalk 1--1.5 &times; trophophore.
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Ivanpah Mtns, Clark Mtn, Kingston ranges);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 25. Stem 3--30 mm diam, hollow, inflated below middle; bulb generally 5--10 cm diam; flowers 100--500 .....-> [A. cepa]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Flowers 5--9(15); fruit red .....-> [A. aethiopicus]
+
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 17A. Spikelets densely clustered, indistinct at arm's length; inflorescence ovate; peri ovate .....-> [C. leavenworthii]
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 27A' Spikelets ovate; fruit yellow, brown, green, or yellow-green, fine-wrinkled, generally lattice-like at 10--20&times;; rhizomes with longer internodes 2--10 mm .....-> [E. tenuis var. tenuis]
+known UNABRIDGED KEY LEAD tag UNABRIDGED KEY LEAD: 2B' Plant 0.5--1.5 m; stem 2--4 mm diam, 3-sided; spikelets 1--35; perianth bristles 4--6, barbed .....-> [S. triqueter] (2)
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 8. Stem with 2--6 strong ridges per side; fruit < 2.5 mm, < 75% perianth; inflorescence generally orange-red; flower < internodes .....-> [J. anthelatus]
+
+known false positive: mountain range problem	--	31' Leaves channeled; nectary encircled by sparse, club-like hairs; stem occasionally twisted; n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns) .....-> C. kennedyi var. munzii
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: n&e DMtns (Panamint, Clark Mtn ranges, Providence Mtns);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 3. Basal vestigial spikelets 1(2); spikelets gradually narrowing distally .....-> [A. geniculata, including <I>A. ovata</I>]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: SnBr, e DMtns (Mid Hills, Clark Mtn Range, Ivanpah, New York mtns), waif elsewhere;
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 23. Anthers 2.5--5 mm; spikelets lance-linear, narrowing only slightly towards tip; lower leaf sheaths with dense, softly appressed hairs; spikelets generally purple-tinged .....-> [B. arvensis]
+
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing2: 14. Glumes 1 or 2, generally < 0.5 mm, vein 0 .....-> [M. schreberi]
+
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: e DMtns (Clark Mtn Range, New York Mtns);
+known false positive: mountain range problem	--	BIOREGIONAL DISTRIBUTION: DMtns (Clark Mtn Range);
+eflora_treatments.txt - possible UNABRIDGED KEY LEAD tag missing4: 23. Spikelets not producing leafy bulblets .....-> [subsp. bulbosa]
+
+known false positive: probable en-dash error7 =few- to many-: INFLORESCENCE: 5--15 cm, few- to many-flowered.
