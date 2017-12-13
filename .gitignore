@@ -10,7 +10,8 @@
 Jepson_conifers.html
 
 #generated files
-output/
+/eflora_database/sanity_error.txt
+/output/
 /eflora_database/outputs/
 /synonymy/output/
 /YELLOW_FLAGGING/output/
