@@ -82,7 +82,7 @@ if(m/(Downingia yina|Astragalus nuttallianus var\. austrinus|Astragalus tephrode
 #ANACARDIACEAE RHUS integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.
 #PLANTAGINACEAE KECKIELLA ternata (A. Gray) Straw
 #RANUNCULACEAE THALICTRUM sparsiflorum Fisch. & C.A. Mey.
-elsif(m/^[A-Z][A-Z-]+ [a-z&;-]+ (.*)/ &! m/^.* (var\.|subsp\.|f\.|nothosubsp\.) [a-z]/){
+elsif(m/^[A-Z][A-Z-]+ [a-z&;-]+ (.*)/ &! m/^.* (subvar\.|var\.|subsp\.|f\.|nothosubsp\.) [a-z]/){
 	if (m/RHUS integrifolia/){ #fix one problematic 'filius' author name that does not parse correctly
 		print OUT2	"Rhus integrifolia\n";
 		print OUT  <<EOP;

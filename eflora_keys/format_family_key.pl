@@ -8,7 +8,7 @@ open(ERR, ">output/fam_key_error.txt") || die;
 
 
 
-open(IN, "/Users/davidbaxter/DATA/smasch_taxon_ids_cch.txt") || die;
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids_CCH.txt") || die;
 local($/)="\n";
 while(<IN>){
 	chomp;

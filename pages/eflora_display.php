@@ -314,11 +314,18 @@ while ($row = $results->fetchArray()) {
 
 //assign the JM author and revision number
 //JMAuthor is inherited from the next highest up. Note that "except where noted" will be inherited by terminals which might be unacceptable
+if (isset($SpecTJM2Author)){ $JMAuthor = $SpecTJM2Author;}
+if (isset($GenTJM2Author)){ $JMAuthor = $GenTJM2Author;}
+if (isset($FamTJM2Author)){ $JMAuthor = $FamTJM2Author;}
+
+//JMAuthor is inherited from the next highest up. Note that "except where noted" will be inherited by terminals which might be unacceptable
 if (isset($TJM2Author)){ $JMAuthor = $TJM2Author;}
-	elseif (isset($SpecTJM2Author)){ $JMAuthor = $SpecTJM2Author;}
+	else {
+	if (isset($SpecTJM2Author)){ $JMAuthor = $SpecTJM2Author;}
 	elseif (isset($GenTJM2Author)){ $JMAuthor = $GenTJM2Author;}
 	elseif (isset($FamTJM2Author)){ $JMAuthor = $FamTJM2Author;}
-	else {$JMAuthor = "";}
+	else{$JMAuthor = "Error CHECK eFlora Treatments";}
+	}	
 $JMAuthor = str_replace(", except as noted", "", $JMAuthor);
 
 if (isset($Reference)){ $Ref = $Reference;}#there are no species references, genus reference is always passed down
@@ -339,13 +346,12 @@ if (isset($RevisionNumber)){ $RevNumber = $RevisionNumber;}
 	elseif (isset($GenRevisionNumber)){ $RevNumber = $GenRevisionNumber;}
 	else {$RevNumber = "";}
 
-//RevNumber is inherited by species or genus or family, unlike above
-//Because a family revision date can be displayed but sometimes not passed down to genus
+//RevNumber is inherited by species or genusbut not from the family
+//Because a family revision does not affect all species/genera within the family
 if (isset($RevisionDate)){ $RevDate = $RevisionDate;}
 	elseif (isset($SpecRevisionDate)){ $RevDate = $SpecRevisionDate;}
 	elseif (isset($GenRevisionDate)){ $RevDate = $GenRevisionDate;}
-	elseif (isset($FamRevisionDate)){ $RevDate = $FamRevisionDate;}
-	else {$RevDate = "";}
+	else {$RevDate = "2012";} //2012 is the defaut revision date; theoretically all revised taxa would fall into one of above
 	
 //Before doing anything, if the TID isn't recognized, give a plain error screen
 if (!$ID){ //if TaxonID (pulled from URL) did not match a line in the database...

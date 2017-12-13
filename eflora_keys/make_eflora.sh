@@ -2,6 +2,8 @@
 
 echo "making hashes from treatments"
 perl format_for_i.pl
+#echo "making expanded key hash"
+#perl expand_key_gloss.pl
 echo "making key hashes from treatments"
 perl format_family_key.pl > all_family_key.html
 perl make_family_group_keys.pl
@@ -13,8 +15,7 @@ echo "making stats table"
 perl get_summary_stats.pl > IJM_stats.html
 echo "making JEPS_elev.hash"
 perl get_elev.pl
-echo "making expanded key hash"
-perl expand_key_gloss.pl
+
 
 echo "making tar file"   
 tar -c -f IJM.tar -T IJM_tar_list

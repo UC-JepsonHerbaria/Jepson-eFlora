@@ -1,58 +1,89 @@
+#check how many non-endemic taxa are in out file:
+#perl -lne '$a++ if /[A-Z]+\s0$/; END {print $a+0}' accepted_names.out
+#check how many endemic taxa are in out file:
+#perl -lne '$a++ if /[A-Z]+\s1$/; END {print $a+0}' accepted_names.out
+#currently 
+#6335 taxa '0'
+#2277 taxa '1'
+#minus cultivars
+#6338 taxa '0'
+#2273 '1'
+#pre-modification, Nov 2016:
+#5609 taxa '0'
+#3001 '1'
+#pre-modification, Jan 2017:
+#5611 taxa '0'
+#3004 '1'
+
+open(OUTERR,">accepted_names_error.txt") || die;
+
 open(IN,"/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt") || die;
 #undef($/);
 $/="";
 while(<IN>){
-next if m/^Admin/i;
-#next if m/^UNABR/i;
-s/PROOF:.*\n//;
-$nativity="";
-#$family=$ARGV;
-	#`($all_lines=$_)=~s/ *\r\n/\n/g;
-	#`@all_pars=split(/\n\n+/,$all_lines);
-	#`foreach(@all_pars){
-if(m/([A-Z]+ACEAE)/){
-$family=$1;
-#print "$family\n";
-}
-if(m/CAPTION: ([A-Z]+)/){
-$caption=$1;
-}
+
+		next if m/^Admin/i;
+		#next if m/^UNABR/i;
+		s/PROOF:.*\n//;
+
+		$nativity="";
+
+			#$family=$ARGV;
+			#`($all_lines=$_)=~s/ *\r\n/\n/g;
+			#`@all_pars=split(/\n\n+/,$all_lines);
+			#`foreach(@all_pars){
+
+	if(m/([A-Z]+ACEAE)/){
+		$family=$1;
+		#print "$family\n";
+	}
+
+	if(m/CAPTION: ([A-Z]+)/){
+		$caption=$1;
+		}
 
 #next unless m/\bRARITY\b/;
-
 #next if m/^UNABRIDGED/;
 #next if m/^WAIF/;
 
+	if(m/([A-Z-]+ .*)\nTAXON AUTHOR: (.*)/){
+		$name_temp = $1;
+		$name_temp =~ s/&times;/X /;
+		$name_temp=&strip_name($name_temp);
+		print "\nclade: $caption\n$family $1 $2\n";
 
-    if(m/([A-Z-]+ .*)\nTAXON AUTHOR: (.*)/){
-        #$name=&strip_name($1);
-	print "\nclade: $caption\n$family $1 $2\n";
-    if(m/^((SPONTANEOUS HYBRID|EXTIRP|CULTIV|JFP|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/||
-    m/\n((SPONTANEOUS HYBRID|EXTIRP|CULTIV|JFP|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/){
-$nativity=$1;
-$nativity=~s/ *$//;
-}
-	if(s/.*NOTE.*xpanded author citation: (.*)\n//){
-		print "$1\n";
-	}
-        #$TJM2{$name}=$family;
-if(m/COMMON NAME: (.*)/){
-print "Common: $1\n";
-}
-if(m/TIME: (.*)/){
-#print "Flowering time: $1\n";
-}
-        while(s/SYNONYMS: +(.*)//){
-            @syns=split(/; +/,$1);
-            foreach(@syns){
-                s/_//g;
-		print "syn: $_\n" unless $seen{$_}++;
-                #$TJM2{&strip_name($_)}=$family;
-            }
-        }
-print "nativity: $nativity\n";
+		if(m/^(NATIVE OR NATURALIZED|NATIVE|NATURALIZED|POSSIBLY IN CA|WAIF|EXTIRPATED ALIEN|EXTIRPATED WAIF|EXTIRPATED WEED|EXTIRPATED|HISTORICAL WAIF|SPONTANEOUS HYBRID|AGRICULTURAL WEED|GARDEN WEED|URBAN WEED|GARDEN AND URBAN WEED|AGRICULTURAL, GARDEN, OR URBAN WEED|URBAN WEED EXPECTED IN WILDLANDS)\n([A-Z-]+ .*)/||
+			m/\n(NATIVE OR NATURALIZED|NATIVE|NATURALIZED|POSSIBLY IN CA|WAIF|EXTIRPATED ALIEN|EXTIRPATED WAIF|EXTIRPATED WEED|EXTIRPATED|HISTORICAL WAIF|SPONTANEOUS HYBRID|AGRICULTURAL WEED|GARDEN WEED|URBAN WEED|GARDEN AND URBAN WEED|AGRICULTURAL, GARDEN, OR URBAN WEED|URBAN WEED EXPECTED IN WILDLANDS)\n([A-Z-]+ .*)/){
+			$nativity=$1;
+			$nativity=~s/ +$//;
 
-#NEED TO FIX THIS ERROR.  
+			if(s/.*NOTE.*xpanded author citation: (.*)\n//){
+				print "$1\n";
+			}
+        
+			#$TJM2{$name}=$family;
+        
+			if(m/COMMON NAME: (.*)/){
+				print "Common: $1\n";
+			}
+
+			if(m/TIME: (.*)/){
+				#print "Flowering time: $1\n";
+			}
+
+			while(s/SYNONYMS: +(.*)//){
+				@syns=split(/; +/,$1);
+
+					foreach(@syns){
+					s/_//g;
+					print "syn: $_\n" unless $seen{$_}++;
+					#$TJM2{&strip_name($_)}=$family;
+					}
+			}
+
+			print "nativity: $nativity\n";
+
+#Notes on the MAJOR ERROR in old code.  It has been present in this script since it was first created, and has been overlooked
 #Non-terminal taxon names, like Prunella vulgaris are getting labeled as "endemic" because they dont have this line
 #Prunella vulgaris is not native, therefore cannot be endemic
 #it also has two subtaxa that are non-native and not endemic, therefore the species entry cannot be endemic
@@ -62,55 +93,140 @@ print "nativity: $nativity\n";
 #even species where one one subtaxon is in California and it is endemic, the species entry, if present, should not be labeled as endemic since there should be subtaxa outside of CA
 #this oversight is pervasive and has been happening for some time.  multiple places in this code and most other eflora scripts need to be altered, essentially wherever endemic is calculated based on
 #presence of these text lines
-if(m/DISTRIBUTION OUTSIDE CALIFORNIA: ../){
-$endem=0;
-print  "endemicity: $endem\n";
-}
-else{
-$endem=1;
-print  "endemicity: $endem\n";
-}
-    }
-    elsif(m/^((SPONTANEOUS HYBRID|EXTIRP|CULTIV|JFP|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/||
-     m/\n((SPONTANEOUS HYBRID|EXTIRP|CULTIV|JFP|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/){
-	print "\nclade: $caption\n$family $3\n";
-        $name=&strip_name($3);
-$nativity=$2;
-$nativity=~s/ *$//;
-#print "$name\n";
-        #$TJM2{$name}=$family;
-	if(s/.*NOTE.*xpanded author citation: (.*)//){
-		print "$1\n";
+
+#also, the old code would add endemic to Naturalized taxa that do not have a OUTSIDE CA line. These are mostly escaped cultivars
+#We only want Native taxa as endemic.
+#we also want to exclude the NATIVE or NATURALIZED taxa.
+
+			if((m/(DISTRIBUTION OUTSIDE CALIFORNIA: ?.?.?)/) && (m/BIOREGIONAL DISTRIBUTION: ../)){  
+				#If there is a OUTSIDE CA line and a BIOREGIONAL LINE, set endemicity to 0 
+				$endem=0;
+				print  "endemicity: $endem\n";
+				#print OUTERR "$name_temp\t$1\t$endem\n";
+			}
+			elsif ((!/DISTRIBUTION OUTSIDE CALIFORNIA: ../) && (!/BIOREGIONAL DISTRIBUTION: ../)){  
+				#if there is neither an OUTSIDE CA line and a BIOREGIONAL LINE, set endemicity to 0
+				#these are mostly binomial name entry that have 2 or more, separate subtaxa entries in california
+				#the '..' are in here without '?' because there are no OUTSIDE CA lines that are blank entries, any that are blank are errors that need to be fixed
+				$endem=0;
+				print  "endemicity: $endem\n";
+				#print OUTERR "$name_temp\t$1\t$endem\n";
+			}
+			elsif ((m/DISTRIBUTION OUTSIDE CALIFORNIA: ../) && (!/BIOREGIONAL DISTRIBUTION: ../)){  
+				#if there is neither an OUTSIDE CA line and a BIOREGIONAL LINE, set endemicity to 0
+				#these are mostly binomial name entry that have 2 or more, separate subtaxa entries in california
+				#the '..' are in here without '?' because there are no OUTSIDE CA lines that are blank entries, any that are blank are errors that need to be fixed
+				$endem=0;
+				print  "endemicity: $endem\n";
+				#print OUTERR "$name_temp\t$1\t$endem\n";
+			}
+			elsif ((!/DISTRIBUTION OUTSIDE CALIFORNIA: ../) && (m/BIOREGIONAL DISTRIBUTION: ../)){ 
+				#if there is not an OUTSIDE CA line, but a BIOREGIONAL LINE is present, set endemicity to 1
+				#records with only a BIOREGION line are the only names that should be marked as endemic.
+				#the '..' are in here without '?' because there are no OUTSIDE CA lines that are blank entries, any that are blank are errors that need to be fixed
+				if ($nativity =~ m/^NATIVE$/){
+					$endem=1;
+					print  "endemicity: $endem\n";
+				}
+				elsif ($nativity =~ m/^NATIVE OR NATURALIZED$/){
+					$endem=0;
+					print  "endemicity: $endem\n";
+				}
+				elsif ($name_temp =~ m/(Salsola ryanii|Pelargonium [Xx] hortorum|Pterocarya stenoptera|Allium cepa)$/){
+					#Salsola ryanii, Pelargonium x hortorum, Pterocarya stenoptera, Allium cepa
+					#all have been counted as Endemic, but should not be.
+					#this excludes them from counts
+					$endem=0;
+					print  "endemicity: $endem\n";
+				}
+				else {
+					print OUTERR "$name_temp\t1. PROBLEM TAXON, CHECK DIST and BIOREG line in eflora_treatments\n";
+				
+				}
+			}
+			else{
+				print OUTERR "$name_temp\t2. PROBLEM TAXON, CHECK DIST and BIOREG line in eflora_treatments\n";
+			}
+		}
+		else{
+			if (length ($name >=1 )){ #we only what to print name records, all other record types are not relevant
+				print OUTERR "$name_temp\t3. PROBLEM TAXON, CHECK DIST and BIOREG line in eflora_treatments\n";
+			}
+		}
+	
+#old version of code
+#if(m/DISTRIBUTION OUTSIDE CALIFORNIA: ../){
+#	$endem=0;
+#	print  "endemicity: $endem\n";
+#}
+#else{
+#	$endem=1;
+#	print  "endemicity: $endem\n";
+#}
+#example of the error caused by this else loop:
+#$name																					$endem
+#Polystichum imbricans (no OUTSIDE or BIOREG line in treatment)							1				THIS should be '0', since ssp. imbricans below is '0';
+#Polystichum imbricans subsp. curtum (no OUTSIDE in treatment; BIOREG line present)		1
+#Polystichum imbricans subsp. imbricans(OUTSIDE and BIOREG line present)				0
+
+
 	}
-if(m/COMMON NAME: (.*)/){
-print "Common: $1\n";
-}
-if(m/TIME: (.*)/){
-#print "Flowering time: $1\n";
-}
-        while(s/SYNONYMS: +(.*)//){
-            @syns=split(/; +/,$1);
-            foreach(@syns){
-                s/_//g;
-print "syn: $_\n" unless $seen{$_}++;
-                #$TJM2{&strip_name($_)}=$family;
-            }
-        }
-print "nativity: $nativity\n";
-if(m/DISTRIBUTION OUTSIDE CALIFORNIA: ../){
-$endem=0;
-print  "endemicity: $endem\n";
-}
-else{
-$endem=1;
-print  "endemicity: $endem\n";
-}
-    }
+	else{ #this code below is to check for name records without taxon author lines
+		if(m/^((SPONTANEOUS HYBRID|EXTIRP|CULTIV|POSS|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/||
+			m/\n((SPONTANEOUS HYBRID|EXTIRP|CULTIV|POSS|AGRIC|HISTOR|GARDEN|WAIF|URBAN|NATIVE|NATURALIZED).*)\n([A-Z-]+ .*)/){
+#			print "\nclade: $caption\n$family $3\n";
+			$name_temp2=&strip_name($3);
+#			$nativity=$1;
+#			$nativity=~s/ *$//;
+			#print "$name\n";
+			#$TJM2{$name}=$family;
+
+#			if(s/.*NOTE.*xpanded author citation: (.*)//){
+#				print "$1\n";
+#			}
+
+#			if(m/COMMON NAME: (.*)/){
+#				print "Common: $1\n";
+#			}
+
+#			if(m/TIME: (.*)/){
+#				#print "Flowering time: $1\n";
+#			}
+
+#			while(s/SYNONYMS: +(.*)//){
+#				@syns=split(/; +/,$1);
+
+#				foreach(@syns){
+#					s/_//g;
+#					print "syn: $_\n" unless $seen{$_}++;
+#					#$TJM2{&strip_name($_)}=$family;
+#				}
+#			}
+
+#			print "nativity: $nativity\n";
+
+#			if(m/(DISTRIBUTION OUTSIDE CALIFORNIA: ?.?.?)/){
+#				$endem=0;
+#				print  "endemicity: $endem\n";
+#				print OUTERR "$name_temp\tNOT ENDEMIC\tI DONT KNOW WHAT THIS DOESE==>TEST\n";
+#			}
+#			else{
+#				$endem=1;
+#				print  "endemicity: $endem\n";
+#				print OUTERR "$name_temp\tENDEMIC\tI DONT KNOW WHAT THIS DOESE==>TEST\n";
+#			}
+#		}
+#		else{
+				print OUTERR "$name_temp2\t4. PROBLEM TAXON, CHECK DIST and BIOREG line in eflora_treatments\n";
+			}
+		#}
+	}
 }
 #}
 #foreach(sort(keys(%TJM2))){
 #print "$_\t$TJM2{$_}\n";
 #}
+
 sub strip_name{
 local($_) = @_;
 
@@ -182,8 +298,22 @@ s/Wendl\. f\./Wendl. filius/g;
 
 
 
-       s/^([A-Z][-A-Za-z]+) (X? ?[-a-z]+) ?.* ?(subvar\.|subsp\.|ssp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
-s/^([A-Z][A-Za-z]+) ([x ]*[-a-z]+).*/$1 $2/;
-s/ssp\./subsp./;
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) ?.* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) [×Xx] ([-a-z]+) .+/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) [×Xx] ([-a-z]+)/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) ×([-a-z]+) .+/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) ×([-a-z]+)/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) .+/$1 $2/||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+)/$1 $2/||
+s/^([A-Z][A-Za-z-]+) (X [-a-z]+)/$1 X $2/||
+s/^X ([A-Z][a-z-]+) ([-a-z]+) (.+)/X $1 $2/||
+s/^X ([A-Z][a-z-]+) ([-a-z]+)/X $1 $2/||
+s/^([A-Z][A-Za-z-]+) (.+)/$1/;
+s/  +/ /;
+s/ +$//;
+
+#       s/^([A-Z][-A-Za-z]+) (X? ?[-a-z]+) ?.* ?(subvar\.|subsp\.|ssp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+#s/^([A-Z][A-Za-z]+) ([x ]*[-a-z]+).*/$1 $2/;
+#s/ssp\./subsp./;
 return (ucfirst(lc($_)));
 }

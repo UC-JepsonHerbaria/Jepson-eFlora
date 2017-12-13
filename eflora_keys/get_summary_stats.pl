@@ -6,7 +6,7 @@ unshift(@AA,$_);
 }
 foreach(@AA){
 #print;
-	($nativity, $family, $genus, $species, $species_author, $infraspecific_rank, $infraspecific_epithet, $infraspecific_author, $name_minus_authors, $name_plus_authors, $expanded_name, $synonyms, $common, $TJM1_TJM2, $major_clade, $endemicity)=split(/\t/);
+	($LN,$nativity, $family, $genus, $species, $species_author, $infraspecific_rank, $infraspecific_epithet, $infraspecific_author, $name_minus_authors, $name_plus_authors, $expanded_name, $synonyms, $common, $TJM1_TJM2, $major_clade, $endemicity)=split(/\t/);
 	$MC{$family}=$major_clade;
 	$genus_count++ unless $seen{$genus}++;
 	if($nativity=~/NATIVE/){
