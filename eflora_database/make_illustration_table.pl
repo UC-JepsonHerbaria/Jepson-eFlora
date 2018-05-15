@@ -1,7 +1,7 @@
 #use warnings;
 
 open(OUT, ">output/load_illustration_table.sql") || die;
-$data_path="/Users/davidbaxter/DATA";
+$data_path="/JEPS-master/Jepson-eFlora/synonymy/input/";
 
 #load Taxon IDs for all taxa
 open(IN, "$data_path/smasch_taxon_ids.txt") || die;

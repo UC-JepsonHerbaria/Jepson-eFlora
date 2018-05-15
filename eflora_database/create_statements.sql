@@ -61,6 +61,7 @@ CREATE TABLE eflora_taxa (
 	Etymology TEXT,
 	Toxicity TEXT,
 	Synonyms TEXT,
+	UnabridgedSynonyms TEXT,
 	Reference TEXT, 
 	UnabridgedReference TEXT,
 	Note TEXT,

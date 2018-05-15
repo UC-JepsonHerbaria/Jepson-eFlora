@@ -326,7 +326,7 @@ EOP
 				if(($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston|Clark)/) && ($sortline =~ m/(Clark. *\(.*;|Clark Mtn Range|Clark Mtn.?,? .*range|Kingston.?,? .*[Mm]tns|Last Chance Range.?,? .*[Mm]tns|Panamint Range.?,? .*[Mm]tns|Santa Lucia Range.?,? .*[Mm]tns?)/)){				
 					print "known false positive: mountain range problem\t--\t$sortline\n";
 				}	
-					elsif ($sortline =~ m/(Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston) .*[Mm]tns?/){
+				elsif ($sortline =~ m/(Clark Mtn|Argus|Cascade|Coso|Diablo|La Panza|Last Chance|Hamilton|Panamint|Santa Lucia|Temblor|Kingston) .*[Mm]tns?/){
 						print "$file - mountain range problem\t--\t$sortline\n\n";
 				}
 				if($sortline=~m/HABIT\+: \d/){
@@ -371,34 +371,34 @@ EOP
 					
 				}
 					elsif($sortline =~ m/([^-]\)[^\[\])0-9,.;: -])/){
-					print "$file - probable paren spacing error1 =$1: $sortline\n\n";
+					print "$file - probable paren spacing error (1) =$1: $sortline\n\n";
 				}
 				
 				($open_brace)=($sortline=~s/([\[({])/$1/g);
 				($close_brace)=($sortline=~s/([)\]}])/$1/g);
 				unless($open_brace==$close_brace){
-					print "$file - probable paren match error2: $sortline\n\n";
+					print "$file - probable paren match error (2): $sortline\n\n";
 				}
 				
 				if($sortline =~ m/\( /){
-					print "$file - probable paren spacing error3: $sortline\n\n";
+					print "$file - probable paren spacing error (3): $sortline\n\n";
 				}
 				
 				if(($sortline =~ m/(\d---\d)/) && ($sortline =~ m/(-\d-pin)/)){
-					print "known false positive: probable en-dash error4: $sortline\n\n";
+					print "known false positive: probable en-dash error (4): $sortline\n\n";
 				}
 					elsif($sortline =~ m/(\d---\d)/){
-					print "$file - probable en-dash error4: $sortline\n\n";
+					print "$file - probable en-dash error (4): $sortline\n\n";
 					}
 					
 				if(($sortline=~m/(\d-\d)/) && ($sortline =~ m/\/\d+-\d+\//)){
 					print "known false positive (dash in URL), probable en-dash error5: $sortline\n";
 				}
 					elsif(($sortline=~m/(\d-\d)/) && ($sortline =~ m/Phytoneuron \d+-\d+/)){
-						print "known false positive (dash in Phytoneruron online volume no.), probable en-dash error5: $sortline\n";
+						print "known false positive (dash in Phytoneuron online volume no.), probable en-dash error5: $sortline\n";
 					}
 					elsif($sortline=~m/(\d-\d)/){
-						print "$file - probable en-dash error5: $sortline\n\n";
+						print "$file - probable en-dash error (5): $sortline\n\n";
 					}
 				
 				if(($sortline =~ m/([A-Za-z]--[A-Za-z])/) && (($sortline =~ m/[A-Z][a-z][a-z]--[A-Z][a-z][a-z]/ || $sortline =~ m/TIME:/ || $sortline =~ m/few--/ || $sortline =~ m/ummer--fall-flower/ || $sortline =~ m/winter--spring-flower/ ))){
@@ -406,15 +406,15 @@ EOP
 					
 				}
 					elsif($sortline =~ m /([A-Za-z]--[A-Za-z])/){
-						print "$file - probable en-dash error6 =$1: $sortline\n\n";
+						print "$file - probable en-dash error (6) =$1: $sortline\n\n";
 					}
 					
 				if(($sortline =~ m/(few-? to [a-z]+-)/) && ($sortline =~ m/(few-.*to.*many-|few-.*to.*several-)/)){
-					print "known false positive: probable en-dash error7 =$1: $sortline\n";
+					print "known false positive: probable en-dash error (7) =$1: $sortline\n";
 					;
 				}
 					elsif($sortline =~ m/(few-? to [a-z]+-)/){
-						print "$file - probable en-dash error7 =$1: $sortline\n\n";
+						print "$file - probable en-dash error (7) =$1: $sortline\n\n";
 					}
 				
 				if($sortline=~m/\blanceolate-(ovate|linear|elliptic|oblong|deltate)/ ){
@@ -425,40 +425,177 @@ EOP
 					print "$file - possible font problem $1: $sortline\n\n"
 				}
 				#exclude taxa already in TJM2 in brackets and non-taxon bracketed info
-				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ 
-				
+				unless($sortline=~m/(\[GALENIA|\[GUILLEMINEA|\[PETROSELINUM|\[THELESPERMA|\[SANTOLINA|\[COTA|\[ECHINOPS|\[GAILLARDIA|\[MAURANTHEMUM|\[DYSSODIA|\[GAILLARDIA|\[CARRICHTERA|\[ERUCASTRUM|\[AUBRIETA|\[CARRICHTERA|\[IBERIS|\[IPOMOEA|\[LUMA|\[SYZYGIUM|\[CHAMELAUCIUM|\[GLAUCIUM|\[LAMIASTRUM|\[PLUMBAGO|\[COPROSMA|\[DIODIA|\[NICANDRA|\[LEUCOJUM|\[LANTANA|\[BULBINE|\[SPARAXIS|\[GAUDINIA|\[ZIZANIA|\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*:)/){ 
+				#\[\d+|\[[a-z]+\]|\[[A-Z][a-z]+\]|\[[A-Z].*: this part of the above is supposed to kick out untagged unabridged lines in key that were printed in the manual, I think.  If so, it is not working for all cases.  For some reason, some are passing thick check. New code was added below to skip these other "known" unabridged key leads
+				#This script is skipping some of the first bracketed unabridged lines, but not all. For example, see Papaver and Limonium.
 					if(($sortline =~ m/-> \[[A-Z-]{2,}/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
 						print "$file - possible UNABRIDGED KEY LEAD tag missing: $sortline\n\n";
 					}
 					
-					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z-]+/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-						unless ($sortline =~ m/\[(A\. spinosus|A\. blitum|A\. caudatus|A\. viridis|A\. cruentus|A\. hypochondriacus|A\. fruticosa|A\. trifida|A\. annua|
-								M\. verna|D. reptans|D. nemorosa|O. robusta|L. erinus|L. etrusca|C. diffusum|D. plumarius|S. subulata|S. pendula|S. pseudatocion
-								C. tricolor|C. multicava|C. ovata)/){#known key leads from the printed manual, skip these false positives;
-							print "$file - possible UNABRIDGED KEY LEAD tag missing2: $sortline\n\n";
+					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z-]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+						unless ($sortline =~ m/\[(A\. spinosus|A\. blitum|A\. caudatus|A\. viridis|A\. cruentus|A\. hypochondriacus|A\. fruticosa|A. &times;platyspina|A\. trifida|A\. annua|C\. bursifolia|G\. stachydifolia|M\. verna|D\. reptans|D\. nemorosa|O\. robusta|L\. erinus|L\. etrusca|C\. diffusum|D\. plumarius|S\. subulata|S\. pendula|S\. pseudatocion|C\. tricolor|C\. multicava|C\. ovata|E\. cyathophora|E\. davidii|E\. dentata|E\. rigida|E\. myrsinites|A\. decurrens|A\. mearnsii|A\. paradoxa|A\. podalyriifolia|A\. verticillata|A\. pycnantha|A\. retinodes|G\. maderensis|M\. scutellata|T\. resupinatum|T\. alexandrinum|V\. lathyroides|V\. pannonica|V\. disperma|V\. bithynica|V\. cracca|Q\. robur|E\. cygnorum|G\. texanum|P\. zonale|P\. capitatum|P\. vitifolium|H\. androsaemum|H\. hookerianum|L\. monelli|M\. nyctaginea|O\. rosea|O\. stricta|O\. bowiei|O\. purpurea|P\. argemone|P\. heterotepala|P\. tenuifolium|A\. orontium|A\. majus|L\. purpurea|V\. triphyllos|L\. brassicifolium|L\. preauxii|L\. sventenii|E\. polycladon|var\. glabratum|P\. orientalis|P\. fowleri|subsp\. buxiforme|subsp\. neglectum|subsp\. rurivagum|R\. acris|R\. bulbosus|R\. odorata|P\. coccinea|P\. crenulata|P\. atalantioides|A\. campestre|C\. parqui|P\. viscosa|P\. longifolia|U\. americana|U\. minor|A\. cepa|A\. aethiopicus|J\. anthelatus|A\. geniculata|B\. arvensis|M\. schreberi|subsp\. bulbosa)\]/g){
+								#known non-tagged unabridged key leads from the printed manual, skip these false positives;
+							print "$file - possible UNABRIDGED KEY LEAD tag missing (2): $sortline\n\n";
+								#print only untagged and unabridged key lines that dont match the unabridged lines printed in the manual
 						}
 					}
+					elsif(($sortline =~ m/-> \[(subsp\.|var\.|nothosubsp\.|f\.) [a-z-]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
+						unless ($sortline =~ m/\[(var\. glabratum|subsp\. buxiforme|subsp\. neglectum|subsp\. rurivagum|subsp\. bulbosa)\]/g){
+								#known non-tagged unabridged key leads from the printed manual, skip these false positives;
+							print "$file - possible UNABRIDGED KEY LEAD tag missing (4): $sortline\n\n";
+								#print only untagged and unabridged key lines that dont match the unabridged lines printed in the manual
+						}
+#known unabridged taxa from the printed manual, skip these false positives
+#AMARANTHUS
+#A. spinosus|A. blitum|A. caudatus|A. viridis|A. cruentus|A. hypochondriacus|A. fruticosa
+#AMBROSIA
+#A. &times;platyspina|A\. trifida
+#ARTEMISIA
+#A. annua					
+#CREPIS
+#C. bursifolia
+#GAMOCHAETA
+#G. stachydifolia
+#MYOSOTIS
+#M. verna
+#DRABA
+#D. reptans|D. nemorosa
+#OPUNTIA
+#O. robusta
+#LOBELIA
+#L. erinus
+#LONICERA
+#L. etrusca
+#CERASTIUM
+#C. diffusum
+#DIANTHUS
+#D. plumarius
+#SAGINA
+#S. subulata
+#SILENE
+#S. pendula|S. pseudatocion
+#CONVOLVULUS
+#C. althaeoides|C. tricolor
+#CRASSULA
+#C. multicava|C. ovata
+#EUPHORBIA
+#E. cyathophora|E. davidii|E. dentata|E. rigida|E. myrsinites
+#ACACIA
+#A. decurrens|A. mearnsii|A. paradoxa|A. podalyriifolia|A. verticillata|A. pycnantha|A. retinodes
+#GENISTA
+#G. maderensis
+#MEDICAGO
+#M. scutellata
+#TRIFOLIUM
+#T. resupinatum|T. alexandrinum
+#VICIA
+#V. lathyroides|V. pannonica|V. disperma|V. bithynica|V. cracca
+#QUERCUS
+#Q. ribur
+#ERODIUM
+#E. cygnorum
+#GERANIUM
+#G. texanum
+#PELARGONIUM
+#P. zonale|P. capitatum|P. vitifolium
+#HYPERICUM
+#H. androsaemum|H. hookerianum
+#LYSIMACHIA
+#L. monelli
+#MIRABILIS
+#M. nyctaginea
+#OENOTHERA    
+#O. rosea|O. stricta
+#OXALIS
+#O. bowiei|O. purpurea
+#PAPAVER
+#P. argemone
+#PHYTOLACCA
+#P. heterotepala
+#PITTOSPORUM
+#P. tenuifolium
+#ANTIRRHINUM
+#A. orontium|A. majus
+#LINARIA
+#L. purpurea
+#VERONICA
+#V. triphyllos
+#LIMONIUM
+#L. brassicifolium|L. preauxii|L. sventenii
+#ERIOGONUM
+#E. polycladon|var. glabratum|
+#PERSICARIA
+#P. orientalis
+#POLYGONUM
+#P. fowleri|subsp. buxiforme|subsp. neglectum|subsp. rurivagum
+#RANUNCULUS
+#R. acris|R. bulbosus
+#RESEDA
+#R. odorata
+#PYRACANTHA
+#P. coccinea|P. crenulata|P. atalantioides
+#ACER
+#A. campestre
+#CESTRUM
+#C. parqui
+#PHYSALIS
+#P. viscosa|P. longifolia
+#ULMUS
+#U. americana|U. minor
+#ALLIUM
+#A. cepa
+#ASPARAGUS
+#A. aethiopicus
+#JUNCUS
+#J. anthelatus
+#AEGILOPS
+#A. geniculata
+#BROMUS
+#B. arvensis
+#MUHLENBERGIA
+#M. schreberi
+#POA
+#subsp. bulbosa
+#Eriogonum nutans
+#var. glabratum
+
+#Anisodontea capensis
+
+					}
 					elsif(($sortline =~ m/-> \[[A-Z]\. [a-z-]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
-						print "known UNABRIDGED KEY LEAD tag $sortline\n";
+						print "known UNABRIDGED KEY LEAD tag==>$sortline\n";
+					}
+					elsif(($sortline =~ m/-> \[[A-Z][a-z-]+ [a-z-]+/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
+						print "known UNABRIDGED KEY LEAD tag==>$sortline\n";
 					}
 					
 					elsif(($sortline =~ m/-> \[[A-Z-]+\]/) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-						print "$file - possible UNABRIDGED KEY LEAD tag missing3: $sortline\n\n"	
+						print "$file - possible UNABRIDGED KEY LEAD tag missing (3): $sortline\n\n"	
 					}
-					elsif(($sortline =~ m/\[[varsubp]{3,5}\. /) && ($sortline !~ m/UNABRIDGED KEY LEAD/)){
-						print "$file - possible UNABRIDGED KEY LEAD tag missing4: $sortline\n\n"	
-						}
+					elsif(($sortline !~ m/-> \[/) && ($sortline =~ m/UNABRIDGED KEY LEAD/)){
+						print "known UNABRIDGED KEY LEAD without square brackets, double check to see if paired with a bracketed taxon==>$sortline\n";	
+					}
+					elsif($sortline =~ m/UNABRIDGED KEY LEAD/){
+						print "$file - possible poorly formatted UNABRIDGED KEY LEAD: $sortline\n\n"	
+					}
 				}	
-				if($sortline=~m/TIME: [a-z]/ ){
-					unless($sortline=~m/(TIME: (Jun|Jul|Jan|Feb|Mar|Apr|May|Aug|Sep|Oct|Nov|Dec|Summer|Fall|Winter|Spring))/ ){
-						print "$file  -possible date capitalization problem $1: $sortline\n\n";
+				if($sortline=~m/TIME: [A-Z]/ ){
+					unless($sortline=~m/(TIME: (All|Jun|Jul|Jan|Feb|Mar|Apr|May|Aug|Sep|Oct|Nov|Dec|Summer|Fall|Winter|Spring))/ ){
+								#known properly formatted time formats from printed manual, skip these false positives;
+						unless ($sortline =~ m/TIME: (Evidently unrecorded in California,|After summer rain,|Generally|Late|Early|Probably|Mostly|Mid) /g){
+								#known oddly formatted time formats from recent treatments, skip these false positives;
+							print "$file  -possible date problem $1: $sortline\n\n";
+						}
 					}
 					if($sortline=~m/Jan--Dec/ ){
-						print "$file Jan--Dec -> All yr $sortline\n\n";
+						print "$file Jan--Dec -> All year $sortline\n\n";
 					}
-					if($sortline=~m/All year/ ){
-						print "$file All year -> All yr $sortline\n\n";
+					if($sortline=~m/All yr/ ){
+						print "$file All yr -> All year $sortline\n\n";
 					}
+				}
+				elsif($sortline=~m/TIME: [a-z]/ ){
+					print "$file  -possible date capitalization problem: $sortline\n\n";
 				}
 				if($sortline=~m/( _ )/ ){
 					print "$file  - possible underline spacing problem $1: $sortline\n\n";
