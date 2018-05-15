@@ -140,7 +140,7 @@ if($loc=~s/\)//){ push(@parenstr, "$name:$string") if defined($qualified{$loc});
 	if( m/exc\.? /){ #this does not work when there are two 'exc' in an exception
 #warn "$_\n" if m/exc.*exc/;
 warn "$_\n" if m/possibly/;
-print "\nEL: $line\n$_\n";
+#print "\nEL: $line\n$_\n";
 		s/exc Teh, ScV, SCoRI, SCo, WTR, PR exc SnJt\), /exc Teh, ScV, SCoRI, SCo, WTR, PRW), /; #fix the code for the one record where 'exc' appears twice and causes the exclusion to fail
 		s/except/exc/;
 		s/possibly//;#delete this which is not excluding the first region after it but before the next ','
@@ -148,7 +148,7 @@ print "\nEL: $line\n$_\n";
 		($exception_string = $_)=~ s/.*exc[. ]+//;
 		$exception_string =~ s/.*except //;
 
-print "ES: $exception_string\n";
+#print "ES: $exception_string\n";
 
 		$exception_string =~ s/\).*//;
 
@@ -157,7 +157,7 @@ print "ES: $exception_string\n";
 
 		@all_exceptions = split(/, /,$exception_string);
 
-print "AE: ", join(" ",@all_exceptions),"\n";
+#print "AE: ", join(" ",@all_exceptions),"\n";
 
 		foreach $exception (@all_exceptions){
 			if($exception eq "coast"){

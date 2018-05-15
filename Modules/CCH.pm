@@ -180,6 +180,7 @@ our %cult=(
 'Audouinia capitata'=>'P',
 'Austrocedrus chilensis'=>'P',
 'Azara microphylla'=>'P',
+'Beilschmiedia berteroana'=>'P',
 'Berberis gagnepainii'=>'P',
 'Blechnum polypodioides'=>'P',
 'Boronia megastigma'=>'P',
@@ -205,13 +206,16 @@ our %cult=(
 'Clematis X jackmanii'=>'P',
 'Clematis montana'=>'P',
 'Cocculus laurifolius'=>'P',
+'Coleonema album'=>'P',
 'Conyza sumatrensis'=>'P',
 'Cornus capitata'=>'P',
 'Cornus florida'=>'P',
 'Cornus florida var. rubra'=>'P',
+'Cornus mas'=>'P',
 'Cornus paucinervis'=>'P',
 'Crassula hystrix'=>'P',
 'Crataegus X lavallei'=>'P',
+'Crataegus pinnatifida'=>'P',
 'Cupressocyparis leylandii'=>'P',
 'Cyathea mollis'=>'P',
 'Cytisus battandieri'=>'P',
@@ -229,12 +233,14 @@ our %cult=(
 'Enchylaena tomentosa'=>'P',
 'Erica mediterranea'=>'P',
 'Erica verticillata'=>'P',
+'Eugenia myrtifolia'=>'P',
 'Euphorbia barrelieri'=>'P',
 'Euphorbia characias subsp. wulfeni'=>'P',
 'Euphorbia characias'=>'P',
 'Euphorbia mauritanica'=>'P',
 'Felicia bergeriana'=>'P',
 'Ficus pumila var. minima'=>'P',
+'Freesia montbretia'=>'P',
 'Furcraea gigantea'=>'P',
 'Furcraea foetida'=>'P',
 'Geijera parviflora'=>'P',
@@ -243,6 +249,7 @@ our %cult=(
 'Goodia lotifolia'=>'P',
 'Goniophlebium niponicum'=>'P',
 'Grevillea thelemanniana'=>'P',
+'Grevillea noellii'=>'P',
 'Hakea drupacea'=>'P',
 'Hakea gibbosa'=>'P',
 'Hakea suaveolens'=>'P',
@@ -284,6 +291,7 @@ our %cult=(
 'Pentas lanceolata var. coccinea'=>'P',
 'Pentas lanceolata var. lanceolata'=>'P',
 'Pentas lanceolata'=>'P',
+'Petalostigma pubescens'=>'P',
 'Phaedranthus buccinatorius'=>'P',
 'Picea orientalis'=>'P',
 'Picea smithiana'=>'P',
@@ -311,6 +319,7 @@ our %cult=(
 'Rhynchospora tenuis'=>'P',
 'Sanchezia spectabilis'=>'P',
 'Sarcococca hookeriana'=>'P',
+'Scorpiurus sulcatus'=>'P',
 'Senecio argentinus'=>'P',
 'Senecio chordifolia'=>'P',
 'Spiraea cantoniensis'=>'P',
@@ -319,6 +328,7 @@ our %cult=(
 'Sutherlandia frutescens'=>'P',
 'Thea sinensis'=>'P',
 'Thomasia macrocarpa'=>'P',
+'Thujopsis'=>'P',
 'Tilia dasystyla'=>'P',
 'Tradescantia blossfeldiana'=>'P',
 'Trachelospermum jasminoides'=>'P',
@@ -1129,7 +1139,7 @@ s/^(Contra costa|Conta Cost|Contra Cost|Contrasta|Contra.?|Costa.?|Contra Costa.
 
 s/^(Calvaras.?|Claveras|Calavers|Calveras|Calvaras|Calaveris|Calvaveras|Calavares|Calavaras|Calaveras.?|CALA?VARAS|CALA?VERAS)$/Calaveras/;
 
-s/^(Calousa|Clousa|Colusa.?|COLUSA)$/Colusa/;
+s/^(Calousa|Coulsa|Clousa|Colusa.?|COLUSA)$/Colusa/;
 
 s/^(El ?[dD]or[ao]do|Edorado|El Dorada|El Dorata|El Dorodo|ElDorado|Eldorado|Elorado|El Dorado.?|Dorado.?|EL DORADO|ELDORADO)$/El Dorado/;
 
@@ -1151,7 +1161,7 @@ s/^(King|Kings.?|KINGS)$/Kings/;
 
 s/^(Lake.?|LAKE)$/Lake/;
 
-s/^(Lassrn|Lassen.?|LASSEN)$/Lassen/;
+s/^(Las+en|Lassrn|Lassen.?|LASSEN)$/Lassen/;
 
 s/^(Los Angelesos Angeles|los Angeles|[lL][Oo][Ss] *[Aa]|[lL][Oo][Ss]|Los Aneles|Loa Angeles|Los angeles|Los Angelesos angeles|L *A|Los Angales|Los Angel[ao]s|Los Angeles.?|LOS ?ANGELES)$/Los Angeles/;
 
@@ -1173,9 +1183,9 @@ s/^(Monterery|Monterey_.*|Montery|Monter+ey|Monterey.?|MONTEREY)$/Monterey/;
 
 s/^(NAPA|Napa.?)$/Napa/;
 
-s/^(NEV|Nevada.?|NEVADA)$/NEVADA/;
+s/^(NEV|Nevada.?|NEVADA)$/Nevada/;
 
-s/^(ORANGE|Orange.?)$/Orange/;
+s/^(Oange|ORANGE|Orange.?)$/Orange/;
 
 s/^(Olumas|Pluams|Plum[aou]+s|PLUMAS|Plumas.?)$/Plumas/;
 
@@ -1190,9 +1200,9 @@ s/^(San benito|San Ben|San Bento|San Beuito|SAN ?BENITO|BENITO|SanBenito.?|Benit
 s/^(San Bernadino|S\. Bernardo|Santa Bernardino|San Beradino|San Berardino|San Berbardino|San Berdadino|Bernardino.?|San ?Bernardino.?|SAN BERNARDINO|BERNARDINO)$/San Bernardino/;
 s/^(San Bernarndino|San Bernardo|San Bernardinio|San Bernandino|San Bernaedino|San Bernadion|San Bernadio|San Bernadiino|San Berd.?)$/San Bernardino/;
 s/^(San Bernidino|San Benrardino|San Beranrdino|San BernardinoSan Bernardino|San Bernarino|San Bernarrdino|San Bernerdino|SanBernardino|San Bernrdino|SAN BENRARDINO)$/San Bernardino/;
-s/^(san Bernardino|Sanbernardino|San bernardino|San Bernardina|SAN BENRARDINO|San BErnardino|San Bernardine|San Bernardio|S Bernardo)$/San Bernardino/;
+s/^(SAN BERANRDINO|san Bernardino|Sanbernardino|San bernardino|San Bernardina|SAN BENRARDINO|San BErnardino|San Bernardine|San Bernardio|S Bernardo)$/San Bernardino/;
 
-s/^(San luis obispo|San Luis|San Luis+ Obispo|SLO|SL.O|San Luis Opispo|San Luis Obsipo|San Luis Obisfpo|San Lius Obispo|San Louis Obispo|San Lous Obispo|San Luis Obiapo|Obispo|San Luis Obisbo|San Luis Obispo.?|SAN LUIS OBISPO)$/San Luis Obispo/;
+s/^(San luis Obispo|San luis obispo|San Luis|San Luis+ Obispo|SLO|SL.O|San Luis Opispo|San Luis Obsipo|San Luis Obisfpo|San Lius Obispo|San Louis Obispo|San Lous Obispo|San Luis Obiapo|Obispo|San Luis Obisbo|San Luis Obispo.?|SAN LUIS OBISPO)$/San Luis Obispo/;
 
 s/^(San Clara|Santa Clara.?|SANTA CLARA)$/Santa Clara/;
 
@@ -1224,7 +1234,7 @@ s/^(Siiskiyou|Sikiyou|Siskyou|Sisikiyou|Sisshij|Siskiyou.?|SISKIYOU)$/Siskiyou/;
 
 s/^(Tehame|Tehema|Tehema|Jehama|Tehana|Tehama.?|TEHAMA)$/Tehama/;
 
-s/^(trinity|Trinuty|Trinit.?|TRINITY)$/Trinity/;
+s/^(trinity|Tinity|Trinuty|Trinit.?|TRINITY)$/Trinity/;
 
 s/^(Tuolumme|Tuolume|Tulonmne|Tolumni.?|Toulumne|Toulomne|Tuol|Olumn.*|Tuolmne|Tuolmune|Tuolomne|Tuolomne|Toulumine|Tuolumne.?|TUOLUMNE)$/Tuolumne/;
 
@@ -1409,8 +1419,9 @@ sub validate_collectors {
 	if(length($collectors) == 0){
 		&log_change("COLLECTOR CCH.pm: No Collector Name\t$id");
 	}
-	elsif ($collectors =~ m/(null|no name|none|unknown|anonymous)/i) {
+	elsif ($collectors =~ m/(NOT ?RECORDED|null|no ?name|not ?provided|none|unknown|anonymous)/i) {
 		&log_change("COLLECTOR CCH.pm: name entered as Unknown, none, or etc.\t$id");
+		return "Unknown";
 	}
 	elsif(length($collectors) > 1){ #names with length of 1 are always errors
 	#if the name is found in the collectors_id table, return the altered name
@@ -1444,8 +1455,9 @@ sub validate_single_collector {
 	if(length($collector) == 0){
 		&log_change("COLLECTOR CCH.pm(7): Name NULL:\t$collector");
 	}
-	elsif ($collector=~/(null|no name|none|unknown|anonymous)/i) {
+	elsif ($collector=~/(NOT ?RECORDED|null|no ?name|not ?provided|none|unknown|anonymous)/i) {
 		&log_change("COLLECTOR CCH.pm: name entered as Unknown, none, or etc.\t$id");
+		return "Unknown";
 	}
 	elsif(length($collector) > 1){ #names with length of 1 are always errors
 	#if the name is found in the collectors_id table, return the altered name
@@ -1723,6 +1735,8 @@ if(m/^Fragaria ?.* ?ananassa Duchesne var. cuneifolia ?.*/){
 #	warn "Genus modified\t$_";
 #	&log_change ("Genus modified\t$scientificName\t$id\n");
 #}
+#encelioides (Cav.) Benth. & Hook. f. ex A. Gray subsp. exauriculata
+s/Hook\. f\. ex A\. Gray/Hook. filius ex A. Gray/g;
 
 s/"//g;
 $_=ucfirst($_);
@@ -1815,6 +1829,8 @@ s/Schult\. f\./Schult. filius/g;
 s/Wallr\. f\./Wallr. filius/g;
 s/Wendl\. f\./Wendl. filius/g;
 
+
+
 #s/^([A-Z][A-Za-z]+) (X?[-a-z]+).*? (subvar\.|subsp\.|ssp\.|var\.|subvar\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
 #s/^([A-Z][A-Za-z]+) X ([-a-z]+) .+/$1 X $2/||
 #s/^([A-Z][A-Za-z]+) × ?([-a-z]+) .+/$1 X $2/||
@@ -1828,7 +1844,10 @@ s/Wendl\. f\./Wendl. filius/g;
 #s/ssp\./subsp./;
 #s/ +$//;
 
-s/^([A-Z][A-Za-z-]+) ([-a-z]+) ?.* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) .* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+) .*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) .* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+)/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+) .*/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) ([-a-z]+) (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+)/$1 $2 $3 $4/ ||
 s/^([A-Z][A-Za-z-]+) [×Xx] ([-a-z]+) .+/$1 X $2/||
 s/^([A-Z][A-Za-z-]+) [×Xx] ([-a-z]+)/$1 X $2/||
 s/^([A-Z][A-Za-z-]+) ×([-a-z]+) .+/$1 X $2/||
@@ -1838,7 +1857,6 @@ s/^([A-Z][A-Za-z-]+) ([-a-z]+)/$1 $2/||
 s/^([A-Z][A-Za-z-]+) (X [-a-z]+)/$1 X $2/||
 s/^X ([A-Z][a-z-]+) ([-a-z]+) (.+)/X $1 $2/||
 s/^X ([A-Z][a-z-]+) ([-a-z]+)/X $1 $2/||
-s/^([A-Z][A-Za-z-]+) (.+)/$1/;
 s/  +/ /;
 s/ +$//;
 
