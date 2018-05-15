@@ -1,0 +1,4967 @@
+f1287-01.txt	Agave shawii var. shawii
+f1287-01.txt	Agave deserti var. deserti
+f1287-02.txt	Camassia quamash subsp. breviflora
+f1287-02.txt	Camassia leichtlinii subsp. suksdorfii
+f1287-03.txt	Chlorogalum angustifolium
+f1287-04.txt	Chlorogalum pomeridianum var. pomeridianum
+f1287-04.txt	Chlorogalum pomeridianum var. minus
+f1287-04.txt	Chlorogalum purpureum var. reductum
+f1287-05.txt	Hastingsia serpentinicola
+f1287-05.txt	Hastingsia alba
+f1287-06.txt	Hesperocallis undulata
+f1287-07.txt	Hesperoyucca whipplei
+f1287-08.txt	Leucocrinum montanum
+f1287-09.txt	Yucca baccata var. baccata
+f1295-01.txt	Yucca schidigera
+f1295-01.txt	Yucca brevifolia
+f1295-02.txt	Alisma triviale
+f1295-04.txt	Echinodorus berteroi
+f1295-05.txt	Sagittaria latifolia
+f1295-05.txt	Sagittaria cuneata
+f1295-06.txt	Sagittaria sanfordii
+f1295-06.txt	Sagittaria montevidensis subsp. calycina
+f1295-07.txt	Allium amplectens
+f1295-08.txt	Allium bisceptrum
+f1295-08.txt	Allium acuminatum
+f1295-08.txt	Allium bolanderi
+f1295-08.txt	Allium crispum
+f1295-09.txt	Allium campanulatum
+f1299-01.txt	Allium falcifolium
+f1299-02.txt	Allium fimbriatum var. fimbriatum
+f1299-03.txt	Allium haematochiton
+f1299-04.txt	Allium hyalinum
+f1299-04.txt	Allium lacunosum
+f1299-04.txt	Allium lemmonii
+f1299-04.txt	Allium nevadense
+f1299-05.txt	Allium obtusum
+f1299-05.txt	Allium peninsulare
+f1299-05.txt	Allium shevockii
+f1299-06.txt	Allium tribracteatum
+f1299-06.txt	Allium unifolium
+f1299-07.txt	Allium validum
+f1299-08.txt	Allium yosemitense
+f1299-09.txt	Aponogeton distachyos
+f1299-09.txt	Aponogetonaceae
+f1307-01.txt	Lemna gibba
+f1307-01.txt	Landoltia punctata
+f1307-01.txt	Araceae
+f1307-02.txt	Lysichiton americanus
+f1307-03.txt	Spirodela polyrhiza
+f1307-04.txt	Wolffia columbiana
+f1307-05.txt	Wolffiella oblonga
+f1307-05.txt	Wolffiella lingulata
+f1307-06.txt	Washingtonia filifera
+f1307-06.txt	Arecaceae
+f1307-07.txt	Asparagus officinalis subsp. officinalis
+f1307-07.txt	Asparagaceae
+f1307-08.txt	Asphodelus fistulosus
+f1307-08.txt	Asphodelaceae
+f1307-09.txt	Tradescantia fluminensis
+f1307-09.txt	Commelinaceae
+f1323-01.txt	Cyperaceae
+f1323-02.txt	Bolboschoenus fluviatilis
+f1323-02.txt	Bolboschoenus robustus
+f1323-02.txt	Bolboschoenus maritimus subsp. paludosus
+f1323-03.txt	Bulbostylis capillaris
+f1323-04.txt	Carex abrupta
+f1323-05.txt	Carex alma
+f1323-05.txt	Carex amplifolia
+f1323-06.txt	Carex angustata
+f1323-06.txt	Carex aquatilis var. dives
+f1323-06.txt	Carex angustata
+f1323-07.txt	Carex arcta
+f1323-07.txt	Carex athrostachya
+f1323-07.txt	Carex atherodes
+f1323-08.txt	Carex barbarae
+f1323-08.txt	Carex aurea
+f1323-09.txt	Carex bolanderi
+f1327-01.txt	Carex brevicaulis
+f1327-01.txt	Carex breweri
+f1327-01.txt	Carex brevicaulis
+f1327-03.txt	Carex canescens subsp. canescens
+f1327-03.txt	Carex comosa
+f1327-03.txt	Carex capitata
+f1327-04.txt	Carex congdonii
+f1327-04.txt	Carex cusickii
+f1327-04.txt	Carex concinnoides
+f1327-05.txt	Carex davyi
+f1327-06.txt	Carex densa
+f1327-07.txt	Carex diandra
+f1327-07.txt	Carex disperma
+f1327-08.txt	Carex duriuscula
+f1327-08.txt	Carex douglasii
+f1327-09.txt	Carex exsiccata
+f1327-09.txt	Carex echinata subsp. echinata
+f1329-01.txt	Carex filifolia var. erostrata
+f1329-01.txt	Carex feta
+f1329-02.txt	Carex fracta
+f1329-02.txt	Carex fissuricola
+f1329-02.txt	Carex geyeri
+f1329-02.txt	Carex globosa
+f1329-03.txt	Carex gynodynama
+f1329-03.txt	Carex halliana
+f1329-04.txt	Carex hassei
+f1329-04.txt	Carex harfordii
+f1329-05.txt	Carex helleri
+f1329-05.txt	Carex hendersonii
+f1329-05.txt	Carex haydeniana
+f1329-06.txt	Carex hirtissima
+f1329-06.txt	Carex heteroneura
+f1329-07.txt	Carex hoodii
+f1329-08.txt	Carex incurviformis
+f1329-08.txt	Carex idahoa
+f1329-08.txt	Carex hystericina
+f1329-08.txt	Carex illota
+f1331-01.txt	Carex integra
+f1331-01.txt	Carex inops subsp. inops
+f1331-02.txt	Carex jonesii
+f1331-02.txt	Carex interior
+f1331-02.txt	Carex klamathensis
+f1331-02.txt	Carex laeviculmis
+f1331-03.txt	Carex lemmonii
+f1331-03.txt	Carex lasiocarpa
+f1331-04.txt	Carex lenticularis var. lipocarpa
+f1331-05.txt	Carex leporina
+f1331-05.txt	Carex leporinella
+f1331-06.txt	Carex leptalea
+f1331-07.txt	Carex livida
+f1331-07.txt	Carex limosa
+f1331-08.txt	Carex luzulifolia
+f1331-09.txt	Carex luzulina
+f1335-01.txt	Carex mendocinensis
+f1335-01.txt	Carex mertensii
+f1335-01.txt	Carex mariposana
+f1335-02.txt	Carex nebrascensis
+f1335-02.txt	Carex multicaulis
+f1335-02.txt	Carex multicostata
+f1335-03.txt	Carex nervina
+f1335-04.txt	Carex neurophora
+f1335-04.txt	Carex nigricans
+f1335-05.txt	Carex nudata
+f1335-05.txt	Carex obispoensis
+f1335-05.txt	Carex obnupta
+f1335-05.txt	Carex occidentalis
+f1335-06.txt	Carex pachystachya
+f1335-07.txt	Carex pansa
+f1335-08.txt	Carex phaeocephala
+f1335-08.txt	Carex pellita
+f1335-09.txt	Carex petasata
+f1335-09.txt	Carex praeceptorum
+f1339-01.txt	Carex praegracilis
+f1339-02.txt	Carex praticola
+f1339-02.txt	Carex preslii
+f1339-03.txt	Carex raynoldsii
+f1339-03.txt	Carex rossii
+f1339-04.txt	Carex saliniformis
+f1339-04.txt	Carex scabriuscula
+f1339-04.txt	Carex sartwelliana
+f1339-04.txt	Carex schottii
+f1339-05.txt	Carex scirpoidea subsp. pseudoscirpoidea
+f1339-05.txt	Carex senta
+f1339-05.txt	Carex scopulorum var. bracteosa
+f1339-06.txt	Carex serratodens
+f1339-06.txt	Carex sheldonii
+f1339-07.txt	Carex specifica
+f1339-07.txt	Carex simulata
+f1339-08.txt	Carex spectabilis
+f1339-09.txt	Carex stipata var. stipata
+f1339-09.txt	Carex spissa
+f1339-09.txt	Carex stevenii
+f1341-01.txt	Carex straminiformis
+f1341-01.txt	Carex subbracteata
+f1341-02.txt	Carex subnigricans
+f1341-02.txt	Carex subfusca
+f1341-03.txt	Carex tiogana
+f1341-03.txt	Carex tahoensis
+f1341-04.txt	Carex triquetra
+f1341-04.txt	Carex tompkinsii
+f1341-05.txt	Carex tumulicola
+f1341-05.txt	Carex unilateralis
+f1341-06.txt	Carex utriculata
+f1341-07.txt	Carex vallicola
+f1341-07.txt	Carex vernacula
+f1341-08.txt	Carex viridula subsp. viridula
+f1341-08.txt	Carex vesicaria
+f1341-09.txt	Carex vulpinoidea
+f1341-09.txt	Carex whitneyi
+f1347-01.txt	Cladium californicum
+f1347-02.txt	Cyperus bipartitus
+f1347-02.txt	Cyperus acuminatus
+f1347-03.txt	Cyperus erythrorhizos
+f1347-03.txt	Cyperus esculentus var. leptostachyus
+f1347-04.txt	Cyperus laevigatus
+f1347-04.txt	Cyperus odoratus
+f1347-04.txt	Cyperus niger
+f1347-05.txt	Cyperus parishii
+f1347-05.txt	Cyperus strigosus
+f1347-05.txt	Cyperus squarrosus
+f1347-06.txt	Dulichium arundinaceum var. arundinaceum
+f1347-07.txt	Eleocharis bella
+f1347-07.txt	Eleocharis acicularis var. acicularis
+f1347-07.txt	Eleocharis atropurpurea
+f1347-08.txt	Eleocharis bolanderi
+f1347-08.txt	Eleocharis engelmannii var. engelmannii
+f1347-08.txt	Eleocharis geniculata
+f1347-08.txt	Eleocharis flavescens var. flavescens
+f1347-08.txt	Eleocharis macrostachya
+f1347-09.txt	Eleocharis obtusa
+f1347-09.txt	Eleocharis montevidensis
+f1351-01.txt	Eleocharis pachycarpa
+f1351-02.txt	Eleocharis quadrangulata
+f1351-02.txt	Eleocharis parishii
+f1351-03.txt	Eleocharis radicans
+f1351-04.txt	Eriophorum gracile
+f1351-04.txt	Eriophorum crinigerum
+f1351-05.txt	Fimbristylis vahlii
+f1351-05.txt	Fimbristylis thermalis
+f1351-06.txt	Isolepis setacea
+f1351-06.txt	Isolepis cernua
+f1351-07.txt	Kobresia myosuroides
+f1351-08.txt	Kyllinga brevifolia
+f1351-09.txt	Lipocarpha micrantha
+f1355-01.txt	Rhynchospora globularis
+f1355-01.txt	Rhynchospora alba
+f1355-02.txt	Schoenoplectus acutus var. occidentalis
+f1355-03.txt	Schoenoplectus pungens var. longispicatus
+f1355-03.txt	Schoenoplectus heterochaetus
+f1355-03.txt	Schoenoplectus californicus
+f1355-04.txt	Schoenoplectus tabernaemontani
+f1355-05.txt	Schoenus nigricans
+f1355-06.txt	Scirpus microcarpus
+f1355-06.txt	Scirpus diffusus
+f1355-07.txt	Trichophorum clementis
+f1355-08.txt	Egeria densa
+f1355-08.txt	Hydrocharitaceae
+f1355-09.txt	Elodea nuttallii
+f1355-09.txt	Elodea canadensis
+f1355-10.txt	Hydrilla verticillata
+f1363-02.txt	Najas flexilis
+f1363-02.txt	Najas marina
+f1363-01.txt	Limnobium spongia
+f1363-02.txt	Najas guadalupensis subsp. guadalupensis
+f1363-03.txt	Iris bracteata
+f1363-03.txt	Iris chrysophylla
+f1363-03.txt	Iridaceae
+f1363-05.txt	Iris missouriensis
+f1363-04.txt	Iris douglasiana
+f1363-04.txt	Iris hartwegii subsp. hartwegii
+f1363-06.txt	Iris munzii
+f1363-06.txt	Iris purdyi
+f1363-09.txt	Sisyrinchium halophilum
+f1363-07.txt	Iris tenuissima subsp. tenuissima
+f1363-07.txt	Iris tenax subsp. klamathensis
+f1363-07.txt	Iris thompsonii
+f1363-08.txt	Olsynium douglasii
+f1363-09.txt	Sisyrinchium bellum
+f1363-09.txt	Sisyrinchium idahoense
+f0961-01.txt	Tetrapteron graciliflorum
+f0961-01.txt	Tetrapteron palmeri
+f0961-02.txt	Bellardia trixago
+f0961-02.txt	Orobanchaceae
+f0961-03.txt	Castilleja affinis subsp. affinis
+f0961-03.txt	Castilleja affinis subsp. litoralis
+f0961-04.txt	Castilleja ambigua subsp. ambigua
+f0961-04.txt	Castilleja ambigua subsp. humboldtiensis
+f0961-04.txt	Castilleja ambigua subsp. insalutata
+f0961-05.txt	Castilleja applegatei subsp. disticha
+f0961-05.txt	Castilleja applegatei subsp. martinii
+f0961-05.txt	Castilleja applegatei subsp. pinetorum
+f0961-05.txt	Castilleja applegatei subsp. pallida
+f0961-06.txt	Castilleja attenuata
+f0961-06.txt	Castilleja arachnoidea
+f0961-07.txt	Castilleja brevistyla
+f0961-07.txt	Castilleja brevilobata
+f0961-08.txt	Castilleja chromosa
+f0961-08.txt	Castilleja cinerea
+f0961-08.txt	Castilleja campestris subsp. succulenta
+f0961-08.txt	Castilleja campestris subsp. campestris
+f0961-09.txt	Castilleja densiflora subsp. densiflora
+f0961-09.txt	Castilleja densiflora subsp. gracilis
+f0965-01.txt	Castilleja exserta subsp. exserta
+f0965-01.txt	Castilleja exserta subsp. latifolia
+f0965-02.txt	Castilleja grisea
+f0965-02.txt	Castilleja foliolosa
+f0965-03.txt	Castilleja lacera
+f0965-03.txt	Castilleja hololeuca
+f0965-04.txt	Castilleja lemmonii
+f0965-04.txt	Castilleja latifolia
+f0965-05.txt	Castilleja lineariloba
+f0965-05.txt	Castilleja mendocinensis
+f0965-05.txt	Castilleja lineariloba
+f0965-05.txt	Castilleja linariifolia
+f0965-06.txt	Castilleja miniata subsp. miniata
+f0965-06.txt	Castilleja miniata subsp. elata
+f0965-07.txt	Castilleja minor subsp. minor
+f0965-07.txt	Castilleja nana
+f0965-07.txt	Castilleja mollis
+f0965-08.txt	Castilleja plagiotoma
+f0965-08.txt	Castilleja pilosa
+f0965-08.txt	Castilleja peirsonii
+f0965-09.txt	Castilleja rubicundula subsp. lithospermoides
+f0965-09.txt	Castilleja praeterita
+f0965-09.txt	Castilleja pruinosa
+f0969-01.txt	Castilleja schizotricha
+f0969-01.txt	Castilleja subinclusa subsp. subinclusa
+f0969-01.txt	Castilleja subinclusa subsp. franciscana
+f0969-02.txt	Castilleja wightii
+f0969-02.txt	Castilleja tenuis
+f0969-03.txt	Chloropyron maritimum subsp. palustre
+f0969-03.txt	Chloropyron maritimum subsp. maritimum
+f0969-03.txt	Chloropyron maritimum subsp. canescens
+f0969-04.txt	Chloropyron molle subsp. hispidum
+f0969-04.txt	Chloropyron molle subsp. molle
+f0969-05.txt	Chloropyron tecopense
+f0969-05.txt	Chloropyron palmatum
+f0969-06.txt	Cordylanthus eremicus subsp. eremicus
+f0969-06.txt	Cordylanthus eremicus subsp. kernensis
+f0969-06.txt	Cordylanthus capitatus
+f0969-07.txt	Cordylanthus kingii subsp. helleri
+f0969-07.txt	Cordylanthus nevinii
+f0969-08.txt	Cordylanthus parviflorus
+f0969-08.txt	Cordylanthus nidularius
+f0969-09.txt	Cordylanthus pilosus subsp. hansenii
+f0969-09.txt	Cordylanthus pilosus subsp. trifidus
+f0969-09.txt	Cordylanthus pilosus subsp. pilosus
+f0973-01.txt	Cordylanthus ramosus
+f0973-01.txt	Cordylanthus pringlei
+f0973-02.txt	Cordylanthus rigidus subsp. littoralis
+f0973-02.txt	Cordylanthus rigidus subsp. rigidus
+f0973-02.txt	Cordylanthus rigidus subsp. setigerus
+f0973-03.txt	Cordylanthus tenuis subsp. pallescens
+f0973-03.txt	Cordylanthus tenuis subsp. barbatus
+f0973-03.txt	Cordylanthus tenuis subsp. capillaris
+f0973-03.txt	Cordylanthus tenuis subsp. brunneus
+f0973-04.txt	Dicranostegia orcuttiana
+f0973-05.txt	Kopsiopsis strobilacea
+f0973-05.txt	Kopsiopsis hookeri
+f0973-06.txt	Orobanche bulbosa
+f0973-06.txt	Orobanche californica subsp. feudgei
+f0973-07.txt	Orobanche fasciculata
+f0973-07.txt	Orobanche corymbosa
+f0973-08.txt	Orobanche parishii subsp. brachyloba
+f0973-08.txt	Orobanche pinorum
+f0973-09.txt	Orobanche vallicola
+f0973-09.txt	Orobanche uniflora
+f0973-09.txt	Orobanche valida subsp. valida
+f0979-01.txt	Orthocarpus cuspidatus subsp. copelandii
+f0979-01.txt	Orthocarpus cuspidatus subsp. cuspidatus
+f0979-01.txt	Orthocarpus cuspidatus subsp. cryptanthus
+f0979-01.txt	Orthocarpus bracteosus
+f0979-02.txt	Orthocarpus luteus
+f0979-02.txt	Orthocarpus imbricatus
+f0979-02.txt	Orthocarpus pachystachyus
+f0979-03.txt	Parentucellia latifolia
+f0979-03.txt	Parentucellia viscosa
+f0979-04.txt	Pedicularis bracteosa var. flavida
+f0979-04.txt	Pedicularis attollens
+f0979-05.txt	Pedicularis densiflora
+f0979-05.txt	Pedicularis crenulata
+f0979-05.txt	Pedicularis centranthera
+f0979-05.txt	Pedicularis contorta
+f0979-06.txt	Pedicularis groenlandica
+f0979-06.txt	Pedicularis dudleyi
+f0979-07.txt	Pedicularis howellii
+f0979-07.txt	Pedicularis semibarbata
+f0979-07.txt	Pedicularis racemosa
+f0979-08.txt	Triphysaria eriantha subsp. eriantha
+f0979-08.txt	Triphysaria floribunda
+f0979-09.txt	Triphysaria versicolor subsp. versicolor
+f0979-09.txt	Triphysaria micrantha
+f0979-09.txt	Triphysaria pusilla
+f0983-01.txt	Oxalis corniculata
+f0983-01.txt	Oxalis oregana
+f0983-01.txt	Oxalidaceae
+f0983-02.txt	Oxalis pilosa
+f0983-02.txt	Oxalis pes-caprae
+f0983-03.txt	Oxalis trilliifolia
+f0983-03.txt	Oxalis suksdorfii
+f0983-04.txt	Paeonia brownii
+f0983-04.txt	Paeonia californica
+f0983-05.txt	Arctomecon merriamii
+f0983-05.txt	Papaveraceae
+f0983-06.txt	Argemone munita
+f0983-07.txt	Canbya candida
+f0983-08.txt	Corydalis aurea
+f0983-08.txt	Corydalis caseana subsp. caseana
+f0983-09.txt	Dendromecon rigida
+f0987-01.txt	Dicentra formosa
+f0987-01.txt	Dicentra uniflora
+f0987-02.txt	Ehrendorferia chrysantha
+f0987-03.txt	Eschscholzia caespitosa
+f0987-03.txt	Eschscholzia californica
+f0987-04.txt	Eschscholzia lobbii
+f0987-04.txt	Eschscholzia glyptosperma
+f0987-05.txt	Fumaria officinalis
+f0987-05.txt	Fumaria parviflora
+f0987-06.txt	Hesperomecon linearis
+f0987-07.txt	Meconella californica
+f0987-09.txt	Papaver californicum
+f0987-09.txt	Papaver heterophyllum
+f0993-01.txt	Platystemon californicus
+f0993-02.txt	Romneya coulteri
+f0993-03.txt	Parnassia palustris
+f0993-03.txt	Parnassia fimbriata
+f0993-03.txt	Parnassiaceae
+f0993-04.txt	Parnassia parviflora
+f0993-05.txt	Mimulus androsaceus
+f0993-05.txt	Mimulus alsinoides
+f0993-05.txt	Mimulus angustatus
+f0993-05.txt	Phrymaceae
+f0993-06.txt	Mimulus aurantiacus
+f0993-07.txt	Mimulus bicolor
+f0993-07.txt	Mimulus bigelovii var. bigelovii
+f0993-08.txt	Mimulus breviflorus
+f0993-08.txt	Mimulus bolanderi
+f0993-09.txt	Mimulus brevipes
+f0993-09.txt	Mimulus breweri
+f0997-01.txt	Mimulus cardinalis
+f0997-01.txt	Mimulus congdonii
+f0997-01.txt	Mimulus clevelandii
+f0997-02.txt	Mimulus constrictus
+f0997-02.txt	Mimulus dentatus
+f0997-02.txt	Mimulus cusickii
+f0997-03.txt	Mimulus filicaulis
+f0997-03.txt	Mimulus exiguus
+f0997-03.txt	Mimulus douglasii
+f0997-04.txt	Mimulus fremontii var. fremontii
+f0997-04.txt	Mimulus floribundus
+f0997-04.txt	Mimulus glaucescens
+f0997-05.txt	Mimulus gracilipes
+f0997-05.txt	Mimulus guttatus
+f0997-06.txt	Mimulus inconspicuus
+f0997-07.txt	Mimulus johnstonii
+f0997-07.txt	Mimulus kelloggii
+f0997-07.txt	Mimulus laciniatus
+f0997-08.txt	Mimulus layneae
+f0997-08.txt	Mimulus latidens
+f0997-08.txt	Mimulus leptaleus
+f0997-09.txt	Mimulus mohavensis
+f0997-09.txt	Mimulus lewisii
+f0999-01.txt	Mimulus montioides
+f0999-01.txt	Mimulus moschatus
+f0999-02.txt	Mimulus nanus var. jepsonii
+f0999-02.txt	Mimulus nanus var. mephiticus
+f0999-02.txt	Mimulus nanus var. nanus
+f0999-03.txt	Mimulus palmeri
+f0999-03.txt	Mimulus norrisii
+f0999-03.txt	Mimulus nudatus
+f0999-04.txt	Mimulus parishii
+f0999-04.txt	Mimulus parryi
+f0999-05.txt	Mimulus pictus
+f0999-05.txt	Mimulus pilosus
+f0999-06.txt	Mimulus primuloides var. primuloides
+f0999-06.txt	Mimulus primuloides var. linearifolius
+f0999-07.txt	Mimulus purpureus
+f0999-07.txt	Mimulus pulsiferae
+f0999-07.txt	Mimulus pulchellus
+f0999-08.txt	Mimulus rattanii
+f0999-08.txt	Mimulus ringens
+f0999-08.txt	Mimulus pygmaeus
+f0999-09.txt	Mimulus shevockii
+f0999-09.txt	Mimulus rubellus
+f0999-09.txt	Mimulus rupicola
+f1005-01.txt	Mimulus tilingii
+f1005-01.txt	Mimulus suksdorfii
+f1005-02.txt	Mimulus tricolor
+f1005-02.txt	Mimulus torreyi
+f1005-03.txt	Mimulus whitneyi
+f1005-03.txt	Mimulus tricolor
+f1005-03.txt	Mimulus viscidus var. viscidus
+f1005-04.txt	Phytolacca americana var. americana
+f1005-04.txt	Phytolaccaceae
+f1005-05.txt	Tetracoccus hallii
+f1005-05.txt	Tetracoccus dioicus
+f1005-05.txt	Picrodendraceae
+f1005-06.txt	Tetracoccus ilicifolius
+f1005-07.txt	Antirrhinum cornutum
+f1005-07.txt	Antirrhinum coulterianum
+f1005-07.txt	Plantaginaceae
+f1005-08.txt	Antirrhinum filipes
+f1005-09.txt	Antirrhinum kingii
+f1005-09.txt	Antirrhinum leptaleum
+f1005-09.txt	Antirrhinum kelloggii
+f1011-01.txt	Antirrhinum nuttallianum subsp. subsessile
+f1011-01.txt	Antirrhinum ovatum
+f1011-01.txt	Antirrhinum multiflorum
+f1011-01.txt	Antirrhinum subcordatum
+f1011-02.txt	Antirrhinum vexillocalyculatum subsp. vexillocalyculatum
+f1011-02.txt	Antirrhinum virga
+f1011-03.txt	Bacopa monnieri
+f1011-03.txt	Bacopa eisenii
+f1011-04.txt	Callitriche heterophylla var. heterophylla
+f1011-04.txt	Callitriche fassettii
+f1011-04.txt	Callitriche heterophylla var. bolanderi
+f1011-05.txt	Callitriche marginata
+f1011-05.txt	Callitriche palustris
+f1011-05.txt	Callitriche trochlearis
+f1011-06.txt	Collinsia bartsiifolia var. bartsiifolia
+f1011-06.txt	Collinsia callosa
+f1011-06.txt	Collinsia childii
+f1011-07.txt	Collinsia concolor
+f1011-07.txt	Collinsia grandiflora
+f1011-07.txt	Collinsia greenei
+f1011-07.txt	Collinsia corymbosa
+f1011-08.txt	Collinsia heterophylla var. heterophylla
+f1011-08.txt	Collinsia linearis
+f1011-09.txt	Collinsia parviflora
+f1011-09.txt	Collinsia rattanii
+f1011-09.txt	Collinsia parryi
+f1011-09.txt	Collinsia multicolor
+f1015-01.txt	Collinsia torreyi var. torreyi
+f1015-01.txt	Collinsia sparsiflora var. sparsiflora
+f1015-01.txt	Collinsia tinctoria
+f1015-02.txt	Cymbalaria muralis
+f1015-03.txt	Digitalis purpurea
+f1015-04.txt	Dopatrium junceum
+f1015-05.txt	Gambelia speciosa
+f1015-06.txt	Gratiola neglecta
+f1015-06.txt	Gratiola heterosepala
+f1015-06.txt	Gratiola ebracteata
+f1015-07.txt	Hippuris vulgaris
+f1015-08.txt	Holmgrenanthe petrophila
+f1015-09.txt	Keckiella breviflora var. breviflora
+f1015-09.txt	Keckiella antirrhinoides var. antirrhinoides
+f1015-09.txt	Keckiella antirrhinoides var. microphylla
+f1015-10.txt	Keckiella corymbosa
+f1015-10.txt	Keckiella cordifolia
+f1015-11.txt	Keckiella rothrockii var. rothrockii
+f1015-11.txt	Keckiella lemmonii
+f1021-01.txt	Keckiella ternata var. ternata
+f1021-01.txt	Keckiella ternata var. septentrionalis
+f1021-02.txt	Kickxia spuria
+f1021-02.txt	Kickxia elatine
+f1021-03.txt	Linaria dalmatica subsp. dalmatica
+f1021-03.txt	Linaria vulgaris
+f1021-04.txt	Lindernia dubia
+f1021-05.txt	Maurandella antirrhiniflora
+f1021-06.txt	Mohavea confertiflora
+f1021-06.txt	Mohavea breviflora
+f1021-07.txt	Nuttallanthus texanus
+f1021-08.txt	Nothochelone nemorosa
+f1021-09.txt	Penstemon albomarginatus
+f1021-10.txt	Penstemon anguineus
+f1023-01.txt	Penstemon azureus var. angustissimus
+f1023-01.txt	Penstemon azureus var. azureus
+f1023-02.txt	Penstemon calcareus
+f1023-02.txt	Penstemon barnebyi
+f1023-02.txt	Penstemon caesius
+f1023-03.txt	Penstemon centranthifolius
+f1023-03.txt	Penstemon californicus
+f1023-04.txt	Penstemon cinicola
+f1023-04.txt	Penstemon clevelandii var. clevelandii
+f1023-04.txt	Penstemon clevelandii var. mohavensis
+f1023-04.txt	Penstemon clevelandii var. connatus
+f1023-05.txt	Penstemon davidsonii var. davidsonii
+f1023-06.txt	Penstemon deustus var. pedicellatus
+f1023-06.txt	Penstemon deustus var. suffrutescens
+f1023-07.txt	Penstemon eatonii
+f1023-08.txt	Penstemon filiformis
+f1023-08.txt	Penstemon floridus var. floridus
+f1023-08.txt	Penstemon floridus var. austinii
+f1023-09.txt	Penstemon gracilentus
+f1023-09.txt	Penstemon fruticiformis var. fruticiformis
+f1023-09.txt	Penstemon fruticiformis var. amargosae
+f1027-01.txt	Penstemon grinnellii var. grinnellii
+f1027-01.txt	Penstemon heterodoxus var. cephalophorus
+f1027-01.txt	Penstemon heterodoxus var. heterodoxus
+f1027-02.txt	Penstemon heterophyllus var. heterophyllus
+f1027-02.txt	Penstemon heterophyllus var. australis
+f1027-03.txt	Penstemon humilis var. humilis
+f1027-03.txt	Penstemon incertus
+f1027-04.txt	Penstemon janishiae
+f1027-04.txt	Penstemon labrosus
+f1027-04.txt	Penstemon laetus var. sagittatus
+f1027-05.txt	Penstemon neotericus
+f1027-05.txt	Penstemon monoensis
+f1027-06.txt	Penstemon newberryi var. newberryi
+f1027-06.txt	Penstemon pahutensis
+f1027-07.txt	Penstemon palmeri var. palmeri
+f1027-07.txt	Penstemon papillatus
+f1027-07.txt	Penstemon labrosus
+f1027-08.txt	Penstemon patens
+f1027-08.txt	Penstemon parvulus
+f1027-08.txt	Penstemon personatus
+f1029-01.txt	Penstemon procerus var. formosus
+f1029-01.txt	Penstemon pseudospectabilis
+f1029-02.txt	Penstemon rattanii var. rattanii
+f1029-02.txt	Penstemon purpusii
+f1029-03.txt	Penstemon rostriflorus
+f1029-03.txt	Penstemon rupicola
+f1029-03.txt	Penstemon roezlii
+f1029-04.txt	Penstemon rydbergii var. oreocharis
+f1029-04.txt	Penstemon scapoides
+f1029-05.txt	Penstemon spectabilis
+f1029-05.txt	Penstemon speciosus
+f1029-06.txt	Penstemon sudans
+f1029-06.txt	Penstemon stephensii
+f1029-07.txt	Penstemon thompsoniae
+f1029-08.txt	Penstemon thurberi
+f1029-09.txt	Penstemon tracyi
+f1033-01.txt	Penstemon utahensis
+f1033-01.txt	Penstemon venustus
+f1033-02.txt	Plantago coronopus
+f1033-02.txt	Plantago elongata
+f1033-02.txt	Plantago aristata
+f1033-03.txt	Plantago lanceolata
+f1033-03.txt	Plantago eriopoda
+f1033-03.txt	Plantago erecta
+f1033-04.txt	Plantago maritima
+f1033-04.txt	Plantago major
+f1033-05.txt	Plantago truncata subsp. firma
+f1033-05.txt	Plantago ovata var. fastigiata
+f1033-05.txt	Plantago subnuda
+f1033-05.txt	Plantago patagonica
+f1033-06.txt	Pseudorontium cyathiferum
+f1033-07.txt	Stemodia durantifolia
+f1033-08.txt	Synthyris missurica subsp. missurica
+f1033-08.txt	Synthyris reniformis
+f1033-09.txt	Tonella tenella
+f1039-09.txt	Aliciella lottiae
+f1039-09.txt	Aliciella leptomeria
+f1039-09.txt	Polemoniaceae
+f1045-01.txt	Aliciella monoensis
+f1045-01.txt	Aliciella micromeria
+f1045-02.txt	Aliciella triodon
+f1045-02.txt	Aliciella ripleyi
+f1045-03.txt	Allophyllum glutinosum
+f1045-03.txt	Allophyllum divaricatum
+f1045-03.txt	Allophyllum gilioides subsp. gilioides
+f1045-04.txt	Collomia linearis
+f1045-04.txt	Collomia diversifolia
+f1045-04.txt	Collomia larsenii
+f1045-05.txt	Collomia tinctoria
+f1045-05.txt	Collomia rawsoniana
+f1045-05.txt	Collomia tracyi
+f1045-06.txt	Eriastrum brandegeeae
+f1045-07.txt	Eriastrum densifolium subsp. elongatum
+f1045-07.txt	Eriastrum densifolium subsp. sanctorum
+f1045-08.txt	Eriastrum eremicum subsp. eremicum
+f1045-08.txt	Eriastrum hooveri
+f1045-09.txt	Eriastrum sapphirinum subsp. sapphirinum
+f1045-09.txt	Eriastrum pluriflorum subsp. pluriflorum
+f1051-01.txt	Gilia achilleifolia subsp. multicaulis
+f1051-01.txt	Gilia achilleifolia subsp. achilleifolia
+f1051-02.txt	Gilia brecciarum subsp. brecciarum
+f1051-02.txt	Gilia brecciarum subsp. neglecta
+f1051-02.txt	Gilia aliquanta subsp. aliquanta
+f1051-02.txt	Gilia aliquanta subsp. breviloba
+f1051-03.txt	Gilia cana subsp. speciosa
+f1051-03.txt	Gilia cana subsp. speciformis
+f1051-03.txt	Gilia cana subsp. triceps
+f1051-03.txt	Gilia cana subsp. cana
+f1051-04.txt	Gilia capitata subsp. staminea
+f1051-04.txt	Gilia capitata subsp. capitata
+f1051-04.txt	Gilia capitata subsp. abrotanifolia
+f1051-05.txt	Gilia clivorum
+f1051-05.txt	Gilia inconspicua
+f1051-05.txt	Gilia clokeyi
+f1051-06.txt	Gilia latiflora subsp. elongata
+f1051-06.txt	Gilia latiflora subsp. latiflora
+f1051-06.txt	Gilia latiflora subsp. davyi
+f1051-07.txt	Gilia leptantha subsp. pinetorum
+f1051-07.txt	Gilia leptantha subsp. leptantha
+f1051-08.txt	Gilia millefoliata
+f1051-08.txt	Gilia nevinii
+f1051-08.txt	Gilia minor
+f1051-09.txt	Gilia ochroleuca subsp. vivida
+f1051-09.txt	Gilia ochroleuca subsp. exilis
+f1051-09.txt	Gilia ochroleuca subsp. ochroleuca
+f1055-01.txt	Gilia salticola
+f1055-01.txt	Gilia ophthalmoides
+f1055-02.txt	Gilia sinuata
+f1055-02.txt	Gilia stellata
+f1055-02.txt	Gilia scopulorum
+f1055-03.txt	Gilia tenuiflora subsp. hoffmannii
+f1055-03.txt	Gilia tenuiflora subsp. arenaria
+f1055-03.txt	Gilia tenuiflora subsp. amplifaucalis
+f1055-03.txt	Gilia tenuiflora subsp. tenuiflora
+f1055-04.txt	Gilia tricolor subsp. tricolor
+f1055-04.txt	Gilia tricolor subsp. diffusa
+f1055-04.txt	Gilia yorkii
+f1055-05.txt	Gymnosteris parvula
+f1055-06.txt	Ipomopsis congesta subsp. montana
+f1055-07.txt	Ipomopsis tenuituba
+f1055-07.txt	Ipomopsis arizonica
+f1055-07.txt	Ipomopsis aggregata subsp. bridgesii
+f1055-07.txt	Ipomopsis aggregata subsp. aggregata
+f1055-07.txt	Ipomopsis tenuifolia
+f1055-07.txt	Ipomopsis polycladon
+f1055-08.txt	Langloisia setosissima subsp. setosissima
+f1055-08.txt	Langloisia setosissima subsp. punctata
+f1055-08.txt	Langloisia setosissima subsp. setosissima
+f1055-09.txt	Lathrocasis tenerrima
+f1061-01.txt	Leptosiphon ciliatus
+f1061-01.txt	Leptosiphon aureus
+f1061-02.txt	Leptosiphon harknessii
+f1061-02.txt	Leptosiphon grandiflorus
+f1061-03.txt	Leptosiphon nuttallii
+f1061-03.txt	Leptosiphon nudatus
+f1061-04.txt	Leptosiphon rattanii
+f1061-04.txt	Leptosiphon parviflorus
+f1061-05.txt	Linanthus californicus
+f1061-05.txt	Linanthus bellus
+f1061-06.txt	Linanthus demissus
+f1061-06.txt	Linanthus concinnus
+f1061-07.txt	Linanthus dichotomus subsp. dichotomus
+f1061-07.txt	Linanthus dianthiflorus
+f1061-08.txt	Linanthus inyoensis
+f1061-08.txt	Linanthus killipii
+f1061-08.txt	Linanthus jaegeri
+f1061-09.txt	Linanthus maculatus
+f1061-09.txt	Linanthus orcuttii
+f1067-01.txt	Linanthus pungens
+f1067-02.txt	Loeseliastrum matthewsii
+f1067-02.txt	Loeseliastrum schottii
+f1067-03.txt	Microsteris gracilis
+f1067-04.txt	Navarretia breweri
+f1067-04.txt	Navarretia atractyloides
+f1067-05.txt	Navarretia divaricata subsp. divaricata
+f1067-05.txt	Navarretia divaricata subsp. vividior
+f1067-05.txt	Navarretia capillaris
+f1067-06.txt	Navarretia filicaulis
+f1067-06.txt	Navarretia eriocephala
+f1067-07.txt	Navarretia hamata subsp. parviloba
+f1067-07.txt	Navarretia hamata subsp. hamata
+f1067-07.txt	Navarretia hamata subsp. leptantha
+f1067-08.txt	Navarretia heterodoxa
+f1067-09.txt	Navarretia intertexta subsp. propinqua
+f1067-09.txt	Navarretia intertexta subsp. intertexta
+f1069-01.txt	Navarretia leptalea subsp. bicolor
+f1069-01.txt	Navarretia jepsonii
+f1069-02.txt	Navarretia leucocephala subsp. plieantha
+f1069-02.txt	Navarretia leucocephala subsp. leucocephala
+f1069-03.txt	Navarretia mitracarpa
+f1069-03.txt	Navarretia mellita
+f1069-04.txt	Navarretia myersii subsp. myersii
+f1069-05.txt	Navarretia nigelliformis subsp. nigelliformis
+f1069-05.txt	Navarretia nigelliformis subsp. radians
+f1069-06.txt	Navarretia pubescens
+f1069-06.txt	Navarretia peninsularis
+f1069-07.txt	Navarretia rosulata
+f1069-07.txt	Navarretia setiloba
+f1069-08.txt	Navarretia sinistra subsp. sinistra
+f1069-08.txt	Navarretia sinistra subsp. pinnatisecta
+f1069-09.txt	Navarretia subuligera
+f1069-09.txt	Navarretia squarrosa
+f1069-09.txt	Navarretia viscidula
+f1081-01.txt	Acanthoscyphus parishii var. goodmaniana
+f1081-01.txt	Acanthoscyphus parishii var. abramsii
+f1081-01.txt	Acanthoscyphus parishii var. cienegensis
+f1081-01.txt	Acanthoscyphus parishii var. parishii
+f1081-01.txt	Polygonaceae
+f1081-02.txt	Aconogonon phytolaccifolium
+f1081-02.txt	Aconogonon davisiae
+f1081-03.txt	Aristocapsa insignis
+f1081-04.txt	Bistorta bistortoides
+f1081-05.txt	Centrostegia thurberi
+f1081-06.txt	Chorizanthe breweri
+f1081-06.txt	Chorizanthe blakleyi
+f1081-06.txt	Chorizanthe brevicornu var. brevicornu
+f1081-07.txt	Chorizanthe clevelandii
+f1081-07.txt	Chorizanthe corrugata
+f1081-08.txt	Chorizanthe cuspidata var. cuspidata
+f1081-08.txt	Chorizanthe fimbriata var. laciniata
+f1081-08.txt	Chorizanthe fimbriata var. fimbriata
+f1081-08.txt	Chorizanthe douglasii
+f1081-09.txt	Chorizanthe howellii
+f1081-09.txt	Chorizanthe orcuttiana
+f1081-09.txt	Chorizanthe membranacea
+f1093-01.txt	Chorizanthe parryi var. fernandina
+f1093-01.txt	Chorizanthe polygonoides var. longispina
+f1093-01.txt	Chorizanthe polygonoides var. polygonoides
+f1093-01.txt	Chorizanthe palmeri
+f1093-02.txt	Chorizanthe procumbens
+f1093-02.txt	Chorizanthe pungens var. pungens
+f1093-02.txt	Chorizanthe rectispina
+f1093-03.txt	Chorizanthe robusta var. robusta
+f1093-03.txt	Chorizanthe spinosa
+f1093-03.txt	Chorizanthe rigida
+f1093-04.txt	Chorizanthe staticoides
+f1093-04.txt	Chorizanthe uniaristata
+f1093-04.txt	Chorizanthe valida
+f1093-05.txt	Chorizanthe ventricosa
+f1093-05.txt	Chorizanthe xanti var. xanti
+f1093-05.txt	Chorizanthe wheeleri
+f1093-06.txt	Dedeckera eurekensis
+f1093-07.txt	Dodecahema leptoceras
+f1093-08.txt	Emex australis
+f1093-08.txt	Emex spinosa
+f1093-09.txt	Eriogonum alpinum
+f1097-01.txt	Eriogonum apiculatum
+f1097-01.txt	Eriogonum angulosum
+f1097-01.txt	Eriogonum ampullaceum
+f1097-02.txt	Eriogonum arborescens
+f1097-02.txt	Eriogonum apricum var. apricum
+f1097-02.txt	Eriogonum argillosum
+f1097-03.txt	Eriogonum bifurcatum
+f1097-03.txt	Eriogonum baileyi var. baileyi
+f1097-03.txt	Eriogonum brachypodum
+f1097-04.txt	Eriogonum breedlovei var. breedlovei
+f1097-04.txt	Eriogonum breedlovei var. shevockii
+f1097-04.txt	Eriogonum butterworthianum
+f1097-05.txt	Eriogonum cernuum
+f1097-05.txt	Eriogonum cinereum
+f1097-05.txt	Eriogonum caespitosum
+f1097-06.txt	Eriogonum cithariforme var. cithariforme
+f1097-06.txt	Eriogonum compositum var. compositum
+f1097-06.txt	Eriogonum congdonii
+f1097-07.txt	Eriogonum contiguum
+f1097-07.txt	Eriogonum crocatum
+f1097-07.txt	Eriogonum covilleanum
+f1097-08.txt	Eriogonum deflexum var. baratum
+f1097-08.txt	Eriogonum deflexum var. deflexum
+f1097-09.txt	Eriogonum douglasii var. meridionale
+f1097-09.txt	Eriogonum diclinum
+f1097-09.txt	Eriogonum deserticola
+f1101-01.txt	Eriogonum elegans
+f1101-01.txt	Eriogonum elatum var. elatum
+f1101-01.txt	Eriogonum elongatum var. elongatum
+f1101-02.txt	Eriogonum eremicola
+f1101-02.txt	Eriogonum evanidum
+f1101-03.txt	Eriogonum fasciculatum var. polifolium
+f1101-03.txt	Eriogonum fasciculatum var. foliolosum
+f1101-04.txt	Eriogonum giganteum var. formosum
+f1101-04.txt	Eriogonum gilmanii
+f1101-05.txt	Eriogonum gracile var. gracile
+f1101-05.txt	Eriogonum glandulosum
+f1101-05.txt	Eriogonum gracilipes
+f1101-05.txt	Eriogonum gossypinum
+f1101-06.txt	Eriogonum gracillimum
+f1101-06.txt	Eriogonum grande var. timorum
+f1101-07.txt	Eriogonum heermannii var. sulcatum
+f1101-07.txt	Eriogonum heermannii var. heermannii
+f1101-08.txt	Eriogonum hirtiflorum
+f1101-08.txt	Eriogonum hirtellum
+f1101-08.txt	Eriogonum heracleoides var. heracleoides
+f1101-09.txt	Eriogonum hookeri
+f1101-09.txt	Eriogonum inerme var. inerme
+f1101-09.txt	Eriogonum inflatum
+f1105-01.txt	Eriogonum kennedyi var. alpigenum
+f1105-01.txt	Eriogonum intrafractum
+f1105-01.txt	Eriogonum kennedyi var. austromontanum
+f1105-01.txt	Eriogonum kelloggii
+f1105-02.txt	Eriogonum libertini
+f1105-02.txt	Eriogonum lobbii
+f1105-02.txt	Eriogonum latifolium
+f1105-03.txt	Eriogonum luteolum var. caninum
+f1105-03.txt	Eriogonum luteolum var. luteolum
+f1105-03.txt	Eriogonum maculatum
+f1105-04.txt	Eriogonum marifolium var. marifolium
+f1105-04.txt	Eriogonum mohavense
+f1105-05.txt	Eriogonum microthecum var. panamintense
+f1105-05.txt	Eriogonum microthecum var. ambiguum
+f1105-05.txt	Eriogonum microthecum var. lapidicola
+f1105-06.txt	Eriogonum nervulosum
+f1105-06.txt	Eriogonum molestum
+f1105-07.txt	Eriogonum nidularium
+f1105-07.txt	Eriogonum nortonii
+f1105-08.txt	Eriogonum nudum var. nudum
+f1105-08.txt	Eriogonum nudum var. decurrens
+f1105-08.txt	Eriogonum nudum var. murinum
+f1105-08.txt	Eriogonum nudum var. regirivum
+f1105-08.txt	Eriogonum nudum var. scapigerum
+f1105-08.txt	Eriogonum nudum var. auriculatum
+f1105-08.txt	Eriogonum nudum var. paralinum
+f1105-08.txt	Eriogonum nudum var. deductum
+f1109-01.txt	Eriogonum nutans var. nutans
+f1109-01.txt	Eriogonum ochrocephalum var. ochrocephalum
+f1109-02.txt	Eriogonum ovalifolium var. eximium
+f1109-02.txt	Eriogonum ovalifolium var. nivale
+f1109-02.txt	Eriogonum ovalifolium var. ovalifolium
+f1109-02.txt	Eriogonum ordii
+f1109-03.txt	Eriogonum palmerianum
+f1109-03.txt	Eriogonum parishii
+f1109-03.txt	Eriogonum parviflorum
+f1109-03.txt	Eriogonum pendulum
+f1109-03.txt	Eriogonum panamintense
+f1109-04.txt	Eriogonum plumatella
+f1109-04.txt	Eriogonum prattenianum var. avium
+f1109-04.txt	Eriogonum prociduum
+f1109-04.txt	Eriogonum polypodum
+f1109-05.txt	Eriogonum pyrolifolium var. pyrolifolium
+f1109-05.txt	Eriogonum reniforme
+f1109-05.txt	Eriogonum pusillum
+f1109-06.txt	Eriogonum rosense var. rosense
+f1109-06.txt	Eriogonum roseum
+f1109-06.txt	Eriogonum rixfordii
+f1109-07.txt	Eriogonum spergulinum var. spergulinum
+f1109-07.txt	Eriogonum siskiyouense
+f1109-07.txt	Eriogonum saxatile
+f1109-07.txt	Eriogonum shockleyi var. shockleyi
+f1109-08.txt	Eriogonum sphaerocephalum var. halimioides
+f1109-08.txt	Eriogonum strictum var. greenei
+f1109-08.txt	Eriogonum strictum var. proliferum
+f1109-08.txt	Eriogonum sphaerocephalum var. sphaerocephalum
+f1109-09.txt	Eriogonum ternatum
+f1109-09.txt	Eriogonum temblorense
+f1109-09.txt	Eriogonum thomasii
+f1109-09.txt	Eriogonum trichopes
+f1109-09.txt	Eriogonum thurberi
+f1113-01.txt	Eriogonum tripodum
+f1113-01.txt	Eriogonum truncatum
+f1113-02.txt	Eriogonum umbellatum var. humistratum
+f1113-02.txt	Eriogonum umbellatum var. torreyanum
+f1113-02.txt	Eriogonum umbellatum var. modocense
+f1113-02.txt	Eriogonum umbellatum var. minus
+f1113-02.txt	Eriogonum umbellatum var. furcosum
+f1113-02.txt	Eriogonum umbellatum var. subaridum
+f1113-03.txt	Eriogonum ursinum var. ursinum
+f1113-03.txt	Eriogonum vestitum
+f1113-04.txt	Eriogonum viridescens
+f1113-04.txt	Eriogonum vimineum
+f1113-05.txt	Eriogonum wrightii var. olanchense
+f1113-05.txt	Eriogonum wrightii var. trachygonum
+f1113-05.txt	Eriogonum wrightii var. nodosum
+f1113-05.txt	Eriogonum wrightii var. membranaceum
+f1113-06.txt	Fallopia sachalinensis
+f1113-06.txt	Fallopia japonica
+f1113-07.txt	Gilmania luteola
+f1113-08.txt	Goodmania luteola
+f1117-01.txt	Hollisteria lanata
+f1117-02.txt	Johanneshowellia puberula
+f1117-03.txt	Lastarriaea coriacea
+f1117-04.txt	Mucronea californica
+f1117-04.txt	Mucronea perfoliata
+f1117-05.txt	Nemacaulis denudata var. denudata
+f1117-05.txt	Nemacaulis denudata var. gracilis
+f1117-06.txt	Oxyria digyna
+f1117-07.txt	Oxytheca dendroidea subsp. dendroidea
+f1117-08.txt	Oxytheca watsonii
+f1117-08.txt	Oxytheca perfoliata
+f1117-09.txt	Persicaria hydropiperoides
+f1117-09.txt	Persicaria amphibia
+f1123-01.txt	Persicaria maculosa
+f1123-01.txt	Persicaria lapathifolia
+f1123-02.txt	Persicaria punctata
+f1123-03.txt	Polygonum aviculare subsp. depressum
+f1123-03.txt	Polygonum argyrocoleon
+f1123-04.txt	Polygonum bidwelliae
+f1123-04.txt	Polygonum bolanderi
+f1123-04.txt	Polygonum californicum
+f1123-05.txt	Polygonum majus
+f1123-05.txt	Polygonum douglasii
+f1123-06.txt	Polygonum parryi
+f1123-06.txt	Polygonum minimum
+f1123-06.txt	Polygonum paronychia
+f1123-06.txt	Polygonum marinense
+f1123-07.txt	Polygonum polygaloides subsp. esotericum
+f1123-07.txt	Polygonum polygaloides subsp. kelloggii
+f1123-07.txt	Polygonum polygaloides subsp. confertiflorum
+f1123-08.txt	Polygonum ramosissimum subsp. ramosissimum
+f1123-08.txt	Polygonum shastense
+f1123-08.txt	Polygonum sawatchense subsp. sawatchense
+f1123-08.txt	Polygonum spergulariiforme
+f1123-09.txt	Pterostegia drymarioides
+f1127-01.txt	Rumex californicus
+f1127-01.txt	Rumex acetosella
+f1127-02.txt	Rumex conglomeratus
+f1127-02.txt	Rumex crispus
+f1127-03.txt	Rumex fueginus
+f1127-03.txt	Rumex hymenosepalus
+f1127-04.txt	Rumex obtusifolius
+f1127-04.txt	Rumex occidentalis
+f1127-04.txt	Rumex pulcher
+f1127-04.txt	Rumex lacustris
+f1127-05.txt	Rumex transitorius
+f1127-05.txt	Rumex stenophyllus
+f1127-05.txt	Rumex salicifolius
+f1127-06.txt	Rumex triangulivalvis
+f1127-06.txt	Rumex violascens
+f1127-06.txt	Rumex venosus
+f1127-07.txt	Sidotheca caryophylloides
+f1127-08.txt	Sidotheca trilobata
+f1127-08.txt	Sidotheca emarginata
+f1127-09.txt	Systenotheca vortriedei
+f1243-01.txt	Hemieva ranunculifolia
+f1243-02.txt	Heuchera micrantha
+f1243-03.txt	Heuchera parvifolia
+f1243-04.txt	Jepsonia malvifolia
+f1243-04.txt	Jepsonia parryi
+f1243-04.txt	Jepsonia heterandra
+f1243-05.txt	Lithophragma affine
+f1243-05.txt	Lithophragma parviflorum
+f1243-05.txt	Lithophragma bolanderi
+f1243-05.txt	Lithophragma campanulatum
+f1243-05.txt	Lithophragma glabrum
+f1243-05.txt	Lithophragma parviflorum
+f1243-06.txt	Micranthes bryophora
+f1243-06.txt	Micranthes aprica
+f1243-07.txt	Micranthes californica
+f1243-08.txt	Micranthes odontoloma
+f1243-09.txt	Micranthes tolmiei
+f1247-01.txt	Mitellastra caulescens
+f1247-02.txt	Ozomelis diversifolia
+f1247-02.txt	Ozomelis trifida
+f1247-03.txt	Pectiantia breweri
+f1247-04.txt	Saxifraga hyperborea
+f1247-04.txt	Saxifraga mertensiana
+f1247-05.txt	Saxifragopsis fragarioides
+f1247-06.txt	Tellima grandiflora
+f1247-07.txt	Tiarella trifoliata var. trifoliata
+f1247-07.txt	Tiarella trifoliata var. unifoliata
+f1247-08.txt	Tolmiea diplomenziesii
+f1247-09.txt	Buddleja utahensis
+f1247-09.txt	Scrophulariaceae
+f1251-01.txt	Limosella aquatica
+f1251-01.txt	Limosella australis
+f1251-01.txt	Limosella acaulis
+f1251-02.txt	Myoporum laetum
+f1251-03.txt	Scrophularia atrata
+f1251-03.txt	Scrophularia californica
+f1251-04.txt	Scrophularia lanceolata
+f1251-04.txt	Scrophularia desertorum
+f1251-05.txt	Scrophularia villosa
+f1251-06.txt	Verbascum thapsus
+f1251-06.txt	Verbascum blattaria
+f1251-07.txt	Ailanthus altissima
+f1251-07.txt	Simaroubaceae
+f1251-08.txt	Castela emoryi
+f1251-09.txt	Simmondsia chinensis
+f1251-09.txt	Simmondsiaceae
+f1257-01.txt	Chamaesaracha coronopus
+f1257-01.txt	Chamaesaracha nana
+f1257-01.txt	Solanaceae
+f1257-02.txt	Datura wrightii
+f1257-03.txt	Lycium andersonii
+f1257-03.txt	Lycium californicum
+f1257-03.txt	Lycium cooperi
+f1257-04.txt	Lycium pallidum var. oligospermum
+f1257-04.txt	Lycium fremontii
+f1257-05.txt	Nicotiana obtusifolia
+f1257-05.txt	Nicotiana attenuata
+f1257-05.txt	Nicotiana clevelandii
+f1257-06.txt	Oryctes nevadensis
+f1257-07.txt	Petunia parviflora
+f1257-08.txt	Physalis acutifolia
+f1257-08.txt	Physalis lobata
+f1257-08.txt	Physalis crassifolia
+f1257-09.txt	Solanum americanum
+f1261-01.txt	Solanum carolinense
+f1261-01.txt	Solanum elaeagnifolium
+f1261-02.txt	Solanum rostratum
+f1261-02.txt	Solanum parishii
+f1261-03.txt	Solanum umbelliferum
+f1261-04.txt	Solanum wallacei
+f1261-05.txt	Staphylea bolanderi
+f1261-05.txt	Staphyleaceae
+f1261-06.txt	Styrax redivivus
+f1261-06.txt	Styracaceae
+f1261-07.txt	Tamarix parviflora
+f1261-07.txt	Tamarix aphylla
+f1261-07.txt	Tamarix ramosissima
+f1261-07.txt	Tamaricaceae
+f1261-08.txt	Samolus parviflorus
+f1261-08.txt	Theophrastaceae
+f1261-09.txt	Dirca occidentalis
+f1261-09.txt	Thymelaeaceae
+f1267-01.txt	Ulmus pumila
+f1267-01.txt	Ulmus parvifolia
+f1267-01.txt	Ulmaceae
+f1267-02.txt	Boehmeria cylindrica
+f1267-02.txt	Urticaceae
+f1267-03.txt	Hesperocnide tenella
+f1267-04.txt	Parietaria hespera var. hespera
+f1267-04.txt	Parietaria hespera var. californica
+f1267-04.txt	Parietaria pensylvanica
+f1267-05.txt	Soleirolia soleirolii
+f1267-06.txt	Urtica dioica subsp. gracilis
+f1267-06.txt	Urtica urens
+f1267-06.txt	Urtica dioica subsp. holosericea
+f1267-07.txt	Plectritis congesta subsp. brachystemon
+f1267-07.txt	Plectritis ciliosa
+f1267-07.txt	Plectritis macrocera
+f1267-07.txt	Valerianaceae
+f1267-08.txt	Valeriana californica
+f1267-08.txt	Valeriana occidentalis
+f1267-09.txt	Valeriana pubicarpa
+f1273-01.txt	Valeriana sitchensis subsp. sitchensis
+f1273-01.txt	Valeriana sitchensis subsp. scouleri
+f1273-02.txt	Aloysia wrightii
+f1273-02.txt	Verbenaceae
+f1273-03.txt	Phyla nodiflora
+f1273-03.txt	Phyla lanceolata
+f1273-04.txt	Verbena bracteata
+f1273-04.txt	Verbena californica
+f1273-04.txt	Verbena bonariensis
+f1273-05.txt	Verbena lasiostachys
+f1273-05.txt	Verbena gooddingii
+f1273-06.txt	Viola adunca subsp. adunca
+f1273-06.txt	Violaceae
+f1273-07.txt	Viola beckwithii
+f1273-07.txt	Viola bakeri
+f1273-08.txt	Viola douglasii
+f1273-08.txt	Viola cuneata
+f1273-09.txt	Viola hallii
+f1273-09.txt	Viola glabella
+f1277-01.txt	Viola lobata subsp. lobata
+f1277-01.txt	Viola lobata subsp. integrifolia
+f1277-02.txt	Viola nephrophylla
+f1277-02.txt	Viola macloskeyi
+f1277-03.txt	Viola palustris
+f1277-03.txt	Viola ocellata
+f1277-04.txt	Viola pinetorum subsp. grisea
+f1277-04.txt	Viola pedunculata
+f1277-05.txt	Viola praemorsa subsp. praemorsa
+f1277-05.txt	Viola praemorsa subsp. linguifolia
+f1277-06.txt	Viola primulifolia subsp. occidentalis
+f1277-07.txt	Viola purpurea subsp. aurea
+f1277-07.txt	Viola purpurea subsp. mesophyta
+f1277-07.txt	Viola purpurea subsp. mohavensis
+f1277-07.txt	Viola purpurea subsp. purpurea
+f1277-07.txt	Viola purpurea subsp. quercetorum
+f1277-07.txt	Viola purpurea subsp. venosa
+f1277-08.txt	Viola sempervirens
+f1281-01.txt	Viola sheltonii
+f1281-01.txt	Viola tomentosa
+f1281-02.txt	Arceuthobium campylopodum
+f1281-02.txt	Viscaceae
+f1281-03.txt	Phoradendron californicum
+f1281-04.txt	Phoradendron serotinum subsp. tomentosum
+f1281-05.txt	Vitis girdiana
+f1281-05.txt	Vitis californica
+f1281-06.txt	Fagonia laevis
+f1281-06.txt	Zygophyllaceae
+f1281-06.txt	Fagonia pachyacantha
+f1281-05.txt	Vitaceae
+f1281-07.txt	Kallstroemia californica
+f1281-07.txt	Kallstroemia parviflora
+f1281-08.txt	Larrea tridentata
+f1281-09.txt	Tribulus terrestris
+f1281-09.txt	Zygophyllum fabago
+f1369-01.txt	Juncus acutus subsp. leopoldii
+f1369-01.txt	Juncus acuminatus
+f1369-01.txt	Juncaceae
+f1369-02.txt	Juncus balticus subsp. ater
+f1369-02.txt	Juncus ambiguus
+f1369-03.txt	Juncus bolanderi
+f1369-03.txt	Juncus breweri
+f1369-03.txt	Juncus bufonius var. bufonius
+f1369-04.txt	Juncus chlorocephalus
+f1369-04.txt	Juncus capillaris
+f1369-05.txt	Juncus covillei
+f1369-05.txt	Juncus confusus
+f1369-05.txt	Juncus cooperi
+f1369-06.txt	Juncus drummondii
+f1369-06.txt	Juncus cyperoides
+f1369-07.txt	Juncus dudleyi
+f1369-07.txt	Juncus duranii
+f1369-07.txt	Juncus dubius
+f1369-08.txt	Juncus ensifolius
+f1369-08.txt	Juncus effusus subsp. pacificus
+f1369-08.txt	Juncus effusus subsp. austrocalifornicus
+f1369-08.txt	Juncus effusus subsp. effusus
+f1369-09.txt	Juncus falcatus subsp. falcatus
+f1373-01.txt	Juncus hemiendytus var. hemiendytus
+f1373-01.txt	Juncus howellii
+f1373-02.txt	Juncus laccatus
+f1373-02.txt	Juncus kelloggii
+f1373-03.txt	Juncus leiospermus var. leiospermus
+f1373-03.txt	Juncus longistylis
+f1373-04.txt	Juncus macrophyllus
+f1373-04.txt	Juncus marginatus
+f1373-04.txt	Juncus macrandrus
+f1373-05.txt	Juncus mexicanus
+f1373-05.txt	Juncus mertensianus
+f1373-06.txt	Juncus nevadensis var. nevadensis
+f1373-06.txt	Juncus nodosus
+f1373-07.txt	Juncus orthophyllus
+f1373-07.txt	Juncus occidentalis
+f1373-08.txt	Juncus oxymeris
+f1373-08.txt	Juncus parryi
+f1373-08.txt	Juncus patens
+f1373-09.txt	Juncus phaeocephalus var. phaeocephalus
+f1373-09.txt	Juncus regelii
+f1377-01.txt	Juncus saximontanus
+f1377-01.txt	Juncus rugulosus
+f1377-02.txt	Juncus textilis
+f1377-02.txt	Juncus tenuis
+f1377-02.txt	Juncus supiniformis
+f1377-03.txt	Juncus torreyi
+f1377-03.txt	Juncus tiehmii
+f1377-04.txt	Juncus usitatus
+f1377-04.txt	Juncus triformis
+f1377-05.txt	Juncus xiphioides
+f1377-05.txt	Juncus uncialis
+f1377-06.txt	Luzula divaricata
+f1377-06.txt	Luzula comosa var. comosa
+f1377-07.txt	Luzula orestera
+f1377-07.txt	Luzula parviflora subsp. parviflora
+f1377-07.txt	Luzula subsessilis
+f1377-07.txt	Luzula subcongesta
+f1377-07.txt	Luzula spicata
+f1377-08.txt	Triglochin maritima
+f1377-08.txt	Triglochin palustris
+f1377-08.txt	Juncaginaceae
+f1377-09.txt	Triglochin scilloides
+f1377-09.txt	Triglochin striata
+f1385-01.txt	Calochortus argillosus
+f1385-01.txt	Calochortus albus
+f1385-01.txt	Calochortus catalinae
+f1385-01.txt	Calochortus bruneaunis
+f1385-01.txt	Liliaceae
+f1385-02.txt	Calochortus clavatus var. avius
+f1385-02.txt	Calochortus clavatus var. clavatus
+f1385-02.txt	Calochortus clavatus var. recurvifolius
+f1385-02.txt	Calochortus dunnii
+f1385-03.txt	Calochortus greenei
+f1385-03.txt	Calochortus excavatus
+f1385-03.txt	Calochortus fimbriatus
+f1385-03.txt	Calochortus flexuosus
+f1385-04.txt	Calochortus invenustus
+f1385-04.txt	Calochortus kennedyi
+f1385-05.txt	Calochortus leichtlinii
+f1385-05.txt	Calochortus luteus
+f1385-05.txt	Calochortus longebarbatus var. longebarbatus
+f1385-05.txt	Calochortus macrocarpus
+f1385-06.txt	Calochortus nudus
+f1385-06.txt	Calochortus monanthus
+f1385-07.txt	Calochortus palmeri var. munzii
+f1385-07.txt	Calochortus persistens
+f1385-07.txt	Calochortus obispoensis
+f1385-08.txt	Calochortus raichei
+f1385-08.txt	Calochortus pulchellus
+f1385-08.txt	Calochortus plummerae
+f1385-09.txt	Calochortus striatus
+f1385-09.txt	Calochortus simulans
+f1385-09.txt	Calochortus superbus
+f1385-09.txt	Calochortus splendens
+f1389-01.txt	Calochortus syntrophus
+f1389-02.txt	Calochortus tiburonensis
+f1389-02.txt	Calochortus tolmiei
+f1389-02.txt	Calochortus uniflorus
+f1389-03.txt	Calochortus vestae
+f1389-03.txt	Calochortus venustus
+f1389-03.txt	Calochortus weedii var. weedii
+f1389-03.txt	Calochortus westonii
+f1389-04.txt	Clintonia uniflora
+f1389-04.txt	Clintonia andrewsiana
+f1389-05.txt	Erythronium citrinum var. citrinum
+f1389-05.txt	Erythronium citrinum var. roderickii
+f1389-05.txt	Erythronium californicum
+f1389-06.txt	Erythronium tuolumnense
+f1389-06.txt	Erythronium purpurascens
+f1389-06.txt	Erythronium revolutum
+f1389-07.txt	Fritillaria agrestis
+f1389-07.txt	Fritillaria affinis
+f1389-08.txt	Fritillaria brandegeei
+f1389-08.txt	Fritillaria atropurpurea
+f1389-08.txt	Fritillaria biflora var. biflora
+f1389-09.txt	Fritillaria eastwoodiae
+f1393-01.txt	Fritillaria falcata
+f1393-01.txt	Fritillaria glauca
+f1393-02.txt	Fritillaria ojaiensis
+f1393-02.txt	Fritillaria liliacea
+f1393-02.txt	Fritillaria micrantha
+f1393-03.txt	Fritillaria pinetorum
+f1393-03.txt	Fritillaria pudica
+f1393-03.txt	Fritillaria pluriflora
+f1393-04.txt	Fritillaria viridea
+f1393-04.txt	Fritillaria striata
+f1393-04.txt	Fritillaria purdyi
+f1393-04.txt	Fritillaria recurva
+f1393-05.txt	Lilium bolanderi
+f1393-06.txt	Lilium humboldtii subsp. ocellatum
+f1393-06.txt	Lilium maritimum
+f1393-07.txt	Lilium occidentale
+f1393-08.txt	Lilium pardalinum subsp. vollmeri
+f1393-08.txt	Lilium pardalinum subsp. wigginsii
+f1393-09.txt	Lilium parryi
+f1399-01.txt	Lilium washingtonianum subsp. purpurascens
+f1399-01.txt	Lilium rubescens
+f1399-02.txt	Prosartes hookeri
+f1399-02.txt	Prosartes smithii
+f1399-03.txt	Scoliopus bigelovii
+f1399-04.txt	Streptopus amplexifolius var. americanus
+f1399-05.txt	Pseudotrillium rivale
+f1399-05.txt	Melanthiaceae
+f1399-06.txt	Stenanthium occidentale
+f1399-07.txt	Toxicoscordion brevibracteatum
+f1399-07.txt	Toxicoscordion fremontii
+f1399-07.txt	Toxicoscordion fontanum
+f1399-08.txt	Toxicoscordion paniculatum
+f1399-08.txt	Toxicoscordion venenosum var. venenosum
+f1399-09.txt	Trillium albidum
+f1399-09.txt	Trillium angustipetalum
+f1399-09.txt	Trillium chloropetalum
+f1399-10.txt	Trillium ovatum subsp. ovatum
+f1399-10.txt	Trillium ovatum subsp. oettingeri
+f1403-01.txt	Veratrum californicum var. californicum
+f1403-02.txt	Veratrum fimbriatum
+f1403-02.txt	Veratrum viride
+f1403-02.txt	Veratrum insolitum
+f1403-03.txt	Xerophyllum tenax
+f1403-04.txt	Narthecium californicum
+f1403-04.txt	Nartheciaceae
+f1403-05.txt	Calypso bulbosa var. occidentalis
+f1403-05.txt	Orchidaceae
+f1403-06.txt	Cephalanthera austiniae
+f1403-07.txt	Corallorhiza maculata
+f1403-08.txt	Corallorhiza trifida
+f1403-08.txt	Corallorhiza striata
+f1403-08.txt	Corallorhiza mertensiana
+f1403-09.txt	Cypripedium californicum
+f1403-09.txt	Cypripedium montanum
+f1403-09.txt	Cypripedium fasciculatum
+f1407-01.txt	Epipactis gigantea
+f1407-02.txt	Goodyera oblongifolia
+f1407-03.txt	Listera convallarioides
+f1407-03.txt	Listera cordata
+f1407-03.txt	Listera banksiana
+f1407-04.txt	Malaxis monophyllos var. brachypoda
+f1407-05.txt	Piperia elegans subsp. elegans
+f1407-05.txt	Piperia candida
+f1407-05.txt	Piperia michaelii
+f1407-05.txt	Piperia elongata
+f1407-06.txt	Piperia transversa
+f1407-06.txt	Piperia unalascensis
+f1407-06.txt	Piperia yadonii
+f1407-07.txt	Platanthera dilatata var. leucostachys
+f1407-08.txt	Platanthera sparsiflora
+f1407-08.txt	Platanthera stricta
+f1407-09.txt	Spiranthes romanzoffiana
+f1407-09.txt	Spiranthes porrifolia
+f1417-01.txt	Aegilops cylindrica
+f1417-01.txt	Aegilops triuncialis
+f1417-01.txt	Poaceae
+f1417-02.txt	Agropyron cristatum subsp. pectinatum
+f1417-03.txt	Agrostis blasdalei
+f1417-03.txt	Agrostis capillaris
+f1417-03.txt	Agrostis densiflora
+f1417-03.txt	Agrostis elliottiana
+f1417-04.txt	Agrostis hallii
+f1417-04.txt	Agrostis exarata
+f1417-05.txt	Agrostis hendersonii
+f1417-05.txt	Agrostis hooveri
+f1417-06.txt	Agrostis idahoensis
+f1417-06.txt	Agrostis humilis
+f1417-07.txt	Agrostis scabra
+f1417-07.txt	Agrostis microphylla
+f1417-08.txt	Agrostis variabilis
+f1417-08.txt	Agrostis stolonifera
+f1417-09.txt	Aira praecox
+f1417-09.txt	Aira elegans
+f1417-09.txt	Aira caryophyllea
+f1423-01.txt	Alopecurus saccatus
+f1423-01.txt	Alopecurus aequalis var. aequalis
+f1423-02.txt	Ammophila arenaria
+f1423-03.txt	Andropogon virginicus var. virginicus
+f1423-03.txt	Andropogon glomeratus var. scabriglumis
+f1423-04.txt	Anthoxanthum aristatum subsp. aristatum
+f1423-04.txt	Anthoxanthum nitens subsp. nitens
+f1423-05.txt	Anthoxanthum odoratum
+f1423-05.txt	Anthoxanthum occidentale
+f1423-06.txt	Aristida adscensionis
+f1423-07.txt	Aristida purpurea var. nealleyi
+f1423-07.txt	Aristida purpurea var. longiseta
+f1423-07.txt	Aristida purpurea var. nealleyi
+f1423-07.txt	Aristida purpurea var. parishii
+f1423-07.txt	Aristida purpurea var. wrightii
+f1423-07.txt	Aristida oligantha
+f1423-08.txt	Aristida ternipes var. gentilis
+f1423-09.txt	Arrhenatherum elatius
+f1427-01.txt	Arundo donax
+f1427-02.txt	Avena barbata
+f1427-02.txt	Avena fatua
+f1427-02.txt	Avena barbata
+f1427-03.txt	Beckmannia syzigachne
+f1427-04.txt	Blepharidachne kingii
+f1427-05.txt	Bothriochloa laguroides subsp. torreyana
+f1427-05.txt	Bothriochloa barbinodis
+f1427-06.txt	Bouteloua barbata var. barbata
+f1427-06.txt	Bouteloua aristidoides var. aristidoides
+f1427-07.txt	Bouteloua curtipendula
+f1427-07.txt	Bouteloua eriopoda
+f1427-08.txt	Bouteloua trifida
+f1427-08.txt	Bouteloua gracilis
+f1427-09.txt	Brachypodium distachyon
+f1435-01.txt	Briza minor
+f1435-01.txt	Briza maxima
+f1435-02.txt	Bromus arenarius
+f1435-02.txt	Bromus arizonicus
+f1435-02.txt	Bromus carinatus
+f1435-02.txt	Bromus berteroanus
+f1435-03.txt	Bromus ciliatus
+f1435-03.txt	Bromus hordeaceus
+f1435-04.txt	Bromus madritensis subsp. madritensis
+f1435-04.txt	Bromus madritensis subsp. rubens
+f1435-04.txt	Bromus maritimus
+f1435-05.txt	Bromus secalinus
+f1435-05.txt	Bromus squarrosus
+f1435-05.txt	Bromus richardsonii
+f1435-05.txt	Bromus porteri
+f1435-05.txt	Bromus sterilis
+f1435-05.txt	Bromus racemosus
+f1435-06.txt	Bromus tectorum
+f1435-06.txt	Bromus suksdorfii
+f1435-06.txt	Bromus vulgaris
+f1435-07.txt	Calamagrostis breweri
+f1435-07.txt	Calamagrostis canadensis var. canadensis
+f1435-07.txt	Calamagrostis bolanderi
+f1435-08.txt	Calamagrostis koelerioides
+f1435-08.txt	Calamagrostis foliosa
+f1435-09.txt	Calamagrostis purpurascens
+f1435-09.txt	Calamagrostis nutkaensis
+f1435-09.txt	Calamagrostis rubescens
+f1435-09.txt	Calamagrostis ophitidis
+f1439-01.txt	Calamagrostis stricta subsp. inexpansa
+f1439-01.txt	Calamagrostis stricta subsp. stricta
+f1439-02.txt	Cenchrus longispinus
+f1439-03.txt	Chloris virgata
+f1439-03.txt	Chloris verticillata
+f1439-04.txt	Cinna latifolia
+f1439-05.txt	Cortaderia jubata
+f1439-06.txt	Crypsis vaginiflora
+f1439-06.txt	Crypsis alopecuroides
+f1439-07.txt	Cynodon dactylon
+f1439-08.txt	Cynosurus echinatus
+f1439-08.txt	Cynosurus cristatus
+f1439-09.txt	Dactylis glomerata
+f1443-01.txt	Dactyloctenium aegyptium
+f1443-02.txt	Danthonia intermedia subsp. intermedia
+f1443-02.txt	Danthonia californica
+f1443-03.txt	Dasyochloa pulchella
+f1443-04.txt	Deschampsia cespitosa subsp. cespitosa
+f1443-04.txt	Deschampsia cespitosa subsp. holciformis
+f1443-05.txt	Deschampsia elongata
+f1443-05.txt	Deschampsia danthonioides
+f1443-06.txt	Digitaria sanguinalis
+f1443-07.txt	Dissanthelium californicum
+f1443-08.txt	Distichlis littoralis
+f1443-09.txt	Distichlis spicata
+f1449-01.txt	Echinochloa crus-galli
+f1449-02.txt	Ehrharta calycina
+f1449-02.txt	Ehrharta erecta
+f1449-03.txt	Eleusine indica
+f1449-04.txt	Elymus caput-medusae
+f1449-04.txt	Elymus californicus
+f1449-05.txt	Elymus elymoides
+f1449-05.txt	Elymus cinereus
+f1449-06.txt	Elymus glaucus
+f1449-07.txt	Elymus ponticus
+f1449-07.txt	Elymus mollis subsp. mollis
+f1449-08.txt	Elymus repens
+f1449-08.txt	Elymus scribneri
+f1449-08.txt	Elymus sierrae
+f1449-09.txt	Elymus smithii
+f1453-01.txt	Elymus spicatus
+f1453-02.txt	Elymus trachycaulus subsp. trachycaulus
+f1453-02.txt	Elymus triticoides
+f1453-03.txt	Enneapogon desvauxii
+f1453-04.txt	Eragrostis cilianensis
+f1453-04.txt	Eragrostis barrelieri
+f1453-05.txt	Eragrostis curvula
+f1453-05.txt	Eragrostis lehmanniana
+f1453-05.txt	Eragrostis hypnoides
+f1453-06.txt	Eragrostis mexicana subsp. mexicana
+f1453-06.txt	Eragrostis mexicana subsp. virescens
+f1453-06.txt	Eragrostis lutescens
+f1453-06.txt	Eragrostis minor
+f1453-07.txt	Eragrostis pilosa var. pilosa
+f1453-07.txt	Eragrostis pectinacea var. pectinacea
+f1453-07.txt	Eragrostis pectinacea var. miserrima
+f1453-08.txt	Eriochloa contracta
+f1453-08.txt	Eriochloa acuminata var. acuminata
+f1453-09.txt	Erioneuron pilosum
+f1457-01.txt	Festuca brachyphylla subsp. breviculmis
+f1457-01.txt	Festuca bromoides
+f1457-01.txt	Festuca arundinacea
+f1457-02.txt	Festuca idahoensis
+f1457-02.txt	Festuca elmeri
+f1457-02.txt	Festuca californica
+f1457-03.txt	Festuca myuros
+f1457-03.txt	Festuca kingii
+f1457-04.txt	Festuca occidentalis
+f1457-05.txt	Festuca perennis
+f1457-05.txt	Festuca octoflora
+f1457-06.txt	Festuca rubra
+f1457-06.txt	Festuca pratensis
+f1457-07.txt	Festuca viridula
+f1457-07.txt	Festuca temulenta
+f1457-07.txt	Festuca subulata
+f1457-07.txt	Festuca subuliflora
+f1457-08.txt	Gastridium phleoides
+f1457-09.txt	Glyceria grandis
+f1457-09.txt	Glyceria elata
+f1457-09.txt	Glyceria borealis
+f1461-01.txt	Hainardia cylindrica
+f1461-02.txt	Heteropogon contortus
+f1461-03.txt	Hilaria rigida
+f1461-03.txt	Hilaria jamesii
+f1461-04.txt	Holcus mollis
+f1461-04.txt	Holcus lanatus
+f1461-05.txt	Hordeum depressum
+f1461-05.txt	Hordeum brachyantherum
+f1461-06.txt	Hordeum murinum subsp. glaucum
+f1461-06.txt	Hordeum intercedens
+f1461-07.txt	Hordeum jubatum subsp. jubatum
+f1461-08.txt	Imperata brevifolia
+f1461-09.txt	Koeleria gerardi
+f1461-09.txt	Koeleria macrantha
+f1467-01.txt	Lagurus ovatus
+f1467-02.txt	Lamarckia aurea
+f1467-03.txt	Leersia oryzoides
+f1467-04.txt	Leptochloa fusca subsp. fascicularis
+f1467-04.txt	Leptochloa panicea subsp. brachiata
+f1467-05.txt	Melica imperfecta
+f1467-05.txt	Melica bulbosa
+f1467-06.txt	Melica torreyana
+f1467-06.txt	Melica stricta
+f1467-06.txt	Melica spectabilis
+f1467-07.txt	Muhlenbergia alopecuroides
+f1467-08.txt	Muhlenbergia asperifolia
+f1467-08.txt	Muhlenbergia fragilis
+f1467-08.txt	Muhlenbergia arsenei
+f1467-09.txt	Muhlenbergia minutissima
+f1467-09.txt	Muhlenbergia californica
+f1467-09.txt	Muhlenbergia montana
+f1467-09.txt	Muhlenbergia microsperma
+f1473-01.txt	Muhlenbergia porteri
+f1473-01.txt	Muhlenbergia richardsonis
+f1473-01.txt	Muhlenbergia rigens
+f1473-01.txt	Muhlenbergia pauciflora
+f1473-02.txt	Munroa squarrosa
+f1473-03.txt	Neostapfia colusana
+f1473-04.txt	Orcuttia inaequalis
+f1473-04.txt	Orcuttia viscida
+f1473-04.txt	Orcuttia pilosa
+f1473-04.txt	Orcuttia tenuis
+f1473-04.txt	Orcuttia californica
+f1473-05.txt	Panicum acuminatum var. thermale
+f1473-06.txt	Panicum capillare
+f1473-06.txt	Panicum miliaceum subsp. miliaceum
+f1473-07.txt	Parapholis incurva
+f1473-08.txt	Paspalum distichum
+f1473-08.txt	Paspalum dilatatum
+f1473-09.txt	Pennisetum clandestinum
+f1473-09.txt	Pennisetum villosum
+f1481-01.txt	Phalaris californica
+f1481-01.txt	Phalaris arundinacea
+f1481-02.txt	Phalaris lemmonii
+f1481-02.txt	Phalaris minor
+f1481-02.txt	Phalaris canariensis
+f1481-03.txt	Phalaris paradoxa
+f1481-04.txt	Phleum alpinum
+f1481-05.txt	Phragmites australis
+f1481-06.txt	Pleuropogon refractus
+f1481-07.txt	Poa annua
+f1481-08.txt	Poa cusickii subsp. epilis
+f1481-08.txt	Poa bulbosa subsp. vivipara
+f1481-09.txt	Poa douglasii
+f1481-10.txt	Poa fendleriana subsp. longiligula
+f1481-10.txt	Poa napensis
+f1487-01.txt	Poa piperi
+f1487-02.txt	Poa pratensis subsp. pratensis
+f1487-03.txt	Poa secunda
+f1487-04.txt	Poa sierrae
+f1487-05.txt	Poa wheeleri
+f1487-06.txt	Polypogon monspeliensis
+f1487-06.txt	Polypogon viridis
+f1487-06.txt	Polypogon maritimus
+f1487-07.txt	Puccinellia simplex
+f1487-07.txt	Puccinellia lemmonii
+f1487-07.txt	Puccinellia howellii
+f1487-08.txt	Rytidosperma racemosum
+f1487-08.txt	Rytidosperma penicillatum
+f1487-09.txt	Schismus barbatus
+f1487-09.txt	Schismus arabicus
+f1495-01.txt	Sclerochloa dura
+f1495-02.txt	Scleropogon brevifolius
+f1495-03.txt	Scribneria bolanderi
+f1495-03.txt	Secale cereale
+f1495-04.txt	Setaria parviflora
+f1495-04.txt	Setaria viridis
+f1495-05.txt	Sorghum halepense
+f1495-05.txt	Sorghum bicolor
+f1495-06.txt	Spartina densiflora
+f1495-06.txt	Spartina foliosa
+f1495-06.txt	Spartina gracilis
+f1495-07.txt	Sporobolus contractus
+f1495-07.txt	Sporobolus cryptandrus
+f1495-07.txt	Sporobolus airoides
+f1495-07.txt	Sphenopholis obtusata
+f1495-08.txt	Stipa comata var. intermedia
+f1495-08.txt	Stipa comata var. comata
+f1499-01.txt	Stipa hymenoides
+f1499-01.txt	Stipa coronata
+f1499-02.txt	Stipa lemmonii var. lemmonii
+f1499-02.txt	Stipa divaricata
+f1499-03.txt	Stipa lepida
+f1499-03.txt	Stipa kingii
+f1499-04.txt	Stipa occidentalis var. occidentalis
+f1499-04.txt	Stipa occidentalis var. californica
+f1499-04.txt	Stipa parishii var. parishii
+f1499-04.txt	Stipa pulchra
+f1499-05.txt	Stipa speciosa
+f1499-05.txt	Stipa stillmanii
+f1499-06.txt	Swallenia alexandrae
+f1499-07.txt	Torreyochloa pallida var. pauciflora
+f1499-08.txt	Tridens muticus var. muticus
+f1499-09.txt	Trisetum canescens
+f1499-09.txt	Trisetum wolfii
+f1499-09.txt	Trisetum spicatum
+f1505-01.txt	Tuctoria mucronata
+f1505-01.txt	Tuctoria greenei
+f1505-02.txt	Vahlodea atropurpurea
+f1505-03.txt	Eichhornia crassipes
+f1505-03.txt	Pontederiaceae
+f1505-04.txt	Heteranthera dubia
+f1505-05.txt	Potamogeton diversifolius
+f1505-05.txt	Potamogeton amplifolius
+f1505-05.txt	Potamogetonaceae
+f1505-06.txt	Potamogeton foliosus subsp. foliosus
+f1505-06.txt	Potamogeton epihydrus
+f1505-07.txt	Potamogeton natans
+f1505-07.txt	Potamogeton illinoensis
+f1505-07.txt	Potamogeton gramineus
+f1505-08.txt	Potamogeton praelongus
+f1505-08.txt	Potamogeton nodosus
+f1505-08.txt	Potamogeton richardsonii
+f1505-08.txt	Potamogeton pusillus
+f1505-09.txt	Potamogeton zosteriformis
+f1505-09.txt	Potamogeton robbinsii
+f1505-10.txt	Stuckenia striata
+f1505-10.txt	Stuckenia pectinata
+f1509-01.txt	Ruppia cirrhosa
+f1509-01.txt	Ruppiaceae
+f1509-02.txt	Maianthemum dilatatum
+f1509-02.txt	Ruscaceae
+f1509-03.txt	Maianthemum stellatum
+f1509-03.txt	Maianthemum racemosum
+f1509-04.txt	Nolina parryi
+f1509-04.txt	Nolina bigelovii
+f1509-05.txt	Scheuchzeria palustris
+f1509-05.txt	Scheuchzeriaceae
+f1509-06.txt	Smilax jamesii
+f1509-06.txt	Smilax californica
+f1509-06.txt	Smilacaceae
+f1509-07.txt	Odontostomum hartwegii
+f1509-07.txt	Tecophilaeaceae
+f1509-08.txt	Androstephium breviflorum
+f1509-08.txt	Themidaceae
+f1509-09.txt	Bloomeria clevelandii
+f1509-09.txt	Bloomeria crocea var. crocea
+f1509-09.txt	Bloomeria humilis
+f1515-01.txt	Brodiaea appendiculata
+f1515-01.txt	Brodiaea californica
+f1515-01.txt	Brodiaea elegans subsp. elegans
+f1515-01.txt	Brodiaea filifolia
+f1515-02.txt	Brodiaea insignis
+f1515-02.txt	Brodiaea jolonensis
+f1515-02.txt	Brodiaea kinkiensis
+f1515-02.txt	Brodiaea leptandra
+f1515-03.txt	Brodiaea orcuttii
+f1515-03.txt	Brodiaea pallida
+f1515-03.txt	Brodiaea rosea
+f1515-03.txt	Brodiaea minor
+f1515-04.txt	Brodiaea terrestris subsp. kernensis
+f1515-04.txt	Brodiaea terrestris subsp. terrestris
+f1515-04.txt	Brodiaea stellaris
+f1515-05.txt	Dichelostemma congestum
+f1515-05.txt	Dichelostemma capitatum subsp. pauciflorum
+f1515-05.txt	Dichelostemma capitatum subsp. capitatum
+f1515-06.txt	Dichelostemma ida-maia
+f1515-06.txt	Dichelostemma volubile
+f1515-06.txt	Dichelostemma multiflorum
+f1515-07.txt	Muilla maritima
+f1515-07.txt	Muilla coronata
+f1515-08.txt	Triteleia clementina
+f1515-08.txt	Triteleia crocea
+f1515-09.txt	Triteleia grandiflora
+f1515-09.txt	Triteleia hyacinthina
+f1515-09.txt	Triteleia dudleyi
+f1519-01.txt	Triteleia ixioides subsp. scabra
+f1519-01.txt	Triteleia ixioides subsp. ixioides
+f1519-01.txt	Triteleia ixioides subsp. anilina
+f1519-01.txt	Triteleia ixioides subsp. cookii
+f1519-02.txt	Triteleia peduncularis
+f1519-02.txt	Triteleia lugens
+f1519-02.txt	Triteleia montana
+f1519-02.txt	Triteleia laxa
+f1519-03.txt	Triantha occidentalis subsp. occidentalis
+f1519-03.txt	Tofieldiaceae
+f1519-04.txt	Sparganium emersum
+f1519-04.txt	Sparganium angustifolium
+f1519-04.txt	Typhaceae
+f1519-05.txt	Sparganium eurycarpum var. greenei
+f1519-05.txt	Sparganium eurycarpum var. eurycarpum
+f1519-05.txt	Sparganium natans
+f1519-06.txt	Typha domingensis
+f1519-06.txt	Typha latifolia
+f1519-06.txt	Typha angustifolia
+f1519-07.txt	Zannichellia palustris
+f1519-07.txt	Zannichelliaceae
+f1519-08.txt	Phyllospadix torreyi
+f1519-08.txt	Phyllospadix scouleri
+f1519-08.txt	Zosteraceae
+f1519-09.txt	Zostera marina
+fp-115-2.txt	Isoetes echinospora
+fp-115-2.txt	Isoetes bolanderi
+fp-115-2.txt	Isoetaceae
+fp-115-3.txt	Isoetes nuttallii
+fp-115-3.txt	Isoetes occidentalis
+fp-115-3.txt	Isoetes howellii
+fp-115-4.txt	Lycopodium clavatum
+fp-115-4.txt	Lycopodiella inundata
+fp-115-4.txt	Lycopodiaceae
+fp-115-5.txt	Selaginella asprella
+fp-115-5.txt	Selaginella bigelovii
+fp-115-5.txt	Selaginella cinerascens
+fp-115-5.txt	Selaginellaceae
+fp-115-6.txt	Selaginella oregana
+fp-115-6.txt	Selaginella eremophila
+fp-115-6.txt	Selaginella hansenii
+fp-115-7.txt	Selaginella watsonii
+fp-115-7.txt	Selaginella wallacei
+fp-115-7.txt	Selaginella scopulorum
+fp-115-8.txt	Asplenium septentrionale
+fp-115-8.txt	Asplenium trichomanes subsp. trichomanes
+fp-115-8.txt	Asplenium vespertinum
+fp-115-9.txt	Azolla filiculoides
+fp-115-9.txt	Azollaceae
+fp-115-10.txt	Blechnum spicant
+fp-115-10.txt	Blechnaceae
+fp-121-2.txt	Woodwardia fimbriata
+fp-121-3.txt	Pteridium aquilinum var. pubescens
+fp-121-3.txt	Dennstaedtiaceae
+fp-121-4.txt	Dryopteris filix-mas
+fp-121-4.txt	Dryopteris arguta
+fp-121-4.txt	Dryopteris expansa
+fp-121-4.txt	Dryopteridaceae
+fp-121-5.txt	Polystichum dudleyi
+fp-121-5.txt	Polystichum californicum
+fp-121-6.txt	Polystichum kruckebergii
+fp-121-6.txt	Polystichum imbricans
+fp-121-7.txt	Polystichum lonchitis
+fp-121-7.txt	Polystichum lemmonii
+fp-121-8.txt	Polystichum scopulinum
+fp-121-8.txt	Polystichum munitum
+fp-121-9.txt	Equisetum hyemale subsp. affine
+fp-121-9.txt	Equisetum arvense
+fp-121-9.txt	Equisetaceae
+fp-121-10.txt	Equisetum palustre
+fp-121-10.txt	Equisetum telmateia subsp. braunii
+fp-121-10.txt	Equisetum laevigatum
+fp-127-2.txt	Marsilea oligospora
+fp-127-2.txt	Marsilea vestita subsp. vestita
+fp-127-2.txt	Marsileaceae
+fp-127-3.txt	Pilularia americana
+fp-127-4.txt	Botrychium simplex
+fp-127-4.txt	Botrychium crenulatum
+fp-127-4.txt	Ophioglossaceae
+fp-127-5.txt	Botrypus virginianus
+fp-127-6.txt	Ophioglossum californicum
+fp-127-6.txt	Ophioglossum pusillum
+fp-127-7.txt	Sceptridium multifidum
+fp-127-8.txt	Polypodium glycyrrhiza
+fp-127-8.txt	Polypodium calirhiza
+fp-127-9.txt	Polypodium scouleri
+fp-127-9.txt	Polypodium hesperium
+fp-127-10.txt	Adiantum capillus-veneris
+fp-127-10.txt	Adiantum aleuticum
+fp-127-10.txt	Adiantum jordanii
+fp-131-2.txt	Argyrochosma limitanea subsp. limitanea
+fp-131-3.txt	Aspidotis densa
+fp-131-3.txt	Aspidotis carlotta-halliae
+fp-131-3.txt	Aspidotis californica
+fp-131-4.txt	Astrolepis cochisensis
+fp-131-5.txt	Cheilanthes cooperae
+fp-131-5.txt	Cheilanthes covillei
+fp-131-6.txt	Cheilanthes gracillima
+fp-131-6.txt	Cheilanthes feei
+fp-131-7.txt	Cheilanthes parryi
+fp-131-8.txt	Cheilanthes wootonii
+fp-131-8.txt	Cheilanthes viscida
+fp-131-9.txt	Cryptogramma acrostichoides
+fp-131-10.txt	Notholaena californica
+fp-137-2.txt	Pellaea andromedifolia
+fp-137-2.txt	Pellaea breweri
+fp-137-3.txt	Pellaea mucronata var. californica
+fp-137-3.txt	Pellaea truncata
+fp-137-3.txt	Pellaea bridgesii
+fp-137-4.txt	Pentagramma pallida
+fp-137-4.txt	Pentagramma triangularis subsp. triangularis
+fp-137-5.txt	Thelypteris puberula var. sonorensis
+fp-137-5.txt	Thelypteris nevadensis
+fp-137-5.txt	Thelypteridaceae
+fp-137-6.txt	Athyrium distentifolium var. americanum
+fp-137-6.txt	Athyrium filix-femina var. cyclosorum
+fp-137-6.txt	Woodsiaceae
+fp-137-7.txt	Cystopteris fragilis
+fp-137-8.txt	Woodsia plummerae
+fp-137-8.txt	Woodsia scopulina
+fp-137-8.txt	Woodsia oregana
+fp-137-9.txt	Callitropsis nootkatensis
+fp-137-9.txt	Cupressaceae
+fp-137-10.txt	Calocedrus decurrens
+fp-141-2.txt	Chamaecyparis lawsoniana
+fp-141-3.txt	Hesperocyparis bakeri
+fp-141-3.txt	Hesperocyparis abramsiana var. butanoensis
+fp-141-3.txt	Hesperocyparis forbesii
+fp-141-4.txt	Hesperocyparis goveniana
+fp-141-4.txt	Hesperocyparis macnabiana
+fp-141-5.txt	Hesperocyparis macrocarpa
+fp-141-5.txt	Hesperocyparis nevadensis
+fp-141-6.txt	Hesperocyparis sargentii
+fp-141-6.txt	Hesperocyparis stephensonii
+fp-141-7.txt	Juniperus californica
+fp-141-7.txt	Juniperus communis var. jackii
+fp-141-8.txt	Juniperus grandis
+fp-141-8.txt	Juniperus osteosperma
+fp-141-9.txt	Sequoia sempervirens
+fp-141-10.txt	Sequoiadendron giganteum
+fp-147-2.txt	Thuja plicata
+fp-147-3.txt	Ephedra aspera
+fp-147-3.txt	Ephedra nevadensis
+fp-147-3.txt	Ephedra californica
+fp-147-3.txt	Ephedraceae
+fp-147-4.txt	Ephedra trifurca
+fp-147-4.txt	Ephedra viridis
+fp-147-5.txt	Abies bracteata
+fp-147-5.txt	Abies concolor
+fp-147-5.txt	Pinaceae
+fp-147-6.txt	Abies lasiocarpa var. lasiocarpa
+fp-147-6.txt	Abies magnifica var. shastensis
+fp-147-6.txt	Abies procera
+fp-147-7.txt	Picea breweriana
+fp-147-7.txt	Picea sitchensis
+fp-147-7.txt	Picea engelmannii
+fp-147-8.txt	Pinus attenuata
+fp-147-8.txt	Pinus albicaulis
+fp-147-9.txt	Pinus balfouriana subsp. balfouriana
+fp-147-9.txt	Pinus contorta subsp. murrayana
+fp-147-10.txt	Pinus coulteri
+fp-147-10.txt	Pinus flexilis
+fp-147-10.txt	Pinus edulis
+fp-149-2.txt	Pinus jeffreyi
+fp-149-2.txt	Pinus lambertiana
+fp-149-3.txt	Pinus longaeva
+fp-149-3.txt	Pinus monticola
+fp-149-3.txt	Pinus monophylla
+fp-149-4.txt	Pinus muricata
+fp-149-4.txt	Pinus ponderosa
+fp-149-5.txt	Pinus quadrifolia
+fp-149-5.txt	Pinus radiata
+fp-149-6.txt	Pinus sabiniana
+fp-149-6.txt	Pinus torreyana
+fp-149-7.txt	Pseudotsuga menziesii var. menziesii
+fp-149-8.txt	Tsuga heterophylla
+fp-149-8.txt	Tsuga mertensiana
+fp-149-9.txt	Taxus brevifolia
+fp-149-9.txt	Taxaceae
+fp-149-10.txt	Torreya californica
+fp-157-2.txt	Brasenia schreberi
+fp-157-2.txt	Cabombaceae
+fp-157-3.txt	Cabomba caroliniana
+fp-157-4.txt	Nuphar polysepala
+fp-157-4.txt	Nymphaeaceae
+fp-157-5.txt	Aristolochia californica
+fp-157-5.txt	Aristolochiaceae
+fp-157-6.txt	Asarum caudatum
+fp-157-6.txt	Asarum hartwegii
+fp-157-6.txt	Asarum lemmonii
+fp-157-6.txt	Asarum marmoratum
+fp-157-7.txt	Calycanthus occidentalis
+fp-157-7.txt	Calycanthaceae
+fp-157-8.txt	Umbellularia californica
+fp-157-8.txt	Lauraceae
+fp-157-9.txt	Anemopsis californica
+fp-157-9.txt	Saururaceae
+fp-157-10.txt	Ceratophyllum demersum
+fp-157-10.txt	Ceratophyllaceae
+fp-165-2.txt	Carlowrightia arizonica
+fp-165-2.txt	Acanthaceae
+fp-165-3.txt	Justicia californica
+fp-165-4.txt	Sambucus nigra subsp. caerulea
+fp-165-4.txt	Adoxaceae
+fp-165-5.txt	Sambucus racemosa var. racemosa
+fp-165-6.txt	Viburnum ellipticum
+fp-165-7.txt	Carpobrotus chilensis
+fp-165-7.txt	Carpobrotus edulis
+fp-165-7.txt	Aizoaceae
+fp-165-8.txt	Conicosia pugioniformis
+fp-165-9.txt	Cypselea humifusa
+fp-165-10.txt	Mesembryanthemum nodiflorum
+fp-165-10.txt	Mesembryanthemum crystallinum
+fp-169-2.txt	Sesuvium verrucosum
+fp-169-3.txt	Tetragonia tetragonioides
+fp-169-4.txt	Trianthema portulacastrum
+fp-169-5.txt	Alternanthera philoxeroides
+fp-169-6.txt	Amaranthus albus
+fp-169-7.txt	Amaranthus fimbriatus
+fp-169-7.txt	Amaranthus californicus
+fp-169-8.txt	Amaranthus powellii
+fp-169-8.txt	Amaranthus palmeri
+fp-169-9.txt	Amaranthus torreyi
+fp-169-10.txt	Amaranthus watsonii
+fp-169-11.txt	Nitrophila occidentalis
+fp-169-11.txt	Nitrophila mohavensis
+fp-177-2.txt	Tidestromia suffruticosa var. oblongifolia
+fp-177-3.txt	Malosma laurina
+fp-177-3.txt	Anacardiaceae
+fp-177-4.txt	Rhus integrifolia
+fp-177-4.txt	Rhus aromatica
+fp-177-5.txt	Rhus ovata
+fp-177-6.txt	Toxicodendron diversilobum
+fp-177-7.txt	Ammi visnaga
+fp-177-7.txt	Apiaceae
+fp-177-8.txt	Ammoselinum giganteum
+fp-177-9.txt	Angelica callii
+fp-177-10.txt	Angelica lineariloba
+fp-179-2.txt	Angelica lucida
+fp-179-3.txt	Anthriscus caucalis
+fp-179-4.txt	Apiastrum angustifolium
+fp-179-5.txt	Berula erecta
+fp-179-6.txt	Bowlesia incana
+fp-179-7.txt	Cicuta douglasii
+fp-179-8.txt	Conioselinum pacificum
+fp-179-9.txt	Conium maculatum
+fp-179-10.txt	Cyclospermum leptophyllum
+fp-185-2.txt	Cymopterus deserticola
+fp-185-3.txt	Cymopterus terebinthinus var. californicus
+fp-185-4.txt	Daucus pusillus
+fp-185-5.txt	Eryngium constancei
+fp-185-6.txt	Eryngium pinnatisectum
+fp-185-7.txt	Eryngium vaseyi var. vaseyi
+fp-185-8.txt	Foeniculum vulgare
+fp-185-9.txt	Glehnia littoralis subsp. leiocarpa
+fp-185-10.txt	Heracleum maximum
+fp-191-2.txt	Ligusticum grayi
+fp-191-3.txt	Lilaeopsis masonii
+fp-191-4.txt	Lomatium californicum
+fp-191-5.txt	Lomatium ciliolatum
+fp-191-6.txt	Lomatium congdonii
+fp-191-7.txt	Lomatium hooveri
+fp-191-8.txt	Lomatium insulare
+fp-191-9.txt	Lomatium mohavense
+fp-191-10.txt	Lomatium observatorium
+fp-195-2.txt	Lomatium peckianum
+fp-195-3.txt	Lomatium shevockii
+fp-195-4.txt	Lomatium stebbinsii
+fp-195-5.txt	Lomatium tracyi
+fp-195-6.txt	Oenanthe sarmentosa
+fp-195-7.txt	Oreonana purpurascens
+fp-195-8.txt	Orogenia fusiformis
+fp-195-9.txt	Osmorhiza brachypoda
+fp-195-10.txt	Osmorhiza occidentalis
+fp-201-2.txt	Oxypolis occidentalis
+fp-201-3.txt	Perideridia bacigalupii
+fp-201-4.txt	Perideridia bolanderi subsp. bolanderi
+fp-201-5.txt	Perideridia howellii
+fp-201-6.txt	Perideridia lemmonii
+fp-201-7.txt	Podistera nevadensis
+fp-201-8.txt	Sanicula maritima
+fp-201-9.txt	Sanicula tracyi
+fp-201-10.txt	Scandix pecten-veneris
+fp-205-2.txt	Sium suave
+fp-205-3.txt	Spermolepis echinata
+fp-205-4.txt	Sphenosciadium capitellatum
+fp-205-5.txt	Tauschia arguta
+fp-205-6.txt	Tauschia howellii
+fp-205-7.txt	Tauschia parishii
+fp-205-8.txt	Torilis arvensis
+fp-205-9.txt	Yabea microcarpa
+fp-205-10.txt	Amsonia tomentosa
+fp-205-10.txt	Apocynaceae
+fp-209-2.txt	Apocynum cannabinum
+fp-209-2.txt	Apocynum androsaemifolium
+fp-209-3.txt	Araujia sericifera
+fp-209-4.txt	Asclepias asperula subsp. asperula
+fp-209-5.txt	Asclepias californica
+fp-209-6.txt	Asclepias erosa
+fp-209-7.txt	Cycladenia humilis var. humilis
+fp-209-8.txt	Funastrum cynanchoides var. hartwegii
+fp-209-9.txt	Funastrum utahense
+fp-209-10.txt	Matelea parvifolia
+fp-233-2.txt	Vinca major
+fp-233-3.txt	Pilostyles thurberi
+fp-233-3.txt	Apodanthaceae
+fp-233-4.txt	Aralia californica
+fp-233-4.txt	Araliaceae
+fp-233-5.txt	Hydrocotyle verticillata
+fp-233-6.txt	Acamptopappus sphaerocephalus
+fp-233-6.txt	Acamptopappus shockleyi
+fp-233-6.txt	Asteraceae
+fp-233-7.txt	Achillea millefolium
+fp-233-8.txt	Achyrachaena mollis
+fp-233-9.txt	Acourtia microcephala
+fp-233-10.txt	Acroptilon repens
+fp-237-2.txt	Adenocaulon bicolor
+fp-237-3.txt	Adenophyllum porophylloides
+fp-237-3.txt	Adenophyllum cooperi
+fp-237-4.txt	Ageratina herbacea
+fp-237-5.txt	Ageratina shastensis
+fp-237-5.txt	Ageratina occidentalis
+fp-237-6.txt	Agoseris aurantiaca var. aurantiaca
+fp-237-6.txt	Agoseris apargioides var. apargioides
+fp-237-7.txt	Agoseris grandiflora
+fp-237-7.txt	Agoseris glauca var. glauca
+fp-237-7.txt	Agoseris hirsuta
+fp-237-7.txt	Agoseris heterophylla
+fp-237-8.txt	Agoseris monticola
+fp-237-8.txt	Agoseris retrorsa
+fp-237-8.txt	Agoseris parviflora
+fp-237-9.txt	Almutaster pauciflorus
+fp-237-10.txt	Amauriopsis dissecta
+fp-241-2.txt	Amblyopappus pusillus
+fp-241-3.txt	Ambrosia artemisiifolia
+fp-241-3.txt	Ambrosia acanthicarpa
+fp-241-4.txt	Ambrosia chenopodiifolia
+fp-241-4.txt	Ambrosia chamissonis
+fp-241-5.txt	Ambrosia eriocentra
+fp-241-5.txt	Ambrosia ilicifolia
+fp-241-5.txt	Ambrosia dumosa
+fp-241-6.txt	Ambrosia monogyra
+fp-241-6.txt	Ambrosia pumila
+fp-241-6.txt	Ambrosia psilostachya
+fp-241-7.txt	Ambrosia salsola var. salsola
+fp-241-8.txt	Amphipappus fremontii var. fremontii
+fp-241-9.txt	Anaphalis margaritacea
+fp-241-10.txt	Ancistrocarphus keilii
+fp-241-10.txt	Ancistrocarphus filagineus
+fp-247-2.txt	Anisocarpus scabridus
+fp-247-2.txt	Anisocarpus madioides
+fp-247-3.txt	Anisocoma acaulis
+fp-247-4.txt	Antennaria corymbosa
+fp-247-4.txt	Antennaria argentea
+fp-247-5.txt	Antennaria geyeri
+fp-247-5.txt	Antennaria dimorpha
+fp-247-6.txt	Antennaria media
+fp-247-6.txt	Antennaria rosea subsp. confinis
+fp-247-7.txt	Anthemis cotula
+fp-247-8.txt	Arctium minus
+fp-247-9.txt	Arctotheca calendula
+fp-247-10.txt	Arida carnosa
+fp-247-10.txt	Arida arizonica
+fp-255-2.txt	Arnica chamissonis
+fp-255-2.txt	Arnica cernua
+fp-255-3.txt	Arnica dealbata
+fp-255-4.txt	Arnica lanceolata subsp. prima
+fp-255-5.txt	Arnica spathulata
+fp-255-5.txt	Arnica sororia
+fp-255-6.txt	Arnica viscosa
+fp-255-6.txt	Arnica venosa
+fp-255-7.txt	Artemisia californica
+fp-255-7.txt	Artemisia biennis
+fp-255-8.txt	Artemisia cana subsp. bolanderi
+fp-255-8.txt	Artemisia douglasiana
+fp-255-9.txt	Artemisia spinescens
+fp-255-9.txt	Artemisia pycnocephala
+fp-255-10.txt	Artemisia tridentata
+fp-259-2.txt	Atrichoseris platyphylla
+fp-259-3.txt	Baccharis glutinosa
+fp-259-4.txt	Baccharis pilularis subsp. consanguinea
+fp-259-5.txt	Baccharis plummerae subsp. glabrata
+fp-259-5.txt	Baccharis plummerae subsp. plummerae
+fp-259-6.txt	Baccharis salicifolia subsp. salicifolia
+fp-259-6.txt	Baccharis salicina
+fp-259-7.txt	Baccharis vanessae
+fp-259-7.txt	Baccharis sarothroides
+fp-259-8.txt	Bahia neomexicana
+fp-259-9.txt	Bahiopsis parishii
+fp-259-10.txt	Bahiopsis reticulata
+fp-263-2.txt	Baileya multiradiata
+fp-263-3.txt	Baileya pleniradiata
+fp-263-3.txt	Baileya pauciradiata
+fp-263-4.txt	Balsamorhiza lanata
+fp-263-5.txt	Balsamorhiza serrata
+fp-263-5.txt	Balsamorhiza sagittata
+fp-263-5.txt	Balsamorhiza macrolepis
+fp-263-6.txt	Bebbia juncea var. aspera
+fp-263-7.txt	Bellis perennis
+fp-263-8.txt	Benitoa occidentalis
+fp-263-9.txt	Bidens frondosa
+fp-263-9.txt	Bidens pilosa
+fp-263-10.txt	Bidens laevis
+fp-269-2.txt	Blennosperma bakeri
+fp-269-2.txt	Blennosperma nanum var. nanum
+fp-269-3.txt	Blepharipappus scaber
+fp-269-4.txt	Blepharizonia plumosa
+fp-269-4.txt	Blepharizonia laxa
+fp-269-5.txt	Brickellia atractyloides var. arguta
+fp-269-5.txt	Brickellia californica
+fp-269-6.txt	Brickellia grandiflora
+fp-269-6.txt	Brickellia frutescens
+fp-269-7.txt	Brickellia greenei
+fp-269-7.txt	Brickellia knappiana
+fp-269-7.txt	Brickellia incana
+fp-269-8.txt	Brickellia longifolia var. longifolia
+fp-269-8.txt	Brickellia oblongifolia var. linifolia
+fp-269-8.txt	Brickellia nevinii
+fp-269-9.txt	Cacaliopsis nardosmia
+fp-269-10.txt	Calycadenia mollis
+fp-269-10.txt	Calycadenia hooveri
+fp-273-2.txt	Calycadenia multiglandulosa
+fp-273-2.txt	Calycadenia spicata
+fp-273-2.txt	Calycadenia oppositifolia
+fp-273-3.txt	Calycadenia villosa
+fp-273-3.txt	Calycadenia truncata
+fp-273-4.txt	Calycoseris parryi
+fp-273-5.txt	Carduus nutans
+fp-273-5.txt	Carduus acanthoides subsp. acanthoides
+fp-273-5.txt	Carduus pycnocephalus subsp. pycnocephalus
+fp-273-6.txt	Carlquistia muirii
+fp-273-7.txt	Carthamus lanatus
+fp-273-7.txt	Carthamus creticus
+fp-273-8.txt	Centaurea cyanus
+fp-273-8.txt	Centaurea calcitrapa
+fp-273-9.txt	Centaurea stoebe subsp. micranthos
+fp-273-9.txt	Centaurea solstitialis
+fp-273-10.txt	Centaurea virgata subsp. squarrosa
+fp-279-2.txt	Centromadia fitchii
+fp-279-3.txt	Centromadia parryi subsp. rudis
+fp-279-3.txt	Centromadia pungens subsp. pungens
+fp-279-3.txt	Centromadia parryi subsp. congdonii
+fp-279-3.txt	Centromadia pungens subsp. laevis
+fp-279-3.txt	Centromadia parryi subsp. australis
+fp-279-3.txt	Centromadia pungens
+fp-279-4.txt	Chaenactis artemisiifolia
+fp-279-4.txt	Chaenactis alpigena
+fp-279-5.txt	Chaenactis carphoclinia var. carphoclinia
+fp-279-5.txt	Chaenactis carphoclinia var. peirsonii
+fp-279-5.txt	Chaenactis douglasii var. douglasii
+fp-279-6.txt	Chaenactis glabriuscula var. megacephala
+fp-279-6.txt	Chaenactis fremontii
+fp-279-7.txt	Chaenactis nevadensis
+fp-279-7.txt	Chaenactis macrantha
+fp-279-8.txt	Chaenactis stevioides
+fp-279-8.txt	Chaenactis santolinoides
+fp-279-9.txt	Chaenactis suffrutescens
+fp-279-10.txt	Chaenactis xantiana
+fp-287-2.txt	Chaetadelpha wheeleri
+fp-287-3.txt	Chaetopappa ericoides
+fp-287-4.txt	Chloracantha spinosa var. spinosa
+fp-287-5.txt	Chondrilla juncea
+fp-287-6.txt	Chrysothamnus greenei
+fp-287-6.txt	Chrysothamnus depressus
+fp-287-7.txt	Chrysothamnus viscidiflorus subsp. viscidiflorus
+fp-287-7.txt	Chrysothamnus viscidiflorus subsp. puberulus
+fp-287-7.txt	Chrysothamnus humilis
+fp-287-8.txt	Cichorium intybus
+fp-287-9.txt	Cirsium andrewsii
+fp-287-9.txt	Cirsium andersonii
+fp-287-10.txt	Cirsium brevistylum
+fp-287-10.txt	Cirsium arvense
+fp-291-2.txt	Cirsium crassicaule
+fp-291-2.txt	Cirsium ciliolatum
+fp-291-3.txt	Cirsium fontinale var. fontinale
+fp-291-3.txt	Cirsium fontinale var. campylon
+fp-291-3.txt	Cirsium douglasii var. breweri
+fp-291-4.txt	Cirsium hydrophilum var. hydrophilum
+fp-291-5.txt	Cirsium occidentale var. venustum
+fp-291-5.txt	Cirsium occidentale var. candidissimum
+fp-291-5.txt	Cirsium occidentale var. occidentale
+fp-291-6.txt	Cirsium ochrocentrum var. ochrocentrum
+fp-291-7.txt	Cirsium quercetorum
+fp-291-8.txt	Cirsium remotifolium var. remotifolium
+fp-291-8.txt	Cirsium rhothophilum
+fp-291-9.txt	Cirsium scariosum var. citrinum
+fp-291-10.txt	Cirsium undulatum
+fp-291-10.txt	Cirsium scariosum var. congdonii
+fp-297-2.txt	Cirsium vulgare
+fp-297-3.txt	Constancea nevinii
+fp-297-4.txt	Coreopsis tinctoria
+fp-297-4.txt	Coreopsis lanceolata
+fp-297-5.txt	Corethrogyne filaginifolia
+fp-297-6.txt	Cotula coronopifolia
+fp-297-7.txt	Crepis monticola
+fp-297-7.txt	Crepis capillaris
+fp-297-7.txt	Crepis acuminata
+fp-297-8.txt	Crepis occidentalis subsp. occidentalis
+fp-297-8.txt	Crepis nana
+fp-297-9.txt	Crepis runcinata subsp. hallii
+fp-297-9.txt	Crepis pleurocarpa
+fp-297-10.txt	Crocidium multicaule
+fp-301-2.txt	Cuniculotinus gramineus
+fp-301-2.txt	Crupina vulgaris
+fp-301-3.txt	Cynara cardunculus subsp. cardunculus
+fp-301-3.txt	Cynara cardunculus subsp. flavescens
+fp-301-4.txt	Deinandra clementina
+fp-301-4.txt	Deinandra arida
+fp-301-5.txt	Deinandra corymbosa
+fp-301-5.txt	Deinandra conjugens
+fp-301-6.txt	Deinandra floribunda
+fp-301-6.txt	Deinandra fasciculata
+fp-301-7.txt	Deinandra halliana
+fp-301-8.txt	Deinandra increscens subsp. increscens
+fp-301-8.txt	Deinandra kelloggii
+fp-301-8.txt	Deinandra lobbii
+fp-301-9.txt	Deinandra minthornii
+fp-301-10.txt	Deinandra paniculata
+fp-301-10.txt	Deinandra pallida
+fp-305-2.txt	Delairea odorata
+fp-305-3.txt	Dicoria canescens
+fp-305-4.txt	Dieteria asteroides var. lagunensis
+fp-305-4.txt	Dieteria asteroides var. asteroides
+fp-305-5.txt	Dieteria canescens var. ziegleri
+fp-305-5.txt	Dieteria canescens var. canescens
+fp-305-6.txt	Dimeresia howellii
+fp-305-7.txt	Dimorphotheca fruticosa
+fp-305-7.txt	Dimorphotheca ecklonis
+fp-305-7.txt	Dimorphotheca sinuata
+fp-305-8.txt	Dittrichia graveolens
+fp-305-9.txt	Eastwoodia elegans
+fp-305-10.txt	Eatonella nivea
+fp-311-2.txt	Eclipta prostrata
+fp-311-3.txt	Encelia californica
+fp-311-3.txt	Encelia actoni
+fp-311-4.txt	Encelia frutescens
+fp-311-4.txt	Encelia farinosa
+fp-311-5.txt	Enceliopsis nudicaulis
+fp-311-5.txt	Enceliopsis covillei
+fp-311-6.txt	Ericameria arborescens
+fp-311-6.txt	Ericameria albida
+fp-311-7.txt	Ericameria cooperi var. cooperi
+fp-311-7.txt	Ericameria bloomeri
+fp-311-8.txt	Ericameria cuneata var. spathulata
+fp-311-8.txt	Ericameria ericoides
+fp-311-9.txt	Ericameria linearifolia
+fp-311-9.txt	Ericameria fasciculata
+fp-311-9.txt	Ericameria gilmanii
+fp-311-10.txt	Ericameria nauseosa var. speciosa
+fp-311-10.txt	Ericameria nauseosa var. washoensis
+fp-311-10.txt	Ericameria nauseosa var. leiosperma
+fp-311-10.txt	Ericameria nauseosa var. ceruminosa
+fp-319-2.txt	Ericameria palmeri var. palmeri
+fp-319-2.txt	Ericameria paniculata
+fp-319-3.txt	Ericameria parryi var. nevadensis
+fp-319-3.txt	Ericameria parryi var. latior
+fp-319-3.txt	Ericameria teretifolia
+fp-319-4.txt	Erigeron algidus
+fp-319-4.txt	Erigeron aliceae
+fp-319-4.txt	Erigeron aequifolius
+fp-319-5.txt	Erigeron aphanactis
+fp-319-5.txt	Erigeron argentatus
+fp-319-5.txt	Erigeron barbellulatus
+fp-319-6.txt	Erigeron blochmaniae
+fp-319-6.txt	Erigeron biolettii
+fp-319-7.txt	Erigeron canadensis
+fp-319-7.txt	Erigeron bonariensis
+fp-319-8.txt	Erigeron breweri var. bisanctus
+fp-319-8.txt	Erigeron breweri var. breweri
+fp-319-8.txt	Erigeron cervinus
+fp-319-9.txt	Erigeron clokeyi var. pinzliae
+fp-319-9.txt	Erigeron compactus
+fp-319-10.txt	Erigeron concinnus var. concinnus
+fp-319-10.txt	Erigeron compositus
+fp-323-2.txt	Erigeron elegantulus
+fp-323-2.txt	Erigeron elmeri
+fp-323-2.txt	Erigeron coulteri
+fp-323-2.txt	Erigeron eatonii var. sonnei
+fp-323-3.txt	Erigeron foliosus var. foliosus
+fp-323-3.txt	Erigeron filifolius
+fp-323-4.txt	Erigeron glacialis var. glacialis
+fp-323-5.txt	Erigeron greenei
+fp-323-5.txt	Erigeron glaucus
+fp-323-6.txt	Erigeron inornatus var. inornatus
+fp-323-6.txt	Erigeron inornatus var. calidipetris
+fp-323-6.txt	Erigeron klamathensis
+fp-323-7.txt	Erigeron linearis
+fp-323-7.txt	Erigeron lassenianus var. lassenianus
+fp-323-8.txt	Erigeron lonchophyllus
+fp-323-9.txt	Erigeron multiceps
+fp-323-9.txt	Erigeron nivalis
+fp-323-9.txt	Erigeron miser
+fp-323-10.txt	Erigeron parishii
+fp-323-10.txt	Erigeron philadelphicus var. philadelphicus
+fp-323-10.txt	Erigeron petrophilus var. viscidulus
+fp-327-2.txt	Erigeron pumilus var. intermedius
+fp-327-2.txt	Erigeron reductus var. angustatus
+fp-327-2.txt	Erigeron pygmaeus
+fp-327-3.txt	Erigeron sanctarum
+fp-327-3.txt	Erigeron serpentinus
+fp-327-3.txt	Erigeron robustior
+fp-327-4.txt	Erigeron strigosus var. strigosus
+fp-327-4.txt	Erigeron supplex
+fp-327-4.txt	Erigeron sumatrensis
+fp-327-5.txt	Erigeron uncialis var. uncialis
+fp-327-5.txt	Erigeron vagus
+fp-327-5.txt	Erigeron utahensis
+fp-327-6.txt	Eriophyllum ambiguum var. ambiguum
+fp-327-6.txt	Eriophyllum ambiguum var. paleaceum
+fp-327-7.txt	Eriophyllum confertiflorum var. confertiflorum
+fp-327-8.txt	Eriophyllum congdonii
+fp-327-9.txt	Eriophyllum jepsonii
+fp-327-10.txt	Eriophyllum lanatum var. obovatum
+fp-327-10.txt	Eriophyllum lanatum var. arachnoideum
+fp-329-2.txt	Eriophyllum lanosum
+fp-329-3.txt	Eriophyllum latilobum
+fp-329-4.txt	Eriophyllum mohavense
+fp-329-5.txt	Eriophyllum multicaule
+fp-329-6.txt	Eriophyllum nubigenum
+fp-329-7.txt	Eriophyllum pringlei
+fp-329-8.txt	Eriophyllum staechadifolium
+fp-329-9.txt	Eriophyllum wallacei
+fp-329-10.txt	Eucephalus ledophyllus var. covillei
+fp-329-10.txt	Eucephalus glabratus
+fp-335-2.txt	Euchiton sphaericus
+fp-335-2.txt	Euchiton involucratus
+fp-335-3.txt	Euphrosyne acerosa
+fp-335-4.txt	Euphrosyne nevadensis
+fp-335-5.txt	Eurybia radulina
+fp-335-5.txt	Eurybia integrifolia
+fp-335-7.txt	Galinsoga parviflora var. parviflora
+fp-335-8.txt	Gamochaeta ustulata
+fp-335-9.txt	Geraea viscida
+fp-335-9.txt	Geraea canescens
+fp-335-10.txt	Glebionis segetum
+fp-339-2.txt	Glyptopleura setulosa
+fp-339-3.txt	Gnaphalium palustre
+fp-339-4.txt	Grindelia hallii
+fp-339-4.txt	Grindelia camporum
+fp-339-5.txt	Grindelia squarrosa var. serrulata
+fp-339-5.txt	Grindelia hirsutula
+fp-339-6.txt	Grindelia stricta var. angustifolia
+fp-339-6.txt	Grindelia stricta var. stricta
+fp-339-6.txt	Grindelia stricta var. platyphylla
+fp-339-7.txt	Gutierrezia microcephala
+fp-339-7.txt	Gutierrezia californica
+fp-339-8.txt	Gutierrezia sarothrae
+fp-339-9.txt	Harmonia hallii
+fp-339-9.txt	Harmonia doris-nilesiae
+fp-339-9.txt	Harmonia guggolziorum
+fp-339-10.txt	Harmonia stebbinsii
+fp-339-10.txt	Harmonia nutans
+fp-345-2.txt	Hazardia brickellioides
+fp-345-3.txt	Hazardia cana
+fp-345-4.txt	Hazardia orcuttii
+fp-345-4.txt	Hazardia detonsa
+fp-345-5.txt	Hazardia stenolepis
+fp-345-5.txt	Hazardia squarrosa
+fp-345-5.txt	Hazardia whitneyi
+fp-345-6.txt	Hecastocleis shockleyi
+fp-345-7.txt	Hedypnois cretica
+fp-345-8.txt	Helenium bigelovii
+fp-345-9.txt	Helianthella castanea
+fp-345-10.txt	Helianthus californicus
+fp-345-10.txt	Helianthus bolanderi
+fp-345-10.txt	Helianthus gracilentus
+fp-349-2.txt	Helianthus nuttallii subsp. nuttallii
+fp-349-2.txt	Helianthus niveus subsp. tephrodes
+fp-349-2.txt	Helianthus nuttallii subsp. parishii
+fp-349-3.txt	Heliomeris multiflora var. nevadensis
+fp-349-3.txt	Helichrysum petiolare
+fp-349-4.txt	Helminthotheca echioides
+fp-349-5.txt	Hemizonella minima
+fp-349-6.txt	Hemizonia congesta subsp. calyculata
+fp-349-6.txt	Hemizonia congesta subsp. clevelandii
+fp-349-6.txt	Hemizonia congesta subsp. congesta
+fp-349-6.txt	Hemizonia congesta subsp. luzulifolia
+fp-349-7.txt	Hesperevax acaulis var. robustior
+fp-349-7.txt	Hesperevax acaulis var. acaulis
+fp-349-7.txt	Hesperevax acaulis var. ambusticola
+fp-349-8.txt	Hesperevax caulescens
+fp-349-9.txt	Hesperevax sparsiflora var. sparsiflora
+fp-349-9.txt	Hesperevax sparsiflora var. brevifolia
+fp-355-2.txt	Heterotheca grandiflora
+fp-355-3.txt	Heterotheca oregona
+fp-355-3.txt	Heterotheca monarchensis
+fp-355-4.txt	Heterotheca sessiliflora subsp. bolanderi
+fp-355-4.txt	Heterotheca sessiliflora subsp. fastigiata
+fp-355-4.txt	Heterotheca sessiliflora subsp. sessiliflora
+fp-355-4.txt	Heterotheca sessiliflora subsp. echioides
+fp-355-5.txt	Heterotheca subaxillaris subsp. latifolia
+fp-355-5.txt	Heterotheca shevockii
+fp-355-6.txt	Hieracium bolanderi
+fp-355-6.txt	Hieracium albiflorum
+fp-355-6.txt	Hieracium argutum
+fp-355-7.txt	Hieracium horridum
+fp-355-8.txt	Holocarpha macradenia
+fp-355-8.txt	Holocarpha heermannii
+fp-355-9.txt	Holocarpha virgata subsp. virgata
+fp-355-9.txt	Holocarpha obconica
+fp-355-10.txt	Holozonia filipes
+fp-359-2.txt	Hulsea brevifolia
+fp-359-2.txt	Hulsea californica
+fp-359-2.txt	Hulsea algida
+fp-359-3.txt	Hulsea mexicana
+fp-359-3.txt	Hulsea nana
+fp-359-3.txt	Hulsea heterochroma
+fp-359-4.txt	Hulsea vestita subsp. parryi
+fp-359-4.txt	Hulsea vestita subsp. vestita
+fp-359-5.txt	Hymenopappus filifolius var. megacephalus
+fp-359-5.txt	Hymenopappus filifolius var. eriopodus
+fp-359-6.txt	Hymenothrix wrightii
+fp-359-7.txt	Hymenoxys hoopesii
+fp-359-8.txt	Hymenoxys lemmonii
+fp-359-9.txt	Hypochaeris glabra
+fp-359-10.txt	Ionactis alpina
+fp-365-2.txt	Isocoma acradenia var. eremophila
+fp-365-2.txt	Isocoma acradenia var. bracteosa
+fp-365-2.txt	Isocoma acradenia var. acradenia
+fp-365-2.txt	Isocoma acradenia
+fp-365-3.txt	Isocoma menziesii var. menziesii
+fp-365-3.txt	Isocoma arguta
+fp-365-4.txt	Isocoma menziesii var. sedoides
+fp-365-4.txt	Isocoma menziesii var. vernonioides
+fp-365-5.txt	Iva hayesiana
+fp-365-5.txt	Iva axillaris
+fp-365-6.txt	Jaumea carnosa
+fp-365-7.txt	Jensia yosemitana
+fp-365-7.txt	Jensia rammii
+fp-365-8.txt	Kyhosia bolanderi
+fp-365-9.txt	Lactuca saligna
+fp-365-9.txt	Lactuca biennis
+fp-365-10.txt	Lactuca serriola
+fp-365-10.txt	Lactuca virosa
+fp-365-10.txt	Lactuca tatarica subsp. pulchella
+fp-371-2.txt	Laennecia coulteri
+fp-371-3.txt	Lagophylla dichotoma
+fp-371-3.txt	Lagophylla minor
+fp-371-3.txt	Lagophylla glandulosa
+fp-371-4.txt	Lagophylla ramosissima
+fp-371-5.txt	Lasthenia californica subsp. macrantha
+fp-371-5.txt	Lasthenia californica subsp. californica
+fp-371-5.txt	Lasthenia burkei
+fp-371-6.txt	Lasthenia coronaria
+fp-371-6.txt	Lasthenia conjugens
+fp-371-6.txt	Lasthenia debilis
+fp-371-7.txt	Lasthenia glabrata subsp. glabrata
+fp-371-7.txt	Lasthenia glabrata subsp. coulteri
+fp-371-7.txt	Lasthenia ferrisiae
+fp-371-8.txt	Lasthenia gracilis
+fp-371-9.txt	Lasthenia platycarpha
+fp-371-9.txt	Lasthenia microglossa
+fp-371-9.txt	Lasthenia leptalea
+fp-371-10.txt	Layia carnosa
+fp-371-10.txt	Layia chrysanthemoides
+fp-371-10.txt	Layia discoidea
+fp-375-2.txt	Layia fremontii
+fp-375-2.txt	Layia gaillardioides
+fp-375-2.txt	Layia glandulosa
+fp-375-3.txt	Layia hieracioides
+fp-375-3.txt	Layia heterotricha
+fp-375-4.txt	Layia leucopappa
+fp-375-4.txt	Layia munzii
+fp-375-4.txt	Layia jonesii
+fp-375-5.txt	Layia pentachaeta subsp. albida
+fp-375-5.txt	Layia platyglossa
+fp-375-6.txt	Layia septentrionalis
+fp-375-7.txt	Leontodon saxatilis subsp. saxatilis
+fp-375-8.txt	Lepidospartum squamatum
+fp-375-8.txt	Lepidospartum latisquamum
+fp-375-9.txt	Leptosyne bigelovii
+fp-375-9.txt	Leptosyne calliopsidea
+fp-375-9.txt	Leptosyne californica
+fp-375-9.txt	Leptosyne douglasii
+fp-375-10.txt	Leptosyne hamiltonii
+fp-375-10.txt	Leptosyne gigantea
+fp-379-2.txt	Lessingia germanorum
+fp-379-2.txt	Lessingia arachnoidea
+fp-379-3.txt	Lessingia glandulifera var. peirsonii
+fp-379-3.txt	Lessingia glandulifera var. glandulifera
+fp-379-4.txt	Lessingia leptoclada
+fp-379-4.txt	Lessingia hololeuca
+fp-379-5.txt	Lessingia micradenia var. glabrata
+fp-379-5.txt	Lessingia nemaclada
+fp-379-6.txt	Lessingia pectinata var. tenuipes
+fp-379-6.txt	Lessingia tenuis
+fp-379-6.txt	Lessingia ramulosa
+fp-379-7.txt	Lessingia virgata
+fp-379-8.txt	Leucanthemum vulgare
+fp-379-9.txt	Logfia depressa
+fp-379-9.txt	Logfia arizonica
+fp-379-9.txt	Logfia gallica
+fp-379-9.txt	Logfia filaginoides
+fp-379-10.txt	Luina hypoleuca
+fp-385-2.txt	Machaeranthera tanacetifolia
+fp-385-3.txt	Madia anomala
+fp-385-3.txt	Madia exigua
+fp-385-3.txt	Madia elegans
+fp-385-4.txt	Madia radiata
+fp-385-4.txt	Madia glomerata
+fp-385-4.txt	Madia gracilis
+fp-385-5.txt	Madia subspicata
+fp-385-5.txt	Madia sativa
+fp-385-6.txt	Malacothrix clevelandii
+fp-385-6.txt	Malacothrix coulteri
+fp-385-6.txt	Malacothrix californica
+fp-385-7.txt	Malacothrix foliosa subsp. foliosa
+fp-385-7.txt	Malacothrix glabrata
+fp-385-7.txt	Malacothrix floccifera
+fp-385-8.txt	Malacothrix phaeocarpa
+fp-385-8.txt	Malacothrix incana
+fp-385-8.txt	Malacothrix indecora
+fp-385-9.txt	Malacothrix saxatilis var. arachnoidea
+fp-385-9.txt	Malacothrix saxatilis var. implicata
+fp-385-9.txt	Malacothrix saxatilis var. tenuifolia
+fp-385-9.txt	Malacothrix saxatilis var. saxatilis
+fp-385-9.txt	Malacothrix saxatilis var. commutata
+fp-385-10.txt	Malacothrix squalida
+fp-385-10.txt	Malacothrix stebbinsii
+fp-385-10.txt	Malacothrix torreyi
+fp-385-10.txt	Malacothrix sonchoides
+fp-391-2.txt	Malperia tenuis
+fp-391-3.txt	Matricaria occidentalis
+fp-391-3.txt	Matricaria discoidea
+fp-391-4.txt	Micropus californicus var. californicus
+fp-391-4.txt	Micropus californicus var. subvestitus
+fp-391-4.txt	Micropus amphibolus
+fp-391-5.txt	Microseris borealis
+fp-391-5.txt	Microseris acuminata
+fp-391-5.txt	Microseris campestris
+fp-391-5.txt	Microseris bigelovii
+fp-391-6.txt	Microseris elegans
+fp-391-6.txt	Microseris douglasii subsp. tenella
+fp-391-6.txt	Microseris douglasii subsp. douglasii
+fp-391-6.txt	Microseris douglasii subsp. platycarpha
+fp-391-7.txt	Microseris laciniata subsp. laciniata
+fp-391-7.txt	Microseris sylvatica
+fp-391-7.txt	Microseris nutans
+fp-391-7.txt	Microseris paludosa
+fp-391-8.txt	Monolopia gracilens
+fp-391-8.txt	Monolopia congdonii
+fp-391-9.txt	Monolopia major
+fp-391-9.txt	Monolopia lanceolata
+fp-391-10.txt	Monolopia stricta
+fp-395-2.txt	Monoptilon bellidiforme
+fp-395-2.txt	Monoptilon bellioides
+fp-395-3.txt	Munzothamnus blairii
+fp-395-4.txt	Nestotus stenophyllus
+fp-395-5.txt	Nicolletia occidentalis
+fp-395-6.txt	Nothocalais troximoides
+fp-395-6.txt	Nothocalais alpestris
+fp-395-7.txt	Onopordum acanthium subsp. acanthium
+fp-395-7.txt	Onopordum illyricum
+fp-395-8.txt	Oreostemma alpigenum var. andersonii
+fp-395-9.txt	Orochaenactis thysanocarpha
+fp-395-10.txt	Osmadenia tenella
+fp-399-2.txt	Packera bernardina
+fp-399-3.txt	Packera bolanderi var. bolanderi
+fp-399-3.txt	Packera breweri
+fp-399-4.txt	Packera clevelandii
+fp-399-5.txt	Packera eurycephala var. lewisrosei
+fp-399-5.txt	Packera eurycephala var. eurycephala
+fp-399-6.txt	Packera greenei
+fp-399-6.txt	Packera ganderi
+fp-399-7.txt	Packera ionophylla
+fp-399-8.txt	Packera macounii
+fp-399-8.txt	Packera layneae
+fp-399-9.txt	Palafoxia arida
+fp-399-10.txt	Pectis papposa var. papposa
+fp-403-2.txt	Pentachaeta alsinoides
+fp-403-2.txt	Pentachaeta bellidiflora
+fp-403-2.txt	Pentachaeta aurea subsp. aurea
+fp-403-3.txt	Pentachaeta fragilis
+fp-403-3.txt	Pentachaeta lyonii
+fp-403-3.txt	Pentachaeta exilis subsp. aeolica
+fp-403-4.txt	Pericome caudata
+fp-403-5.txt	Perityle inyoensis
+fp-403-5.txt	Perityle emoryi
+fp-403-6.txt	Petasites frigidus var. palmatus
+fp-403-7.txt	Petradoria pumila var. pumila
+fp-403-8.txt	Peucephyllum schottii
+fp-403-9.txt	Phalacroseris bolanderi
+fp-403-10.txt	Pleiacanthus spinosus
+fp-409-2.txt	Pleurocoronis pluriseta
+fp-409-3.txt	Pluchea sericea
+fp-409-3.txt	Pluchea odorata var. odorata
+fp-409-4.txt	Porophyllum gracile
+fp-409-5.txt	Prenanthella exigua
+fp-409-6.txt	Psathyrotes ramosissima
+fp-409-6.txt	Psathyrotes annua
+fp-409-7.txt	Pseudobahia heermannii
+fp-409-7.txt	Pseudobahia peirsonii
+fp-409-7.txt	Pseudobahia bahiifolia
+fp-409-8.txt	Pseudognaphalium californicum
+fp-409-8.txt	Pseudognaphalium biolettii
+fp-409-9.txt	Pseudognaphalium microcephalum
+fp-409-9.txt	Pseudognaphalium stramineum
+fp-409-9.txt	Pseudognaphalium roseum
+fp-409-9.txt	Pseudognaphalium ramosissimum
+fp-409-10.txt	Pseudognaphalium thermale
+fp-409-10.txt	Pseudognaphalium luteoalbum
+fp-413-2.txt	Psilocarphus brevissimus var. brevissimus
+fp-413-2.txt	Psilocarphus chilensis
+fp-413-2.txt	Psilocarphus oregonus
+fp-413-3.txt	Psilostrophe cooperi
+fp-413-4.txt	Pyrrocoma carthamoides var. cusickii
+fp-413-4.txt	Pyrrocoma apargioides
+fp-413-5.txt	Pyrrocoma lanceolata var. subviscosa
+fp-413-5.txt	Pyrrocoma hirta var. lanulosa
+fp-413-5.txt	Pyrrocoma lucida
+fp-413-5.txt	Pyrrocoma hirta var. hirta
+fp-413-6.txt	Pyrrocoma racemosa var. congesta
+fp-413-6.txt	Pyrrocoma racemosa var. sessiliflora
+fp-413-6.txt	Pyrrocoma racemosa var. racemosa
+fp-413-6.txt	Pyrrocoma racemosa var. pinetorum
+fp-413-7.txt	Pyrrocoma uniflora var. uniflora
+fp-413-7.txt	Pyrrocoma uniflora var. gossypina
+fp-413-8.txt	Rafinesquia neomexicana
+fp-413-9.txt	Raillardella scaposa
+fp-413-9.txt	Raillardella argentea
+fp-413-9.txt	Raillardella pringlei
+fp-413-10.txt	Rigiopappus leptocladus
+fp-419-2.txt	Rudbeckia hirta var. pulcherrima
+fp-419-2.txt	Rudbeckia occidentalis
+fp-419-2.txt	Rudbeckia glaucescens
+fp-419-3.txt	Sanvitalia abertii
+fp-419-4.txt	Saussurea americana
+fp-419-5.txt	Senecio astephanus
+fp-419-5.txt	Senecio aronicoides
+fp-419-6.txt	Senecio californicus
+fp-419-6.txt	Senecio blochmaniae
+fp-419-7.txt	Senecio clarkianus
+fp-419-8.txt	Senecio fremontii var. fremontii
+fp-419-8.txt	Senecio fremontii var. occidentalis
+fp-419-9.txt	Senecio hydrophiloides
+fp-419-9.txt	Senecio glomeratus
+fp-419-10.txt	Senecio integerrimus var. major
+fp-419-10.txt	Senecio integerrimus var. exaltatus
+fp-425-2.txt	Senecio minimus
+fp-425-2.txt	Senecio jacobaea
+fp-425-3.txt	Senecio pattersonensis
+fp-425-3.txt	Senecio mohavensis
+fp-425-3.txt	Senecio lyonii
+fp-425-4.txt	Senecio triangularis
+fp-425-4.txt	Senecio scorzonella
+fp-425-5.txt	Sericocarpus oregonensis
+fp-425-6.txt	Silybum marianum
+fp-425-7.txt	Solidago guiradonis
+fp-425-7.txt	Solidago elongata
+fp-425-7.txt	Solidago lepida var. salebrosa
+fp-425-7.txt	Solidago confinis
+fp-425-8.txt	Solidago multiradiata
+fp-425-8.txt	Solidago spectabilis
+fp-425-8.txt	Solidago velutina subsp. californica
+fp-425-8.txt	Solidago spathulata
+fp-425-9.txt	Soliva sessilis
+fp-425-10.txt	Sonchus asper subsp. asper
+fp-425-10.txt	Sonchus oleraceus
+fp-429-10.txt	Stylocline micropoides
+fp-429-10.txt	Stylocline sonorensis
+fp-429-10.txt	Stylocline psilocarphoides
+fp-429-2.txt	Sphaeromeria potentilloides var. potentilloides
+fp-429-2.txt	Sphaeromeria cana
+fp-429-3.txt	Stebbinsoseris decipiens
+fp-429-3.txt	Stebbinsoseris heterocarpa
+fp-429-4.txt	Stenotus acaulis
+fp-429-5.txt	Stephanomeria diegensis
+fp-429-5.txt	Stephanomeria exigua subsp. exigua
+fp-429-6.txt	Stephanomeria lactucina
+fp-429-7.txt	Stephanomeria pauciflora
+fp-429-8.txt	Stephanomeria virgata subsp. pleurocarpa
+fp-429-9.txt	Stylocline citroleum
+fp-429-9.txt	Stylocline intertexta
+fp-429-9.txt	Stylocline gnaphaloides
+fp-435-10.txt	Tetraneuris acaulis var. arizonica
+fp-435-2.txt	Symphyotrichum bracteolatum
+fp-435-2.txt	Symphyotrichum chilense
+fp-435-2.txt	Symphyotrichum ascendens
+fp-435-2.txt	Symphyotrichum frondosum
+fp-435-3.txt	Symphyotrichum lanceolatum var. hesperium
+fp-435-3.txt	Symphyotrichum lentum
+fp-435-4.txt	Symphyotrichum spathulatum var. spathulatum
+fp-435-4.txt	Symphyotrichum subulatum var. parviflorum
+fp-435-5.txt	Syntrichopappus fremontii
+fp-435-5.txt	Syntrichopappus lemmonii
+fp-435-6.txt	Tanacetum bipinnatum
+fp-435-7.txt	Taraxacum californicum
+fp-435-7.txt	Taraxacum officinale
+fp-435-8.txt	Tetradymia axillaris var. longispina
+fp-435-8.txt	Tetradymia canescens
+fp-435-9.txt	Tetradymia glabrata
+fp-435-9.txt	Tetradymia stenolepis
+fp-439-10.txt	Trichoptilium incisum
+fp-439-11.txt	Trixis californica var. californica
+fp-439-2.txt	Thymophylla pentachaeta var. belenidium
+fp-439-3.txt	Tolpis barbata
+fp-439-4.txt	Tonestus eximius
+fp-439-4.txt	Tonestus lyallii
+fp-439-5.txt	Tonestus peirsonii
+fp-439-6.txt	Townsendia condensata
+fp-439-6.txt	Townsendia leptotes
+fp-439-6.txt	Townsendia scapigera
+fp-439-7.txt	Tracyina rostrata
+fp-439-8.txt	Tragopogon porrifolius
+fp-439-9.txt	Trichocoronis wrightii var. wrightii
+fp-445-10.txt	Xylorhiza cognata
+fp-445-10.txt	Xylorhiza tortifolia var. tortifolia
+fp-445-10.txt	Xylorhiza orcuttii
+fp-445-2.txt	Uropappus lindleyi
+fp-445-3.txt	Urospermum picroides
+fp-445-4.txt	Venegasia carpesioides
+fp-445-5.txt	Verbesina encelioides subsp. exauriculata
+fp-445-5.txt	Verbesina dissita
+fp-445-6.txt	Viguiera purisimae
+fp-445-7.txt	Wyethia glabra
+fp-445-7.txt	Wyethia invenusta
+fp-445-7.txt	Wyethia mollis
+fp-445-7.txt	Wyethia reticulata
+fp-445-8.txt	Xanthisma gracile
+fp-445-8.txt	Xanthisma junceum
+fp-445-9.txt	Xanthium spinosum
+fp-445-9.txt	Xanthium strumarium
+fp-451-10.txt	Betula glandulosa
+fp-451-10.txt	Betula occidentalis
+fp-451-10.txt	Betulaceae
+fp-451-2.txt	Impatiens balfourii
+fp-451-2.txt	Impatiens glandulifera
+fp-451-3.txt	Batis maritima
+fp-451-3.txt	Bataceae
+fp-451-4.txt	Achlys triphylla subsp. triphylla
+fp-451-4.txt	Achlys californica
+fp-451-4.txt	Berberidaceae
+fp-451-5.txt	Berberis aquifolium var. repens
+fp-451-5.txt	Berberis aquifolium var. dictyota
+fp-451-6.txt	Berberis fremontii
+fp-451-6.txt	Berberis nevinii
+fp-451-7.txt	Berberis pinnata subsp. insularis
+fp-451-8.txt	Vancouveria planipetala
+fp-451-8.txt	Vancouveria chrysantha
+fp-451-8.txt	Vancouveria hexandra
+fp-451-9.txt	Alnus rhombifolia
+fp-451-9.txt	Alnus rubra
+fp-451-9.txt	Betulaceae
+fp-461-10.txt	Cryptantha circumscissa var. circumscissa
+fp-461-11.txt	Cryptantha crinita
+fp-461-2.txt	Corylus cornuta subsp. californica
+fp-461-3.txt	Chilopsis linearis subsp. arcuata
+fp-461-3.txt	Bignoniaceae
+fp-461-4.txt	Amsinckia douglasiana
+fp-461-4.txt	Amsinckia eastwoodiae
+fp-461-4.txt	Amsinckia furcata
+fp-461-4.txt	Amsinckia grandiflora
+fp-461-4.txt	Boraginaceae
+fp-461-5.txt	Amsinckia lunaris
+fp-461-5.txt	Amsinckia lycopsoides
+fp-461-6.txt	Amsinckia menziesii
+fp-461-6.txt	Amsinckia spectabilis var. microcarpa
+fp-461-6.txt	Amsinckia spectabilis var. spectabilis
+fp-461-7.txt	Amsinckia tessellata var. gloriosa
+fp-461-7.txt	Amsinckia tessellata var. tessellata
+fp-461-7.txt	Amsinckia vernicosa
+fp-461-8.txt	Borago officinalis
+fp-461-9.txt	Cryptantha cinerea var. abortiva
+fp-469-10.txt	Cynoglossum grande
+fp-469-10.txt	Cynoglossum occidentale
+fp-469-2.txt	Cryptantha decipiens
+fp-469-2.txt	Cryptantha excavata
+fp-469-2.txt	Cryptantha dumetorum
+fp-469-3.txt	Cryptantha holoptera
+fp-469-3.txt	Cryptantha flavoculata
+fp-469-3.txt	Cryptantha ganderi
+fp-469-4.txt	Cryptantha humilis
+fp-469-4.txt	Cryptantha intermedia var. hendersonii
+fp-469-4.txt	Cryptantha hooveri
+fp-469-5.txt	Cryptantha mariposae
+fp-469-5.txt	Cryptantha maritima
+fp-469-6.txt	Cryptantha micrantha var. micrantha
+fp-469-6.txt	Cryptantha micromeres
+fp-469-7.txt	Cryptantha muricata var. muricata
+fp-469-7.txt	Cryptantha pterocarya var. pterocarya
+fp-469-7.txt	Cryptantha nemaclada
+fp-469-8.txt	Cryptantha racemosa
+fp-469-8.txt	Cryptantha recurvata
+fp-469-8.txt	Cryptantha roosiorum
+fp-469-9.txt	Cryptantha torreyana var. torreyana
+fp-469-9.txt	Cryptantha virginensis
+fp-473-10.txt	Eriodictyon trichocalyx var. trichocalyx
+fp-473-2.txt	Draperia systyla
+fp-473-3.txt	Echium candicans
+fp-473-3.txt	Echium pininana
+fp-473-3.txt	Echium plantagineum
+fp-473-4.txt	Emmenanthe penduliflora
+fp-473-5.txt	Eriodictyon altissimum
+fp-473-5.txt	Eriodictyon angustifolium
+fp-473-6.txt	Eriodictyon californicum
+fp-473-7.txt	Eriodictyon capitatum
+fp-473-8.txt	Eriodictyon crassifolium var. crassifolium
+fp-473-8.txt	Eriodictyon tomentosum
+fp-473-9.txt	Eriodictyon lobbii
+fp-473-9.txt	Eriodictyon parryi
+fp-477-10.txt	Hydrophyllum occidentale
+fp-477-10.txt	Hydrophyllum tenuipes
+fp-477-2.txt	Eucrypta chrysanthemifolia var. chrysanthemifolia
+fp-477-2.txt	Eucrypta micrantha
+fp-477-3.txt	Hackelia amethystina
+fp-477-3.txt	Hackelia bella
+fp-477-3.txt	Hackelia brevicula
+fp-477-3.txt	Hackelia californica
+fp-477-4.txt	Hackelia cusickii
+fp-477-4.txt	Hackelia micrantha
+fp-477-4.txt	Hackelia floribunda
+fp-477-5.txt	Hackelia mundula
+fp-477-5.txt	Hackelia nervosa
+fp-477-5.txt	Hackelia setosa
+fp-477-5.txt	Hackelia velutina
+fp-477-5.txt	Hackelia sharsmithii
+fp-477-6.txt	Harpagonella palmeri
+fp-477-7.txt	Heliotropium convolvulaceum var. californicum
+fp-477-7.txt	Heliotropium curassavicum var. oculatum
+fp-477-8.txt	Hesperochiron californicus
+fp-477-8.txt	Hesperochiron pumilus
+fp-477-9.txt	Hydrophyllum capitatum var. alpinum
+fp-477-9.txt	Hydrophyllum fendleri var. albifrons
+fp-483-10.txt	Nama demissum var. demissum
+fp-483-2.txt	Lappula redowskii var. cupulata
+fp-483-2.txt	Lappula redowskii var. redowskii
+fp-483-3.txt	Lithospermum californicum
+fp-483-3.txt	Lithospermum incisum
+fp-483-4.txt	Lithospermum ruderale
+fp-483-5.txt	Mertensia bella
+fp-483-5.txt	Mertensia ciliata var. stomatechoides
+fp-483-6.txt	Mertensia longiflora
+fp-483-6.txt	Mertensia oblongifolia var. nevadensis
+fp-483-7.txt	Myosotis latifolia
+fp-483-7.txt	Myosotis laxa
+fp-483-7.txt	Myosotis scorpioides
+fp-483-8.txt	Nama aretioides var. multiflorum
+fp-483-9.txt	Nama californicum
+fp-491-10.txt	Phacelia austromontana
+fp-491-10.txt	Phacelia argentea
+fp-491-2.txt	Nama densum var. parviflorum
+fp-491-2.txt	Nama rothrockii
+fp-491-3.txt	Nemophila heterophylla
+fp-491-4.txt	Nemophila maculata
+fp-491-4.txt	Nemophila menziesii var. atomaria
+fp-491-4.txt	Nemophila menziesii var. menziesii
+fp-491-4.txt	Nemophila pedunculata
+fp-491-5.txt	Nemophila pulchella var. pulchella
+fp-491-5.txt	Nemophila parviflora var. austiniae
+fp-491-5.txt	Nemophila spatulata
+fp-491-6.txt	Pectocarya heterocarpa
+fp-491-6.txt	Pectocarya linearis subsp. ferocula
+fp-491-7.txt	Pectocarya penicillata
+fp-491-7.txt	Pectocarya peninsularis
+fp-491-7.txt	Pectocarya platycarpa
+fp-491-8.txt	Pectocarya pusilla
+fp-491-8.txt	Pectocarya recurvata
+fp-491-8.txt	Pectocarya setosa
+fp-491-9.txt	Phacelia affinis
+fp-491-9.txt	Phacelia amabilis
+fp-495-10.txt	Phacelia humilis var. humilis
+fp-495-10.txt	Phacelia hydrophylloides
+fp-495-2.txt	Phacelia bicolor var. bicolor
+fp-495-2.txt	Phacelia breweri
+fp-495-3.txt	Phacelia campanularia subsp. vasiformis
+fp-495-3.txt	Phacelia cicutaria
+fp-495-3.txt	Phacelia ciliata
+fp-495-3.txt	Phacelia congdonii
+fp-495-4.txt	Phacelia cookei
+fp-495-4.txt	Phacelia dalesiana
+fp-495-4.txt	Phacelia distans
+fp-495-5.txt	Phacelia egena
+fp-495-5.txt	Phacelia eisenii
+fp-495-5.txt	Phacelia floribunda
+fp-495-6.txt	Phacelia fremontii
+fp-495-6.txt	Phacelia glandulifera
+fp-495-7.txt	Phacelia greenei
+fp-495-8.txt	Phacelia hastata subsp. hastata
+fp-495-8.txt	Phacelia hastata subsp. compacta
+fp-495-9.txt	Phacelia heterophylla subsp. virgata
+fp-499-10.txt	Phacelia parishii
+fp-499-10.txt	Phacelia pedicellata
+fp-499-2.txt	Phacelia imbricata subsp. imbricata
+fp-499-3.txt	Phacelia insularis var. continentis
+fp-499-3.txt	Phacelia insularis var. insularis
+fp-499-4.txt	Phacelia inundata
+fp-499-4.txt	Phacelia inyoensis
+fp-499-5.txt	Phacelia leonis
+fp-499-5.txt	Phacelia lyonii
+fp-499-5.txt	Phacelia malvifolia
+fp-499-6.txt	Phacelia minor
+fp-499-6.txt	Phacelia monoensis
+fp-499-6.txt	Phacelia mustelina
+fp-499-7.txt	Phacelia mutabilis
+fp-499-8.txt	Phacelia nashiana
+fp-499-8.txt	Phacelia novenmillensis
+fp-499-9.txt	Phacelia orogenes
+fp-499-9.txt	Phacelia pachyphylla
+fp-507-10.txt	Plagiobothrys cognatus
+fp-507-10.txt	Plagiobothrys collinus
+fp-507-10.txt	Plagiobothrys cusickii
+fp-507-10.txt	Plagiobothrys distantiflorus
+fp-507-2.txt	Phacelia perityloides var. perityloides
+fp-507-2.txt	Phacelia phacelioides
+fp-507-3.txt	Phacelia platyloba
+fp-507-3.txt	Phacelia pulchella var. gooddingii
+fp-507-3.txt	Phacelia pringlei
+fp-507-4.txt	Phacelia ramosissima
+fp-507-4.txt	Phacelia sericea var. ciliosa
+fp-507-4.txt	Phacelia quickii
+fp-507-5.txt	Phacelia thermalis
+fp-507-5.txt	Phacelia suaveolens
+fp-507-5.txt	Phacelia stebbinsii
+fp-507-6.txt	Phacelia tanacetifolia
+fp-507-6.txt	Phacelia vallicola
+fp-507-6.txt	Phacelia vallis-mortae
+fp-507-7.txt	Pholisma arenarium
+fp-507-8.txt	Pholistoma membranaceum
+fp-507-8.txt	Pholistoma auritum var. auritum
+fp-507-8.txt	Pholistoma racemosum
+fp-507-9.txt	Plagiobothrys acanthocarpus
+fp-507-9.txt	Plagiobothrys austiniae
+fp-507-9.txt	Plagiobothrys bracteatus
+fp-507-9.txt	Plagiobothrys arizonicus
+fp-507-9.txt	Plagiobothrys canescens
+fp-507-9.txt	Plagiobothrys chorisianus var. chorisianus
+fp-511-10.txt	Romanzoffia californica
+fp-511-2.txt	Plagiobothrys fulvus var. campestris
+fp-511-2.txt	Plagiobothrys glaber
+fp-511-2.txt	Plagiobothrys greenei
+fp-511-3.txt	Plagiobothrys glyptocarpus
+fp-511-3.txt	Plagiobothrys hispidulus
+fp-511-3.txt	Plagiobothrys hispidus
+fp-511-4.txt	Plagiobothrys humistratus
+fp-511-4.txt	Plagiobothrys hystriculus
+fp-511-4.txt	Plagiobothrys jonesii
+fp-511-5.txt	Plagiobothrys kingii
+fp-511-5.txt	Plagiobothrys lithocaryus
+fp-511-5.txt	Plagiobothrys leptocladus
+fp-511-6.txt	Plagiobothrys mollis var. vestitus
+fp-511-6.txt	Plagiobothrys mollis var. mollis
+fp-511-6.txt	Plagiobothrys nothofulvus
+fp-511-7.txt	Plagiobothrys parishii
+fp-511-7.txt	Plagiobothrys reticulatus
+fp-511-7.txt	Plagiobothrys scriptus
+fp-511-7.txt	Plagiobothrys shastensis
+fp-511-8.txt	Plagiobothrys stipitatus var. micranthus
+fp-511-8.txt	Plagiobothrys strictus
+fp-511-8.txt	Plagiobothrys tenellus
+fp-511-9.txt	Plagiobothrys torreyi
+fp-511-9.txt	Plagiobothrys trachycarpus
+fp-511-9.txt	Plagiobothrys uncinatus
+fp-511-9.txt	Plagiobothrys undulatus
+fp-523-10.txt	Athysanus unilateralis
+fp-523-11.txt	Barbarea vulgaris
+fp-523-11.txt	Barbarea orthoceras
+fp-523-11.txt	Barbarea verna
+fp-523-2.txt	Tiquilia nuttallii
+fp-523-2.txt	Tiquilia palmeri
+fp-523-2.txt	Tiquilia canescens var. canescens
+fp-523-2.txt	Tiquilia plicata
+fp-523-3.txt	Tricardia watsonii
+fp-523-4.txt	Alyssum alyssoides
+fp-523-4.txt	Brassicaceae
+fp-523-5.txt	Anelsonia eurycarpa
+fp-523-6.txt	Arabidopsis thaliana
+fp-523-7.txt	Arabis blepharophylla
+fp-523-7.txt	Arabis eschscholtziana
+fp-523-8.txt	Armoracia rusticana
+fp-523-9.txt	Athysanus pusillus
+fp-533-10.txt	Boechera tiehmii
+fp-533-2.txt	Boechera arcuata
+fp-533-2.txt	Boechera californica
+fp-533-2.txt	Boechera cobrensis
+fp-533-3.txt	Boechera constancei
+fp-533-3.txt	Boechera divaricarpa
+fp-533-4.txt	Boechera pauciflora
+fp-533-4.txt	Boechera perennans
+fp-533-5.txt	Boechera platysperma
+fp-533-5.txt	Boechera pulchra
+fp-533-6.txt	Boechera pygmaea
+fp-533-6.txt	Boechera retrofracta
+fp-533-7.txt	Boechera rollei
+fp-533-8.txt	Boechera sparsiflora
+fp-533-9.txt	Boechera stricta
+fp-533-9.txt	Boechera suffrutescens
+fp-537-10.txt	Caulanthus amplexicaulis
+fp-537-2.txt	Brassica rapa
+fp-537-2.txt	Brassica tournefortii
+fp-537-3.txt	Cakile edentula
+fp-537-3.txt	Cakile maritima
+fp-537-4.txt	Camelina microcarpa
+fp-537-5.txt	Capsella bursa-pastoris
+fp-537-6.txt	Cardamine bellidifolia
+fp-537-6.txt	Cardamine breweri
+fp-537-7.txt	Cardamine californica
+fp-537-8.txt	Cardamine nuttallii
+fp-537-9.txt	Cardamine oligosperma
+fp-537-9.txt	Cardamine pensylvanica
+fp-541-10.txt	Cusickiella douglasii
+fp-541-10.txt	Cusickiella quadricostata
+fp-541-2.txt	Caulanthus coulteri
+fp-541-2.txt	Caulanthus crassicaulis
+fp-541-3.txt	Caulanthus californicus
+fp-541-4.txt	Caulanthus flavescens
+fp-541-5.txt	Caulanthus heterophyllus
+fp-541-5.txt	Caulanthus inflatus
+fp-541-5.txt	Caulanthus major
+fp-541-5.txt	Caulanthus pilosus
+fp-541-6.txt	Chorispora tenella
+fp-541-7.txt	Cochlearia groenlandica
+fp-541-8.txt	Coincya monensis subsp. recurvata
+fp-541-9.txt	Conringia orientalis
+fp-547-10.txt	Draba lemmonii
+fp-547-10.txt	Draba lonchocarpa
+fp-547-2.txt	Descurainia californica
+fp-547-3.txt	Descurainia incana
+fp-547-3.txt	Descurainia sophia
+fp-547-4.txt	Diplotaxis muralis
+fp-547-4.txt	Diplotaxis tenuifolia
+fp-547-5.txt	Dithyrea californica
+fp-547-5.txt	Dithyrea maritima
+fp-547-6.txt	Draba asterophora
+fp-547-6.txt	Draba aureola
+fp-547-7.txt	Draba breweri
+fp-547-7.txt	Draba californica
+fp-547-8.txt	Draba carnosula
+fp-547-8.txt	Draba cruciata
+fp-547-9.txt	Draba cuneifolia
+fp-547-9.txt	Draba densifolia
+fp-551-10.txt	Erysimum repandum
+fp-551-10.txt	Erysimum teretifolium
+fp-551-2.txt	Draba monoensis
+fp-551-2.txt	Draba novolympica
+fp-551-3.txt	Draba oligosperma
+fp-551-4.txt	Draba sharsmithii
+fp-551-4.txt	Draba sierrae
+fp-551-4.txt	Draba subumbellata
+fp-551-5.txt	Draba verna
+fp-551-6.txt	Eruca vesicaria subsp. sativa
+fp-551-7.txt	Erysimum capitatum var. capitatum
+fp-551-8.txt	Erysimum cheiranthoides
+fp-551-8.txt	Erysimum concinnum
+fp-551-8.txt	Erysimum cheiri
+fp-551-8.txt	Erysimum insulare
+fp-551-9.txt	Erysimum menziesii
+fp-551-9.txt	Erysimum perenne
+fp-555-10.txt	Lepidium appelianum
+fp-555-11.txt	Lepidium densiflorum
+fp-555-11.txt	Lepidium chalepense
+fp-555-11.txt	Lepidium coronopus
+fp-555-2.txt	Euclidium syriacum
+fp-555-3.txt	Halimolobos jaegeri
+fp-555-4.txt	Hesperidanthus jaegeri
+fp-555-5.txt	Hesperis matronalis
+fp-555-6.txt	Hirschfeldia incana
+fp-555-7.txt	Hornungia procumbens
+fp-555-8.txt	Idahoa scapigera
+fp-555-9.txt	Isatis tinctoria
+fp-559-10.txt	Lunaria annua
+fp-559-11.txt	Lyrocarpa coulteri
+fp-559-2.txt	Lepidium didymum
+fp-559-2.txt	Lepidium dictyotum
+fp-559-3.txt	Lepidium flavum
+fp-559-3.txt	Lepidium draba
+fp-559-4.txt	Lepidium fremontii
+fp-559-4.txt	Lepidium jaredii
+fp-559-5.txt	Lepidium lasiocarpum subsp. lasiocarpum
+fp-559-6.txt	Lepidium latifolium
+fp-559-7.txt	Lepidium latipes
+fp-559-7.txt	Lepidium nitidum
+fp-559-8.txt	Lepidium oxycarpum
+fp-559-8.txt	Lepidium perfoliatum
+fp-559-8.txt	Lepidium strictum
+fp-559-9.txt	Lobularia maritima
+fp-563-10.txt	Raphanus raphanistrum
+fp-563-10.txt	Raphanus sativus
+fp-563-11.txt	Rapistrum rugosum
+fp-563-2.txt	Nasturtium gambelii
+fp-563-2.txt	Nasturtium officinale
+fp-563-3.txt	Noccaea fendleri subsp. glauca
+fp-563-4.txt	Phoenicaulis cheiranthoides
+fp-563-5.txt	Physaria kingii subsp. bernardina
+fp-563-5.txt	Physaria chambersii
+fp-563-6.txt	Physaria occidentalis subsp. occidentalis
+fp-563-7.txt	Physaria tenella
+fp-563-8.txt	Planodes virginicum
+fp-563-9.txt	Polyctenium fremontii
+fp-567-10.txt	Smelowskia ovalis
+fp-567-2.txt	Rorippa curvipes
+fp-567-2.txt	Rorippa columbiae
+fp-567-2.txt	Rorippa curvisiliqua
+fp-567-3.txt	Rorippa palustris subsp. palustris
+fp-567-4.txt	Rorippa sinuata
+fp-567-4.txt	Rorippa subumbellata
+fp-567-5.txt	Sibara deserti
+fp-567-5.txt	Sibara filifolia
+fp-567-6.txt	Sibaropsis hammittii
+fp-567-7.txt	Sinapis alba
+fp-567-7.txt	Sinapis arvensis
+fp-567-8.txt	Sisymbrium altissimum
+fp-567-8.txt	Sisymbrium erysimoides
+fp-567-9.txt	Sisymbrium irio
+fp-567-9.txt	Sisymbrium loeselii
+fp-567-9.txt	Sisymbrium officinale
+fp-567-9.txt	Sisymbrium orientale
+fp-571-2.txt	Stanleya pinnata var. pinnata
+fp-571-3.txt	Stanleya viridiflora
+fp-571-4.txt	Streptanthella longirostris
+fp-571-5.txt	Streptanthus batrachopus
+fp-571-5.txt	Streptanthus barbatus
+fp-571-6.txt	Streptanthus brachiatus
+fp-571-6.txt	Streptanthus breweri
+fp-571-7.txt	Streptanthus callistus
+fp-571-7.txt	Streptanthus campestris
+fp-571-8.txt	Streptanthus cordatus var. cordatus
+fp-571-8.txt	Streptanthus diversifolius
+fp-571-9.txt	Streptanthus glandulosus subsp. albidus
+fp-571-9.txt	Streptanthus glandulosus subsp. glandulosus
+fp-571-9.txt	Streptanthus glandulosus subsp. niger
+fp-575-10.txt	Thelypodium integrifolium subsp. complanatum
+fp-575-2.txt	Streptanthus insignis subsp. insignis
+fp-575-2.txt	Streptanthus howellii
+fp-575-3.txt	Streptanthus morrisonii
+fp-575-4.txt	Streptanthus polygaloides
+fp-575-5.txt	Streptanthus tortuosus
+fp-575-6.txt	Strigosella africana
+fp-575-7.txt	Subularia aquatica subsp. americana
+fp-575-8.txt	Thelypodium crispum
+fp-575-9.txt	Thelypodium brachycarpum
+fp-575-9.txt	Thelypodium flexuosum
+fp-579-10.txt	Bursera microphylla
+fp-579-10.txt	Burseraceae
+fp-579-2.txt	Thelypodium milleflorum
+fp-579-2.txt	Thelypodium stenopetalum
+fp-579-2.txt	Thelypodium laciniatum
+fp-579-3.txt	Thlaspi arvense
+fp-579-4.txt	Thysanocarpus conchuliferus
+fp-579-4.txt	Thysanocarpus curvipes
+fp-579-5.txt	Thysanocarpus laciniatus var. laciniatus
+fp-579-5.txt	Thysanocarpus radians
+fp-579-6.txt	Transberingia bursifolia subsp. virgata
+fp-579-7.txt	Tropidocarpum californicum
+fp-579-8.txt	Tropidocarpum capparideum
+fp-579-8.txt	Tropidocarpum gracile
+fp-579-9.txt	Turritis glabra
+fp-583-10.txt	Echinocactus polycephalus var. polycephalus
+fp-583-2.txt	Bergerocactus emoryi
+fp-583-2.txt	Cactaceae
+fp-583-3.txt	Carnegiea gigantea
+fp-583-4.txt	Coryphantha alversonii
+fp-583-4.txt	Coryphantha vivipara var. rosea
+fp-583-5.txt	Cylindropuntia acanthocarpa var. coloradensis
+fp-583-6.txt	Cylindropuntia californica var. parkeri
+fp-583-6.txt	Cylindropuntia bigelovii
+fp-583-7.txt	Cylindropuntia echinocarpa
+fp-583-8.txt	Cylindropuntia munzii
+fp-583-9.txt	Cylindropuntia X fosbergii
+fp-583-9.txt	Cylindropuntia ramosissima
+fp-587-10.txt	Opuntia phaeacantha
+fp-587-10.txt	Opuntia oricola
+fp-587-2.txt	Echinocereus engelmannii
+fp-587-3.txt	Echinocereus mojavensis
+fp-587-4.txt	Ferocactus cylindraceus
+fp-587-5.txt	Ferocactus viridescens
+fp-587-6.txt	Grusonia pulchella
+fp-587-7.txt	Mammillaria grahamii var. grahamii
+fp-587-7.txt	Mammillaria dioica
+fp-587-7.txt	Mammillaria tetrancistra
+fp-587-8.txt	Opuntia basilaris var. basilaris
+fp-587-8.txt	Opuntia basilaris var. brachyclada
+fp-587-8.txt	Opuntia basilaris var. treleasei
+fp-587-9.txt	Opuntia ficus-indica
+fp-587-9.txt	Opuntia fragilis
+fp-593-10.txt	Downingia willamettensis
+fp-593-10.txt	Downingia pulchella
+fp-593-10.txt	Downingia pusilla
+fp-593-2.txt	Sclerocactus polyancistrus
+fp-593-2.txt	Sclerocactus johnsonii
+fp-593-3.txt	Asyneuma prenanthoides
+fp-593-3.txt	Campanulaceae
+fp-593-4.txt	Campanula angustiflora
+fp-593-4.txt	Campanula exigua
+fp-593-4.txt	Campanula griffinii
+fp-593-4.txt	Campanula californica
+fp-593-5.txt	Campanula rotundifolia
+fp-593-5.txt	Campanula scouleri
+fp-593-5.txt	Campanula scabrella
+fp-593-6.txt	Campanula sharsmithiae
+fp-593-6.txt	Campanula wilkinsiana
+fp-593-6.txt	Campanula shetleri
+fp-593-7.txt	Downingia bella
+fp-593-7.txt	Downingia bacigalupii
+fp-593-8.txt	Downingia cuspidata
+fp-593-8.txt	Downingia elegans
+fp-593-8.txt	Downingia bicornuta var. bicornuta
+fp-593-8.txt	Downingia bicornuta var. picta
+fp-593-8.txt	Downingia concolor var. brevior
+fp-593-9.txt	Downingia ornatissima var. eximia
+fp-593-9.txt	Downingia ornatissima var. ornatissima
+fp-593-9.txt	Downingia insignis
+fp-593-9.txt	Downingia laeta
+fp-593-9.txt	Downingia montana
+fp-599-10.txt	Nemacladus longiflorus var. longiflorus
+fp-599-10.txt	Nemacladus pinnatifidus
+fp-599-10.txt	Nemacladus rigidus
+fp-599-2.txt	Githopsis diffusa subsp. diffusa
+fp-599-3.txt	Githopsis tenella
+fp-599-3.txt	Githopsis specularioides
+fp-599-3.txt	Githopsis pulchella subsp. pulchella
+fp-599-4.txt	Heterocodon rariflorum
+fp-599-5.txt	Howellia aquatilis
+fp-599-6.txt	Legenere limosa
+fp-599-7.txt	Lobelia dunnii var. serrata
+fp-599-7.txt	Lobelia cardinalis var. pseudosplendens
+fp-599-8.txt	Nemacladus glanduliferus
+fp-599-8.txt	Nemacladus californicus
+fp-599-9.txt	Nemacladus gracilis
+fp-599-9.txt	Nemacladus capillaris
+fp-603-10.txt	Lonicera subspicata var. denudata
+fp-603-10.txt	Lonicera subspicata var. subspicata
+fp-603-2.txt	Nemacladus sigmoideus
+fp-603-2.txt	Nemacladus twisselmannii
+fp-603-3.txt	Porterella carnosula
+fp-603-4.txt	Triodanis biflora
+fp-603-4.txt	Triodanis perfoliata
+fp-603-5.txt	Cannabis sativa
+fp-603-5.txt	Cannabaceae
+fp-603-6.txt	Celtis reticulata
+fp-603-7.txt	Lonicera cauriana
+fp-603-7.txt	Lonicera ciliosa
+fp-603-7.txt	Caprifoliaceae
+fp-603-8.txt	Lonicera conjugialis
+fp-603-8.txt	Lonicera hispidula
+fp-603-9.txt	Lonicera involucrata var. involucrata
+fp-603-9.txt	Lonicera involucrata var. ledebourii
+fp-609-10.txt	Eremogone congesta var. subcongesta
+fp-609-10.txt	Eremogone congesta var. congesta
+fp-609-10.txt	Eremogone aculeata
+fp-609-2.txt	Symphoricarpos albus var. laevigatus
+fp-609-3.txt	Symphoricarpos longiflorus
+fp-609-4.txt	Symphoricarpos mollis
+fp-609-4.txt	Symphoricarpos rotundifolius var. rotundifolius
+fp-609-5.txt	Achyronychia cooperi
+fp-609-5.txt	Caryophyllaceae
+fp-609-6.txt	Arenaria lanuginosa var. saxosa
+fp-609-7.txt	Arenaria serpyllifolia var. serpyllifolia
+fp-609-7.txt	Arenaria paludicola
+fp-609-8.txt	Cardionema ramosissimum
+fp-609-9.txt	Cerastium glomeratum
+fp-609-9.txt	Cerastium arvense subsp. strictum
+fp-609-9.txt	Cerastium beeringianum
+fp-613-10.txt	Minuartia nuttallii var. gracilis
+fp-613-10.txt	Minuartia obtusiloba
+fp-613-10.txt	Minuartia nuttallii var. fragilis
+fp-613-10.txt	Minuartia nuttallii var. gregaria
+fp-613-2.txt	Eremogone kingii var. glabrescens
+fp-613-2.txt	Eremogone ferrisiae
+fp-613-3.txt	Eremogone ursina
+fp-613-3.txt	Eremogone macradenia var. arcuifolia
+fp-613-3.txt	Eremogone macradenia var. macradenia
+fp-613-4.txt	Gypsophila paniculata
+fp-613-4.txt	Gypsophila elegans
+fp-613-5.txt	Herniaria hirsuta var. cinerea
+fp-613-5.txt	Herniaria hirsuta var. hirsuta
+fp-613-6.txt	Holosteum umbellatum subsp. umbellatum
+fp-613-7.txt	Loeflingia squarrosa
+fp-613-8.txt	Minuartia californica
+fp-613-8.txt	Minuartia douglasii
+fp-613-8.txt	Minuartia decumbens
+fp-613-9.txt	Minuartia howellii
+fp-617-10.txt	Saponaria officinalis
+fp-617-2.txt	Minuartia rosei
+fp-617-3.txt	Minuartia stolonifera
+fp-617-3.txt	Minuartia stricta
+fp-617-3.txt	Minuartia rubella
+fp-617-4.txt	Moehringia macrophylla
+fp-617-5.txt	Paronychia ahartii
+fp-617-5.txt	Paronychia franciscana
+fp-617-6.txt	Petrorhagia dubia
+fp-617-7.txt	Polycarpon depressum
+fp-617-8.txt	Pseudostellaria jamesiana
+fp-617-9.txt	Sagina maxima subsp. crassicaulis
+fp-617-9.txt	Sagina saginoides
+fp-617-9.txt	Sagina apetala
+fp-623-10.txt	Silene parishii
+fp-623-10.txt	Silene suksdorfii
+fp-623-2.txt	Scleranthus annuus subsp. annuus
+fp-623-3.txt	Scopulophila rixfordii
+fp-623-4.txt	Silene bernardina
+fp-623-4.txt	Silene aperta
+fp-623-4.txt	Silene antirrhina
+fp-623-5.txt	Silene coniflora
+fp-623-5.txt	Silene campanulata subsp. glandulosa
+fp-623-5.txt	Silene campanulata subsp. campanulata
+fp-623-6.txt	Silene hookeri
+fp-623-6.txt	Silene invisa
+fp-623-6.txt	Silene douglasii var. douglasii
+fp-623-7.txt	Silene laciniata subsp. californica
+fp-623-7.txt	Silene laciniata subsp. laciniata
+fp-623-8.txt	Silene lemmonii
+fp-623-8.txt	Silene marmorensis
+fp-623-9.txt	Silene menziesii
+fp-623-9.txt	Silene occidentalis
+fp-627-2.txt	Silene verecunda
+fp-627-3.txt	Spergula arvensis
+fp-627-4.txt	Spergularia canadensis var. occidentalis
+fp-627-4.txt	Spergularia atrosperma
+fp-627-5.txt	Spergularia macrotheca var. longistyla
+fp-627-5.txt	Spergularia macrotheca var. leucantha
+fp-627-6.txt	Spergularia marina
+fp-627-6.txt	Spergularia rubra
+fp-627-7.txt	Stellaria borealis subsp. sitchana
+fp-627-7.txt	Stellaria calycantha
+fp-627-7.txt	Stellaria crispa
+fp-627-8.txt	Stellaria longipes subsp. longipes
+fp-627-8.txt	Stellaria longifolia
+fp-627-8.txt	Stellaria littoralis
+fp-627-9.txt	Stellaria umbellata
+fp-627-9.txt	Stellaria nitens
+fp-627-9.txt	Stellaria obtusa
+fp-635-10.txt	Atriplex cordulata var. cordulata
+fp-635-10.txt	Atriplex confertifolia
+fp-635-2.txt	Velezia rigida
+fp-635-3.txt	Euonymus occidentalis var. occidentalis
+fp-635-3.txt	Celastraceae
+fp-635-4.txt	Mortonia utahensis
+fp-635-5.txt	Paxistima myrsinites
+fp-635-6.txt	Allenrolfea occidentalis
+fp-635-6.txt	Chenopodiaceae
+fp-635-7.txt	Aphanisma blitoides
+fp-635-8.txt	Arthrocnemum subterminale
+fp-635-9.txt	Atriplex argentea var. argentea
+fp-635-9.txt	Atriplex argentea var. expansa
+fp-635-9.txt	Atriplex canescens var. canescens
+fp-637-10.txt	Atriplex spinifera
+fp-637-2.txt	Atriplex coronata var. vallicola
+fp-637-2.txt	Atriplex coronata var. coronata
+fp-637-2.txt	Atriplex coronata var. notatior
+fp-637-3.txt	Atriplex elegans var. fasciculata
+fp-637-3.txt	Atriplex elegans var. elegans
+fp-637-3.txt	Atriplex covillei
+fp-637-4.txt	Atriplex fruticulosa
+fp-637-4.txt	Atriplex gardneri var. falcata
+fp-637-5.txt	Atriplex gmelinii var. gmelinii
+fp-637-5.txt	Atriplex hymenelytra
+fp-637-5.txt	Atriplex joaquinana
+fp-637-6.txt	Atriplex lentiformis
+fp-637-6.txt	Atriplex leucophylla
+fp-637-7.txt	Atriplex pacifica
+fp-637-7.txt	Atriplex parryi
+fp-637-7.txt	Atriplex parishii
+fp-637-8.txt	Atriplex pusilla
+fp-637-8.txt	Atriplex prostrata
+fp-637-8.txt	Atriplex patula
+fp-637-9.txt	Atriplex serenana var. serenana
+fp-637-9.txt	Atriplex subtilis
+fp-643-10.txt	Chenopodium incanum var. occidentale
+fp-643-11.txt	Chenopodium nevadense
+fp-643-2.txt	Atriplex torreyi var. torreyi
+fp-643-2.txt	Atriplex watsonii
+fp-643-2.txt	Atriplex tularensis
+fp-643-3.txt	Bassia hyssopifolia
+fp-643-4.txt	Beta vulgaris subsp. maritima
+fp-643-5.txt	Chenopodium album
+fp-643-6.txt	Chenopodium atrovirens
+fp-643-6.txt	Chenopodium berlandieri
+fp-643-7.txt	Chenopodium californicum
+fp-643-7.txt	Chenopodium chenopodioides
+fp-643-8.txt	Chenopodium desiccatum
+fp-643-8.txt	Chenopodium foliosum
+fp-643-9.txt	Chenopodium hians
+fp-643-9.txt	Chenopodium fremontii
+fp-647-10.txt	Salicornia pacifica
+fp-647-10.txt	Salicornia bigelovii
+fp-647-10.txt	Salicornia depressa
+fp-647-2.txt	Chenopodium simplex
+fp-647-3.txt	Cycloloma atriplicifolium
+fp-647-3.txt	Corispermum americanum var. americanum
+fp-647-4.txt	Dysphania multifida
+fp-647-4.txt	Dysphania pumilio
+fp-647-4.txt	Dysphania botrys
+fp-647-5.txt	Grayia spinosa
+fp-647-6.txt	Halogeton glomeratus
+fp-647-7.txt	Kochia americana
+fp-647-7.txt	Kochia californica
+fp-647-8.txt	Krascheninnikovia lanata
+fp-647-9.txt	Monolepis nuttalliana
+fp-647-9.txt	Monolepis spathulata
+fp-647-9.txt	Micromonolepis pusilla
+fp-653-10.txt	Carsonia sparsifolia
+fp-653-10.txt	Cleomaceae
+fp-653-2.txt	Salsola ryanii
+fp-653-2.txt	Salsola australis
+fp-653-2.txt	Salsola paulsenii
+fp-653-3.txt	Salsola tragus
+fp-653-4.txt	Suaeda calceoliformis
+fp-653-5.txt	Suaeda californica
+fp-653-6.txt	Suaeda esteroa
+fp-653-6.txt	Suaeda nigra
+fp-653-6.txt	Suaeda taxifolia
+fp-653-7.txt	Cistus monspeliensis
+fp-653-7.txt	Cistus incanus
+fp-653-7.txt	Cistus ladanifer
+fp-653-7.txt	Cistus salviifolius
+fp-653-7.txt	Cistaceae
+fp-653-8.txt	Helianthemum scoparium
+fp-653-9.txt	Tuberaria guttata
+fp-657-10.txt	Calystegia longipes
+fp-657-11.txt	Calystegia macrostegia subsp. amplissima
+fp-657-11.txt	Calystegia macrostegia subsp. cyclostegia
+fp-657-11.txt	Calystegia macrostegia subsp. intermedia
+fp-657-11.txt	Calystegia macrostegia subsp. arida
+fp-657-11.txt	Calystegia macrostegia subsp. tenuifolia
+fp-657-2.txt	Cleomella obtusifolia
+fp-657-2.txt	Cleomella plocasperma
+fp-657-3.txt	Oxystylis lutea
+fp-657-4.txt	Peritoma arborea var. angustata
+fp-657-4.txt	Peritoma arborea var. globosa
+fp-657-5.txt	Peritoma platycarpa
+fp-657-5.txt	Peritoma lutea
+fp-657-6.txt	Polanisia dodecandra subsp. trachysperma
+fp-657-7.txt	Wislizenia refracta subsp. refracta
+fp-657-7.txt	Wislizenia refracta subsp. californica
+fp-657-7.txt	Wislizenia refracta subsp. palmeri
+fp-657-8.txt	Comandra umbellata subsp. californica
+fp-657-8.txt	Comandraceae
+fp-657-9.txt	Calystegia atriplicifolia subsp. buttensis
+fp-657-9.txt	Calystegia collina subsp. tridactylosa
+fp-657-9.txt	Calystegia collina subsp. collina
+fp-657-9.txt	Calystegia collina subsp. venusta
+fp-657-9.txt	Convolvulaceae
+fp-663-2.txt	Calystegia malacophylla subsp. malacophylla
+fp-663-2.txt	Calystegia malacophylla subsp. pedicellata
+fp-663-3.txt	Calystegia occidentalis subsp. occidentalis
+fp-663-3.txt	Calystegia occidentalis subsp. fulcrata
+fp-663-4.txt	Calystegia sepium subsp. limnophila
+fp-663-4.txt	Calystegia peirsonii
+fp-663-4.txt	Calystegia purpurata subsp. purpurata
+fp-663-4.txt	Calystegia purpurata subsp. saxicola
+fp-663-5.txt	Calystegia soldanella
+fp-663-5.txt	Calystegia stebbinsii
+fp-663-5.txt	Calystegia subacaulis subsp. subacaulis
+fp-663-6.txt	Convolvulus simulans
+fp-663-6.txt	Convolvulus arvensis
+fp-663-7.txt	Cressa truxillensis
+fp-663-8.txt	Cuscuta approximata
+fp-663-8.txt	Cuscuta californica var. californica
+fp-663-9.txt	Cuscuta indecora var. indecora
+fp-663-9.txt	Cuscuta cephalanthi
+fp-663-10.txt	Cuscuta salina
+fp-663-10.txt	Cuscuta pacifica var. pacifica
+fp-663-10.txt	Cuscuta suksdorfii
+fp-671-2.txt	Dichondra donelliana
+fp-671-2.txt	Dichondra occidentalis
+fp-671-3.txt	Cornus glabrata
+fp-671-3.txt	Cornus nuttallii
+fp-671-3.txt	Cornus canadensis
+fp-671-4.txt	Cornus sericea subsp. sericea
+fp-671-5.txt	Crassula solieri
+fp-671-5.txt	Crassula connata
+fp-671-5.txt	Crassula aquatica
+fp-671-6.txt	Dudleya abramsii subsp. calcicola
+fp-671-6.txt	Dudleya abramsii subsp. affinis
+fp-671-6.txt	Dudleya abramsii subsp. setchellii
+fp-671-7.txt	Dudleya attenuata subsp. attenuata
+fp-671-7.txt	Dudleya brevifolia
+fp-671-7.txt	Dudleya blochmaniae subsp. insularis
+fp-671-8.txt	Dudleya caespitosa
+fp-671-8.txt	Dudleya candelabrum
+fp-671-9.txt	Dudleya cymosa subsp. marcescens
+fp-671-9.txt	Dudleya cymosa subsp. cymosa
+fp-671-10.txt	Dudleya edulis
+fp-671-10.txt	Dudleya densiflora
+fp-677-2.txt	Dudleya farinosa
+fp-677-3.txt	Dudleya lanceolata
+fp-677-3.txt	Dudleya multicaulis
+fp-677-4.txt	Dudleya nesiotica
+fp-677-4.txt	Dudleya pulverulenta
+fp-677-5.txt	Dudleya saxosa subsp. aloides
+fp-677-6.txt	Dudleya traskiae
+fp-677-6.txt	Dudleya variegata
+fp-677-6.txt	Dudleya stolonifera
+fp-677-6.txt	Dudleya viscida
+fp-677-7.txt	Rhodiola integrifolia subsp. integrifolia
+fp-677-8.txt	Sedella leiocarpa
+fp-677-8.txt	Sedella pumila
+fp-677-9.txt	Sedum albomarginatum
+fp-677-10.txt	Sedum divergens
+fp-677-10.txt	Sedum lanceolatum
+fp-679-2.txt	Sedum laxum subsp. eastwoodiae
+fp-679-2.txt	Sedum laxum subsp. flavidum
+fp-679-2.txt	Sedum laxum subsp. heckneri
+fp-679-2.txt	Sedum laxum subsp. laxum
+fp-679-3.txt	Sedum niveum
+fp-679-3.txt	Sedum oblanceolatum
+fp-679-4.txt	Sedum obtusatum subsp. paradisum
+fp-679-4.txt	Sedum obtusatum subsp. retusum
+fp-679-4.txt	Sedum obtusatum subsp. boreale
+fp-679-4.txt	Sedum obtusatum subsp. obtusatum
+fp-679-5.txt	Sedum oregonense
+fp-679-5.txt	Sedum oreganum
+fp-679-6.txt	Sedum spathulifolium
+fp-679-6.txt	Sedum stenopetalum
+fp-679-7.txt	Crossosoma californicum
+fp-679-7.txt	Crossosoma bigelovii
+fp-679-7.txt	Crossosomataceae
+fp-679-8.txt	Glossopetalon spinescens var. aridum
+fp-683-2.txt	Brandegea bigelovii
+fp-683-2.txt	Cucurbitaceae
+fp-683-3.txt	Cucumis melo var. dudaim
+fp-683-3.txt	Cucumis myriocarpus
+fp-683-4.txt	Cucurbita palmata
+fp-683-4.txt	Cucurbita digitata
+fp-683-4.txt	Cucurbita foetidissima
+fp-683-5.txt	Marah horrida
+fp-683-5.txt	Marah fabacea
+fp-683-6.txt	Marah watsonii
+fp-683-6.txt	Marah macrocarpa
+fp-683-6.txt	Marah oregana
+fp-683-7.txt	Datisca glomerata
+fp-683-7.txt	Datiscaceae
+fp-683-8.txt	Dipsacus sativus
+fp-683-8.txt	Dipsacus fullonum
+fp-683-8.txt	Dipsacaceae
+fp-683-9.txt	Drosera anglica
+fp-683-9.txt	Drosera rotundifolia
+fp-683-9.txt	Droseraceae
+fp-683-10.txt	Elaeagnus angustifolia
+fp-693-10.txt	Arctostaphylos confertiflora
+fp-693-10.txt	Arctostaphylos crustacea subsp. crinita
+fp-693-10.txt	Arctostaphylos crustacea subsp. subcordata
+fp-693-2.txt	Shepherdia argentea
+fp-693-3.txt	Bergia texana
+fp-693-3.txt	Elatinaceae
+fp-693-4.txt	Elatine brachysperma
+fp-693-5.txt	Elatine californica
+fp-693-5.txt	Elatine rubella
+fp-693-5.txt	Elatine chilensis
+fp-693-6.txt	Allotropa virgata
+fp-693-6.txt	Ericaceae
+fp-693-7.txt	Arbutus menziesii
+fp-693-8.txt	Arctostaphylos andersonii
+fp-693-8.txt	Arctostaphylos canescens subsp. canescens
+fp-693-8.txt	Arctostaphylos auriculata
+fp-693-8.txt	Arctostaphylos bakeri subsp. bakeri
+fp-693-8.txt	Arctostaphylos bakeri subsp. sublaevis
+fp-693-9.txt	Arctostaphylos columbiana
+fp-693-9.txt	Arctostaphylos catalinae
+fp-697-2.txt	Arctostaphylos cruzensis
+fp-697-2.txt	Arctostaphylos densiflora
+fp-697-2.txt	Arctostaphylos edmundsii
+fp-697-3.txt	Arctostaphylos gabilanensis
+fp-697-3.txt	Arctostaphylos franciscana
+fp-697-4.txt	Arctostaphylos glandulosa
+fp-697-5.txt	Arctostaphylos glandulosa subsp. crassifolia
+fp-697-5.txt	Arctostaphylos glandulosa subsp. glandulosa
+fp-697-5.txt	Arctostaphylos glauca
+fp-697-6.txt	Arctostaphylos glutinosa
+fp-697-6.txt	Arctostaphylos hookeri subsp. hearstiorum
+fp-697-6.txt	Arctostaphylos hookeri subsp. hookeri
+fp-697-7.txt	Arctostaphylos hooveri
+fp-697-8.txt	Arctostaphylos imbricata
+fp-697-8.txt	Arctostaphylos insularis
+fp-697-9.txt	Arctostaphylos klamathensis
+fp-697-10.txt	Arctostaphylos manzanita subsp. wieslanderi
+fp-697-10.txt	Arctostaphylos manzanita subsp. elegans
+fp-697-10.txt	Arctostaphylos manzanita subsp. manzanita
+fp-701-2.txt	Arctostaphylos mewukka subsp. mewukka
+fp-701-2.txt	Arctostaphylos mewukka subsp. truei
+fp-701-2.txt	Arctostaphylos montana subsp. montana
+fp-701-2.txt	Arctostaphylos montana subsp. ravenii
+fp-701-3.txt	Arctostaphylos morroensis
+fp-701-3.txt	Arctostaphylos montaraensis
+fp-701-4.txt	Arctostaphylos nevadensis subsp. nevadensis
+fp-701-4.txt	Arctostaphylos myrtifolia
+fp-701-5.txt	Arctostaphylos nummularia subsp. nummularia
+fp-701-5.txt	Arctostaphylos nissenana
+fp-701-6.txt	Arctostaphylos otayensis
+fp-701-6.txt	Arctostaphylos pajaroensis
+fp-701-7.txt	Arctostaphylos patula
+fp-701-7.txt	Arctostaphylos pallida
+fp-701-8.txt	Arctostaphylos pumila
+fp-701-8.txt	Arctostaphylos pringlei subsp. drupacea
+fp-701-8.txt	Arctostaphylos pilosula
+fp-701-8.txt	Arctostaphylos pungens
+fp-701-9.txt	Arctostaphylos rudis
+fp-701-9.txt	Arctostaphylos stanfordiana subsp. raichei
+fp-701-9.txt	Arctostaphylos stanfordiana subsp. stanfordiana
+fp-701-9.txt	Arctostaphylos silvicola
+fp-701-10.txt	Arctostaphylos tomentosa subsp. tomentosa
+fp-701-10.txt	Arctostaphylos tomentosa subsp. bracteosa
+fp-705-2.txt	Arctostaphylos uva-ursi
+fp-705-2.txt	Arctostaphylos viridissima
+fp-705-2.txt	Arctostaphylos viscida subsp. mariposa
+fp-705-3.txt	Cassiope mertensiana
+fp-705-4.txt	Chimaphila menziesii
+fp-705-4.txt	Chimaphila umbellata
+fp-705-5.txt	Comarostaphylis diversifolia subsp. diversifolia
+fp-705-5.txt	Comarostaphylis diversifolia subsp. planifolia
+fp-705-6.txt	Empetrum nigrum
+fp-705-7.txt	Gaultheria humifusa
+fp-705-7.txt	Gaultheria shallon
+fp-705-8.txt	Hemitomes congestum
+fp-705-9.txt	Kalmia polifolia
+fp-705-10.txt	Leucothoe davisiae
+fp-707-2.txt	Menziesia ferruginea
+fp-707-3.txt	Moneses uniflora
+fp-707-4.txt	Monotropa hypopitys
+fp-707-5.txt	Ornithostaphylos oppositifolia
+fp-707-6.txt	Orthilia secunda
+fp-707-7.txt	Phyllodoce empetriformis
+fp-707-7.txt	Phyllodoce breweri
+fp-707-8.txt	Pityopus californicus
+fp-707-9.txt	Pleuricospora fimbriolata
+fp-707-10.txt	Pterospora andromedea
+fp-711-2.txt	Pyrola asarifolia subsp. bracteata
+fp-711-2.txt	Pyrola asarifolia subsp. asarifolia
+fp-711-3.txt	Pyrola picta
+fp-711-3.txt	Pyrola minor
+fp-711-4.txt	Rhododendron columbianum
+fp-711-5.txt	Rhododendron macrophyllum
+fp-711-5.txt	Rhododendron occidentale
+fp-711-6.txt	Sarcodes sanguinea
+fp-711-7.txt	Vaccinium cespitosum
+fp-711-7.txt	Vaccinium deliciosum
+fp-711-8.txt	Vaccinium ovatum
+fp-711-8.txt	Vaccinium membranaceum
+fp-711-9.txt	Vaccinium parvifolium
+fp-711-9.txt	Vaccinium uliginosum subsp. occidentale
+fp-711-10.txt	Xylococcus bicolor
+fp-717-2.txt	Acalypha californica
+fp-717-3.txt	Bernardia incana
+fp-717-4.txt	Chamaesyce albomarginata
+fp-717-4.txt	Chamaesyce hooveri
+fp-717-5.txt	Chamaesyce maculata
+fp-717-6.txt	Chamaesyce polycarpa
+fp-717-6.txt	Chamaesyce prostrata
+fp-717-6.txt	Chamaesyce setiloba
+fp-717-7.txt	Croton californicus
+fp-717-8.txt	Croton setigerus
+fp-717-8.txt	Croton wigginsii
+fp-717-9.txt	Ditaxis claryana
+fp-717-9.txt	Ditaxis serrata var. serrata
+fp-717-9.txt	Ditaxis serrata var. californica
+fp-717-9.txt	Ditaxis lanceolata
+fp-717-10.txt	Ditaxis neomexicana
+fp-727-10.txt	Acmispon argophyllus var. fremontii
+fp-727-10.txt	Acmispon argophyllus var. argophyllus
+fp-727-2.txt	Euphorbia crenulata
+fp-727-3.txt	Euphorbia eriantha
+fp-727-3.txt	Euphorbia lathyris
+fp-727-4.txt	Euphorbia peplus
+fp-727-4.txt	Euphorbia spathulata
+fp-727-5.txt	Mercurialis annua
+fp-727-6.txt	Ricinus communis
+fp-727-7.txt	Stillingia paucidentata
+fp-727-7.txt	Stillingia spinulosa
+fp-727-7.txt	Stillingia linearifolia
+fp-727-8.txt	Tragia ramosa
+fp-727-9.txt	Acmispon americanus var. americanus
+fp-727-9.txt	Fabaceae
+fp-731-10.txt	Amorpha californica var. californica
+fp-731-10.txt	Amorpha fruticosa
+fp-731-2.txt	Acmispon brachycarpus
+fp-731-3.txt	Acmispon dendroideus var. dendroideus
+fp-731-3.txt	Acmispon denticulatus
+fp-731-4.txt	Acmispon glaber var. glaber
+fp-731-4.txt	Acmispon grandiflorus var. grandiflorus
+fp-731-5.txt	Acmispon heermannii var. orbicularis
+fp-731-6.txt	Acmispon parviflorus
+fp-731-6.txt	Acmispon nevadensis var. nevadensis
+fp-731-7.txt	Acmispon procumbens var. procumbens
+fp-731-7.txt	Acmispon prostratus
+fp-731-8.txt	Acmispon rigidus
+fp-731-8.txt	Acmispon strigosus
+fp-731-9.txt	Alhagi maurorum
+fp-731-10.txt	Amorpha fruticosa
+fp-731-10.txt	Amorpha californica var. californica
+fp-741-10.txt	Astragalus casei
+fp-741-10.txt	Astragalus cimae var. cimae
+fp-741-2.txt	Astragalus acutirostris
+fp-741-2.txt	Astragalus accidens var. hendersonii
+fp-741-3.txt	Astragalus albens
+fp-741-3.txt	Astragalus agnicidus
+fp-741-3.txt	Astragalus agrestis
+fp-741-4.txt	Astragalus anxius
+fp-741-4.txt	Astragalus argophyllus var. argophyllus
+fp-741-4.txt	Astragalus andersonii
+fp-741-4.txt	Astragalus allochrous var. playanus
+fp-741-5.txt	Astragalus atratus var. mensanus
+fp-741-5.txt	Astragalus aridus
+fp-741-5.txt	Astragalus asymmetricus
+fp-741-6.txt	Astragalus austiniae
+fp-741-6.txt	Astragalus bicristatus
+fp-741-6.txt	Astragalus bernardinus
+fp-741-7.txt	Astragalus bolanderi
+fp-741-8.txt	Astragalus californicus
+fp-741-8.txt	Astragalus breweri
+fp-741-8.txt	Astragalus brauntonii
+fp-741-9.txt	Astragalus calycosus var. calycosus
+fp-741-9.txt	Astragalus canadensis var. brevidens
+fp-743-10.txt	Astragalus inversus
+fp-743-10.txt	Astragalus insularis var. harwoodii
+fp-743-10.txt	Astragalus inyoensis
+fp-743-10.txt	Astragalus iodanthus var. iodanthus
+fp-743-2.txt	Astragalus claranus
+fp-743-2.txt	Astragalus clevelandii
+fp-743-3.txt	Astragalus coccineus
+fp-743-3.txt	Astragalus congdonii
+fp-743-4.txt	Astragalus crotalariae
+fp-743-4.txt	Astragalus curtipes
+fp-743-5.txt	Astragalus curvicarpus var. curvicarpus
+fp-743-5.txt	Astragalus deanei
+fp-743-5.txt	Astragalus didymocarpus var. didymocarpus
+fp-743-6.txt	Astragalus douglasii var. douglasii
+fp-743-7.txt	Astragalus ertterae
+fp-743-7.txt	Astragalus filipes
+fp-743-8.txt	Astragalus gambelianus
+fp-743-8.txt	Astragalus funereus
+fp-743-9.txt	Astragalus geyeri var. geyeri
+fp-743-9.txt	Astragalus gilmanii
+fp-743-9.txt	Astragalus hornii var. hornii
+fp-743-9.txt	Astragalus gibbsii
+fp-747-2.txt	Astragalus jaegerianus
+fp-747-2.txt	Astragalus johannis-howellii
+fp-747-3.txt	Astragalus kentrophyta var. elatus
+fp-747-3.txt	Astragalus kentrophyta var. danaus
+fp-747-3.txt	Astragalus kentrophyta var. tegetarius
+fp-747-4.txt	Astragalus lentiformis
+fp-747-4.txt	Astragalus layneae
+fp-747-4.txt	Astragalus lemmonii
+fp-747-5.txt	Astragalus lentiginosus var. salinus
+fp-747-5.txt	Astragalus lentiginosus var. floribundus
+fp-747-5.txt	Astragalus lentiginosus var. borreganus
+fp-747-5.txt	Astragalus lentiginosus var. piscinensis
+fp-747-5.txt	Astragalus lentiginosus var. fremontii
+fp-747-5.txt	Astragalus lentiginosus var. coachellae
+fp-747-5.txt	Astragalus lentiginosus var. ineptus
+fp-747-6.txt	Astragalus magdalenae var. peirsonii
+fp-747-6.txt	Astragalus macrodon
+fp-747-6.txt	Astragalus leucolobus
+fp-747-7.txt	Astragalus minthorniae var. villosus
+fp-747-7.txt	Astragalus miguelensis
+fp-747-7.txt	Astragalus malacus
+fp-747-8.txt	Astragalus nevinii
+fp-747-8.txt	Astragalus monoensis
+fp-747-8.txt	Astragalus mohavensis var. hemigyrus
+fp-747-9.txt	Astragalus newberryi var. newberryi
+fp-747-9.txt	Astragalus nuttallianus var. imperfectus
+fp-747-9.txt	Astragalus nutans
+fp-747-9.txt	Astragalus nuttallii var. nuttallii
+fp-751-2.txt	Astragalus obscurus
+fp-751-2.txt	Astragalus oxyphysus
+fp-751-2.txt	Astragalus oophorus var. oophorus
+fp-751-2.txt	Astragalus oocarpus
+fp-751-3.txt	Astragalus pachypus var. pachypus
+fp-751-3.txt	Astragalus palmeri
+fp-751-4.txt	Astragalus panamintensis
+fp-751-4.txt	Astragalus pauperculus
+fp-751-5.txt	Astragalus pomonensis
+fp-751-5.txt	Astragalus platytropis
+fp-751-6.txt	Astragalus preussii var. laxiflorus
+fp-751-6.txt	Astragalus pseudiodanthus
+fp-751-6.txt	Astragalus pulsiferae var. pulsiferae
+fp-751-7.txt	Astragalus purshii var. lagopinus
+fp-751-7.txt	Astragalus purshii var. tinctus
+fp-751-8.txt	Astragalus rattanii var. rattanii
+fp-751-8.txt	Astragalus pycnostachyus var. lanosissimus
+fp-751-8.txt	Astragalus rattanii var. jepsonianus
+fp-751-8.txt	Astragalus ravenii
+fp-751-9.txt	Astragalus sepultipes
+fp-751-9.txt	Astragalus sabulonum
+fp-751-9.txt	Astragalus serenoi var. shockleyi
+fp-751-10.txt	Astragalus subvestitus
+fp-751-10.txt	Astragalus shevockii
+fp-755-10.txt	Dalea mollis
+fp-755-10.txt	Dalea mollissima
+fp-755-2.txt	Astragalus tener var. ferrisiae
+fp-755-2.txt	Astragalus tener var. tener
+fp-755-3.txt	Astragalus traskiae
+fp-755-3.txt	Astragalus tidestromii
+fp-755-3.txt	Astragalus tricarinatus
+fp-755-4.txt	Astragalus trichopodus var. lonchus
+fp-755-4.txt	Astragalus umbraticus
+fp-755-4.txt	Astragalus webberi
+fp-755-5.txt	Astragalus whitneyi var. siskiyouensis
+fp-755-5.txt	Astragalus whitneyi var. whitneyi
+fp-755-6.txt	Calliandra eriophylla
+fp-755-7.txt	Cercis occidentalis
+fp-755-8.txt	Colutea arborescens
+fp-755-9.txt	Cytisus scoparius
+fp-759-10.txt	Hosackia pinnata
+fp-759-10.txt	Hosackia yollabolliensis
+fp-759-2.txt	Dalea searlsiae
+fp-759-3.txt	Genista monspessulana
+fp-759-4.txt	Glycyrrhiza lepidota
+fp-759-5.txt	Hoffmannseggia glauca
+fp-759-6.txt	Hoffmannseggia microphylla
+fp-759-7.txt	Hoita orbicularis
+fp-759-8.txt	Hosackia crassifolia var. crassifolia
+fp-759-9.txt	Hosackia gracilis
+fp-763-10.txt	Lathyrus vestitus var. vestitus
+fp-763-10.txt	Lathyrus torreyi
+fp-763-2.txt	Ladeania lanceolata
+fp-763-3.txt	Lathyrus biflorus
+fp-763-3.txt	Lathyrus brownii
+fp-763-4.txt	Lathyrus glandulosus
+fp-763-4.txt	Lathyrus delnorticus
+fp-763-4.txt	Lathyrus cicera
+fp-763-5.txt	Lathyrus hirsutus
+fp-763-5.txt	Lathyrus japonicus
+fp-763-6.txt	Lathyrus lanszwertii var. aridus
+fp-763-6.txt	Lathyrus lanszwertii var. lanszwertii
+fp-763-6.txt	Lathyrus jepsonii var. jepsonii
+fp-763-7.txt	Lathyrus littoralis
+fp-763-7.txt	Lathyrus latifolius
+fp-763-8.txt	Lathyrus nevadensis var. nevadensis
+fp-763-8.txt	Lathyrus palustris
+fp-763-9.txt	Lathyrus rigidus
+fp-763-9.txt	Lathyrus polyphyllus
+fp-771-10.txt	Lupinus bicolor
+fp-771-2.txt	Lotus corniculatus
+fp-771-2.txt	Lotus uliginosus
+fp-771-3.txt	Lupinus adsurgens
+fp-771-4.txt	Lupinus affinis
+fp-771-4.txt	Lupinus albicaulis
+fp-771-5.txt	Lupinus albifrons
+fp-771-5.txt	Lupinus albifrons var. albifrons
+fp-771-5.txt	Lupinus albifrons var. douglasii
+fp-771-5.txt	Lupinus albifrons var. abramsii
+fp-771-5.txt	Lupinus albifrons var. collinus
+fp-771-6.txt	Lupinus andersonii
+fp-771-6.txt	Lupinus angustiflorus
+fp-771-7.txt	Lupinus arbustus
+fp-771-7.txt	Lupinus arboreus
+fp-771-8.txt	Lupinus argenteus var. palmeri
+fp-771-8.txt	Lupinus argenteus var. argenteus
+fp-771-8.txt	Lupinus argenteus var. montigenus
+fp-771-8.txt	Lupinus argenteus var. meionanthus
+fp-771-8.txt	Lupinus argenteus var. heteranthus
+fp-771-9.txt	Lupinus arizonicus
+fp-771-9.txt	Lupinus benthamii
+fp-775-10.txt	Lupinus fulcratus
+fp-775-10.txt	Lupinus gracilentus
+fp-775-10.txt	Lupinus grayi
+fp-775-2.txt	Lupinus breweri var. grandiflorus
+fp-775-2.txt	Lupinus brevicaulis
+fp-775-2.txt	Lupinus breweri var. bryoides
+fp-775-3.txt	Lupinus cervinus
+fp-775-3.txt	Lupinus chamissonis
+fp-775-4.txt	Lupinus concinnus
+fp-775-4.txt	Lupinus citrinus var. citrinus
+fp-775-5.txt	Lupinus croceus
+fp-775-5.txt	Lupinus covillei
+fp-775-5.txt	Lupinus constancei
+fp-775-6.txt	Lupinus dalesiae
+fp-775-7.txt	Lupinus duranii
+fp-775-7.txt	Lupinus elatus
+fp-775-7.txt	Lupinus elmeri
+fp-775-8.txt	Lupinus excubitus var. medius
+fp-775-8.txt	Lupinus excubitus var. excubitus
+fp-775-8.txt	Lupinus excubitus var. austromontanus
+fp-775-9.txt	Lupinus formosus var. formosus
+fp-775-9.txt	Lupinus formosus var. robustus
+fp-775-9.txt	Lupinus flavoculatus
+fp-777-10.txt	Lupinus pachylobus
+fp-777-10.txt	Lupinus padre-crowleyi
+fp-777-10.txt	Lupinus peirsonii
+fp-777-2.txt	Lupinus guadalupensis
+fp-777-2.txt	Lupinus hirsutissimus
+fp-777-2.txt	Lupinus holmgrenianus
+fp-777-3.txt	Lupinus latifolius var. viridifolius
+fp-777-3.txt	Lupinus latifolius var. dudleyi
+fp-777-3.txt	Lupinus latifolius var. columbianus
+fp-777-3.txt	Lupinus latifolius var. latifolius
+fp-777-4.txt	Lupinus lepidus var. sellulus
+fp-777-4.txt	Lupinus lepidus var. utahensis
+fp-777-4.txt	Lupinus lepidus var. lobbii
+fp-777-4.txt	Lupinus lepidus var. confertus
+fp-777-4.txt	Lupinus lepidus var. culbertsonii
+fp-777-5.txt	Lupinus leucophyllus
+fp-777-5.txt	Lupinus littoralis
+fp-777-5.txt	Lupinus longifolius
+fp-777-6.txt	Lupinus luteolus
+fp-777-6.txt	Lupinus magnificus
+fp-777-6.txt	Lupinus ludovicianus
+fp-777-7.txt	Lupinus microcarpus var. microcarpus
+fp-777-7.txt	Lupinus microcarpus var. densiflorus
+fp-777-7.txt	Lupinus microcarpus var. horizontalis
+fp-777-8.txt	Lupinus obtusilobus
+fp-777-8.txt	Lupinus nanus
+fp-777-8.txt	Lupinus nipomensis
+fp-777-9.txt	Lupinus onustus
+fp-777-9.txt	Lupinus odoratus
+fp-781-10.txt	Medicago sativa
+fp-781-10.txt	Medicago polymorpha
+fp-781-2.txt	Lupinus polyphyllus var. burkei
+fp-781-3.txt	Lupinus rivularis
+fp-781-3.txt	Lupinus pusillus var. intermontanus
+fp-781-3.txt	Lupinus polyphyllus var. polyphyllus
+fp-781-4.txt	Lupinus saxosus
+fp-781-4.txt	Lupinus sericatus
+fp-781-5.txt	Lupinus sparsiflorus
+fp-781-5.txt	Lupinus shockleyi
+fp-781-6.txt	Lupinus stiversii
+fp-781-6.txt	Lupinus spectabilis
+fp-781-7.txt	Lupinus succulentus
+fp-781-7.txt	Lupinus tidestromii
+fp-781-8.txt	Lupinus tracyi
+fp-781-8.txt	Lupinus variicolor
+fp-781-8.txt	Lupinus truncatus
+fp-781-9.txt	Marina parryi
+fp-781-9.txt	Marina orcuttii var. orcuttii
+fp-785-10.txt	Pickeringia montana var. tomentosa
+fp-785-10.txt	Pickeringia montana var. montana
+fp-785-11.txt	Prosopis glandulosa var. torreyana
+fp-785-2.txt	Melilotus albus
+fp-785-2.txt	Melilotus officinalis
+fp-785-2.txt	Melilotus indicus
+fp-785-3.txt	Olneya tesota
+fp-785-4.txt	Oxytropis oreophila var. oreophila
+fp-785-4.txt	Oxytropis borealis
+fp-785-4.txt	Oxytropis deflexa var. sericea
+fp-785-5.txt	Parkinsonia florida
+fp-785-5.txt	Parkinsonia microphylla
+fp-785-6.txt	Pediomelum californicum
+fp-785-7.txt	Pediomelum castoreum
+fp-785-8.txt	Peteria thompsoniae
+fp-785-9.txt	Phaseolus filiformis
+fp-793-10.txt	Trifolium albopurpureum
+fp-793-10.txt	Trifolium amoenum
+fp-793-2.txt	Psorothamnus arborescens var. minutifolius
+fp-793-2.txt	Psorothamnus arborescens var. simplicifolius
+fp-793-2.txt	Psorothamnus arborescens var. arborescens
+fp-793-3.txt	Psorothamnus emoryi
+fp-793-3.txt	Psorothamnus fremontii var. fremontii
+fp-793-3.txt	Psorothamnus spinosus
+fp-793-4.txt	Robinia pseudoacacia
+fp-793-4.txt	Robinia neomexicana
+fp-793-5.txt	Rupertia hallii
+fp-793-5.txt	Rupertia physodes
+fp-793-6.txt	Senegalia greggii
+fp-793-7.txt	Senna armata
+fp-793-8.txt	Spartium junceum
+fp-793-8.txt	Sesbania herbacea
+fp-793-9.txt	Thermopsis californica var. semota
+fp-793-9.txt	Thermopsis californica var. californica
+fp-793-9.txt	Thermopsis californica var. argentata
+fp-797-10.txt	Trifolium howellii
+fp-797-10.txt	Trifolium hybridum
+fp-797-2.txt	Trifolium arvense
+fp-797-2.txt	Trifolium angustifolium
+fp-797-2.txt	Trifolium andersonii subsp. andersonii
+fp-797-3.txt	Trifolium beckwithii
+fp-797-3.txt	Trifolium bifidum var. bifidum
+fp-797-4.txt	Trifolium campestre
+fp-797-4.txt	Trifolium buckwestiorum
+fp-797-4.txt	Trifolium bolanderi
+fp-797-5.txt	Trifolium ciliolatum
+fp-797-5.txt	Trifolium cyathiferum
+fp-797-6.txt	Trifolium dichotomum
+fp-797-6.txt	Trifolium depauperatum var. truncatum
+fp-797-6.txt	Trifolium depauperatum var. amplectens
+fp-797-6.txt	Trifolium depauperatum var. depauperatum
+fp-797-7.txt	Trifolium dubium
+fp-797-7.txt	Trifolium fragiferum
+fp-797-7.txt	Trifolium eriocephalum subsp. eriocephalum
+fp-797-7.txt	Trifolium fucatum
+fp-797-8.txt	Trifolium glomeratum
+fp-797-8.txt	Trifolium gracilentum
+fp-797-8.txt	Trifolium grayi
+fp-797-9.txt	Trifolium gymnocarpon subsp. plummerae
+fp-797-9.txt	Trifolium hirtum
+fp-801-10.txt	Ulex europaeus
+fp-801-2.txt	Trifolium incarnatum
+fp-801-2.txt	Trifolium hydrophilum
+fp-801-2.txt	Trifolium kingii subsp. dedeckerae
+fp-801-3.txt	Trifolium longipes subsp. hansenii
+fp-801-3.txt	Trifolium longipes subsp. elmeri
+fp-801-3.txt	Trifolium lemmonii
+fp-801-4.txt	Trifolium microcephalum
+fp-801-4.txt	Trifolium macrocephalum
+fp-801-4.txt	Trifolium microdon
+fp-801-4.txt	Trifolium macraei
+fp-801-5.txt	Trifolium monanthum subsp. monanthum
+fp-801-5.txt	Trifolium obtusiflorum
+fp-801-5.txt	Trifolium oliganthum
+fp-801-6.txt	Trifolium olivaceum
+fp-801-6.txt	Trifolium pratense
+fp-801-6.txt	Trifolium productum
+fp-801-7.txt	Trifolium repens
+fp-801-7.txt	Trifolium subterraneum
+fp-801-8.txt	Trifolium variegatum var. variegatum
+fp-801-8.txt	Trifolium variegatum var. geminiflorum
+fp-801-8.txt	Trifolium trichocalyx
+fp-801-9.txt	Trifolium wormskioldii
+fp-801-9.txt	Trifolium willdenovii
+fp-805-10.txt	Quercus berberidifolia
+fp-805-10.txt	Quercus X alvordiana
+fp-805-2.txt	Vicia americana subsp. americana
+fp-805-3.txt	Vicia hassei
+fp-805-3.txt	Vicia gigantea
+fp-805-4.txt	Vicia sativa subsp. nigra
+fp-805-4.txt	Vicia hirsuta
+fp-805-4.txt	Vicia ludoviciana subsp. ludoviciana
+fp-805-5.txt	Vicia tetrasperma
+fp-805-5.txt	Vicia villosa subsp. villosa
+fp-805-6.txt	Chrysolepis chrysophylla var. chrysophylla
+fp-805-6.txt	Chrysolepis chrysophylla var. minor
+fp-805-6.txt	Chrysolepis sempervirens
+fp-805-6.txt	Fagaceae
+fp-805-7.txt	Notholithocarpus densiflorus var. densiflorus
+fp-805-7.txt	Notholithocarpus densiflorus var. echinoides
+fp-805-8.txt	Quercus agrifolia var. agrifolia
+fp-805-8.txt	Quercus agrifolia var. oxyadenia
+fp-805-9.txt	Quercus X acutidens
+fp-809-10.txt	Quercus lobata
+fp-809-10.txt	Quercus X macdonaldii
+fp-809-2.txt	Quercus cedrosensis
+fp-809-3.txt	Quercus chrysolepis
+fp-809-4.txt	Quercus cornelius-mulleri
+fp-809-4.txt	Quercus douglasii
+fp-809-5.txt	Quercus dumosa
+fp-809-6.txt	Quercus durata var. durata
+fp-809-6.txt	Quercus engelmannii
+fp-809-7.txt	Quercus garryana var. garryana
+fp-809-7.txt	Quercus garryana var. breweri
+fp-809-8.txt	Quercus john-tuckeri
+fp-809-9.txt	Quercus kelloggii
+fp-811-10.txt	Frankenia salina
+fp-811-10.txt	Frankeniaceae
+fp-811-2.txt	Quercus pacifica
+fp-811-3.txt	Quercus palmeri
+fp-811-4.txt	Quercus parvula var. parvula
+fp-811-4.txt	Quercus parvula var. shrevei
+fp-811-5.txt	Quercus sadleriana
+fp-811-6.txt	Quercus tomentella
+fp-811-6.txt	Quercus turbinella
+fp-811-7.txt	Quercus vacciniifolia
+fp-811-8.txt	Quercus wislizeni var. frutescens
+fp-811-8.txt	Quercus wislizeni var. wislizeni
+fp-811-9.txt	Fouquieria splendens subsp. splendens
+fp-811-9.txt	Fouquieriaceae
+fp-815-10.txt	Frasera tubulosa
+fp-815-10.txt	Frasera umpquaensis
+fp-815-2.txt	Garrya elliptica
+fp-815-2.txt	Garrya buxifolia
+fp-815-2.txt	Garrya veatchii
+fp-815-2.txt	Garrya congdonii
+fp-815-2.txt	Garryaceae
+fp-815-3.txt	Garrya flavescens
+fp-815-4.txt	Centaurium erythraea
+fp-815-4.txt	Centaurium tenuiflorum
+fp-815-4.txt	Gentianaceae
+fp-815-5.txt	Cicendia quadrangularis
+fp-815-6.txt	Comastoma tenellum
+fp-815-7.txt	Eustoma exaltatum subsp. exaltatum
+fp-815-8.txt	Frasera albomarginata var. albomarginata
+fp-815-8.txt	Frasera albicaulis
+fp-815-9.txt	Frasera puberulenta
+fp-815-9.txt	Frasera speciosa
+fp-815-9.txt	Frasera parryi
+fp-819-10.txt	California macrophylla
+fp-819-10.txt	Geraniaceae
+fp-819-2.txt	Gentiana affinis var. ovata
+fp-819-2.txt	Gentiana calycosa
+fp-819-3.txt	Gentiana fremontii
+fp-819-3.txt	Gentiana newberryi
+fp-819-4.txt	Gentiana plurisetosa
+fp-819-4.txt	Gentiana sceptrum
+fp-819-4.txt	Gentiana prostrata
+fp-819-5.txt	Gentianella amarella subsp. acuta
+fp-819-6.txt	Gentianopsis holopetala
+fp-819-6.txt	Gentianopsis simplex
+fp-819-7.txt	Swertia perennis
+fp-819-8.txt	Zeltnera davyi
+fp-819-8.txt	Zeltnera muehlenbergii
+fp-819-9.txt	Zeltnera trichantha
+fp-819-9.txt	Zeltnera venusta
+fp-825-10.txt	Ribes bracteosum
+fp-825-2.txt	Erodium brachycarpum
+fp-825-2.txt	Erodium botrys
+fp-825-3.txt	Erodium malacoides
+fp-825-3.txt	Erodium cicutarium
+fp-825-3.txt	Erodium moschatum
+fp-825-3.txt	Erodium texanum
+fp-825-4.txt	Geranium carolinianum
+fp-825-4.txt	Geranium bicknellii
+fp-825-4.txt	Geranium californicum
+fp-825-5.txt	Geranium dissectum
+fp-825-5.txt	Geranium core-core
+fp-825-5.txt	Geranium molle
+fp-825-6.txt	Geranium potentilloides
+fp-825-6.txt	Geranium richardsonii
+fp-825-6.txt	Geranium oreganum
+fp-825-7.txt	Geranium viscosissimum
+fp-825-7.txt	Geranium robertianum
+fp-825-8.txt	Ribes amarum
+fp-825-8.txt	Ribes aureum var. aureum
+fp-825-8.txt	Grossulariaceae
+fp-825-9.txt	Ribes binominatum
+fp-831-10.txt	Carpenteria californica
+fp-831-10.txt	Hydrangeaceae
+fp-831-2.txt	Ribes cereum var. cereum
+fp-831-2.txt	Ribes canthariforme
+fp-831-3.txt	Ribes lacustre
+fp-831-3.txt	Ribes divaricatum var. pubiflorum
+fp-831-4.txt	Ribes laxiflorum
+fp-831-4.txt	Ribes malvaceum var. malvaceum
+fp-831-4.txt	Ribes lobbii
+fp-831-5.txt	Ribes menziesii
+fp-831-5.txt	Ribes marshallii
+fp-831-6.txt	Ribes montigenum
+fp-831-6.txt	Ribes nevadense
+fp-831-6.txt	Ribes quercetorum
+fp-831-7.txt	Ribes roezlii var. roezlii
+fp-831-7.txt	Ribes sanguineum var. glutinosum
+fp-831-8.txt	Ribes speciosum
+fp-831-8.txt	Ribes velutinum
+fp-831-8.txt	Ribes viscosissimum
+fp-831-8.txt	Ribes viburnifolium
+fp-831-9.txt	Myriophyllum hippuroides
+fp-831-9.txt	Myriophyllum verticillatum
+fp-831-9.txt	Myriophyllum sibiricum
+fp-831-9.txt	Haloragaceae
+fp-835-10.txt	Koeberlinia spinosa var. tenuispina
+fp-835-10.txt	Koeberliniaceae
+fp-835-2.txt	Fendlerella utahensis
+fp-835-3.txt	Jamesia americana var. rosea
+fp-835-4.txt	Philadelphus microphyllus
+fp-835-4.txt	Philadelphus lewisii
+fp-835-5.txt	Whipplea modesta
+fp-835-6.txt	Hypericum concinnum
+fp-835-6.txt	Hypericum anagalloides
+fp-835-6.txt	Hypericaceae
+fp-835-7.txt	Hypericum perforatum subsp. perforatum
+fp-835-8.txt	Hypericum scouleri
+fp-835-9.txt	Juglans californica
+fp-835-9.txt	Juglandaceae
+fp-841-10.txt	Lycopus asper
+fp-841-10.txt	Lycopus americanus
+fp-841-2.txt	Krameria erecta
+fp-841-2.txt	Krameria bicolor
+fp-841-2.txt	Krameriaceae
+fp-841-3.txt	Acanthomintha obovata subsp. cordata
+fp-841-3.txt	Acanthomintha lanceolata
+fp-841-3.txt	Acanthomintha ilicifolia
+fp-841-3.txt	Lamiaceae
+fp-841-4.txt	Agastache urticifolia
+fp-841-4.txt	Agastache parvifolia
+fp-841-5.txt	Clinopodium mimuloides
+fp-841-5.txt	Clinopodium douglasii
+fp-841-5.txt	Clinopodium chandleri
+fp-841-6.txt	Hedeoma drummondii
+fp-841-6.txt	Hedeoma nana subsp. californica
+fp-841-7.txt	Hyptis emoryi
+fp-841-8.txt	Lamium purpureum
+fp-841-8.txt	Lamium amplexicaule
+fp-841-9.txt	Lepechinia cardiophylla
+fp-841-9.txt	Lepechinia fragrans
+fp-841-9.txt	Lepechinia ganderi
+fp-841-9.txt	Lepechinia calycina
+fp-847-10.txt	Monardella leucocephala
+fp-847-10.txt	Monardella hypoleuca subsp. hypoleuca
+fp-847-10.txt	Monardella hypoleuca subsp. lanata
+fp-847-2.txt	Lycopus uniflorus
+fp-847-3.txt	Marrubium vulgare
+fp-847-4.txt	Mentha canadensis
+fp-847-5.txt	Monarda pectinata
+fp-847-6.txt	Monardella australis subsp. australis
+fp-847-6.txt	Monardella australis subsp. cinerea
+fp-847-7.txt	Monardella breweri subsp. breweri
+fp-847-8.txt	Monardella douglasii
+fp-847-9.txt	Monardella follettii
+fp-853-10.txt	Pogogyne zizyphoroides
+fp-853-10.txt	Pogogyne douglasii
+fp-853-2.txt	Monardella linoides subsp. oblonga
+fp-853-2.txt	Monardella linoides subsp. linoides
+fp-853-2.txt	Monardella macrantha subsp. hallii
+fp-853-2.txt	Monardella macrantha subsp. macrantha
+fp-853-3.txt	Monardella nana
+fp-853-4.txt	Monardella odoratissima subsp. pallida
+fp-853-5.txt	Monardella palmeri
+fp-853-5.txt	Monardella pringlei
+fp-853-5.txt	Monardella purpurea
+fp-853-5.txt	Monardella robisonii
+fp-853-6.txt	Monardella stebbinsii
+fp-853-7.txt	Monardella undulata subsp. crispa
+fp-853-7.txt	Monardella undulata subsp. undulata
+fp-853-8.txt	Monardella venosa
+fp-853-8.txt	Monardella villosa subsp. villosa
+fp-853-9.txt	Monardella sinuata subsp. sinuata
+fp-853-9.txt	Monardella viridis
+fp-853-9.txt	Monardella viminea
+fp-857-10.txt	Salvia spathacea
+fp-857-10.txt	Salvia vaseyi
+fp-857-10.txt	Salvia sonomensis
+fp-857-2.txt	Poliomintha incana
+fp-857-3.txt	Prunella vulgaris var. lanceolata
+fp-857-4.txt	Pycnanthemum californicum
+fp-857-5.txt	Salvia brandegeei
+fp-857-5.txt	Salvia apiana
+fp-857-6.txt	Salvia carduacea
+fp-857-6.txt	Salvia clevelandii
+fp-857-7.txt	Salvia dorrii var. dorrii
+fp-857-7.txt	Salvia funerea
+fp-857-7.txt	Salvia eremostachya
+fp-857-7.txt	Salvia columbariae
+fp-857-8.txt	Salvia greatae
+fp-857-8.txt	Salvia leucophylla
+fp-857-8.txt	Salvia mellifera
+fp-857-9.txt	Salvia mohavensis
+fp-857-9.txt	Salvia munzii
+fp-857-9.txt	Salvia pachyphylla
+fp-861-10.txt	Trichostema laxum
+fp-861-10.txt	Trichostema lanceolatum
+fp-861-2.txt	Scutellaria antirrhinoides
+fp-861-2.txt	Scutellaria bolanderi subsp. austromontana
+fp-861-2.txt	Scutellaria bolanderi subsp. bolanderi
+fp-861-3.txt	Scutellaria californica
+fp-861-3.txt	Scutellaria lateriflora
+fp-861-3.txt	Scutellaria galericulata
+fp-861-4.txt	Scutellaria mexicana
+fp-861-5.txt	Scutellaria nana
+fp-861-5.txt	Scutellaria tuberosa
+fp-861-6.txt	Stachys albens
+fp-861-6.txt	Stachys ajugoides
+fp-861-6.txt	Stachys bullata
+fp-861-6.txt	Stachys chamissonis
+fp-861-7.txt	Stachys pilosa
+fp-861-7.txt	Stachys stricta
+fp-861-7.txt	Stachys stebbinsii
+fp-861-7.txt	Stachys rigida var. rigida
+fp-861-7.txt	Stachys pycnantha
+fp-861-8.txt	Teucrium cubense subsp. depressum
+fp-861-8.txt	Teucrium glandulosum
+fp-861-9.txt	Trichostema austromontanum
+fp-861-9.txt	Trichostema lanatum
+fp-867-10.txt	Hesperolinon didymocarpum
+fp-867-10.txt	Hesperolinon spergulinum
+fp-867-10.txt	Hesperolinon drymarioides
+fp-867-2.txt	Trichostema parishii
+fp-867-2.txt	Trichostema rubisepalum
+fp-867-2.txt	Trichostema oblongum
+fp-867-3.txt	Pinguicula macroceras
+fp-867-3.txt	Lentibulariaceae
+fp-867-4.txt	Utricularia gibba
+fp-867-4.txt	Utricularia intermedia
+fp-867-4.txt	Utricularia minor
+fp-867-4.txt	Utricularia macrorhiza
+fp-867-5.txt	Floerkea proserpinacoides
+fp-867-5.txt	Limnanthaceae
+fp-867-6.txt	Limnanthes alba subsp. versicolor
+fp-867-6.txt	Limnanthes bakeri
+fp-867-7.txt	Limnanthes douglasii subsp. douglasii
+fp-867-7.txt	Limnanthes floccosa
+fp-867-8.txt	Hesperolinon adenophyllum
+fp-867-8.txt	Linaceae
+fp-867-9.txt	Hesperolinon californicum
+fp-867-9.txt	Hesperolinon congestum
+fp-873-10.txt	Mentzelia nitens
+fp-873-10.txt	Mentzelia obscura
+fp-873-10.txt	Mentzelia oreophila
+fp-873-2.txt	Linum lewisii
+fp-873-2.txt	Linum puberulum
+fp-873-2.txt	Linum usitatissimum
+fp-873-3.txt	Sclerolinon digynum
+fp-873-4.txt	Linnaea borealis var. longiflora
+fp-873-4.txt	Linnaeaceae
+fp-873-5.txt	Eucnide urens
+fp-873-5.txt	Loasaceae
+fp-873-6.txt	Mentzelia affinis
+fp-873-6.txt	Mentzelia congesta
+fp-873-6.txt	Mentzelia albicaulis
+fp-873-7.txt	Mentzelia desertorum
+fp-873-7.txt	Mentzelia crocea
+fp-873-7.txt	Mentzelia dispersa
+fp-873-8.txt	Mentzelia lindleyi
+fp-873-8.txt	Mentzelia eremophila
+fp-873-8.txt	Mentzelia involucrata
+fp-873-9.txt	Mentzelia laevicaulis
+fp-873-9.txt	Mentzelia micrantha
+fp-879-10.txt	Abutilon palmeri
+fp-879-10.txt	Abutilon parvulum
+fp-879-10.txt	Malvaceae
+fp-879-2.txt	Mentzelia pectinata
+fp-879-2.txt	Mentzelia polita
+fp-879-3.txt	Mentzelia reflexa
+fp-879-4.txt	Mentzelia tricuspis
+fp-879-4.txt	Mentzelia torreyi
+fp-879-4.txt	Mentzelia veatchiana
+fp-879-5.txt	Petalonyx thurberi subsp. thurberi
+fp-879-5.txt	Petalonyx nitidus
+fp-879-6.txt	Ammannia coccinea
+fp-879-6.txt	Ammannia robusta
+fp-879-6.txt	Lythraceae
+fp-879-7.txt	Lythrum californicum
+fp-879-8.txt	Lythrum salicaria
+fp-879-8.txt	Lythrum hyssopifolia
+fp-879-8.txt	Lythrum portula
+fp-879-8.txt	Lythrum tribracteatum
+fp-879-9.txt	Rotala ramosior
+fp-883-10.txt	Hibiscus lasiocarpos var. occidentalis
+fp-883-2.txt	Abutilon theophrasti
+fp-883-3.txt	Alcea rosea
+fp-883-4.txt	Anoda cristata
+fp-883-5.txt	Ayenia compacta
+fp-883-6.txt	Eremalche exilis
+fp-883-6.txt	Eremalche rotundifolia
+fp-883-7.txt	Fremontodendron californicum
+fp-883-8.txt	Herissantia crispa
+fp-883-9.txt	Hibiscus trionum
+fp-883-9.txt	Hibiscus denudatus
+fp-889-10.txt	Malva nicaeensis
+fp-889-10.txt	Malva parviflora
+fp-889-10.txt	Malva sylvestris
+fp-889-2.txt	Horsfordia newberryi
+fp-889-2.txt	Horsfordia alata
+fp-889-3.txt	Iliamna bakeri
+fp-889-3.txt	Iliamna latibracteata
+fp-889-4.txt	Malacothamnus abbottii
+fp-889-4.txt	Malacothamnus aboriginum
+fp-889-5.txt	Malacothamnus clementinus
+fp-889-5.txt	Malacothamnus davidsonii
+fp-889-5.txt	Malacothamnus densiflorus
+fp-889-6.txt	Malacothamnus fasciculatus var. fasciculatus
+fp-889-6.txt	Malacothamnus fremontii
+fp-889-7.txt	Malacothamnus marrubioides
+fp-889-7.txt	Malacothamnus palmeri var. palmeri
+fp-889-7.txt	Malacothamnus jonesii
+fp-889-8.txt	Malva assurgentiflora
+fp-889-9.txt	Malva neglecta
+fp-895-10.txt	Sidalcea malviflora subsp. patula
+fp-895-2.txt	Malvella leprosa
+fp-895-3.txt	Modiola caroliniana
+fp-895-4.txt	Sidalcea calycosa subsp. rhizomata
+fp-895-4.txt	Sidalcea calycosa subsp. calycosa
+fp-895-5.txt	Sidalcea diploscypha
+fp-895-5.txt	Sidalcea covillei
+fp-895-6.txt	Sidalcea hartwegii
+fp-895-6.txt	Sidalcea glaucescens
+fp-895-7.txt	Sidalcea hickmanii subsp. anomala
+fp-895-7.txt	Sidalcea hickmanii subsp. viridis
+fp-895-7.txt	Sidalcea hickmanii subsp. parishii
+fp-895-7.txt	Sidalcea hickmanii subsp. hickmanii
+fp-895-8.txt	Sidalcea keckii
+fp-895-8.txt	Sidalcea malachroides
+fp-895-8.txt	Sidalcea hirsuta
+fp-895-9.txt	Sidalcea malviflora subsp. californica
+fp-895-9.txt	Sidalcea malviflora subsp. purpurea
+fp-895-9.txt	Sidalcea malviflora subsp. malviflora
+fp-895-9.txt	Sidalcea malviflora subsp. dolosa
+fp-899-2.txt	Sidalcea neomexicana
+fp-899-2.txt	Sidalcea multifida
+fp-899-3.txt	Sidalcea oregana subsp. eximia
+fp-899-3.txt	Sidalcea oregana subsp. hydrophila
+fp-899-3.txt	Sidalcea oregana subsp. oregana
+fp-899-3.txt	Sidalcea oregana subsp. spicata
+fp-899-3.txt	Sidalcea oregana subsp. valida
+fp-899-4.txt	Sidalcea pedata
+fp-899-4.txt	Sidalcea ranunculacea
+fp-899-5.txt	Sidalcea reptans
+fp-899-5.txt	Sidalcea robusta
+fp-899-5.txt	Sidalcea stipularis
+fp-899-6.txt	Sphaeralcea ambigua var. ambigua
+fp-899-6.txt	Sphaeralcea ambigua var. rugosa
+fp-899-6.txt	Sphaeralcea angustifolia
+fp-899-7.txt	Sphaeralcea emoryi var. emoryi
+fp-899-7.txt	Sphaeralcea coulteri
+fp-899-8.txt	Sphaeralcea munroana
+fp-899-8.txt	Sphaeralcea grossulariifolia
+fp-899-8.txt	Sphaeralcea rusbyi var. eremicola
+fp-899-8.txt	Sphaeralcea orcuttii
+fp-903-2.txt	Proboscidea lutea
+fp-903-2.txt	Proboscidea althaeifolia
+fp-903-2.txt	Martyniaceae
+fp-903-3.txt	Menyanthes trifoliata
+fp-903-3.txt	Menyanthaceae
+fp-903-4.txt	Glinus lotoides
+fp-903-4.txt	Mollugo verticillata
+fp-903-4.txt	Mollugo cerviana
+fp-903-4.txt	Molluginaceae
+fp-903-5.txt	Calandrinia breweri
+fp-903-5.txt	Calandrinia ciliata
+fp-903-5.txt	Montiaceae
+fp-903-6.txt	Calyptridium parryi var. parryi
+fp-903-6.txt	Calyptridium monospermum
+fp-903-6.txt	Calyptridium parryi var. hesseae
+fp-903-6.txt	Calyptridium monandrum
+fp-903-7.txt	Calyptridium roseum
+fp-903-7.txt	Calyptridium quadripetalum
+fp-903-8.txt	Calyptridium umbellatum
+fp-903-9.txt	Cistanthe ambigua
+fp-909-10.txt	Lewisia cotyledon var. cotyledon
+fp-909-10.txt	Lewisia cotyledon var. heckneri
+fp-909-10.txt	Lewisia cotyledon var. howellii
+fp-909-10.txt	Lewisia glandulosa
+fp-909-10.txt	Lewisia disepala
+fp-909-2.txt	Claytonia exigua subsp. glauca
+fp-909-2.txt	Claytonia gypsophiloides
+fp-909-2.txt	Claytonia exigua subsp. exigua
+fp-909-3.txt	Claytonia lanceolata
+fp-909-3.txt	Claytonia megarhiza
+fp-909-4.txt	Claytonia nevadensis
+fp-909-4.txt	Claytonia palustris
+fp-909-5.txt	Claytonia parviflora subsp. viridis
+fp-909-5.txt	Claytonia parviflora subsp. utahensis
+fp-909-5.txt	Claytonia parviflora subsp. grandiflora
+fp-909-6.txt	Claytonia rubra subsp. rubra
+fp-909-6.txt	Claytonia rubra subsp. depressa
+fp-909-6.txt	Claytonia perfoliata subsp. intermontana
+fp-909-6.txt	Claytonia perfoliata subsp. mexicana
+fp-909-7.txt	Claytonia sibirica
+fp-909-7.txt	Claytonia washingtoniana
+fp-909-7.txt	Claytonia saxosa
+fp-909-8.txt	Lewisia congdonii
+fp-909-8.txt	Lewisia brachycalyx
+fp-909-9.txt	Lewisia cantelovii
+fp-915-1.txt	Montia diffusa
+fp-915-10.txt	Trientalis europaea
+fp-915-10.txt	Trientalis latifolia
+fp-915-2.txt	Lewisia kelloggii subsp. kelloggii
+fp-915-2.txt	Lewisia nevadensis
+fp-915-2.txt	Lewisia leeana
+fp-915-3.txt	Lewisia triphylla
+fp-915-3.txt	Lewisia oppositifolia
+fp-915-3.txt	Lewisia rediviva var. minor
+fp-915-4.txt	Montia diffusa
+fp-915-4.txt	Montia fontana
+fp-915-4.txt	Montia dichotoma
+fp-915-4.txt	Montia chamissoi
+fp-915-5.txt	Montia parvifolia
+fp-915-5.txt	Montia linearis
+fp-915-5.txt	Montia howellii
+fp-915-6.txt	Morella californica
+fp-915-6.txt	Myrica hartwegii
+fp-915-6.txt	Myricaceae
+fp-915-7.txt	Anagallis arvensis
+fp-915-7.txt	Anagallis minima
+fp-915-7.txt	Myrsinaceae
+fp-915-8.txt	Glaux maritima
+fp-915-9.txt	Lysimachia thyrsiflora
+fp-915-9.txt	Lysimachia nummularia
+fp-921-10.txt	Boerhavia triquetra var. intermedia
+fp-921-10.txt	Boerhavia wrightii
+fp-921-2.txt	Eucalyptus globulus
+fp-921-2.txt	Eucalyptus camaldulensis
+fp-921-2.txt	Myrtaceae
+fp-921-3.txt	Peganum harmala
+fp-921-4.txt	Abronia alpina
+fp-921-4.txt	Abronia latifolia
+fp-921-4.txt	Nyctaginaceae
+fp-921-5.txt	Abronia turbinata
+fp-921-5.txt	Abronia villosa var. villosa
+fp-921-5.txt	Abronia pogonantha
+fp-921-6.txt	Acleisanthes longiflora
+fp-921-6.txt	Acleisanthes nevadensis
+fp-921-7.txt	Allionia incarnata var. incarnata
+fp-921-8.txt	Anulocaulis annulatus
+fp-921-9.txt	Boerhavia coulteri var. palmeri
+fp-921-9.txt	Boerhavia coccinea
+fp-929-10.txt	Camissonia sierrae subsp. alticola
+fp-929-10.txt	Camissonia sierrae subsp. sierrae
+fp-929-2.txt	Mirabilis laevis var. crassifolia
+fp-929-2.txt	Mirabilis albida
+fp-929-2.txt	Mirabilis multiflora
+fp-929-2.txt	Mirabilis alipes
+fp-929-3.txt	Tripterocalyx crux-maltae
+fp-929-3.txt	Tripterocalyx micranthus
+fp-929-4.txt	Forestiera pubescens
+fp-929-4.txt	Oleaceae
+fp-929-5.txt	Fraxinus anomala
+fp-929-5.txt	Fraxinus velutina
+fp-929-5.txt	Fraxinus latifolia
+fp-929-6.txt	Fraxinus dipetala
+fp-929-7.txt	Menodora scabra var. scabra
+fp-929-8.txt	Camissonia benitensis
+fp-929-8.txt	Camissonia kernensis subsp. kernensis
+fp-929-8.txt	Camissonia kernensis subsp. gilmanii
+fp-929-8.txt	Onagraceae
+fp-929-9.txt	Camissonia parvula
+fp-929-9.txt	Camissonia pusilla
+fp-929-9.txt	Camissonia strigulosa
+fp-935-10.txt	Circaea alpina subsp. pacifica
+fp-935-2.txt	Camissoniopsis bistorta
+fp-935-2.txt	Camissoniopsis cheiranthifolia
+fp-935-3.txt	Camissoniopsis robusta
+fp-935-4.txt	Chamerion angustifolium subsp. circumvagum
+fp-935-4.txt	Chamerion latifolium
+fp-935-5.txt	Chylismia arenaria
+fp-935-6.txt	Chylismia brevipes subsp. arizonica
+fp-935-6.txt	Chylismia brevipes subsp. brevipes
+fp-935-6.txt	Chylismia brevipes subsp. pallidula
+fp-935-7.txt	Chylismia cardiophylla subsp. cardiophylla
+fp-935-7.txt	Chylismia cardiophylla subsp. robusta
+fp-935-8.txt	Chylismia claviformis subsp. lancifolia
+fp-935-8.txt	Chylismia claviformis subsp. funerea
+fp-935-8.txt	Chylismia claviformis subsp. cruciformis
+fp-935-8.txt	Chylismia claviformis subsp. aurantiaca
+fp-935-8.txt	Chylismia claviformis subsp. peirsonii
+fp-935-9.txt	Chylismiella pterosperma
+fp-935-9.txt	Chylismia heterochroma
+fp-939-10.txt	Clarkia mosquinii
+fp-939-2.txt	Clarkia amoena subsp. amoena
+fp-939-2.txt	Clarkia affinis
+fp-939-2.txt	Clarkia amoena subsp. whitneyi
+fp-939-3.txt	Clarkia biloba subsp. australis
+fp-939-3.txt	Clarkia biloba subsp. biloba
+fp-939-3.txt	Clarkia biloba subsp. brandegeeae
+fp-939-3.txt	Clarkia bottae
+fp-939-4.txt	Clarkia borealis subsp. arida
+fp-939-5.txt	Clarkia cylindrica subsp. clavicarpa
+fp-939-5.txt	Clarkia cylindrica subsp. cylindrica
+fp-939-5.txt	Clarkia concinna subsp. concinna
+fp-939-6.txt	Clarkia franciscana
+fp-939-6.txt	Clarkia dudleyana
+fp-939-6.txt	Clarkia delicata
+fp-939-7.txt	Clarkia gracilis subsp. albicaulis
+fp-939-8.txt	Clarkia heterandra
+fp-939-8.txt	Clarkia gracilis subsp. gracilis
+fp-939-8.txt	Clarkia gracilis subsp. sonomensis
+fp-939-9.txt	Clarkia lassenensis
+fp-939-9.txt	Clarkia lewisii
+fp-939-9.txt	Clarkia mildrediae
+fp-939-9.txt	Clarkia lingulata
+fp-939-9.txt	Clarkia imbricata
+fp-945-10.txt	Epilobium lactiflorum
+fp-945-10.txt	Epilobium minutum
+fp-945-10.txt	Epilobium nivium
+fp-945-10.txt	Epilobium luteum
+fp-945-10.txt	Epilobium obcordatum
+fp-945-2.txt	Clarkia purpurea subsp. purpurea
+fp-945-2.txt	Clarkia prostrata
+fp-945-3.txt	Clarkia purpurea subsp. quadrivulnera
+fp-945-3.txt	Clarkia rhomboidea
+fp-945-4.txt	Clarkia rostrata
+fp-945-4.txt	Clarkia rubicunda
+fp-945-4.txt	Clarkia speciosa subsp. immaculata
+fp-945-4.txt	Clarkia speciosa subsp. nitens
+fp-945-4.txt	Clarkia speciosa subsp. polyantha
+fp-945-4.txt	Clarkia speciosa subsp. speciosa
+fp-945-5.txt	Clarkia springvillensis
+fp-945-5.txt	Clarkia tembloriensis
+fp-945-5.txt	Clarkia unguiculata
+fp-945-6.txt	Clarkia williamsonii
+fp-945-6.txt	Clarkia virgata
+fp-945-6.txt	Clarkia xantiana subsp. xantiana
+fp-945-7.txt	Epilobium anagallidifolium
+fp-945-7.txt	Epilobium brachycarpum
+fp-945-7.txt	Epilobium campestre
+fp-945-7.txt	Epilobium canum subsp. canum
+fp-945-7.txt	Epilobium canum subsp. latifolium
+fp-945-8.txt	Epilobium ciliatum subsp. ciliatum
+fp-945-8.txt	Epilobium ciliatum subsp. watsonii
+fp-945-8.txt	Epilobium clavatum
+fp-945-8.txt	Epilobium cleistogamum
+fp-945-8.txt	Epilobium densiflorum
+fp-945-9.txt	Epilobium foliosum
+fp-945-9.txt	Epilobium hallianum
+fp-945-9.txt	Epilobium glaberrimum subsp. glaberrimum
+fp-945-9.txt	Epilobium glaberrimum subsp. fastigiatum
+fp-945-9.txt	Epilobium hornemannii subsp. hornemannii
+fp-951-10.txt	Neoholmgrenia andina
+fp-951-2.txt	Epilobium pallidum
+fp-951-2.txt	Epilobium oreganum
+fp-951-2.txt	Epilobium oregonense
+fp-951-3.txt	Epilobium rigidum
+fp-951-3.txt	Epilobium septentrionale
+fp-951-3.txt	Epilobium torreyi
+fp-951-3.txt	Epilobium siskiyouense
+fp-951-3.txt	Epilobium saximontanum
+fp-951-4.txt	Eremothera boothii subsp. condensata
+fp-951-4.txt	Eremothera boothii subsp. desertorum
+fp-951-4.txt	Eremothera boothii subsp. boothii
+fp-951-4.txt	Eremothera boothii subsp. intermedia
+fp-951-5.txt	Eremothera refracta
+fp-951-6.txt	Eulobus californicus
+fp-951-7.txt	Gayophytum diffusum subsp. parviflorum
+fp-951-8.txt	Gayophytum humile
+fp-951-8.txt	Gayophytum heterozygum
+fp-951-9.txt	Ludwigia hexapetala
+fp-951-9.txt	Ludwigia palustris
+fp-951-9.txt	Ludwigia peploides subsp. peploides
+fp-955-10.txt	Taraxia tanacetifolia
+fp-955-2.txt	Oenothera californica subsp. californica
+fp-955-2.txt	Oenothera californica subsp. avita
+fp-955-2.txt	Oenothera californica subsp. eurekensis
+fp-955-2.txt	Oenothera cespitosa subsp. marginata
+fp-955-3.txt	Oenothera deltoides subsp. deltoides
+fp-955-3.txt	Oenothera deltoides subsp. cognata
+fp-955-3.txt	Oenothera deltoides subsp. howellii
+fp-955-3.txt	Oenothera deltoides subsp. piperi
+fp-955-4.txt	Oenothera elata subsp. hookeri
+fp-955-4.txt	Oenothera elata subsp. hirsutissima
+fp-955-4.txt	Oenothera flava
+fp-955-5.txt	Oenothera glazioviana
+fp-955-5.txt	Oenothera primiveris subsp. bufonis
+fp-955-6.txt	Oenothera pubescens
+fp-955-6.txt	Oenothera curtiflora
+fp-955-6.txt	Oenothera speciosa
+fp-955-6.txt	Oenothera sinuosa
+fp-955-7.txt	Oenothera villosa subsp. strigosa
+fp-955-7.txt	Oenothera suffrutescens
+fp-955-7.txt	Oenothera wolfii
+fp-955-8.txt	Oenothera xenogaura
+fp-955-8.txt	Oenothera xylocarpa
+fp-955-9.txt	Taraxia ovata
+fp-955-9.txt	Taraxia subacaulis
+fp1075-02.txt	Phlox condensata
+fp1075-02.txt	Phlox adsurgens
+fp1075-02.txt	Phlox austromontana
+fp1075-03.txt	Phlox diffusa
+fp1075-03.txt	Phlox dolichantha
+fp1075-03.txt	Phlox dispersa
+fp1075-04.txt	Phlox hirsuta
+fp1075-04.txt	Phlox muscoides
+fp1075-04.txt	Phlox speciosa
+fp1075-05.txt	Phlox stansburyi subsp. stansburyi
+fp1075-06.txt	Polemonium californicum
+fp1075-06.txt	Polemonium chartaceum
+fp1075-07.txt	Polemonium eximium
+fp1075-07.txt	Polemonium micranthum
+fp1075-07.txt	Polemonium occidentale subsp. occidentale
+fp1075-08.txt	Saltugilia splendens subsp. splendens
+fp1075-08.txt	Saltugilia splendens subsp. grantii
+fp1075-09.txt	Polygala californica
+fp1075-09.txt	Polygala acanthoclada
+fp1075-09.txt	Polygala cornuta var. cornuta
+fp1075-09.txt	Polygala cornuta var. fishiae
+fp1075-10.txt	Polygala intermontana
+fp1075-10.txt	Polygala heterorhyncha
+fp1075-10.txt	Polygala subspinosa
+p1135_001.txt	Portulaca oleracea
+p1135_001.txt	Portulaca halimoides
+p1135_001.txt	Portulacaceae
+p1135_002.txt	Androsace elongata subsp. acuta
+p1135_002.txt	Androsace filiformis
+p1135_002.txt	Primulaceae
+p1135_003.txt	Androsace occidentalis
+p1135_003.txt	Androsace septentrionalis
+p1135_004.txt	Dodecatheon clevelandii subsp. clevelandii
+p1135_004.txt	Dodecatheon alpinum
+p1135_004.txt	Dodecatheon conjugens
+p1135_005.txt	Dodecatheon redolens
+p1135_005.txt	Dodecatheon hendersonii
+p1135_005.txt	Dodecatheon pulchellum
+p1135_006.txt	Primula suffrutescens
+p1135_007.txt	Aconitum columbianum subsp. columbianum
+p1135_007.txt	Aconitum columbianum subsp. viviparum
+p1135_007.txt	Ranunculaceae
+p1135_008.txt	Actaea rubra
+p1135_009.txt	Anemone multifida var. multifida
+p1135_009.txt	Anemone drummondii var. drummondii
+p1135_009.txt	Anemone deltoidea
+p1139_001.txt	Anemone tuberosa
+p1139_001.txt	Anemone oregana var. oregana
+p1139_001.txt	Anemone occidentalis
+p1139_002.txt	Aquilegia eximia
+p1139_002.txt	Aquilegia formosa
+p1139_003.txt	Aquilegia pubescens
+p1139_004.txt	Caltha leptosepala
+p1139_005.txt	Clematis lasiantha
+p1139_005.txt	Clematis ligusticifolia
+p1139_005.txt	Clematis pauciflora
+p1139_006.txt	Coptis laciniata
+p1139_007.txt	Delphinium andersonii
+p1139_007.txt	Delphinium antoninum
+p1139_008.txt	Delphinium bakeri
+p1139_009.txt	Delphinium californicum subsp. interius
+p1139_009.txt	Delphinium californicum subsp. californicum
+p1143_001.png	Delphinium cardinale
+p1143_001.png	Delphinium decorum subsp. decorum
+p1143_002.png	Delphinium gracilentum
+p1143_002.png	Delphinium glaucum
+p1143_003.png	Delphinium gypsophilum
+p1143_003.png	Delphinium hansenii subsp. hansenii
+p1143_004.png	Delphinium hesperium subsp. hesperium
+p1143_005.png	Delphinium hutchinsoniae
+p1143_005.png	Delphinium inopinum
+p1143_006.png	Delphinium luteum
+p1143_006.png	Delphinium nudicaule
+p1143_007.png	Delphinium parryi subsp. blochmaniae
+p1143_007.png	Delphinium patens subsp. hepaticoideum
+p1143_007.png	Delphinium purpusii
+p1143_008.png	Delphinium uliginosum
+p1143_008.png	Delphinium trolliifolium
+p1143_008.png	Delphinium variegatum
+p1143_009.png	Enemion stipitatum
+p1143_009.png	Enemion occidentale
+p1149_001.png	Myosurus sessilis
+p1149_001.png	Myosurus apetalus var. borealis
+p1149_001.png	Myosurus cupulatus
+p1149_001.png	Myosurus minimus
+p1149_002.png	Ranunculus alismifolius var. lemmonii
+p1149_002.png	Ranunculus alismifolius var. alismifolius
+p1149_003.png	Ranunculus andersonii
+p1149_003.png	Ranunculus aquatilis var. diffusus
+p1149_003.png	Ranunculus aquatilis var. aquatilis
+p1149_004.png	Ranunculus arvensis
+p1149_004.png	Ranunculus bonariensis var. trisepalus
+p1149_005.png	Ranunculus californicus var. californicus
+p1149_006.png	Ranunculus canus var. ludovicianus
+p1149_006.png	Ranunculus canus var. canus
+p1149_006.png	Ranunculus cymbalaria
+p1149_007.png	Ranunculus eschscholtzii var. suksdorfii
+p1149_007.png	Ranunculus eschscholtzii var. oxynotus
+p1149_007.png	Ranunculus flabellaris
+p1149_008.png	Ranunculus glaberrimus var. ellipticus
+p1149_008.png	Ranunculus glaberrimus var. glaberrimus
+p1149_008.png	Ranunculus flammula var. ovalis
+p1149_009.png	Ranunculus hebecarpus
+p1149_009.png	Ranunculus gormanii
+p1151_001.png	Ranunculus hydrocharoides
+p1151_002.png	Ranunculus hystriculus
+p1151_002.png	Ranunculus lobbii
+p1151_003.png	Ranunculus macounii
+p1151_004.png	Ranunculus muricatus
+p1151_004.png	Ranunculus occidentalis var. occidentalis
+p1151_005.png	Ranunculus orthorhynchus var. orthorhynchus
+p1151_005.png	Ranunculus orthorhynchus var. bloomeri
+p1151_006.png	Ranunculus populago
+p1151_006.png	Ranunculus pusillus
+p1151_007.png	Ranunculus uncinatus
+p1151_007.png	Ranunculus sceleratus var. sceleratus
+p1151_007.png	Ranunculus testiculatus
+p1151_008.png	Thalictrum fendleri var. polycarpum
+p1151_008.png	Thalictrum fendleri var. fendleri
+p1151_008.png	Thalictrum occidentale
+p1151_008.png	Thalictrum alpinum
+p1151_009.png	Trautvetteria caroliniensis
+p1159_001.png	Oligomeris linifolia
+p1159_002.png	Reseda lutea
+p1159_003.png	Adolphia californica
+p1159_004.png	Ceanothus confusus
+p1159_004.png	Ceanothus crassifolius var. crassifolius
+p1159_005.png	Ceanothus cuneatus var. cuneatus
+p1159_006.png	Ceanothus dentatus
+p1159_006.png	Ceanothus divergens
+p1159_007.png	Ceanothus ferrisiae
+p1159_008.png	Ceanothus hearstiorum
+p1159_009.png	Ceanothus impressus var. nipomensis
+p1161_001.png	Ceanothus integerrimus
+p1161_002.png	Ceanothus jepsonii
+p1161_002.png	Ceanothus leucodermis
+p1161_003.png	Ceanothus maritimus
+p1161_004.png	Ceanothus megacarpus var. insularis
+p1161_004.png	Ceanothus megacarpus var. megacarpus
+p1161_005.png	Ceanothus oliganthus var. oliganthus
+p1161_006.png	Ceanothus papillosus
+p1161_007.png	Ceanothus perplexans
+p1161_008.png	Ceanothus pinetorum
+p1161_008.png	Ceanothus prostratus
+p1161_009.png	Ceanothus purpureus
+p1167_001.png	Ceanothus roderickii
+p1167_001.png	Ceanothus sonomensis
+p1167_002.png	Ceanothus thyrsiflorus var. thyrsiflorus
+p1167_003.png	Ceanothus velutinus
+p1167_004.png	Ceanothus vestitus
+p1167_005.png	Colubrina californica
+p1167_006.png	Condalia globosa var. pubescens
+p1167_007.png	Frangula californica
+p1167_008.png	Frangula purshiana subsp. purshiana
+p1167_008.png	Frangula rubra
+p1167_009.png	Rhamnus ilicifolia
+p1167_009.png	Rhamnus pilosa
+p1167_009.png	Rhamnus crocea
+p1167_009.png	Rhamnus pirifolia
+p1173_001.png	Ziziphus parryi var. parryi
+p1173_001.png	Ziziphus obtusifolia var. canescens
+p1173_002.png	Acaena pinnatifida var. californica
+p1173_002.png	Acaena novae-zelandiae
+p1173_003.png	Adenostoma fasciculatum
+p1173_003.png	Adenostoma sparsifolium
+p1173_004.png	Agrimonia gryposepala
+p1173_005.png	Amelanchier alnifolia var. semiintegrifolia
+p1173_005.png	Amelanchier alnifolia var. pumila
+p1173_005.png	Amelanchier utahensis
+p1173_006.png	Aphanes occidentalis
+p1173_007.png	Aruncus dioicus var. acuminatus
+p1173_008.png	Cercocarpus betuloides var. betuloides
+p1173_008.png	Cercocarpus betuloides var. blancheae
+p1173_008.png	Cercocarpus betuloides var. macrourus
+p1173_009.png	Cercocarpus ledifolius var. intricatus
+p1173_009.png	Cercocarpus ledifolius var. ledifolius
+p1173_009.png	Cercocarpus ledifolius var. intermontanus
+p1177_001.png	Cercocarpus minutiflorus
+p1177_001.png	Cercocarpus traskiae
+p1177_002.png	Chamaebatia australis
+p1177_002.png	Chamaebatia foliolosa
+p1177_003.png	Chamaebatiaria millefolium
+p1177_004.png	Coleogyne ramosissima
+p1177_005.png	Comarum palustre
+p1177_006.png	Cotoneaster franchetii
+p1177_007.png	Cotoneaster lacteus
+p1177_007.png	Cotoneaster pannosus
+p1177_008.png	Crataegus douglasii
+p1177_008.png	Crataegus gaylussacia
+p1177_009.png	Dasiphora fruticosa
+p1177_0010.png	Drymocallis cuneifolia var. ewanii
+p1177_0010.png	Drymocallis glandulosa var. reflexa
+p1177_0010.png	Drymocallis glandulosa var. glandulosa
+p1185_001.png	Drymocallis lactea var. lactea
+p1185_001.png	Drymocallis lactea var. austiniae
+p1185_001.png	Drymocallis rhomboidea
+p1185_002.png	Fallugia paradoxa
+p1185_003.png	Fragaria virginiana
+p1185_003.png	Fragaria vesca
+p1185_004.png	Geum macrophyllum var. macrophyllum
+p1185_004.png	Geum triflorum var. ciliatum
+p1185_005.png	Heteromeles arbutifolia
+p1185_006.png	Holodiscus discolor var. discolor
+p1185_006.png	Holodiscus discolor var. microphyllus
+p1185_007.png	Horkelia californica var. californica
+p1185_007.png	Horkelia californica var. frondosa
+p1185_007.png	Horkelia cuneata var. puberula
+p1185_008.png	Horkelia fusca var. parviflora
+p1185_008.png	Horkelia daucifolia var. daucifolia
+p1185_008.png	Horkelia howellii
+p1185_009.png	Horkelia truncata
+p1185_009.png	Horkelia tularensis
+p1185_009.png	Horkelia tridentata
+p1185_009.png	Horkelia wilderae
+p1189_001.txt	Horkeliella congdonis
+p1189_002.txt	Ivesia aperta var. aperta
+p1189_002.txt	Ivesia aperta var. canina
+p1189_003.txt	Ivesia arizonica var. arizonica
+p1189_003.txt	Ivesia baileyi var. baileyi
+p1189_003.txt	Ivesia callida
+p1189_004.txt	Ivesia gordonii
+p1189_004.txt	Ivesia lycopodioides var. megalopetala
+p1189_004.txt	Ivesia longibracteata
+p1189_005.txt	Ivesia paniculata
+p1189_005.txt	Ivesia muirii
+p1189_005.txt	Ivesia patellifera
+p1189_006.txt	Ivesia santolinoides
+p1189_007.txt	Ivesia saxosa
+p1189_008.txt	Ivesia sericoleuca
+p1189_009.txt	Luetkea pectinata
+p1193_001.txt	Lyonothamnus floribundus subsp. aspleniifolius
+p1193_001.txt	Lyonothamnus floribundus subsp. floribundus
+p1193_002.txt	Malus fusca
+p1193_003.txt	Neviusia cliftonii
+p1193_004.txt	Oemleria cerasiformis
+p1193_005.txt	Peraphyllum ramosissimum
+p1193_006.txt	Petrophytum caespitosum
+p1193_007.txt	Physocarpus alternans
+p1193_007.txt	Physocarpus capitatus
+p1193_008.txt	Potentilla anserina
+p1193_008.txt	Potentilla biennis
+p1193_009.txt	Potentilla breweri
+p1193_009.txt	Potentilla bruceae
+p1197_001.txt	Potentilla concinna var. proxima
+p1197_001.txt	Potentilla cristae
+p1197_002.txt	Potentilla glaucophylla var. glaucophylla
+p1197_002.txt	Potentilla flabellifolia
+p1197_002.txt	Potentilla drummondii
+p1197_003.txt	Potentilla gracilis var. elmeri
+p1197_003.txt	Potentilla gracilis var. gracilis
+p1197_003.txt	Potentilla gracilis var. fastigiata
+p1197_003.txt	Potentilla gracilis var. flabelliformis
+p1197_004.txt	Potentilla grayi
+p1197_004.txt	Potentilla hickmanii
+p1197_004.txt	Potentilla millefolia
+p1197_005.txt	Potentilla morefieldii
+p1197_005.txt	Potentilla multijuga
+p1197_006.txt	Potentilla norvegica
+p1197_006.txt	Potentilla newberryi
+p1197_007.txt	Potentilla pseudosericea
+p1197_007.txt	Potentilla recta
+p1197_007.txt	Potentilla pensylvanica
+p1197_008.txt	Potentilla rivalis
+p1197_008.txt	Potentilla rimicola
+p1197_008.txt	Potentilla wheeleri
+p1197_009.txt	Poteridium annuum
+p1197_009.txt	Poterium sanguisorba
+p1203_006.txt	Purshia tridentata var. glandulosa
+p1203_006.txt	Purshia tridentata var. tridentata
+p1203_006.txt	Purshia stansburyana
+p1203_007.txt	Rosa gymnocarpa var. gymnocarpa
+p1203_007.txt	Rosa bridgesii
+p1203_007.txt	Rosa californica
+p1203_008.txt	Rosa rubiginosa
+p1203_008.txt	Rosa minutifolia
+p1203_008.txt	Rosa pisocarpa subsp. pisocarpa
+p1203_008.txt	Rosa nutkana subsp. nutkana
+p1203_009.txt	Rosa woodsii subsp. gratissima
+p1203_009.txt	Rosa spithamea
+p1203_009.txt	Rosa woodsii subsp. ultramontana
+p1207_001.txt	Rubus lasiococcus
+p1207_001.txt	Rubus glaucifolius
+p1207_001.txt	Rubus leucodermis
+p1207_001.txt	Rubus nivalis
+p1207_002.txt	Rubus parviflorus
+p1207_003.txt	Rubus spectabilis
+p1207_004.txt	Rubus ursinus
+p1207_005.txt	Sanguisorba officinalis
+p1207_006.txt	Sibbaldia procumbens
+p1207_007.txt	Sorbus sitchensis var. grayi
+p1207_007.txt	Sorbus sitchensis var. sitchensis
+p1207_007.txt	Sorbus californica
+p1207_007.txt	Sorbus scopulina
+p1207_008.txt	Spiraea douglasii
+p1207_008.txt	Spiraea splendens
+p1207_009.txt	Cephalanthus occidentalis
+p1207_009.txt	Rubiaceae
+p1213_001.txt	Crucianella angustifolia
+p1213_002.txt	Galium ambiguum subsp. siskiyouense
+p1213_002.txt	Galium ambiguum subsp. ambiguum
+p1213_003.txt	Galium andrewsii subsp. andrewsii
+p1213_004.txt	Galium angustifolium
+p1213_004.txt	Galium angustifolium subsp. gabrielense
+p1213_005.txt	Galium aparine
+p1213_006.txt	Galium bifolium
+p1213_006.txt	Galium bolanderi
+p1213_007.txt	Galium buxifolium
+p1213_008.txt	Galium californicum subsp. maritimum
+p1213_008.txt	Galium californicum subsp. flaccidum
+p1213_008.txt	Galium californicum subsp. californicum
+p1213_009.txt	Galium clementis
+p1213_009.txt	Galium catalinense
+p1217_001.txt	Galium glabrescens subsp. modocense
+p1217_002.txt	Galium hallii
+p1217_002.txt	Galium grayanum var. grayanum
+p1217_002.txt	Galium hardhamiae
+p1217_003.txt	Galium hypotrichium subsp. hypotrichium
+p1217_004.txt	Galium jepsonii
+p1217_004.txt	Galium matthewsii
+p1217_005.txt	Galium mexicanum subsp. asperulum
+p1217_005.txt	Galium multiflorum
+p1217_006.txt	Galium munzii
+p1217_007.txt	Galium murale
+p1217_007.txt	Galium muricatum
+p1217_008.txt	Galium porrigens var. tenue
+p1217_008.txt	Galium porrigens var. porrigens
+p1217_008.txt	Galium parishii
+p1217_009.txt	Galium serpenticum subsp. scotticum
+p1217_009.txt	Galium serpenticum subsp. warnerense
+p1219_001.txt	Galium sparsiflorum subsp. sparsiflorum
+p1219_001.txt	Galium stellatum
+p1219_002.txt	Galium trifidum subsp. columbianum
+p1219_003.txt	Galium triflorum
+p1219_004.txt	Kelloggia galioides
+p1219_005.txt	Sherardia arvensis
+p1219_006.txt	Cneoridium dumosum
+p1219_006.txt	Rutaceae
+p1219_007.txt	Ptelea crenulata
+p1219_008.txt	Thamnosma montana
+p1219_009.txt	Populus fremontii subsp. fremontii
+p1219_009.txt	Populus tremuloides
+p1219_009.txt	Populus angustifolia
+p1219_009.txt	Salicaceae
+p1229_001.txt	Populus trichocarpa
+p1229_002.txt	Salix babylonica
+p1229_002.txt	Salix bebbiana
+p1229_003.txt	Salix boothii
+p1229_003.txt	Salix brachycarpa var. brachycarpa
+p1229_004.txt	Salix breweri
+p1229_004.txt	Salix delnortensis
+p1229_005.txt	Salix drummondiana
+p1229_005.txt	Salix eastwoodiae
+p1229_006.txt	Salix exigua var. exigua
+p1229_006.txt	Salix geyeriana
+p1229_007.txt	Salix gooddingii
+p1229_008.txt	Salix hookeriana
+p1229_009.txt	Salix jepsonii
+p1229_009.txt	Salix laevigata
+p1233_001.txt	Salix lasiolepis
+p1233_001.txt	Salix lasiandra var. lasiandra
+p1233_002.txt	Salix lemmonii
+p1233_003.txt	Salix ligulifolia
+p1233_003.txt	Salix lutea
+p1233_004.txt	Salix melanopsis
+p1233_004.txt	Salix nivalis
+p1233_005.txt	Salix orestera
+p1233_005.txt	Salix petrophila
+p1233_006.txt	Salix planifolia
+p1233_006.txt	Salix prolixa
+p1233_007.txt	Salix scouleriana
+p1233_007.txt	Salix sitchensis
+p1233_008.txt	Acer circinatum
+p1233_008.txt	Acer glabrum var. glabrum
+p1233_009.txt	Acer macrophyllum
+p1237_001.txt	Acer negundo
+p1237_002.txt	Aesculus californica
+p1237_003.txt	Sarcobatus vermiculatus
+p1237_004.txt	Sarracenia purpurea
+p1237_004.txt	Darlingtonia californica
+p1237_004.txt	Sarraceniaceae
+p1237_005.txt	Bensoniella oregona
+p1237_005.txt	Bolandra californica
+p1237_005.txt	Saxifragaceae
+p1237_006.txt	Boykinia occidentalis
+p1237_007.txt	Cascadia nuttallii
+p1237_008.txt	Chrysosplenium glechomifolium
+p1237_009.txt	Darmera peltata
