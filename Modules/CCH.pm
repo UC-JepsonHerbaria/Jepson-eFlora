@@ -171,6 +171,8 @@ our %cult=(
 'Alsophila australis'=>'P',
 'Anthyllis barba-jovis'=>'P',
 'Antirrhinum molle'=>'P',
+'Araucaria araucana'=>'P',
+'Araucaria cookii'=>'P',
 'Aristotelia macqui'=>'P',
 'Asparagus scandens'=>'P',
 'Asparagus virgatus'=>'P',
@@ -207,7 +209,6 @@ our %cult=(
 'Clematis montana'=>'P',
 'Cocculus laurifolius'=>'P',
 'Coleonema album'=>'P',
-'Conyza sumatrensis'=>'P',
 'Cornus capitata'=>'P',
 'Cornus florida'=>'P',
 'Cornus florida var. rubra'=>'P',
@@ -273,7 +274,6 @@ our %cult=(
 'Lonicera morrowii'=>'P',
 'Lophostemon confertus'=>'P',
 'Lycium chinense var. inerme'=>'P',
-'Lycium chinense'=>'P',
 'Mahonia japonica'=>'P',
 'Mahonia oiwakensis'=>'P',
 'Malephora crocea var. purpureocrocea'=>'P',
@@ -310,7 +310,6 @@ our %cult=(
 'Prunus domestica'=>'P',
 'Psoralea pinnata'=>'P',
 'Pteris serrulata'=>'P',
-'Pyracantha rogersiana'=>'P',
 'Rauvolfia sumatrana'=>'P',
 'Ranalisma rostrata'=>'P',
 'Rhododendron ponticum'=>'P',
@@ -335,8 +334,6 @@ our %cult=(
 'Viburnum tinus var. lucidum'=>'P',
 'Viburnum tinus var. strictum'=>'P',
 'Viburnum tinus'=>'P',
-'Watsonia meriana var. bulbillifera'=>'P',
-'Watsonia meriana'=>'P',
 'Wedelia pascalioides'=>'P',
 'Widdringtonia cupressoides'=>'P',
 'Widdringtonia dracomontana'=>'P',
@@ -376,6 +373,14 @@ while(<IN>){
 }
 close(IN);
 
+open(IN, "/JEPS-master/Interchange/output/IJM_name_list.txt") || die "CCH.pm couldnt open ICPN name list\n";
+while(<IN>){
+	chomp;
+	($icpn_name)=split(/\t/);
+	$ICPN_ENTRY{$icpn_name}++;
+}
+close(IN);
+
 open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/alter_names.txt") || die "CCH.pm couldnt open alter_names\n";
 while(<IN>){
 	chomp;
@@ -384,6 +389,18 @@ while(<IN>){
 	$Talter{$bad} = "$good\t-$AltNote";
 }
 close(IN);
+
+
+open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids_CCH.txt") || die "CCH.pm couldnt open smasch taxon id's\n";
+while(<IN>){
+	chomp;
+	($tid, $good, $residue)=split(/\t/);
+	$TID{$good}=$tid;
+	$TNOAN{$tid} = $good;
+}
+close(IN);
+
+
 
 
 open(IN, "/JEPS-master/Jepson-eFlora/synonymy/input/orth_var.txt") || die "CCH.pm couldn't open orth_var\n";
@@ -466,7 +483,7 @@ sub validate_scientific_name {
 #given a scientific name without author
 #validate that name for CCH
 #either returns the scientific name, returns an altered scientific name, or skips the record
-	my ($scientificName, $id) = @_;
+	my ($scientificName, $locality, $id) = @_;
 
 	unless ($scientificName){ #skip and report id no name
 		&log_skip("No name\t$id");
@@ -515,7 +532,7 @@ sub validate_scientific_name {
 				$scientificName=$alter{$scientificName};
 			}
 			else{ #if that doesn't work, skip it
-				&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (2)\t$on\t$id");
+				&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (2)\t$on\t$id==>$locality");
 				++$skipped{one};
 				#++$badname{"$on"};
 				next;
@@ -525,19 +542,20 @@ sub validate_scientific_name {
 			if($TID{$scientificName}){
 				&log_change("TAXON CCH.pm: var. changed to subsp. (3): $on changed to $scientificName\t--\t$id");
 			}
-			elsif ($alter{$scientificName}){	#try using the alter table after switching rank
-				&log_change ("TAXON CCH.pm: Spelling and rank altered (3) from $on to $Talter{$scientificName}\t--\t$id");
-				$scientificName=$alter{$scientificName};
-			}
+			#retiring this section, if the name has passed this far, we dont want the alter names table to change ranks; other processes do this now
+			#elsif ($alter{$scientificName}){	#try using the alter table after switching rank
+			#	&log_change ("TAXON CCH.pm: Spelling and rank altered (3) from $on to $Talter{$scientificName}\t--\t$id");
+			#	$scientificName=$alter{$scientificName};
+			#}
 			else{	#or skip it
-				&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (3)\t$on\t--\t$id");
+				&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (3)\t$on\t--\t$id==>$locality");
 				++$skipped{one};
 				#++$badname{"$on"};
 				next;
 			}
 		}
 		else{ #if none of that works, also skip it.
-			&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (4)\t$on\t--\t$id");
+			&log_skip("TAXON CCH.pm: Not yet entered into SMASCH taxon name table (4)\t$on\t--\t$id==>$locality");
 			++$skipped{one};
 			#++$badname{"$on"};
 			next;
@@ -713,7 +731,7 @@ sub atomize_ISO_8601_date {
 	}	
 }
 
-sub parse_CNUM{
+sub parse_CNUM {
 #usage: ($prefix, $CNUM,$suffix)=&parse_CNUM($recordNumber);
 #takes one collector number field as input
 #outputs three values: prefix, numerical collector number, and suffix
@@ -730,42 +748,92 @@ sub parse_CNUM{
 	}
 	else {$SUFFIX=""}
 	
-	if(m/^([0-9+])$/){
-		return("",$1,"");
+	if(m/^([0-9]+\.?[0-9]*)$/){#this now used to also parse the data after the period as a suffix; decimals are not really a suffix and should be searched and displayed as part of the CNUM
+		return("","$1","");
 	}
-    elsif(m/^([0-9+]) (1\/2)/){
+    elsif(m/^([0-9]+) (1\/2)/){
     	return("",$1,"$2");
     }
-#    elsif(m/^([0-9+])\.([0-9+])$/){
- #   	return("",$1,"\.$2");
-  #  }
-    elsif(m/^([^0-9]*)([0-9]+)([^0-9]*)$/){
-		return("$1",$2,$3);
+    #elsif(m/^([0-9+]\.[0-9+])$/){
+    #	return("",$1,""); #this used to parse the data after the period as a suffix, this is not really a suffix and should be searched and displayed as part of the CNUM; this section is now combiend with above and not split
+    #}
+    elsif(m/^([^0-9]+)([0-9]+)$/){
+		return("$1",$2,"");
+	}
+    elsif(m/^([^0-9]+)([0-9]+)([^0-9]+)$/){
+		return("$1",$2,"$3");
+	}
+    elsif(m/^([0-9]+)([^0-9]+)$/){
+		return("",$2,"$3");
     }
-    elsif(m/^(\d\d+)-(\d+)$/){
+    elsif(m/^([0-9]+)-([0-9]+)-([0-9]+)$/){
+		return("$1-",$2,"-$3");
+    }
+    elsif(m/^([0-9]+)-([0-9]+)$/){
 		return("",$1,"-$2");
     }
 
-    elsif(m/(.*[12]\d\d\d[^0-9])(\d+)([^0-9]*)/){
+    elsif(m/(.*[12]\d\d\d[^0-9])([0-9]+)([^0-9]*)/){
 		return("$1",$2,$3);
     }
-    elsif(m/(.*[-\/ ])(\d+)([^0-9].*)/){
+    elsif(m/(.*[-\/ ])([0-9]+)([^0-9].*)/){
 		return("$1",$2,$3);
     }
-    elsif(m/([A-Z]+)(\d+)$/){
+    elsif(m/([A-Z]+)([0-9]+)$/){
 		return("$1",$2,"");
     }
-    elsif(m/([A-Z]+) *(\d+) *([^0-9].*)/){
+    elsif(m/([A-Z]+) *([0-9]+) *([^0-9].*)/){
 		return("$1",$2,$3);
     }
-    elsif(m/^(\d+) *(.*)/){
+    elsif(m/^([0-9]+) *(.*)/){
     	return("",$1,"$2");
+    }
+    elsif(m/^(s\.?n\.?)$/){
+    	return("",$1,"");
     }
 	else{
 		return ("$_","","");
 		&log_change ("CCH.pm: CNUM '$_' could not be parsed, returning as prefix\n");
 	}
 }
+
+sub parse_CNUM_REV {
+#usage: ($prefix, $CNUM,$suffix)=&parse_CNUM($recordNumber);
+#takes one collector number field as input
+#outputs three values: prefix, numerical collector number, and suffix
+#if can't be parsed, the input value is output as an unmodified CNUM
+#this is a replacement for the previous CNUM parser, which was creating anomalous CNUM values
+#this parser is less rigorous and only does a simple prefix and suffix search.
+#the original attempted as normalizing the CNUM data.  Due to the diversity of erroneously entered data (both in databases and on labels), the parser did a poor job for most unusual data formats
+#it yielded values that are not on labels and people could not find the right collector number records in CCH.
+
+	local($_)=shift;
+
+    s/  +/ /;
+ 	s/ +$//;
+    s/^ +//;
+	
+    if(m/^([\#A-Z- ]*)([0-9]+) (1\/2)/){
+    	return("$1",$2,"$3");
+    }
+    elsif(m/^([\#A-Z- ]+)([0-9]+.*)$/){
+		return("$1",$2,"");
+    }
+    elsif(m/^([0-9]+) +(.*)/){
+    	return("",$1,"$2");
+    }
+    elsif(m/^(s\.? ?n\.?)$/){
+    	return("",$1,"");
+    }
+	elsif(m/^ *$/){
+		return("","","");
+	}
+	else{
+		return ("","$_","");
+		&log_change ("CCH.pm: CNUM '$_' could not be parsed, returning as unmodified CNUM\n");
+	}
+}
+
 
 
 sub outside_CA_box {
@@ -1085,6 +1153,7 @@ sub format_county {
 		s/extreme//i;
 		s/[eE]ither //;
 		s/ originally.*//;
+		s/None given//i;
 		s/. VHO//i; #odd data in county field in CHSC record:  'Butte? VHO'
 		s/, +/--/g;
 		s/(\w) ?- ?(\w)/$1--$2/g;  #Lake-Colusa-Glenn or Lake - Colusa - Glenn  ==>Lake--Colusa--Glenn
@@ -1109,8 +1178,8 @@ sub format_county {
 		s/^$/Unknown/;
 		s/^Not Given/Unknown/;
 		s/^U[nN][Kk]$/Unknown/;
-
-		
+		s/ to /--/;
+		s/ Co CA//i;
 		s/^(south|north|west|east|western|eastern|southwestern|southeastern) (\w+)/$2/i;
 		s/^(\w+) (south|north|west|east|northwest|western|eastern|southwestern|southeastern)/$1/i;
 		s/\./ /; #get rid of stray periods
@@ -1118,7 +1187,8 @@ sub format_county {
 		s/ ?- ?/--/;#standardize multi-county dashes
 		s/ +-+ +/--/;
 		s/-+/--/;
-	s/  +/ /g;
+		s/ ?-- ?/--/;
+		s/  +/ /g;
 		s/ +$//g;
 		s/^ +//g;
 			#convert 3 or more counties to Unknown, add to this when when discovered
@@ -1135,13 +1205,13 @@ s/^(AMADOR|Armador|Amador.?)$/Amador/;
 
 s/^(BUTTE|Butte VHO|Butte.?)$/Butte/;
 
-s/^(Contra costa|Conta Cost|Contra Cost|Contrasta|Contra.?|Costa.?|Contra Costa.?|CONTRA ?COSTA)$/Contra Costa/;
+s/^(Contra costa|COntra Costa|Conta Cost|Contra Cost|Contrasta|Contra.?|Costa.?|Contra Costa.?|CONTRA ?COSTA)$/Contra Costa/;
 
-s/^(Calvaras.?|Claveras|Calavers|Calveras|Calvaras|Calaveris|Calvaveras|Calavares|Calavaras|Calaveras.?|CALA?VARAS|CALA?VERAS)$/Calaveras/;
+s/^(Calvaras.?|Caleveras|Claveras|Calavers|Calveras|Calvaras|Calaveris|Calvaveras|Calavares|Calavaras|Calaveras.?|CALA?VARAS|CALA?VERAS)$/Calaveras/;
 
 s/^(Calousa|Coulsa|Clousa|Colusa.?|COLUSA)$/Colusa/;
 
-s/^(El ?[dD]or[ao]do|Edorado|El Dorada|El Dorata|El Dorodo|ElDorado|Eldorado|Elorado|El Dorado.?|Dorado.?|EL DORADO|ELDORADO)$/El Dorado/;
+s/^(el dor|El ?[dD]or[ao]do|Edorado|Eldorato|El Dorada|El Dorata|El Dorodo|ElDorado|Eldorado|Elorado|El Dorado.?|Dorado.?|EL DORADO|ELDORADO)$/El Dorado/;
 
 s/^(del Norte|Del norte|Del [nN]otre|EL Norte|El Norte|El *norte|Dol Norte|Del Monte|Delnorte|DelNorte|Del Norte.?|DEL NORTE)$/Del Norte/;
 
@@ -1151,70 +1221,70 @@ s/^(Genn|Glen*|Gle+n+|Glenn.?|GLENN)$/Glenn/;
 
 s/^(FresnoFresno|Fresno.?|fresno|FRESNO)$/Fresno/;
 
-s/^(Inye|Inyoinyo|Inyp|Inyo.?|INYO)$/Inyo/;
+s/^(Iny[aep]|Inyoinyo|Inyo.?|INYO)$/Inyo/;
 
 s/^(Ipmerial|Imperial.?|IMPERIAL)$/Imperial/;
 
-s/^(Ern|KRN|Kern.?|KERN)$/Kern/;
+s/^(Ern|KRN|Kenr|Kern.?|[dD]ern|KERN)$/Kern/;
 
 s/^(King|Kings.?|KINGS)$/Kings/;
 
-s/^(Lake.?|LAKE)$/Lake/;
+s/^(Lake?.?|lake|LAKE)$/Lake/;
 
 s/^(Las+en|Lassrn|Lassen.?|LASSEN)$/Lassen/;
 
-s/^(Los Angelesos Angeles|los Angeles|[lL][Oo][Ss] *[Aa]|[lL][Oo][Ss]|Los Aneles|Loa Angeles|Los angeles|Los Angelesos angeles|L *A|Los Angales|Los Angel[ao]s|Los Angeles.?|LOS ?ANGELES)$/Los Angeles/;
+s/^(Los Angelesos Angeles|Los Angeles es|Los Aageles|los Angeles|[lL][Oo][Ss] *[Aa]|[lL][Oo][Ss]|Los Aneles|L[oa][as] Ang[ae]l[oe]s|Los angeles|Los Angelesos angeles|L\.? *A\.?|Los Angeles.?|LOS ?ANGELES)$/Los Angeles/;
 
 s/^(Madero|Madera.?|MADERA)$/Madera/;
 
 s/^(Maraposa|Mariposa.?|MARIPOSA)$/Mariposa/;
 
-s/^(Marine||Marin.?|MARIN)$/Marin/;
+s/^(Marine|Morin|Marin.?|MARIN)$/Marin/;
 
 s/^(Merved|Merced.?|MERCED)$/Merced/;
 
 s/^(Modac|Mododc|Urodoc|Modoc.?|MODOC)$/Modoc/;
 
-s/^(Mono?|Mono.?|MONO)$/Mono/;
+s/^(Mono?|Mona|Mono.?|MONO)$/Mono/;
 
-s/^(Mondocino|Medocino|Mendocina|Mendoncino|Mendocine|Medocine|Mendo|Mendicino|Mendicino|Mendecino|Mendocino.?|MENDOCINO)$/Mendocino/;
+s/^(Mondocino|Tendocino|Mendocnio|Menducuv|Mandocino|Mandoemo|Mendoceno|Menocino|Medocino|Mendocina|Mendoncino|Mendocine|Medocine|Mendo|Mendicino|Mendicino|Mendecino|Mendocino.?|MENDOCINO)$/Mendocino/;
 
-s/^(Monterery|Monterey_.*|Montery|Monter+ey|Monterey.?|MONTEREY)$/Monterey/;
+s/^([Mm][Oo][nN][Tt].?|Monterery|Monterey_.*|Montery|Monter+ey|Monterey.?|MONTEREY)$/Monterey/;
 
-s/^(NAPA|Napa.?)$/Napa/;
+s/^(NAPA|Napa?.?)$/Napa/;
 
-s/^(NEV|Nevada.?|NEVADA)$/Nevada/;
+s/^(NEV|Nevada.?|Nuada|NEVADA)$/Nevada/;
 
 s/^(Oange|ORANGE|Orange.?)$/Orange/;
 
-s/^(Olumas|Pluams|Plum[aou]+s|PLUMAS|Plumas.?)$/Plumas/;
+s/^(Olumas|Pluams|Pulmas|Plum[aou]+s|Plumes|PLUMAS|Plumas.?)$/Plumas/;
 
-s/^(PLACER|Placer.?)$/Placer/;
+s/^(PLACER|Plaver|Placer.?)$/Placer/;
 
 s/^(Rvierside|Rivrside|River|RIV|Riv|Riveside|Rivers?ide.?|RIVERSIDE)$/Riverside/;
 
 s/^(Sacromento|Sacramento.?|SACRAMENTO)$/Sacramento/;
 
-s/^(San benito|San Ben|San Bento|San Beuito|SAN ?BENITO|BENITO|SanBenito.?|Benito|San Benito.?)$/San Benito/;
+s/^(San benito|San Beni?|San Bento|San Beuito|SAN ?BENITO|BENITO|SanBenito.?|Benito|San Benito.?)$/San Benito/;
 
-s/^(San Bernadino|S\. Bernardo|Santa Bernardino|San Beradino|San Berardino|San Berbardino|San Berdadino|Bernardino.?|San ?Bernardino.?|SAN BERNARDINO|BERNARDINO)$/San Bernardino/;
-s/^(San Bernarndino|San Bernardo|San Bernardinio|San Bernandino|San Bernaedino|San Bernadion|San Bernadio|San Bernadiino|San Berd.?)$/San Bernardino/;
+s/^(San Bernadino|S\. Bernardo|Bernadino|Santa Bernardino|San Beradino|San Berardino|San Berbardino|San Berdadino|Bernardino.?|San ?Bernardino.?|SAN BERNARDINO|BERNARDINO)$/San Bernardino/;
+s/^(San Bernarndino|San Bernardo|San Bernardinio|San Bernandino|San Bernaedino|San Bernadion|San Bernadio|San Bernadiino|San Berd.?|San Berdino)$/San Bernardino/;
 s/^(San Bernidino|San Benrardino|San Beranrdino|San BernardinoSan Bernardino|San Bernarino|San Bernarrdino|San Bernerdino|SanBernardino|San Bernrdino|SAN BENRARDINO)$/San Bernardino/;
-s/^(SAN BERANRDINO|san Bernardino|Sanbernardino|San bernardino|San Bernardina|SAN BENRARDINO|San BErnardino|San Bernardine|San Bernardio|S Bernardo)$/San Bernardino/;
+s/^(SAN BERNADINO|SAN BERANRDINO|san Bernardino|Sanbernardino|San bernardino|San Bernardina|SAN BENRARDINO|San BErnardino|San Bernardine|San Bernardio|S Bernardo)$/San Bernardino/;
 
-s/^(San luis Obispo|San luis obispo|San Luis|San Luis+ Obispo|SLO|SL.O|San Luis Opispo|San Luis Obsipo|San Luis Obisfpo|San Lius Obispo|San Louis Obispo|San Lous Obispo|San Luis Obiapo|Obispo|San Luis Obisbo|San Luis Obispo.?|SAN LUIS OBISPO)$/San Luis Obispo/;
+s/^(St Luis Obispo|San Suis Obispo|San Luis O|San [Ll][ou]is [AaOo]bispo|Luis Obispo|San luis obispo|San Luis|San Luis+ Obispo|SLO|SL.O|San Luis Opispo|San Luis Obsipo|San Luis Obisfpo|San Lius Obispo|San Louis Obispo|San Lous Obispo|San Luis Obiapo|Obispo|San Luis Obisbo|San Luis Obispo.?|SAN LUIS OBISPO)$/San Luis Obispo/;
 
-s/^(San Clara|Santa Clara.?|SANTA CLARA)$/Santa Clara/;
+s/^(Sta Clara|Sanat Clara|San Clara|Santa clara|Santa Clara.?|SANTA CLARA)$/Santa Clara/;
 
-s/^(San francisco|San Fransisco|San Fraancisco|San Fransisco|San Francisco.?|SAN FRANCISCO)$/San Francisco/;
+s/^(San Franciso|San francisco|San Fransisco|San Fraancisco|San Fransisco|San Francisco.?|SAN FRANCISCO)$/San Francisco/;
 
 s/^(Sant Cruz|Santo Cruz|SANTA CRUZ|San Cruz+|Santa Cru;|SantaCruz.?|Santa cruz|Santa Cruz.?)$/Santa Cruz/;
 
-s/^(San Barbara|Santa barbara|Santa BarbaraSanta Barbara|San ?Barbara|Santa barbera|Sntna Barbara|Santa Barabra.?|Santa Barbra.?)$/Santa Barbara/;
+s/^(Santa Barbara1|SANTA BARBARA|San Barbara|Santa barbara|Santa BarbaraSanta Barbara|San ?Barbara|Santa barbera|Sntna Barbara|Santa Barabra.?|Santa Barbra.?)$/Santa Barbara/;
 
-s/^(San mateo|Mateo|Santa Mateo|San Mateo.?|SAN MATEO)$/San Mateo/;
+s/^(San Meteo|San Mater|San Mateno|San mateo|Sam Mateo|Mateo|Santa Mateo|San Mateo.?|SAN MATEO)$/San Mateo/;
 
-s/^(Shast.?|Shasta.?|SHASTA)$/Shasta/;
+s/^(Shusta|Shast.?|Shasta.?|SHASTA)$/Shasta/;
 
 s/^(SanDiego|San DiegoSan Diego|San diego|San DIego|San Deigo|San Diago|San Diegosan Diego|Sandiego|San Deigo|Sand Diego|Santa Diego|San Diego.?|SAN ?DIEGO)$/San Diego/;
 
@@ -1222,33 +1292,35 @@ s/^(San juaquin|San joaquin|San Joaq...?n|San Juaquin|Joaquin|San Joaquin.?|SAN 
 
 s/^(Solana|Solona|Solon.?|Solano.?|SOLANO)$/Solano/;
 
-s/^(sonom|Sonoa|Sononia|Somona|Sonora|Sonoma.?|SONOMA)$/Sonoma/;
+s/^(sonom|Sonama|Sonoa|Sononia|Somona|Sonora|S[ao]noma.?|SONOMA)$/Sonoma/;
 
-s/^(Stansilaus|Sanislaus|Santislaus|St ?anislaus|Stanilaus|Stanislaus.?|STANISLAUS)$/Stanislaus/;
+s/^(Stansilaus|Stanislas|Sanislaus|Santislaus|St ?anislaus|Stanilaus|Stanislaus.?|STANISLAUS)$/Stanislaus/;
 
 s/^(Suter|Sutter.?|SUTTER)$/Sutter/;
 
 s/^(Seir+a|Sierra.?|SIERRA)$/Sierra/;
 
-s/^(Siiskiyou|Sikiyou|Siskyou|Sisikiyou|Sisshij|Siskiyou.?|SISKIYOU)$/Siskiyou/;
+s/^(Siskiyo|Siski|Siiskiyou|Siskyon|Sikiyou|Saskiyou|S[aiu]skyou|Sisikiyou|Kiskyou|Sisshij|Siskiyou.?|SISKIYOU)$/Siskiyou/;
 
-s/^(Tehame|Tehema|Tehema|Jehama|Tehana|Tehama.?|TEHAMA)$/Tehama/;
+s/^(T[ae]h[ae][nm][ae]|Jehama|Tehama.?|TEHAMA)$/Tehama/;
 
-s/^(trinity|Tinity|Trinuty|Trinit.?|TRINITY)$/Trinity/;
+s/^(trinity|Trnity|Tinity|Trinuty|Trinit.?|TRINITY)$/Trinity/;
 
-s/^(Tuolumme|Tuolume|Tulonmne|Tolumni.?|Toulumne|Toulomne|Tuol|Olumn.*|Tuolmne|Tuolmune|Tuolomne|Tuolomne|Toulumine|Tuolumne.?|TUOLUMNE)$/Tuolumne/;
+s/^(Tholumne|Tuolumme|Toulmne|Tuolome|Tolumne|Tuolume|Tulonmne|Tolumni.?|Toulumne|Toulomne|Tuol|Olumn.*|Tuolmne|Tuolmune|Tuolomne|Tuolomne|Toulumine|Tuolumne.?|TUOLUMNE)$/Tuolumne/;
 
-s/^(Turlare|Tulane|Talure|Tualre|Tulare.?|TULARE)$/Tulare/;
+s/^(Turlare|Tulcare|Tulane|Talure|Tualre|[RT]ulare.?|TULARE)$/Tulare/;
 
 s/^(Davis|Yolo.?|YOLO)$/Yolo/;
 
-s/^(VenturaVentura|Vemtura|Verntura|Ventura.?|ventura.?|VENTURA)$/Ventura/;
+s/^(Venture|VenturaVentura|Vemtura|Verntura|Ventura.?|ventura.?|VENTURA)$/Ventura/;
 
 s/^(Yuba.?|YUBA)$/Yuba/;
 
 
 		s/^Tulareern/Kern/i;	
 		s/^Alpine--El Dorado/Alpine/i;
+		s/^Alameda--Contra Costa/Alameda/i;
+		s/^Amador--Calaveras/Amador/i;
 		s/^Colusa--Lake/Colusa/i;
 		s/^Butte--Tehama/Butte/i;
 		s/^Butte--Tehama/Butte/i;
@@ -1261,24 +1333,31 @@ s/^(Yuba.?|YUBA)$/Yuba/;
 		s/^FRESNO TO MONTEREY/Fresno/i;
 		s/^Humboldt--Del.Norte/Del Norte/i;
 		s/^Humboldt--Trinity/Humboldt/i;
-		s/^Imperial--San.Diego/Imperial/i;
+		s/^Humboldt--Mendocino/Humboldt/i;
+		s/^Humboldt--Santa Barbara/Humboldt/i;
+		s/^Imperial--San Diego/Imperial/i;
 		s/^Inyo--Kern/Inyo/i;
-		s/^Inyo--San.Bernardino/Inyo/i;
+		s/^Inyo--San Bernardino/Inyo/i;
 		s/^Kern--Inyo/Inyo/i;
 		s/^Kern--Ventura/Kern/i;
 		s/^KeRN--LOS AnGELES/Kern/i;
 		s/^LaKE--NAPA/Lake/i;
+		s/^Lake--Tehama/Lake/i;
 		s/^Lake--Colusa/Colusa/i;
 		s/^Los Angeles--Ventura/Los Angeles/i;
 		s/^LoS Angeles--SAN Bernardino/Los Angeles/i;
 		s/^LoS ANGELESUBESCENT/Los Angeles/i;
 		s/^Marin--Sonoma/Marin/i;
+		s/^Mariposa--Toulumne/Mariposa/i;
 		s/^MaRIPOSA--MERCED/Mariposa/i;
 		s/^Mendocino--Tehama/Mendocino/i;
 		s/^Mendocino--Lake/Lake/i;
+		s/^Mariposa--Madera/Madera/i;
+		s/^Maripos....adera/Madera/i;
 		s/^Mono--Inyo/Inyo/i;
 		s/^Mono--Alpine/Alpine/i;
 		s/^Mono--Tuolumne/Mono/i;
+		s/^Monterey--Marin/Marin/i;  #these are not adjacent
 		s/^Monterey--Alpine/Alpine/i;
 		s/^Monterey--Tuolumne/Monterey/i;
 		s/^Monterey--San L[oui]+s Obispo/Monterey/i;
@@ -1301,14 +1380,18 @@ s/^(Yuba.?|YUBA)$/Yuba/;
 		s/^San L[oui]+s Obispo--SANTA.BARBARA/Santa Barbara/i;
 		s/^Santa Barbara--San L[oui]+s Obispo/Santa Barbara/i;
 		s/^Santa Cruz--Santa Clara/Santa Clara/i;
+		s/^Santa Clara--San Mateo/Santa Clara/i;
+		s/^San Bernadino--Inyo/Inyo/i;
 		s/^San Bernardino--Inyo/Inyo/i;
 		s/^San Bernardino--Los Angeles/Los Angeles/i;
 		s/^San Bernardino--Riverside/Riverside/i;
 		s/^San Diego--Riverside/Riverside/i;
 		s/^San Diego--Imperial/Imperial/i;
+		s/^San Mateo--Santa Clara/Santa Clara/i;
 		s/^Shasta--Lassen/Lassen/i;
 		s/^Shasta--Trinity/Shasta/i;
 		s/^Shasta--Tehama/Shasta/i;
+		s/^Siskiyou--Del Norte/Del Norte/i;
 		s/^Siskiyou--Trinity/Siskiyou/i;
 		s/^Sierra--Plumas/Plumas/i;
 		s/^Sierra--Nevada/Nevada/i;
@@ -1319,6 +1402,7 @@ s/^(Yuba.?|YUBA)$/Yuba/;
 		s/^Tehama--Shasta/Shasta/i;
 		s/^Tuolumne--Mariposa/Mariposa/i;
 		s/^Trinity--Siskiyou/Siskiyou/i;
+		s/^Tolumne--Mariposa/Mariposa/i;
 		s/^Trinity--Tehama/Tehama/i;
 		s/^Trinity--Humboldt/Humboldt/i;
 		s/^Tulare--Fresno/Fresno/i;
@@ -1326,7 +1410,7 @@ s/^(Yuba.?|YUBA)$/Yuba/;
 		s/^Tulare--Inyo/Inyo/i;
 		s/^Yolo--Solano/Solano/i;
 		s/^Yuba--Butte/Butte/i;
-
+		s/^VenturaSanta Barbara/Santa Barbara/i;
 
 	}
 	return "$county";
@@ -1854,7 +1938,7 @@ s/^([A-Z][A-Za-z-]+) ×([-a-z]+) .+/$1 X $2/||
 s/^([A-Z][A-Za-z-]+) ×([-a-z]+)/$1 X $2/||
 s/^([A-Z][A-Za-z-]+) ([-a-z]+) .+/$1 $2/||
 s/^([A-Z][A-Za-z-]+) ([-a-z]+)/$1 $2/||
-s/^([A-Z][A-Za-z-]+) (X [-a-z]+)/$1 X $2/||
+s/^([A-Z][A-Za-z-]+) (X [-a-z]+)/$1 $2/||
 s/^X ([A-Z][a-z-]+) ([-a-z]+) (.+)/X $1 $2/||
 s/^X ([A-Z][a-z-]+) ([-a-z]+)/X $1 $2/||
 s/  +/ /;
@@ -2316,7 +2400,7 @@ return($Collector_full_name,$Associated_collectors);
 sub get_institution_acronym { #where is this used because we dont want acronyms with "/" in them in most places in CCH
 	my ($acronym) = @_;
 	$acronym =~s/\d.*//;
-	$acronym =~s/-.*//;
+	$acronym =~s/-\d.*//;
 	
 	#if ($acronym eq "UC" || $acronym eq "JEPS" || $acronym eq "UCLA"){
 	#	$acronym = 'UC/JEPS';
