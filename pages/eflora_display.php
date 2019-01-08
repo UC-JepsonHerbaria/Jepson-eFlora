@@ -394,43 +394,60 @@ exit();
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
+<!-- leaflet maps files and scripts -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
-<!-- google maps files and scripts -->
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+<script src="http://ucjeps.berkeley.edu/eflora/KML.js"></script>
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 
 <script type="text/javascript"> 
 
-	var map; //If we want access "map" outside of initialize(), this must be a global variable
-	var kml;
-	//var src = 'http://ucjeps.berkeley.edu/jepcodes-v7.kmz';
+    var map; 
+    var kml;
 
-function initialize() {
-  var mapDiv = document.getElementById('map_canvas');
+    function initialize() {
     
-  var mapOptions = {
-    streetViewControl: false, //disable pegman/street view
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-  }
-  
-  map = new google.maps.Map(mapDiv, mapOptions);
-  
-    
-  var MapName = <?php echo "$TaxonID"?>;
-  
-  kml = new google.maps.KmlLayer("http://ucjeps.berkeley.edu/eflora/KMLs/"+MapName+"_8.kml?122", {  });
-  
-  kml.setMap(map);
+	// Adding open source layers, unlimited loads
+        var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	});
 
+	var satellite = L.tileLayer(
+                'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                    attribution: '&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+                    maxNativeZoom: 19,
+                    maxZoom: 25,
+                    opacity: 0.8,
+                    type: 'satellite'
+                });
+	var baseMaps = {
+		"Streets": streets,
+		"Satellite": satellite
+	};
 
-}
+	// Create Map and setup layers
+	map = L.map('map_canvas', {layers:[streets,satellite]});
+	L.control.layers(baseMaps).addTo(map)
 
-                               
- 
-initialize();	
+	map.addControl(new L.Control.Fullscreen());
+
+	// Turn on KML Layer and add to Map
+  	var MapName = <?php echo "$TaxonID"?>;
+ 	var kmlLayer = new L.KML("http://ucjeps.berkeley.edu/eflora/KMLs/"+MapName+"_8.kml?122").addTo(map);
+        kmlLayer.on("loaded", function(e) { 
+            map.fitBounds(e.target.getBounds());
+        });
+    }
 
 </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=addGoogleAPIHere&callback=initMap">
-    </script>
+
 
 <style type="text/css" media="screen">
 

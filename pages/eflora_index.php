@@ -8,13 +8,8 @@ $db = new SQLite3($database_location);
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>Jepson Herbarium: Jepson Flora Project: Jepson eFlora Search</title>
-<!--<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">--> 
-<!--This above line has been in here for an unknown length of time, but it effectively stops all search engines from indexing this page for display in searches
-no eFlora pages will come up in searches in Google with this in here, and neither will species pages from eFlora.  CalFlora will remain the top result if this is kept.
-The alternate search, like search_IJM.pl, is the only one comming up
-in google as of August 2017.  This alternate page, however, is dated and a bit ugly, especially compared to CalFlora.  I am sprucing it up with images from CalPhotos, so it will remain.
-This is now commented out so this page will be indexed and species pages will now hopefully be included in Google searches -->
+<head><title>California Flora - Jepson eFlora Search; Vascular Plants of California, Jepson Herbarium</title>
+
 <link href="http://ucjeps.berkeley.edu/common/styles/dropdowns.css" rel="stylesheet" type="text/css" />
 
 <!-- Google analytics -->
@@ -46,9 +41,11 @@ This is now commented out so this page will be indexed and species pages will no
        <td>&nbsp;</td>
        <td>&nbsp;</td>
        <td width="100%"><span class="pageName"><a href="http://ucjeps.berkeley.edu/IJM.html">Jepson eFlora:</a> Search page</span>
-		<br>
+       <br /><span class="pageMajorHeading"><a name="TOP" id="TOP">Vascular Plants of California</a></span>
+		<br />
 			<span class="pageAuthorLine">
 				<a href="http://ucjeps.berkeley.edu/IJM_fam_key.html">Key to families</a>
+				|
 				<a href="http://ucjeps.berkeley.edu/IJM_toc.html">Table of families and genera</a>
 			</span>	  
 		</td>
