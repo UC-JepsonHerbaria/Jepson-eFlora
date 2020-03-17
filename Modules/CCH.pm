@@ -364,7 +364,7 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/JEPS-master/Interchange/output/ICPN_accepted.txt") || die "CCH.pm couldnt open ICPN accepted names\n";
+open(IN, "/JEPS-master/Jepson-eFlora/eflora_database/output/accepted_name_list.txt") || die "CCH.pm couldnt open EFLORA accepted names\n";
 while(<IN>){
 	chomp;
 	($good,@rest)=split(/ /);
@@ -373,11 +373,12 @@ while(<IN>){
 }
 close(IN);
 
-open(IN, "/JEPS-master/Interchange/output/IJM_name_list.txt") || die "CCH.pm couldnt open ICPN name list\n";
+open(IN, "/JEPS-master/Interchange/output/ICPN_tax_syns_list.txt") || die "CCH.pm couldnt open ICPN name list\n";
 while(<IN>){
 	chomp;
-	($icpn_name)=split(/\t/);
-	$ICPN_ENTRY{$icpn_name}++;
+	($icpn_name,$icpn_accepted,@rest)=split(/\t/);
+	$ICPN_ENTRY{$icpn_accepted}++;
+	$ICPN_SYN{$icpn_name}=$icpn_accepted;
 }
 close(IN);
 
@@ -464,15 +465,17 @@ while(<IN>){
 }
 close(IN);
 
-sub log_skip {	#for each skipped item...
-	my $log_file = 'log.txt';
+sub log_skip {	#for the first skipped item...
+	$todayJD = &get_today_julian_day;
+	my $log_file = 'log'.$todayJD.'.txt';
 	open(my $log_file, '>>', $log_file);
 	print $log_file "skipping: @_\n";	#print into the log file "skipping: "+[input]+new line
 	close $log_file;
 }
 
-sub log_change {	#for each logged change...
-	my $log_file = 'log.txt';
+sub log_change {	#for the first logged change...
+	$todayJD = &get_today_julian_day;
+	my $log_file = 'log'.$todayJD.'.txt';
 	open(my $log_file, '>>', $log_file);
 	print $log_file "logging: @_\n";	#print into the ERR file "logging: "+[input]+new line
 	close $log_file;
@@ -1193,7 +1196,7 @@ sub format_county {
 		s/^ +//g;
 			#convert 3 or more counties to Unknown, add to this when when discovered
 		if(m/^(Mono--Tuolumne--Alpine|Alpine--Amador--El.?[dD]orado|Mendocin[eao]--Humboldt.?--Del.?[nN]orte|Lake--Colusa--Glenn)/i){
-			&log_change("COUNTY (1): MULTI-CA COUNTY, changed to 'Unknown' from \t$county\t$id");		#call the &log function to print this log message into the change log...
+			#&log_change("COUNTY (1): MULTI-CA COUNTY, changed to 'Unknown' from \t$county\t$id");		#call the &log function to print this log message into the change log...
 			$county="Unknown";
 		}
 
