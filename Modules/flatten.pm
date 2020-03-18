@@ -99,24 +99,50 @@ if(m/[scnwe] SN[^E]/ ||  m/[scnwe] SN$/){
 	}
 
 #############
-	s/s CA([^-])/sCA$1/;
-s/waif in [^ ]+//;
+#DIST's with two seperate exc phrases are not exluding the first, just the last
+		#PR (exc SnJt), MP (exc Wrn) Verbascum blattaria
+#s/ PR (exc SnJt), MP (exc Wrn)/ PR, MP (exc Wrn)/;
+		#MP (exc Wrn), SNE (exc W&I) JUNCUS hemiendytus var. abjectus
+#common problem DIST's
+	s/^s CA-FP, D;?$/SnJV, SCoR, SW, cSNH, sSNH, cSNF, sSNF, Teh, DSon, DMoj (exc DMtns)/;
+	s/^s CA-FP;?$/SnJV, CCo, SnFrB, SCoR, SW, cSNH, sSNH, cSNF, sSNF, Teh/;
+	s/\((uncommon|less common) s CA[^-]+\)([.;])/$2/;
+	s/, common s CA([.;])/$1/;
+	#s/s CA([^-])/sCA$1/;
+	s/.+eported from coastal C.+/NCo, CCo, SCo/i; 
+	s/.+pated, formerly sporadically collected in San Bernardino.+/GV, SCo/i;
+	s/.*SCo, cultivated and expected elsewhere in.+/SCo/i;
+	s/, esp near coast//;
+	s/waif in [^ ]+//;
 	s/ ?\(?[Ff]ormerly[^)]+\)//;
 	s/NCo\/NCoRO/NCoRO/; #odd distribution for Campanula angustiflora, added in 2018
 	s/([ns]) ChI/$1ChI/g;
+	s/[a-z]* ?DMoj \(? ?exc DMtns\)?, DSon/DSon, DMoj (exc DMtns)/;
+	s/D \(? ?exc DMtns\)?/DSon, DMoj (exc DMtns)/;
 	s/n (DMoj)/$1 (exc DMtns)/ unless m/DMtns/;
-	s/(n SNE)/$1 (exc WaI)/ unless m/W&I/;
-	
+	s/n (SNE)/$1 (exc WaI)/ unless m/W&I/;
+	s/w DMoj, e D \(Colorado River\)/DMoj (exc DMtns)/;
+	s/se DMoj \(Ivanpah Lake\)/DMoj (exc DMtns)/;
+#LINANTHUS bigelovii: BIOREGIONAL DISTRIBUTION: se SnFrB, SCoRI, WTR, SnGb (e edge), SnBr (e edge), SNE exc W&I, PR, D.
+#PR and D skipped in HCODE
+#LINANTHUS parryae: BIOREGIONAL DISTRIBUTION: s SN, Teh, s SnJV, SCoRI, WTR, SNE exc W&I, DMoj.	
+#DMoj skipped in HCODE
+	s/SNE exc W&I/SNE (exc WaI)/ unless m/W&I/;
+
+
+
+
+#other unique problems
 	s/[dD]eltaic GV,/GV,/; #Pennisetum setaceum-36827;Scutellaria lateriflora-43900;Calystegia sepium subsp. limnophila-49568; coming up NULL for GV 
 		#Lonicera japonica-31508;
-
 	s/[dD]eltaic GV ?\(?[A-Za-z., ]*\)?/GV/; #Grindelia X paludosa-93861; Eriogonum nudum var. psychicola-80051; Oenothera deltoides subsp. howellii-51748, coming up '0000000000'
 		#Limosella australis-31029; Agrostis tandilensis-12324; Cirsium hydrophilum var. hydrophilum-7061; coming up NULL for GV
-
 	s/[fF]ound wherever onions are cultivated/CA_FP/; #Allium cepa, coming up '0000000000'
 	s/.San Francisco area. .[A-Z][a-z]+. ?/CCo, SnFrB/; #Sagina subulata-42588, coming up '0000000000'
 	s/MP \(caves in Lava[^)]+\)/MP (exc Wrn)/ unless m/Wrn/;
+	s/ \(exc w SW\)/Sco, TR, PR/; #Eriogonum gracile var gracile (excludes Channel Islands, but cannot exclude just coastal SCo from inland SCo
 
+#general conversions
 	s/CA-FP/CA_FP/;
 	s/W&I/WaI/;
 	s/[?;]//g;
@@ -150,9 +176,9 @@ if($loc=~s/\)//){ push(@parenstr, "$name:$string") if defined($qualified{$loc});
  		}
 	}
 	
-	if( m/exc\.? /){ #this does not work when there are two 'exc' in an exception
+	if( m/exc\.? /g){ #this does not work when there are two 'exc' in an exception; added 'g' to try to find more than the first instance of exc
 #warn "$_\n" if m/exc.*exc/;
-warn "$_\n" if m/possibly/;
+warn "POSSIBLY ERROR: $_\n" if m/possibly/;
 #print "\nEL: $line\n$_\n";
 		s/exc Teh, ScV, SCoRI, SCo, WTR, PR exc SnJt\), /exc Teh, ScV, SCoRI, SCo, WTR, PRW), /; #fix the code for the one record where 'exc' appears twice and causes the exclusion to fail
 		s/except/exc/;
@@ -222,7 +248,8 @@ $prev=$_;
 			}
 		}
 		elsif(m/n&?e PR/){
-			s/PR/PR (incl SnJt)/;
+			#s/PR/PR (incl SnJt)/;
+			s/PR/PR, SnJt/ unless m/SnJt/;
 		}
 		else{
 			s/([a-z] PR)/$1 (exc SnJt)/ unless m/SnJt/;
@@ -235,15 +262,15 @@ $_;
 sub edgekludge {
 local($_)=@_;
 $prev=$_;
-s/([swen]* edge DSon)/DSon/; #added
-s/([swen]* edge D\b)/$1 (exc DMtns)/;
-s/([swen]* edge DMoj)/$1 (exc DMtns)/;
-s/(D \([swen]* edge\))/$1 (exc DMtns)/;
-s/(DMoj \([swen]* edge\))/$1 (exc DMtns)/;
+s/[swen]* edge DSon/DSon/; #added
+s/[swen]* edge (D\b)/$1 (exc DMtns)/;
+s/[swen]* edge (DMoj)/$1 (exc DMtns)/;
+s/(D) \([swen]* edge\)/$1 (exc DMtns)/;
+s/(DMoj) \([swen]* edge\)/$1 (exc DMtns)/;
 s/PR \(D edge\)/PR (exc SnJt)/;
-s/(adjacent edges D\b)/$1 (exc DMtns)/;
-s/(edge of D\b)/$1 (exc DMtns)/;
-s/(w edge SNE)/$1 (exc WaI)/;
+s/adjacent edges (D\b)/$1 (exc DMtns)/;
+s/edge of (D\b)/$1 (exc DMtns)/;
+s/w edge (SNE)/$1 (exc WaI)/;
 ###warn "$prev\n";
 ###warn "$_\n" unless $_ eq $prev;
 $_;
