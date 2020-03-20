@@ -7,27 +7,44 @@ use lib "/JEPS-master/Jepson-eFlora/Modules/";
 use flatten;
 #Open file of tax syns in the form of syn [tab] accepted name
 
-open(IN,"/Users/davidbaxter/DATA/eFlora/yellow_flag_processing/eflora_KML_Moe/data_inputs/ICPN_tax_syns_list.txt") || die;
+open(IN,"/JEPS-master/Interchange/output/ICPN_tax_syns_list.txt") || die;
 while(<IN>){
 	chomp;
+s/X /&times;/;
 next if (m/^#/);
 	($syn,$accepted)=split(/\t/);
 	$TS_ICPN{$accepted}.="$syn\t";
+	#$TS_ICPN{$accepted}.="";
 }
 close(IN);
 
-open(IN,"/Users/davidbaxter/DATA/eFlora/yellow_flag_processing/eflora_KML_Moe/data_inputs/EFLORA_tax_syns_list.txt") || die;
+open(IN,"/JEPS-master/Jepson-eFlora/eflora_database/output/EFLORA_tax_syns_list.txt") || die;
 while(<IN>){
 	chomp;
+s/X /&times;/;
 next if (m/^#/);
 	($syn,$accepted)=split(/\t/);
 	$TS_EF{$accepted}.="$syn\t";
 }
 close(IN);
 
-open(IN,"/JEPS-master/Jepson-eFlora/YELLOW_FLAGGING/tax_syns_to_check") || die;
+
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/output/CCH_tax_syns_list.txt") || die;
 while(<IN>){
 	chomp;
+s/X /&times;/;
+next if (m/^#/);
+	($syn,$accepted)=split(/\t/);
+	$NS{$accepted}.="$syn\t";
+	#$NS{$accepted}.="";
+}
+close(IN);
+
+
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/tax_syns_to_check.txt") || die;
+while(<IN>){
+	chomp;
+s/X /&times;/;
 next if (m/^#/);
 next if (m/^2/);
 next if (m/^Current/);
@@ -37,19 +54,61 @@ next if (m/^Current/);
 close(IN);
 
 
-#tie the CCH nomenclatural synonym file
-tie(%NS, "BerkeleyDB::Hash", -Filename=>"/Users/davidbaxter/DATA/CCH_scripts/CDL_nomsyn", -Flags=>DB_RDONLY)|| die "$!";
-foreach (keys(%NS)){
-next unless m/juncus /;
-print "$_: $NS{$_}\n";
-}
-#die;
-
-#Read in the taxon ids
-open(IN,"/Users/davidbaxter/DATA/smasch_taxon_ids_CCH.txt") || die;
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/tax_syns_ADD_TO_MAPS.txt") || die;
 while(<IN>){
 	chomp;
-	#s/× /&times;/;
+s/X /&times;/;
+next if (m/^#/);
+next if (m/^2/);
+next if (m/^Current/);
+	($syn,$accepted,$note)=split(/\t/);
+	$TS_ALT{$accepted}.="$syn\t";
+}
+close(IN);
+
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/orth_var.txt") || die;
+while(<IN>){
+	chomp;
+s/X /&times;/;
+next if (m/^#/);
+	($syn,$accepted,$note)=split(/\t/);
+	$ORTH{$accepted}.="$syn\t";
+}
+close(IN);
+
+
+#tie the CCH nomenclatural synonym file, this is the old file it has been superceeded as of April 2019
+#tie(%NS, "BerkeleyDB::Hash", -Filename=>"/JEPS-master/Jepson-eFlora/synonymy/input/CDL_nomsyn", -Flags=>DB_RDONLY)|| die "$!";
+#foreach (keys(%NS)){
+#	$NS =~ s/X /&times;/;
+#next unless m/juncus /;
+#print "$_: $NS{$_}\n";
+
+#next unless m/baccharis /;
+#print "$_: $NS{$_}\n";
+#}
+
+
+#die;
+
+
+#hash of names and hcodes used by get_cpn.pl and eflora_display.php
+$file="output/nomsyn_hcode_hash";
+tie(%hcode_hash, "BerkeleyDB::Hash", -Filename=>$file)|| print "Couldnt open $file: $!";
+	$hcode_hash =~ s/X /&times;/;
+foreach(keys(%hcode_hash)){
+++$count_old;
+print "$_ $hcode_hash{$_}\n" if m/40582/;
+print "$_ $hcode_hash{$_}\n" if m/eria naus/;
+print "$_ $hcode_hash{$_}\n" if m/Baccharis pil/;
+}
+
+
+#Read in the taxon ids
+open(IN,"/JEPS-master/Jepson-eFlora/synonymy/input/smasch_taxon_ids.txt") || die;
+while(<IN>){
+	chomp;
+	s/X /&times;/;
 	($code,$name)=split(/\t/);
 	$NAME_TO_CODE{$name}=$code; #TNOAN in original, but that is used below
 	$CODE_TO_NAME{$code}=$name;
@@ -68,26 +127,13 @@ next unless m/canariensis/;
 print "$name: $CODE_TO_NAME{$code}\n";
 }
 
+foreach ($name){
+next unless m/pilularis/;
+print "$name: $CODE_TO_NAME{$code}\n";
+}
+
 }
 close(IN);
-
-tie(%TID, "BerkeleyDB::Hash", -Filename=>"/Users/davidbaxter/DATA/bulkload_data/data_outputs/CDL_TID_TO_NAME", -Flags=>DB_RDONLY)|| die "$!";
-
-foreach (keys(%TID)){
-next unless $TID{$_} =~ m/(canariensis|wootonii)/;
-print "$_: $TID{$_}\n";
-}
-
-
-tie(%TNOAN, "BerkeleyDB::Hash", -Filename=>"/JEPS-master/Interchange/_input/temp/name_to_code.hash", -Flags=>DB_RDONLY)|| die "$!";
-
-foreach (keys(%TNOAN)){
-next unless $_ =~ m/(canariensis|wootonii)/;
-print "$_: $TNOAN{$_}\n";
-}
-
-#}
-#die;
 
 
 $nullvec="";
@@ -97,7 +143,7 @@ vec($nullvec,$i,1) = 0;
 
 #Now get the names and ranges
 open(OUT3, ">output/cumulative_synonym_file.txt") || die;
-$file="/JEPS-master/Jepson-eFlora/eflora_database/eflora_treatments.txt";
+$file="/JEPS-master/Jepson-eFlora/eflora_database/input_files/eflora_treatments.txt";
 $raw_mod_time=(stat($file))[9];
 $db_file="/JEPS-master/Jepson-eFlora/eflora_database/eflora.db";
 $db_mod_time=(stat($db_file))[9];
@@ -140,15 +186,27 @@ EOP
 		s/NATIVE\nEXTIRPATED//;
 		s/NATIVE//;
 		s/^UNABRIDGED *\n//;
-		s/^([A-Z]+ACEAE) $/<center><font size="4"><b>$1<\/b><\/font>/ms;
-		s/^([A-Z]+ACEAE) \((.*)\)$/<center><font size="4"><b>$1 ($2)<\/b><\/font>/ms;
-		if(m/\n([&;times]*[A-Z][A-Z-]+ [&;times]*[a-z-]+.*)/){ #added the X for hybrid names, so they parse correctly
+		s|^([A-Z]+ACEAE) $|<center><font size="4"><b>$1</b></font>|ms;
+		s|^([A-Z]+ACEAE) \((.*)\)$|<center><font size="4"><b>$1 ($2)</b></font>|ms;
+		if(m/\n([A-Z][A-Z-]+ [a-z-]+.*)/){
+			print "before==>$1\n";
 			$name_1 = ucfirst(lc($1));
-			#print "name found: $name_1\n";
 			$name_for_hc=&strip_name($name_1);
-			print "$name_1\n";
-		}			
-			
+			#fix some names that dont strip correctly
+			$name_for_hc =~ s/^Festuca brachyphylla$/Festuca brachyphylla subsp. breviculmis/;
+			$name_for_hc =~ s/^Stuckenia filiformis$/Stuckenia filiformis subsp. alpina/;
+			$name_for_hc =~ s/^Andropogon glomeratus$/Andropogon glomeratus var. scabriglumis/;
+			$name_for_hc =~ s/^Schoenoplectus acutus$/Schoenoplectus acutus var. occidentalis/;
+
+			print "after==>$name_for_hc\n";
+
+		}
+		elsif (m/\n([&times]*[A-Z][A-Z-]+ [a-z&][;a-z-]+.*)/){
+			$name_1 = ucfirst(lc($1));
+			$name_for_hc=&strip_name($name_1);
+			print "HYBRID==>$name_for_hc\n";
+		}
+
 		if (m/DISTRIBUTION/){
 			($cal_dist)=m/BIOREGIONAL DISTRIBUTION: (.*)/;
 			$cal_dist=~s/[.; ]*$//;
@@ -158,29 +216,44 @@ EOP
 			$hc=&get_hcode($cal_dist);
 print OUT3 "01-$name_for_hc\taccepted\teflora\n";	
 
-	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-		if ($TNOAN{$name_for_hc}){
-		print "$name_for_hc\t($TNOAN{$name_for_hc})\t$hc\t($cal_dist)\t$file\n";
-		}
-		else{
-		warn "$name_for_hc no code\n";
-		}
-	}
+			if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+				if ($NAME_TO_CODE{$name_for_hc}){
+				print "$name_for_hc\t($NAME_TO_CODE{$name_for_hc})\t$hc\t($cal_dist)\t$file\n";
+				}
+				else{
+				warn "$name_for_hc no code\n";
+				}
+			}
+	
+			if( $name_for_hc=~/Baccharis.*pilularis/i){
+				if ($NAME_TO_CODE{$name_for_hc}){
+					print "$name_for_hc\t($NAME_TO_CODE{$name_for_hc})\t$hc\t($cal_dist)\t$file\n";
+				}
+				else{
+				warn "$name_for_hc no code\n";
+				}
+			}
+
 ##################### $hc becomes a bit-vector here!
-			$hc = pack("b*", unpack("b*",pack("H*",$hc)));
+	$hc = pack("b*", unpack("b*",pack("H*",$hc)));
 
 	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
 		$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
 		print "1. $name_for_hc : $hstr\n";
 	}
+	
+	if( $name_for_hc=~/Baccharis.*pilularis/i){
+		$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+		print "1. $name_for_hc : $hstr\n";
+	}
 
 #Taxon ids index the DIST_STRING hash, which contains a bit-vector; "|=" adds to the vector if it already exists
-					if($TNOAN{$name_for_hc}){
-						if($DIST_STRING{$TNOAN{$name_for_hc}}){
-							$DIST_STRING{$TNOAN{$name_for_hc}}|=$hc;
+					if($NAME_TO_CODE{$name_for_hc}){
+						if($DIST_STRING{$NAME_TO_CODE{$name_for_hc}}){
+							$DIST_STRING{$NAME_TO_CODE{$name_for_hc}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$TNOAN{$name_for_hc}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$name_for_hc}}=$hc;
 						}
 					}
 					else{
@@ -195,114 +268,56 @@ print OUT3 "01-$name_for_hc\taccepted\teflora\n";
 #also store under subsp. if var. and vice versa
 					if(($name_for_altA=$name_for_hc)=~s/var\./subsp./){
 #print "$name_for_hc\n";
-						if($DIST_STRING{$TNOAN{$name_for_altA}}){
-							$DIST_STRING{$TNOAN{$name_for_altA}}|=$hc;
+						if($DIST_STRING{$NAME_TO_CODE{$name_for_altA}}){
+							$DIST_STRING{$NAME_TO_CODE{$name_for_altA}}|=$hc;
 print OUT3 "$name_for_altA\t$name_for_hc\teflora_synonyms==>alternate infra rank11\n";
 						}
 						else{
-							$DIST_STRING{$TNOAN{$name_for_altA}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$name_for_altA}}=$hc;
 						}
 						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp.).*//){
 #print "$name_for_infra\n";
-							if($DIST_STRING{$TNOAN{$name_for_infra}}){
+							if($DIST_STRING{$NAME_TO_CODE{$name_for_infra}}){
 
-								$DIST_STRING{$TNOAN{$name_for_infra}}|=$hc;
+								$DIST_STRING{$NAME_TO_CODE{$name_for_infra}}|=$hc;
 							}
 							else{
-								$DIST_STRING{$TNOAN{$name_for_infra}}=$hc;
+								$DIST_STRING{$NAME_TO_CODE{$name_for_infra}}=$hc;
 							}
 						}
 					}
 					elsif(($name_for_altB=$name_for_hc)=~s/subsp\./var./){
-						if($DIST_STRING{$TNOAN{$name_for_altB}}){
-							$DIST_STRING{$TNOAN{$name_for_altB}}|=$hc;
+						if($DIST_STRING{$NAME_TO_CODE{$name_for_altB}}){
+							$DIST_STRING{$NAME_TO_CODE{$name_for_altB}}|=$hc;
 print OUT3 "$name_for_altB\t$name_for_hc\teflora_synonyms==>alternate infra rank12\n";
 						}
 						else{
-							$DIST_STRING{$TNOAN{$name_for_altB}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$name_for_altB}}=$hc;
 						}
 						if(($name_for_infra=$name_for_hc)=~s/ (var\.|subsp.).*//){
 #print "$name_for_infra\n";
-							if($DIST_STRING{$TNOAN{$name_for_infra}}){
-								$DIST_STRING{$TNOAN{$name_for_infra}}|=$hc;
+							if($DIST_STRING{$NAME_TO_CODE{$name_for_infra}}){
+								$DIST_STRING{$NAME_TO_CODE{$name_for_infra}}|=$hc;
 							}
 							else{
-								$DIST_STRING{$TNOAN{$name_for_infra}}=$hc;
+								$DIST_STRING{$NAME_TO_CODE{$name_for_infra}}=$hc;
 							}
 						}
 					
-	if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-		$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-		print "2. $name_for_hc : $hstr\n";
+						if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+							$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+							print "2. $name_for_hc : $hstr\n";
+						}
+
+						if( $name_for_hc=~/Baccharis.*pilularis/i){
+							$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+							print "2. $name_for_hc : $hstr\n";
+							}
+
+					}	
+		}
 	}
-				}	
 
-#Synonym lines from eFlora
-        		while(s/SYNONYMS: +(.*)//){
-
-            			@syns=split(/; +/,$1);
-            			foreach(@syns){
-					s/\[//g;
-					s/Expanded author citation: //;
-					s/ f\. ex /filius ex /; #fix a special case where the parser thinks this is a forma
-					s/ F\. Muell\./ Muell./i; #fix a special case where the parser thinks this is a forma
-					s/Sess&eacute; ex Lag.//i; #fix a special case where the parser thinks this another taxon
-					s/not juncus nodatus coville/juncus nodatus coville, misappl/i;
-					s/& moc\. ex dc\. subsp\./ subsp./i;
-					s/_//;
-
-#Skip synonyms with an indication of misapplication or other synonym qualifier
-next if m/, misappl/;
-next if m/, as treated by Munz/;
-next if m/, illeg/;
-next if m/, in part/;
-next if m/, incl vars/;
-next if m/, ined/;
-next if m/, inval/;
-next if m/, nom\. ambig/;
-next if m/, nom\. nud/;
-next if m/, nom\. rej/;
-next if m/, nom\. superfl/;
-next if m/, not Hemsl/;
-next if m/, orth\. var/;
-next if m/, poss\. illeg/;
-next if m/, possibly misappl/;
-#s/\327/X/g;
-					
-                			$TJM2{&strip_name($_)}.="$LAN\n";  #Not sure what this does anymore, $LAN not anywhere else
-                			#print &strip_name($_),"\t$name_for_hc\t$cal_dist\tcaldistance_tjm\n";
-						print OUT3 &strip_name($_),"\t$name_for_hc\teflora_synonyms20\n";
-					if($TNOAN{&strip_name($_)}){
-						if($DIST_STRING{$TNOAN{&strip_name($_)}}){
-							$DIST_STRING{$TNOAN{&strip_name($_)}}|=$hc;
-print OUT3 &strip_name($_),"\t$name_for_hc\teflora_synonym_raw1\n";
-						}
-						else{
-							$DIST_STRING{$TNOAN{&strip_name($_)}}=$hc;
-print OUT3 &strip_name($_),"\t$name_for_hc\teflora_synonym_raw1a\n";
-						}
-					}
-					else{
-						if($DIST_STRING{&strip_name($_)}){
-							$DIST_STRING{&strip_name($_)}|=$hc;
-print OUT3 &strip_name($_),"\t$name_for_hc\teflora_synonym_raw2\n";
-						}
-						else{
-							$DIST_STRING{&strip_name($_)}=$hc;
-print OUT3 &strip_name($_),"\t$name_for_hc\teflora_synonym_raw2a\n";
-						print &strip_name($_),"  not found (main SYN name)\n";
-						}
-					}
-	           			}
-        		}
-    		}
-if( $_=~/polyanthum/i){
-$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-print "3. $_ $name_for_hc : $hstr\n";
-}
-
-
-	}
 #now add synonyms from supplementary synonym files
 	foreach $name_for_hc (keys(%DIST_STRING)){
 			$hc=$DIST_STRING{$name_for_hc};
@@ -313,91 +328,97 @@ print "3. $_ $name_for_hc : $hstr\n";
 				@TS=split(/\t/,$TS{$name_for_hc});
 				foreach(@TS){
 #print "TS is $_  AN=$name_for_hc\n";
-					if($TNOAN{$_}){
-print OUT3 "$_\t$name_for_hc\tsuppl_syn_file3\n";
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
+					if($NAME_TO_CODE{$TS{$name_for_hc}}){
+print OUT3 "$TS{$name_for_hc}\t$name_for_hc\tsuppl_syn_file3\n";
+						if($DIST_STRING{$NAME_TO_CODE{$TS{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$TS{$name_for_hc}}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$TS{$name_for_hc}}}=$hc;
 						}
 					}
 					else{
-print OUT3 "$_\t$name_for_hc\tsuppl_syn_file4\n";
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
+print OUT3 "$TS{$name_for_hc}\t$name_for_hc\tsuppl_syn_file4\n";
+						if($DIST_STRING{$TS{$name_for_hc}}){
+							$DIST_STRING{$TS{$name_for_hc}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$_}=$hc;
+							$DIST_STRING{$TS{$name_for_hc}}=$hc;
 						}
 					}
 				}
 			}
-
-
-
-			($ns=$name_for_hc)=~s/(var\.|subsp\.|f\.) //;
-			$ns=lc($ns);
-#$ns=~s/\327/X/g;
-			#warn "$ns\n";
-#TIED NOM SYNS
-			if($NS{$ns}){
-#print "NS FOUND FOR $name_for_hc = $ns\n";
-				#warn "$NS{$ns}\n";
-				@NS=split(/\t/,$NS{$ns});
-				foreach(@NS){
-s/ *\327 */ /g;
-					$_=ucfirst($_);
-					s/([A-Z][a-z]+) ([a-z]+) ([a-z]+)/$1 $2 subsp\. $3/;
-					#print "$_\t$cal_dist\t$hc\n" if m/../;
-					if($TNOAN{$_}){
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
-						}
-						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
-						}
-print OUT3 "$_\t$name_for_hc\tCCH_syn_file5\n";
-					}
-					else{
-print OUT3 "$_\t$name_for_hc\tCCH_syn_file6\n";
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
-						}
-						else{
-							$DIST_STRING{$_}=$hc;
-						}
-					}
-					s/([A-Z][a-z]+) ([a-z]+) subsp. ([a-z]+)/$1 $2 var. $3/;
-					#print "$_\t$cal_dist\t$hc\n" if m/../;
-					if($TNOAN{$_}){
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
-						}
-						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
-						}
-print OUT3 "$_\t$name_for_hc\tCCH_syn_file7\n";
-					}
-					else{
-print OUT3 "$_\t$name_for_hc\tCCH_syn_file8\n";
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
-						}
-						else{
-							$DIST_STRING{$_}=$hc;
-						}
-					}
-				}
-
-			
-if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-print "4. $_ $name_for_hc : $hstr\n";
+#die;
 }
-			}
 
+#now add synonyms from supplementary synonym files
+	foreach $name_for_hc (keys(%DIST_STRING)){
+			$hc=$DIST_STRING{$name_for_hc};
+			$name_for_hc=~s/(\d+)/$CODE_TO_NAME{$1}/;
+
+			if($TS_ALT{$name_for_hc}){
+#print "TS FOUND FOR $name_for_hc\n";
+				@TS_ALT=split(/\t/,$TS_ALT{$name_for_hc});
+				foreach(@TS_ALT){
+#print "TS is $_  AN=$name_for_hc\n";
+					if($NAME_TO_CODE{$TS_ALT{$name_for_hc}}){
+print OUT3 "$TS_ALT{$name_for_hc}\t$name_for_hc\tsuppl_syn_file3\n";
+						if($DIST_STRING{$NAME_TO_CODE{$TS_ALT{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$TS_ALT{$name_for_hc}}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$NAME_TO_CODE{$TS_ALT{$name_for_hc}}}=$hc;
+						}
+					}
+					else{
+print OUT3 "$TS_ALT{$name_for_hc}\t$name_for_hc\tsuppl_syn_file4\n";
+						if($DIST_STRING{$TS_ALT{$name_for_hc}}){
+							$DIST_STRING{$TS_ALT{$name_for_hc}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$TS_ALT{$name_for_hc}}=$hc;
+						}
+					}
+				}
+			}
+#die;
 	}
+
+
+#now add synonyms from orthographic variant file
+	foreach $name_for_hc (keys(%DIST_STRING)){
+			$hc=$DIST_STRING{$name_for_hc};
+			$name_for_hc=~s/(\d+)/$CODE_TO_NAME{$1}/;
+
+			if($ORTH{$name_for_hc}){
+print "ORTH FOUND FOR $name_for_hc\n";
+				@ORTH=split(/\t/,$ORTH{$name_for_hc});
+				foreach(@ORTH){
+print "ORTH is $_  AN=$name_for_hc\n";
+					if($NAME_TO_CODE{$ORTH{$name_for_hc}}){
+print OUT3 "$ORTH{$name_for_hc}\t$name_for_hc\torthvar_file1\n";
+						if($DIST_STRING{$NAME_TO_CODE{$ORTH{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$ORTH{$name_for_hc}}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$NAME_TO_CODE{$ORTH{$name_for_hc}}}=$hc;
+						}
+					}
+					else{
+print OUT3 "$ORTH{$name_for_hc}\t$name_for_hc\torthvar_file2\n";
+						if($DIST_STRING{$ORTH{$name_for_hc}}){
+							$DIST_STRING{$ORTH{$name_for_hc}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$ORTH{$name_for_hc}}=$hc;
+						}
+					}
+				}
+			}
+#die;
+	}
+
+
 #now add synonyms from ICPN synonym file
 	foreach $name_for_hc (keys(%DIST_STRING)){
 			$hc=$DIST_STRING{$name_for_hc};
@@ -408,31 +429,36 @@ print "4. $_ $name_for_hc : $hstr\n";
 				@TS_ICPN=split(/\t/,$TS_ICPN{$name_for_hc});
 				foreach(@TS_ICPN){
 #print "TS is $_  AN=$name_for_hc\n";
-					if($TNOAN{$_}){
+					if($NAME_TO_CODE{$TS_ICPN{$name_for_hc}}){
 print OUT3 "$_\t$name_for_hc\tICPN_nomsyn_file3\n";
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
+						if($DIST_STRING{$NAME_TO_CODE{$TS_ICPN{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$TS_ICPN{$name_for_hc}}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$TS_ICPN{$name_for_hc}}}=$hc;
 						}
 					}
 					else{
 print OUT3 "$_\t$name_for_hc\tICPN_nomsyn_file3a\n";
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
+						if($DIST_STRING{$TS_ICPN{$name_for_hc}}){
+							$DIST_STRING{$TS_ICPN{$name_for_hc}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$_}=$hc;
+							$DIST_STRING{$TS_ICPN{$name_for_hc}}=$hc;
 						}
 					}
 				}
 			}
 			
-if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-print "7. $_ $name_for_hc : $hstr\n";
-}
+			if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "7. $_ $name_for_hc : $hstr\n";
+			}
+
+			if( $name_for_hc=~/Baccharis.*pilularis/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "7. $name_for_hc : $hstr\n";
+			}
 			
 
 	}	
@@ -447,34 +473,83 @@ print "7. $_ $name_for_hc : $hstr\n";
 				@TS_EF=split(/\t/,$TS_EF{$name_for_hc});
 				foreach(@TS_EF){
 #print "TS is $_  AN=$name_for_hc\n";
-					if($TNOAN{$_}){
+					if($NAME_TO_CODE{$TS_EF{$name_for_hc}}){
 print OUT3 "$_\t$name_for_hc\tEFLORA_nomsyn_file4\n";
-						if($DIST_STRING{$TNOAN{$_}}){
-							$DIST_STRING{$TNOAN{$_}}|=$hc;
+						if($DIST_STRING{$NAME_TO_CODE{$TS_EF{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$TS_EF{$name_for_hc}}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$TNOAN{$_}}=$hc;
+							$DIST_STRING{$NAME_TO_CODE{$TS_EF{$name_for_hc}}}=$hc;
 						}
 					}
 					else{
 print OUT3 "$_\t$name_for_hc\tEFLORA_nomsyn_file4a\n";
-						if($DIST_STRING{$_}){
-							$DIST_STRING{$_}|=$hc;
+						if($DIST_STRING{$TS_EF{$name_for_hc}}){
+							$DIST_STRING{$TS_EF{$name_for_hc}}|=$hc;
 						}
 						else{
-							$DIST_STRING{$_}=$hc;
+							$DIST_STRING{$TS_EF{$name_for_hc}}=$hc;
 						}
 					}
 				}
 			}
 			
-if( $name_for_hc=~/Eriogonum.*polyanthum/i){
-$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
-print "8. $_ $name_for_hc : $hstr\n";
-}
-			
+			if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "8. $_ $name_for_hc : $hstr\n";
+			}
+
+			if( $name_for_hc=~/Baccharis.*pilularis/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "8. $name_for_hc : $hstr\n";
+			}			
 
 	}	
+
+#now add synonyms from CCH nomsyn file
+	foreach $name_for_hc (keys(%DIST_STRING)){
+			$hc=$DIST_STRING{$name_for_hc};
+			$name_for_hc=~s/(\d+)/$CODE_TO_NAME{$1}/;
+
+			if($NS{$name_for_hc}){
+#print "NS FOUND FOR $name_for_hc\n";
+				@NS=split(/\t/,$NS{$name_for_hc});
+				foreach(@NS){
+#print "NS is $_  AN=$name_for_hc\n";
+					if($NAME_TO_CODE{$NS{$name_for_hc}}){
+print OUT3 "$_\t$name_for_hc\tCCH_nomsyn_file4\n";
+						if($DIST_STRING{$NAME_TO_CODE{$NS{$name_for_hc}}}){
+							$DIST_STRING{$NAME_TO_CODE{$NS{$name_for_hc}}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$NAME_TO_CODE{$NS{$name_for_hc}}}=$hc;
+						}
+					}
+					else{
+print OUT3 "$_\t$name_for_hc\tCCH_nomsyn_file4a\n";
+						if($DIST_STRING{$NS{$name_for_hc}}){
+							$DIST_STRING{$NS{$name_for_hc}}|=$hc;
+						}
+						else{
+							$DIST_STRING{$NS{$name_for_hc}}=$hc;
+						}
+					}
+				}
+			}
+			
+			if( $name_for_hc=~/Eriogonum.*polyanthum/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "9. $_ $name_for_hc : $hstr\n";
+			}
+
+			if( $name_for_hc=~/Baccharis.*pilularis/i){
+				$hstr= unpack("H*", pack("b*",unpack ("b*", $hc)));
+				print "9. $name_for_hc : $hstr\n";
+			}			
+
+	}
+
+
 	
 ###############################assign string of regions to TID
 open(OUT4, ">output/nomsyn_HCODE_cch_out.txt") || die;
@@ -482,24 +557,24 @@ open(OUT2, ">output/tid_HCODE_cch_out.txt") || die;
 open(OUT, ">output/tid_DIST_STRING_cch_out.txt") || die;
 open(OUT5, ">output/tnoan_DIST_STRING_out.txt") || die;
 {
-local($/="\n");
-open(IN, "region_table.txt") || die;
-@regions=();
+	local($/="\n");
+	open(IN, "region_table.txt") || die;
+	@regions=();
 #print join(" ",@regions),"\n";
-while(<IN>){
-	chomp;
-	($region,$mapcoord, $mapcolor,$longregion,$province) = split(/\t/, $_);
-	$prov{$region}=$sort_order++;
-	$parent{$region}=$province;
-	$expand{$region}=$longregion;
-	push(@regions,$region);
+	while(<IN>){
+		chomp;
+		($region,$mapcoord, $mapcolor,$longregion,$province) = split(/\t/, $_);
+		$prov{$region}=$sort_order++;
+		$parent{$region}=$province;
+		$expand{$region}=$longregion;
+		push(@regions,$region);
 	#hash with colors associated with region
-	$colors{$region} = $mapcolor;
+		$colors{$region} = $mapcolor;
 	#hash withcoordinates associated with region
-	$coord{$region} = $mapcoord;
-	$region{$mapcolor}=$region;
-}
-close(IN);
+		$coord{$region} = $mapcoord;
+		$region{$mapcolor}=$region;
+	}
+	close(IN);
 }
 #print join(" ",@regions),"\n";
 
@@ -507,6 +582,7 @@ close(IN);
 #which should have been generated following a similar sort
 #make sure here's not a blank line at data's end
 #print join(" ",@regions),"\n";
+
 foreach (@regions){
 	if(m/^([a-z])(.*)/){
 		$sortstring{$_} = "$2$1";
@@ -519,55 +595,56 @@ foreach (@regions){
 #print join(" ",@regions),"\n";
 @regions=sort bycaps (@regions);
 #print join(" ",@regions),"\n";
-sub bycaps {
-	$sortstring{$a} cmp $sortstring{$b} ||
-	$a cmp $b
-}
 
 	foreach(keys(%DIST_STRING)){
-		$tname=$_;
-#print "$_\n";
+		$tname_list=$_;
+#print "BEFORE: $_\n";
 		#$tname=$_;
+
+		@tnames=split(/\t/,$tname_list);
+		foreach $tname (@tnames[0 .. $#tnames]){		
+#print "AFTER==>".$tname."\n";
+
 ##skip genera;
 		next if $tname=~/[A-Z][a-z-]+ *$/;
 		%prov=();
 		$distvec = $nullvec;
-$hstr= unpack("H*", pack("b*",unpack ("b*", $DIST_STRING{$_})));
+		$hstr= unpack("H*", pack("b*",unpack ("b*", $DIST_STRING{$_})));
 #print "-->$hstr\n";
-$bitstr = unpack ("b*", $DIST_STRING{$_});
+		$bitstr = unpack ("b*", $DIST_STRING{$_});
 #print $bitstr, "\n";
 		$distvec = pack("b*", unpack("b*",pack("H*",$hstr)));
 
-if ($NAME_TO_CODE{$tname}){
-	print OUT "$NAME_TO_CODE{$tname}\t";
-		foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
+		if ($NAME_TO_CODE{$tname}){
+			print OUT "$NAME_TO_CODE{$tname}\t";
+			foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
 				if(vec($distvec,$r,1)){
-	print OUT "$regions[$r],";
+					print OUT "$regions[$r],";
 				}
+			}
+			print OUT  "\n";
 		}
-print OUT  "\n";
-}
-else{
-	print OUT "$tname\t";
-		foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
-				if(vec($distvec,$r,1)){
-	print OUT "$regions[$r],";
+		else{
+			print OUT "$tname\t";
+				foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
+					if(vec($distvec,$r,1)){
+						print OUT "$regions[$r],";
+					}
 				}
+			print OUT  "\n";
 		}
-print OUT  "\n";
-}
 
-if ($CODE_TO_NAME{$tname}){
-	print OUT5 $CODE_TO_NAME{$tname}."\t";
-		foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
-				if(vec($distvec,$r,1)){
-	print OUT5 "$regions[$r],";
+		if ($CODE_TO_NAME{$tname}){
+			print OUT5 $CODE_TO_NAME{$tname}."\t";
+				foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
+					if(vec($distvec,$r,1)){
+						print OUT5 "$regions[$r],";
+					}
 				}
+			print OUT5  "\n";
 		}
-print OUT5  "\n";
-}
-else{
-	next if $tname=~/[A-Z][a-z-]+ *$/;
+		else{
+	next if $tname=~/^[A-Z][a-z-]+ *$/;
 	$tname =~ s/=+>\d+//;
 	print OUT5 "$tname\t";
 		foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
@@ -578,50 +655,58 @@ else{
 print OUT5  "\n";
 }
 
-$DIST_STRING{$_}=$hstr;
+%$hcode_hash = ();
+
+	foreach($tname){
+#$DIST_STRING{$_}=$hstr;
+$DIST_STRING{$tname}=$hstr;
+print $tname."==>".$NAME_TO_CODE{$tname}." ".$CODE_TO_NAME{$tname}."--->".$DIST_STRING{$tname}."\n";
 if ($NAME_TO_CODE{$tname}){
 	print OUT2 "$NAME_TO_CODE{$tname}\t";
 	print OUT4 "$tname\t";
-
+	$hcode_hash{$NAME_TO_CODE{$tname}}=$DIST_STRING{$tname};
 	print OUT2 "$DIST_STRING{$tname}";
 	print OUT4 "$DIST_STRING{$tname}";
 	print OUT2  "\n";
 	print OUT4  "\n";
+#for each taxon name 
+++$count_new;
+print $tname."==>".$NAME_TO_CODE{$tname}." ".$CODE_TO_NAME{$tname}."--->".$DIST_STRING{$tname}."\n";
 }
 else{
 	print OUT2 "$tname\t";
 	print OUT4 "$tname\t";
 	print OUT2 "$DIST_STRING{$tname}";
 	print OUT4 "$DIST_STRING{$tname}";
+	#print "ELSE RECORD==>$DIST_STRING{$tname}\n";
 	print OUT2  "\n";
 	print OUT4  "\n";
+	$hcode_hash{$tname}=$DIST_STRING{$tname};
+#for each taxon name 
+++$count_new;
+print $tname."==>".$NAME_TO_CODE{$tname}." ".$CODE_TO_NAME{$tname}."--->".$DIST_STRING{$tname}."\n";
+}
+	}
+
 }
 
-#				next if $NAME_TO_CODE{$tid}=~/\d+$/;
-#		%prov=();
-#		$distvec = $nullvec;
-#$hstr= unpack("H*", pack("b*",unpack ("b*", $DIST_STRING{$_})));
-#print "++>$hstr\n";
-#$bitstr = unpack ("b*", $DIST_STRING{$_});
-#print $bitstr, "\n";
-#		$distvec = pack("b*", unpack("b*",pack("H*",$hstr)));
-#print OUT2 "$CODE_TO_NAME{$tid}\t";
-#		foreach $r (sort {$prov{$regions[$a]} <=> $prov{$regions[$b]}}(0 .. 34)){
-#				if(vec($distvec,$r,1)){
-#print OUT2 "$regions[$r],";
-#				}		
-#		}
-#print OUT2  "\n";
 }
+
+
+print "old nomsyn_hcode count: $count_old\n\n";
+print "new nomsyn_hcode count: $count_new\n\n";
+
 close(OUT2);
 close(OUT);
 close(OUT3);
 close(OUT4);
 close(OUT5);
 
-
 sub strip_name{
 local($_) = @_;
+
+#s/filiformis\b .+ .+ \bsubsp/filiformis subsp./;
+
 
 #add additional 'filial' authorities at this point so they parse correctly, JAA
 s/Ait\. f\./Ait. filius/g;
@@ -690,23 +775,49 @@ s/Schult\. f\./Schult. filius/g;
 s/Wallr\. f\./Wallr. filius/g;
 s/Wendl\. f\./Wendl. filius/g;
 
-s/^&times;([A-Z][A-Z-]+)/X $1/;
 
-$_= ucfirst(lc($_));
 
-s/^([A-Z][A-Za-z-]+) ([-a-z]+) ?.* (subvar\.|subsp\.|var\.|f\.|nothosubsp\.) ([-a-z]+).*/$1 $2 $3 $4/ ||
-s/^([A-Z][A-Za-z-]+) &times;([-a-z]+) .+/$1 X $2/||
-s/^([A-Z][A-Za-z-]+) &times;([-a-z]+)/$1 X $2/||
-s/^([A-Z][A-Za-z-]+) ([-a-z]+) .+/$1 $2/||
-s/^([A-Z][A-Za-z-]+) ([-a-z]+)/$1 $2/||
-s/^X ([A-Z]?[a-z-]+) ([-a-z]+) (.+)/X ucfirst(lc($1) $2/||
-s/^X ([A-Z]?[a-z-]+) ([-a-z]+)/X ucfirst(lc($1) $2/||
-s/^([A-Z][A-Za-z-]+) (.+)/$1/;
+
+s/,//g; #delete stray commas
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+) [\w&;'().\- ]+ (\bsubvar\.|\bsubsp\.|\bvar\.|\bf\.|\bnothosubsp\.) (\b[a-z-]+) [\w&;'().\- ]+/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+) [\w&;'().\- ]+ (\bsubvar\.|\bsubsp\.|\bvar\.|\bf\.|\bnothosubsp\.) ([-a-z]+)/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+) (\bsubvar\.|\bsubsp\.|\bvar\.|\bf\.|\bnothosubsp\.) ([-a-z]+) [\w&;'().\- ]+/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+) (\bsubvar\.|\bsubsp\.|\bvar\.|\bf\.|\bnothosubsp\.) ([-a-z]+)/$1 $2 $3 $4/ ||
+s/^([A-Z][A-Za-z-]+) (\b&times;)([-a-z]+) [\w&;'().\- ]+/$1 $2$3/||
+s/^([A-Z][A-Za-z-]+) (\b&times;)([-a-z]+)/$1 $2$3/||
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+) [\w&;'().\- ]+/$1 $2/||
+s/^([A-Z][A-Za-z-]+) (\b[-a-z]+)/$1 $2/||
+s/^(&times;)([A-Z]?[A-Za-z-]+) (\b[-a-z]+) [\w&;'().\- ]+/$1$2 $3/||
+s/^(&times;)([A-Z]?[A-Za-z-]+) (\b[-a-z]+)/$1$2 $3/;
 s/ +/ /;
 s/ +$//;
 s/^ +//;
 
+#s/^([A-Z][A-Za-z-]+) (.+)/$1/;
+
+#problem names
+#s/ .pers.. b.*rner / /;
+#s/palustris l\. var\./palustris var./;
+#s/ \(torr\.\) g\.l\. church / /;
+#s/ scribn. var. / /;
+#s/ schult. var. / /;
+#s/ \(retz.) ohwi subsp. / /;
+#s/ schult. & schult. f. subsp. / /;
+#s/ (p. beauv.) fernald var. / /;
+#s/ (l.) gaertn. subsp. / /;
+#s/ (michx.) p. beauv. var. / /;
+#s/ (dc.) herter subsp. / /;
+#s/ cav. var. / /;
+#s/ (walter) britton, sterns, & poggenb. [vs]var. / /;
+
+
 
 
 $_;
+}
+
+
+sub bycaps {
+	$sortstring{$a} cmp $sortstring{$b} ||
+	$a cmp $b
 }
