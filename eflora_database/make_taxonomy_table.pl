@@ -35,7 +35,7 @@ while(<IN>){
 	
 	($lines) = split(/\t/);
 	++$total;
-	#As the sequence file comes directly out of the make_eflora.sh parser (specifically format_for_i.pl), 
+	#As the sequence file comes directly out of the make_eflora_keys.sh parser (specifically format_for_i.pl), 
 	#each line ends with a comma and a space. These are manually clipped off when the sequence 
 	#is copied to the END of the old search script (search_IJM.pl), 
 	#so you might need to put them back on in IJM_sequence.txt to make this script work

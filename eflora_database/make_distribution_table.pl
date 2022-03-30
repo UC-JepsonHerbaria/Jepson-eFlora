@@ -10,7 +10,15 @@
 
 use lib "/Users/Shared/Jepson-Master/Jepson-eFlora/Modules/";
 use flatten;
+use CCH;
 use BerkeleyDB;
+
+
+$todayJD = &CCH::get_today_julian_day;
+$log_file = 'output/eflora_log'.$todayJD.'.txt';
+	open(LOG, '>>', $log_file);
+
+
 
 open(IN, "/Users/Shared/Jepson-Master/Jepson-eFlora/synonymy/input/smasch_taxon_ids.txt") || die;
 while(<IN>){
@@ -29,54 +37,68 @@ open(OUT, ">output/load_distribution_table.sql") || die;
 #open(IN, "/Users/Shared/Jepson-Master/Jepson-eFlora/YELLOW_FLAGGING/output/nomsyn_HCODE_cch_out.txt") || die;
 #$file="/JEPS-master/Jepson-eFlora/synonymy/input/nomsyn_hcode_hash"; #this was a has file created by make_nomsym_hcode.pl, could still use this but it needs updated
 #	tie %HEX, "BerkeleyDB::Hash", -Filename => $file, -Flags    => DB_CREATE or die "Cannot open file $filename: $! $BerkeleyDB::Error\n" ;
-open(IN, "/Users/Shared/Jepson-Master/Jepson-eFlora/YELLOW_FLAGGING/output/tid_HCODE_cch_out.txt") || die;
 
+open(IN, "/Users/Shared/Jepson-Master/Jepson-eFlora/YELLOW_FLAGGING/output/tid_accepted_HCODE_cch_out.txt") || die;
 while(<IN>){
 	chomp;
 	($key,$acc,$hex_code)=split(/\t/);
 #	print "TaxonID\tCCo	CaRF	CaRH	nChI	sChI	DMojexcDMtns	DMtns	DSon	KR	MPexcWrn	NCo	NCoRH	NCoRI	NCoRO	PRexcSnJt	SCo	SCoRI	SCoRO	SNEexcWaI	nSNF	cSNF	sSNF	nSNH	cSNH	sSNH	ScV	SnBr	SnFrB	SnGb	SnJV	SnJt	Teh	WTR	WaI	Wrn\n";
-	if ($key =~ m/^\d+/){ 
-		#include only records that are numerical, 
+
 		#the old version of this file, nomsyn_hcode_hash, designed by Dick Moe and adopted by David Baxter, 
 		#had a confusing mixture of names and TID's for both accepted and synonym names
-		
-
 	next if $seen{$key}++; 
 	#we only want one value per taxon ID to be loaded.
 	#due to errors the old version of this file
 	#often had duplicate TID'S with different HCODES,
 	#this selected the first found, which may or may not have been the correct HCODE
 
-$tnoan = $CODE_TO_NAME{$key};
-
 		$HEX{$key}=$hex_code;
-#$hname = $TNOAN{$id_H};
+
 		$dist_array = unpack("b*",pack("H*",$hex_code));
 		@region_dist=split(//,$dist_array);
 		#print join("\t",@hv[0 .. 34]), "\n";
 
 		#format for SQLite insert (presence, i.e. "1", does not need to be changed)
 			foreach (@region_dist) {
+				++$count_dist;
 				s/0/NULL/;
 			}
 
 
-print "$_ $HEX{$_}\n" if m/^1831/;
-print "$_ $HEX{$_}\n" if m/eria naus/;
-print "$_ $HEX{$_}\n" if m/ X /;
-print "$_ $HEX{$_}\n" if m/ &times;/;
+print LOG "$_ $HEX{$_}\n" if m/^1831/;
+print LOG "$_ $HEX{$_}\n" if m/eria naus/;
+print LOG "$_ $HEX{$_}\n" if m/ X /;
+print LOG "$_ $HEX{$_}\n" if m/ &times;/;
 
 
 print "TEST RECORD FOUND: $key $HEX{$key}\n" if ($hex_code =~ m/6000048102/);
+print LOG "TEST RECORD FOUND: $key $HEX{$key}\n" if ($hex_code =~ m/6000048102/);
 
+	if ($CODE_TO_NAME{$key}){ 
+		my $tnoan = $CODE_TO_NAME{$key};
 
-
-	print OUT "INSERT INTO eflora_distributions(TaxonID, CCo, CaRF, CaRH, nChI, sChI, DMojexcDMtns, DMtns, DSon, KR, MPexcWrn, NCo, NCoRH, NCoRI, NCoRO, PRexcSnJt, SCo, SCoRI, SCoRO, SNEexcWaI, nSNF, cSNF, sSNF, nSNH, cSNH, sSNH, ScV, SnBr, SnFrB, SnGb, SnJV, SnJt, Teh, WTR, WaI, Wrn, ScientificName)\n";
-	print OUT "VALUES($key, ", join(", ",@region_dist[0 .. 34]), ", '$tnoan')\n";
-	print OUT ";\n";
+			print OUT "INSERT INTO eflora_distributions(TaxonID, CCo, CaRF, CaRH, nChI, sChI, DMojexcDMtns, DMtns, DSon, KR, MPexcWrn, NCo, NCoRH, NCoRI, NCoRO, PRexcSnJt, SCo, SCoRI, SCoRO, SNEexcWaI, nSNF, cSNF, sSNF, nSNH, cSNH, sSNH, ScV, SnBr, SnFrB, SnGb, SnJV, SnJt, Teh, WTR, WaI, Wrn, ScientificName)\n";
+			print OUT "VALUES(".$key.", ", join(", ",@region_dist[0 .. 34]), ", '".$tnoan."')\n";
+			print OUT ";\n";
 		
-		#print "$hex_ID\t", join("\t",@region_dist[0 .. 34]), "\n";
+			#print "$hex_ID\t", join("\t",@region_dist[0 .. 34]), "\n";
 	}
 }
 
+
+print LOG <<EOP;
+BEGIN EFLORA DIST STATS
+
+TOTAL dist lines in eflora_treatments: $count_dist
+
+END EFLORA DIST STATS
+EOP
+
+print <<EOP;
+TOTAL dist lines in eflora_treatments: $count_dist
+
+END EFLORA DIST STATS
+EOP
+
 close(IN);
+close(OUT);

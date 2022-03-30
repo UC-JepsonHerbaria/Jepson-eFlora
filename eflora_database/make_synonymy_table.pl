@@ -118,7 +118,7 @@ $unabridged_syn_string=&get_unabridged_synonyms($_);
 
 #Process accepted names to match with accepted name list and TIDs
 if ($temp_name =~ m/ENCELIA farinosa A\. Gray ex Torr\. &times; E\. frutescens/){ #the spontaneous hybrid is kluged because there is only one and it's awkward
-	$taxon_name = "Encelia farinosa X Encelia frutescens";
+	$taxon_name = "Encelia farinosa X frutescens";
 }
 else{
 
@@ -274,7 +274,7 @@ $unabridged_syn_string=~s/&eacute;/e/g;
 		print OUT2 "$taxon_name\t$taxon_name\tTJM2 accepted\n" unless $seen{$taxon_name}++;#add accepted names
 	}
 
-foreach $syn (@synonyms){
+  foreach $syn (@synonyms){
 
 		++$syn_total;
 		#remove exceptional cases
@@ -282,239 +282,306 @@ foreach $syn (@synonyms){
 		#Eriogonum denudatum (Nutt.) Curran is illegitimate [=Nemacaulis denudata], not to be confused with the legitimate Eriogonum denudatum Nutt. which is a synonym of Eriogonum elongatum
 		#Agoseris maritima Eastw. is illegitimate [=Agoseris apargioides var. eastwoodiae], not to be confused with the legitimate Agoseris maritima E. Sheld. which is a synonym of Agoseris apargioides var. maritima
 		#Agrostis tenuis Vasey is illegitimate [=Agrostis idahoensis], not to be confused with the legitimate Agrostis tenuis Sibth. which is a synonym of Agrostis capillaris
-		if ($syn =~ /^(Agrostis tenuis Vasey|Agoseris maritima Eastw|Eriogonum luteolum \(Coville\) M\.E\. Jones|Eriogonum denudatum \(Nutt\.\) Curran)/){
-			print ERR "exceptional case skipped for synonymy: $syn\n";
-			next;
-		}
-		elsif ($syn =~ /^Cyanopsis$/){
-			print ERR "exceptional case skipped for synonymy: $syn\n";
-			next;
-		}
-		#make a note of the below problems for Tom
-		elsif ($syn =~ /^(Lotus scoparius brevialatus \(Ottley\) Munz)/){
-			$syn = "Lotus scoparius subsp. brevialatus (Ottley) Munz";
-			print ERR "exceptional case modified from $1 for synonymy: $syn\n";
-		}
-		else{
+	if ($syn =~ /^Leptosiphon aureus .+illeg/){
+			$stripped ="Leptosiphon aureus (Nutt.) of various auth. non Benth.";
 
-	#remove cases where a name is not acually a synonym in the synonym field, it is a misapplied name or an "in part" name, we only want full synonyms here
-	#these cases should be noted names instead.
-	#this has to be done before stripping to preserve the phrase.
-	$syn =~ s/\(\?\)//;#delete errant problematic '(?)' phrases authors add to eflora that cause problems with stripping names
-	$syn =~ s/\?//;#delete errant problematic '?' authors add to eflora that cause problems with stripping names
-	$stripped = &strip_nameEF($syn);
-	
-	if ($syn =~ m/ in part, mis.+/){ 
-		print ERR "synonym is an 'in part, misapplied' name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_part;
-	
-		print OUT3 "$stripped\t$taxon_name\tSYN IN PART MISAPP in EFLORA\n"; 
+		print OUT2 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
 
-	print OUT <<EOP;
-INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
-VALUES('$stripped', 'misapplied name, in part', $taxon_id)
-;
-
-EOP
-#then skip the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/ in part/){ 
-		print ERR "synonym is an 'in part' name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_part;
-		print OUT3 "$stripped\t$taxon_name\tSYN IN PART in EFLORA\n"; 
-
-	print OUT <<EOP;
-INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
-VALUES('$stripped', 'synonym, in part', $taxon_id)
-;
-
-EOP
-#then skip the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/( misappl)/){ 
-		print ERR "synonym is a misapplied name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_misap;
-		
-		#the eflora accepted name cannot be used here as the accepted name since it is misapplied
-		print OUT3 "$stripped\t$stripped\tMISAPPL sensu EFLORA under $taxon_name\n"; 
-		 
-	print OUT <<EOP;
-INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
-VALUES('$stripped', 'misapplied name', $taxon_id)
-;
-
-EOP
-#then skip the name so it is not in the file as a synonym
-	next;
-	}	
-	elsif ($syn =~ m/ nom\. inval\./){ 
-		print ERR "synonym is a nom\. inval\. name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_inval;
-		print OUT3 "$stripped\t$taxon_name\tINVALID in EFLORA\n"; 
-		 
-	print OUT <<EOP;
-INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
-VALUES('$stripped', 'invalid name', $taxon_id)
-;
-
-EOP
-#then skip the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/ illeg\./){ 
-		print ERR "synonym is a Illegitimate name: $syn\n";
-		print OUT2 "$stripped\t$taxon_name\tTJM2 synonym, illeg.\n"; #need to print these variants to EFLORA_tax_syns_list.txt
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_illeg;
-		print OUT3 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
 	print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'illegitimate name', $taxon_id)
 ;
 
 EOP
-#then null the name so it is not in the file as a synonym
+#then skip the name so a dup is not in the file as a synonym
 	next;
 	}
-	elsif ($syn =~ m/ superfl\./){ 
-		print ERR "synonym is a Superfluous name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_super;
-		print OUT3 "$stripped\t$taxon_name\tSUPERFL in EFLORA\n"; 
-		 
+	elsif ($syn =~ /^Agoseris maritima Eastw\./){
+			$stripped ="Agoseris maritima Eastw. non E. Sheld.";
+
+		print OUT2 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
+
 	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'illegitimate name', $taxon_id)
+;
+
+EOP
+#then skip the name so a dup is not in the file as a synonym
+	next;
+	}
+	elsif ($syn =~ /^Eriogonum luteolum \(Coville\)/){
+			$stripped ="Eriogonum luteolum \(Coville\) of auth. non Greene";
+
+		print OUT2 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
+
+	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'illegitimate name', $taxon_id)
+;
+
+EOP
+#then skip the name so a dup is not in the file as a synonym
+	next;
+	}
+	elsif ($syn =~ /^Agrostis tenuis Vasey/){
+			$stripped = "Agrostis tenuis Vasey non Sibth.";
+
+		print OUT2 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
+
+	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'illegitimate name', $taxon_id)
+;
+
+EOP
+#then skip the name so a dup is not in the file as a synonym
+	next;
+	}
+	elsif ($syn =~ /^Eriogonum denudatum (Nutt.) Curran/){
+			$stripped = "Eriogonum denudatum (Nutt.) Curran non Nutt.";
+
+		print OUT2 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
+
+	print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'illegitimate name', $taxon_id)
+;
+
+EOP
+#then skip the name so a dup is not in the file as a synonym
+	next;
+	}
+	elsif ($syn =~ /^Cyanopsis$/){
+			print ERR "exceptional case skipped for synonymy: $syn\n";
+			next;
+	}
+		#make a note of the below problems for Tom
+	elsif ($syn =~ /^(Lotus scoparius brevialatus \(Ottley\) Munz)/){
+			$syn = "Lotus scoparius subsp. brevialatus (Ottley) Munz";
+			print ERR "exceptional case modified from $1 for synonymy: $syn\n";
+	}
+	else{
+
+	#remove cases where a name is not acually a synonym in the synonym field, it is a misapplied name or an "in part" name, we only want full synonyms here
+	#these cases should be noted names instead.
+	#this has to be done before stripping to preserve the phrase.
+		$syn =~ s/\(\?\)//;#delete errant problematic '(?)' phrases authors add to eflora that cause problems with stripping names
+		$syn =~ s/\?//;#delete errant problematic '?' authors add to eflora that cause problems with stripping names
+		$stripped = &strip_nameEF($syn);
+	
+		if ($syn =~ m/ in part, mis.+/){ 
+			print ERR "synonym is an 'in part, misapplied' name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_part;
+		
+			print OUT3 "$stripped\t$taxon_name\tSYN IN PART MISAPP in EFLORA\n"; 
+
+		print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'misapplied name, in part', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+		next;
+		}
+		elsif ($syn =~ m/ in part/){ 
+			print ERR "synonym is an 'in part' name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_part;
+			print OUT3 "$stripped\t$taxon_name\tSYN IN PART in EFLORA\n"; 
+
+		print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'synonym, in part', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+		next;
+		}
+		elsif ($syn =~ m/( misappl)/){ 
+			print ERR "synonym is a misapplied name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_misap;
+			
+			#the eflora accepted name cannot be used here as the accepted name since it is misapplied
+			print OUT3 "$stripped\t$stripped\tMISAPPL sensu EFLORA under $taxon_name\n"; 
+			 
+		print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'misapplied name', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+		next;
+		}	
+		elsif ($syn =~ m/ nom\. inval\./){ 
+			print ERR "synonym is a nom\. inval\. name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_inval;
+			print OUT3 "$stripped\t$taxon_name\tINVALID in EFLORA\n"; 
+			 
+		print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'invalid name', $taxon_id)
+;
+
+EOP
+#then skip the name so it is not in the file as a synonym
+		next;
+		}
+		elsif ($syn =~ m/ illeg\./){ 
+			print ERR "synonym is a Illegitimate name: $syn\n";
+			print OUT2 "$stripped\t$taxon_name\tTJM2 synonym, illeg.\n"; #need to print these variants to EFLORA_tax_syns_list.txt
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_illeg;
+			print OUT3 "$stripped\t$taxon_name\tILLEG in EFLORA\n"; 
+
+		print OUT <<EOP;
+INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
+VALUES('$stripped', 'illegitimate name', $taxon_id)
+;
+
+EOP
+#then null the name so it is not in the file as a synonym
+		next;
+		}
+		elsif ($syn =~ m/ superfl\./){ 
+			print ERR "synonym is a Superfluous name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_super;
+			print OUT3 "$stripped\t$taxon_name\tSUPERFL in EFLORA\n"; 
+			 
+		print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'superfluous name', $taxon_id)
 ;
 
 EOP
 #then null the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/ ined\./){ 
-		print ERR "synonym is a 'ined' name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_ined;
-		print OUT3 "$stripped\t$taxon_name\tINED in EFLORA\n"; 
-		 
-	print OUT <<EOP;
+		next;
+		}
+		elsif ($syn =~ m/ ined\./){ 
+			print ERR "synonym is a 'ined' name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_ined;
+			print OUT3 "$stripped\t$taxon_name\tINED in EFLORA\n"; 
+			 
+		print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'synonym ined.', $taxon_id)
 ;
 
 EOP
 #then null the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/ orth\.? var\.?/){ 
-		print ERR "synonym is a Orth Var name: $syn\n";
+		next;
+		}
+		elsif ($syn =~ m/ orth\.? var\.?/){ 
+			print ERR "synonym is a Orth Var name: $syn\n";
 
-		print OUT2 "$stripped\t$taxon_name\tTJM2 synonym, orth. var.\n"; #need to print these variants to EFLORA_tax_syns_list.txt
+			print OUT2 "$stripped\t$taxon_name\tTJM2 synonym, orth. var.\n"; #need to print these variants to EFLORA_tax_syns_list.txt
 
-		#convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_orth;
-		print OUT3 "$stripped\t$taxon_name\tORTH VAR in EFLORA\n"; 
-		 
-	print OUT <<EOP;
+			#convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_orth;
+			print OUT3 "$stripped\t$taxon_name\tORTH VAR in EFLORA\n"; 
+			 
+		print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'orthographic variant', $taxon_id)
 ;
 
 EOP
 #then null the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/( of authors| of pre-2004| auct\.? non )/){ 
-		print ERR "synonym is a alternate noted name: $syn\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_altnote;
-		print OUT3 "$stripped\t$taxon_name\tALT NOTED in EFLORA\n"; 
-		 
-	print OUT <<EOP;
+		next;
+		}
+		elsif ($syn =~ m/( of authors| of pre-2004| auct\.? non )/){ 
+			print ERR "synonym is a alternate noted name: $syn\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_altnote;
+			print OUT3 "$stripped\t$taxon_name\tALT NOTED in EFLORA\n"; 
+			 
+		print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'noted name', $taxon_id)
 ;
 
 EOP
 #then null the name so it is not in the file as a synonym
-	next;
-	}
-	elsif ($syn =~ m/  nom\.? nud\.?/){ 
-		print ERR "synonym is a nomen nudum: $stripped\n";
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
-		++$syn_nud;
-		print OUT3 "$stripped\t$taxon_name\tNOM NUD in EFLORA\n"; 
-		 
-	print OUT <<EOP;
+		next;
+		}
+		elsif ($syn =~ m/  nom\.? nud\.?/){ 
+			print ERR "synonym is a nomen nudum: $stripped\n";
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
+			++$syn_nud;
+			print OUT3 "$stripped\t$taxon_name\tNOM NUD in EFLORA\n"; 
+			 
+		print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
 VALUES('$stripped', 'Nomen Nudum', $taxon_id)
 ;
 
 EOP
 #then null the name so it is not in the file as a synonym
-	next;
-	}
-	else{
-#process the rest as per normal
-		
-		if($seen{"$stripped\t$taxon_id"}++){
-			++$syn_dups;
-			print ERR "synonym repeated within the same entry: $stripped\t$taxon_id\n";
-			print "synonym repeated within the same entry: $stripped\t$taxon_id\n";
-			next;
-		}
-		elsif ($stripped =~ /^$accepted_name_list$/){
-			print ERR "synonym is an accepted name: $stripped\n";
-			next;
+		next;
 		}
 		else{
-				foreach ($stripped){ #ICPN has some inconsistencies like authors on genus names and other notations that cause problems with strip name, fix these
-					#these show up only as a warning in terminal
-					s/, Modoc cypress|, Siskiyou cypress//; #delete common name entered into Synonym line
-					#s/, illeg\.?//; #delete illeg phrase entered into Synonym line
-					#s/, ined\.?//; #delete ined phrase entered into Synonym line
-					#s/, orth\.? var\.?//; #delete orthographic phrase entered into Synonym line
-					#s/, nom\.? nud\.?//; #delete nomen nudum phrase entered into Synonym line
-					s/  +/ /;
-					s/ +$//;
-					s/^ +//;
-				}
-				
-				foreach ($syn){ #ICPN has some inconsistencies like authors on genus names and other notations that cause problems with strip name, fix these
-					#these show up only as a warning in terminal
-					s/, Modoc cypress|, Siskiyou cypress//; #delete common name entered into Synonym line
-					#s/, illeg\.?//; #delete illeg phrase entered into Synonym line
-					#s/, ined\.?//; #delete ined phrase entered into Synonym line
-					#s/, orth\.? var\.?//; #delete orthographic phrase entered into Synonym line
-					#s/, nom\.? nud\.?//; #delete nomen nudum phrase entered into Synonym line
-					#s/ of pre-2004 California authors, non / /;
-					#s/( of authors|auct\.? non )/ /;
-					s/  +/ /;
-					s/ +$//;
-					s/^ +//;
-					s/&times;/X /;
-				}
-				
-					unless($TID{$stripped}){
-						warn "$.-->no code for $syn ==> stripped as $stripped\n";
-						print LOG "$.-->no code for $syn ==> stripped as $stripped\n";
+#process the rest as per normal
+			
+			if($seen{"$stripped\t$taxon_id"}++){
+				++$syn_dups;
+				print ERR "synonym repeated within the same entry: $stripped\t$taxon_id\n";
+				print "synonym repeated within the same entry: $stripped\t$taxon_id\n";
+				next;
+			}
+			elsif ($stripped =~ /^$accepted_name_list$/){
+				print ERR "synonym is an accepted name: $stripped\n";
+				next;
+			}
+			else{
+					foreach ($stripped){ #ICPN has some inconsistencies like authors on genus names and other notations that cause problems with strip name, fix these
+						#these show up only as a warning in terminal
+						s/, Modoc cypress|, Siskiyou cypress//; #delete common name entered into Synonym line
+						#s/, illeg\.?//; #delete illeg phrase entered into Synonym line
+						#s/, ined\.?//; #delete ined phrase entered into Synonym line
+						#s/, orth\.? var\.?//; #delete orthographic phrase entered into Synonym line
+						#s/, nom\.? nud\.?//; #delete nomen nudum phrase entered into Synonym line
+						s/  +/ /;
+						s/ +$//;
+						s/^ +//;
 					}
+					
+					foreach ($syn){ #ICPN has some inconsistencies like authors on genus names and other notations that cause problems with strip name, fix these
+						#these show up only as a warning in terminal
+						s/, Modoc cypress|, Siskiyou cypress//; #delete common name entered into Synonym line
+						#s/, illeg\.?//; #delete illeg phrase entered into Synonym line
+						#s/, ined\.?//; #delete ined phrase entered into Synonym line
+						#s/, orth\.? var\.?//; #delete orthographic phrase entered into Synonym line
+						#s/, nom\.? nud\.?//; #delete nomen nudum phrase entered into Synonym line
+						#s/ of pre-2004 California authors, non / /;
+						#s/( of authors|auct\.? non )/ /;
+						s/  +/ /;
+						s/ +$//;
+						s/^ +//;
+						s/&times;/X /;
+					}
+					
+						unless($TID{$stripped}){
+							warn "$.-->no code for $syn ==> stripped as $stripped\n";
+							print LOG "$.-->no code for $syn ==> stripped as $stripped\n";
+						}
 
 
 
@@ -525,62 +592,62 @@ EOP
 #these below require some changes in eflora text for some synonyms to map correctly; these are mostly inconsistencies due to human error or oversights that might be fixed in later revisions
 
 #Orthocarpus erianthus	Triphysaria eriantha subsp. eriantha	TJM2
-	if ($stripped =~ m/^Orthocarpus erianthus$/){
-		$taxon_name = "Triphysaria eriantha";#not Triphysaria eriantha subsp. eriantha as in EFLORA
-	}
-	if ($stripped =~ m/^Orthocarpus erianthus var. gratiosus$/){
-		$taxon_name = "Triphysaria eriantha subsp. eriantha";#the above change seems to have broken the correct accepted name for this name
-	}
+		if ($stripped =~ m/^Orthocarpus erianthus$/){
+			$taxon_name = "Triphysaria eriantha";#not Triphysaria eriantha subsp. eriantha as in EFLORA
+		}
+		if ($stripped =~ m/^Orthocarpus erianthus var. gratiosus$/){
+			$taxon_name = "Triphysaria eriantha subsp. eriantha";#the above change seems to have broken the correct accepted name for this name
+		}
 
 
 
 
 #print OUT2 "$stripped\t$taxon_name\tTJM2\n";
 
-		if ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+/){
-			$genus = $1;
-		}
-		else{
-			print "MISSING (2) name for GENUS:$syn\n";
-			print LOG "MISSING (2) name for GENUS:$syn\n";
-		}
+			if ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+/){
+				$genus = $1;
+			}
+			else{
+				print "MISSING (2) name for GENUS:$syn\n";
+				print LOG "MISSING (2) name for GENUS:$syn\n";
+			}
 
-		if ($syn =~ m/ subsp. /){
-			$CCHrank = "Subspecies";
-		}
-		elsif ($syn =~ m/ var. /){
-			$CCHrank = "Variety";
-		}
-		elsif ($syn =~ m/ nothosubsp. /){
-			$CCHrank = "Nothosubspecies";
-		}
-		elsif ($syn =~ m/( f. | subvar. )/){#skip formae and subvar, may skip some filial names at this point, but this is a nominal omission
-			$CCH_taxon = $syn = $CCHrank = "";
-		}
-		elsif ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+$/){
-			$CCHrank = "Species";
-		}
-		elsif ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+ [(A-Z]+/){
-			$CCHrank = "Species";
-		}
-		else{
-			print "Problem RANK (2b)==>$syn\n";
-			print LOG "Problem RANK (2b)==>$syn\n";
-			$CCH_taxon = $CCHrank = "";
-			next;
-		}
-	
-	if ($stripped !~ m/(Eriogonum luteolum|Convolvulus malacophyllus subsp. collinus|Orthocarpus purpurascens)/){
-		print OUT2 "$stripped\t$taxon_name\tTJM2\n";
+			if ($syn =~ m/ subsp. /){
+				$CCHrank = "Subspecies";
+			}
+			elsif ($syn =~ m/ var. /){
+				$CCHrank = "Variety";
+			}
+			elsif ($syn =~ m/ nothosubsp. /){
+				$CCHrank = "Nothosubspecies";
+			}
+			elsif ($syn =~ m/( f. | subvar. )/){#skip formae and subvar, may skip some filial names at this point, but this is a nominal omission
+				$CCH_taxon = $syn = $CCHrank = "";
+			}
+			elsif ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+$/){
+				$CCHrank = "Species";
+			}
+			elsif ($syn =~ m/^(X? ?[A-Z][a-z-]+) X? ?[a-z-]+ [(A-Z]+/){
+				$CCHrank = "Species";
+			}
+			else{
+				print "Problem RANK (2b)==>$syn\n";
+				print LOG "Problem RANK (2b)==>$syn\n";
+				$CCH_taxon = $CCHrank = "";
+				next;
+			}
 		
-		$syn =~ s/^([A-Z][a-z-]+) ([-a-z]+) .* (nothosubsp.|subsp\.|var\.) ([-a-z]+.*)/$1 $2 $3 $4/;
+		if ($stripped !~ m/(Eriogonum luteolum|Convolvulus malacophyllus subsp. collinus|Orthocarpus purpurascens)/){
+			print OUT2 "$stripped\t$taxon_name\tTJM2\n";
+			
+			$syn =~ s/^([A-Z][a-z-]+) ([-a-z]+) .* (nothosubsp.|subsp\.|var\.) ([-a-z]+.*)/$1 $2 $3 $4/;
+			
+			print SYN $family.",".$genus.",\"".$syn."\",".$CCHrank.",".$CCH_taxon.",Jepson eFlora-TJM2\n" unless $CCH_taxon =~ m/^ *$/;
+		}
 		
-		print SYN $family.",".$genus.",\"".$syn."\",".$CCHrank.",".$CCH_taxon.",Jepson eFlora-TJM2\n" unless $CCH_taxon =~ m/^ *$/;
-	}
-	
 
-		 #convert hybrid X to html
-		 $stripped=~s/X /&times;/;
+			 #convert hybrid X to html
+			 $stripped=~s/X /&times;/;
 
 print OUT <<EOP;
 INSERT INTO eflora_taxa(ScientificName, Status, AcceptedNameTID)
@@ -589,12 +656,11 @@ VALUES('$stripped', 'Synonym', $taxon_id)
 
 EOP
 
+			}
 		}
 
 	}
-
-		}
-}
+  }
 #don't print outside this loop, otherwise you get one line per accepted taxon and not one per synonym
 
 #Process synonyms as an array
