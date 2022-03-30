@@ -275,6 +275,10 @@ $family=$1; #that word is assigned to $family (until it gets reassigned)
 #This is tricky because you need to titlecase the genus separately for ILST names
 #otherwise the authority gets all lowercased
 
+if ($taxon_name =~ /([A-Z]+) ([a-z-]+)$/){ #if it is an infra with an author inserted (that's the ".+")
+	$species_author = $taxon_author;
+}
+
 if ($taxon_name =~ m/ENCELIA farinosa A\. Gray ex Torr\. &times; E\. frutescens/){ #the spontaneous hybrid is kluged because there is only one and it's awkward
 	$taxon_name = "Encelia farinosa &times; Encelia frutescens";
 	$full_formatted_display_name = "<i>Encelia farinosa</i> &times; <i>Encelia frutescens</i>";
@@ -305,7 +309,7 @@ elsif ($taxon_name =~ /([A-Z]+) ([a-z-]+) \b(nothosubsp.|subvar.|var\.|subsp\.) 
 		$full_formatted_display_name = "<i>$genus $species</i> $taxon_author $infra_rank <i>$infra_epithet</i>";
 	}
 	else { #otherwise the author goes at the end
-		$full_formatted_display_name = "<i>$genus $species</i> $infra_rank <i>$infra_epithet</i> $taxon_author";
+		$full_formatted_display_name = "<i>$genus $species</i> $species_author $infra_rank <i>$infra_epithet</i> $taxon_author";
 	}
 }
 else { #The rest should be family, genus, or binomial species treatments
@@ -594,7 +598,7 @@ sub get_status {
     if( $lines[0]=~/^(NATIVE|NATURALIZED)/){ #if the first line starts with...
         return "\'$lines[0]\'"; #the name is the contents of the second line
     }
-    if( $lines[0]=~/^WAIF/){ #if the first line starts with...
+    elsif( $lines[0]=~/^WAIF/){ #if the first line starts with...
         return "\'$lines[0]\'"; #the name is what's on the second line
     }
     elsif($lines[1]=~/^(POSSIBLY IN CA|WAIF|EXTIRPATED ALIEN|EXTIRPATED WAIF|EXTIRPATED WEED|EXTIRPATED|HISTORICAL WAIF|SPONTANEOUS HYBRID|AGRICULTURAL WEED|GARDEN WEED|URBAN WEED|GARDEN AND URBAN WEED|AGRICULTURAL, GARDEN, OR URBAN WEED|URBAN WEED EXPECTED IN WILDLANDS)/){
@@ -930,7 +934,10 @@ sub is_terminal_taxon {
 
 sub get_TJM2_author {
 		my $par = shift;
-		if($par =~ /TJM8X AUTHOR: *(.+)/){
+		if($par =~ /TJM9X AUTHOR: *(.+)/){
+			return "\'$1\'";
+		}
+		elsif($par =~ /TJM8X AUTHOR: *(.+)/){
 			return "\'$1\'";
 		}
 		elsif($par =~ /TJM7X AUTHOR: *(.+)/){
@@ -965,7 +972,10 @@ sub get_TJM2_author {
 
 sub get_revision_number {
 	my $par = shift;
-	if ($par =~ m/TJM8X AUTHOR:/){
+	if ($par =~ m/TJM9X AUTHOR:/){
+		return "\'Revision 9\'";
+	}
+	elsif ($par =~ m/TJM8X AUTHOR:/){
 		return "\'Revision 8\'";
 	}
 	elsif ($par =~ m/TJM7X AUTHOR:/){
@@ -996,7 +1006,10 @@ sub get_revision_number {
 
 sub get_revision_date {
 	my $par = shift;
-	if ($par =~ m/TJM8X AUTHOR: .*/){
+	if ($par =~ m/TJM9X AUTHOR: .*/){
+		return "\'2021\'";
+	}
+	elsif ($par =~ m/TJM8X AUTHOR: .*/){
 		return "\'2020\'";
 	}
 	elsif ($par =~ m/TJM7X AUTHOR: .*/){
