@@ -1,9 +1,10 @@
-	
-	
 #alter names is the table that corrects misspellings while loading CCH1 taxon names	
 #some misspellings in the original data submitted to pre-2018 CCH1 are still present in CCH2	
 #the corrections here are based on the misspellings found in the Jan 2019 version of data downloaded from CCH2	
 #this file is not the same file used in the pre-2018 refresh's of CCH	
+
+Delphinium xinflexum	Delphinium X inflexum
+Abelia goucheri	Abelia cv. 'Edward Goucher'
 Abelia grandifolia	Abelia grandiflora	
 Abronia villosa wats	Abronia villosa	
 Acacia balieyana	Acacia baileyana	
@@ -16,6 +17,7 @@ Achilla borealis	Achillea borealis
 Achilla millefolium	Achillea millefolium	
 Achillea lanulosa silvicola	Achillea lanulosa subsp. silvicola	
 Achnatherum diegoensis	Achnatherum diegoense	
+Achnatherum nelsonii nelsonii	Achnatherum nelsonii subsp. nelsonii
 Achnatherum occidentale subsp. californicium	Achnatherum occidentale subsp. californicum	
 Achnatherum occidentale subsp. occidentalis	Achnatherum occidentale subsp. occidentale	
 Achnatherum occidentalis californicum	Achnatherum occidentale subsp. californicum	
@@ -23,7 +25,7 @@ Achnatherum occidentalis occidentalis	Achnatherum occidentale subsp. occidentale
 Achnatherum occidentalis subsp. californicum	Achnatherum occidentale subsp. californicum	
 Achnatherum occidentalis subsp. occidentalis	Achnatherum occidentale subsp. occidentale	
 Achnatherum occidentalis subsp. pubescens	Achnatherum occidentale subsp. pubescens	
-Acmipson maritimus var. brevivexillus 	Acmispon maritimus var. brevivexillus	
+Acmipson maritimus var. brevivexillus	Acmispon maritimus var. brevivexillus	
 Acmipspon wrangelianus	Acmispon wrangelianus	
 Acmispon americana var. americanus	Acmispon americanus var. americanus	
 Acmispon americanua var. americanus	Acmispon americanus var. americanus	
@@ -35,8 +37,10 @@ Acmispon junceus var. biiolettii	Acmispon junceus var. biolettii
 Acmispon maritimus brevivexillus	Acmispon maritimus var. brevivexillus	
 Acmispon maritimus var. maritima	Acmispon maritimus var. maritimus	
 Acmispon mincranthus	Acmispon micranthus	
+Acongonon davisiae	Aconogonon davisiae
 Acuba japonica	Aucuba japonica	
 Adenostemma sparsifolium	Adenostoma sparsifolium	
+Adenostoma adenostema	Adenostoma
 Aegilops truncialis	Aegilops triuncialis	
 Ageratina occidentale	Ageratina occidentalis	
 Agoseriis heterophylla var. cryptopleura	Agoseris heterophylla var. cryptopleura	
@@ -45,6 +49,7 @@ Agoseris heterphylla var. cryptopleura	Agoseris heterophylla var. cryptopleura
 Agoseris retrosa	Agoseris retrorsa	
 Agrimonia gyrosepala	Agrimonia gryposepala	
 Agroseris heterophylla	Agoseris heterophylla	
+Agrositanion subsecundun	Agropyron subsecundum
 Agrostis hiemalis	Agrostis hyemalis	
 Agrostis idohoensis	Agrostis idahoensis	
 Aira danthanoides	Aira danthonioides	
@@ -123,6 +128,8 @@ Arabis puperula	Arabis paupercula
 Arabis sabulosa colorata	Arabis sabulosa var. colorata	
 Arabis sparsiflora californica	Arabis sparsiflora var. californica	
 Arabis suffrutescens perstylosa	Arabis suffrutescens var. perstylosa	
+Arabis X ultrapurpurascens	Arabis ultrapurpurascens
+Arabis yorkii	Boechera yorkii
 Araucaria bidwilli	Araucaria bidwillii	
 Araujia sericofera	Araujia sericifera	
 Arceuthobium camplyopodum	Arceuthobium campylopodum	
@@ -170,6 +177,7 @@ Artostophylos canescens subsp. canescens	Arctostaphylos canescens subsp. canesce
 Asparagus officinalis subsp. officionalis	Asparagus officinalis subsp. officinalis	
 Aster aspigenus	Aster alpigenus	
 Aster intergrifolius	Aster integrifolius	
+Aster occidentalis var. yosamitanus	Aster occidentalis var. yosemitanus
 Aster occidentalis yosamitanus	Aster occidentalis var. yosemitanus	
 Astragalus atratus var. mensarus	Astragalus atratus var. mensanus	
 Astragalus b icristatus	Astragalus bicristatus	
@@ -233,6 +241,8 @@ Brassavola cucullatta	Brassavola cucullata
 Brodiae terrestris	Brodiaea terrestris	
 Brodiaea jolenensis	Brodiaea jolonensis	
 Brodiaea lutea var. analina	Brodiaea lutea var. anilina	
+Brodiaea Lutea var. lugens	Brodiaea lutea var. lugens
+Lycium Andersonii var. andersonii	Lycium andersonii var. andersonii
 Bromus berterianus	Bromus berteroanus	
 Bromus diadrus	Bromus diandrus	
 Bromus hordeaceous	Bromus hordeaceus	
@@ -244,20 +254,17 @@ Bromus wildenowii	Bromus willdenowii
 Bromus willdenovii	Bromus willdenowii	
 Broom Comparison	Cytisus scoparius	
 Brunfelsia calycinia var. floribunda	Brunfelsia calycina var. floribunda	
-CHAENACTIS GLABRIUSCULA	Chaenactis glabriuscula	
-CHAENACTIS GLABRIUSCUTA DC	Chaenactis glabriuscula	
-CHAENACTIS GLABRIUSCUTA DC.	Chaenactis glabriuscula	
 Calamagrostis purpurascens ophitidis	Calamagrostis purpurascens var. ophitidis	
 Calandrinea breweri	Calandrinia breweri	
 Calandrinia ciliata var. menzesii	Calandrinia ciliata var. menziesii	
 Calchortus luteus	Calochortus luteus	
 California macrophyllum	California macrophylla	
-Calochortus Splendens	Calochortus splendens	
 Calochortus elegans var. oreophyllus	Calochortus elegans var. oreophilus	
 Calochortus longibarbatus	Calochortus longebarbatus	
 Calochortus nutallii	Calochortus nuttallii	
 Calochortus nuttallii var. subalpina	Calochortus nuttallii var. subalpinus	
 Calochortus pulchellum	Calochortus pulchellus	
+Calochortus Splendens	Calochortus splendens	
 Calochortus superbus pratensis	Calochortus superbus var. pratensis	
 Calystegia atriciplicifolia subsp. buttensis	Calystegia atriplicifolia subsp. buttensis	
 Calystegia malaclphylla	Calystegia malacophylla	
@@ -267,8 +274,8 @@ Canothus arboreus	Ceanothus arboreus
 Capsella bursa-pastaris	Capsella bursa-pastoris	
 Capsella burse-pastoris	Capsella bursa-pastoris	
 Capsellsa bursa-pastoris	Capsella bursa-pastoris	
-Cardamine Oligosperma	Cardamine oligosperma	
 Cardamine ogliosperma	Cardamine oligosperma	
+Cardamine Oligosperma	Cardamine oligosperma	
 Cardamine oligosperme	Cardamine oligosperma	
 Cardamine pennysylvancia	Cardamine pensylvanica	
 Cardaria chalapensis	Cardaria chalepensis	
@@ -338,9 +345,12 @@ Cetatophyllum demersum	Ceratophyllum demersum
 Chaenactis artemesiaefolia	Chaenactis artemisiifolia	
 Chaenactis douglasii var. rubicaulis	Chaenactis douglasii var. rubricaulis	
 Chaenactis glabriscula	Chaenactis glabriuscula	
+CHAENACTIS GLABRIUSCULA	Chaenactis glabriuscula	
 Chaenactis glabriuscula megacephala	Chaenactis glabriuscula var. megacephala	
 Chaenactis glabriuscula var. macrocephala	Chaenactis glabriuscula var. megacephala	
 Chaenactis glabriuscuta	Chaenactis glabriuscula	
+CHAENACTIS GLABRIUSCUTA DC	Chaenactis glabriuscula	
+CHAENACTIS GLABRIUSCUTA DC.	Chaenactis glabriuscula	
 Chaenactis glabriusula	Chaenactis glabriuscula	
 Chaenactis stevoides	Chaenactis stevioides	
 Chaenorrhinum origanifolium	Chaenarrhinum origanifolium	
@@ -372,6 +382,7 @@ Chorizanthe minuteflora	Chorizanthe minutiflora
 Chorizanthe vortreidei	Chorizanthe vortriedei	
 Chorizanthe xantii	Chorizanthe xanti	
 Chrysopsis oregana	Chrysopsis oregona	
+Chrysothamnus nauseosus var. hololeuca	Chrysothamnus nauseosus var. hololeucus
 Chrysothamnus nauseosus var. mohaviensis	Chrysothamnus nauseosus var. mohavensis	
 Chrysothamnus parryi subsp. monocephalis	Chrysothamnus parryi subsp. monocephalus	
 Chrysothamnus viscidiflorus subsp. lanceolata	Chrysothamnus viscidiflorus subsp. lanceolatus	
@@ -421,10 +432,10 @@ Corallirrhiza maculata	Corallorhiza maculata
 Corallorhiza maculata var. maculat	Corallorhiza maculata var. maculata	
 Corallorrhiza strata	Corallorhiza striata	
 Cordylene australis	Cordyline australis	
-Corethrogyne Filaginifolia var. bernardina	Corethrogyne filaginifolia var. bernardina	
 Corethrogyne filaginifolia bernardina	Corethrogyne filaginifolia var. bernardina	
 Corethrogyne filaginifolia brevicula	Corethrogyne filaginifolia var. brevicula	
 Corethrogyne filaginifolia sessilis	Corethrogyne filaginifolia var. sessilis	
+Corethrogyne Filaginifolia var. bernardina	Corethrogyne filaginifolia var. bernardina	
 Corethrogyne filaginifolia var. platifolia	Corethrogyne filaginifolia var. latifolia	
 Corethrogyne filaginifolia virgata	Corethrogyne filaginifolia var. virgata	
 Corethrogyne filiginifolia	Corethrogyne filaginifolia	
@@ -467,8 +478,7 @@ Cryptantha pectocarya var. pectocarya	Cryptantha pterocarya var. pterocarya
 Cryptantha sp. nov	Cryptantha	
 Cryptantha virginiensis	Cryptantha virginensis	
 Cryptogamma acrostichoides	Cryptogramma acrostichoides	
-Crysanthemum leucanthemum	Chrysanthemum leucanthemum	
-Cupressus goveniana subsp. pigmaea	Cupressus goveniana subsp. pygmaea	
+Crysanthemum leucanthemum	Chrysanthemum leucanthemum		
 Cupressus semperviens	Cupressus sempervirens	
 Cupressus sempervirons	Cupressus sempervirens	
 Cuprocyparis leylandii	X Cuprocyparis leylandii	
@@ -580,7 +590,6 @@ Dyspania pumilio	Dysphania pumilio
 Dysphania ambrosoides	Dysphania ambrosioides	
 Dysphania bothrys	Dysphania botrys	
 Dysphania pumilo	Dysphania pumilio	
-ERicameria nauseosa var. speciosa	Ericameria nauseosa var. speciosa	
 Echeveria arizonicus	Echeveria arizonica	
 Echeveria lanceolata var. composita	Echeveria lanceolata var. composta	
 Echinochloa acuminata var. acuminata	Eriochloa acuminata var. acuminata	
@@ -623,6 +632,7 @@ Epilobium branchycarpum	Epilobium brachycarpum
 Epilobium canum canum	Epilobium canum subsp. canum	
 Epilobium canum garretti	Epilobium canum subsp. garrettii	
 Epilobium canum latifolium	Epilobium canum subsp. latifolium	
+Epilobium ciliatum ciliatum	Epilobium ciliatum subsp. ciliatum
 Epilobium ciliatum subsp. ciiatum	Epilobium ciliatum subsp. ciliatum	
 Epilobium cilliatum subsp. cilliatum	Epilobium ciliatum subsp. ciliatum	
 Epilobium glaberrimum subsp. fastifiatum	Epilobium glaberrimum subsp. fastigiatum	
@@ -664,16 +674,17 @@ Erica llusitanica	Erica lusitanica
 Ericamera linearifolia	Ericameria linearifolia	
 Ericamera nauseosa	Ericameria nauseosa	
 Ericameria blommeri	Ericameria bloomeri	
+ERicameria nauseosa var. speciosa	Ericameria nauseosa var. speciosa	
 Ericameria nauseosus var. speciosa	Ericameria nauseosa var. speciosa	
 Ericamria nauseosa var. oreophila	Ericameria nauseosa var. oreophila	
 Erieron flagellaris	Erigeron flagellaris	
-Erigeron Foliosus var. confinis	Erigeron foliosus var. confinis	
 Erigeron alicae	Erigeron aliceae	
 Erigeron austinaie	Erigeron austiniae	
 Erigeron bloomeri var. bloomerii	Erigeron bloomeri var. bloomeri	
 Erigeron compositus var. discoides	Erigeron compositus var. discoideus	
 Erigeron foliosis	Erigeron foliosus	
 Erigeron foliosus foliosus	Erigeron foliosus var. foliosus	
+Erigeron Foliosus var. confinis	Erigeron foliosus var. confinis	
 Erigeron glacialis var. glacialiis	Erigeron glacialis var. glacialis	
 Erigeron inordatus	Erigeron inornatus	
 Erigeron inornatus var. inoratus	Erigeron inornatus var. inornatus	
@@ -703,6 +714,7 @@ Eriogonum elongatum var. elongotum	Eriogonum elongatum var. elongatum
 Eriogonum fasciculatum polifolium	Eriogonum fasciculatum subsp. polifolium	
 Eriogonum fasciculatum subsp. foliosum	Eriogonum fasciculatum subsp. foliolosum	
 Eriogonum fasciculatum var. foliosum	Eriogonum fasciculatum var. foliolosum	
+Eriogonum fasciculatum var. platylolium	Eriogonum fasciculatum var. polifolium
 Eriogonum fasiciculatum var. polifolium	Eriogonum fasciculatum var. polifolium	
 Eriogonum gilmannii	Eriogonum gilmanii	
 Eriogonum glandulosum carneum	Eriogonum glandulosum var. carneum	
@@ -750,6 +762,7 @@ Eriophyllum multicaule obovatum	Eriophyllum multicaule
 Eriophyllum pringleii	Eriophyllum pringlei	
 Eriophyllum staechadifolium artemidiaefolium	Eriophyllum staechadifolium var. artemisiaefolium	
 Eriophyllum staechadifolium artemisiaefolium	Eriophyllum staechadifolium var. artemisiaefolium	
+Eriophyllum staechadifolium var. artemidiaefolium	Eriophyllum staechadifolium var. artemisiifolium
 Eriophyllum wallacei cavescens	Eriophyllum wallacei var. calvescens	
 Eritrichium racemosa	Eritrichium racemosum	
 Erodiophyllum lanatum var. croceum	Eriophyllum lanatum var. croceum	
@@ -885,6 +898,7 @@ Gilia leptantha purpusii	Gilia leptantha subsp. purpusii
 Gilia leptnatha subsp. leptantha	Gilia leptantha subsp. leptantha	
 Gilia scropulorum	Gilia scopulorum	
 Gilia valdeviensis	Gilia valdiviensis	
+Gingko biloba	Ginkgo biloba
 Githopsis latifolius	Githopsis latifolia	
 Githopsis pulchella pulchella	Githopsis pulchella subsp. pulchella	
 Githopsis secularioides	Githopsis specularioides	
@@ -899,6 +913,7 @@ Glinus totoides	Glinus lotoides
 Glithopsis diffusa	Githopsis diffusa	
 Glycomis pentaphylla	Glycosmis pentaphylla	
 Gnaphalium involucratus	Gnaphalium involucratum	
+Gnaphalium luteo-alum	Gnaphalium luteo-album
 Godetia epiloboides	Godetia epilobioides	
 Gomphocarpus purpurescens	Gomphocarpus purpurascens	
 Gratiola ebractata	Gratiola ebracteata	
@@ -999,11 +1014,11 @@ Hydastilus rivularis	Hydastylus rivularis
 Hymenopappus wrightii viscidulus	Hymenopappus wrightii var. viscidulus	
 Hyperchaeris glabra	Hypochaeris glabra	
 Hyperchaeris radicata	Hypochaeris radicata	
-Hypericum X moseranum	Hypericum X moserianum	
 Hypericum anagalloidea	Hypericum anagalloides	
 Hypericum canariensis	Hypericum canariense	
 Hypericum moseranum	Hypericum moserianum	
 Hypericum mutilum subsp. multilum	Hypericum mutilum subsp. mutilum	
+Hypericum X moseranum	Hypericum X moserianum	
 Hyptis emoyri	Hyptis emoryi	
 Ilex burfordi	Ilex burfordii	
 Impatiens wallerana	Impatiens walleriana	
@@ -1090,6 +1105,7 @@ Lastenia gracilis	Lasthenia gracilis
 Lasthenia californica backeri	Lasthenia californica subsp. bakeri	
 Lasthenia californica bakeri	Lasthenia californica subsp. bakeri	
 Lasthenia californica californica	Lasthenia californica subsp. californica	
+Lasthenia californica subsp. backeri	Lasthenia californica subsp. bakeri
 Lasthenia fremontti	Lasthenia fremontii	
 Lathenia californica	Lasthenia californica	
 Lathryus jepsonii var. jepsonii	Lathyrus jepsonii var. jepsonii	
@@ -1162,6 +1178,7 @@ Limnophila ludovicana	Limnophila ludoviciana
 Linanthus androsacens	Linanthus androsaceus	
 Linanthus brevicaulus	Linanthus breviculus	
 Linanthus dichotomous	Linanthus dichotomus	
+Linanthus dichotomus vat. integra	Linanthus dichotomus var. integra
 Linanthus dichotomus vat. integra	Linanthus dichotomus var. integra	
 Linanthus maculata	Linanthus maculatus	
 Linanthus parvifiorus	Linanthus parviflorus	
@@ -1214,7 +1231,6 @@ Lotus pinatus	Lotus pinnatus
 Lotus salsuginsus	Lotus salsuginosus	
 Lotus scoparius var. breviolatus	Lotus scoparius var. brevialatus	
 Lthophragma	Lithophragma	
-Lupinus Excubitus var. johnstonii	Lupinus excubitus var. johnstonii	
 Lupinus adsurgens undulatus	Lupinus adsurgens var. undulatus	
 Lupinus albifrons collinus	Lupinus albifrons var. collinus	
 Lupinus albrifrons	Lupinus albifrons	
@@ -1235,13 +1251,21 @@ Lupinus densiflorus var. versabilis	Lupinus densiflorus var. versatabilis
 Lupinus excubetus	Lupinus excubitus	
 Lupinus excubetus var. johnstonii	Lupinus excubitus var. johnstonii	
 Lupinus excubitus var. johnstoni	Lupinus excubitus var. johnstonii	
+Lupinus Excubitus var. johnstonii	Lupinus excubitus var. johnstonii	
+Lupinus excubitus hallii	Lupinus excubitus var. hallii
 Lupinus excubitus; var. austromontanus	Lupinus excubitus var. austromontanus	
 Lupinus falsoformosus	Lupinus falsoformis	
 Lupinus formosus clemensae	Lupinus formosus var. clemensae	
+Lupinus formosus robustus	Lupinus formosus var. robustus
 Lupinus grayii	Lupinus grayi	
 Lupinus hirstutissimus	Lupinus hirsutissimus	
 Lupinus holgrenanus	Lupinus holmgrenianus	
 Lupinus latifolius latifolius var. latifolius	Lupinus latifolius var. latifolius	
+Lupinus latifolius barbatus	Lupinus latifolius var. barbatus
+Lupinus latifolius longipes	Lupinus latifolius var. longipes
+Lupinus latifolius parishii	Lupinus latifolius var. parishii
+Lupinus latifolius viridifolius	Lupinus latifolius var. viridifolius
+Lupinus latifolius var. virdifolius	Lupinus latifolius var. viridifolius
 Lupinus lepidus var. sallulus	Lupinus lepidus var. sellulus	
 Lupinus lepidus var. sullulus	Lupinus lepidus var. sellulus	
 Lupinus longifolia	Lupinus longifolius	
@@ -1375,6 +1399,7 @@ Myosotis scorpiodes	Myosotis scorpioides
 Myosurus minimus subsp. montana	Myosurus minimus subsp. montanus	
 Myrica latifolia	Myrcia latifolia	
 Myriocephalus stuarti	Myriocephalus stuartii	
+Myriopteris xparishii	Myriopteris X parishii
 Myropteris newberryi	Myriopteris newberryi	
 Najas flexills	Najas flexilis	
 Nama aretoides	Nama aretioides	
@@ -1462,6 +1487,7 @@ Pedicularis attolens	Pedicularis attollens
 Pedicularis densiflorus	Pedicularis densiflora	
 Pediomelum calfornicum	Pediomelum californicum	
 Pelargonium gravedens	Pelargonium graveolens	
+Pelargonium X hortum	Pelargonium X hortorum	
 Pelargonium xhortorum	Pelargonium X hortorum	
 Pellaea andromediaefolia	Pellaea andromedifolia	
 Pellaea macronata	Pellaea mucronata	
@@ -1471,6 +1497,10 @@ Penstemon calcareous	Penstemon calcareus
 Penstemon centranthifolium	Penstemon centranthifolius	
 Penstemon centrathifolius	Penstemon centranthifolius	
 Penstemon confertus caenilea-purpureus	Penstemon confertus var. caeruleo-purpureus	
+Penstemon confertus var. caenilea-purpureus	Penstemon confertus var. caeruleo-purpureus
+Penstemon confertus var. caenileapurpureus	Penstemon confertus var. caeruleopurpureus
+Penstemon confertus var. caerulea-purpureus	Penstemon confertus var. caeruleo-purpureus
+Penstemon confertus var. caeruleapurpureus	Penstemon confertus var. caeruleopurpureus
 Penstemon corymbosa	Penstemon corymbosus	
 Penstemon desutus var. pedicellatus	Penstemon deustus var. pedicellatus	
 Penstemon deustrus var. suffrutescens	Penstemon deustus var. suffrutescens	
@@ -1483,6 +1513,7 @@ Penstemon laetus filiformis	Penstemon laetus subsp. filiformis
 Penstemon laetus var. leptasepalus	Penstemon laetus var. leptosepalus	
 Penstemon linarioides californicus	Penstemon linarioides var. californicus	
 Penstemon linaroides var. californicus	Penstemon linarioides var. californicus	
+Penstemon Newberryi subsp. newberryi	Penstemon newberryi subsp. newberryi
 Penstemon palmerii	Penstemon palmeri	
 Penstemon palmerii var. grennelli	Penstemon palmeri var. grinnellii	
 Penstemon palmerii var. grinnelli	Penstemon palmeri var. grinnellii	
@@ -1506,7 +1537,6 @@ Persicaria puntata	Persicaria punctata
 Petalonyx nitidis	Petalonyx nitidus	
 Petalonyx thurberii	Petalonyx thurberi	
 Petrorhaia dubia	Petrorhagia dubia	
-Phacelia Ramosissima var. suffrutescens	Phacelia ramosissima var. suffrutescens	
 Phacelia californica var. bernardino	Phacelia californica var. bernardina	
 Phacelia cathafolia	Phacelia calthifolia	
 Phacelia cedroensis	Phacelia cedrosensis	
@@ -1520,6 +1550,7 @@ Phacelia magellonica	Phacelia magellanica
 Phacelia mojavensis	Phacelia mohavensis	
 Phacelia orenulata	Phacelia crenulata	
 Phacelia pulchella var. goodingii	Phacelia pulchella var. gooddingii	
+Phacelia Ramosissima var. suffrutescens	Phacelia ramosissima var. suffrutescens	
 Phacelia ramosissimia	Phacelia ramosissima	
 Phacelia tanaecetifolia	Phacelia tanacetifolia	
 Phalacroseris bolanderii	Phalacroseris bolanderi	
@@ -1540,8 +1571,8 @@ Phoradendron juniperum	Phoradendron juniperinum
 Phoradendron leucocarpum subsp. macrophyllum	Phoradendron leucarpum subsp. macrophyllum	
 Phoradendron libocepri	Phoradendron libocedri	
 Phoradendron serotinum subsp. macrophylla	Phoradendron serotinum subsp. macrophyllum	
-Phragmites Communis var. berlandieri	Phragmites communis var. berlandieri	
 Phragmites australia subsp. berlandiere	Phragmites australis subsp. berlandieri	
+Phragmites Communis var. berlandieri	Phragmites communis var. berlandieri	
 Phyllostachys aura	Phyllostachys aurea	
 Physalis subsp. Nov	Physalis	
 Physalis tenella	Physaria tenella	
@@ -1594,6 +1625,8 @@ Platystemon californiacus	Platystemon californicus
 Platystemon californicus capsularis	Platystemon californicus var. capsularis	
 Platystemon californicus horridus	Platystemon californicus var. horridulus	
 Platystemon californicus sphaerocarpus	Platystemon californicus var. sphaerocarpus	
+Platystemon californicus var. horridus	Platystemon californicus var. horridulus
+Platystemon horridus	Platystemon horridulus
 Platystemon objectus	Platystemon obtectus	
 Platystemon obtectus sanctarum	Platystemon obtectus var. sanctarum	
 Plaxycerium bifurcatum	Platycerium bifurcatum	
@@ -1623,6 +1656,7 @@ Polygonum auberti	Polygonum aubertii
 Polygonum b istortoides	Polygonum bistortoides	
 Polygonum doouglasii	Polygonum douglasii	
 Polygonum douglasi	Polygonum douglasii	
+Polygonum douglasii var. spergularii	Polygonum douglasii subsp. spergulariiforme
 Polygonum pennsylvanicum	Polygonum pensylvanicum	
 Polygonum polygaliodes subsp. kelloggii	Polygonum polygaloides subsp. kelloggii	
 Polygonum sawatchense sawatchense	Polygonum sawatchense subsp. sawatchense	
@@ -1693,6 +1727,7 @@ Pyrrocoma demisa	Pyrrocoma demissa
 Pyrus callerryana	Pyrus calleryana	
 Pyrus kawakami	Pyrus kawakamii	
 Quecrus chrysolepis	Quercus chrysolepis	
+Quercus &times;morenus	Quercus X morehus	
 Quercus chrysolepsis	Quercus chrysolepis	
 Quercus chrystolepsis	Quercus chrysolepis	
 Quercus chysolepis var. nana	Quercus chrysolepis var. nana	
@@ -1707,6 +1742,7 @@ Quercus wislizeni var. frutenscens	Quercus wislizeni var. frutescens
 Quercus wislizini	Quercus wislizeni	
 Quercus wislizinii	Quercus wislizeni	
 Quercus x moreha	Quercus X morehus	
+Quercus x morenus	Quercus X morehus	
 Quercus x morheus	Quercus X morehus	
 Quercus xacutidens	Quercus X acutidens	
 Quercus xalvordiana	Quercus X alvordiana	
@@ -1896,19 +1932,24 @@ Sisyrinchium halophyllum	Sisyrinchium halophilum
 Sisyrinchium rostulatum	Sisyrinchium rosulatum	
 Sisyrlnchium californicum	Sisyrinchium californicum	
 Sisyrynchium bellum	Sisyrinchium bellum	
+Sitanion hansonii	Sitanion hansenii
 Smilacina lilacea	Smilacina liliacea	
 Smilacina racemosa var. amplexicaule	Smilacina racemosa var. amplexicaulis	
 Smilacina sessifolia	Smilacina sessilifolia	
+Sochus asper	Sonchus asper	
 Solanum dulcarmara	Solanum dulcamara	
 Solanum elegeanifolium	Solanum elaeagnifolium	
 Solanum rantonnettii	Solanum rantonnetii	
 Solanum verbascum	Solanum verbascifolium	
 Solanum xanthi	Solanum xanti	
 Solanum xantii	Solanum xanti	
+Solanum xantii var. hoffmannii	Solanum xanti var. hoffmannii
+Solanum xantii var. montanum	Solanum xanti var. montanum
 Solanum xantii var. glabrescens	Solanum xanti var. glabrescens	
 Solanum xantii var. intermedium	Solanum xanti var. intermedium	
 Solidago velutina subsp. califonica	Solidago velutina subsp. californica	
 Soliva sesssilis	Soliva sessilis	
+Solvia sessilis	Soliva sessilis	
 Sonchus arvenis	Sonchus arvensis	
 Sonchus oleaceus	Sonchus oleraceus	
 Sonchus olleraceus	Sonchus oleraceus	
@@ -1916,13 +1957,16 @@ Sorbus scoplina	Sorbus scopulina
 Sorghum bicolor subsp. xdrummondii	Sorghum bicolor subsp. drummondii	
 Sorghum halapense	Sorghum halepense	
 Spargamium emersum	Sparganium emersum	
+Sparaganium emersum	Sparganium emersum	
 Sparganium angustigolium	Sparganium angustifolium	
 Spartinum junceum	Spartium junceum	
 Spectridium multifidum	Sceptridium multifidum	
 Specularia bilflora	Specularia biflora	
 Spergularia rubra var. peremans	Spergularia rubra var. perennans	
+Spergulaira marina	Spergularia marina
 Sphacele blockmanae	Sphacele blochmaniae	
 Sphaeralcea augustifolia	Sphaeralcea angustifolia	
+Spaeralcea emoryi subsp. nevadensis	Sphaeralcea emoryi subsp. nevadensis
 Sphaeralcea exile	Sphaeralcea exilis	
 Sphaeralcea fasciculata elmeri	Sphaeralcea fasciculata var. elmeri	
 Sphaeralcea fasciculata laxiflorum	Sphaeralcea fasciculata var. laxiflora	
@@ -1953,19 +1997,22 @@ Stephanomeria laccata	Stephanomeria lactucina
 Stephanomeria tenufiolia	Stephanomeria tenuifolia	
 Steptanthus tortuosus	Streptanthus tortuosus	
 Stillingia pauciradiata	Stillingia paucidentata	
-Stipa Webberi	Stipa webberi	
-Stipa Xbloomeri	Stipa X bloomeri	
 Stipa brachyechaeta	Stipa brachychaeta	
 Stipa lettermannii	Stipa lettermanii	
 Stipa nelsonii dorei	Stipa nelsonii subsp. dorei	
 Stipa occidentale	Stipa occidentalis	
-Stiporyzopsis x bloomeri	X Stiporyzopsis bloomeri	
+Stipa Webberi	Stipa webberi	
+Stipa Xbloomeri	Stipa X bloomeri	
+Streptanthella acutirostris	Streptanthella longirostris
 Streptanthus amplexicaulis barbarae	Streptanthus amplexicaulis var. barbarae	
 Streptanthus brachiatus hoffmanii	Streptanthus brachiatus subsp. hoffmanii	
 Streptanthus cordatus exiguus	Streptanthus cordatus var. exiguus	
 Streptanthus coulteri var. coulteri	Streptanthus coulteri	
 Streptanthus morrisonii krukebergii	Streptanthus morrisonii subsp. kruckebergii	
 Streptanthus tortusus	Streptanthus tortuosus	
+Streptanthus tortousus subsp. truei	Streptanthus tortuosus subsp. truei
+Streptanthus farnsworthiana	Streptanthus farnsworthianus
+Streptopus amplexifolius var. americanum	Streptopus amplexifolius var. americanus
 Stuckenia filiformis var. alpinus	Stuckenia filiformis var. alpina	
 Stylomecon heterophlla	Stylomecon heterophylla	
 Stylomecon heterophylla micropetala	Stylomecon heterophylla var. micropetala	
@@ -2014,6 +2061,7 @@ Thuja orentalis	Thuja orientalis
 Thysanocarpus Curvipes	Thysanocarpus curvipes	
 Thysanocarpus curvipes var. crenatus	Thysanocarpus curvipes var. cognatus	
 Thysanocarpus curvipes var. longistylis	Thysanocarpus curvipes var. longistylus	
+Thysansocarpus desertorum	Thysanocarpus desertorum
 Thysanocarpus lacinatus	Thysanocarpus laciniatus	
 Thysanocarpus laciniatus var. crentus	Thysanocarpus laciniatus var. crenatus	
 Thysanocarpus lacintatus	Thysanocarpus laciniatus	
@@ -2023,6 +2071,7 @@ Tidestromia oblogifolia	Tidestromia oblongifolia
 Torreyochloa pallida var. paucifora	Torreyochloa pallida var. pauciflora	
 Tortilis arvensis subsp. purpurea	Torilis arvensis subsp. purpurea	
 Toxicodendron diversiloba	Toxicodendron diversilobum	
+Toxicodendron diversilobium	Toxicodendron diversilobum	
 Toxicoscordion exaltatumm	Toxicoscordion exaltatum	
 Toxicoscordion venenosus var. venenosus	Toxicoscordion venenosum var. venenosum	
 Toxicoscordoin paniculatum	Toxicoscordion paniculatum	
@@ -2051,6 +2100,7 @@ Trifolium cyanthiferum	Trifolium cyathiferum
 Trifolium depaupratum	Trifolium depauperatum	
 Trifolium dublum	Trifolium dubium	
 Trifolium focatum	Trifolium fucatum	
+Trifolium longibes subsp. hansenii	Trifolium longipes subsp. hansenii
 Trifolium marcoephalum	Trifolium macrocephalum	
 Trifolium microephalum	Trifolium microcephalum	
 Trifolium microephalum	Trifolium micropetalum	
@@ -2065,6 +2115,8 @@ Trifolium tridentata	Trifolium tridentatum
 Trifolium tridentatum aciculare	Trifolium tridentatum var. aciculare	
 Trifolium variegatum var. gemniflorum	Trifolium variegatum var. geminiflorum	
 Trifolium varigatum var. geminiflorum	Trifolium variegatum var. geminiflorum	
+Trifolium variagatum	Trifolium variegatum
+Trifolium variegatum var. melanthum	Trifolium variegatum var. melananthum
 Trifolium wildenovii	Trifolium willdenovii	
 Trifolium wormskjioldii	Trifolium wormskioldii	
 Trifolium wormskjoldii	Trifolium wormskioldii	
@@ -2075,7 +2127,7 @@ Triglochin scilliodes	Triglochin scilloides
 Trilium californicum	Trillium californicum	
 Trilium ovalum	Trillium ovatum	
 Trilium ovatum	Trillium ovatum	
-Trilium sessile angusti-petalum	Trillium sessile var. angusti-petalum	
+Trilium sessile var. angusti-petalum	Trillium sessile var. angusti-petalum	
 Trillium chloropetalum var. gigantum	Trillium chloropetalum var. giganteum	
 Trillium sessile giganteum	Trillium sessile subsp. giganteum	
 Triphysaria eriantha eriantha	Triphysaria eriantha subsp. eriantha	
@@ -2098,11 +2150,12 @@ Tulipa gerneriana	Tulipa gesneriana
 Tulipa gesnerana	Tulipa gesneriana	
 Turritis glabra lilacina	Turritis glabra var. lilacina	
 Turritus glabra	Turritis glabra	
+Tysanocarpus curvipes	Thysanocarpus curvipes	
 Ulmus parviflora	Ulmus parvifolia	
 Unk.brassicaceae	Brassicaceae	
 Unk.euphorbiaceae	Euphorbiaceae	
-Urtica Dioica	Urtica dioica	
 Urtica dioca subsp. holosericea	Urtica dioica subsp. holosericea	
+Urtica Dioica	Urtica dioica	
 Urticularia vulgaris	Utricularia vulgaris	
 Vaccinium shatense subsp. nevadense	Vaccinium shastense subsp. nevadense	
 Velaea glauca purpurascens	Velaea glauca var. purpurascens	
@@ -2120,17 +2173,17 @@ Veronica peregrine subsp. xalapensis	Veronica peregrina subsp. xalapensis
 Veronica pergrina subsp. xalapensis	Veronica peregrina subsp. xalapensis	
 Veronica serpiphylla	Veronica serpyllifolia	
 Veronica serpylifolia	Veronica serpyllifolia	
-Viburnum X burkwoodi	Viburnum X burkwoodii	
 Viburnum burkwoodi	Viburnum burkwoodii	
 Viburnum japonica	Viburnum japonicum	
 Viburnum odoratissium	Viburnum odoratissimum	
+Viburnum X burkwoodi	Viburnum X burkwoodii	
 Vici Cracca	Vicia cracca	
-Vicia Villosa	Vicia villosa	
 Vicia cracha	Vicia cracca	
 Vicia gigantia	Vicia gigantea	
 Vicia ludociciana var. ludociciana	Vicia ludoviciana var. ludoviciana	
 Vicia satina subsp. nigra	Vicia sativa subsp. nigra	
 Vicia semicineta	Vicia semicincta	
+Vicia Villosa	Vicia villosa	
 Vicia villosa rossa	Vicia villosa	
 Vicia villosa villosa	Vicia villosa subsp. villosa	
 Viola douglassi	Viola douglasii	
@@ -2144,6 +2197,7 @@ Vitis vinifera zinfandel	Vitis vinifera
 Vulpia microstachya	Vulpia microstachys	
 Vulpia microstachya var. ciliata	Vulpia microstachys var. ciliata	
 Vulpia microstaschys var. pauciflora	Vulpia microstachys var. pauciflora	
+Vulpia octallora	Vulpia octoflora
 Wigandia caracasana marcrophylla	Wigandia caracasana var. macrophylla	
 Wolffiela	Wolffiella	
 Wolffiela lingulata	Wolffiella lingulata	
@@ -2160,26 +2214,695 @@ Xylorhiza tortifolia var. totrifolia	Xylorhiza tortifolia var. tortifolia
 Yucca whippeli	Yucca whipplei	
 Yucca whipplei caespitosa	Yucca whipplei subsp. caespitosa	
 Yucca wipplei	Yucca whipplei	
+Yucca schedigera	Yucca schidigera	
 Zeltnera exaltatum	Zeltnera exaltata	
+Xgraptoveria	X Graptoveria
+xfatshedera lizei	X Fatshedera lizei
 Zeltnera tricantha	Zeltnera trichantha	
 Zeltnera venusta subsp. ventusa	Zeltnera venusta subsp. venusta	
 Zeltnerea venusta	Zeltnera venusta	
 Zigadenus fremontii brevibracteatus	Zigadenus fremontii var. brevibracteatus	
 Zigadenus venenosum	Zigadenus venenosus	
+Zigadenus venenosis	Zigadenus venenosus
 Zigadenus venenosus var. ambiguous	Zigadenus venenosus var. ambiguus	
 Zygadenus brevivracteus	Zigadenus brevibracteatus	
+
+
+
+
+#from TNRS suggestions
+Acacia bailiyana	Acacia baileyana
+Acacia extense	Acacia extensa
+Acacia flerifolia	Acacia flexifolia
+Acacia harilandi	Acacia havilandii
+Acacia mucrenta	Acacia mucronata
+Acacia salicina var. wayae	Acacia salicina var. wayi
+Acacia scorpoides	Acacia scorpioides
+Acer buergeranum	Acer buergerianum
+Acer glabum var. bernardium	Acer glabrum var. bernardinum
+Achillea millefollium	Achillea millefolium
+Achnatherum latiglumis	Achnatherum latiglume
+Aconogonon davisae	Aconogonon davisiae
+Aconogonon davisae	Aconogonum davisiae
+Aconogonon phytoflaccifolium	Aconogonum phytolaccifolium
+Aconogonon phytoglaccifolium	Aconogonon phytolaccifolium
+Aconogonon phytoglaccifolium	Aconogonum phytolaccifolium
+Aconogonum phytolaccifolium	Aconogonon phytolaccifolium
+Acronychia harpophylla	Acronychia haplophylla
+Adenocarpus foliosus	Adenocarpus foliolosus
+Adianaceae	Adiantaceae
+Adiantum nidus	Adiantum nudum
+Agoseris heterophyllla var. cryptopleura	Agoseris heterophylla var. cryptopleura
+Albizzia julibrissin	Albizia julibrissin
+Alceae rosea	Alcea rosea
+Allamanda violaceae	Allamanda violacea
+Allocarya plebica	Allocarya plebeia
+Allophyllum giliodes	Allophyllum gilioides
+Allophyllum intergrifolium	Allophyllum integrifolium
+Alnus hirsuta var. siberica	Alnus hirsuta var. sibirica
+Alnus incana subp. tenuifolia	Alnus incana subsp. tenuifolia
+Amcispon glaber	Acmispon glaber
+Aminckia douglasiana	Amsinckia douglasiana
+Amrosia salsola	Ambrosia salsola
+Amsickia intermedia	Amsinckia intermedia
+Amsinckia menziesii intermedia	Amsinckia menziesii var. intermedia
+Anigozanthos flavida	Anigozanthos flavidu
+Anigozanthos flavidu	Anigozanthos flavidus
+Anthoseras	Anthoceros
+Aphyllum californicum	Aphyllon californicum
+Aquilegeia formosa	Aquilegia formosa
+Aquilegia formosa var. hypoplasia	Aquilegia formosa var. hypolasia
+Aquilegia tunicata	Aquilegia truncata
+Aquilejia formosa	Aquilegia formosa
+Arabis &times;ultrapurpurascens	Arabis ultrapurpurascens
 arabis pulchra var. gracilis	Arabis pulchra var. gracilis	
+Arabis xdivaricarpa	Arabis divaricarpa
+Araucaria araucaria	Araucaria araucana
+Archtostaphylos manzanita subsp. elegans	Arctostaphylos manzanita subsp. elegans
+Arctostaphyllos columbiana	Arctostaphylos columbiana
+Arctostaphyllos tomentosa	Arctostaphylos tomentosa
+Arctostaphylos pungens subsp. ranvenii	Arctostaphylos pungens subsp. ravenii
+Arctostaphylos trueii	Arctostaphylos truei
+Artemesia tridentata	Artemisia tridentata
+Artemesia tridentata subsp. tridentata	Artemisia tridentata subsp. tridentata
+Artemisisia vulgaris	Artemisia vulgaris
+Artipllex lentiformis	Atriplex lentiformis
+Arundinaria pygmea	Arundinaria pygmaea
+Asarina antirrhinifolia	Asarina antirrhiniflora
+Aster foliaceus var. layallii	Aster foliaceus var. lyallii
+Astrabalus lentiginosus var. ineptus	Astragalus lentiginosus var. ineptus
+Astragalus kentophyta var. implexus	Astragalus kentrophyta var. implexus
+Astragalus lentiginosus var. flunbundus	Astragalus lentiginosus var. floribundus
+Astragalus newberrayi	Astragalus newberryi
+Astragalus nuttalli var. virgatus	Astragalus nuttallii var. virgatus
+Astragalus umbricatus	Astragalus imbricatus
+Avena satica	Avena sativa
+Azara macrophylla	Azara microphylla
+Baccharis pagonica	Baccharis patagonica
+Baccharis piluaris	Baccharis pilularis
+Balsamorhiza sagittaria	Balsamorhiza sagittata
+Bambusa beechyana	Bambusa beecheyana
+Bambusa dolichomerithalia	Bambusa dolichomerithalla
+Banksia prianotes	Banksia prionotes
+Begonia sandersonii	Begonia andersonii
+Betula papynfera	Betula papyrifera
+Boechera breweri subsp. beweri	Boechera breweri subsp. breweri
+Bormus horeaceus	Bromus hordeaceus
+Bouvardia caranillesia	Bouvardia cavanillesii
+Brachypodium distachion	Brachypodium distachyon
+Brassica napa	Brassica rapa
+Brodieae	Brodiaea
+Brodieae elegans	Brodiaea elegans
+Bromelia balause	Bromelia balansae
+Bromus carninatus var. carinatus	Bromus carinatus var. carinatus
+Bromus madritensis subsp. rubesn	Bromus madritensis subsp. rubens
+Bromus mardritinesis	Bromus madritensis
+Brunsfelsia calcena var. floribunda	Brunfelsia calycina var. floribunda
+Calamagrostis ophiditis	Calamagrostis ophitidis
+Calliandra inequilatera	Calliandra inaequilatera
+Callitris rocii	Callitris roei
+Calochortus amabilus	Calochortus amabilis
+Calochortus argillosis subsp. maritimus	Calochortus argillosus subsp. maritimus
+Calochortus brunneaunis	Calochortus bruneaunis
+Calochortus venustulus 2	Calochortus venustulus
+Calothamnus chrysanthus	Calothamnus chrysantherus
+Calothamnus quadrificus	Calothamnus quadrifidus
+Calycadenia opppositifolia	Calycadenia oppositifolia
+Calystegia arvensis	Convolvulus arvensis
+Camissionia brevipes	Camissonia brevipes
+Camissionia graciliflora	Camissonia graciliflora
+Camissionia sierrae	Camissonia sierrae
+Camissonia caespitosa subsp. marginata	Oenothera caespitosa subsp. marginata
+Camissonia cruciata	Oenothera cruciata
+Camissoniopsis cheiranthifolia subsp. sufruticosa	Camissoniopsis cheiranthifolia subsp. suffruticosa
+Camissoniopsis cheiranthifollia subsp. suffruticosa	Camissoniopsis cheiranthifolia subsp. suffruticosa
+Camissonipsis hirtella	Camissoniopsis hirtella
+Cantua flesuosa	Cantua flexuosa
 capsella bursa-pastoris	Capsella bursa-pastoris	
+Carduus arvense	Carduus arvensis
+Carduus pychnocephalus	Carduus pycnocephalus
+Carex praegracillis	Carex praegracilis
+Carex teneraiformis	Carex teneriformis
+Casrex pellita	Carex pellita
+Cassia siberiana	Cassia sieberiana
+Castileja exserta	Castilleja exserta
+Castilla chromosa	Castilleja chromosa
 castilleja	Castilleja	
+Castilleja arachoideae	Castilleja arachnoidea
+Castilleja exersta	Castilleja exserta
+Castilleja linarifolia	Castilleja linariifolia
+Castilleja martinii var. clockeyi	Castilleja martini var. clokeyi
+Castilleja wrightii	Castilleja wightii
+Catanche caerulea	Catananche caerulea
+Caulanthus lasiophylla	Caulanthus lasiophyllus
+Caylusea abyssonia	Caylusea abyssinica
+Ceanothus cordulate	Ceanothus cordulatus
+Ceanothus crassifolius var. typicum	Ceanothus crassifolius var. crassifolius
+Ceanothus paruifolius	Ceanothus parvifolius
+Centaurea solsticialis	Centaurea solstitialis
+Centaurea venustum	Centaurium venustum
+Centaurium tricanthum	Centaurium trichanthum
+Centuatium muehlenbergii	Centaurium muehlenbergii
+Centurium exaltanum	Centaurium exaltatum
+Cercis candensis	Cercis canadensis
+Cercocarpus miutiflora	Cercocarpus minutiflorus
+Ceropegia barkleyi	Ceropegia barklyi
+Chaenactis glabruiscula var. curta	Chaenactis glabriuscula var. curta
+Chamaedorea radicans	Chamaedorea radicalis
+Chamaesyce alliamarginata	Chamaesyce albomarginata
+Chenopodium berlanderi var. sinuatum	Chenopodium berlandieri var. sinuatum
+Chenopodium disiccatum var. leptophylloides	Chenopodium desiccatum var. leptophylloides
+Chenopodium macrospernum	Chenopodium macrospermum
+Cherizanthe brevicornu subsp. brevicornu	Chorizanthe brevicornu subsp. brevicornu
+Chilopsis tashkentensis	Chitalpa tashkentensis
+Chrysanthemum mawei	Chrysanthemum mairei
+Chrysopsis brwewri	Chrysopsis breweri
+Chrysothamnus viscidiflorus var. pumilis	Chrysothamnus viscidiflorus var. humilis
+Chysanthemum balsamita var. tanacetoides	Chrysanthemum balsamita var. tanacetoides
+Cilia	Gilia
+Cirisum	Cirsium
+Cirsium california	Cirsium californicum
+Cirsium callilepsis	Cirsium callilepis
+Cistus ladaniferus var. maculatus	Cistus ladanifer var. maculatus
+Cistus osbeckiaefolius	Cistus osbeckiifolius
+Citharexylum mocinnii	Citharexylum mocinnoi
+Citrus limettoides	Citrus limettioides
+Citrus medica var. etrog	Citrus medica var. ethrog
+Citus maculatis	Costus maculatus
+Clarkia bilboa	Clarkia biloba
+Clarkia pupurea	Clarkia purpurea
+Clarkia tembloreinsis	Clarkia tembloriensis
+Clarkia temblorensis subsp. temblorensis	Clarkia tembloriensis subsp. tembloriensis
+Clarkia tembluriensis	Clarkia tembloriensis
+Clarkia unguiculate	Clarkia unguiculata
+Clarkia unquculata	Clarkia unguiculata
+Clarkia unquiculata	Clarkia unguiculata
+Clarkia x	Clarkia
+Clarkia xantia	Clarkia xantiana
+Clematis liguisticifolia	Clematis ligusticifolia
+Cleome hillmannii	Cleomella hillmanii
+Collinsia sparsiflora var. brucae	Collinsia sparsiflora var. bruceae
+Convolvulaceae arvensis	Convolvulus arvensis
+Conyza bilboana	Conyza bilbaoana
+Cornus stolonifera var. coloradensis	Cornus stolonifera var. coloradense
+Cotinus coggygria var. purpurea	Cotinus coggygria var. purpureus
+Cotoneaster laetus	Cotoneaster lacteus
+Cotoneaster multiflora	Cotoneaster multiflorus
+Cotoneaster salicifolia var. floccosa	Cotoneaster salicifolius var. floccosus
+Cotyledon laxa var. nevadense	Cotyledon laxa var. nevadensis
+Crassula spatulata	Crassula spathulata
+Crepis bakeri subsp. bakrti	Crepis bakeri subsp. bakeri
+Crocosmia croscosmiiflora	Crocosmia crocosmiiflora
+Crodicium multicaule	Crocidium multicaule
+Cruckiella quadricostata	Cusickiella quadricostata
+Cryptantha enaeguata	Cryptantha inaequata
+Cryptantha pectocarya var. typica	Cryptantha pterocarya var. pterocarya
+Cryptocarya wylei	Cryptocarya wyliei
+Cucumis heptadactylus	Cucumis heptadactylis
+Custoperis fragilis	Cystopteris fragilis
+Cyclanthera subiformis	Cyclanthera subinermis
+Cymbopogon tortolis	Cymbopogon tortilis
+Cytisus germanica	Cytisus germanicus
+Cytisus perryii	Cytisus perezii
+Dalbergia sisson	Dalbergia sissoo
+Dalea polyadenia var. subnuda	Dalea polydenia var. subnuda
+Darmera peltatum	Darmera peltata
+Dasiphora fruiticans	Dasiphora fruticosa
+Datuara wrightii	Datura wrightii
+Dedromecon rigida	Dendromecon rigida
 deinandra increscens subsp. increscens	Deinandra increscens subsp. increscens	
-sorghum halepense	Sorghum halepense	
-stipa cernua	Stipa cernua	
-stipa miliacea var. miliacea	Stipa miliacea var. miliacea	
-veronica arvensis	Veronica arvensis	
-yabea microcarpa	Yabea microcarpa	
-yucca whipplei	Yucca whipplei	
+Delphinium nutallatianum	Delphinium nuttallianum
+Delphinum nudicaule	Delphinium nudicaule
+Dendrocalamus latiflora	Dendrocalamus
+Desmerzeria rigida	Desmazeria rigida
+Dicanthelium lanuginosum var. fasciculatum	Dichanthelium lanuginosum var. fasciculatum
+Dichelostemma captitatum	Dichelostemma capitatum
+Dichelostemna pulchella	Dichelostemma pulchella
+Dicherlostemma capitatum	Dichelostemma capitatum
+Dichlostemma capitatum	Dichelostemma capitatum
+Dieffenbachia sequine	Dieffenbachia seguine
+Dodecatheon cleavelandii var. sanctarum	Dodecatheon clevelandii var. sanctarum
+Draba verna var. aestrivalis	Draba verna var. aestivalis
+Dranunculus vulgaris	Dracunculus vulgaris
+Drymocallis laceae var. austiniae	Drymocallis lactea var. austiniae
+Dryopterus arguta	Dryopteris arguta
+Dudleya abramsil	Dudleya abramsii
+Dudleya ambramsii	Dudleya abramsii
+Dugaldia hoopseii	Dugaldia hoopesii
+Dulichium arundianaceum	Dulichium arundinaceum
+Dyschoriste thunbergiflora	Dyschoriste thunbergiiflora
+Echeveria purpusorum	Echeveria purpusiorum
+Echinocactus acanthides	Echinocactus acanthodes
+Echinochola colona	Echinochloa colona
+Echinocystis mara	Echinocystis marah
+Ehretia parviflora	Eremia parviflora
+Eleocharis engelmanii	Eleocharis engelmannii
+Elodea canandesis	Elodea canadensis
+Elymus cinerus	Elymus cinereus
+Elymus glaucus subsp. jepsoni	Elymus glaucus subsp. jepsonii
+Emmenanthe pendulilora	Emmenanthe penduliflora
+Encelia virginiensis subsp. actonii	Encelia virginensis subsp. actoni
+Ephedra tweedieana	Ephedra tweediana
+Epilobium caninum	Epilobium canum
+Epilobium canum subsp. garretti	Epilobium canum subsp. garrettii
+Epilobium glaberrimum s.l	Epilobium glaberrimum
+Epilobium hornemanii subsp. hornemannii	Epilobium hornemannii subsp. hornemannii
+Eragrostis curvala	Eragrostis curvula
+Eraxinus dipetala	Fraxinus dipetala
+Eremagone congesta var. subcongesta	Eremogone congesta var. subcongesta
+Eremocarpa lepida	Eremocarya lepida
+Eremocarpus lepida	Eremocarya lepida
+Eremophila bignoniiflora	Eremophila bignoniflora
+Eriastrum wilcoxi	Eriastrum wilcoxii
+Erica regerminine	Erica regerminans
+Erica striata	Erica stricta
+Erigeron breweri porphyreticus	Erigeron breweri var. porphyreticus
+Erigeron pumilis	Erigeron humilis
+Erigeron pumilis subsp. concinnoides	Erigeron pumilus subsp. concinnoides
+Erigeron pygnaeus	Erigeron pygmaeus
+Erigonum umbellatum var. nevadense	Eriogonum umbellatum var. nevadense
+Eriodictyon californiacum	Eriodictyon californicum
+Eriodyctyon californicum	Eriodictyon californicum
+Eriogonum ampulleceum	Eriogonum ampullaceum
+Eriogonum anglosum	Eriogonum angulosum
+Eriogonum ovalifolium purpureum	Eriogonum ovalifolium var. purpureum
+Eriogonum sperfulinum var. pratense	Eriogonum spergulinum var. pratense
+Eriogonum spergulinum reddingianum	Eriogonum spergulinum var. reddingianum
+Eriogonum umbellatum nevadense	Eriogonum umbellatum var. nevadense
+Eriogonum umbellatum nevadense Gand	Eriogonum umbellatum var. nevadense
+Eriogonum umbellatum var. dircrocephalum	Eriogonum umbellatum var. dichrocephalum
+Eriogonum veniforme	Eriogonum reniforme
+Eriophorum cringer	Eriophorum criniger
+Eriophyllum contertifolium	Eriophyllum confertiflorum
+Eriophyllum lanatum var. achellaeoides	Eriophyllum lanatum var. achillaeoides
+Eriophylum	Eriophyllum
+Erisatrum signatum	Eriastrum signatum
+Ermelache parryi	Eremalche parryi
+Ermelache rotundifolia	Eremalche rotundifolia
+Ermeothera boothii subsp. boothii	Eremothera boothii subsp. boothii
+Erodioum brachycarpum	Erodium brachycarpum
+Erodium circutaria	Erodium cicutarium
+Erodium cirutarium	Erodium cicutarium
+Erthranthe guttata	Erythranthe guttata
+Eryanthe primuloides	Erythranthe primuloides
+Eryemocarya lepida	Eremocarya lepida
+Eryngium amethystimum	Eryngium amethystinum
+Erythranceae cardinalis	Erythranthe cardinalis
+Erythranthe dentatus	Erythranthe dentata
+Erythranthe guttatus	Erythranthe guttata
+Erythranthe suksdrofii	Erythranthe suksdorfii
+Erythranthe suskdorfii	Erythranthe suksdorfii
+Erythrina blackei	Erythrina blakei
+Erythrina bruceii	Erythrina brucei
+Eucalyptus accidens	Eucalyptus accedens
+Eucalyptus bauerana	Eucalyptus baueriana
+Eucalyptus boiistoana	Eucalyptus bosistoana
+Eucalyptus erythonema	Eucalyptus erythronema
+Eucalyptus siberiana	Eucalyptus sieberiana
+Eucalyptus souamosa	Eucalyptus squamosa
+Eucalyptus sunnii	Eucalyptus dunnii
+Eucryphia billardieri	Eucryphia billardierei
+Euonymus radicans var. minimus	Euonymus radicans var. minima
+Euphorbia allomarquista	Euphorbia albomarginata
+Euphorbia millii	Euphorbia milii
+Euphorbia monteiri	Euphorbia monteiroi
+Eurotia lanatum	Eurotium lanatum
+Euryops athanasie	Euryops athanasiae
+Euthania occidentalis	Euthamia occidentalis
+Everina prunastri	Evernia prunastri
+Fagopyron esculentum	Fagopyrum esculentum
+Festuca microstachys var. microstchys	Festuca microstachys var. microstachys
+Festuca perrenis	Festuca perennis
+Forestiera mexicana	Forestiera neomexicana
+Fragaria virginia	Fragaria virginiana
+Frankenia grandifloia var. campestris	Frankenia grandifolia var. campestris
+Fremontodendron californicum subsp. napensis	Fremontodendron californicum subsp. napense
+Fritillaria atropura	Fritillaria atropurpurea
+Galium ariflorum	Galium triflorum
+Galium trifidum var. coumbianum	Galium trifidum var. columbianum
+Gallium aparine	Galium aparine
+Gastridium phleioidea	Gastridium phleoides
+Gaultheria humitusa	Gaultheria humifusa
+Gayophytum decipens	Gayophytum decipiens
+Gayophytum ramossisimum	Gayophytum ramosissimum
+Geum triflorum var. (Pursh) Fassett	Geum triflorum
+Gilia pustata	Gilia punctata
+Gilla capitata	Gilia capitata
+Gilla tricolor	Gilia tricolor
+Gillia capitatum	Gilia capitata
+Gillia tenuiflora var. davyi	Gilia tenuiflora var. davyi
+Gillia tricolor var. tricolor	Gilia tricolor var. tricolor
+Gnaphalium collium	Gnaphalium collinum
+Gnaphalium purpurem	Gnaphalium purpureum
+Gnaphilium palustre	Gnaphalium palustre
+Gonospermum canariensis	Gonospermum canariense
+Gossypium stuartii	Gossypium sturtii
+Greenocharis circumscissa	Greeneocharis circumscissa
+Greenocharis circumscissa var. circumscissa	Greeneocharis circumscissa var. circumscissa
+Grevillea dimopha	Grevillea dimorpha
+Grevillea leucopteria	Grevillea leucopteris
+Grevillea polybotyra	Grevillea polybotrya
+Griselinia littorale	Griselinia littoralis
+Guterrhiza bracteata	Gutierrezia bracteata
+Hackelia paten	Hackelia patens
+Halimium lasiantha	Halimium lasianthum
+Halopappus	Haplopappus
+Haplopappus goodingii	Haplopappus gooddingii
+Haplopappus ophitidus	Haplopappus ophitidis
+Haplopappus palmeri sup. palmeri	Haplopappus palmeri subsp. palmeri
+Hebe formosa	Hebea formosa
+Hebe pinquifolia	Hebe pinguifolia
+Helianthus annus subsp. lenticularis	Helianthus annuus subsp. lenticularis
+Heliconia tortulosa	Heliconia tortuosa
+Helinus mystaginus	Helinus mystacinus
+Helypodium lasiophyllum	Thelypodium lasiophyllum
+Hemizonia luzulaefolia subsp. rudis	Hemizonia luzulifolia subsp. rudis
+Herperocyparis bakeri	Hesperocyparis bakeri
+Herperocyparis goveniana	Hesperocyparis goveniana
+Herperocyparis macnabiana	Hesperocyparis macnabiana
+Herperocyparis pigmaea	Hesperocyparis pigmaea
+Herperocyparis pygmaea	Hesperocyparis pygmaea
+Herperocyparis stephensonii	Hesperocyparis stephensonii
+Hersperocyparis macnabiana	Hesperocyparis macnabiana
+Hersperocyparis pigmaea	Hesperocyparis pigmaea
+Hersperocyparis pygmaea	Hesperocyparis pygmaea
+Hespeochiron californicus	Hesperochiron californicus
+Hesperiocyparis bakeri	Hesperocyparis bakeri
+Hesperocyapris macnabiana	Hesperocyparis macnabiana
+Hesperocyaris macnabiana	Hesperocyparis macnabiana
+Heteropterys augustifolia	Heteropterys angustifolia
+Heuchera macrantha	Heuchera micrantha
+Hibiscus arnottiianus	Hibiscus arnottianus
+Hibiscus dennisonii	Hibiscus denisonii
+Holocarpa heermannii	Holocarpha heermannii
+Holocarpa virgata	Holocarpha virgata
+Holodiscus discolor var. fransciscanus	Holodiscus discolor var. franciscanus
+Hordeum murinum s.l	Hordeum murinum
+Horkelia fusca subsp. psuedocapitata	Horkelia fusca subsp. pseudocapitata
+Hosackia otsigosa	Hosackia strigosa
+Hypericum formoscem	Hypericum formosum
+Ichroma lanceolata	Iochroma lanceolata
+Iris douglassii	Iris douglasiana
+Isoetes murcata var. hesperia	Isoetes muricata var. hesperia
+Isolepis nodosus	Isolepis nodosa
+Iva axillaris subsp. robustor	Iva axillaris subsp. robustior
+Ivesia santilinoides	Ivesia santolinoides
+Jasminum stephanese	Jasminum stephanense
+Johstonella angustifollia
+Juncus densifolius	Juncus ensifolius
+Juncus effus var. pacificus	Juncus effusus subsp. pacificus
+Juncus effus var. pacificus	Juncus effusus var. pacificus
+Juncus kellogii	Juncus kelloggii
+Juncus longistylus	Juncus longistylis
+Juncus macradenus	Juncus macrandrus
+Juncus phaeocephalus var. phaeocephalsus	Juncus phaeocephalus var. phaeocephalus
+Juniperus armstrongi	Juniperus chinensis cv. 'Armstrongii'
+Jussiaea urguayensis	Jussiaea uruguayensis
+Kalanchoe beharsenis	Kalanchoe beharensis
+Kalanchoe orygalis	Kalanchoe orgyalis
+Kunzea ericacifolia	Kunzea ericifolia
+Lanaria macroccana	Linaria maroccana
+Lapsana agogonoides	Lapsana apogonoides
+Lathyrus trayci	Lathyrus tracyi
+Lathyrus vestitus subsp. puberlus	Lathyrus vestitus subsp. puberulus
+Laurarchia aurea	Lamarckia aurea
+Legophylla congesta	Lagophylla congesta
+Lepidium densiflorum¬	Lepidium densiflorum
+Lepidium latifolia	Lepidium latifolium
+Lepidium latifolia	Lepidium latifolium	
+Lepidium otrictum	Lepidium strictum
+Lepidospartum spuamatum	Lepidospartum squamatum
+Leptosipohn	Leptosiphon
+Leucadendron stoeoei	Leucadendron stokoei
+Leucodendrum salignum	Leucadendron salignum
+Leymus mollis var. jepsonii	Elymus glaucus var. jepsonii
+Ligularia tussaliginea	Ligularia tussilaginea
+Lilium pardilinum	Lilium pardalinum
+Limnanthus douglasii var. rosea	Limnanthes douglasii var. rosea
+Linanthus pygameus subsp. continentalis	Linanthus pygmaeus subsp. continentalis
+Linnaea yunnanensis	Lindsaea yunnanensis
+Lobelia vallida	Lobelia valida
+Lolium perenne subsp. multiforum	Lolium perenne subsp. multiflorum
+Lomatium engelmanni	Lomatium engelmannii
+Lonicera supspitaca var. johnstonii	Lonicera subspicata var. johnstonii
+Lotmantium	Lomatium
+Lotus aboriginum	Lotus aboriginus
+Lotus corniculartus	Lotus corniculatus
+Lotus crassufikius	Lotus crassifolius
+Lotus rigiduus	Lotus rigidus
+Luckhoffia beukmannii	Luckhoffia beukmanii
+Luckhoffia boekmanii	Luckhoffia beukmanii
+Luckhoffia boekmanii	Luckhoffia beukmannii
+Ludwegia palustris var. americana	Isnardia palustris var. americana
+Lunia hypoleuca	Luina hypoleuca
+Lupinus albifrons var. halii	Lupinus albifrons var. hallii
+Lupinus communis var. orcuttii	Lupinus concinnus var. orcuttii
+Lupinus lepidus var. racemosus	Lupinus lepidus var. ramosus
+Lupinus ludovicians	Lupinus ludovicianus
+Lupinus rivularus	Lupinus rivularis
+Lupinus tegeticulutus	Lupinus tegeticulatus
+Lycium australe	Lilium australe
+Machaeranthora tortifolia	Machaeranthera tortifolia
+Madia elegans subsp. densiflora	Madia elegans subsp. densifolia
+Malacothrix sonchioides	Malacothrix sonchoides
+Malva sylvertris	Malva sylvestris
+Mammillaria dioca	Mammillaria dioica
+Mammillaria dlolca	Mammillaria dioica
+Manfreda brachystachys	Manfreda brachystachya
+Matricaria matricariodes	Matricaria matricarioides
+Meibornia metcalfei	Meibomia metcalfei
+Melaleuca genistiflora	Melaleuca genistifolia
+Melaleuca hololserica	Melaleuca holosericea
+Melaleuca macronycha	Melaleuca macronychia
+Melaleuca pressiana	Melaleuca preissiana
+Melaleuca subtrigonaa	Melaleuca subtrigona
+Melaleuca websterii	Melaleuca websteri
+Melasphaerula racemosa	Melasphaerula ramosa
+Melica hartfordii	Melica harfordii
+Mentzelia veathchiana	Mentzelia veatchiana
+Microcitrus virgata	Microcorys virgata
+Mierosteris gracilis	Microsteris gracilis
+Mimetanthe pilosus	Mimetanthe pilosa
+Mimetanthes pilosus	Mimetanthe pilosa
+Mimetauthe pilosa	Mimetanthe pilosa
+Mimitanthe pilosa	Mimetanthe pilosa
+Mimulus aurianticus	Mimulus aurantiacus
+Mimulus inconspicuous	Mimulus inconspicuus
+Mimulus nephiticus	Mimulus mephiticus
+Mimulus pulsifera	Mimulus pulsiferae
+Minuartia corymbosa	Minuartia corymbulosa
+Mirabilis leavis var. retrorsa	Mirabilis laevis var. retrorsa
+Mirabilis leavis var. villosa	Mirabilis laevis var. villosa
+Mirabilis villosa	Mirabilis viscosa
+Moehringia macrophylls	Moehringia macrophylla
+Mohavea convertifolia	Mohavea confertiflora
+Monanthochlo	Monanthochloe
+Monardella excilis	Monardella exilis
+Monolepsis nuttalliana	Monolepis nuttalliana
+Montia perfoelata	Montia perfoliata
+Moraea robinsonia	Moraea robinsoniana
+Muscari americum	Muscari americanum
 Myoporum sandwicense subsp. st. -johnii	Myoporum sandwicense subsp. st-johnii	IPNI	
 Myoporum st. -johnii	Myoporum st-johnii	IPNI	
+Myrosurius minimus	Myosurus minimus
+Najas quadalupensis	Najas guadalupensis
+Narcissus incomparibilis	Narcissus incomparabilis
+Navarretia millita	Navarretia mellita
+Nemacladus sigmoides	Nemacladus sigmoideus
+Nepeta mussinni	Nepeta mussinii
+Nicotania bigelovii	Nicotiana bigelovii
+Nicotania glauca	Nicotiana glauca
+Nicotiana trigonaphylla	Nicotiana trigonophylla
+Nitorphila ocidentalis	Nitrophila occidentalis
+Nitrophyla occidentalis	Nitrophila occidentalis
+Nothofagus solandri	Nothofagus solanderi
+Oemleria cerastiformis	Oemleria cerasiformis
+Oenothera lacinata	Oenothera laciniata
+Oenothera pariflora	Oenothera parviflora
+Oenothera primaveris	Oenothera primiveris
+Olearia argophylla	Olearia argophyllus
+Oneothera laciniata	Oenothera laciniata
+Oneothera laciniate	Oenothera laciniata
 Opuntia Xvaseyi		Opuntia X vaseyi	
+Oreostemma alpigena var. andersonii	Oreostemma alpigenum var. andersonii
+Orobanche claifornica subsp. feudgei	Orobanche californica subsp. feudgei
+Orobanche parishii subsp. undescribed	Orobanche parishii
+Orobanche parishii var. brachylob	Orobanche parishii var. brachyloba
+Orothocarpus luteus	Orthocarpus luteus
+Oxalis pes-capre	Oxalis pes-caprae
+Oxalis pre-caprae	Oxalis pes-caprae
+Oxalls pes-caprae	Oxalis pes-caprae
+Packera eucephala var. lewisrosei	Packera eurycephala var. lewisrosei
+Packera eurycephala var. (J. T. Howell) J. F	Packera eurycephala var. lewisrosei
+Packera eurycephala var. lewisrosea	Packera eurycephala var. lewisrosei
+Packera eyrycephala var. eurycelphas	Packera eurycephala var. eurycephala
+Paloenopsis	Phalaenopsis
+Pancium pacificum	Panicum pacificum
+Papver californicum	Papaver californicum
+Paspalum dialatum	Paspalum dilatatum
+Pectocarya penicilliata	Pectocarya penicillata
+PEdicularis groenlandica	Pedicularis groenlandica
+Pelargonium &times;hortum	Pelargonium hortorum
+Pelargonium tetragonium	Pelargonium tetragonum
+Pelargonium X hortum	Pelargonium hortorum
+Penstemon leactus	Penstemon laetus
+Pentachaeta alisinoides	Pentachaeta alsinoides
+Pentas mussaendroides	Pentas mussaendoides
+Pentragamma triangularis	Pentagramma triangularis
+Pericallis xhybrida	Pericallis hybrida
+Perideridea parishii subsp. latifolia	Perideridia parishii subsp. latifolia
+Persea linque	Persea lingue
+Petalonyx thruberi	Petalonyx thurberi
+Petrorhagia prolifer	Petrorhagia prolifera
+Phacelia suavuolens	Phacelia suaveolens
+Phacelis frigida	Phacelia frigida
+Pholistoma mambranaceum	Pholistoma membranaceum
+Phyllostachys bissettii	Phyllostachys bissetii
+Pisonia brunonianum	Pisonia brunoniana
+Plagiobothrys bractietus	Plagiobothrys bracteatus
+Plantanus racemosa	Platanus racemosa
+Planthera dilatata	Platanthera dilatata
+Platiogothrys stipitatus var. micranthus	Plagiobothrys stipitatus var. micranthus
+Plectritis macrocera var. grayii	Plectritis macrocera var. grayi
+Plumbago indigo	Plumbago indica
+Poa scrabella	Poa scabrella
+Polemonium confertiflora var. eximium	Polemonium confertum var. eximium
+Polycarpum tetraphyllum var. tetraphyllum	Polycarpon tetraphyllum var. tetraphyllum
+Polygonaceae douglasii	Polygonum douglasii
+Polygonaceae lapathifolia	Polygonum lapathifolium
+Polygonum argyrolean	Polygonum argyrocoleon
+Polypodium abbreviatum	Polygonum abbreviatum
+Polypodium glycerrhiza	Polypodium glycyrrhiza
+Polyscias sambucifolius	Polyscias sambucifolia
+Ponciris trifoliata	Poncirus trifoliata
+Pos unilateralis	Poa unilaterale
+Potamogeton nutans	Potamogeton natans
+Potentilla gracilis var. elmerii	Potentilla gracilis var. elmeri
+Poteridium sanguisorba	Poterium sanguisorba
+Potrtidium anuuum	Poteridium annuum
+Prichardia	Pritchardia
+Primula pulchellum	Primula pulchella
+Prunus biliriana	Prunus blireiana
+Prunus dulci	Prunus dulcis
+Prunus persea	Prunus persica
+Prunus persica cult	Prunus persica
+Prunus velutinus	Prunus velutina
+Pseudoghaphalium stramineum	Pseudognaphalium stramineum
+Pseudostuga menzensii	Pseudotsuga menziesii
+Psoralea orbiculata	Psoralea orbicularis
+Psorothamnus arborescens subsp. simplifolius	Psorothamnus arborescens subsp. simplicifolius
+Pyrola asarifolia var. bracteate	Pyrola asarifolia var. bracteata
+Pyrolaceae picta	Pyrola picta
+Quercus saderliana	Quercus sadleriana
+Quercus virginicum	Quercus virginiana
+Rafinesquia calfornica	Rafinesquia californica
+Ribes viscossimum	Ribes viscosissimum
+Rosa pinetorium	Rosa pinetorum
+Rubus nulkanis	Rubus nutkanus
+Ruellia bevosiana	Ruellia devosiana
+Rumex californicus¬	Rumex californicus
 Rumex pauciflorum	Rumex paucifolius	Rumex pauciflorus(m) NOT IN TROPICOS	
 Rumex pauciflorus	Rumex paucifolius	Rumex pauciflorus(m) NOT IN TROPICOS	
+S;piraea splendens	Spiraea splendens
+Salix exiqua	Salix exigua
+Salix hookerana	Salix hookeriana
+Salix salix sp. George W. Argus	Salix
+Salix scoulerana	Salix scouleriana
+Salvia arborea	Salacia arborea
+Salvia columbaridae	Salvia columbariae
+Salvia columbriae	Salvia columbariae
+Salvia gracilistyla	Salix gracilistyla
+Salvia sclara var. turkestanica	Salvia sclarea var. turkestanica
+Sambucus coerulia	Sambucus caerulea
+Sanicula bipinnitifida var. flava	Sanicula bipinnatifida var. flava
+Sasaella masamuniana	Sasaella masamuneana
+Saugus	Sagus
+Sceptridium multifidium	Sceptridium multifidum
+Sceptridium mutlifidum	Sceptridium multifidum
+Schefflera kerchoveana	Schefflera kerchoveiana
+Schismus arabicus¬	Schismus arabicus
+Scirpus cernus var. californicus	Scirpus cernuus var. californicus
+Scirpus setacens	Scirpus setaceus
+Scleranthus annus	Scleranthus annuus
+Scopalia sinensis	Scopolia sinensis
+Scutellaria simphocamyploides	Scutellaria siphocampyloides
+Sedum pumila	Sedum pumilum
+Sedum tsugaruense	Sedum tsugaruensis
+Selaginella engelmanii var. scopolorum	Selaginella engelmannii var. scopulorum
+Semele androgyne	Semele androgyna
+Seneca vulgaris	Senecio vulgaris
+Senecio douglasis var. monoensis	Senecio douglasii var. monoensis
+Senecio multiradiata	Senecio multidentatus
+Senecio pseudoaureus var. pseudoaureus	Senecio pseudaureus var. pseudaureus
+Senecio remotifolius	Senecio remifolius
+Senecio rowleyana	Senecio rowleyanus
+Senecio rowleyanum	Senecio rowleyanus
+Senecio vulgarus	Senecio vulgaris
+Senecio vulguris	Senecio vulgaris
+Senico vulgaris	Senecio vulgaris
+Sequioa sempervirnes	Sequoia sempervirens
+Sequoia semperivrens	Sequoia sempervirens
+Sequoia sempervvirens	Sequoia sempervirens
+Sidalcea malvaeflora subsp. asperella	Sidalcea malviflora subsp. asprella
+Silene lacinata subsp. californica	Silene laciniata subsp. californica
+Sinapsis arvenis	Sinapis arvensis
+Sinningia leuchotricha	Sinningia leucotricha
+Sisyrinchium halophilium	Sisyrinchium halophilum
+Solanum vespertilo	Solanum vespertilio
+sorghum halepense	Sorghum halepense	
+Sparaganium emersum	Sparganium emersum
+Sparmannia africana	Sparrmannia africana
+Sparmannia ricinicarpa	Sparmannia ricinocarpa
+Spergula arvense	Spergula arvensis
+Spiraea thunbergia	Spiraea thunbergii
+Stenotopis linearifolius	Stenotis linearifolius
+Stenotopis linearifolius	Stenotopsis linearifolia
+stipa cernua	Stipa cernua	
+stipa miliacea var. miliacea	Stipa miliacea var. miliacea	
+Stiporyzopsis &times;bloomeri	Stiporyzopsis bloomeri
+Streptanthus turtuos	Streptanthus tortuosus
+Strobilanthes dyeranus	Strobilanthes dyerianus
+Swainsonia galegifolia var. albiflora	Swainsona galegifolia var. albiflora
+Swertia radiosa	Swertia radiata
+Taraxacum offcinale	Taraxacum officinale
+Taraxacum offinale	Taraxacum officinale
+Taraxia tanecetifolia	Taraxia tanacetifolia
+Tetracoccus dioica	Tetracoccus dioicus
+Teucrium cassonii	Teucrium cossonii
+Teucrium fruiticans	Teucrium fruticans
+Teucrium hercanicum	Teucrium hircanicum
+Thalictrum fendleri var. polycarpum ex	Thalictrum fendleri var. polycarpum
+Thelypteris angescens	Thelypteris augescens
+Thryptomene sanicula	Thryptomene saxicola
+Thymus vularis	Thymus vulgaris
+Thysanocarpus curvipes var. elegans r	Thysanocarpus curvipes var. elegans
+Thysanocarpus laciniata	Thysanocarpus laciniatus
+Tilia europa	Tilia europaea
+Tilia platyphylla	Tilia platyphyllos
+Tilia rubra var. caucasia	Tilia rubra var. caucasica
+Toxicodendron tribolata	Toxicodendron trilobatum
+Trifolium variegatum phase 1	Trifolium variegatum
+Trifoliumra rapens	Trifolium repens
+Trillium chloropetaalum subsp. chloropetallum	Trillium chloropetalum subsp. chloropetalum
+Trillium gigantea	Trillium giganteum
+Tripleurospermum perforata	Tripleurospermum perforatum
+Triticum timopheevi var. viticulosum	Triticum timopheevii var. viticulosum
+Tropidocarpum sp. (gracile)	Tropidocarpum gracile
+veronica arvensis	Veronica arvensis	
+Vitis viniefera	Vitis vinifera
+Vitus californica	Vitis californica
+Vulpia microstachys subsp. pauciflora	Vulpia microstachys var. pauciflora
+yabea microcarpa	Yabea microcarpa	
+yucca whipplei	Yucca whipplei	
+
+#TRNS output
+Brunellia vulgaris var. lanceolata	Prunella vulgaris var. lanceolata
+Pentstemon confertus var. rigidus	Penstemon confertus var. rigidus
+Castilleja applegatei var. distiche	Castilleja applegatei var. disticha
+Arctostaphylos uva-ursi subsp. saxatilis	Arctostaphylos uva-ursi subsp. saxicola
+Echinochloa crus-pavonis var. zeleynsis	Echinochloa crus-pavonis var. zelayensis
+Phoenicaulis cheranthioides var. nevadense	Phoenicaulis cheiranthoides var. nevadense
+Gilia leptalae var. pinnisecta	Gilia leptalea var. pinnatisecta
+
+Funastrum cynanchoides subsp. hartweaii	Funastrum cynanchoides subsp. hartwegii
+
