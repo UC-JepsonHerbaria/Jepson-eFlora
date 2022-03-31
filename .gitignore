@@ -15,6 +15,14 @@ eflora_database/output_MAR2022/
 JEPCODES/exploded_map.jpg
 JEPCODES/NCo-test.kml
 JEPCODES/Jepson_regionsV8_style.qml
+eflora_database/input/eflora_treatments_*.txt
+eflora_database/input/efloradiff.html
+eflora_database/input/*_revision_*_files/
+eflora_database/input/eflora_keys.txt
+eflora_database/input/eflora_treatments.txt
+eflora_database/input/eflora_keys_formatted.txt
+eflora_database/input/eflora_keys_for_keybase.txt
+eflora_database/input/eflora_keys_2021JUN04.txt
 
 #generated files
 2021_FEB_archive/
