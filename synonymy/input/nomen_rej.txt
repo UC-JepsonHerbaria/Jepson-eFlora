@@ -1,7 +1,8 @@
 
 #These names that are in the ICPN and have an associated treatment page in the Interchange, however
-#we do not want ot use these names in the eFlora or CCH.  We want them to map to the accepted name
-#The name below this line are in JFP-1b but now have been validly published and can be used, but still may be on rejected for CA eFlora, we do not modify these.  These are treated in synonymy tables.
+#we do not what names to map these to as far as currently accepted names in ICPN
+#The name below this line are in JFP-1b but now have been validly published and can be used, 
+#but some still may be on rejected for CA eFlora, we do not modify these.  These are treated in synonymy tables.
 #Achnatherum lemmonii var. lemmonii
 #Achnatherum lemmonii var. pubescens
 #Argyrochosma limitanea var. limitanea
@@ -11,132 +12,286 @@
 #Orobanche cooperi subsp. latiloba
 
 #FILE: DATA\nomen_rej.txt
-#Format: rejected name[tab]accepted name[tab]note
-#The names below this line are all JFP-1b ranked in ICPN: unpublished, invalidly published, illegitimate, or rejected name for taxon native to CA (total=104)
-#For taxa that do not have an specific accepted name in the ICPN treatment, the name is reduced to just the genus.
+#Format: rejected name[tab]accepted name, if known[tab]note
+#SOME of These taxa do not have an specific accepted name in the ICPN treatment.  In pre-2018 CCH1, these names were changed to just the genus
 #In CCH, the full unmodified name will appear in the annotation line for the current determination
-Allium serpentinum	Allium
-Amsinckia menziesii var. intermedia	Amsinckia intermedia
-Arctostaphylos trinitensis	Arctostaphylos	(no specimens in CCH)
-Asplenium trichomanes-ramosum	Asplenium viride
-Aster breweri var. breweri	Aster breweri	(no specimens in CCH)
-Aster breweri var. multibracteata	Aster breweri	(no specimens in CCH)
-Aster eastwoodiae	Aster	(no specimens in CCH)
-Athyrium alpestre	Athyrium distentifolium
-Atriplex natrophila	Atriplex
-Botrychium simplex var. fontanum	Botrychium simplex
-Calochortus clavatus var. arcuatus	Calochortus clavatus var. gracilis		(no specimens in CCH)
-Carex gianonei	Carex
-Caulanthus heterophyllus var. pseudosimulans	Caulanthus heterophyllus
-Caulanthus sierrae	Caulanthus
-Ceanothus X arcuatus	Ceanothus arcuatus	(no specimens in CCH)
-Ceanothus arboreus var. glabra	Ceanothus arboreus	(no specimens in CCH)
-Ceanothus velutinus var. hookeri	Ceanothus velutinus	(no specimens in CCH)
-Cuscuta vivipara	Cuscuta nevadensis	(no specimens in CCH)
-Deinandra ramosissima	Deinandra fasciculata	(no specimens in CCH)
-Diplacus longiflorus subsp. lompocensis	Mimulus aurantiacus	(no specimens in CCH)
-Dodecatheon pulchellum subsp. monanthum	Dodecatheon pulchellum var. monanthum	(no specimens in CCH)
-Erigeron acris subsp. debilis	Erigeron nivalis	(no specimens in CCH)
-Erigeron angustatus	Erigeron greenei	(no specimens in CCH)
-Eriogonum apiculatum var. galbinum	Eriogonum apiculatum	(no specimens in CCH)
-Eriogonum diabolis	Eriogonum
-Eriogonum hooveri	Eriogonum clavatum	(no specimens in CCH)
-Eriogonum nudum var. oblanceolatum	Eriogonum nudum var. nudum	(no specimens in CCH)
-Eriogonum nudum var. pineum	Eriogonum nudum var. regirivum
-Eriogonum saltutorium	Eriogonum luteolum var. saltuarium
-Eriogonum sarmentosum	Eriogonum 	(no specimens in CCH)
-Eriogonum umbellatum var. nelsonii	Eriogonum umbellatum var. nelsoniorum	(no specimens in CCH)
-Eryngium globosum	Eryngium spinosepalum
-Eryngium globosum var. medium	Eryngium castrense
-Erysimum capitatum subsp. angustatum	Erysimum capitatum var. capitatum
-Erysimum capitatum subsp. capitatum	Erysimum capitatum var. capitatum
-Erysimum capitatum subsp. lompocense	Erysimum capitatum var. capitatum
-Erysimum capitatum subsp. perenne	Erysimum perenne
-Erysimum insulare subsp. suffrutescens	Erysimum suffrutescens
-Erysimum insulare var. grandifolium	Erysimum suffrutescens	(no specimens in CCH)
-Erysimum menziesii subsp. concinnum	Erysimum concinnum
-Erysimum menziesii subsp. eurekense	Erysimum menziesii
-Erysimum menziesii subsp. menziesii	Erysimum menziesii
-Erysimum menziesii subsp. yadonii	Erysimum menziesii
-Festuca howellii	Festuca elmeri
-Fraxinus trifoliata	Fraxinus parryi	(no specimens in CCH)
-Fritillaria affinis var. affinis	Fritillaria affinis	(no specimens in CCH)
-Fritillaria affinis var. tristulis	Fritillaria affinis
-Fritillaria lanceolata var. tristulis	Fritillaria affinis	(no specimens in CCH)
-Funastrum cynanchoides subsp. heterophyllum	Funastrum cynanchoides var. hartwegii
-Gilia grinnellii	Gilia cana
-Gilia sabulosa	Gilia	(no specimens in CCH)
-Gnaphalium bicolor	Pseudognaphalium biolettii
-Gnaphalium collinum	Euchiton gymnocephalus
-Euchiton collinus	Euchiton gymnocephalus	(no specimens in CCH)
-Guillenia lemmonii	Caulanthus anceps
-Hesperolinon serpentinum	Hesperolinon
-Hutchinsia procumbens	Hornungia procumbens
-Hymenoclea salsola var. patula	Hymenoclea salsola var. fasciculata
-Isoetes tenella	Isoetes
-Juncus effusus var. australis	Juncus effusus subsp. austrocalifornicus
-Lotus sylvestris	Lotus
-Lupinus andersonii var. mariposanus	Lupinus adsurgens
-Lupinus fulcratus var. undulatus	Lupinus adsurgens var. undulatus
-Malva assurgentiflora subsp. assurgentiflora	Malva assurgentiflora	(no specimens in CCH)
-Malva assurgentiflora subsp. glabra	Malva assurgentiflora	(no specimens in CCH)
-Malva dendromorpha	Malva arborea	(no specimens in CCH)
-Mentzelia arenaria	Mentzelia 	(no specimens in CCH)
-Mentzelia deserticola	Mentzelia desertorum
-Microseris laciniata var. siskiyouensis	Microseris laciniata subsp. siskiyouensis
-Microsteris gracilis subsp. humilior	Microsteris gracilis
-Mimulus hooveri	Mimulus
-Monardella diaboli	Monardella
-Mulgedium pulchellum	Lactuca tatarica subsp. pulchella
-Nama arizonica	Nama
-Packera buekii	Packera subnuda	(no specimens in CCH)
-Packera cymbalarioides	Packera streptanthifolia	(no specimens in CCH)
-Packera streptanthifolia var. rubricaulis	Packera streptanthifolia var. streptanthifolia	(no specimens in CCH)
-Phlox rhizomata	Phlox
-Plagiobothrys chorisianus var. undulatus	Plagiobothrys undulatus
-Plagiobothrys myosotoides subsp. verrucosus	Plagiobothrys verrucosus	(no specimens in CCH; some under P. myosotoides)
-Potamogeton filiformis subsp. alpinus	Potamogeton filiformis var. alpinus
-Pseudobahia bahiifolia var. pinnatifida	Pseudobahia heermannii
-Pseudognaphalium bicolor	Pseudognaphalium biolettii
-Quercus celata	Quercus parvula var. shrevei	(no specimens in CCH)
-Quercus dunnii	Quercus palmeri
-Rubus ursinus var. typicus	Rubus ursinus	(no specimens in CCH)
-Salix lasiolepis var. tracyi	Salix tracyi	(no specimens in CCH)
-Salvia X palmeri	Salvia	(no specimens in CCH)
-Sanguisorba occidentalis	Sanguisorba annua
-Sedum paradisum	Sedum obtusatum subsp. paradisum
-Selaginella arizonica subsp. eremophila	 Selaginella eremophila	(no specimens in CCH)
-Sisyrinchium grandiflorum	Sisyrinchium douglasii
-Streptanthus shastensis	Streptanthus longisiliquus	(no specimens in CCH)
-Trifolium albopurpureum subsp. columbinum	Trifolium albopurpureum
-Trifolium variegatum var. polyodon	Trifolium polyodon
-Trifolium variegatum var. pusillum	Trifolium variegatum
-Trifolium variegatum var. subsalinum	Trifolium variegatum
-Triteleia grandiflora subsp. howellii	Triteleia grandiflora	(no specimens in CCH)
-Valeriana scouleri	Valeriana sitchensis subsp. scouleri
+#The names below this line are all JFP-1b ranked in ICPN: unpublished, invalidly published, illegitimate, or rejected name for taxon native to CA (total=104)
+Allium serpentinum	JFP-1b	
+Amsinckia menziesii var. intermedia	JFP-1b	
+Antirrhinum multiflorum	JFP-1b	
+Arctostaphylos trinitensis	JFP-1b	(no specimens in CCH)
+Asplenium trichomanes-ramosum	JFP-1b	
+Aster breweri var. breweri	JFP-1b	
+Aster breweri var. multibracteata	JFP-1b	
+Aster eastwoodiae	JFP-1b	(no specimens in CCH)
+Atriplex natrophila	JFP-1b	
+Botrychium simplex var. fontanum	JFP-1b	
+Calochortus clavatus var. arcuatus	JFP-1b	
+Carex gianonei	JFP-1b	
+Caulanthus heterophyllus var. pseudosimulans	JFP-1b	
+Caulanthus sierrae	JFP-1b	
+Ceanothus arboreus var. glabra	JFP-1b	
+Ceanothus velutinus var. hookeri	JFP-1b	
+Ceanothus X arcuatus	JFP-1b	
+Cuscuta vivipara	JFP-1b	
+Deinandra ramosissima	JFP-1b	
+Descurainia pinnata subsp. halictorum	JFP-1b	unresolved in ICPN, not applied to a recognized infrataxon in CA
+Descurainia pinnata subsp. menziesii	JFP-1b	unresolved in ICPN, not applied to a recognized infrataxon in CA
+Diplacus longiflorus subsp. lompocensis	JFP-1b	
+Dodecatheon pulchellum subsp. monanthum	JFP-1b	
+Erigeron acris subsp. debilis	JFP-1b	
+Erigeron angustatus	JFP-1b	
+Eriogonum apiculatum var. galbinum	JFP-1b	
+Eriogonum diabolis	JFP-1b	
+Eriogonum hooveri	JFP-1b	
+Eriogonum nudum var. oblanceolatum	JFP-1b	
+Eriogonum nudum var. pineum	JFP-1b	
+Eriogonum saltutorium	JFP-1b	
+Eriogonum sarmentosum	JFP-1b	(no specimens in CCH)
+Eriogonum umbellatum var. nelsonii	JFP-1b	
+Eryngium globosum	JFP-1b	
+Eryngium globosum var. medium	JFP-1b	
+Erysimum capitatum subsp. angustatum	JFP-1b	
+Erysimum capitatum subsp. capitatum	JFP-1b	
+Erysimum capitatum subsp. lompocense	JFP-1b	
+Erysimum capitatum subsp. perenne	JFP-1b	
+Erysimum insulare subsp. suffrutescens	JFP-1b	
+Erysimum insulare var. grandifolium	JFP-1b	
+Erysimum menziesii subsp. concinnum	JFP-1b	
+Erysimum menziesii subsp. eurekense	JFP-1b	
+Erysimum menziesii subsp. menziesii	JFP-1b	
+Erysimum menziesii subsp. yadonii	JFP-1b	
+Festuca howellii	JFP-1b	
+Fraxinus trifoliata	JFP-1b	
+Fritillaria affinis var. affinis	JFP-1b	
+Fritillaria affinis var. tristulis	JFP-1b	
+Fritillaria lanceolata var. tristulis	JFP-1b	
+Funastrum cynanchoides subsp. heterophyllum	JFP-1b	
+Gilia grinnellii	JFP-1b	
+Gilia sabulosa	JFP-1b	(no specimens in CCH)
+Gnaphalium bicolor	JFP-1b	
+Gnaphalium collinum	JFP-1b	
+Guillenia lemmonii	JFP-1b	
+Hesperolinon serpentinum	JFP-1b	
+Hutchinsia procumbens	JFP-1b	
+Hymenoclea salsola var. patula	JFP-1b	
+Isoetes tenella	JFP-1b	
+Juncus effusus var. australis	JFP-1b	
+Lotus sylvestris	JFP-1b	
+Lupinus andersonii var. mariposanus	JFP-1b	
+Lupinus fulcratus var. undulatus	JFP-1b	
+Malva assurgentiflora subsp. assurgentiflora	JFP-1b	
+Malva assurgentiflora subsp. glabra	JFP-1b	
+Malva dendromorpha	JFP-1b	
+Mentzelia arenaria	JFP-1b	(no specimens in CCH)
+Mentzelia deserticola	JFP-1b	
+Microseris laciniata var. siskiyouensis	JFP-1b	
+Microsteris gracilis subsp. humilior	JFP-1b	
+Mimulus hooveri	JFP-1b	
+Monardella diaboli	JFP-1b	
+Mulgedium pulchellum	JFP-1b	
+Nama arizonica	JFP-1b	
+Orobanche cooperi subsp. latiloba	JFP-1b	
+Packera buekii	JFP-1b	
+Packera cymbalarioides	JFP-1b	
+Packera streptanthifolia var. rubricaulis	JFP-1b	
+Phlox rhizomata	JFP-1b	
+Plagiobothrys chorisianus var. undulatus	JFP-1b	
+Plagiobothrys myosotoides subsp. verrucosus	JFP-1b	
+Potamogeton filiformis subsp. alpinus	JFP-1b	
+Pseudobahia bahiifolia var. pinnatifida	JFP-1b	
+Pseudognaphalium bicolor	JFP-1b	
+Quercus celata	JFP-1b	
+Quercus dunnii	JFP-1b	
+Rubus ursinus var. typicus	JFP-1b	
+Salix lasiolepis var. tracyi	JFP-1b	
+Salvia X palmeri	JFP-1b	(no specimens in CCH)
+Sanguisorba occidentalis	JFP-1b	
+Sedum paradisum	JFP-1b	
+Selaginella arizonica subsp. eremophila	JFP-1b	
+Sisyrinchium grandiflorum	JFP-1b	
+Streptanthus shastensis	JFP-1b	
+Trifolium albopurpureum subsp. columbinum	JFP-1b	
+Trifolium olivaceum	JFP-1b	
+Trifolium variegatum var. polyodon	JFP-1b	
+Trifolium variegatum var. pusillum	JFP-1b	
+Trifolium variegatum var. subsalinum	JFP-1b	
+Triteleia grandiflora subsp. howellii	JFP-1b	
+Valeriana scouleri	JFP-1b	
+
+#The names below this line are all JFP-1b pending in ICPN: unpublished, invalidly published, illegitimate, or rejected name for taxon native to CA (total=1)
+Nemophila hoplandensis	JFP-1b	
 
 
+#The names below this line are all JFP-2b in ICPN: unpublished, invalidly published, illegitimate, or rejected name for taxon naturalized in CA (total=13)
+Alyssum minus	JFP-2b	
+Bromus emarginatus	JFP-2b	
+Bromus hordeaceus subsp. molliformis	JFP-2b	
+Chamaesyce dendroides	JFP-2b	
+Chenopodium album var. striatum	JFP-2b	
+Leontodon taraxacoides	JFP-2b	
+Limonium arborescens	JFP-2b	
+Malva rotundifolia	JFP-2b	
+Plantago indica	JFP-2b	
+Plantago psyllium	JFP-2b	
+Rosa eglanteria	JFP-2b	
+Sarracenia rubra	JFP-2b	
+Senna eremophila	JFP-2b	
 
 
+#The names below this line are all JFP-3b: unpublished, invalidly published, illegitimate, or rejected name for for taxon occurring in CA only as a waif and/or garden escape, not naturalized (total=4)
+Cirsium scabrum	JFP-3b	
+Citrullus colocynthis var. lanatus	JFP-3b	
+Grindelia papposa	JFP-3b	
+Ziziphus jujuba	JFP-3b	
 
 
+#The names below this line are all JFP-4b: unpublished, invalidly published, illegitimate, or rejected name for taxon occurring in CA only as agricultural or garden weed (total=2)
+Achnatherum papposum	JFP-4b	
+Geranium anemonifolium	JFP-4b	
 
 
+#The names below this line are all JFP-8b: unpublished, invalidly published, illegitimate, or rejected name for taxon not occurring in CA (erroneous reports, misapplication of names, misidentifications, other exclusions) (total=8)
+Alyssum minus var. strigosum	JFP-8b	
+Cuscuta denticulata var. veatchii	JFP-8b	
+Dalea occidentalis	JFP-8b	
+Eriogonum rupicola	JFP-8b	
+Koeleria cristata	JFP-8b	
+Medicago muricata	JFP-8b	
+Penstemon affinis	JFP-8b	
+Symphyotrichum foliaceum var. lyallii	JFP-8b	
 
 
+#The names below this line are all JFP-9b: unpublished, invalidly published, illegitimate, or rejected name for plant occurring in CA only under cultivation (e.g., as crop, ornamental, or experimental plant) (total=1)
+Senecio hybridus	JFP-9b	
 
 
+#The names below this line are all JFP-10b: taxonomic or nomenclatural synonym for taxonomically recognized and/or fertile hybrid; hybrid form of name (total=3)
+Centaurea X moncktonii	JFP-10b	
+Opuntia X vaseyi	JFP-10b	
+Quercus X grandidentata	JFP-10b	
 
 
+#The names below this line are all JFP-10b_t: taxonomic or nomenclatural synonym for taxonomically recognized and/or fertile hybrid; hybrid form of name (tentative) (total=2)
+Ledum X columbianum	JFP-10b	
+Opuntia X curvispina	JFP-10b	
 
 
+#The names below this line are all JFP-10bb: unpublished, invalidly published, illegitimate, or rejected name for taxonomically recognized and/or fertile hybrid; hybrid form of name (total=1)
+Centaurea X pratensis	JFP-10bb	
 
 
+#The names below this line are all JFP-11b: taxonomic or nomenclatural synonym for taxonomically not recognized and/or sterile hybrid (hybrid form of name) (total=1)
+Cheilanthes X parishii	JFP-11b	
 
 
+#The names below this line are all JFP-11bb: unpublished, invalidly published, illegitimate, or rejected name for taxonomically not recognized and/or sterile hybrid (hybrid form of name) (total=1)
+X Agropogon littoralis	JFP-11bb	
 
 
-
-
-
+#The names below this line are not in ICPN, but they are likely unpublished, invalidly published, illegitimate, or rejected names, all found on specimens in CCH1 or CCH2
+#all NIEF; some of these names are in TROP or IPNI, 
+#some are just unpublished names found on CCH2 herbarium specimens
+#some have no discernible accepted name so they were reduced to genus in original CCH
+Achillea lanulosa subsp. silvicola	NOT IN ICPN, NOT in Tropicos, Ehrendf. ined.; CAS
+Astragalus suffrutescens	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Claytonia parviflora subsp. tenuifolia	NOT IN ICPN, CCH2 unpublished combination on herbarium label
+Cryptantha lepida	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Cryptantha ursina	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Cryptantha stockingii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Eriophyllum multicaule var. pringlei	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Eriophyllum multicaule var. multicaule	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Linanthus dichotomus var. integra	NOT IN ICPN, NOT in Tropicos, 'var. integra Jones', an typo or an unpublished name?; Henrickson 16530a, UCR, CSLA;
+Lupinus albicaulis subsp. wolfianus	NOT IN ICPN, NOT in Tropicos, Conrad ined.;
+Lupinus albicaulis var. wolfianus	NOT IN ICPN, NOT in Tropicos, Conrad ined.;
+Lupinus andersonii var. mariposanus	NOT IN ICPN, sensu TROPICOS, no publication citation, Conrad is listed as author, so probably not a published name
+Lupinus elatus subsp. elatus	NOT IN ICPN, NOT in Tropicos, Conrad ined. or an error;
+Lupinus elatus var. elatus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Lupinus elatus var. viridulus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Lupinus formosus subsp. proximus	NOT IN ICPN, NOT in Tropicos, Conrad ined.;
+Lupinus formosus var. pasadenensis	NOT IN ICPN, NOT in Tropicos, Conrad ined.;
+Lupinus formosus var. proximus	NOT IN ICPN, NOT in Tropicos, Conrad ined.;
+Lupinus obtusifolius	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Lupinus proximus subsp. proximus	NOT IN ICPN, NOT in Tropicos, Conrad ined. or an error;
+Navarretia pilosissima	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Nemophila gianonei	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Penstemon johnstonii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Penstemon symplocophyllus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Penstemon tubaeformis	NOT IN ICPN, NOT in Tropicos, 'Keck, in ed. 1937' as determination on RSA0006239, Gilman s.n. from Titus Canyon in 1935
+Pseudognaphalium gianonei	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Pyrola rotundifolia var. bracteata	NOT IN ICPN, 'Pyrola rotundifolia var. bracteata (Hook.) A. Gray' does not have a publication reference in IPNI
+Sanicula gianonei	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Streptanthus juneae	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Streptanthus medeirosii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium bayense	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium griseum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium imberbe	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium imberbe var. imberbe	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium imberbe var. gianonei	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium janus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium lazarus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium minor var. madonna	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium minor var. major	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium minor var. minor	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium minor	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium obispoense	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium paravirens	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium rupicola	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium silvestre	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium turbinatum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium fax	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium ultramaficum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium virescens var. boreale	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium virescens var. virescens	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium virescens subsp. boreale	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium virescens subsp. virescens	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Leptodactylon californicum subsp. leptotrichomum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Leptodactylon californicum subsp. brevitrichomum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Angelica leiocarpa	NOT IN ICPN, CCH2-CAS unpublished name on herbarium label
+Galium stebbinsii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Galium stebbinsii subsp. siskiyouense	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Galium stebbinsii subsp. stebbinsii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Dodecatheon jeffreyanum subsp. jeffreyanum	NOT IN ICPN, mentioned in eFlora, rejected name
+Dodecatheon jeffreyanum	NOT IN ICPN, mentioned in eFlora, rejected name
+Arabis ultrapurpurascens	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Acmispon glaber var. longisepala	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Calochortus argillosus subsp. maritimus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Calochortus argillosus subsp. argillosus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Convolvulus cyclostegius subsp. aridus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Convolvulus cyclostegius subsp. macrostegius	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Convolvulus macrostegra subsp. cyclostegia	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Convolvulus pedicellatus subsp. pedicellatus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Convolvulus pedicellatus subsp. venustus	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Cryptantha kinkiensis	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Dudleya cymosa var. nevadensis	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Sambucus mexicana var. jepsonii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Fritillaria ritteri	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Acer glabrum var. bernardinum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Vicia monanthos	NOT IN ICPN, ILLEG in TROPICOS
+Vicia monantha	NOT IN ICPN, ILLEG in TROPICOS
+Urachne setosa	NOT IN ICPN, ILLEG in TROPICOS
+Krynitzkia lentiformis	NOT IN ICPN, CCH2 unpublished name on herbarium label, Marcus Jones name not published, type RSA
+Krynitzkia unilateralis	NOT IN ICPN, CCH2 unpublished name on herbarium label, Marcus Jones name not published, type RSA
+Fritillaria agrestis subsp. pfeifferensis	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Fritillaria biflora subsp. pfeifferensis	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Fritillaria ritterii	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Plagiobothrys myriantha	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Arctostaphylos glandulosa var. venturana	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Eriogonum wrightii var. pinorum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Erysimum menziesii var. ammophilum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium polyodon var. oligodon	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium polyodon var. polyodon	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium obtusiflorum var. latifolium	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium lilacinum var. solano	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium lilacinum var. lilacinum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium fucatum var. grande	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium californicum var. hirsutum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium californicum var. californicum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium buckwestiorum var. nanum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Trifolium buckwestiorum var. buckwestiorum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Stachys docmilleri	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Stachys pycnantha var. docmilleri	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Stachys pycnantha var. pycnantha	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Stachys hearstiorum	NOT IN ICPN, CCH2 unpublished name on herbarium label
+Stachys ajugoides var. rivularis	NOT IN ICPN, CCH2 unpublished name on herbarium label
 

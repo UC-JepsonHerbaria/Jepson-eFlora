@@ -1,19 +1,24 @@
+#non vascular and seaweed genera to exclude from CCH1
 Abietinella
+Abrothallus
 Acamptodous
 Acanthocladiella
 Acanthocoleus
 Acantholejeunea
 Acanthorrhynchium
+Acaroconium
+Acarospora
 Acaulon
 Achiton
 Achrohypnella
 Achrophyllum
 Achyrophyllum
 Acidodontium
-Acinetospora	88123
-Acinetospora nicholsoniae	88609
+Acinetospora
 Acolea
+Acolium
 Acritodon
+Acrolejeunea
 Acro-Lejeunea
 Acrobolbus
 Acrochaete
@@ -21,6 +26,7 @@ Acrochaetium
 Acrochila
 Acrocladiopsis
 Acrocladium
+Acrocordia
 Acrolejeunea
 Acrolepidozia
 Acrolophozia
@@ -28,29 +34,36 @@ Acromastigum
 Acroporium
 Acroschisma
 Acroscyphella
+Acrosiphonia
 Acrosorium
 Acrostolia
 Actinodontium
+Actinogyra
 Actinostoma
 Actinothuidium
 Adelanthus
+Adelococcus
 Adelocolia
+Adelolecia
 Adelothecium
 Aerobryidium
 Aerobryopsis
 Aerobryum
 Aerolindigia
-Agardhiella	88124
-Agardhiella mexicana	88349
+Agardhiella
+Agaricus
 Agarum
 Aglaothamnion
 Ahnfeltia
 Ahnfeltiopsis
+Ahtiana
 Aitchisoniella
 Aitonia
-Alaria	88125
+Alaria
+Alectoria
 Alicularia
 Aligrimmia
+Allarthonia
 Allioniellopsis
 Allisonia
 Allisoniella
@@ -59,24 +72,22 @@ Alobiella
 Alobiellopsis
 Aloidella
 Aloina
-Aloina aloides	83012
 Aloinella
 Alophosia
 Alsia
-Alsia californica	83017
+Alyxoria
+Amandinea
+Amanita
+Amaridinea
+Amaurochaete
 Amblyodon
 Amblyolejeunea
 Amblyphyllum
 Amblystegium
-Amblystegium	82594
-Amblystegium juratzkanum	83019
-Amblystegium serpens	83020
-Amblystegium varium	83021
 Amblytropis
 Amphibiophytum
 Amphicephalozia
 Amphidium
-Amphidium lapponicum	83024
 Amphidrium
 Amphijubula
 Amphilejeunea
@@ -85,21 +96,22 @@ Amphoridium
 Amphoritheca
 Amplisiphonia
 Ampridrium
+Anabaena
 Anacalypta
 Anacamptodon
 Anacolia
-Anacolia baueri	83028
 Analipus
+Anaptychia
 Anastrepta
 Anastrophyllum
 Ancistrodes
 Andoa
 Andreaea
-Andreaea rupestris	83039
 Andreaeobryales
 Andreaeobryum
 Andrewsianthus
 Androcryphia
+Anema
 Aneura
 Angiocarpus
 Angstroemia
@@ -107,6 +119,7 @@ Anhymenium
 Anictangium
 Anisocladella
 Anisodon
+Anisomeridium
 Anisostichium
 Anisotachis
 Anisothecium
@@ -127,17 +140,10 @@ Anoplolejeunea
 Anoplostoma
 Anthelia
 Anthoceros
-Anthoceros	84752
-Anthoceros agrestis	84864
-Anthoceros bulbiculosus	84865
-Anthoceros fusiformis	84866
-Anthoceros hallii	84867
-Anthoceros laevis	84868
-Anthoceros pearsonii	84869
 Anthoconum
 Anthoscyphus
-Antithamnion	88126
-Antithamnion mcnabbii	88352
+Anthracothecium
+Antithamnion
 Antithamnionella
 Antitrichia
 Antoiria
@@ -154,6 +160,7 @@ Aplodon
 Aplozia
 Apocarpum
 Apodanthus
+Apoglossum
 Apometzgeria
 Aporella
 Aporothallus
@@ -164,6 +171,7 @@ Aptychella
 Aptychopsis
 Aptychus
 Arachniopsis
+Archaeolithothamnion
 Archaeomnium
 Archboldiella
 Archeochaete
@@ -174,45 +182,46 @@ Archidium
 Archilejeunea
 Arctoa
 Arctoscyphus
+Arcyodes
+Arcyria
 Argyrobryum
 Aristovia
+Armillaria
 Arnellia
 Arnelliella
 Arrhenopterum
+Arthonia
+Arthoniales
+Arthopyrenia
+Arthothelium
+Arthrocardia
 Arthrocormus
-Arthrospira	88127
-Arthrospira breviarticulata	88506
+Arthrorhaphis
+Arthrospira
 Arvildia
 Aschisma
 Aschistodon
 Ascidiota
+Ascophyllum
 Askepos
-Asparagopsis	88128
-Asparagopsis armata	88354
-Asparagopsis sanfordiana	88353
+Asparagopsis
+Aspicila
+Aspicilia
+Aspilicia
 Aspiromitus
 Asterella
 Asterocolax
 Astomiopsis
 Astomum
 Astrodontium
+Asymmetria
 Athalamia
+Athelia
 Atractylocarpus
 Atrichopsis
 Atrichum
-Atrichum	82606
-Atrichum altecristatum	83060
-Atrichum androgynum	83061
-Atrichum angustatum	83062
-Atrichum oerstedianum	83063
-Atrichum selwynii	83064
-Atrichum undulatum	82967
-Atrichum undulatum var. attenuatum	82996
-Atrichum undulatum var. undulatum	82997
 Aulacomitrium
 Aulacomnium
-Aulacomnium androgynum	83065
-Aulacomnium palustre	83067
 Aulacopilum
 Aureolejeunea
 Austinella
@@ -225,48 +234,58 @@ Austrometzgeria
 Austroscyphus
 Aytonia
 Bachtia
+Bacidia
+Bacidina
+Bactrospora
+Badhamia
+Badhamiopsis
+Baeomyces
+Bagliettoa
 Bajdaievia
 Balantiopsis
 Baldwiniella
 Bangia
 Barbella
 Barbellopsis
+Barbeyella
 Barbilophozia
 Barbula
 Bardunovia
 Barnesia
 Bartleya
 Bartramia
-Bartramia	82610
-Bartramia halleriana	83077
-Bartramia hampeana	83078
-Bartramia ithyphylla	83079
-Bartramia patens	83080
-Bartramia pomiformis	83081
-Bartramia robusta	83082
-Bartramia stricta	83083
 Bartramidula
 Bartramiopsis
 Basichiton
 Bassania
+Batrachospermum
+Baylesia
 Bazzania
 Bazzanius
 Beccaria
 Beckettia
 Beddomiella
 Beeveria
+Bellemerea
 Bellibarbula
 Bellincinia
 Besa
 Bescherellia
 Bestia
-Bestia longipes	83088
 Biagia
+Biatora
+Biatorella
+Biatoropsis
+Bilimbia
 Binghamia
+Binghamiella
+Binghamiopsis
+Bispora
 Bissetia
 Bizotia
 Blasia
 Blasiites
+Blastenia
 Blepharidophyllum
 Blepharolejeunea
 Blepharostoma
@@ -274,19 +293,22 @@ Blepharostomum
 Blepharozia
 Blidingia
 Blindia
-Blindia acuta	83089
 Blindiopsis
+Blossevillea
 Blytia
+Boletus
 Boninoleptocolea
 Bonnemaisonia
 Bonneria
 Bornetia
 Boschia
+Bossea
 Bossiella
-Botryocladia	88129
-Botryocladia pseudodichotoma	88355
-Botryocladia shanksii	88357
-Botryocladia uvarioides	88363
+Botrydina
+Botryocladia
+Botryococcus
+Botryoglossum
+Botryolepraria
 Boulaya
 Brachelyma
 Brachiolejeunea
@@ -296,25 +318,23 @@ Brachymenium
 Brachymitrion
 Brachysteleum
 Brachythecium
-Brachythecium collinum	83100
-Brachythecium frigidum	83105
+Brachytrichia
 Brachytrichum
 Braithwaitea
-Branchioglossum	88130
-Branchioglossum undulatum	88351
+Branchioglossum
 Braunfelsia
 Braunia
 Breedlovea
 Breidleria
 Breutelia
 Brevianthus
+Briancoppinsia
 Brissocarpus
 Bromeliophila
 Brothera
 Brotherella
 Brotherobryum
 Bruchia
-Bruchia bolanderi	83142
 Bryella
 Bryhnia
 Brymela
@@ -335,97 +355,43 @@ Bryohaplocladium
 Bryohumbertia
 Bryokhutuliinia
 Bryolawtonia
-Bryolawtonia vancouveriensis	83149
 Bryolejeunea
 Bryomanginia
 Bryomnium
 Bryomyces
 Bryonoguchia
 Bryonorrisia
+Bryophyta
 Bryoporteria
 Bryopsis
-Bryopsis	88131
-Bryopsis corticulans	88500
 Bryopteris
+Bryoria
 Bryosedgwickia
 Bryostreimannia
 Bryotestua
-Bryothamnion	88132
-Bryothamnion pacificum	88350
+Bryothamnion
 Bryotrichum
 Bryowijkia
 Bryoxiphiales
 Bryoxiphium
 Bryum
-Bryum	82629
-Bryum algovicum	83151
-Bryum alpinum	83152
-Bryum amblyodon	83153
-Bryum apiculatum	83154
-Bryum argenteum	83155
-Bryum auratum	83156
-Bryum barnesii	83157
-Bryum bicolor	83158
-Bryum billarderi	85164
-Bryum blandum	83159
-Bryum blindii	83160
-Bryum caespiticium	83161
-Bryum calobryoides	83162
-Bryum campylothecium	83163
-Bryum canariense	83164
-Bryum capillare	83165
-Bryum cheelii	83166
-Bryum crassum	83167
-Bryum cyclophyllum	83168
-Bryum densifolium	83169
-Bryum dichotomum	83170
-Bryum exile	83171
-Bryum flaccidum	83172
-Bryum gemmascens	83173
-Bryum gemmiferum	83174
-Bryum gemmilucens	83175
-Bryum gemmiparum	83176
-Bryum klinggraeffii	83177
-Bryum laevifilum	83178
-Bryum laevigatum	83179
-Bryum lanatum	83180
-Bryum lisae	83181
-Bryum microerythrocarpum	83182
-Bryum microrhodon	85252
-Bryum miniatum	83183
-Bryum muehlenbeckii	83184
-Bryum nivale	83185
-Bryum pachytheca	83186
-Bryum pallens	83187
-Bryum pallescens	83188
-Bryum procerum	83189
-Bryum pseudotriquetrum	83190
-Bryum radiculosum	83191
-Bryum richardsii	83192
-Bryum sauteri	83193
-Bryum soboliferum	83194
-Bryum stenotrichum	83195
-Bryum subapiculatum	83196
-Bryum subfasciculatum	83197
-Bryum torquescens	83198
-Bryum tortifolium	83199
-Bryum turbinatum	83200
-Bryum violaceum	83201
-Bryum weigelii	83202
 Bucegia
 Buckiella
 Bucklandiella
-Bulbochaete	88133
+Buellia
+Buelliella
+Bulbochaete
 Buthelezia
 Buxbaumia
 Byssolejeunea
+Byssoloma
 Caduciella
+Caeruleum
 Calatholejeunea
+Calicium
 Callialaria
-Calliarthron	92033
-Calliarthron cheilosporioides	92543
-Calliarthron regenerans	93348
-Calliarthron setchelliae	93349
+Calliarthron
+Calliblepharis
 Callicladium
 Callicosta
 Callicostella
@@ -434,22 +400,21 @@ Calliergidium
 Calliergon
 Calliergonella
 Calliergonoideae
+Callistosporium
 Callithamnion
-Callithamnion	88134
-Callithamnion veleroae	88362
-Callophyllis	88135
-Callophyllis corollata	88361
-Callophyllis flabellulata	88360
-Callophyllis phyllohaptera	88359
-Callophyllis tenuifolia	88356
-Callophyllis violacea	88358
-Callymenia guaymasensis	88464
-Callymenia veleroae	88465
+Callocolax
+Callophyllis
+Callymenia
 Calobryum
-Caloglossa	88136
-Caloglossa leprieurii	88463
+Caloglossa
 Calohypnum
 Calomnion
+Calomyxa
+Calonema
+Caloplaca
+Calothrix
+Calvatia
+Calvitimela
 Calycularia
 Calymperastrum
 Calymperes
@@ -466,6 +431,7 @@ Camplothecium
 Camptochaete
 Camptodontium
 Camptothecium
+Campylaephora
 Campyliadelphus
 Campylium
 Campylochaetium
@@ -475,28 +441,17 @@ Campylophyllum
 Campylopodiella
 Campylopodium
 Campylopus
-Campylopus	82643
-Campylopus atrovirens	83242
-Campylopus clavatus	83243
-Campylopus filifolius	83244
-Campylopus heterostachys	83245
-Campylopus introflexus	83246
-Campylopus kirkii	83247
-Campylopus paradoxus	83248
-Campylopus pilifer	83249
-Campylopus purpureocaulis	83250
-Campylopus pyriformis	83251
-Campylopus savannarum	83252
-Campylopus sharpii	83253
-Campylopus subulatus	83254
-Campylopus surinamensis	83255
-Campylopus tallulensis	83256
 Campylostelium
 Campylotrichum
 Canalohypopterygium
 Candelabromuscus
+Candelaria
+Candelariella
 Candollea
 Capillolejeunea
+Capronia
+Carbacanthographis
+Carbonea
 Cardiolejeunea
 Cardotia
 Cardotiella
@@ -507,22 +462,27 @@ Carpoceros
 Carpoecia
 Carpolepidum
 Carpolipum
-Carpopeltis	88137
-Carpopeltis stella-polaris	88462
+Carpopeltis
 Carringtonia
 Carrpos
 Catagoniopsis
 Catagonium
+Catapyrenium
 Catharinea
 Catharinella
 Catharomnion
+Catillaria
+Catinaria
+Catocarpus
+Catolechia
 Catoptridium
 Catoscopium
 Caudalejeunea
 Caulacanthus
-Caulerpa	88138
-Caulerpa sertularioides	88454
+Caulerpa
+Caulorhiza
 Cavendishia
+Cavernularia
 Cavicularia
 Cecalyphum
 Centroceras
@@ -535,131 +495,166 @@ Cephalozia
 Cephaloziella
 Cephaloziopsis
 Ceramium
-Ceramium	88139
-Ceramium equisetoides	88461
-Ceramium mazatlanense	88460
-Ceramium obesum	88459
-Ceramium taylorii	88458
-Ceramium viscainoense	88457
+Ceratiomyxa
+Ceratocystis
 Ceratodon
-Ceratodon	82645
-Ceratodon purpureus	83259
-Ceratodon stenocarpus	83260
-Ceratodon stenocarpus	83260	
 Ceratolejeunea
-Ceratothamnion	88140
+Ceratothamnion
+Cercidospora
 Cesius
 Cesiusa
+Cetraria
+Cetrelia
 Ceuthotheca
+Chaenotheca
+Chaenothecopsis
 Chaetocolea
 Chaetomitrella
 Chaetomitriopsis
 Chaetomitrium
 Chaetomorpha
-Chaetomorpha	88141
-Chaetomorpha californica	88497
-Chaetomorpha catalinae	88455
-Chaetomorpha spiralis	88456
 Chaetophyllopsis
 Chaetopsis
+Chaetothiersia
 Chamaebryum
 Chamaeceros
+Chamaesiphon
 Chamberlainia
 Chameleion
 Champia
 Chandonanthus
+Chantransia
+Chara
 Cheilocyphos
 Cheilolejeunea
 Cheilothela
 Cheirorhiza
 Chenia
 Chiastocaulon
-Chiharaea 
+Chiharaea
 Chileobryon
 Chiloscyphus
+Chiodecton
 Chionobryum
 Chionoloma
 Chionostomum
 Chiuzbaia
 Chlamidium
 Chloranthelia
+Chlorea
 Chlorochytrium
 Chloronotus
 Chomiocarpon
 Chondracanthus
 Chondria
 Chondrophyllum
+Chondrus
 Chonecolea
+Chordaria
+Choreonema
 Chorisodontium
+Chrismofulvea
+Chromatochlamys
+Chromosera
 Chryso-hypnum
 Chrysoblastella
 Chrysocladium
 Chrysohypnum
+Chrysomphalina
 Chrysotheca
+Chrysothrix
 Chrystoblastella
+Chrysymenia
 Ciliolejeunea
 Cincinnulus
 Cinclidium
 Cinclidotus
+Circinaria
 Cirriphyllum
 Cladastomum
 Cladiantholejeunea
+Cladidium
+Cladina
 Cladodium
 Cladolejeunea
 Cladomastigum
 Cladomnion
 Cladomniopsis
+Cladonia
 Cladophascum
 Cladophora
-Cladophora	88142
-Cladophora microcladioides f. stricta	88689
 Cladophoropsis
 Cladopodanthus
 Cladopodiella
 Cladopus
 Clandarium
 Claopodium
-Claopodium bolanderi	83270
-Claopodium whippleanum	83273
 Clasmatocolea
 Clasmatodon
 Clastobryella
 Clastobryophilum
 Clastobryopsis
 Clastobryum
+Clastoderma
+Clathromorphum
+Clauzadea
+Clavascidium
 Clevea
 Climacium
+Cliostomum
+Clitocybe
+Clypeococcum
 Cnestrum
+Coccotrema
 Cochlearidium
 Codiolum
-Codium setchellii	88014
+Codium
 Codonia
 Codonoblepharon
 Codriophorus
-Codriophorus acicularis	85166
+Coelocaulon
+Coeloseira
+Coenogonium
 Coilodesme
-Coilodesme	88122
+Colacodasya
+Colaconema
 Coleochila
+Collaria
+Collema
+Collemodium
+Collemopsidium
+Collemopsis
 Collinsiella
 Colobodontium
 Cololejeunea
 Colpomenia
 Colura
 Colurolejeunea
+Comatricha
+Combea
 Complanato-hypnum
 Compsonema
 Conardia
+Conchocelis
 Conianthos
+Coniocybe
+Coniophora
 Conocephalum
 Conocephalus
 Conoscyphus
 Conostomum
+Constantinea
+Corallina
+Corallinales
 Corallophila
 Corbierella
 Cordaea
 Coriophyllum
+Cornicularia
 Cornijeunea
+Cornutispora
 Corsinia
+Cortinarius
 Corynotheca
 Coscinodon
 Coscinodontella
@@ -668,16 +663,18 @@ Costaria
 Costesia
 Crassicosta
 Crassiphyllum
+Craterium
 Cratoneurella
 Cratoneuron
-Cratoneuron filicinum	83283
 Cratoneuropsis
 Crepidophyllum
+Cresponea
+Cribraria
 Cribrodontium
+Crocynia
 Cronisia
 Crosbya
 Crossidium
-Crossidium 
 Crossocalyx
 Crossogyna
 Crossojeunea
@@ -685,6 +682,8 @@ Crossomitrium
 Crossotolejeunea
 Crumia
 Crumuscus
+Cruoriella
+Crustose
 Cryphaea
 Cryphaeophilum
 Cryphidium
@@ -702,13 +701,17 @@ Cryptomitrium
 Cryptonemia
 Cryptoneurum
 Cryptopapillaria
+Cryptopleura
 Cryptopodium
 Cryptoseta
+Cryptosiphonia
 Cryptothallus
 Cryptotheca
 Cryptothecium
 Ctenidiadelphus
 Ctenidium
+Cumagloia
+Cumathamnion
 Curvicladium
 Curviramea
 Cuspidaria
@@ -725,11 +728,13 @@ Cycnea
 Cygnicollum
 Cygniella
 Cylindrocolea
+Cymadothea
 Cymbifoliella
 Cynodontiella
 Cynodontium
 Cynontodium
-#Cyperaceae
+Cypheliopsis
+Cyphelium
 Cyptodon
 Cyptodontopsis
 Cyrto-hypnum
@@ -738,23 +743,33 @@ Cyrtolejeunea
 Cyrtomnium
 Cyrtopodendron
 Cyrtopus
+Cystobasidium
 Cystolejeunea
+Cystoseira
+Dacampia
 Dacryophyllum
 Dactylhymenium
 Dactylolejeunea
 Dactylophorella
+Dactylospora
 Daltonia
+Darbishirella
+Dasya
 Dasymitrium
+Dasyopsis
 Dawsonia
 Delavayella
+Delesseria
 Dendia
-Dendro-Leskea
+Dendriscocaulon
 Dendro-hypnum
+Dendro-Leskea
 Dendroalsia
 Dendrobazzania
 Dendroceros
 Dendrocryphaea
 Dendrocyathophorum
+Dendrographa
 Dendrolejeunea
 Dendrolembidium
 Dendroligotrichum
@@ -763,55 +778,55 @@ Dendropogonella
 Denotarisia
 Dentijeunea
 Derbesia
+Dermatocarpon
 Dermatodon
+Dermatolithon
+Dermocarpa
 Desmarestia
 Desmatodon
-Desmatodon 
+Desmazieria
 Desmotheca
+Diachea
+Diacheopsis
 Dialytrichia
+Dianema
 Dianthelia
 Diaphanodon
+Dibaeis
 Dichelodontium
 Dichelyma
 Dichiton
 Dichodontium
-Dichodontium flavescens	83330
-Dichodontium olympicum	83331
-Dichodontium pellucidum	83332
 Dichominum
 Dicladiella
 Dicladolejeunea
 Dicnemoloma
 Dicnemon
 Dicranella
-Dicranella heteromalla	83338
-Dicranella hilariana	83339
-Dicranella howei	83340
 Dicranites
 Dicranodon
 Dicranodontium
 Dicranolejeunea
 Dicranoloma
 Dicranoweisia
-Dicranoweisia cirrata	83355
-Dicranoweisia contermina	83356
 Dicranum
-Dicranum fuscescens	83364
 Dicrojeunea
+Dictydiaethalium
+Dictyoneuropsis
 Dictyoneurum
 Dictyopteris
-Dictyota binghamiae	94059
-Dictyota concrescens	94056
-Dictyota cribrosa	94058
-Dictyota stolonifera	94054
+Dictyota
+Diderma
+Didymium
 Didymodon
-Didymodon vinealis	83395
-Didymodon vinealis var. luridus	85195
-Didymodon vinealis var. vinealis	85196
 Diettertia
+Dievernia
 Dijeunea
 Dilaena
 Dilophus
+Dilsea
+Dimelaena
+Dimerella
 Dimerodontium
 Dimorphella
 Dimorphocladon
@@ -823,15 +838,27 @@ Diphyscium
 Diplasiolejeunea
 Diplocolea
 Diplocomium
+Diploicia
+Diplolaeviopsis
 Diplomitrion
 Diploneuron
 Diplophylleia
 Diplophyllum
+Diploschistella
+Diploschistes
 Diploscyphus
+Diploshistes
+Diplostiches
 Diplostichum
+Diplotemma
+Diplotomma
+Dipterosiphonia
+Dirina
+Dirinaria
 Discelium
 Discites
 Dissodon
+Distenopyrenis
 Distichium
 Distichophyllidium
 Distichophyllum
@@ -850,12 +877,14 @@ Dozyeae
 Drepano-hypnum
 Drepanocladoideae
 Drepanocladus
-Drepanocladus aduncus	83421
 Drepanolejeunea
+Drouetia
 Drucella
 Drummondia
 Dryptodon
 Dubyella
+Dudresnaya
+Dufourea
 Dumortiera
 Dumortieropsis
 Duriaea
@@ -864,10 +893,13 @@ Duvalia
 Duvaliella
 Eccremidium
 Echinocolea
+Echinodiscus
 Echinodium
 Echinogyna
 Echinolejeunea
 Echinomitrion
+Echinostelium
+Echinothecium
 Ectocarpus
 Ectojeunea
 Ectropodon
@@ -875,62 +907,79 @@ Ectropotheciella
 Ectropotheciopsis
 Ectropothecium
 Edentella
-Egregia	88143
-Egregia laevigata f. borealis	88688
+Edrudia
+Egregia
+Eisenia
+Elachista
+Elaphomyces
 Elharveya
 Elmeriobryum
 Elodium
 Encalypta
-Encalypta vulgaris	83438
 Encalyptaesporites
+Endarachne
+Endocarpiscum
+Endocarpon
+Endocladia
+Endococcus
+Endoderma
+Endophyton
 Endotrichella
 Endotrichellopsis
+Enerthenema
+Enteridium
+Enterographa
+Enteromorpha
+Entocladia
 Entodon
 Entodontella
 Entodontopsis
+Entophysalis
 Entosthodon
-Entosthodon attenuatus	83451
-Entosthodon bolanderi	
-Entosthodon bolanderi	83452
-Entosthodon californicus	
-Entosthodon californicus	83453
-Entosthodon drummondii	83454
-Entosthodon kochii	
-Entosthodon kochii	83455
-Entosthodon subnudus	95208
 Entosthymenium
 Eobruchia
 Eocalypogeia
 Eoisotachis
 Eoleucodon
 Eopleurozia
+Eoterfezia
 Eotrichocolea
+Ephebe
 Ephemerella
 Ephemeridium
 Ephemerisporites
 Ephemeropsis
 Ephemerum
 Epipterygium
-Epipterygium tozeri	83460
 Eremonotus
+Erioderma
 Eriodon
 Erpodiopsis
 Erpodium
+Erythrocladia
+Erythrocystis
 Erythrodontium
+Erythroglossum
 Erythrophyllastrum
 Erythrophyllopsis
+Erythrophyllum
+Erythrotrichia
+Esslingeriana
 Eucalyx
 Eucamptodon
 Eucamptodontopsis
 Eucatagonium
 Eucephalozia
+Eucheuma
 Eucladium
 Eulacophyllum
 Eulejeunea
 Eulophia
 Eumyurium
+Euopsis
 Euosmolejeunea
 Euptychium
+Eurhynchiastrum
 Eurhynchiella
 Eurhynchium
 Euriccia
@@ -942,104 +991,120 @@ Euzygodon
 Evansia
 Evansianthus
 Evansiolejeunea
+Evernia
 Exodictyon
 Exodokidium
 Exormotheca
 Exostratum
-#Fabaceae
 Fabroleskea
 Fabronia
 Fabronidium
 Fabroniella
 Falcijeunea
 Fallaciella
+Farlowia
 Fasciola
+Fauchea
+Faucheocolax
 Fauriella
 Fegatella
 Feldmannia
 Felipponea
 Felipponoideae
+Fellhanera
 Fifea
 Fimbraria
 Fiorinia
 Fissidens
-Fissidens crispus	83489
-Fissidens curvatus	83491
-Fissidens sublimbatus	83510
 Fissidentella
+Fissurina
+Fistulariella
 Flabellidium
 Flagellomnium
 Flagrijeunea
+Flavipunctelia
+Flavoparmelia
+Flavopunctelia
+Flavopuntelia
 Fleischerobryum
+Floccularia
 Floribundaria
 Florschuetziella
 Flowersia
 Folioceros
 Fontinalis
-Fontinalis	82717
-Fontinalis antipyretica	83517
-Fontinalis chrysophylla	83518
-Fontinalis dalecarlica	83519
-Fontinalis duriaei	83520
-Fontinalis filiformis	83521
-Fontinalis gigantea	83522
-Fontinalis howellii	83523
-Fontinalis hypnoides	83524
-Fontinalis mollis	83525
-Fontinalis neomexicana	83526
 Foreauella
 Forsstroemia
 Forsstroemioideae
+Fosliella
 Fossombronia
 Franciella
+Fredericqia
+Frisvollia
 Frullania
 Frullanoides
+Fryeella
+Fucus
 Fulfordianthus
 Fulfordiella
 Fulfordistria
+Fulgensia
+Fuligo
+Fulvophyton
 Funaria
-Funaria	82719
-Funaria calvescens	83528
-Funaria hygrometrica	83549
-Funaria microstoma	83529
-Funaria muhlenbergii	83530
 Funariella
 Funariophyscomitrella
+Fungus
 Funicularia
 Fuscocephaloziopsis
-Fusicladium 
+Fuscopannaria
+Fusicladium
 Fysonia
 Gackstroemia
 Gagea
+Galerina
 Gammiella
 Gamochaetium
 Gamoscyphus
 Ganguleea
 Garckea
+Gardneriella
 Garovaglia
 Garysmithia
+Gasparrinia
 Gasterogrimmia
+Gastroclonium
+Gautieria
+Gayella
+Gayralia
+Geastrum
 Geheebia
-Gelidium	88144
-Gelidium crinale f. luxurians	88687
+Gelatinopsis
+Gelidiella
+Gelidiocolax
+Gelidium
 Gemmabryum
 Geocalyx
 Geocarpus
+Geopora
 Geothallus
 Gerhildiella
 Gertrudiella
 Gessella
-Gigartina	88813
-Gigartina agardhii	88814
-Gigartina papillata	90001
-Gigartina papillata f. dissecta	91005
+Gigartina
 Gigaspermum
 Giraldiella
 Glaucodipsis
 Globulinella
+Gloeoheppia
+Gloiocladia
+Gloiopeltis
+Gloiophloea
+Gloiosiphonia
 Glossadelphus
 Glossophyllum
 Glyphocarpa
+Glypholecia
 Glyphomitrium
 Glyphothecium
 Goebeliella
@@ -1047,106 +1112,150 @@ Goebelobryum
 Gollania
 Gollaniella
 Gomankovia
+Gomontia
 Gongronia
 Gongylanthus
+Gonimophyllum
 Goniobryum
 Goniomitrium
+Goniotrichopsis
+Goniotrichum
+Gonium
+Gonohymenia
 Gottschea
 Gottschelia
-Gracilaria	88145
-Gracilaria papenfussii	88505
-Gracilaria robusta	88492
+Gracilaria
+Gracilariophila
+Gracilariopsis
 Gradsteinia
+Graphina
+Graphis
+Grateloupia
 Greeneothallus
 Grevilleanum
+Griffithsia
 Grimaldia
 Grimmia
-Grimmia laevigata	83553
 Grollea
 Groutiella
 Guembelia
 Guentheria
+Gyalecta
+Gyalidea
+Gyalideopsis
 Gymnanthe
 Gymnocephalus
 Gymnocolea
 Gymnocoleopsis
+Gymnogongrus
 Gymnomitrion
+Gymnopilus
+Gymnopus
 Gymnoscyphus
 Gymnostomiella
 Gymnostomum
+Gymnothamnion
+Gyrophora
 Gyrophyllum
 Gyrothyra
 Gyroweisia
 Habrodon
+Haematomma
 Haesselia
+Hafellia
 Hageniella
-Halosaccion	88815
-Halosaccion americanum	88816
+Halidrys
+Halochlorococcum
+Halorhipis
+Halosaccion
+Halymenia
 Hamatocaulis
 Hampeella
 Hampeohypnum
 Handeliobryum
+Hapalospongidion
 Haplocladium
 Haplodontium
+Haplogloia
 Haplohymenium
 Haplolejeunea
 Haplomitrium
 Hapterophycus
+Haraldiophyllum
 Hariotiella
 Harissona
 Harpalejeunea
 Harpanthus
+Harpidium
 Harpophyllum
 Harrisonia
+Hassea
 Hattoria
 Hattorianthus
 Hattoriella
 Hattoriolejeunea
+Hecatonema
 Hedwigia
 Hedwigidium
 Helicoblepharum
 Helicodontiadelphus
 Helicodontium
 Helicophyllum
+Helminthocladia
+Helminthora
 Helmsia
 Helodium
+Helvella
 Hemilejeunea
 Hemiragis
 Hemiseuma
 Hemiseumata
 Hemisynapsium
 Hemitheca
+Hemitrichia
 Henicodium
 Hennediella
-Hennediella heimii	83594
-Hennediella stanfordensis	83595
 Henoniella
+Hepatic
 Hepatica
 Hepaticaephyton
 Hepaticella
 Hepaticites
 Hepaticoides
 Hepatostolonophora
+Heppia
 Herbertus
 Herpetineuron
 Herpetium
 Herpocladium
+Herposiphonia
+Herpothallon
+Hertelidea
 Herverus
 Herzogianthus
 Herzogiaria
 Herzogiella
 Herzogobryum
+Hesperophycus
+Heterocarpon
+Heterochordaria
 Heterocladium
+Heteroderma
+Heterodermia
 Heterodon
 Heterolejeunea
 Heterophyllium
+Heteroplacidium
 Heteroscyphus
+Heterosiphonia
+Heterothecium
 Hildebrandtiella
 Hildenbrandia
 Hilpertia
 Himantocladium
 Hincksia
 Hodgsonia
+Hollenbergia
 Hollia
 Holoblepharum
 Holodontium
@@ -1158,19 +1267,7 @@ Homaliodendron
 Homalolejeunea
 Homalotheciella
 Homalothecium
-Homalothecium	82743
-Homalothecium aeneum	83614
-Homalothecium arenarium	83615
-Homalothecium aureum	83616
-Homalothecium decurrentifolium	85239
-Homalothecium fulgescens	83617
-Homalothecium lutescens	83618
-Homalothecium nevadense	83619
-Homalothecium nuttallii	83620
-Homalothecium nuttallii f. haematidens	85245
-Homalothecium philippeanum	83621
-Homalothecium pinnatifidum	83622
-Homalothecium sericeum	83623
+Homodium
 Homomallium
 Hondaella
 Hookeria
@@ -1178,15 +1275,25 @@ Hookeriopsis
 Hookeropsis
 Horikawaea
 Horikawaella
+Hormiscia
 Horridohypnum
+Hubbsia
 Husnotiella
+Hydnobolites
+Hydnotryopsis
+Hydroclathrus
 Hydrocryphaea
 Hydrogonium
 Hydrogrimmia
+Hydrolithon
 Hydropogon
 Hydropogonella
+Hydropunctaria
+Hydrothyria
+Hyella
 Hygroamblystegium
 Hygrobiella
+Hygrocybe
 Hygrodicranum
 Hygrohypnidium
 Hygrohypnoideae
@@ -1194,15 +1301,18 @@ Hygrohypnum
 Hygrolejeunea
 Hygrolembidium
 Hygrophila
+Hygrophorus
 Hylocomiastrum
 Hylocomiopsis
 Hylocomium
-Hymenena	88146
-Hymenena kylinii	88503
-Hymenena smithii	88467
+Hymenelia
+Hymenena
+Hymenobolina
+Hymenobolus
 Hymenocleiston
 Hymenodon
 Hymenodontopsis
+Hymenogaster
 Hymenoloma
 Hymenolomopsis
 Hymenophyton
@@ -1216,6 +1326,8 @@ Hyophila
 Hyophiladelphus
 Hyophilopsis
 Hypenantron
+Hyperphyscia
+Hypnea
 Hypnella
 Hypnites
 Hypnobartlettia
@@ -1225,19 +1337,37 @@ Hypnofabronia
 Hypnopsis
 Hypnum
 Hypoblyttia
+Hypocenomyce
 Hypodontium
 Hypogastranthus
+Hypoglossum
+Hypogymnia
 Hypoisotachis
 Hypophyllum
 Hypopterygiopsis
 Hypopterygium
+Hypotrachyna
+Icmadophila
 Ignatievia
+Ilea
 Illecebraria
+Imbribryum
+Imshaugia
+Incertae
 Indusiella
 Inflatolejeunea
+Ingvariella
+Inocybe
 Inouethuidium
 Intia
+Intralichen
+Ionaspis
 Irelandia
+Iridaea
+Iridophycus
+Irtugovia
+Isabbottia
+Isabottia
 Ischyrodon
 Ishibaea
 Isocladiella
@@ -1252,15 +1382,7 @@ Isotachis
 Isotheciadelphus
 Isotheciopsis
 Isothecium
-Isothecium	82760
-Isothecium cardotii	83681
-Isothecium cristatum	83682
-Isothecium holtii	83683
-Isothecium myosuroides	83684
-Isothecium myurum	83685
-Isothecium obtusatulum	83686
-Isothecium spiculiferum	83687
-Isothecium stoloniferum	83688
+Isthmia
 Itatiella
 Iwatsukia
 Iwatsukiella
@@ -1268,18 +1390,29 @@ Jackiella
 Jaegerina
 Jaegerinopsis
 Jaffueliobryum
+Jamesiella
 Jamesoniella
+Janczewskia
+Jania
+Jantinella
+Japewia
 Jensenia
+Joculator
+Johansenia
 Jonesiobryum
 Jovetastella
 Jubula
 Jubulopsis
+Julella
 Jungermannia
 Jungermanniopsis
 Jungermannites
 Junjagia
 Juratzkaea
 Juratzkaeella
+Kaernefeltia
+Kallymenia
+Kallymeniopsis
 Kantia
 Kantius
 Kiaeria
@@ -1290,39 +1423,61 @@ Kingiolejeunea
 Kisophyllum
 Kleioweisiopsis
 Koehlreutera
+Koerberia
 Koponenia
 Kormickia
+Kornmannia
 Kosjunia
 Krauseella
 Krunodiplophyllum
+Kuckuckia
 Kurohimehypnum
 Kurzia
 Kymatocalyx
 Kymatolejeunea
-Laminaria	88147
-Laminaria bullata	88417
-Laminaria cordata	88414
-Laminaria ephemera	88418
-Laminaria farlowii	88416
-Laminaria personata	88415
+Lactarius
+Laminaria
 Laminariocolax
+Lamproderma
+Lasallia
 Laticaulina
+Laurencia
+Leachiella
+Leathesia
+Lecanactiomyces
+Lecanactiomyces:
+Lecanactis
+Lecania
+Lecanographa
+Lecanogtrapha
+Lecanora
+Lecidea
+Lecidella
+Lecidoma
+Leciographa
+Leimonis
 Leiocolea
 Leiodontium
 Leiolejeunea
 Leiomela
 Leiomitra
 Leiomitrium
+Leiophloea
 Leioscyphus
 Leiosporoceros
 Leiostoma
 Leiotheca
 Lejeunea
 Lejeunia
+Lemanea
 Lembidium
 Lembophyllum
+Lempholemma
+Lenzites
+Leocarpus
 Leperoma
 Lepicolea
+Lepidoderma
 Lepidogyna
 Lepidolaena
 Lepidolejeunea
@@ -1330,27 +1485,35 @@ Lepidopilidium
 Lepidopilum
 Lepidozia
 Lepidoziopsis
+Lepiota
+Lepraria
+Leprocaulon
+Leproloma
 Leptangium
 Leptobarbula
 Leptobryum
-Leptobryum pyriforme	83715
+Leptochidium
+Leptocladia
+Leptocladia/Farlowia
 Leptocladiella
 Leptocladium
 Leptocolea
 Leptodictyum
-Leptodictyum	82769
-Leptodictyum humile	83716
-Leptodictyum riparium	83717
 Leptodon
 Leptodontiella
 Leptodontiopsis
 Leptodontium
+Leptofauchea
+Leptogium
+Leptographium
 Leptohymenium
 Leptoischyrodon
 Leptolejeunea
 Leptophascum
 Leptophyllopsis
+Leptophytum
 Leptopterigynandrum
+Leptorhaphis
 Leptorrhyncho-Hypnum
 Leptoscyphopsis
 Leptoscyphus
@@ -1361,15 +1524,19 @@ Leptotrichum
 Lepyrodon
 Lepyrodontopsis
 Leratia
+Leratiomyces
 Lescuraea
 Leskea
-Leskea polycarpa	83744
 Leskeadelphus
 Leskeella
 Leskeodon
 Leskeodontopsis
 Leskeopsis
+Lessoniopsis
+Letharia
 Lethocolea
+Letterstedtia
+Leucoagaricus
 Leucobryum
 Leucodon
 Leucodontella
@@ -1383,9 +1550,21 @@ Leucophanella
 Leucophanes
 Leucosarmentum
 Levierella
-Lichenastrum
+Levringiella
+Liagora
+Licea
 Lichen
+Lichenastrum
+Lichenochora
+Lichenoconium
+Lichenodiplis
 Lichenoides
+Lichenomphalia
+Lichenostigma
+Lichenothelia
+Lichens
+Lichinale
+Lichinella
 Ligulina
 Limbella
 Limneria
@@ -1402,11 +1581,21 @@ Liopilus
 Lippius
 Lippiusa
 Lithophyllum
+Lithophytum
+Lithothamnion
 Lithothrix
+Liverwort
+Llimonaea
+Llimoniella
+Lobaria
+Lobocolax
+Lobothallia
 Loeskeobryum
 Loeskypnum
 Loiseaubryum
+Lomentaria
 Lomoporotrichum
+Lopadium
 Lophidium
 Lophiodon
 Lopho-Lejeunea
@@ -1414,22 +1603,30 @@ Lophochaete
 Lophocolea
 Lopholejeunea
 Lophonardia
+Lophosiphonia
 Lophozia
 Lophoziella
 Lopidium
+Loranthophycus
 Lorentzia
 Lorentziella
+Loxosporopsis
 Luisierella
 Lunularia
 Luteolejeunea
+Lycogala
 Lydiaea
 Lyellia
+Lyngbya
+Lysurus
+Macbrideola
 Macgregorella
 Macouniella
 Macrauchenangium
 Macrauchenium
 Macrocolura
 Macrocoma
+Macrocystis
 Macrodictyum
 Macrodiplophyllum
 Macrodon
@@ -1453,8 +1650,11 @@ Makinoa
 Mamillariella
 Mandoniella
 Mannia
+Marasmius
+Marchandiomyces
 Marchantia
 Marchantiolites
+Marchantiophyta
 Marchantiopsis
 Marchantites
 Marchasta
@@ -1462,6 +1662,8 @@ Marchastra
 Marchesinia
 Marchesinius
 Marchesinus
+Maripelta
+Maronea
 Marsilia
 Marsupella
 Marsupellopsis
@@ -1469,6 +1671,7 @@ Marsupia
 Marsupidium
 Martinellia
 Martinellius
+Massalongia
 Massalongoa
 Massula
 Massularia
@@ -1477,34 +1680,47 @@ Mastigolejeunea
 Mastigopelma
 Mastigophora
 Mastigopsis
+Mastocarpus
 Mastopoma
 Matsumuraea
 Maurocenia
 Maurocenius
-Mazzaella 
+Mazzaella
 Meesia
-Meesia	82791
-Meesia longiseta	83799
-Meesia triquetra	83800
-Meesia uliginosa	83801
 Megaceros
 Megalangium
+Megalaria
 Megalembidium
 Megalostylium
+Megaspora
+Meiodiscus
 Meiotheciopsis
 Meiothecium
 Meiotrichum
-Meiotrichum lyallii	83802
+Melampsora
+Melanelia
+Melanelixia
+Melanohalea
+Melanoleuca
+Melanosiphon
+Melanthalia
+Melaspilea
+Melobesia
 Melophyllum
 Membranoptera
+Menegazzia
 Merceria
 Merceya
 Merceyopsis
+Meredithia
+Merismatium
 Merkia
 Merrilliobryum
 Mesochaete
+Mesogloia
 Mesonodon
 Mesophylla
+Mesophyllum
 Mesoptychia
 Mesotoideae
 Mesotus
@@ -1513,8 +1729,10 @@ Metacephalozia
 Metadistichophyllum
 Metahygrobiella
 Metalejeunea
+Metamelanea
 Metaneckera
 Metarhacocarpus
+Metatrichia
 Meteoridium
 Meteoriella
 Meteoriopsis
@@ -1525,29 +1743,41 @@ Metzgeriites
 Metzgeriopsis
 Metzgeriothallus
 Metzleria
+Micarea
 Michauxia
 Micralsopsis
 Micrisophylla
 Micro-Lejeunea
 Microbryum
+Microcalicium
 Microcampylopus
+Microcladia
+Microcoleus
 Microcrossidium
 Microctenidium
 Microdendron
 Microdus
+Microglaena
 Microlejeunea
 Microlepidozia
 Micromitrium
+Microphiale
 Microphilonotis
 Micropoma
 Micropterygium
 Microtheciella
+Microthelia
 Microthuidium
 Miehea
 Mielichhobryum
 Mielichhoferia
 Mildeella
 Mindal
+Minium
+Minksia
+Minutoexcipula
+Miriquidia
+Miriquidica
 Mironia
 Mitrapoma
 Mitrobryum
@@ -1565,37 +1795,60 @@ Mnioloma
 Mniomalia
 Mniopsis
 Mnium
-Mnium arizonicum	83819
+Mobergia
+Moelleropsis
 Moenkemeyera
 Moerckia
 Molendoa
-Molendoa sendtneriana	83828
 Mollia
 Monocarpus
 Monoclea
 Monocranum
 Monoschisma
 Monosolenium
+Monostroma
+Montagnea
+Montanelia
 Moritzia
 Moseniella
+Moss
+Mucilago
+Muellerella
 Muelleriella
 Muellerobryum
+Multiclavula
+Murrayellopsis
 Musciphyton
 Muscites
 Muscoflorschuetzia
 Muscoherzogia
+Mutimo
+Mycobilimbia
+Mycoblastus
+Mycocalicium
+Mycomicrothelia
+Mycoporellum
+Mycoporopsis
+Mycoporum
+Myelophycus
 Mylia
 Mylius
+Myriactula
 Myrinia
 Myriocolea
 Myriocoleopsis
+Myriogramme
+Myrionema
 Myriorrhynchus
+Myriospora
 Mytilopsis
 Myurella
 Myuriopsis
 Myurium
 Myuroclada
 Nadeaudia
+Naematoloma
+Naetrocymbe
 Naiadita
 Nanobryum
 Nanomitriella
@@ -1611,6 +1864,8 @@ Neckeropsis
 Neesia
 Neesiella
 Neesioscyphus
+Nemalion
+Nemastoma
 Nematocladia
 Nemoursia
 Neobarbella
@@ -1619,12 +1874,17 @@ Neobryum
 Neocalliergon
 Neocardotia
 Neodicladiella
+Neodilsea
 Neodolichomitra
+Neofuscelia
+Neogastroclonium
+Neogoniolithon
 Neogrollea
 Neohattoria
 Neohodgsonia
 Neohyophila
 Neohypnella
+Neolamya
 Neolepidozia
 Neolescuraea
 Neolindbergia
@@ -1633,19 +1893,38 @@ Neomeesia
 Neonoguchia
 Neopogonatum
 Neoprasanthus
+Neoptilota
 Neorhodomela
 Neorutenbergia
 Neosharpiella
+Neosiphonia
 Neotrichocolea
 Nephelolejeunea
+Nephroma
+Nephromium
+Nephromopsis
 Nereocystis
+Nesolechia
 Nesolejeunea
 Neurolejeunea
 Neuroloma
+Niebla
+Nienburgia
+Niesslia
+Nigropuncta
+Niphotrichum
 Nipponolejeunea
+Nitella
+Nitophyllum
+Nivatogastrium
 Nobregaea
+Nodobryoria
+Nogopterium
 Noguchia
 Noguchiodendron
+Normandina
+Norrissia
+Nostoc
 Notarisia
 Noteroclada
 Notholejeunea
@@ -1656,28 +1935,41 @@ Notothylacites
 Notothylas
 Nowellia
 Nyholmiella
+Obryzum
+Ocellularia
 Ochrobryum
+Ochrolechia
 Ochyraea
 Octoblepharum
 Octodiceras
 Octogonella
 Octokepos
+Odonthalia
 Odontolejeunea
 Odontoschisma
 Odontoseries
 Oedicladium
 Oedipodiella
 Oedipodium
-Oedogonium	88148
+Oedogonium
 Okamuraea
+Oligonema
 Oligotrichum
 Omalia
 Omphalanthus
+Omphalaria
+Omphalina
+Omphalodiscus
 Omphalolejeunea
+Omphalotus
 Oncophorus
-Oophila	88149
+Oophila
 Opeca
+Opegrapha
+Ophidocladus
+Ophioparma
 Ophthalmolejeunea
+Opuntiella
 Oreas
 Oreolejeunea
 Oreoweisia
@@ -1685,11 +1977,8 @@ Orontobryum
 Orthoamblystegium
 Orthocaulis
 Orthodicranum
-Orthodicranum tauricum	83857
 Orthodon
 Orthodontium
-Orthodontium gracile	83859
-Orthodontium pellucens	83863
 Orthodontopsis
 Ortholimnobium
 Orthomitrium
@@ -1709,52 +1998,9 @@ Orthotheciadelphus
 Orthothecium
 Orthothuidium
 Orthotrichum
-Orthotrichum	82822
-Orthotrichum aequatoreum	83871
-Orthotrichum affine	83872
-Orthotrichum alpestre	83873
-Orthotrichum anomalum	83874
-Orthotrichum bartramii	83875
-Orthotrichum bolanderi	83876
-Orthotrichum consimile	83877
-Orthotrichum cupulatum	83878
-Orthotrichum diaphanum	83879
-Orthotrichum elegans	83880
-Orthotrichum euryphyllum	83881
-Orthotrichum flowersii	83882
-Orthotrichum haapasaariae	85247
-Orthotrichum hallii	83883
-Orthotrichum holzingeri	83884
-Orthotrichum laevigatum	83885
-Orthotrichum lyellii	83886
-Orthotrichum macounii	83887
-Orthotrichum microcarpum	83888
-Orthotrichum obtusifolium	83889
-Orthotrichum ohioense	83890
-Orthotrichum pallens	83891
-Orthotrichum papillosum	83892
-Orthotrichum pellucidum	83893
-Orthotrichum praemorsum	83894
-Orthotrichum pulchellum	83895
-Orthotrichum pumilum	83896
-Orthotrichum pusillum	83897
-Orthotrichum pycnophyllum	83898
-Orthotrichum pylaisii	83899
-Orthotrichum rivulare	83900
-Orthotrichum rupestre	83901
-Orthotrichum shevockii	83902
-Orthotrichum sordidum	83903
-Orthotrichum speciosum	83904
-Orthotrichum spjutii	83905
-Orthotrichum stellatum	83906
-Orthotrichum striatum	83907
-Orthotrichum subrupestre	83908
-Orthotrichum tasmanicum	83909
-Orthotrichum tenellum	83910
-Orthotrichum texanum	83911
-Orthotrichum underwoodii	85068
 Osculatia
 Osmojeunea
+Osmundea
 Osmundula
 Osterwaldiella
 Oticodium
@@ -1765,99 +2011,147 @@ Oxymitra
 Oxyrrhynchium
 Oxystegus
 Ozobryum
+Ozophora
+Pachydictyon
 Pachyfissidens
 Pachyglossa
+Pachylepyrium
+Pachymeniopsis
 Pachyneuropsis
 Pachyneurum
+Pachyospora
+Pachyphloeus
 Pachyschistochila
 Palaeohypnum
 Palaeosphagnum
 Palaeothecium
 Palamocladium
 Paleohepatica
+Palisada
 Palisadula
 Pallavicinia
 Pallaviciniites
 Pallavicinius
 Palmaria
+Palmophyllum
 Paludella
 Palustriella
 Pancovia
 Pandulfia
 Pandulphinius
+Pannaria
+Pannularia
 Papa
 Papillaria
 Papillidiopsis
 Paracromastigum
+Paralemanea
 Paraleptodontium
 Paraleucobryum
 Paramyurium
 Paranapiacabaea
 Pararhacocarpus
+Paraschismatomma
 Paraschistochila
 Parathamnium
 Parentia
 Parisia
+Parmelia
+Parmeliella
+Parmelina
+Parmeliopsis
+Parmotrema
 Patarola
+Peccania
 Pedinolejeunea
 Pedinophyllopsis
 Pedinophyllum
 Pelagophycus
 Pelekium
 Pellia
+Peltidea
+Peltigera
 Peltolejeunea
 Peltolepis
-Pelvetia	88150
-Pelvetia fastigiata	88507
-Pelvetia fastigiata f. limitata	88694
+Peltosphaeria
+Peltula
+Pelvetia
 Pelvetiopsis
 Pendulothecium
 Pentastichella
 Penzigiella
+Percursaria
 Perdusenia
+Perichaena
 Perilejeunea
 Peromnion
+Peronospora
 Perssonia
 Perssoniella
+Pertusaria
+Petalonia
 Petalophyllum
-Petrocelis	88818
-Petrocelis franciscana	88820
+Petrocelis
+Petroglossum
 Petrospongium
+Petula
 Peyssonnelia
 Peyssonneliopsis
+Pezizella
+Phacographa
+Phacopsis
+Phacothecium
+Phaeocalicium
 Phaeoceros
+Phaeographis
 Phaeolejeunea
+Phaeophyceae
+Phaeophyscia
+Phaeopyxis
+Phaeorrhiza
+Phaeosporobolus
 Phaeostrophion
+Phaeotrema
 Pharomitrium
 Phasconica
 Phascopsis
 Phascum
-Phascum cuspidatum	83929
 Philibertiella
 Philocrya
 Philonotis
 Philonotula
 Philophyllum
 Philoscia
+Phloeopeccania
+Phlopeccania
+Phlyctis
+Pholiota
+Phoma
+Phormidium
 Phragmatocolea
 Phragmicoma
 Phragmilejeunea
+Phycodrys
 Phycolepidozia
+Phylliscum
 Phyllodon
 Phyllodrepanium
 Phyllogonium
+Phyllophora
+Phyllopsora
+Phyllospora
 Phyllothallia
+Phymatoceros
+Phymatolithon
 Physantholejeunea
+Physarum
+Physcia
+Physciella
 Physcomitrella
 Physcomitrellopsis
 Physcomitridium
 Physcomitrium
-Physcomitrium californicum	
-Physcomitrium californicum	83950
-Physcomitrium collenchymatum	83951
-Physcomitrium hookeri	
-Physcomitrium hookeri	83952
-Physcomitrium pyriforme	83953
+Physconia
 Physedium
 Physiotium
 Physocolea
@@ -1865,8 +2159,11 @@ Physodictyon
 Pictolejeunea
 Pictus
 Pigafettoa
+Pikea
 Pilaisaea
 Piloecium
+Pilophoron
+Pilophorus
 Pilopogon
 Pilopogonella
 Piloseriopus
@@ -1877,7 +2174,16 @@ Pilotrichopsis
 Pilotrichum
 Pinnatella
 Pireella
+Placidiopsis
+Placidium
+Placocarpus
+Placodium
+Placolecania
 Placolejeunea
+Placopsis
+Placopyrenium
+Placynthiella
+Placynthium
 Plagiobryoides
 Plagiobryum
 Plagiochasma
@@ -1894,11 +2200,13 @@ Plagiotheciopsis
 Plagiothecium
 Planistromella
 Plasteurhynchium
+Platismatia
+Platoma
 Platybryopsis
 Platycaulis
 Platycoaspis
 Platydictya
-Platydictya jungermannioides	83987
+Platygrapha
 Platygyriella
 Platygyrium
 Platyhypnidium
@@ -1906,14 +2214,19 @@ Platyhypnum
 Platylejeunea
 Platylomella
 Platyneuron
+Platysiphonia
+Platysma
+Platythamnion
 Plaubelia
+Plectocarpon
 Plectocolea
+Pleonosporium
+Pleopsidium
 Pleuranthe
 Pleuridiella
 Pleuriditrichum
 Pleuridium
-Pleuridium acuminatum	83994
-Pleuridium subulatum	83996
+Pleurocapsa
 Pleurochaete
 Pleuroclada
 Pleurocladopsis
@@ -1928,49 +2241,57 @@ Pleuroziopsis
 Pleurozium
 Pleurozygodon
 Pleurozygodontopsis
+Plocamiocolax
+Plocamium
 Pluvianthus
+Pneophyllum
 Pocsiella
 Podanthe
+Podaxis
 Podomitrium
 Podperaea
 Poecilophyllum
 Poeltia
 Pogonatum
+Pogonophorella
 Pohlia
-Pohlia bolanderi	84010
-Pohlia cruda	84015
-Pohlia pacifica	84027
-Pohlia wahlenbergii	84030
 Polla
+Polyblastia
+Polyblastiopsis
+Polycauliona
+Polychidium
+Polycoccum
+Polycoryne
 Polymerodon
+Polyneura
+Polyneurella
+Polyneuropsis
+Polyopes
 Polyotus
 Polypodiopsis
+Polyporolithon
+Polysiphonia
+Polysporina
 Polyssaievia
 Polytrichadelphus
 Polytrichastrum
-Polytrichastrum alpinum	84032
 Polytrichites
 Polytrichum
-Polytrichum	82854
-Polytrichum alpestre	84037
-Polytrichum commune	84038
-Polytrichum formosum	84039
-Polytrichum juniperinum	84040
-Polytrichum longisetum	84041
-Polytrichum ohioense	84042
-Polytrichum pallidisetum	84043
-Polytrichum piliferum	84044
-Polytrichum septentrionale	84045
-Polytrichum sexangulare	84046
-Polytrichum sphaerothecium	84047
-Polytrichum strictum	84048
 Porella
+Porina
+Porocyphus
+Porolithon
 Porothamnium
 Porotrichella
 Porotrichodendron
 Porotrichopsis
 Porotrichum
+Porphyra
+Porphyrella
+Porphyridium
 Porphyropsis
+Porphyrostromium
+Porpidia
 Postelsia
 Potamium
 Potamolejeunea
@@ -1979,27 +2300,33 @@ Pottiella
 Powellia
 Prasanthus
 Prasiola
+Predaea
 Preissia
 Preissites
 Pringleella
 Prionidium
-Prionitis	89362
-Prionitis lyallii	89949
-Prionitis lyallii f. gladiata	91004
+Prionitis
 Prionocolea
 Prionodon
 Prionolejeunea
 Prionolobus
+Protoblastenia
 Protocephalozia
 Protocephaloziella
 Protolophozia
 Protomarsupella
 Protoochyraea
+Protopannaria
+Protoparmelia
+Protoparmeliopsis
 Protosphagnum
 Protosyzygiella
+Prototrichia
 Pseudaloina
 Pseudatrichum
+Pseudephebe
 Pseudephemerum
+Pseudevernia
 Pseudisothecium
 Pseudo
 Pseudobarbella
@@ -2010,9 +2337,11 @@ Pseudocephalozia
 Pseudocephaloziella
 Pseudocrossidium
 Pseudocryphaea
+Pseudocyphellaria
 Pseudodimerodontium
 Pseudodistichium
 Pseudoditrichum
+Pseudogloiophloea
 Pseudohygrohypnum
 Pseudohyophila
 Pseudohypnella
@@ -2020,16 +2349,21 @@ Pseudolepicolea
 Pseudoleskea
 Pseudoleskeella
 Pseudoleskeopsis
+Pseudolithoderma
 Pseudolithophyllum
 Pseudolophocolea
 Pseudomarsupidium
 Pseudoneura
+Pseudoparmelia
 Pseudopiloecium
 Pseudopilotrichum
 Pseudopleuropus
 Pseudopohlia
+Pseudopringsheimia
 Pseudopterobryum
 Pseudoracelopus
+Pseudosagedia
+Pseudoscinaia
 Pseudoscleropodium
 Pseudospiridentopsis
 Pseudostereodon
@@ -2040,7 +2374,14 @@ Pseudotimmiella
 Pseudotrachypus
 Pseudulvella
 Psiloclada
+Psilocybe
+Psilolechia
 Psilopilum
+Psora
+Psorinia
+Psoroma
+Psorotichia
+Psorula
 Pterigophyllum
 Pterigynandrum
 Pterobryella
@@ -2057,30 +2398,39 @@ Pterogonium
 Pteropsiella
 Pteroriccia
 Pterosiphonia
+Pterosiphoniella
+Pterothamnion
+Pterygiopsis
 Pterygoneurum
+Pterygophora
 Pterygophyllum
 Ptilidium
 Ptilium
-Ptilota	88151
-Ptilothamnionopsis 
+Ptilota
+Ptilothamnion
+Ptilothamnionopsis
 Ptychanthus
 Ptychocoleus
 Ptychodium
+Ptychographa
 Ptycholejeunea
 Ptychomitriopsis
 Ptychomitrium
 Ptychomnion
 Ptychostomum
+Puccinia
 Pugetia
 Puiggaria
 Puiggariopsis
 Pulchrinodus
 Pulvinella
 Punctaria
+Punctelia
 Pungentella
 Pursellia
 Pycnapophyscium
 Pycnolejeunea
+Pycnora
 Pycnoscenus
 Pylaiella
 Pylaisiadelpha
@@ -2089,30 +2439,44 @@ Pylaisiobryum
 Pylaisiopsis
 Pyramidula
 Pyramitrium
+Pyrenocollema
+Pyrenodesmia
+Pyrenopsis
+Pyrenula
 Pyromitrium
 Pyropia
 Pyrrhobryum
+Pyrrhospora
+Pyxine
 Quaesticula
 Quathlamba
 Racelopodopsis
 Racelopus
 Racomitrium
 Racopilum
+Radaisia
 Radiania
 Radula
 Radulina
 Raineria
+Ralfsia
+Ramalina
+Ramboldia
+Ramonia
 Rauiella
 Rebouillia
 Reboulia
 Rechingerella
+Reconditella
 Rectolejeunea
 Regmatodon
 Regredicaulis
 Rehmanniella
 Reimersia
+Reinkella
 Remyella
 Renauldia
+Reticularia
 Reticulobotrys
 Retidens
 Rhabdodontium
@@ -2131,31 +2495,38 @@ Rhaphidorrhynchium
 Rhaphidostichum
 Rhexophyllum
 Rhizinigerites
+Rhizocarpon
 Rhizocaulia
+Rhizoclonium
 Rhizofabronia
 Rhizogium
 Rhizogonium
 Rhizohypnella
 Rhizomnium
-Rhizomnium glabrescens	84154
-Rhizomnium pseudopunctatum	84158
 Rhizopelma
+Rhizoplaca
+Rhizopogon
 Rhodo-bryum
 Rhodobryum
-Rhodochorton	88152
-Rhodochorton arcuatum	88217
-Rhodochorton densum	88218
-Rhodochorton implicatum	88215
-Rhodochorton porphyrae	88216
-Rhodochorton vagum	88214
+Rhodochorton
+Rhodocollybia
+Rhodocybe
+Rhododermis
+Rhododiscus
+Rhododrewia 
 Rhodoglossum
 Rhodomela
+Rhodonematella
 Rhodophysema
+Rhodophyta
 Rhodoplagiochila
 Rhodoptilum
+Rhodosiphonia
+Rhodothamniella
 Rhodymenia
-Rhodymenia	88153
+Rhodymeniocolax
 Rhopalanthus
+Rhymbocarpus
 Rhynchocarpidium
 Rhynchohypnum
 Rhynchostegiella
@@ -2165,6 +2536,7 @@ Rhytidiadelphus
 Rhytidiopsis
 Rhytidium
 Rhyzophyllum
+Ricardia
 Riccardia
 Riccardius
 Riccia
@@ -2180,37 +2552,52 @@ Riella
 Rigodiadelphus
 Rigodiopsis
 Rigodium
+Rimelia
+Rimularia
+Rinodina
+Roccella
+Roccellina
 Roellia
-Roellia roellii	84175
 Roemeria
 Roivainenia
+Romjularia
+Roselliniella
+Rosenvingea
 Rosenvingiella
+Rosulabryum
 Rozea
+Ruhlandiella
 Ruizanthus
 Rupinia
 Ruppina
 Rutenbergia
 Ruttnerella
+Saccharina
 Saccobasis
 Saccogyna
 Saccogynidium
+Sacrogyne
 Saelania
 Sagenotortula
+Sahlingia
 Sainsburia
 Saitoella
 Sakuraia
 Salairia
+Salishia
 Salviatus
 Sandea
 Sandeothallus
 Sanionia
-Sanionia uncinata	84178
 Sarcocyphos
 Sarcodiotheca
+Sarcogyne
 Sarcomitrium
 Sarconeurum
-Sarcophyllis	88154
-Sarcophyllis californica f. pygmea	88683
+Sarcophyllis
+Sarcopyrenia
+Sarcothalia
+Sarea
 Sargassum
 Sarmentypnum
 Sasaokaea
@@ -2218,12 +2605,15 @@ Sauchia
 Sauloma
 Sauteria
 Saviczia
+Saxomyces
 Scabridens
+Scagelia
 Scalius
 Scaliusa
 Scapania
 Scapaniella
 Scaphophyllum
+Schaereria
 Schiffneria
 Schiffnerina
 Schiffneriolejeunea
@@ -2231,6 +2621,7 @@ Schimmelmannia
 Schimperella
 Schimperobryum
 Schisma
+Schismatomma
 Schistidium
 Schistocalyx
 Schistochila
@@ -2240,6 +2631,9 @@ Schistomitrium
 Schistostega
 Schizolepidella
 Schizomitrium
+Schizopelte
+Schizoplete
+Schizothrix
 Schizymenia
 Schizymenium
 Schliephackea
@@ -2265,27 +2659,29 @@ Sciaromiella
 Sciaromiopsis
 Sciaromium
 Scinaia
-Scinaia	88155
 Sciuro-hypnum
 Sciuroleskea
+Sclerococcum
+Scleroderma
 Sclerodontium
 Sclerohypnum
 Scleromnium
+Sclerophora
+Sclerophyton
 Scleropodium
-Scleropodium	82910
-Scleropodium californicum	84211
-Scleropodium cespitans	84212
-Scleropodium colpophyllum	84213
-Scleropodium julaceum	84330
-Scleropodium obtusifolium	84215
-Scleropodium touretii	84216
+Scoliciosporum
 Scopelophila
 Scopulina
 Scorpidium
 Scorpiurium
 Scouleria
+Scutellinia
+Scutellospora
+Scytonema
 Scytosiphon
 Sedgwickia
+Segestria
+Seirophora
 Selenia
 Seligeria
 Sematophyllum
@@ -2298,32 +2694,48 @@ Serraticardia
 Serrijeunea
 Servicktia
 Sewardiella
+Shanorella
 Sharpiella
 Sigmatella
+Sigridea
+Silobia
+Silvetia
 Simodon
 Simplicidens
 Sindonisce
 Sinocalliergon
 Sinskea
-Siphonocladus	88156
+Siphonocladus
 Siphonolejeunea
+Siphula
+Sirodotia
 Skisophyllum
 Skottsbergia
+Skyttea
+Skyttella
 Smithora
 Solenochaetium
+Solenopsora
 Solenostoma
 Solmsiella
+Solorina
 Soranthera
 Sorapilla
 Sorella
 Southbya
+Sparlingia
+Sparria
 Spathysia
+Spermothamnion
 Sphacelaria
+Sphaerellothecium
 Sphaerocarpos
 Sphaerolejeunea
+Sphaerophorus
 Sphaerosporoceros
 Sphaerotheciella
 Sphaerothecium
+Sphaerulina
 Sphagnites
 Sphagnoecetis
 Sphagnophyllites
@@ -2331,6 +2743,8 @@ Sphagnum
 Sphagnumsporites
 Sphenolobopsis
 Sphenolobus
+Sphinctrina
+Spilonema
 Spinella
 Spiridens
 Spiridentopsis
@@ -2338,8 +2752,10 @@ Spiromuscus
 Spirula
 Splachnobryum
 Splachnum
+Spongites
 Spongomorpha
 Spongonema
+Sporastatia
 Sporledera
 Sporochnus
 Sporogonites
@@ -2348,10 +2764,12 @@ Spruceella
 Spruceina
 Sprucella
 Spyridia
+Squamarina
 Squamidium
 Stableria
 Stanekia
 Staurophora
+Staurothele
 Steerea
 Steerecleus
 Steereella
@@ -2362,11 +2780,15 @@ Steereomitrium
 Steetzia
 Stegonia
 Stellariomnium
+Stemonitis
+Stemonitopsis
 Stenocarpidiopsis
 Stenocarpidium
+Stenocybe
 Stenodesmus
 Stenodictyon
 Stenodyction
+Stenogramma
 Stenolejeunea
 Stenorrhipis
 Stenotheciopsis
@@ -2379,17 +2801,23 @@ Stephanostoma
 Stephensoniella
 Steppomitra
 Stereisporites
+Stereocaulon
 Stereodontopsis
 Stereohypnum
 Stereophyllum
 Steyermarkiella
+Sticta
+Stictina
 Stictolejeunea
+Stictyosiphon
+Stigmidium
 Stirtonia
 Stolonivector
 Stolonophora
 Stonea
 Stoneobryum
 Straminergon
+Strangospora
 Streblonema
 Streblopilum
 Streblotrichum
@@ -2399,45 +2827,56 @@ Streptocarpus
 Streptopogon
 Streptotrichum
 Striatothallus
+Strigula
+Strobilurus
+Stromatella
+Stromatocarpus
 Strombulidens
+Stropharia
 Strozzia
 Strozzius
 Struckia
 Stylolejeunea
+Stylonema
 Stylostegium
 Suaresia
+Sulcaria
 Swartzia
 Sykorea
 Symbiezidium
 Symblepharis
+Symphyocladia
 Symphyodon
 Symphyogyna
 Symphyogynopsis
 Symphyomitra
 Symphysodon
 Symphysodontella
-Synechococcus	88157
+Symploca
+Synalissa
+Synechoblastus
+Synechococcus
 Synhymenium
 Synodontella
 Synodontia
 Synthetodontium
 Syntrichia
-Syntrichia norvegica	84313
-Syntrichia princeps	84317
 Syringothecium
 Syrjagia
 Syrrhopodon
 Systasis
 Systylium
 Syzygiella
+Syzygospora
 Szweykowskia
 Taeniolejeunea
+Taeniolella
+Taenioma
 Taiwanobryum
 Takakia
 Tamariscella
 Taonia
 Targionia
-Targionia hypophylla	85146
 Taxicaulis
 Taxilejeunea
 Taxiphyllopsis
@@ -2448,8 +2887,10 @@ Tayloria
 Tegulifolium
 Teichodontium
 Telaranea
+Teloschistes
 Temnoma
 Teniolophora
+Tephromela
 Teretidens
 Terrestria
 Tessellina
@@ -2464,39 +2905,53 @@ Tetraplodon
 Tetrapterum
 Tetrastichium
 Tetrodontium
+Texosporium
 Thallites
 Thallocarpus
 Thamniella
 Thamniopsis
 Thamnites
 Thamnobryum
+Thamnolia
 Thedenia
+Thelenella
 Thelia
+Thelidium
+Thelignya
+Thelocarpon
+Thelomma
+Thelopsis
+Thelotrema
 Theriotia
+Thermutis
 Thiemea
+Tholurna
 Thricholea
+Thrombium
 Thuidiopsis
 Thuidium
+Thyrea
 Thysananthus
 Thysanolejeunea
 Thysanomitrion
 Thysanomitriopsis
+Tichothecium
 Tiffaniella
 Timmia
 Timmiella
-Timmiella anomala	84374
-Timmiella crassinervis	84375
 Tinca
 Tinocladia
 Tisserantiella
 Toloxis
-Tolypella	88158
+Tolypella
+Tomasellia
 Tomentypnum
+Tonina
+Toninia
+Topelia
+Tornabea
 Tortella
 Tortula
-Tortula hoppeana	85253
-Tortula schimperi	85942
-Tortula subulata	84410
 Touwia
 Trabacellula
 Trachybryum
@@ -2504,6 +2959,7 @@ Trachycarpidium
 Trachycladiella
 Trachycystis
 Trachylejeunea
+Trachylia
 Trachyloma
 Trachymitrium
 Trachynotus
@@ -2513,24 +2969,36 @@ Trachypodopsis
 Trachypus
 Trachythecium
 Trachyxiphium
+Trapelia
+Trapeliopsis
+Trapelopsis
 Trematodon
+Tremella
+Tremolecia
+Trentepohlia
 Treubia
 Treubiites
 Triandrophyllum
+Trichia
 Trichocolea
 Trichocoleopsis
 Trichodon
 Trichodontium
+Tricholoma
+Trichoramalina
 Trichosteleum
 Trichostomopsis
 Trichostomum
 Trichostylium
 Trichotemnoma
+Trichothelium
 Tricostium
 Tridontium
 Trigonanthus
 Trigonodictyon
 Trilites
+Trimmatostroma
+Trimmatothele
 Tripterocladium
 Triquetrella
 Trismegistia
@@ -2541,48 +3009,54 @@ Tritomaria
 Trochobryum
 Trocholejeunea
 Trolliella
+Tuber
+Tubifera
+Tuckermannopsis
+Tuckermanopsis
 Tuerckheimia
+Tulostoma
+Turgidosculum
+Turnerella
 Tutigaea
 Tuyamaella
 Tuzibeanthus
 Tylimanthus
-UNDETERMINED	67936
 Uleastrum
 Uleobryum
 Uleopsis
 Ulota
-Ulota phyllantha	84450
 Ulothrix
 Ulva
-Ulva	88159
-Ulva angusta	92216
-Ulva californica	92215
-Ulva dactylifera	92217
-Ulva fasciata	88483
-Ulva fasciata f. costata	93533
-Ulva fasciata f. expansa	88682
-Ulva fasciata f. lobata	88680
-Ulva fasciata f. major	93531
-Ulva fasciata f. minor	93532
-Ulva fasciata f. taeniata	88681
-Ulva scagelii	92218
-Ulva stenophylla	92219
-Ulva vexata	92220
+Ulvaria
 Ulvella
+Umbilicaria
 Umbraculum
+Undaria
+UNDETERMINED
+Unguiculariopsis
+Urceolaria
 Urospora
 Uskatia
 Usmania
+Usnea
+Ustilago
+Vahliella
+Valoniopsis
 Vanaea
 Vandiemenia
-Vaucheria	88160
-Vaucheria gardneri	88481
+Vaucheria
+Veleroa
 Venturiella
 Verdoornia
 Verdoornianthus
+Vermilacinia
+Vermilicinia
+Verrucaria
 Verrucidens
+Verticicladiella
 Vesicularia
 Vesiculariopsis
+Vestergrenopsis
 Vetaforma
 Viledia
 Viridivellus
@@ -2591,11 +3065,16 @@ Vittia
 Viviania
 Voitia
 Vorcutannularia
+Vouauxiella
+Vulpicida
+Wahlenbergiella
 Walkeria
 Warburgiella
 Wardia
 Warnstorfia
+Waynea
 Weberus
+Weddellomyces
 Weeksia
 Weisiodon
 Weisiopsis
@@ -2607,4582 +3086,34 @@ Weymouthia
 Wiesnerella
 Wijkia
 Wijkiella
+Wildemania
 Wildia
 Willia
 Williamsiella
 Wilsoniella
 Wollnya
 Wuestneia
+Xanthomendoza
+Xanthoparmelia
+Xanthoria
 Xenocephalozia
 Xenochila
+Xenococcus
 Xenothallus
+Xeromphalina
+Xylographa
+Yamadaea
 Yorekiella
+Zahlbrucknera
+Zahlbrucknerella
+Zanardinula
 Zelometeorium
 Zieria
 Zonaria
 Zoopsidella
 Zoopsis
+Zwackhiomyces
 Zygnema
 Zygodon
 Zygotrichia
-Corallina
-Cryptopleura americana
-Cryptopleura bonnemaisonii var. laciniata
-Cryptopleura bonnemaisonii
-Cryptopleura brevis
-Cryptopleura calophylloides
-Cryptopleura corallinarum
-Cryptopleura crispa
-Cryptopleura crispata
-Cryptopleura crozieri
-Cryptopleura cryptoneuron
-Cryptopleura curdieana
-Cryptopleura dichotoma
-Cryptopleura durvillei
-Cryptopleura endiviaefolia
-Cryptopleura endiviifolia
-Cryptopleura farlowiana
-Cryptopleura fimbriata
-Cryptopleura fuscorubra
-Cryptopleura griffithsiana
-Cryptopleura hayamensis
-Cryptopleura heterocarpa
-Cryptopleura hilliae
-Cryptopleura imbricata
-Cryptopleura lacerata
-Cryptopleura lacerata var. lobata
-Cryptopleura lacerata var. serrulata
-Cryptopleura lacerata var. ciliifera
-Cryptopleura livida
-Cryptopleura lobulifera
-Cryptopleura membranacea
-Cryptopleura minor
-Cryptopleura multinervis
-Cryptopleura palmata
-Cryptopleura peltata
-Cryptopleura peruviana
-Cryptopleura ramosa
-Cryptopleura ramosa var. uncinatum
-Cryptopleura ramosa var. carnosa
-Cryptopleura ramosa var. lobata
-Cryptopleura ramosa var. ciliifera
-Cryptopleura robusta
-Cryptopleura rosacea
-Cryptopleura ruprechtiana
-Cryptopleura ruthenica
-Cryptopleura smithii
-Cryptopleura spatulata 
-Cryptopleura stenoglossum
-Cryptopleura subcostata
-Cryptopleura taylorii 
-Cryptopleura uncinata 
-Cryptopleura versicolor
-Cryptopleura violacea
-Dasya
-Eisenia
-Fucus
-Macrocystis
-Monostroma
-Ozophora
-Platythamnion
-Pleonosporium
-Plocamium
-Pogonophorella
-Polyneura
-Polyneuropsis
-Polysiphonia
-Porphyra
-Pseudogloiophloea
-Pterothamnion
-Wildemania
-Campylaephora
-Clathromorphum
-Mastocarpus
-Mesophyllum
-Microcladia
-Minium
-Murrayellopsis
-Myriogramme 
-Neogoniolithon
-Neoptilota
-Neosiphonia
-Nienburgia
-Nitophyllum
-Odonthalia
-Ophidocladus
-Petroglossum
-Phycodrys
-Pikea
-Platysiphonia
-Hypnea
-Iridaea
-Janczewskia
-Jania
-Jantinella
-Kallymenia
-Kallymeniopsis
-Laurencia
-Leptocladia
-Leptofauchea
-Levringiella
-Liagora
-Lithothamnion
-Lomentaria
-Maripelta
-Melobesia
-Nemalion
-Opuntiella
-Osmundea
-Stromatocarpus
-Gymnogongrus
-Halymenia
-Helminthora
-Heterosiphonia
-Hollenbergia
-Loranthophycus
-Pneophyllum
-Niphotrichum
-Dermatolithon
-Gracilariophila
-Grateloupia
-Helminthocladia
-Herposiphonia
-Amanita
-Gastroclonium
-Gloiosiphonia
-Gonimophyllum
-Goniotrichopsis
-Gracilariopsis
-Griffithsia
-Norrissia
-Nemalion
-Coeloseira
-Cumathamnion
-Delesseria
-Dilsea
-Dudresnaya
-Endophyton
-Erythroglossum
-Erythrotrichia
-Farlowia
-Fauchea
-Faucheocolax
-Fryeella
-Gardneriella
-Gloiocladia
-Porphyrostromium
-Callocolax
-Colaconema
-Constantinea
-Cryptosiphonia
-Cumagloia
-Endocladia
-Erythrocystis
-Erythrophyllum
-Gloiopeltis
-Apoglossum
-Botryoglossum
-Entocladia
-Gomontia
-Neogastroclonium
-Salishia
-Dirina
-Psora
-Scytonema
-Acrosiphonia
-Ascophyllum
-Asymmetria
-Baylesia
-Bossea
-Chordaria
-Choreonema
-Cystoseira
-Dasyopsis
-Dictyoneuropsis
-Dipterosiphonia
-Elachista
-Endarachne
-Endoderma
-Enteromorpha
-Entophysalis
-Erythrocladia
-Fosliella
-Gayralia
-Goniotrichum
-Gymnothamnion
-Halidrys
-Haplogloia
-Hesperophycus
-Hydroclathrus
-Kornmannia
-Leathesia
-Lessoniopsis
-Melanosiphon
-Myrionema
-Percursaria
-Pseudopringsheimia
-Rhizoclonium
-Rhodonematella
-Silvetia
-Stenogramma
-Stictyosiphon
-Taenioma
-Turnerella
-Ulvaria
-Undaria
-Zanardinula
 Zygrhablithus
-Halorhipis
-Haraldiophyllum
-Hecatonema
-Heterochordaria
-Isabottia
-Xenococcus
-Ustilago
-Petalonia
-Lobocolax
-Lophosiphonia
-Iridophycus
-Ilea
-Sparlingia
-Letterstedtia
-Tuckermanopsis
-Tuckermannopsis
-Neofuscelia
-Parmeliella
-Placynthium
-Pleopsidium
-Trapelia
-Ochrolechia
-Xanthoria
-Xanthoparmelia
-Physcia
-Peltula
-Petula obscurans var. hassei
-Petula euploca
-Polychidium
-Punctelia
-Phaeophyscia
-Abrothallus acetabuli
-Abrothallus caerulescens
-Abrothallus microspermus
-Abrothallus parmeliarum
-Abrothallus prodiens
-Abrothallus suecicus
-Abrothallus tulasnei
-Abrothallus usneae
-Abrothallus welwitschii
-Acaroconium punctiforme
-Acarospora aeruginosa
-Acarospora albomarginata
-Acarospora americana
-Acarospora arenacea
-Acarospora arenosa
-Acarospora badiofusca
-Acarospora bella
-Acarospora brattiae
-Acarospora bullata
-Acarospora californica
-Acarospora carnegiei
-Acarospora cervina
-Acarospora cervina var. glaucocarpa
-Acarospora chlorophana
-Acarospora cinereoalba
-Acarospora citrina
-Acarospora dispersa
-Acarospora elevata
-Acarospora epilutescens
-Acarospora evoluta
-Acarospora flava
-Acarospora fuscata
-Acarospora geogena
-Acarospora glaucocarpa
-Acarospora glaucocarpa
-Acarospora glebosa
-Acarospora hassei
-Acarospora heppii
-Acarospora impressula
-Acarospora intercedens
-Acarospora interposita var. nitidella
-Acarospora interspersa
-Acarospora macrospora
-Acarospora molybdina
-Acarospora nashii
-Acarospora nevadensis
-Acarospora nitida
-Acarospora nodulosa
-Acarospora nodulosa var. reagens
-Acarospora novomexicana
-Acarospora obnubila
-Acarospora obpallens
-Acarospora obscura
-Acarospora oligospora
-Acarospora orcuttii
-Acarospora oreophila
-Acarospora oxytona
-Acarospora particularis
-Acarospora peliscypha
-Acarospora peltasticta
-Acarospora peltata
-Acarospora pleiospora
-Acarospora pleistospora
-Acarospora radicata
-Acarospora reagens
-Acarospora rhabarbarina
-Acarospora robiniae
-Acarospora rosulata
-Acarospora rufescens
-Acarospora saxicola
-Acarospora scabrida
-Acarospora schleicheri
-Acarospora scotica
-Acarospora simplex
-Acarospora sinopica
-Acarospora smaragdula
-Acarospora smaragdula var. lesdainii
-Acarospora socialis
-Acarospora squamulosa
-Acarospora stapfiana
-Acarospora stenospora
-Acarospora strigata
-Acarospora strigata var. peltata
-Acarospora subalbida
-Acarospora succedens
-Acarospora superfusa
-Acarospora terrestris
-Acarospora terricola
-Acarospora thamnina
-Acarospora thelococcoides
-Acarospora thermophila
-Acarospora veronensis
-Acarospora washingtonensis
-Acarospora xanthophana
-Acolium bolanderi
-Acolium californicum
-Acolium chloroconium
-Acolium sancti-jacobi
-Acolium tigillare
-Acolium tympanellum
-Acrocordia conoidea
-Actinogyra polyrhiza
-Adelococcus alpestris
-Adelolecia sonorae
-Ahtiana pallidula
-Ahtiana sphaerosporella
-Alectoria bicolor
-Alectoria californica
-Alectoria canariensis
-Alectoria chalybeiformis
-Alectoria fremontii
-Alectoria implexa
-Alectoria imshaugii
-Alectoria jubata
-Alectoria lata
-Alectoria minuscula
-Alectoria montana
-Alectoria nidulifera
-Alectoria ochroleuca
-Alectoria oregana
-Alectoria pseudofuscescens
-Alectoria sarmentosa
-Alectoria sarmentosa subsp. sarmentosa
-Alectoria tortuosa
-Alectoria vancouverensis
-Allarthonia patellulata
-Allarthonia patellulata var. caesiocarpa
-Alyxoria ochrocheila
-Alyxoria varia
-Amandinea punctata
-Amandinea subduplicata
-Amandinea submontana
-Amandinea turgescens
-Anaptychia ciliaris
-Anaptychia comosa
-Anaptychia elbursiana
-Anaptychia erinacea
-Anaptychia leucomela
-Anaptychia leucomelaena
-Anaptychia setifera
-Anaptychia ulotricoides
-Anema dodgei
-Anisomeridium biforme
-Anisomeridium carinthiacum
-Anisomeridium finkii
-Anisomeridium polypori
-Anisomeridium subprostans
-Anthracothecium pyrenuloides
-Anthracothecium thelemorphum
-Arthonia adveniens
-Arthonia albopulverea
-Arthonia anastomosans
-Arthonia arthonioides
-Arthonia astroidea
-Arthonia astroidea var. swartziana
-Arthonia atra
-Arthonia beccariana
-Arthonia brucei
-Arthonia caesia
-Arthonia caudata
-Arthonia chiodectella
-Arthonia cinnabarina
-Arthonia clemens
-Arthonia complanata
-Arthonia crozalsiana
-Arthonia cytisi
-Arthonia diffusa
-Arthonia diffusella
-Arthonia diploiciae
-Arthonia dispersa
-Arthonia dispersa var. tetramera
-Arthonia dispersa var. cytisi
-Arthonia epigina
-Arthonia epipastoides
-Arthonia epiphyscia
-Arthonia excedens
-Arthonia excentrica
-Arthonia farinacea
-Arthonia galactitella
-Arthonia galactites var. depuncta
-Arthonia gerhardii
-Arthonia glaucella
-Arthonia glaucomaria
-Arthonia glebosa
-Arthonia granosa
-Arthonia gregaria
-Arthonia gyalectoides
-Arthonia ilicina
-Arthonia impolita
-Arthonia impolita var. chiodectonoides
-Arthonia impolita var. subfusca
-Arthonia infectans
-Arthonia interveniens
-Arthonia intexta
-Arthonia lecanactidea
-Arthonia leucopellaea
-Arthonia lurida
-Arthonia macounii
-Arthonia madreana
-Arthonia microspermella
-Arthonia molendoi
-Arthonia muscigena
-Arthonia ochrolutea
-Arthonia orbillifera
-Arthonia patellulata
-Arthonia patellulata var. caesiocarpa
-Arthonia phaeophysciae
-Arthonia phlyctiformis subsp. californica
-Arthonia pinastri
-Arthonia polygramma
-Arthonia polymorpha
-Arthonia premnea
-Arthonia pruinascens
-Arthonia pruinata
-Arthonia pruinosa
-Arthonia pruinosella
-Arthonia punctiformis
-Arthonia pyrenuloides
-Arthonia pyrrhuliza
-Arthonia quintaria
-Arthonia radiata
-Arthonia radiata
-Arthonia rhoidis
-Arthonia sanguinea
-Arthonia sexlocularis
-Arthonia spadicea
-Arthonia spectabilis
-Arthonia stellaris
-Arthonia stictella
-Arthonia subdiffusa
-Arthonia subdispuncta
-Arthonia taediosa
-Arthonia tehleri
-Arthonia tetramera
-Arthonia tumidula
-Arthonia varians
-Arthonia xanthoparmeliarum
-Arthopyrenia analepta
-Arthopyrenia analeptella
-Arthopyrenia antecellens
-Arthopyrenia biformis
-Arthopyrenia carinthiaca
-Arthopyrenia cerasi
-Arthopyrenia cinereopruinosa
-Arthopyrenia conformis
-Arthopyrenia epidermidis
-Arthopyrenia fallax
-Arthopyrenia halodytes
-Arthopyrenia herrei
-Arthopyrenia litoralis
-Arthopyrenia lyrata
-Arthopyrenia padi
-Arthopyrenia parvula
-Arthopyrenia plumbaria
-Arthopyrenia punctiformis
-Arthopyrenia sphaeroides
-Arthopyrenia sublitoralis
-Arthothelium abnorme
-Arthothelium adveniens
-Arthothelium anastomosans
-Arthothelium interveniens
-Arthothelium norvegicum
-Arthothelium orbilliferum
-Arthothelium pruinascens
-Arthothelium sanguineum
-Arthothelium spectabile
-Arthothelium subcyrtodes
-Arthothelium taediosum
-Arthrorhaphis aeruginosa
-Aspicilia anglica
-Aspicilia aquatica
-Aspicilia aspera
-Aspicilia aurantiaca
-Aspicilia brucei
-Aspicilia caesiocinerea
-Aspicilia calcarea
-Aspicilia californica
-Aspicilia cinerea
-Aspicilia confusa
-Aspicilia contorta
-Aspicilia cuprea
-Aspicilia cyanescens
-Aspicilia desertorum
-Aspicilia filiformis
-Aspicilia fumosa
-Aspicilia gibbosa
-Aspicilia glaucopsina
-Aspicilia hispida
-Aspicilia knudsenii
-Aspicilia laevata
-Aspicilia mastrucata
-Aspicilia nashii
-Aspicilia olivaceobrunnea
-Aspicilia pacifica
-Aspicilia phaea
-Aspicilia praecrenata
-Aspicilia reptans
-Aspicilia santamonicae
-Aspicilia simo&euml;nsis
-Aspicilia sipeana
-Aspicilia supertegens
-Aspicilia tenuis
-Aspicilia verrucigera
-Athelia arachnoidea
-Bacidia absistens
-Bacidia acclinis
-Bacidia akompsa
-Bacidia albescens
-Bacidia arceutina
-Bacidia atrogrisea
-Bacidia bagliettoana
-Bacidia beckhausii
-Bacidia biatorina
-Bacidia circumspecta
-Bacidia clementis
-Bacidia coprodes
-Bacidia coruscans
-Bacidia dryina
-Bacidia effusa
-Bacidia endoleuca
-Bacidia fuscorubella
-Bacidia granosa
-Bacidia gyalectiformis
-Bacidia herrei
-Bacidia heterochroa
-Bacidia incompta
-Bacidia insularis
-Bacidia inundata
-Bacidia ioessa
-Bacidia jacobi
-Bacidia kingmanii
-Bacidia laurocerasi
-Bacidia milliaria
-Bacidia milliaria
-Bacidia naegelii
-Bacidia phacodes
-Bacidia reagens
-Bacidia rosella
-Bacidia rubella
-Bacidia sabuletorum
-Bacidia schweinitzii
-Bacidia umbrina
-Bacidia veneta
-Bacidia vermifera
-Bacidina californica
-Bacidina egenula
-Bacidina inundata
-Bacidina neosquamulosa
-Bacidina ramea
-Bactrospora acicularis
-Bactrospora brevispora
-Bactrospora brodoi
-Bactrospora dryina
-Bactrospora patellarioides var. convexa
-Bactrospora patellarioides var. patellarioides
-Bactrospora spiralis
-Baeomyces rufus
-Bagliettoa calciseda
-Bellemerea alpina
-Bellemerea cinereorufescens
-Bellemerea sanguinea
-Biatora akompsa
-Biatora anthracophila
-Biatora atrogrisea
-Biatora atropurpurea
-Biatora atrorufa
-Biatora botryosa
-Biatora caulophylla
-Biatora coarctata
-Biatora conglomerata
-Biatora crenata
-Biatora cyrtella
-Biatora decipiens
-Biatora dryina
-Biatora efflorescens
-Biatora effusa
-Biatora flexuosa
-Biatora franciscana
-Biatora friesii
-Biatora fuscorubella
-Biatora glebulosa
-Biatora globifera
-Biatora globulosa
-Biatora granulosa
-Biatora granulosa var. corallina
-Biatora granulosa var. phyllizans
-Biatora gyalectiformis
-Biatora holopolia
-Biatora jacobi
-Biatora laureri
-Biatora lurida
-Biatora luridella
-Biatora meiocarpa
-Biatora milliaria
-Biatora mixta
-Biatora mixta var. pacifica
-Biatora moriformis
-Biatora mutabilis
-Biatora naegelii
-Biatora nylanderi
-Biatora parvifolia
-Biatora phaeophora
-Biatora prasina
-Biatora punctella
-Biatora quernea
-Biatora resinae
-Biatora rufidula
-Biatora russellii
-Biatora schweinitzii
-Biatora scotopholis
-Biatora subviridis
-Biatora sylvana
-Biatora toensbergii
-Biatora torno&euml;nsis
-Biatora turgidula
-Biatora umbrina
-Biatora varians
-Biatora vernalis
-Biatora viridescens
-Biatora xanthococcoides
-Biatorella cinerea
-Biatorella clavus
-Biatorella deplanata
-Biatorella hypophaea
-Biatorella moriformis
-Biatorella plicata
-Biatorella pruinosa
-Biatorella resinae
-Biatorella revertens
-Biatorella simplex
-Biatorella terrena
-Biatorella testudinea
-Biatoropsis usnearum
-Bilimbia granosa
-Bilimbia gyalectiformis
-Bilimbia lignaria
-Bilimbia naegelii
-Bilimbia sabuletorum
-Bispora christiansenii
-Blastenia catalinae
-Blastenia ferruginea
-Blastenia ferruginea var. ammiospila
-Blastenia ferruginea var. bolanderi
-Blastenia ferruginea var. fraudans
-Blastenia ferruginea var. wrightii
-Blastenia festiva
-Blastenia fraudans
-Blastenia luteominia
-Blastenia subpyraceella
-Botrydina botryoides
-Botryolepraria lesdainii
-Briancoppinsia cytospora
-Bryoria abbreviata
-Bryoria bicolor
-Bryoria capillaris
-Bryoria chalybeiformis
-Bryoria fremontii
-Bryoria friabilis
-Bryoria furcellata
-Bryoria fuscescens
-Bryoria glabra
-Bryoria implexa
-Bryoria oregana
-Bryoria pseudocapillaris
-Bryoria pseudofuscescens
-Bryoria simplicior
-Bryoria spiralifera
-Bryoria subcana
-Bryoria tortuosa
-Bryoria trichodes subsp. americana
-Buellia abstracta
-Buellia aethalea
-Buellia alboatra
-Buellia alboatra
-Buellia alboatra var. ambigua
-Buellia alboatra var. saxicola
-Buellia alpicola
-Buellia ambigua
-Buellia arborea
-Buellia atroalbella
-Buellia badia
-Buellia bolacina
-Buellia bolanderi
-Buellia bolanderi var. sulphurosa
-Buellia callispora
-Buellia capitis-regum
-Buellia cerussata
-Buellia chloroleuca
-Buellia christophii
-Buellia concinna
-Buellia dakotensis
-Buellia dialyta
-Buellia disciformis
-Buellia disciformis var. triphragmia
-Buellia dispersa
-Buellia elegans
-Buellia erubescens
-Buellia fimbriata
-Buellia fuscoatra
-Buellia geographica
-Buellia geographica var. lecanorina
-Buellia geophila
-Buellia georgei
-Buellia griseovirens
-Buellia halonia
-Buellia hassei
-Buellia inquilina
-Buellia insignis
-Buellia lactea
-Buellia lepidastra
-Buellia lepidastroidea
-Buellia mamillana
-Buellia maritima
-Buellia microbola
-Buellia muriformis
-Buellia myriocarpa
-Buellia myriocarpa var. chloropolia
-Buellia myriocarpa var. ecrustacea
-Buellia myriocarpa var. punctiformis
-Buellia naegelii
-Buellia nashii
-Buellia navajoensis
-Buellia ocellata
-Buellia oidalea
-Buellia oidalea var. penichra
-Buellia papillata
-Buellia parasema
-Buellia parasema var. latypea
-Buellia parasitica
-Buellia parmeliarum
-Buellia penichra
-Buellia petraea
-Buellia petraea
-Buellia petraea var. grandis
-Buellia petraea var. montagnei
-Buellia petraea var. vulgaris
-Buellia prospersa
-Buellia pruinella
-Buellia pulchella
-Buellia pullata
-Buellia punctata
-Buellia radiata
-Buellia retrovertens
-Buellia rinodinoides
-Buellia ryanii
-Buellia schaereri
-Buellia semitensis
-Buellia sequax
-Buellia sequax
-Buellia sp.
-Buellia sp.
-Buellia spuria
-Buellia stellulata
-Buellia stigmaea
-Buellia stillingiana
-Buellia subalbula
-Buellia subdisciformis
-Buellia tesserata
-Buellia triphragmia
-Buellia triphragmioides
-Buellia triseptata
-Buellia turgescens
-Buellia tyrolensis
-Buellia venusta
-Buellia vernicoma
-Buellia verruculosa
-Buellia vilis
-Buellia zahlbruckneri
-Buelliella inops
-Buelliella parmeliarum
-Buelliella physciicola
-Byssoloma leucoblepharum
-Byssoloma marginatum
-Byssoloma subdiscordans
-Caeruleum heppii
-Calicium abietinum
-Calicium adaequatum
-Calicium adspersum
-Calicium albonigrum
-Calicium chrysocephalum
-Calicium corynellum
-Calicium curtisii
-Calicium curtum
-Calicium glaucellum
-Calicium hyperellum
-Calicium lenticulare
-Calicium lutescens
-Calicium parietinum
-Calicium parietinum var. albonigrum
-Calicium parvum
-Calicium populneum
-Calicium pusillum
-Calicium salicinum
-Calicium sequoiae
-Calicium subtile
-Calicium turbinatum
-Calicium viride
-Caloplaca albovariegata
-Caloplaca ammiospila
-Caloplaca approximata
-Caloplaca arenaria
-Caloplaca atroalba
-Caloplaca atroflava
-Caloplaca atrosanguinea
-Caloplaca aurantia
-Caloplaca aurantiaca
-Caloplaca austrocitrina
-Caloplaca biatorina
-Caloplaca bolacina
-Caloplaca bolanderi
-Caloplaca brattiae
-Caloplaca californica
-Caloplaca callopisma
-Caloplaca castellana
-Caloplaca catalinae
-Caloplaca cerina
-Caloplaca chlorina
-Caloplaca chrysophthalma
-Caloplaca cinnabarina
-Caloplaca cirrochroa
-Caloplaca citrina
-Caloplaca cladodes
-Caloplaca constipans
-Caloplaca coralloides
-Caloplaca crenularia
-Caloplaca crenulatella
-Caloplaca decipiens
-Caloplaca demissa
-Caloplaca durietzii
-Caloplaca elegans
-Caloplaca elegans var. trachyphylla
-Caloplaca epithallina
-Caloplaca erythrantha
-Caloplaca erythrella var. rubescens
-Caloplaca eugyra
-Caloplaca feracissima
-Caloplaca ferruginea
-Caloplaca ferruginea var. bolanderi
-Caloplaca ferruginea var. festiva
-Caloplaca ferruginea var. wrightii
-Caloplaca festiva
-Caloplaca flavogranulosa
-Caloplaca flavorubescens
-Caloplaca flavovirescens
-Caloplaca fraudans
-Caloplaca fulgens
-Caloplaca gilva
-Caloplaca holocarpa
-Caloplaca ignea
-Caloplaca impolita
-Caloplaca inconspecta
-Caloplaca jungermanniae
-Caloplaca lactea
-Caloplaca laeta
-Caloplaca lecanoroides
-Caloplaca lobulata
-Caloplaca ludificans
-Caloplaca luteominia var. luteominia
-Caloplaca luteominia var. bolanderi
-Caloplaca marina subsp. americana
-Caloplaca marmorata
-Caloplaca microphyllina
-Caloplaca modesta
-Caloplaca murorum
-Caloplaca nashii
-Caloplaca obamae
-Caloplaca oblongula
-Caloplaca oregona
-Caloplaca pacifica
-Caloplaca parviloba
-Caloplaca peliophylla
-Caloplaca pellodella
-Caloplaca persimilis
-Caloplaca pinicola
-Caloplaca pollinii
-Caloplaca pygmaea
-Caloplaca pyracea
-Caloplaca rosei
-Caloplaca saxicola
-Caloplaca sideritis
-Caloplaca sipeana
-Caloplaca sonorae
-Caloplaca sp.
-Caloplaca squamosa
-Caloplaca stanfordensis
-Caloplaca stantonii
-Caloplaca stellata
-Caloplaca stillicidiorum
-Caloplaca stipitata
-Caloplaca subpyraceella
-Caloplaca subpyraceella
-Caloplaca subsoluta
-Caloplaca teicholyta
-Caloplaca tiroliensis
-Caloplaca tominii
-Caloplaca trachyphylla
-Caloplaca ulmorum
-Caloplaca variabilis
-Caloplaca verruculifera
-Caloplaca viridirufa
-Caloplaca vitellinula
-Caloplaca wrightii
-Calvitimela aglaea
-Calvitimela armeniaca
-Candelaria concolor
-Candelaria concolor var. effusa
-Candelaria dispersa
-Candelaria pacifica
-Candelaria vitellina
-Candelariella antennaria
-Candelariella aurella
-Candelariella biatorina
-Candelariella californica
-Candelariella cerinella
-Candelariella citrina
-Candelariella coralliza
-Candelariella deppeanae
-Candelariella dispersa
-Candelariella efflorescens
-Candelariella granuliformis
-Candelariella holophaea
-Candelariella lutella
-Candelariella reflexa
-Candelariella rosulans
-Candelariella spraguei
-Candelariella terrigena
-Candelariella vitellina
-Candelariella vitellina var. assericola
-Candelariella xanthostigma
-Candelariella xanthostigmoides
-Capronia peltigerae
-Carbacanthographis candidata
-Carbonea latypizodes
-Carbonea vitellinaria
-Carbonea vorticosa
-Catapyrenium acarosporoides
-Catapyrenium caeruleopulvinum
-Catapyrenium cinereum
-Catapyrenium daedaleum
-Catapyrenium heppioides
-Catapyrenium lachneum
-Catapyrenium pilosellum
-Catapyrenium plumbeum
-Catapyrenium psoromoides
-Catapyrenium squamellum
-Catapyrenium squamulosum
-Catapyrenium tuckermanii
-Catapyrenium zahlbruckneri
-Catillaria athallina
-Catillaria atropurpurea
-Catillaria bouteillei
-Catillaria chalybeia
-Catillaria columbiana
-Catillaria endochroma
-Catillaria franciscana
-Catillaria glauconigrans
-Catillaria globulosa
-Catillaria griffithii
-Catillaria laureri
-Catillaria lenticularis
-Catillaria lenticularis var. acrustacea
-Catillaria lenticularis var. vulgaris
-Catillaria nigroclavata
-Catillaria prasina
-Catillaria subnigrata
-Catillaria subviridis
-Catillaria tricolor
-Catinaria atropurpurea
-Catocarpus myriocarpum var. ecrustaceum
-Catocarpus myriocarpum var. punctiforme
-Catolechia wahlenbergii
-Cavernularia hultenii
-Cavernularia lophyrea
-Cercidospora caudata
-Cercidospora cladoniicola
-Cercidospora lobothalliae
-Cercidospora macrospora
-Cercidospora ulothii
-Cercidospora xanthoriae
-Cetraria aculeata
-Cetraria californica
-Cetraria californica
-Cetraria canadensis
-Cetraria chlorophylla
-Cetraria ciliaris
-Cetraria glauca
-Cetraria herrei
-Cetraria idahoensis
-Cetraria juniperina
-Cetraria lacunosa
-Cetraria lacunosa var. stenophylla
-Cetraria merrillii
-Cetraria muricata
-Cetraria orbata
-Cetraria pallidula
-Cetraria platyphylla
-Cetraria scutata
-Cetraria scutata
-Cetraria sepincola
-Cetraria sepincola var. chlorophylla
-Cetraria stenophylla
-Cetraria tuckermanii
-Cetraria viridis
-Cetrelia cetrarioides
-Cetrelia olivetorum
-Chaenotheca australis
-Chaenotheca brachypoda
-Chaenotheca brunneola
-Chaenotheca carthusiae
-Chaenotheca chlorella
-Chaenotheca chrysocephala
-Chaenotheca ferruginea
-Chaenotheca furfuracea
-Chaenotheca gracillima
-Chaenotheca laevigata
-Chaenotheca nitidula
-Chaenotheca olivaceorufa
-Chaenotheca phaeocephala
-Chaenotheca sphaerocephala
-Chaenotheca subpusilla
-Chaenotheca subroscida
-Chaenotheca sulphurea
-Chaenotheca trichialis
-Chaenotheca xyloxena
-Chaenothecopsis debilis
-Chaenothecopsis epithallina
-Chaenothecopsis montana
-Chaenothecopsis nana
-Chaenothecopsis pusilla
-Chaenothecopsis pusiola
-Chaenothecopsis rubina
-Chaenothecopsis savonica
-Chaenothecopsis subpusilla
-Chaenothecopsis ussuriensis
-Chaenothecopsis vainioana
-Chaenothecopsis viridialba
-Chaenothecopsis viridireagens
-Chiodecton californicum
-Chiodecton ochroleucum
-Chiodecton rubrocinctum
-Chiodecton sanguineum
-Chiodecton subochroleucum
-Chlorea californica
-Chlorea vulpina
-Chlorea vulpina var. californica
-Chrismofulvea dialyta
-Chromatochlamys muscorum var. muscorum
-Chrysothrix candelaris
-Chrysothrix chlorina
-Chrysothrix granulosa
-Chrysothrix xanthina
-Circinaria arida
-Circinaria caesiocinerea
-Circinaria calcarea
-Circinaria contorta
-Circinaria hispida
-Cladidium bolanderi
-Cladidium thamnitis
-Cladina alpestris
-Cladina arbuscula subsp. beringiana
-Cladina ciliata
-Cladina impexa
-Cladina mitis
-Cladina portentosa
-Cladina stellaris
-Cladonia acuminata
-Cladonia albonigra
-Cladonia alpestris
-Cladonia anomaea
-Cladonia arbuscula subsp. beringiana
-Cladonia artuata
-Cladonia asahinae
-Cladonia bacillaris
-Cladonia bacilliformis
-Cladonia balfourii
-Cladonia bellidiflora
-Cladonia caespiticia
-Cladonia capitata
-Cladonia carassensis
-Cladonia cariosa
-Cladonia carneola
-Cladonia cenotea
-Cladonia cervicornis subsp. cervicornis
-Cladonia cervicornis subsp. verticillata
-Cladonia chlorophaea
-Cladonia ciliata var. ciliata
-Cladonia coccifera
-Cladonia concinna
-Cladonia coniocraea
-Cladonia conista
-Cladonia conistea
-Cladonia cornuta
-Cladonia cornuta subsp. groenlandica
-Cladonia crispata
-Cladonia crispata var. cetrariiformis
-Cladonia cryptochlorophaea
-Cladonia deformis
-Cladonia degenerans
-Cladonia digitata
-Cladonia dimorpha
-Cladonia elongata
-Cladonia extracorticata
-Cladonia fimbriata
-Cladonia fimbriata var. nemoxyna
-Cladonia fimbriata var. ochrochlora
-Cladonia fimbriata var. simplex
-Cladonia fimbriata var. subulata
-Cladonia fimbriata var. tubaeformis
-Cladonia firma
-Cladonia flabelliformis
-Cladonia floccida
-Cladonia foliacea
-Cladonia furcata
-Cladonia furcata var. corymbosa
-Cladonia furcata var. racemosa
-Cladonia gracilis
-Cladonia gracilis var. elongata
-Cladonia grayi
-Cladonia hammeri
-Cladonia herrei
-Cladonia humilis
-Cladonia impexa
-Cladonia japonica
-Cladonia krempelhuberi
-Cladonia lacryma
-Cladonia macilenta
-Cladonia macilenta var. bacillaris
-Cladonia macrophyllodes
-Cladonia major
-Cladonia maritima
-Cladonia merochlorophaea var. merochlorophaea
-Cladonia mitis
-Cladonia multiformis
-Cladonia nashii
-Cladonia nemoxyna
-Cladonia norvegica
-Cladonia ochrochlora
-Cladonia peziziformis
-Cladonia phyllophora
-Cladonia pityrea
-Cladonia pleurota
-Cladonia pocillum
-Cladonia polydactyla
-Cladonia poroscypha
-Cladonia portentosa
-Cladonia prolifica
-Cladonia pulvinella
-Cladonia pyxidata
-Cladonia pyxidata
-Cladonia pyxidata
-Cladonia pyxidata var. chlorophaea
-Cladonia pyxidata var. pocillum
-Cladonia ramulosa
-Cladonia rei
-Cladonia robbinsii
-Cladonia santensis
-Cladonia scabriuscula
-Cladonia sobolifera
-Cladonia squamosa
-Cladonia squamosa var. subsquamosa
-Cladonia stellaris
-Cladonia stricta
-Cladonia subcariosa
-Cladonia subcervicornis
-Cladonia subfimbriata
-Cladonia subradiata
-Cladonia subsquamosa
-Cladonia subulata
-Cladonia sulphurina
-Cladonia symphycarpia
-Cladonia thiersii
-Cladonia transcendens
-Cladonia tubaeformis
-Cladonia umbricola
-Cladonia verruculosa
-Cladonia verticillata
-Cladonia verticillata
-Clauzadea monticola
-Clavascidium lacinulatum
-Clavascidium lacinulatum var. erythrostratum
-Clavascidium umbrinum
-Cliostomum flavidulum
-Cliostomum griffithii
-Clypeococcum hypocenomycis
-Coccotrema pocillarium
-Coelocaulon aculeatum
-Coelocaulon muricatum
-Coenogonium interpositum
-Coenogonium luteum
-Coenogonium pineti
-Collema aggregatum
-Collema bachmanianum
-Collema chalazanum
-Collema cheileum
-Collema cheileum
-Collema coccophorum
-Collema confertum
-Collema conglomeratum
-Collema crispum
-Collema crispum var. metzleri
-Collema cristatellum
-Collema cristatum
-Collema fasciculare
-Collema flaccidum
-Collema fragile
-Collema furfuraceum
-Collema furfuraceum var. luzonense
-Collema fuscovirens
-Collema glaucescens
-Collema glaucophthalmum
-Collema limosum
-Collema myriococcum
-Collema nigrescens
-Collema nigrescens var. leucopeplum
-Collema occultatum var. populinum
-Collema polycarpon
-Collema pulchellum var. leucopeplum
-Collema pulchellum var. subnigrescens
-Collema pulposum
-Collema quadrifidum
-Collema subflaccidum
-Collema subnigrescens
-Collema subnigrescens
-Collema tenax
-Collema tenax var. corallinum
-Collema texanum
-Collema tuniforme
-Collema undulatum
-Collema verruciforme
-Collema vespertilio
-Collemodium fragile
-Collemodium plicatile
-Collemodium schraderi
-Collemodium turgidum
-Collemopsidium elegans
-Collemopsidium halodytes
-Collemopsidium sublitorale
-Collemopsis arnoldiana
-Collemopsis schaereri
-Collemopsis segregata
-Combea californica
-Coniocybe furfuracea
-Cornicularia aculeata
-Cornicularia californica
-Cornicularia normoerica
-Cornutispora ciliata
-Cresponea chloroconia
-Cresponea premnea
-Crocynia moxleyi
-Cypheliopsis bolanderi
-Cyphelium andersonii
-Cyphelium bolanderi
-Cyphelium brachysporum
-Cyphelium brunneum
-Cyphelium caliciforme
-Cyphelium californicum
-Cyphelium carolinianum
-Cyphelium chloroconium
-Cyphelium chrysocephalum
-Cyphelium farlowii
-Cyphelium inquinans
-Cyphelium karelicum
-Cyphelium lucidum
-Cyphelium occidentale
-Cyphelium pinicola
-Cyphelium sancti-jacobi
-Cyphelium tigillare
-Cyphelium trachylioides
-Cystobasidium hypogymniicola
-Cystobasidium usneicola
-Dacampia lecaniae
-Dactylospora inquilina
-Dactylospora parasitica
-Dactylospora pleiosperma
-Dactylospora saxatilis var. saxatilis
-Dendriscocaulon intricatulum
-Dendrographa alectoroides
-Dendrographa alectoroides
-Dendrographa alectoroides
-Dendrographa conformis
-Dendrographa decolorans
-Dendrographa franciscana
-Dendrographa leucophaea
-Dendrographa leucophaea
-Dendrographa leucophaea
-Dendrographa minor
-Dermatocarpon acarosporoides
-Dermatocarpon americanum
-Dermatocarpon aquaticum
-Dermatocarpon arenosaxi
-Dermatocarpon bachmannii
-Dermatocarpon cinereum
-Dermatocarpon contumescens
-Dermatocarpon fluviatile
-Dermatocarpon guepinii
-Dermatocarpon hepaticum
-Dermatocarpon hepaticum
-Dermatocarpon heppioides
-Dermatocarpon intestiniforme
-Dermatocarpon lachneum
-Dermatocarpon lecideoides
-Dermatocarpon leptophyllodes
-Dermatocarpon leptophyllum
-Dermatocarpon lorenzianum
-Dermatocarpon luridum
-Dermatocarpon meiophyllizum
-Dermatocarpon miniatum
-Dermatocarpon miniatum var. complicatum
-Dermatocarpon moulinsii
-Dermatocarpon muhlenbergii
-Dermatocarpon polyphyllum
-Dermatocarpon reticulatum
-Dermatocarpon rivulorum
-Dermatocarpon rufescens
-Dermatocarpon squamellum
-Dermatocarpon taminium
-Dermatocarpon tenue
-Dermatocarpon vellereum
-Dermatocarpon weberi
-Dermatocarpon zahlbruckneri
-Desmazieria cephalota
-Desmazieria ceruchis
-Dibaeis baeomyces
-Dievernia lacera
-Dimelaena californica
-Dimelaena oreina
-Dimelaena radiata
-Dimelaena thysanota
-Dimelaena weberi
-Dimerella lutea
-Diploicia canescens
-Diplolaeviopsis ranula
-Diploschistella athalloides
-Diploschistes actinostomus
-Diploschistes aeneus
-Diploschistes caesioplumbeus
-Diploschistes diacapsis
-Diploschistes gypsaceus
-Diploschistes muscorum subsp. muscorum
-Diploschistes scruposus
-Diploschistes scruposus var. bryophilus
-Diploschistes scruposus var. parasiticus
-Diplotomma alboatrum
-Diplotomma ambiguum
-Diplotomma penichrum
-Diplotomma venustum
-Dirina californica
-Dirina catalinariae
-Dirina catalinariae
-Dirina catalinariae
-Dirina franciscana
-Dirina hassei
-Dirina paradoxa
-Dirina rediunta
-Dirinaria aegialita
-Dirinaria neotropica
-Dirinaria picta
-Distenopyrenis americana
-Dufourea madreporiformis
-Echinodiscus lesdainii
-Echinothecium reticulatum
-Edrudia constipans
-Endocarpiscum bolanderi
-Endocarpiscum guepinii
-Endocarpon adnatum
-Endocarpon cinereum var. cartilagineum
-Endocarpon hepaticum
-Endocarpon lepidallum
-Endocarpon loscosii
-Endocarpon miniatum
-Endocarpon miniatum var. complicatum
-Endocarpon monicae
-Endocarpon ochroleucum
-Endocarpon pallidulum
-Endocarpon pallidum
-Endocarpon petrolepideum
-Endocarpon pseudosubnitescens
-Endocarpon pulvinatum
-Endocarpon pusillum
-Endocarpon rufescens
-Endocarpon simplicatum
-Endocarpon subnitescens
-Endocarpon tephroides
-Endocarpon tortuosum
-Endocarpon wilmsioides
-Endococcus buelliae
-Endococcus erraticus
-Endococcus incrassatus
-Endococcus matzeri
-Endococcus oreinae
-Endococcus rugulosus
-Endococcus stigma
-Endococcus thelommatis
-Endococcus zahlbrucknerellae
-Enterographa anguinella
-Enterographa oregonensis
-Ephebe hispidula
-Ephebe lanata
-Ephebe pubescens
-Ephebe solida
-Erioderma sorediatum
-Esslingeriana idahoensis
-Euopsis pulvinata
-Evernia divaricata
-Evernia furfuracea
-Evernia prunastri
-Evernia vulpina
-Fellhanera bouteillei
-Fissurina humilis
-Fistulariella geniculata
-Fistulariella inflata
-Fistulariella minuscula
-Fistulariella roesleri
-Flavoparmelia baltimorensis
-Flavoparmelia caperata
-Flavoparmelia rutidota
-Flavoparmelia subcapitata
-Flavopunctelia flaventior
-Flavopunctelia praesignis
-Flavopunctelia soredica
-Fulgensia bracteata
-Fulgensia desertorum
-Fulgensia fulgens
-Fulgensia subbracteata
-Fulvophyton murex
-Fuscopannaria aurita
-Fuscopannaria californica
-Fuscopannaria coralloidea
-Fuscopannaria crustacea
-Fuscopannaria cyanolepra
-Fuscopannaria labrata
-Fuscopannaria laceratula
-Fuscopannaria leucophaea
-Fuscopannaria leucosticta
-Fuscopannaria leucostictoides
-Fuscopannaria maritima
-Fuscopannaria mediterranea
-Fuscopannaria pacifica
-Fuscopannaria praetermissa
-Fuscopannaria pulveracea
-Fuscopannaria thiersii
-Gasparrinia callopisma
-Gasparrinia elegans
-Gasparrinia murorum
-Gasparrinia peliophylla
-Gelatinopsis acarosporicola
-Gelatinopsis tryblidariae
-Gloeoheppia polyspora
-Gloeoheppia squamulosa
-Glypholecia scabra
-Gonohymenia nigritella
-Graphina parilis
-Graphis britannica
-Graphis caesiella
-Graphis elegans
-Graphis eulectra
-Graphis inustuloides
-Graphis parilis
-Graphis saxorum
-Graphis scripta
-Graphis striatula
-Gyalecta herrei
-Gyalecta jenensis
-Gyalecta truncigena
-Gyalideopsis anastomosans
-Gyalideopsis athalloides
-Gyrophora angulata
-Gyrophora arctica
-Gyrophora decussata
-Gyrophora diabolica
-Gyrophora erosa
-Gyrophora grisea
-Gyrophora hirsuta
-Gyrophora hirsuta var. grisea
-Gyrophora hyperborea
-Gyrophora phaea
-Gyrophora polyphylla
-Gyrophora polyrhiza
-Gyrophora reticulata
-Gyrophora rugifera
-Gyrophora semitensis
-Gyrophora torrefacta
-Haematomma californicum
-Haematomma lapponicum
-Haematomma pacificum
-Haematomma persoonii
-Haematomma ventosum
-Hafellia disciformis
-Harpidium glaucophanum
-Harpidium nashii
-Hassea bacillosa
-Heppia adglutinata
-Heppia alumenensis
-Heppia bolanderi
-Heppia conchiloba
-Heppia despreauxii
-Heppia guepinii
-Heppia hassei
-Heppia leptopholis
-Heppia lutosa
-Heppia omphaliza
-Heppia polyspora
-Heppia psammophila
-Heppia terrena
-Heppia zahlbruckneri
-Herpothallon rubrocinctum
-Hertelidea botryosa
-Heterocarpon ochroleucum
-Heterodermia albicans
-Heterodermia boryi
-Heterodermia comosa
-Heterodermia erinacea
-Heterodermia japonica
-Heterodermia leucomela
-Heterodermia leucomela subsp. boryi
-Heterodermia namaquana
-Heterodermia neoleucomelaena
-Heterodermia speciosa
-Heteroplacidium zamenhofianum
-Heterothecium sanguinarium
-Homodium microdium
-Hubbsia californica
-Hubbsia parishii
-Hydropunctaria maura
-Hydrothyria venosa
-Hymenelia epulotica
-Hyperphyscia adglutinata
-Hyperphyscia confusa
-Hypocenomyce anthracophila
-Hypocenomyce castaneocinerea
-Hypocenomyce friesii
-Hypocenomyce oligospora
-Hypocenomyce scalaris
-Hypocenomyce sierrae
-Hypocenomyce xanthococca
-Hypogymnia apinnata
-Hypogymnia bitteri
-Hypogymnia duplicata
-Hypogymnia enteromorpha
-Hypogymnia gracilis
-Hypogymnia heterophylla
-Hypogymnia hultenii
-Hypogymnia imshaugii
-Hypogymnia inactiva
-Hypogymnia lophyrea
-Hypogymnia metaphysodes
-Hypogymnia minilobata
-Hypogymnia mollis
-Hypogymnia occidentalis
-Hypogymnia physodes
-Hypogymnia rugosa
-Hypogymnia schizidiata
-Hypogymnia tubulosa
-Hypogymnia vittata
-Hypogymnia wilfiana
-Hypotrachyna afrorevoluta
-Hypotrachyna laevigata
-Hypotrachyna revoluta
-Hypotrachyna sinuosa
-Icmadophila ericetorum
-Imshaugia aleurites
-Ingvariella bispora
-Intralichen baccisporus
-Intralichen christiansenii
-Intralichen lichenicola
-Ionaspis alba
-Ionaspis epulotica
-Ionaspis lacustris
-Jamesiella anastomosans
-Japewia subaurifera
-Japewia torno&euml;nsis
-Julella lactea var. lactea
-Julella vitrispora
-Kaernefeltia californica
-Kaernefeltia merrillii
-Koerberia biformis
-Koerberia sonomensis
-Lasallia pennsylvanica
-Lecanactis abietina
-Lecanactis californica
-Lecanactis chloroconia
-Lecanactis dimelaenoides
-Lecanactis dubia
-Lecanactis premnea
-Lecanactis premnea var. chloroconia
-Lecanactis salicina
-Lecanactis zahlbruckneri
-Lecania aipospila
-Lecania albariella
-Lecania arizonica
-Lecania brattiae
-Lecania brunonis
-Lecania californica
-Lecania caloplacicola
-Lecania chalcophila
-Lecania cuprea
-Lecania cyathiformis
-Lecania cyrtella
-Lecania dimera
-Lecania dubitans
-Lecania dudleyi
-Lecania erysibe
-Lecania franciscana
-Lecania fructigena
-Lecania fuscella
-Lecania fuscelloides
-Lecania hassei
-Lecania inundata
-Lecania naegelii
-Lecania pacifica
-Lecania polycycla
-Lecania rabenhorstii
-Lecania ryaniana
-Lecania shastensis
-Lecania spodophaeiza
-Lecania subdispersa
-Lecania syringea
-Lecania syringea var. metabolica
-Lecania syringea var. dimera
-Lecania toninioides
-Lecania turicensis
-Lecania turicensis var. californica
-Lecanographa aggregata
-Lecanographa brattiae
-Lecanographa dimelaenoides
-Lecanographa hypothallina
-Lecanographa insolita
-Lecanographa lyncea
-Lecanographa lynceoides
-Lecanographa subdryophila
-Lecanora albella
-Lecanora albella var. cancriformis
-Lecanora albellula
-Lecanora albocaesiella
-Lecanora allophana
-Lecanora alphoplaca
-Lecanora alpina
-Lecanora andrewii
-Lecanora angelica
-Lecanora argentata
-Lecanora argopholis
-Lecanora aterrima
-Lecanora athroocarpa
-Lecanora atra
-Lecanora atrocinerea
-Lecanora atrynea
-Lecanora atrynea var. cenisia
-Lecanora aurantiaca
-Lecanora austrocalifornica
-Lecanora badia
-Lecanora bicincta
-Lecanora bipruinosa
-Lecanora bockii
-Lecanora bolanderi
-Lecanora boligera
-Lecanora brattiae
-Lecanora brodoana
-Lecanora brunonis
-Lecanora cadubriae
-Lecanora caesiorubella
-Lecanora caesiorubella subsp. merrillii
-Lecanora calcarea
-Lecanora calcarea var. contorta
-Lecanora californica
-Lecanora callopisma
-Lecanora campestris
-Lecanora cancriformis
-Lecanora carneolutescens
-Lecanora carpinea
-Lecanora cascadensis
-Lecanora cenisia
-Lecanora cerina
-Lecanora cerinella
-Lecanora cervina
-Lecanora cervina var. thamnina
-Lecanora chlarotera
-Lecanora chlorophana
-Lecanora chrysoleuca
-Lecanora cinerea
-Lecanora cinerea var. gibbosa
-Lecanora cinereofusca var. cinereofusca
-Lecanora cinereorufescens
-Lecanora cinnabarina
-Lecanora circumborealis
-Lecanora coilocarpa
-Lecanora collatolica
-Lecanora comonduensis
-Lecanora confragosa
-Lecanora confusa
-Lecanora coniferarum
-Lecanora conizaeoides
-Lecanora conradii
-Lecanora constipans
-Lecanora contorta
-Lecanora crenulata
-Lecanora demissa
-Lecanora demosthenesii
-Lecanora diffracta
-Lecanora dimera
-Lecanora dispersa
-Lecanora distans
-Lecanora elegans
-Lecanora epibryon
-Lecanora epilutescens
-Lecanora epulotica var. subepulotica
-Lecanora erysibe
-Lecanora erysibe var. sincerior
-Lecanora erythrantha
-Lecanora exigua
-Lecanora expallens
-Lecanora farinaria
-Lecanora fecunda
-Lecanora ferruginea
-Lecanora flowersiana
-Lecanora franciscana
-Lecanora frustulosa
-Lecanora fugiens
-Lecanora fuscata
-Lecanora fuscata var. oligocarpa
-Lecanora fuscata var. rufescens
-Lecanora fuscescens
-Lecanora fuscoatra
-Lecanora gangaleoides
-Lecanora garovaglii
-Lecanora garovaglii subsp. cascadensis
-Lecanora gelida
-Lecanora gibbosa
-Lecanora gibbosula
-Lecanora glaucocarpa
-Lecanora glaucocarpa
-Lecanora glaucocarpa var. depauperata
-Lecanora glaucoma
-Lecanora glaucomela
-Lecanora glaucophana
-Lecanora glaucopsina
-Lecanora gyalectodes
-Lecanora hagenii
-Lecanora hallii
-Lecanora holophaea
-Lecanora horiza
-Lecanora hybocarpa
-Lecanora hypoptoides
-Lecanora impudens
-Lecanora intricata
-Lecanora jamesii
-Lecanora kofae
-Lecanora lacustris
-Lecanora laevata
-Lecanora latens
-Lecanora laxa
-Lecanora lusca
-Lecanora marginalis
-Lecanora marginata
-Lecanora melaena
-Lecanora melanaspis
-Lecanora melanaspis var. alphoplaca
-Lecanora melanophthalma
-Lecanora mellea
-Lecanora meridionalis
-Lecanora mniaraea
-Lecanora mniaroeiza
-Lecanora mughicola
-Lecanora munzii
-Lecanora muralis
-Lecanora muralis subsp. dubyi
-Lecanora muralis var. catalinae
-Lecanora muralis var. diffracta
-Lecanora muralis var. semitensis
-Lecanora muralis var. versicolor
-Lecanora murorum
-Lecanora murorum subsp. tegularis
-Lecanora mutabilis
-Lecanora neodegelii
-Lecanora nephaea
-Lecanora nevadensis
-Lecanora nigromarginata
-Lecanora novomexicana
-Lecanora obpallens
-Lecanora oculata subsp. glaucomela
-Lecanora oligospora
-Lecanora orae-frigidae
-Lecanora oreina
-Lecanora oreinoides
-Lecanora orizabana
-Lecanora orosthea
-Lecanora pacifica
-Lecanora pallescens
-Lecanora pallescens var. rosella
-Lecanora pallida
-Lecanora pallida var. cancriformis
-Lecanora peliscypha
-Lecanora pellodella
-Lecanora peltasticta
-Lecanora peltastictoides
-Lecanora peltata
-Lecanora peninsularis
-Lecanora percrenata
-Lecanora phaedrophthalma var. phaedrophthalma
-Lecanora phaeobola
-Lecanora phaeophora
-Lecanora phryganitis
-Lecanora pinguis
-Lecanora piniperda
-Lecanora pleiospora
-Lecanora pleistospora
-Lecanora plumosa
-Lecanora polytropa
-Lecanora populicola
-Lecanora praecrenata
-Lecanora pringlei
-Lecanora pringlei subsp. brandegeei
-Lecanora privigna var. clavus
-Lecanora privigna var. pruinosa
-Lecanora privigna var. revertens
-Lecanora pseudargentata
-Lecanora pseudistera
-Lecanora pseudomellea
-Lecanora pulicaris
-Lecanora pyracea
-Lecanora ramulicola
-Lecanora reagens
-Lecanora reagens
-Lecanora rediunta
-Lecanora roboris
-Lecanora rubina
-Lecanora rubina var. heteromorpha
-Lecanora rubina var. melanophthalma
-Lecanora rubina var. opaca
-Lecanora rufescens
-Lecanora rugosa
-Lecanora rugosella
-Lecanora rupicola
-Lecanora saligna
-Lecanora sambuci
-Lecanora saxicola
-Lecanora saxicola subsp. semitensis
-Lecanora saxicola var. diffracta
-Lecanora saxicola var. semitensis
-Lecanora saxicola var. versicolor
-Lecanora schleicheri
-Lecanora scotopholis
-Lecanora semitensis
-Lecanora sierrae
-Lecanora simeonensis
-Lecanora simplex
-Lecanora simplex
-Lecanora smaragdula
-Lecanora sophodes
-Lecanora sophodopsella
-Lecanora sordida
-Lecanora sordida var. bicincta
-Lecanora spodophaeiza
-Lecanora spraguei
-Lecanora squamulosa
-Lecanora stenospora
-Lecanora stenotropa
-Lecanora strobilina
-Lecanora subcarnea
-Lecanora subdispersa
-Lecanora subfusca
-Lecanora subfusca var. allophana
-Lecanora subfusca var. argentata
-Lecanora subfusca var. campestris
-Lecanora subfusca var. chlarona
-Lecanora subfusca var. coilocarpa
-Lecanora subfusca var. distans
-Lecanora subimmergens
-Lecanora subolivascens
-Lecanora subpallida
-Lecanora subpyraceella
-Lecanora subrugosa
-Lecanora subsaligna
-Lecanora substrobilina
-Lecanora supertegens
-Lecanora symmicta
-Lecanora symmicta var. sepincola
-Lecanora symmictera
-Lecanora syringea
-Lecanora tegularis
-Lecanora thamnitis
-Lecanora thamnoplaca
-Lecanora thelococcoides
-Lecanora thysanota
-Lecanora utahensis
-Lecanora varia
-Lecanora varia subsp. laxa
-Lecanora varia var. illusoria
-Lecanora varia var. polytropa
-Lecanora varia var. sepincola
-Lecanora varia var. symmicta
-Lecanora variabilis
-Lecanora ventosa
-Lecanora verrucariicola
-Lecanora verrucosa
-Lecanora viriduloflava
-Lecanora vitellina
-Lecanora vitellina var. aurella
-Lecanora xanthophana
-Lecanora xanthosora
-Lecanora xylophila
-Lecanora zosterae
-Lecidea ablephora
-Lecidea admiscens
-Lecidea aitema
-Lecidea alboatra
-Lecidea alboatra var. ambigua
-Lecidea alboatra var. saxicola
-Lecidea albofuscescens
-Lecidea aliena
-Lecidea aliena var. pulchella
-Lecidea alpestris
-Lecidea amylacea
-Lecidea aniptiza
-Lecidea anthracophila
-Lecidea antoniensis
-Lecidea aromatica
-Lecidea arthoniza
-Lecidea assimilata
-Lecidea atroalbula
-Lecidea atrobrunnea
-Lecidea atrobrunnea subsp. atrobrunnea
-Lecidea atrobrunnea subsp. saxosa
-Lecidea atrobrunnea subsp. stictica
-Lecidea atrolutescens
-Lecidea atropurpurea
-Lecidea auriculata
-Lecidea auriculata var. diducens
-Lecidea austrocalifornica
-Lecidea berengeriana
-Lecidea bolacina
-Lecidea botryosa
-Lecidea brandegeei
-Lecidea brodoana
-Lecidea bullata
-Lecidea cadubriae
-Lecidea caeruleonigricans
-Lecidea californica
-Lecidea carnulenta
-Lecidea cascadensis
-Lecidea catalinaria
-Lecidea caulescens
-Lecidea caulophylla
-Lecidea cinerata
-Lecidea cinnabarina
-Lecidea coarctata
-Lecidea coarctata
-Lecidea coarctata
-Lecidea colludens
-Lecidea confluens
-Lecidea contigua
-Lecidea crenata
-Lecidea cruciaria
-Lecidea cumulata
-Lecidea cyrtella
-Lecidea cyrtidia
-Lecidea decipiens
-Lecidea declinans
-Lecidea demissa
-Lecidea dialyta
-Lecidea diducens
-Lecidea disciformis
-Lecidea dolodes
-Lecidea effusa
-Lecidea elabens
-Lecidea elaeochroma
-Lecidea enalla
-Lecidea enteroleuca var. achrista
-Lecidea enteroleuca var. aequata
-Lecidea enteroleuca var. ambigua
-Lecidea enteroleuca var. flavida
-Lecidea enteroleuca var. pilularis
-Lecidea enteroleuca var. theioplaca
-Lecidea enteroleuca
-Lecidea erythrophaea
-Lecidea euphorea
-Lecidea flexuosa
-Lecidea franciscana
-Lecidea friesii
-Lecidea fumosa
-Lecidea fuscatoatra
-Lecidea fuscescens
-Lecidea fuscoatra
-Lecidea fuscoatrina
-Lecidea fuscorubens
-Lecidea geographica
-Lecidea glaucopholis
-Lecidea glebulosa
-Lecidea globifera
-Lecidea glomerulosa
-Lecidea goniophila
-Lecidea granosa
-Lecidea granulosa
-Lecidea granulosa var. phyllizans
-Lecidea grisella
-Lecidea griseoatra
-Lecidea halonia
-Lecidea hassei
-Lecidea holopolia
-Lecidea humosa
-Lecidea insularis
-Lecidea intumescens
-Lecidea kingmanii
-Lecidea laboriosa
-Lecidea lapicida var. lapicida
-Lecidea lapicida
-Lecidea lapicida var. declinans
-Lecidea lapicida var. declinascens
-Lecidea lapicida var. pantherina
-Lecidea latypea
-Lecidea latypiza
-Lecidea lenticularis
-Lecidea lepidastra
-Lecidea leucophaea
-Lecidea leucothallina
-Lecidea lithophila
-Lecidea lucida
-Lecidea lurida
-Lecidea luridella
-Lecidea macrocarpa
-Lecidea mannii
-Lecidea massata
-Lecidea meiocarpa
-Lecidea melancheima
-Lecidea misella
-Lecidea montagnei
-Lecidea morio
-Lecidea mutabilis
-Lecidea myriocarpa
-Lecidea myriocarpella
-Lecidea myriocarpoides
-Lecidea naegelii
-Lecidea novomexicana
-Lecidea nylanderi
-Lecidea oidalea
-Lecidea olivacea
-Lecidea orosthea
-Lecidea pacifica
-Lecidea paddensis
-Lecidea pantherina
-Lecidea parasema
-Lecidea parasema var. tabescens
-Lecidea parissima
-Lecidea parmeliarum
-Lecidea parvifolia
-Lecidea pavimentans
-Lecidea perlatolica
-Lecidea petraea
-Lecidea phaeophora
-Lecidea plana
-Lecidea platycarpa
-Lecidea plebeia
-Lecidea polycarpa
-Lecidea prasina
-Lecidea pringlei
-Lecidea protabacina
-Lecidea pruinosa
-Lecidea pullata
-Lecidea quadricolor
-Lecidea quernea
-Lecidea ramulicola
-Lecidea resinae
-Lecidea rubiformis
-Lecidea rufonigra
-Lecidea ruginosa
-Lecidea russellii
-Lecidea russula
-Lecidea sanguineoatra
-Lecidea sanguineoatra
-Lecidea santae-monicae
-Lecidea sarcogyniza
-Lecidea scalaris
-Lecidea schizopeltica
-Lecidea scotopholis
-Lecidea semitensis
-Lecidea silacea
-Lecidea speirea
-Lecidea spilota
-Lecidea spuria
-Lecidea squalida
-Lecidea squalida var. caulescens
-Lecidea squalida var. persimilans
-Lecidea stellulata
-Lecidea sublugens
-Lecidea subplebeia
-Lecidea sylvana
-Lecidea symmicta
-Lecidea syncarpa
-Lecidea tenebrosa
-Lecidea tessellata
-Lecidea theioplaca
-Lecidea torno&euml;nsis
-Lecidea torquens
-Lecidea tricolor
-Lecidea triphragmia
-Lecidea triphragmioides
-Lecidea truckeei
-Lecidea turgidula
-Lecidea uliginosa
-Lecidea varians
-Lecidea variegata
-Lecidea vernalis
-Lecidea vesicularis
-Lecidea violascens
-Lecidea viridans
-Lecidea viridescens
-Lecidea vorticosa
-Lecidea vulgata
-Lecidea wallrothii
-Lecidea xanthococcoides
-Lecidella anomaloides
-Lecidella asema
-Lecidella carpathica
-Lecidella elaeochroma
-Lecidella elaeochroma var. soralifera
-Lecidella elaeochromoides
-Lecidella euphorea
-Lecidella glomerulosa
-Lecidella granulosula
-Lecidella latypiza
-Lecidella meiococca
-Lecidella patavina
-Lecidella scabra
-Lecidella stigmatea
-Lecidella subincongrua var. elaeochromoides
-Lecidella viridans
-Lecidoma demissum
-Leciographa parasitica
-Leimonis erratica
-Leiophloea parvula
-Lempholemma botryosum
-Lempholemma chalazanum
-Lempholemma cladodes
-Lempholemma confertum
-Lempholemma myriococcum
-Lempholemma polyanthes
-Lepraria adhaerens
-Lepraria alpina
-Lepraria borealis
-Lepraria cacuminum
-Lepraria caesioalba
-Lepraria candelaris
-Lepraria chlorina
-Lepraria crassissima
-Lepraria diffusa var. chrysodetoides
-Lepraria eburnea
-Lepraria elobata
-Lepraria friabilis
-Lepraria incana
-Lepraria lecanorica
-Lepraria lobificans
-Lepraria membranacea
-Lepraria neglecta
-Lepraria pacifica
-Lepraria rigidula
-Lepraria santamonicae
-Lepraria terricola
-Lepraria texta
-Lepraria vouauxii
-Lepraria xerophila
-Leprocaulon albicans
-Leprocaulon americanum
-Leprocaulon knudsenii
-Leprocaulon microscopicum
-Leprocaulon santamonicae
-Leprocaulon subalbicans
-Leprocaulon terricola
-Leproloma membranaceum
-Leptochidium albociliatum
-Leptogium albociliatum
-Leptogium arsenei
-Leptogium biatorinum
-Leptogium brebissonii
-Leptogium burgessii
-Leptogium burnetiae
-Leptogium burnetiae var. hirsutum
-Leptogium californicum
-Leptogium cellulosum
-Leptogium chloromelum var. stellans
-Leptogium corniculatum
-Leptogium cristatellum
-Leptogium cyanescens
-Leptogium denticulatum
-Leptogium fragile
-Leptogium furfuraceum
-Leptogium gelatinosum
-Leptogium hildenbrandii
-Leptogium insigne
-Leptogium intermedium
-Leptogium laceroides
-Leptogium lacerum
-Leptogium lacerum subsp. pulvinatum
-Leptogium lichenoides
-Leptogium microdium
-Leptogium milligranum
-Leptogium minutissimum
-Leptogium muscicola
-Leptogium myochroum
-Leptogium nanum
-Leptogium palmatum
-Leptogium papillosum
-Leptogium platynum
-Leptogium plicatile
-Leptogium polycarpum
-Leptogium pseudofurfuraceum
-Leptogium pulvinatum
-Leptogium rhyparodes
-Leptogium rivale
-Leptogium saturninum
-Leptogium schraderi
-Leptogium scotinum
-Leptogium sinuatum
-Leptogium siskiyouensis
-Leptogium subaridum
-Leptogium subtile
-Leptogium tenuissimum
-Leptogium teretiusculum
-Leptorhaphis atomaria
-Leptorhaphis epidermidis
-Letharia californica
-Letharia californica var. fovatoretigera
-Letharia columbiana
-Letharia gracilis
-Letharia vulpina
-Lichenochora verrucicola
-Lichenochora xanthoriae
-Lichenoconium cargillianum
-Lichenoconium erodens
-Lichenoconium lecanorae
-Lichenoconium lichenicola
-Lichenoconium usneae
-Lichenoconium xanthoriae
-Lichenodiplis dendrographae
-Lichenodiplis lecanorae
-Lichenodiplis lecanoricola
-Lichenodiplis rinodinicola
-Lichenomphalia umbellifera
-Lichenostigma amplum
-Lichenostigma anatolicum
-Lichenostigma bolacinae
-Lichenostigma cosmopolites
-Lichenostigma elongatum
-Lichenostigma lecanorae
-Lichenostigma maureri
-Lichenostigma radicans
-Lichenostigma rugosum
-Lichenostigma saxicola
-Lichenostigma subradians
-Lichenothelia calcarea
-Lichenothelia convexa
-Lichenothelia intermixta
-Lichenothelia renobalesiana
-Lichenothelia scopularia
-Lichenothelia tenuissima
-Lichinella americana
-Lichinella cribellifera
-Lichinella flexa
-Lichinella granulosa
-Lichinella iodopulchra
-Lichinella minnesotensis
-Lichinella nigritella
-Lichinella robustoides
-Lichinella stipatula
-Llimonaea californica
-Llimonaea cerebriformis
-Llimonaea occulta
-Llimoniella acarosporicola
-Lobaria amplissima
-Lobaria hallii
-Lobaria oregana
-Lobaria pulmonaria
-Lobaria scrobiculata
-Lobothallia alphoplaca
-Lobothallia melanaspis
-Lobothallia praeradiosa
-Lopadium disciforme
-Lopadium dodgei
-Loxosporopsis corallifera
-Marchandiomyces corallinus
-Maronea constans
-Maronea constans var. sublecideina
-Maronea polyphaea
-Massalongia carnosa
-Massalongia microphylliza
-Megalaria columbiana
-Megalaria laureri
-Megaspora verrucosa
-Megaspora verrucosa var. mutabilis
-Melanelia disjuncta
-Melanelia elegantula
-Melanelia exasperata
-Melanelia exasperatula
-Melanelia fuliginosa
-Melanelia glabra
-Melanelia glabratula
-Melanelia glabroides
-Melanelia hepatizon
-Melanelia incolorata
-Melanelia infumata
-Melanelia multispora
-Melanelia panniformis
-Melanelia sorediata
-Melanelia stygia
-Melanelia subargentifera
-Melanelia subaurifera
-Melanelia subelegantula
-Melanelia subolivacea
-Melanelia substygia
-Melanelia tominii
-Melanelixia californica
-Melanelixia fuliginosa
-Melanelixia glabra
-Melanelixia glabroides
-Melanelixia subargentifera
-Melanelixia subaurifera
-Melanohalea elegantula
-Melanohalea exasperatula
-Melanohalea infumata
-Melanohalea multispora
-Melanohalea olivacea
-Melanohalea subelegantula
-Melanohalea subolivacea
-Melaspilea constrictella
-Menegazzia subsimilis
-Menegazzia terebrata
-Merismatium decolorans
-Metamelanea melambola
-Micarea assimilata
-Micarea cinerea
-Micarea deminuta
-Micarea denigrata
-Micarea elachista
-Micarea erratica
-Micarea hedlundii
-Micarea lignaria
-Micarea micrococca
-Micarea misella
-Micarea nitschkeana
-Micarea peliocarpa
-Micarea prasina
-Micarea punctella
-Micarea synotheoides
-Micarea xanthonica
-Microcalicium ahlneri
-Microcalicium arenarium
-Microcalicium conversum
-Microcalicium disseminatum
-Microglaena hassei
-Microglaena subcorallina
-Microglaena sychnogonioides
-Microphiale diluta
-Microphiale lutea
-Microthelia aterrima
-Microthelia micula
-Minutoexcipula mariana
-Minutoexcipula tuckerae
-Miriquidica deusta
-Miriquidica garovaglii
-Miriquidica griseoatra
-Miriquidica leucophaea
-Miriquidica mexicana
-Miriquidica scotopholis
-Mobergia angelica
-Mobergia calculiformis
-Moelleropsis nebulosa subsp. nebulosa
-Montanelia disjuncta
-Montanelia panniformis
-Montanelia tominii
-Muellerella erratica
-Muellerella lecanactidis
-Muellerella lichenicola
-Muellerella pygmaea var. pygmaea
-Muellerella pygmaea var. athallina
-Muellerella pygmaea var. ventosicola
-Muellerella ventosicola
-Multiclavula corynoides
-Multiclavula mucida
-Mycobilimbia austrocalifornica
-Mycobilimbia berengeriana
-Mycobilimbia hypnorum
-Mycobilimbia lurida
-Mycoblastus affinis
-Mycoblastus alpinus
-Mycoblastus caesius
-Mycoblastus sanguinarius
-Mycoblastus torno&euml;nsis
-Mycocalicium albonigrum
-Mycocalicium disseminatum
-Mycocalicium microcephalum
-Mycocalicium parietinum
-Mycocalicium sequoiae
-Mycocalicium subtile
-Mycocalicium victoriae
-Mycomicrothelia dothideaspora
-Mycomicrothelia inaequalis
-Mycoporellum californicum
-Mycoporellum epistigmellum
-Mycoporellum hassei
-Mycoporellum lacteum
-Mycoporellum sparsellum
-Mycoporopsis californica
-Mycoporum antecellens
-Mycoporum californicum
-Mycoporum compositum
-Mycoporum eschweileri
-Mycoporum ohiense
-Mycoporum pycnocarpum
-Mycoporum sparsellum
-Myriospora hassei
-Myriospora heppii
-Myriospora scabrida
-Myriospora smaragdula
-Naetrocymbe herrei
-Naetrocymbe punctiformis
-Naetrocymbe saxicola
-Neofuscelia loxodes
-Neofuscelia subhosseana
-Neofuscelia verruculifera
-Neolamya xanthoparmeliae
-Nephroma bellum
-Nephroma helveticum
-Nephroma helveticum subsp. sipeanum
-Nephroma helveticum var. sipeanum
-Nephroma laevigatum
-Nephroma lusitanicum
-Nephroma occultum
-Nephroma parile
-Nephroma rameum
-Nephroma resupinatum
-Nephromium helveticum
-Nephromium lusitanicum
-Nephromium tomentosum var. rameum
-Nephromopsis californica
-Nephromopsis ciliaris
-Nephromopsis platyphylla
-Nesolechia oxyspora
-Niebla caespitosa
-Niebla cedrosensis
-Niebla cephalota
-Niebla cerebra
-Niebla ceruchis
-Niebla ceruchoides
-Niebla combeoides
-Niebla cornea
-Niebla dactylifera
-Niebla disrupta
-Niebla dissecta
-Niebla eburnea
-Niebla fimbriata
-Niebla flaccescens
-Niebla flagelliforma
-Niebla halei
-Niebla homalea
-Niebla infundibula
-Niebla isidiaescens
-Niebla laevigata
-Niebla laminaria
-Niebla palmeri
-Niebla polymorpha
-Niebla procera
-Niebla ramosissima
-Niebla robusta
-Niebla siphonoloba
-Niebla sorediata
-Niebla sorocarpia
-Niebla testudinaria
-Niebla tigrina
-Niebla tuberculata
-Niebla undulata
-Niesslia peltigericola
-Nigropuncta rugulosa
-Nodobryoria abbreviata
-Nodobryoria oregana
-Nodobryoria subdivergens
-Normandina jungermanniae
-Normandina pulchella
-Obryzum corniculatum
-Ocellularia subtilis
-Ochrolechia africana
-Ochrolechia androgyna
-Ochrolechia arborea
-Ochrolechia californica
-Ochrolechia farinacea
-Ochrolechia frigida
-Ochrolechia gowardii
-Ochrolechia inversa
-Ochrolechia juvenalis
-Ochrolechia laevigata
-Ochrolechia mahluensis
-Ochrolechia mexicana
-Ochrolechia oregonensis
-Ochrolechia pallescens
-Ochrolechia pallescens var. rosella
-Ochrolechia parella
-Ochrolechia pseudopallescens
-Ochrolechia rosella
-Ochrolechia subathallina
-Ochrolechia subisidiata
-Ochrolechia subpallescens
-Ochrolechia szatala&euml;nsis
-Ochrolechia tartarea
-Ochrolechia trochophora
-Ochrolechia upsaliensis
-Omphalaria symphorea
-Omphalina ericetorum
-Omphalina umbellifera
-Omphalodiscus decussatus
-Omphalodiscus krascheninnikovii
-Omphalodiscus virginis
-Opegrapha abnormis
-Opegrapha anomea
-Opegrapha astraea
-Opegrapha atra
-Opegrapha atra
-Opegrapha atrorimalis
-Opegrapha betulina
-Opegrapha brattiae
-Opegrapha calcarea
-Opegrapha candida
-Opegrapha chevallieri
-Opegrapha constrictella
-Opegrapha crassispora
-Opegrapha diaphora
-Opegrapha erosa
-Opegrapha glaucomaria
-Opegrapha hassei
-Opegrapha hellespontica
-Opegrapha herbarum
-Opegrapha hypothallina
-Opegrapha lichenoides
-Opegrapha niveoatra
-Opegrapha ochrocheila
-Opegrapha pertusariae
-Opegrapha physciaria
-Opegrapha prosiliens
-Opegrapha protuberans
-Opegrapha pulicaris
-Opegrapha pulvinata
-Opegrapha rimalis
-Opegrapha rufescens
-Opegrapha rupestris
-Opegrapha saxicola
-Opegrapha sorediifera
-Opegrapha sphaerophoricola
-Opegrapha umbellulariae
-Opegrapha varia
-Opegrapha varia
-Opegrapha vulgata
-Opegrapha xerica
-Ophioparma herrei
-Ophioparma lapponica
-Ophioparma rubricosa
-Ophioparma ventosa
-Pachyospora verrucosa
-Pannaria bolanderi
-Pannaria brunnea
-Pannaria conoplea
-Pannaria cyanolepra
-Pannaria guepinii
-Pannaria hookeri
-Pannaria isidiata
-Pannaria lanuginosa
-Pannaria lepidiota
-Pannaria lepidiota var. coralliphora
-Pannaria lepidiota var. cyanolepra
-Pannaria leucophaea
-Pannaria leucosticta
-Pannaria leucostictoides
-Pannaria malmei
-Pannaria microphylla
-Pannaria microphylla
-Pannaria nigra
-Pannaria pezizoides
-Pannaria pityrea
-Pannaria praetermissa
-Pannaria pulveracea
-Pannaria rubiginella
-Pannaria rubiginosa
-Pannaria rubiginosa var. conoplea
-Pannaria rubiginosa var. lanuginosa
-Pannaria saubinetii
-Pannaria sonomensis
-Pannaria tavaresii
-Pannularia lepidiota
-Pannularia lepidiota var. cyanolepra
-Pannularia microphylla
-Pannularia microphylliza
-Pannularia nigra
-Pannularia triseptata
-Paraschismatomma ochroleucum
-Parmelia andreana
-Parmelia arnoldii
-Parmelia arseneana
-Parmelia aspera
-Parmelia aspidota
-Parmelia bahiana
-Parmelia barrenoae
-Parmelia bolliana
-Parmelia borreri
-Parmelia californica
-Parmelia caperata
-Parmelia caperata var. incorrupta
-Parmelia cetrarioides
-Parmelia cetrata
-Parmelia cirrhata
-Parmelia concreta
-Parmelia conspersa
-Parmelia conspersa var. stenophylla
-Parmelia conspersa var. subconspersa
-Parmelia conspurcata
-Parmelia corrugis
-Parmelia crinita
-Parmelia cristifera
-Parmelia cumberlandia
-Parmelia dierythra
-Parmelia disjuncta
-Parmelia dubia
-Parmelia elegantula
-Parmelia enteromorpha
-Parmelia exasperata
-Parmelia exasperatula
-Parmelia flaventior
-Parmelia flavicans
-Parmelia fuliginosa
-Parmelia furfuracea
-Parmelia glabra
-Parmelia glabratula
-Parmelia glabroides
-Parmelia herreana
-Parmelia herrei
-Parmelia hygrophila
-Parmelia hypoleucina
-Parmelia hypotropa
-Parmelia infumata
-Parmelia ioannis-simae
-Parmelia isidiotyla
-Parmelia kerguelensis
-Parmelia kernstockii
-Parmelia kurokawae
-Parmelia laevigata
-Parmelia lanata
-Parmelia lineola
-Parmelia lophyrea
-Parmelia loxodes
-Parmelia mexicana
-Parmelia multispora
-Parmelia olivacea
-Parmelia olivacea var. aspidota
-Parmelia olivacea var. glabra
-Parmelia olivacea var. multispora
-Parmelia olivacea var. polyspora
-Parmelia olivacea var. prolixa
-Parmelia olivacea var. sorediata
-Parmelia olivaria
-Parmelia olivetorum
-Parmelia omphalodes
-Parmelia ophioglossa
-Parmelia perforata
-Parmelia perlata
-Parmelia perlata subsp. ciliata
-Parmelia perlata var. flavicans
-Parmelia physodes
-Parmelia physodes var. enteromorpha
-Parmelia praesignis
-Parmelia prolixa
-Parmelia prolixa var. panniformis
-Parmelia pseudosulcata
-Parmelia pubescens
-Parmelia quercina
-Parmelia reticulata
-Parmelia revoluta
-Parmelia rutidota
-Parmelia saxatilis
-Parmelia saxatilis var. omphalodes
-Parmelia sorediata
-Parmelia soredica
-Parmelia sphaerosporella
-Parmelia squarrosa
-Parmelia stenophylla
-Parmelia stuppea
-Parmelia stygia
-Parmelia subargentifera
-Parmelia subaurifera
-Parmelia subcapitata
-Parmelia subconspersa
-Parmelia subelegantula
-Parmelia subhosseana
-Parmelia sublaevigata
-Parmelia subolivacea
-Parmelia subramigera
-Parmelia subrudecta
-Parmelia sulcata
-Parmelia taractica
-Parmelia tiliacea
-Parmelia verruculifera
-Parmelia vittata
-Parmelia weberi
-Parmeliella cyanolepra
-Parmeliella lepidiota
-Parmeliella lepidiota var. coralliphora
-Parmeliella lepidiota var. cyanolepra
-Parmeliella microphylla
-Parmeliella parvula
-Parmeliella praetermissa
-Parmeliella ruderatula
-Parmeliella saubinetii
-Parmeliella sonomensis
-Parmeliella triptophylla
-Parmelina coleae
-Parmelina quercina
-Parmeliopsis ambigua
-Parmeliopsis hyperopta
-Parmotrema arnoldii
-Parmotrema austrosinense
-Parmotrema cetratum
-Parmotrema chinense
-Parmotrema crinitum
-Parmotrema cristiferum
-Parmotrema eurysacum
-Parmotrema herrei
-Parmotrema hypoleucinum
-Parmotrema hypotropum
-Parmotrema perforatum
-Parmotrema perlatum
-Parmotrema praesorediosum
-Parmotrema reticulatum
-Parmotrema stuppeum
-Peccania arizonica
-Peccania cernohorskyi
-Peccania subnigra
-Peccania texana
-Peccania tiruncula
-Peltidea canina
-Peltigera aphthosa
-Peltigera aphthosa var. leucophlebia
-Peltigera aphthosa var. variolosa
-Peltigera britannica
-Peltigera canina
-Peltigera canina
-Peltigera canina
-Peltigera canina var. rufescens
-Peltigera canina var. sorediifera
-Peltigera canina var. spuria
-Peltigera collina
-Peltigera degenii
-Peltigera didactyla
-Peltigera dolichorrhiza
-Peltigera fibrilloides
-Peltigera gowardii
-Peltigera horizontalis
-Peltigera hydrothyria
-Peltigera kristinssonii
-Peltigera leptoderma
-Peltigera leucophlebia
-Peltigera malacea
-Peltigera membranacea
-Peltigera monticola
-Peltigera neckeri
-Peltigera neopolydactyla
-Peltigera pacifica
-Peltigera polydactyla
-Peltigera polydactyla var. dolichorrhiza
-Peltigera polydactyla var. typica
-Peltigera polydactylon
-Peltigera ponojensis
-Peltigera praetextata
-Peltigera pulverulenta
-Peltigera retifoveata
-Peltigera rufescens
-Peltigera scabrosa
-Peltigera scutata
-Peltigera sorediata
-Peltigera spuria
-Peltigera venosa
-Peltosphaeria californica
-Peltula bolanderi
-Peltula corticola
-Peltula cylindrica
-Peltula euploca
-Peltula farinosa
-Peltula michoacanensis
-Peltula obscurans var. deserticola
-Peltula obscurans var. hassei
-Peltula obscurans var. obscurans
-Peltula omphaliza
-Peltula patellata
-Peltula placodizans
-Peltula polyspora
-Peltula richardsii
-Peltula sonorensis
-Peltula tortuosa
-Peltula zahlbruckneri
-Pertusaria albescens
-Pertusaria amara
-Pertusaria ambigens
-Pertusaria borealis
-Pertusaria brattiae
-Pertusaria californica
-Pertusaria chiodectonoides
-Pertusaria coccodes
-Pertusaria communis
-Pertusaria consocians
-Pertusaria excludens
-Pertusaria flavicunda
-Pertusaria glaucomela
-Pertusaria globulifera
-Pertusaria hymenea
-Pertusaria islandica
-Pertusaria lecanina
-Pertusaria leioplaca
-Pertusaria leucostoma
-Pertusaria moreliensis
-Pertusaria multipuncta
-Pertusaria nolens
-Pertusaria occidentalis
-Pertusaria ophthalmiza
-Pertusaria panyrga
-Pertusaria pertusa var. rupestris
-Pertusaria pseudocorallina
-Pertusaria pupillaris
-Pertusaria pustulata
-Pertusaria raesaenenii
-Pertusaria rubefacta
-Pertusaria rupestris
-Pertusaria santamonicae
-Pertusaria subambigens
-Pertusaria subpupillaris
-Pertusaria tejocotensis
-Pertusaria velata
-Pertusaria wulfenii
-Pertusaria wulfenioides
-Pertusaria xanthodes
-Pezizella epithallina
-Phacographa glaucomaria
-Phacopsis oxyspora
-Phacopsis oxyspora var. fusca
-Phacopsis vulpina
-Phacothecium varium
-Phaeocalicium curtisii
-Phaeocalicium populneum
-Phaeocalicium tremulicola
-Phaeographis dendritica
-Phaeographis erumpens
-Phaeographis eulectra
-Phaeographis inusta
-Phaeographis smithii
-Phaeophyscia cernohorskyi
-Phaeophyscia ciliata
-Phaeophyscia constipata
-Phaeophyscia decolor
-Phaeophyscia endococcina
-Phaeophyscia erythrocardia
-Phaeophyscia hirsuta
-Phaeophyscia hirtella
-Phaeophyscia hispidula
-Phaeophyscia kairamoi
-Phaeophyscia nigricans
-Phaeophyscia orbicularis
-Phaeophyscia pusilloides
-Phaeophyscia sciastra
-Phaeopyxis punctum
-Phaeorrhiza nimbosa
-Phaeorrhiza sareptana
-Phaeosporobolus alpinus
-Phaeosporobolus usneae
-Phaeotrema californicum
-Phloeopeccania pulvinulina
-Phlyctis agelaea
-Phlyctis argena
-Phlyctis speirea
-Phoma cladoniicola
-Phoma cytospora
-Phoma physciicola
-Phylliscum demangeonii
-Phylliscum tenue
-Phyllopsora parvifolia
-Physcia adglutinata
-Physcia adscendens
-Physcia aipolia
-Physcia alba
-Physcia alba var. obsessa
-Physcia albicans
-Physcia albinea
-Physcia americana
-Physcia aquila
-Physcia astroidea
-Physcia biziana
-Physcia caesia
-Physcia callosa
-Physcia cascadensis
-Physcia chrysophthalma var. pubera
-Physcia ciliaris
-Physcia ciliaris var. erinacea
-Physcia ciliata
-Physcia ciliata
-Physcia ciliata
-Physcia clementei
-Physcia comosa
-Physcia crispa
-Physcia dimidiata
-Physcia dubia
-Physcia duplicorticata
-Physcia elaeina
-Physcia erinacea
-Physcia erumpens
-Physcia grisea
-Physcia halei
-Physcia hispida
-Physcia intermedia
-Physcia isidiigera
-Physcia leptalea
-Physcia leucomela
-Physcia lychnea
-Physcia magnussonii
-Physcia melops
-Physcia mexicana
-Physcia millegrana
-Physcia muscigena
-Physcia neglecta
-Physcia obscura
-Physcia obscura var. erythrocardia
-Physcia olivacea
-Physcia orbicularis
-Physcia parietina
-Physcia parietina var. polycarpa
-Physcia parietina var. ramulosa
-Physcia phaea
-Physcia polycarpa
-Physcia poncinsii
-Physcia pulverulenta
-Physcia pulverulenta
-Physcia pulverulenta
-Physcia pulverulenta
-Physcia pulverulenta
-Physcia pulverulenta subsp. isidiigera
-Physcia pulverulenta subsp. pityrea
-Physcia pulverulenta var. leucoleiptes
-Physcia pulverulenta var. subvenusta
-Physcia semipinnata
-Physcia setosa
-Physcia speciosa
-Physcia stellaris
-Physcia stellaris subsp. tenella
-Physcia stellaris var. aipolia
-Physcia stellaris var. hispida
-Physcia subalbinea
-Physcia subobscura
-Physcia subtilis
-Physcia tenella
-Physcia tenella
-Physcia tenella subsp. marina
-Physcia tenellula
-Physcia teretiuscula
-Physcia tribacia
-Physcia tribacoides
-Physcia undulata
-Physcia venusta
-Physcia villosa
-Physcia villosula
-Physciella chloantha
-Physciella melanchra
-Physconia americana
-Physconia californica
-Physconia detersa
-Physconia distorta
-Physconia enteroxantha
-Physconia fallax
-Physconia grisea
-Physconia grisea
-Physconia isidiigera
-Physconia isidiomuscigena
-Physconia kurokawae
-Physconia leucoleiptes
-Physconia muscigena
-Physconia perisidiosa
-Physconia pulverulenta
-Physconia thomsonii
-Physconia venusta
-Pilophoron aciculare
-Pilophorus acicularis
-Placidiopsis cervinula
-Placidiopsis cinerascens
-Placidium acarosporoides
-Placidium andicola
-Placidium arboreum
-Placidium californicum
-Placidium chilense
-Placidium fingens
-Placidium lachneum
-Placidium lacinulatum
-Placidium lacinulatum var. erythrostratum
-Placidium michelii
-Placidium pilosellum
-Placidium rufescens
-Placidium squamulosum
-Placidium tuckermanii
-Placocarpus americanus
-Placodium aurantiacum
-Placodium bolacinum
-Placodium callopismum
-Placodium candicans
-Placodium cerinum
-Placodium cerinum var. pyraceum
-Placodium cerinum var. sideritis
-Placodium cinnabarinum
-Placodium cladodes
-Placodium constipans
-Placodium coralloides
-Placodium elegans
-Placodium epixanthum
-Placodium eugyrum
-Placodium ferrugineum
-Placodium ferrugineum
-Placodium ferrugineum var. festivum
-Placodium ferrugineum var. wrightii
-Placodium festivum
-Placodium fulgens
-Placodium luteominium
-Placodium microphyllinum
-Placodium murorum
-Placodium murorum var. gyalolechioides
-Placodium murorum var. miniatum
-Placodium murorum var. obliterascens
-Placodium peliophyllum
-Placodium subpyraceellum
-Placodium teicholytum
-Placodium vitellinum
-Placodium vitellinum var. aurellum
-Placolecania candicans
-Placolecania crenata
-Placolecania hassei
-Placopsis gelida
-Placopsis lambii
-Placopyrenium bucekii
-Placopyrenium caeruleopulvinum
-Placopyrenium conforme
-Placopyrenium fuscellum
-Placopyrenium heppioides
-Placopyrenium lecideoides
-Placopyrenium noxium
-Placopyrenium stanfordii
-Placopyrenium zahlbruckneri
-Placynthiella dasaea
-Placynthiella hyporhoda
-Placynthiella icmalea
-Placynthiella knudsenii
-Placynthiella oligotropha
-Placynthiella uliginosa
-Placynthium asperellum
-Placynthium dubium
-Placynthium flabellosum
-Placynthium microphyllizum
-Placynthium nigrum
-Placynthium pannariellum
-Placynthium sonomense
-Placynthium tantaleum
-Platismatia glauca
-Platismatia herrei
-Platismatia lacunosa
-Platismatia norvegica
-Platismatia stenophylla
-Platygrapha californica
-Platygrapha hypothallina
-Platygrapha plurilocularis
-Platysma orbatum
-Platysma sepincola
-Plectocarpon lichenum
-Plectocarpon nashii
-Pleopsidium chlorophanum
-Pleopsidium flavum
-Pleopsidium stenosporum
-Polyblastia cupularis
-Polyblastia intercedens
-Polyblastia intercedens var. aethioboloides
-Polyblastiopsis inductula
-Polyblastiopsis lactea
-Polycauliona bolanderi
-Polycauliona constipans
-Polycauliona coralloides
-Polycauliona phryganitis
-Polycauliona thamnitis
-Polychidium albociliatum
-Polychidium dendriscum
-Polychidium muscicola
-Polychidium rivale
-Polycoccum kerneri
-Polycoccum microsticticum
-Polycoccum pulvinatum
-Polysporina arenacea
-Polysporina bicolor
-Polysporina gyrocarpa
-Polysporina lapponica
-Polysporina oligospora
-Polysporina simplex
-Polysporina subfuscescens
-Polysporina urceolata
-Porina aenea
-Porina carpinea
-Porina cestrensis
-Porina chlorotica
-Porina cinerea
-Porina hibernica
-Porina linearis
-Porina peregrina
-Porina plumbaria
-Porocyphus coccodes
-Porpidia crustulata
-Porpidia grisea
-Porpidia macrocarpa
-Porpidia ochrolemma
-Porpidia soredizodes
-Porpidia speirea
-Porpidia thomsonii
-Protoblastenia quernea
-Protoblastenia rupestris
-Protopannaria pezizoides
-Protoparmelia badia
-Protoparmelia hypotremella
-Protoparmelia nephaea
-Protoparmelia ochrococca
-Protoparmelia ryaniana
-Protoparmeliopsis muralis
-Pseudephebe minuscula
-Pseudephebe pubescens
-Pseudevernia intensa
-Pseudocyphellaria anomala
-Pseudocyphellaria anthraspis
-Pseudocyphellaria crocata
-Pseudocyphellaria perpetua
-Pseudoparmelia caperata
-Pseudosagedia aenea
-Pseudosagedia cestrensis
-Pseudosagedia chlorotica
-Pseudosagedia linearis
-Psilolechia lucida
-Psora brunneocarpa
-Psora californica
-Psora caulophylla
-Psora cerebriformis
-Psora crenata
-Psora decipiens
-Psora friesii
-Psora globifera
-Psora hyporubescens
-Psora icterica
-Psora lurida
-Psora luridella
-Psora montana
-Psora nipponica
-Psora novomexicana
-Psora pacifica
-Psora peninsularis
-Psora pruinosa
-Psora rubiformis
-Psora russellii
-Psora scotopholis
-Psora tuckermanii
-Psorinia conglomerata
-Psoroma cinnamomeum
-Psoroma hypnorum
-Psorotichia arnoldiana
-Psorotichia hassei
-Psorotichia montinii
-Psorotichia phaeococca
-Psorotichia schaereri
-Psorotichia segregata
-Psorotichia squamulosa
-Psorula rufonigra
-Psorula scotopholis
-Pterygiopsis concordatula
-Ptychographa xylographoides
-Punctelia bolliana
-Punctelia borreri
-Punctelia jeckeri
-Punctelia perreticulata
-Punctelia punctilla
-Punctelia stictica
-Punctelia subrudecta
-Punctelia ulophylla
-Pycnora praestabilis
-Pycnora sorophora
-Pycnora xanthococca
-Pyrenocollema elegans
-Pyrenocollema halodytes
-Pyrenocollema imshaugii
-Pyrenocollema prospersellum
-Pyrenodesmia aurantiaca
-Pyrenodesmia bolacina
-Pyrenodesmia bolanderi
-Pyrenodesmia californica
-Pyrenodesmia cerina
-Pyrenodesmia ferruginea
-Pyrenodesmia festiva
-Pyrenodesmia flavovirescens
-Pyrenodesmia fraudans
-Pyrenodesmia laeta
-Pyrenodesmia luteominia
-Pyrenodesmia pellodella
-Pyrenodesmia pyracea
-Pyrenodesmia sideritis
-Pyrenodesmia stanfordensis
-Pyrenodesmia subpyraceella
-Pyrenodesmia teicholyta
-Pyrenodesmia variabilis
-Pyrenopsis homoeopsis
-Pyrenopsis melambola
-Pyrenopsis phaeococca
-Pyrenopsis polycocca
-Pyrenopsis pulvinata
-Pyrenopsis sanguinea
-Pyrenopsis subareolata
-Pyrenopsis triptococca
-Pyrenula cerasi
-Pyrenula fallax
-Pyrenula herrei
-Pyrenula lactea
-Pyrenula laevigata
-Pyrenula neglecta subsp. occidentalis
-Pyrenula occidentalis
-Pyrenula plumbaria
-Pyrenula punctiformis
-Pyrenula pyrenuloides
-Pyrenula thelemorpha
-Pyrrhospora cinnabarina
-Pyrrhospora elabens
-Pyrrhospora gowardiana
-Pyrrhospora quernea
-Pyrrhospora russula
-Pyrrhospora subcinnabarina
-Pyrrhospora varians
-Pyxine mexicana
-Pyxine petricola
-Pyxine sorediata
-Pyxine subcinerea
-Ramalina asahinae
-Ramalina baltica
-Ramalina bistorta
-Ramalina calicaris
-Ramalina calicaris var. farinacea
-Ramalina calicaris var. fastigiata
-Ramalina calicaris var. fraxinea
-Ramalina canaliculata
-Ramalina canaliculata
-Ramalina canariensis
-Ramalina celastri
-Ramalina ceruchis
-Ramalina ceruchis
-Ramalina ceruchis var. tumidula
-Ramalina cochlearis
-Ramalina combeoides
-Ramalina combeoides var. robusta
-Ramalina complanata
-Ramalina crinita
-Ramalina dilacerata
-Ramalina duriaei
-Ramalina evernioides
-Ramalina farinacea
-Ramalina fastigiata
-Ramalina flaccescens
-Ramalina fraxinea
-Ramalina geniculata
-Ramalina glauca
-Ramalina homalea
-Ramalina homalea var. disrupta
-Ramalina inflata
-Ramalina intermedia
-Ramalina lacera
-Ramalina laevigata
-Ramalina leptocarpha
-Ramalina leptocarpha
-Ramalina linearis
-Ramalina menziesii
-Ramalina menziesii
-Ramalina menziesii
-Ramalina minuscula
-Ramalina obtusata
-Ramalina peruviana
-Ramalina pollinaria
-Ramalina pollinaria
-Ramalina puberulenta
-Ramalina reagens
-Ramalina reticulata
-Ramalina retiformis
-Ramalina rigida
-Ramalina roesleri
-Ramalina scopulorum var. tenuissima
-Ramalina sinensis
-Ramalina sonorensis
-Ramalina stenospora
-Ramalina subampliata
-Ramalina subleptocarpha
-Ramalina testudinaria
-Ramalina testudinaria var. intermedia
-Ramalina thrausta
-Ramalina usnea
-Ramalina yemensis
-Ramboldia cinnabarina
-Ramboldia elabens
-Ramboldia gowardiana
-Ramboldia russula
-Ramboldia subcinnabarina
-Ramonia ablephora
-Ramonia extensa
-Ramonia gyalectiformis
-Ramonia vermispora
-Reconditella physconiarum
-Reinkella californica
-Reinkella parishii
-Reinkella subcrustacea
-Rhizocarpon alpicola
-Rhizocarpon ambiguum
-Rhizocarpon athalloides
-Rhizocarpon badioatrum
-Rhizocarpon bolanderi
-Rhizocarpon bolanderi var. sulphurosum
-Rhizocarpon cinereovirens
-Rhizocarpon concentricum
-Rhizocarpon confervoides
-Rhizocarpon cookeanum
-Rhizocarpon dimelaenae
-Rhizocarpon disporum
-Rhizocarpon distinctum
-Rhizocarpon effiguratum
-Rhizocarpon eupetraeum
-Rhizocarpon ferax
-Rhizocarpon geminatum
-Rhizocarpon geographicum
-Rhizocarpon geographicum var. lecanorinum
-Rhizocarpon grande
-Rhizocarpon intermedium
-Rhizocarpon lecanorinum
-Rhizocarpon macrosporum
-Rhizocarpon obscuratum
-Rhizocarpon oederi
-Rhizocarpon oidaleum
-Rhizocarpon penichrum
-Rhizocarpon petraeum
-Rhizocarpon polycarpum
-Rhizocarpon pusillum
-Rhizocarpon renneri
-Rhizocarpon riparium
-Rhizocarpon saana&euml;nse
-Rhizocarpon saurinum
-Rhizocarpon sublucidum
-Rhizocarpon subpostumum
-Rhizocarpon sulphurosum
-Rhizocarpon superficiale
-Rhizocarpon tinei
-Rhizocarpon viridiatrum
-Rhizoplaca chrysoleuca
-Rhizoplaca glaucophana
-Rhizoplaca haydenii
-Rhizoplaca marginalis
-Rhizoplaca melanophthalma
-Rhizoplaca peltata
-Rhizoplaca subdiscrepans
-Rhymbocarpus boomii
-Rhymbocarpus cruciatus
-Rimelia cetrata
-Rimelia reticulata
-Rimularia gibbosa
-Rimularia insularis
-Rinodina angelica
-Rinodina archaea
-Rinodina ascociscana
-Rinodina aterrima
-Rinodina aurantiaca
-Rinodina badiexcipula
-Rinodina bischoffii
-Rinodina bolanderi
-Rinodina bolodes
-Rinodina brouardii
-Rinodina californica
-Rinodina californiensis
-Rinodina capensis
-Rinodina castanomela
-Rinodina chrysomelaena
-Rinodina colobina
-Rinodina confragosa
-Rinodina confragosula
-Rinodina conradii
-Rinodina constrictula
-Rinodina corticola
-Rinodina degeliana
-Rinodina destituta
-Rinodina dirinoides
-Rinodina disjuncta
-Rinodina endospora
-Rinodina euryspora
-Rinodina exigua
-Rinodina flavosoralifera
-Rinodina freyi
-Rinodina gennarii
-Rinodina griseosoralifera
-Rinodina hallii
-Rinodina herrei
-Rinodina innata
-Rinodina intermedia
-Rinodina juniperina
-Rinodina laevigata
-Rinodina lignicola
-Rinodina luridata
-Rinodina macrospora
-Rinodina marysvillensis
-Rinodina metaboliza
-Rinodina microbola
-Rinodina milvina
-Rinodina mniaraea
-Rinodina obnascens
-Rinodina oleae
-Rinodina olivaceobrunnea
-Rinodina orbata
-Rinodina orculata
-Rinodina oregana
-Rinodina oreina
-Rinodina oxydata
-Rinodina pacifica
-Rinodina parasitica
-Rinodina platyloba
-Rinodina poeltiana
-Rinodina polyspora
-Rinodina pycnocarpa
-Rinodina pyrina
-Rinodina radiata
-Rinodina radiata var. fimbriata
-Rinodina rinodinoides
-Rinodina riparia
-Rinodina roboris
-Rinodina sabulosa
-Rinodina santae-monicae
-Rinodina septentrionalis
-Rinodina sophodes
-Rinodina sophodes var. atrocinerea
-Rinodina straussii
-Rinodina succedens
-Rinodina tephraspis
-Rinodina terricola
-Rinodina thysanota
-Rinodina trevisanii
-Rinodina turfacea
-Rinodina turfacea var. mniaraea
-Rinodina zwackhiana
-Roccella babingtonii
-Roccella calicaris var. fraxinea
-Roccella ceruchis
-Roccella ceruchis
-Roccella combeoides
-Roccella decipiens
-Roccella difficilis
-Roccella fimbriata
-Roccella fuciformis
-Roccella fucoides
-Roccella gracilis
-Roccella homalea
-Roccella intermedia
-Roccella leucophaea
-Roccella leucophaea var. minor
-Roccella montagnei
-Roccella peruensis
-Roccella phycopsis
-Roccella reticulata
-Roccella tinctoria
-Roccellina conformis
-Roccellina franciscana
-Romjularia lurida
-Roselliniella cladoniae
-Sarcogyne arenosa
-Sarcogyne bicolor
-Sarcogyne californica
-Sarcogyne clavus
-Sarcogyne crustacea
-Sarcogyne lapponica
-Sarcogyne novomexicana
-Sarcogyne plicata
-Sarcogyne plicata
-Sarcogyne privigna
-Sarcogyne privigna var. clavus
-Sarcogyne privigna
-Sarcogyne reebiae
-Sarcogyne regularis
-Sarcogyne similis
-Sarcogyne simplex
-Sarcogyne sphaerospora
-Sarcopyrenia bacillosa
-Sarea resinae
-Schaereria cinereorufa
-Schaereria corticola
-Schaereria dolodes
-Schaereria fuscocinerea
-Schaereria tenebrosa
-Schismatomma abietinum
-Schismatomma californicum
-Schismatomma cupressum
-Schismatomma decolorans
-Schismatomma hypothallinum
-Schismatomma pluriloculare
-Schismatomma rediunta
-Schizopelte californica
-Schizopelte crustosa
-Schizopelte parishii
-Sclerococcum montagnei
-Sclerococcum parmeliae
-Sclerophora nivea
-Sclerophyton californicum
-Sclerophyton cerebriforme
-Sclerophyton murex
-Sclerophyton occidentale
-Scoliciosporum pruinosum
-Scoliciosporum sarothamni
-Scoliciosporum umbrinum
-Segestria leptalea
-Seirophora californica
-Sigridea californica
-Silobia hassei
-Silobia scabrida
-Siphula simplex
-Siphula sp.
-Skyttea pertusariicola
-Skyttea tavaresiae
-Skyttella mulleri
-Solenopsora candicans
-Solenopsora cladonioides
-Solenopsora crenata var. crenata
-Solenopsora cyathiformis
-Solenopsora hassei
-Solenopsora holophaea
-Solorina crocea
-Solorina spongiosa
-Sparria cerebriformis
-Sphaerellothecium abditum
-Sphaerellothecium atryneae
-Sphaerellothecium breussii
-Sphaerellothecium cladoniae
-Sphaerellothecium parmeliae
-Sphaerellothecium propinquellum
-Sphaerellothecium reticulatum
-Sphaerellothecium subtile
-Sphaerophorus compressus
-Sphaerophorus fragilis
-Sphaerophorus globiferus
-Sphaerophorus globosus
-Sphaerophorus globosus var. gracilis
-Sphaerophorus tuckermanii
-Sphaerophorus venerabilis
-Sphinctrina anglica
-Sphinctrina gelasinata
-Sphinctrina leucopoda
-Sphinctrina microcephala
-Sphinctrina microcephala
-Sphinctrina tubaeformis
-Sphinctrina turbinata
-Spilonema revertens
-Sporastatia polyspora
-Sporastatia testudinea
-Squamarina lentigera
-Staurothele areolata
-Staurothele clopimoides
-Staurothele diffractella
-Staurothele drummondii
-Staurothele elenkinii
-Staurothele fissa
-Staurothele fuscocuprea
-Staurothele monicae
-Staurothele polygonia
-Staurothele rupifraga
-Stenocybe byssacea
-Stenocybe major
-Stenocybe pullatula
-Stenocybe tremulicola
-Stereocaulon albicans
-Stereocaulon denudatum
-Stereocaulon glareosum
-Stereocaulon intermedium
-Stereocaulon myriocarpum
-Stereocaulon paschale
-Stereocaulon rivulorum
-Stereocaulon sasakii var. tomentosoides
-Stereocaulon sterile
-Stereocaulon tomentosum
-Stereocaulon vesuvianum
-Stereocaulon vesuvianum var. denudatum
-Sticta anthraspis
-Sticta beauvoisii
-Sticta fuliginosa
-Sticta laciniata
-Sticta limbata
-Sticta oregana
-Sticta pulmonaria
-Sticta saxicola
-Sticta scrobiculata
-Sticta sylvatica
-Sticta verrucosa
-Sticta weigelii
-Stictina anthraspis
-Stigmidium californicum
-Stigmidium cerinae
-Stigmidium epistigmellum
-Stigmidium epixanthum
-Stigmidium fuscatae
-Stigmidium hesperium
-Stigmidium lendemeri
-Stigmidium psorae
-Stigmidium pumilum
-Stigmidium ramalinae
-Stigmidium squamariae
-Stigmidium tabacinae
-Stigmidium xanthoparmeliarum
-Strangospora deplanata
-Strangospora microhaema
-Strangospora moriformis
-Strangospora ochrophora
-Strigula stigmatella
-Stromatella bermudana
-Sulcaria badia
-Sulcaria isidiifera
-Synalissa symphorea
-Synalissa symphorea var. sphaerospora
-Synechoblastus aggregatus
-Synechoblastus coccophorus
-Synechoblastus fascicularis
-Synechoblastus laciniatus
-Synechoblastus leucocarpus
-Syzygospora bachmannii
-Syzygospora physciacearum
-Taeniolella phaeophysciae
-Teloschistes californicus
-Teloschistes candelarius var. laciniosus
-Teloschistes candelarius var. pygmaeus
-Teloschistes chrysophthalmus
-Teloschistes chrysophthalmus var. flavicans(Sw.)
-Teloschistes concolor
-Teloschistes exilis
-Teloschistes flavicans
-Teloschistes flavicans var. puberus
-Teloschistes lychneus
-Teloschistes lychneus
-Teloschistes lychneus var. pygmaeus
-Teloschistes parietinus
-Teloschistes parietinus
-Teloschistes parietinus var. polycarpus
-Teloschistes parietinus var. ramulosus
-Teloschistes polycarpus
-Teloschistes ramulosus
-Teloschistes villosus
-Tephromela armeniaca
-Tephromela atra
-Tephromela nashii
-Texosporium sancti-jacobi
-Thamnolia vermicularis
-Thelenella harrisii
-Thelenella hassei
-Thelenella inductula
-Thelenella modesta
-Thelenella muscorum
-Thelenella sychnogonioides
-Thelenella weberi
-Thelidium circumspersellum
-Thelidium microbolum
-Thelidium minutulum
-Thelignya lignyota
-Thelocarpon albomarginatum
-Thelocarpon hassei
-Thelocarpon intermediellum
-Thelocarpon laureri
-Thelocarpon lichenicola
-Thelomma californicum
-Thelomma carolinianum
-Thelomma mammosum
-Thelomma occidentale
-Thelomma ocellatum
-Thelomma santessonii
-Thelopsis isiaca
-Thelopsis subporinella
-Thelotrema californicum
-Thelotrema lepadinum
-Thelotrema petractoides
-Thelotrema subtile
-Thermutis velutina
-Tholurna dissimilis
-Thrombium aoristum
-Thrombium discordans
-Thrombium epigaeum
-Thyrea confusa
-Thyrea nigritella
-Tichothecium zahlbrucknerellae
-Tomasellia americana
-Tomasellia californica
-Tomasellia eschweileri
-Tomasellia lactea
-Toninia aromatica
-Toninia athallina
-Toninia bullata
-Toninia caeruleonigricans
-Toninia candida
-Toninia caulescens
-Toninia cumulata
-Toninia massata
-Toninia nashii
-Toninia ruginosa
-Toninia ruginosa
-Toninia ruginosa subsp. ruginosa
-Toninia ruginosa subsp. pacifica
-Toninia sedifolia
-Toninia squalida
-Toninia squalida
-Toninia squalida var. persimilans
-Toninia squarrosa
-Toninia squarrosa subsp. persimilans
-Toninia subdispersa
-Toninia submexicana
-Toninia subtalparum
-Toninia talparum
-Toninia tristis
-Toninia verrucarioides
-Topelia californica
-Topelia gyalectodes
-Tornabea scutellifera
-Trachylia chloroconium
-Trachylia sancti-jacobi
-Trachylia tympanella
-Trapelia coarctata
-Trapelia corticola
-Trapelia glebulosa
-Trapelia involuta
-Trapelia obtegens
-Trapelia placodioides
-Trapeliopsis bisorediata
-Trapeliopsis californica
-Trapeliopsis flexuosa
-Trapeliopsis glaucopholis
-Trapeliopsis granulosa
-Trapeliopsis steppica
-Trapeliopsis viridescens
-Trapeliopsis wallrothii
-Tremella dendrographae
-Tremella lethariae
-Tremella nieblae
-Tremella parmeliarum
-Tremella phaeophysciae
-Tremella ramalinae
-Tremolecia atrata
-Trichoramalina crinita
-Trichoramalina melanothrix
-Trichothelium aeneum
-Trichothelium chloroticum
-Trichothelium lineare
-Trimmatostroma dendrographae
-Trimmatothele umbellulariae
-Tuckermannopsis americana
-Tuckermannopsis canadensis
-Tuckermannopsis chlorophylla
-Tuckermannopsis ciliaris
-Tuckermannopsis merrillii
-Tuckermannopsis orbata
-Tuckermannopsis pallidula
-Tuckermannopsis platyphylla
-Tuckermannopsis sepincola
-Turgidosculum ulvae
-Umbilicaria americana
-Umbilicaria angulata
-Umbilicaria arctica
-Umbilicaria cinereorufescens
-Umbilicaria decussata
-Umbilicaria deusta
-Umbilicaria hirsuta
-Umbilicaria hirsuta var. grisea
-Umbilicaria hyperborea
-Umbilicaria krascheninnikovii
-Umbilicaria lambii
-Umbilicaria murina
-Umbilicaria nylanderiana
-Umbilicaria phaea var. phaea
-Umbilicaria phaea var. coccinea
-Umbilicaria polyphylla
-Umbilicaria polyrhiza
-Umbilicaria proboscidea
-Umbilicaria rigida
-Umbilicaria rugifera
-Umbilicaria semitensis
-Umbilicaria torrefacta
-Umbilicaria vellea
-Umbilicaria virginis
-Unguiculariopsis lettaui
-Unguiculariopsis thallophila
-Urceolaria actinostoma
-Urceolaria albissima
-Urceolaria gypsacea
-Urceolaria scruposa
-Urceolaria scruposa subsp. bryophylla
-Urceolaria scruposa var. gypsacea
-Usnea arizonica
-Usnea articulata
-Usnea australis
-Usnea baileyi
-Usnea barbata
-Usnea barbata
-Usnea barbata
-Usnea barbata var. ceratina
-Usnea barbata var. hirta
-Usnea barbata var. rubiginea
-Usnea brasiliensis
-Usnea brattiae
-Usnea californica
-Usnea canariensis
-Usnea cavernosa
-Usnea ceratina
-Usnea chaetophora
-Usnea cirrhosa
-Usnea comosa
-Usnea comosa subsp. similis
-Usnea condensata
-Usnea cornuta subsp. cornuta
-Usnea cornuta subsp. brasiliensis
-Usnea dasaea
-Usnea dasypoga
-Usnea dasypoga var. scabrata
-Usnea deformis
-Usnea dimorpha
-Usnea diplotypus
-Usnea esperantiana
-Usnea filipendula
-Usnea flavocardia
-Usnea florida
-Usnea florida
-Usnea fragilescens
-Usnea fragilescens
-Usnea fragilescens var. mollis
-Usnea fulvoreagens
-Usnea glabrata
-Usnea glabrescens
-Usnea hesperina
-Usnea hirta subsp. hirta
-Usnea hirta
-Usnea intermedia
-Usnea jubata
-Usnea kujalae
-Usnea lapponica
-Usnea longissima
-Usnea madeirensis
-Usnea mirabilis
-Usnea mollis
-Usnea monstruosa
-Usnea mutabilis
-Usnea occidentalis
-Usnea ochroleuca
-Usnea pacificana
-Usnea parvula
-Usnea pendulina
-Usnea pensylvanica
-Usnea plicata
-Usnea plicata var. megathamnia
-Usnea praetervisa
-Usnea quasirigida
-Usnea retifera
-Usnea rigida
-Usnea rubicunda
-Usnea rubiginea
-Usnea scabiosa
-Usnea scabrata
-Usnea schadenbergiana
-Usnea silesiaca
-Usnea sorediifera
-Usnea strigosa subsp. rubiginea
-Usnea subcornuta
-Usnea subfloridana
-Usnea subfusca
-Usnea subgracilis
-Usnea subscabrosa
-Usnea substerilis
-Usnea trichodea
-Usnea vrieseana
-Usnea wasmuthii
-Usnea wirthii
-Vahliella californica
-Vahliella labrata
-Vahliella leucophaea
-Vahliella saubinetii
-Vermilacinia acicularis
-Vermilacinia cephalota
-Vermilacinia cerebra
-Vermilacinia ceruchoides
-Vermilacinia combeoides
-Vermilacinia corrugata
-Vermilacinia howei
-Vermilacinia laevigata
-Vermilacinia leopardina
-Vermilacinia nylanderi
-Vermilacinia paleoderma
-Vermilacinia polymorpha
-Vermilacinia procera
-Vermilacinia pumila
-Vermilacinia robusta
-Vermilacinia tigrina
-Vermilacinia tuberculata
-Vermilacinia zebrina
-Verrucaria acrotella
-Verrucaria adelminienii
-Verrucaria aethiobola
-Verrucaria amylacea
-Verrucaria aquilella
-Verrucaria aspecta
-Verrucaria bacillosa
-Verrucaria bernardinensis
-Verrucaria caerulea
-Verrucaria calciseda
-Verrucaria calciseda subsp. fuscospora
-Verrucaria calkinsiana
-Verrucaria canella
-Verrucaria carpinea var. plumbaria
-Verrucaria cerasi
-Verrucaria cetera
-Verrucaria chlorotica
-Verrucaria chlorotica
-Verrucaria cinerea
-Verrucaria circumspersella
-Verrucaria compacta
-Verrucaria conturmatula
-Verrucaria dacryodes
-Verrucaria discordans
-Verrucaria dolosa
-Verrucaria elaeina
-Verrucaria endocarpoides
-Verrucaria epidermidis
-Verrucaria epidermidis var. analepta
-Verrucaria epidermidis var. cinereopruinosa
-Verrucaria epigaea
-Verrucaria fallax
-Verrucaria floerkeana
-Verrucaria fraudulosa
-Verrucaria furfuracea
-Verrucaria fusca
-Verrucaria fuscella
-Verrucaria fuscoatroides
-Verrucaria fuscocinerascens
-Verrucaria fusconigrescens
-Verrucaria glaucina subsp. canella
-Verrucaria glaucovirens
-Verrucaria halizoa
-Verrucaria hochstetteri
-Verrucaria hydrela
-Verrucaria inductula
-Verrucaria inornata
-Verrucaria integrella
-Verrucaria integrella var. terrestris
-Verrucaria intercedens
-Verrucaria intercedens var. aethioboloides
-Verrucaria internigrescens
-Verrucaria lecideoides
-Verrucaria macrostoma
-Verrucaria margacea
-Verrucaria margacea subsp. terrestris
-Verrucaria margacea var. acrotella
-Verrucaria margacea var. papillosa
-Verrucaria maura
-Verrucaria melas
-Verrucaria memnonia
-Verrucaria microbola
-Verrucaria mimicrans
-Verrucaria mucosa
-Verrucaria muralis
-Verrucaria nigrescens
-Verrucaria nigrofusca
-Verrucaria ochrostoma
-Verrucaria onegensis
-Verrucaria othmarii
-Verrucaria papillosa
-Verrucaria papillosa
-Verrucaria peloclita
-Verrucaria plumbaria
-Verrucaria plumbea
-Verrucaria prominula
-Verrucaria prosoplectenchymatica
-Verrucaria punctiformis
-Verrucaria rufofuscella
-Verrucaria rupestris
-Verrucaria rupicola
-Verrucaria salweyi
-Verrucaria sandstedei
-Verrucaria sphaerospora
-Verrucaria squamella
-Verrucaria stanfordii
-Verrucaria subcorallina
-Verrucaria subdivisa
-Verrucaria submuralis
-Verrucaria tavaresiae
-Verrucaria terebrata
-Verrucaria thelemorpha
-Verrucaria turgida
-Verrucaria umbrinula
-Verrucaria viridula
-Verrucaria zamenhofiana
-Vestergrenopsis isidiata
-Vouauxiella lichenicola
-Vulpicida canadensis
-Vulpicida viridis
-Wahlenbergiella mucosa
-Wahlenbergiella striatula
-Wahlenbergiella tavaresiae
-Waynea californica
-Waynea stoechadiana
-Weddellomyces xanthoparmeliae
-Xanthomendoza fallax
-Xanthomendoza fulva
-Xanthomendoza galericulata
-Xanthomendoza hasseana
-Xanthomendoza mendozae
-Xanthomendoza montana
-Xanthomendoza oregana
-Xanthomendoza ulophyllodes
-Xanthoparmelia ajoensis
-Xanthoparmelia amableana
-Xanthoparmelia angustiphylla
-Xanthoparmelia arida
-Xanthoparmelia californica
-Xanthoparmelia chlorochroa
-Xanthoparmelia colorado&euml;nsis
-Xanthoparmelia commonii
-Xanthoparmelia conspersa
-Xanthoparmelia cumberlandia
-Xanthoparmelia dierythra
-Xanthoparmelia hypomelaena
-Xanthoparmelia hypopsila
-Xanthoparmelia incerta
-Xanthoparmelia kurokawae
-Xanthoparmelia lavicola
-Xanthoparmelia lineola
-Xanthoparmelia loxodes
-Xanthoparmelia maricopensis
-Xanthoparmelia mexicana
-Xanthoparmelia montanensis
-Xanthoparmelia mougeotii
-Xanthoparmelia neoconspersa
-Xanthoparmelia neotaractica
-Xanthoparmelia novomexicana
-Xanthoparmelia oleosa
-Xanthoparmelia plittii
-Xanthoparmelia psoromifera
-Xanthoparmelia schmidtii
-Xanthoparmelia somlo&euml;nsis
-Xanthoparmelia standaertii
-Xanthoparmelia stenophylla
-Xanthoparmelia subdecipiens
-Xanthoparmelia subhosseana
-Xanthoparmelia subplittii
-Xanthoparmelia subramigera
-Xanthoparmelia taractica
-Xanthoparmelia tasmanica
-Xanthoparmelia tuckeriana
-Xanthoparmelia tucsonensis
-Xanthoparmelia vagans
-Xanthoparmelia verruculifera
-Xanthoparmelia weberi
-Xanthoparmelia wyomingica
-Xanthoria ascendens
-Xanthoria candelaria
-Xanthoria elegans
-Xanthoria fallax
-Xanthoria fulva
-Xanthoria hasseana
-Xanthoria lobulata
-Xanthoria lychnea
-Xanthoria mendozae
-Xanthoria montana
-Xanthoria oregana
-Xanthoria papillifera
-Xanthoria parietina
-Xanthoria pollinarioides
-Xanthoria polycarpa
-Xanthoria ramulosa
-Xanthoria sorediata
-Xanthoria substellaris
-Xanthoria tenax
-Xanthoria tenuiloba
-Xanthoria ulophyllodes
-Xylographa hians
-Xylographa parallela
-Xylographa pruinodisca
-Xylographa soralifera
-Xylographa vitiligo
-Zahlbrucknera calcarea
-Zahlbrucknerella calcarea
-Zahlbrucknerella californica
-Zwackhiomyces coepulonus
-Pterygophora californica
-Pachydictyon coriaceum
-Saccharina sessilis
-Ralfsia
-Spermothamnion snyderae
-Porphyrella gardneri
-Plocamiocolax pulvinatus
-Ralfsia pacifica
-Rosenvingea antillarum
-Ricardia saccata
-Ralfsia fungiformis
-Phyllophora californica
-Ralfsia hesperia
-Saccharina latissima
-Rhodymeniocolax botryoideus
-Rhodosiphonia californica
-Ralfsia californica
-Polyopes bushiae
-Scagelia occidentalis
-Pseudolithoderma nigrum
-Phyllophora clevelandii
-Phyllospora
-Neodilsea borealis
-Mesogloia andersonii
-Verticicladiella
-Leptographium
-Mutimo
-Calliblepharis
-Isabbottia
-Ceratocystis
-Meredithia californica
-Fredericqia chiton
-Hymenobolina
-Hymenobolus
-Agaricus
-Armillaria
-Callistosporium
-Calvatia
-Caulorhiza
-Chromosera
-Chrysomphalina
-Clitocybe
-Floccularia
-Galerina
-Gymnopilus
-Gymnopus
-Halochlorococcum
-Hygrocybe
-Hygrophorus
-Johansenia
-Lamproderma
-Lepiota
-Leratiomyces
-Leucoagaricus
-Lyngbya
-Marasmius
-Melanoleuca
-Nivatogastrium
-Pachylepyrium
-Pachymeniopsis
-Pholiota
-Platoma
-Rhodocollybia
-Rhodocybe
-Strobilurus
-Stropharia
-Tricholoma
-Xeromphalina
-Batrachospermum
-Saxomyces
-Veleroa
-Colacodasya
-Meiodiscus concrescens
-Meiodiscus
-Paralemanea
-Trentepohlia
-Gelidiocolax
-Binghamiella
-Joculator
-Hormiscia
-Chondrus
-Gayella
-Dermocarpa 
-Drouetia 
-Heteroderma 
-Hyella 
-Kuckuckia 
-Leachiella 
-Lemanea 
-Microcoleus 
-Myelophycus 
-Schizothrix
-Nemastoma
-Nostoc
-Imbribryum
-Myriactula
-Acarospora
-Acolium
-Amaridinea
-Anema
-Anisomeridium
-Arcyodes
-Arcyria
-Arthonia
-Arthoniales
-Arthopyrenia
-Arthothelium
-Aspicila
-Aspicilia
-Aspilicia
-Bacidia
-Bacidina
-Bactrospora
-Badhamia
-Badhamiopsis
-Bagliettoa
-Barbeyella
-Biatora
-Biatorella
-Bilimbia
-Blastenia
-Boletus
-Botryolepraria
-Bryoria
-Buellia
-Calicium
-Calomyxa
-Calonema
-Caloplaca
-Candelaria
-Candelariella
-Carbonea
-Catapyrenium
-Catillaria
-Catinaria
-Ceratiomyxa
-Cercidospora
-Cetraria
-Cetrelia
-Chaetothiersia
-Chara
-Chiodecton
-Chrysothrix
-Cladidium
-Cladonia
-Clastoderma
-Cliostomum
-Coccotrema
-Collaria
-Collema
-Collemopsidium
-Collemopsis
-Comatricha
-Coniophora
-Cortinarius
-Craterium
-Cresponea
-Cribraria
-Crocynia
-Cryptopleura
-Cymadothea
-Cyphelium
-Darbishirella
-Dendrographa
-Dermatocarpon
-Diachea
-Diacheopsis
-Dianema
-Dictydiaethalium
-Diderma
-Didymium
-Dimelaena
-Diploicia
-Diplolaeviopsis
-Diploschistella
-Diploschistes
-Diploshistes
-Diplostiches
-Diplotemma
-Diplotomma
-Dirinaria
-Echinostelium
-Elaphomyces
-Endocarpon
-Endococcus
-Enerthenema
-Enteridium
-Eoterfezia
-Evernia
-Flavipunctelia
-Flavoparmelia
-Flavopunctelia
-Flavopuntelia
-Fuligo
-Fungus
-Fuscopannaria
-Gautieria
-Graphis
-Gyalecta
-Gyalidea
-Helvella
-Hemitrichia
-Heppia
-Heterodermia
-Hydnobolites
-Hydnotryopsis
-Hymenogaster
-Hyperphyscia
-Hypocenomyce
-Hypogymnia
-Incertae
-Inocybe
-Kaernefeltia
-Lactarius
-Lecanactiomyces
-Lecanactiomyces:
-Lecanactis
-Lecania
-Lecanographa
-Lecanogtrapha
-Lecanora
-Lecidea
-Lecidella
-Lempholemma
-Lenzites
-Leocarpus
-Lepidoderma
-Lepraria
-Leprocaulon
-Leproloma
-Leptochidium
-Leptogium
-Letharia
-Licea
-Lichenostigma
-Lichenothelia
-Lichens
-Lichinale
-Lichinella
-Llimonaea
-Lobothallia
-Lycogala
-Macbrideola
-Maronea
-Massalongia
-Megaspora
-Melanelia
-Mesogloia
-Metatrichia
-Microthelia
-Minksia
-Minutoexcipula
-Miriquidia
-Miriquidica
-Mobergia
-Mucilago
-Muellerella
-Mycocalicium
-Mycoporellum
-Naematoloma
-Nephroma
-Niebla
-Nodobryoria
-Oligonema
-Omphalodiscus
-Omphalotus
-Opegrapha
-Pachyphloeus
-Pannaria
-Parmelia
-Parmelina
-Parmotrema
-Peltigera
-Perichaena
-Peronospora
-Pertusaria
-Petula
-Phaeographis
-Phlyctis
-Phoma
-Physarum
-Physciella
-Physconia
-Pilophoron
-Placidium
-Placocarpus
-Placolecania
-Placopyrenium
-Placynthiella
-Platismatia
-Polyblastiopsis
-Polycauliona
-Polysporina
-Porpidia
-Protoblastenia
-Protoparmelia
-Prototrichia
-Pseudephebe
-Psilocybe
-Psorotichia
-Puccinia
-Pyrenopsis
-Pyrrhospora
-Pyxine
-Ramalina
-Reinkella
-Reticularia
-Rhizocarpon
-Rhizoplaca
-Rhizopogon
-Rimelia
-Rinodina
-Roccella
-Roccellina
-Sacrogyne
-Sarcogyne
-Schismatomma
-Schizopelte
-Schizoplete
-Sclerophyton
-Scoliciosporum
-Scutellospora
-Scytonema 
-Segestria 
-Shanorella
-Sigridea
-Solenopsora
-Sphaerellothecium
-Sphaerophorus
-Sphaerulina
-Sphinctrina
-Sporastatia
-Staurothele
-Stemonitis
-Stemonitopsis
-Stereocaulon
-Sticta
-Stigmidium
-Strangospora
-Stromatella
-Sulcaria
-Teloschistes
-Tephromela
-Texosporium
-Thelenella
-Thelomma
-Thelopsis
-Thelotrema
-Tomasellia
-Tonina
-Toninia
-Topelia
-Trapeliopsis
-Trapelopsis
-Tremella
-Trichia
-Tuber
-Tubifera
-Umbilicaria
-Usnea
-Vermilacinia
-Vermilicinia
-Verrucaria
-Vulpicida
-Xanthomendoza
-Crustose
-Leptocladia/Farlowia
-Leptocladia
-Farlowia
-Phaeophyceae
-Phormidium
-Lithophytum
-Rhododermis
-Conchocelis
-Polycoryne
-Stylonema
-Yamadaea
-Radaisia
-Chrysymenia
-Corallinales
-Irtugovia
-Melanthalia
-Phymatolithon
-Pleurocapsa
-Pseudoscinaia
-Rhododrewia 
-Rhodophyta
-Rhodothamniella
-Nogopterium
-Sarcothalia
-Sirodotia
-Palmophyllum
-Hapalospongidion
-Leptophytum
-Predaea
-Archaeolithothamnion
-Arthrocardia
-Binghamiopsis
-Blossevillea
-Botryococcus
-Chamaesiphon
-Chantransia
-Gelidiella
-Isthmia
-Polyporolithon
-Porolithon
-Pterosiphoniella
-Sahlingia
-Spongites
-Symploca
-Hydrolithon
-Palisada
-Rhododiscus
-Brachytrichia
-Hypoglossum
-Polyneurella
-Valoniopsis
-Anabaena
-Cruoriella
-Lecanora
-Phlopeccania
-Bryophyta
-Marchantiophyta
-Caloplaca
-Nitella
-Eucheuma
-Gloiophloea
-Gonium
-Ptilothamnion
-Liverwort
-Moss
-Ruhlandiella
-Symphyocladia
-Calothrix
-Tulostoma
-Rosulabryum
-Scutellinia
-Porphyridium
-Ochrolechia
-Frisvollia
-Hepatic
