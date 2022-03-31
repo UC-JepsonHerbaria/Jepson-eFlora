@@ -1,0 +1,586 @@
+#Format: name[tab]putative accepted name[tab]note
+#Problem names no longer considered to be present in CA, 
+#mostly TJM2, ICPN 8, 8, tentative 8 and tentative 8a
+
+
+#manually updated
+#misapplied names, missing from ICPN and eFlora accepted names or synonyms, 
+#updated from TO ADD file from REV_nomsyn_file_V2.pl
+#columnsynonym	putative_TJM2_accepted	status
+Triticum elongatum	Elymus ponticus	NIEF synonym of ICPN or EFLORA misapplied name
+Carduus nidulus	Cirsium nidulum	NIEF synonym of ICPN or EFLORA misapplied name
+Carduus undulatus	Cirsium undulatum	NIEF synonym of ICPN or EFLORA misapplied name
+Cnicus nidulus	Cirsium nidulum	NIEF synonym of ICPN or EFLORA misapplied name
+Cnicus undulatus	Cirsium undulatum	NIEF synonym of ICPN or EFLORA misapplied name
+Camissonia dentata	Oenothera dentata	NIEF synonym of ICPN or EFLORA misapplied name
+
+
+#JFP8, accepted problems
+#Bromus rigidus	Bromus rigidus	EXCLUDED, NOT IN CALIFORNIA	listed as synonym of Bromus diandrus in eFlora
+#Orobanche uniflora	Orobanche uniflora	EXCLUDED, NOT IN CALIFORNIA	should be Aphyllon
+#Orobanche uniflora var. uniflora	Orobanche uniflora var. uniflora	EXCLUDED, NOT IN CALIFORNIA	should be Aphyllon
+#Anagallis foemina	Anagallis foemina	EXCLUDED, NOT IN CALIFORNIA, should be Lysimachia foemina
+#Mimulus parviflorus	Mimulus parviflorus	EXCLUDED, NOT IN CALIFORNIA
+#Cupressus arizonica	Cupressus arizonica	EXCLUDED, NOT IN CALIFORNIA	Should be Hesperocyparis
+#Cupressus arizonica subsp. arizonica	Cupressus arizonica	EXCLUDED, NOT IN CALIFORNIA	Should be Hesperocyparis
+
+
+#tentative JFP-8, accepted
+Atriplex vesicaria	Atriplex vesicaria	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Carex bella	Carex bella	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Cymopterus alpinus	Cymopterus alpinus	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Eupatorium perfoliatum	Eupatorium perfoliatum	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Eupatorium purpureum	Eupatorium purpureum	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Hordeum pusillum	Hordeum pusillum	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Limnobium laevigatum	Limnobium laevigatum	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Lupinus argenteus var. rubricaulis	Lupinus argenteus var. rubricaulis	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Lupinus sulphureus	Lupinus sulphureus	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Luzula hitchcockii	Luzula hitchcockii	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Opuntia tomentosa	Opuntia tomentosa	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Salvia pratensis	Salvia pratensis	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Scirpus lineatus	Scirpus lineatus	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+Torilis japonica	Torilis japonica	EXCLUDED, possibly NOT IN CALIFORNIA, ICPN
+
+#tentative JFP-8a, synonym
+Oreoxis alpina	Cymopterus alpinus	EXCLUDED, SYNONYM, possibly NOT IN CALIFORNIA, ICPN
+Oenothera scapoidea var. seorsa	Chylismia scapoidea subsp. scapoidea	EXCLUDED, SYNONYM, possibly NOT IN CALIFORNIA, ICPN
+Podistera albensis	Cymopterus alpinus	EXCLUDED, SYNONYM, possibly NOT IN CALIFORNIA, ICPN
+Torilis anthriscus	Torilis japonica	EXCLUDED, SYNONYM, possibly NOT IN CALIFORNIA, ICPN
+
+
+#JFP-8, accepted
+Abronia gracilis	Abronia gracilis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Abronia nana var. nana	Abronia nana var. nana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Acer glabrum var. douglasii	Acer glabrum var. douglasii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Acleisanthes diffusa	Acleisanthes diffusa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Agrimonia eupatoria	Agrimonia eupatoria	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Agrostis alba	Agrostis alba	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Aliciella latifolia subsp. imperialis	Aliciella latifolia subsp. imperialis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Aliciella subacaulis	Aliciella subacaulis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Alisma plantago-aquatica	Alisma plantago-aquatica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Alisma subcordatum	Alisma subcordatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Alyssum strigosum	Alyssum strigosum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Anagallis foemina	Anagallis foemina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Antennaria dioica	Antennaria dioica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Antennaria lanata	Antennaria lanata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Aphanes arvensis	Aphanes arvensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis aculeolata	Arabis aculeolata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis hirsuta	Arabis hirsuta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis hirsuta var. hirsuta	Arabis hirsuta var. hirsuta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis holboellii	Arabis holboellii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis microphylla	Arabis microphylla	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arabis microphylla var. microphylla	Arabis microphylla var. microphylla	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arctomecon californica	Arctomecon californica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arctostaphylos peninsularis	Arctostaphylos peninsularis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Arctotis stoechadifolia	Arctotis stoechadifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Argemone hispida	Argemone hispida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Argyranthemum frutescens	Argyranthemum frutescens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Aristida schiedeana	Aristida schiedeana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Artemisia arbuscula subsp. thermopola	Artemisia arbuscula subsp. thermopola	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Artemisia campestris	Artemisia campestris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Aruncus dioicus var. pubescens	Aruncus dioicus var. pubescens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Asparagus densiflorus	Asparagus densiflorus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus anemophilus	Astragalus anemophilus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus lentiginosus var. diphysus	Astragalus lentiginosus var. diphysus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus lentiginosus var. latus	Astragalus lentiginosus var. latus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus miser	Astragalus miser	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus mollissimus	Astragalus mollissimus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus nuttallianus var. austrinus	Astragalus nuttallianus var. austrinus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus serenoi var. serenoi	Astragalus serenoi var. serenoi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus spaldingii	Astragalus spaldingii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus speirocarpus	Astragalus speirocarpus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus tegetarioides	Astragalus tegetarioides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus tephrodes	Astragalus tephrodes	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus tephrodes var. brachylobus	Astragalus tephrodes var. brachylobus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Astragalus vexilliflexus	Astragalus vexilliflexus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Atriplex phyllostegia	Atriplex phyllostegia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Avena occidentalis	Avena occidentalis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Avena strigosa	Avena strigosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bernardia myricifolia	Bernardia myricifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Betula nana	Betula nana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Betula pumila	Betula pumila	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Boehmeria nivea	Boehmeria nivea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bommeria hispida	Bommeria hispida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Botrychium lanceolatum	Botrychium lanceolatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Botrychium lanceolatum var. lanceolatum	Botrychium lanceolatum var. lanceolatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Brodiaea elegans subsp. hooveri	Brodiaea elegans subsp. hooveri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus alopecuros	Bromus alopecuros	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus anomalus	Bromus anomalus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus erectus	Bromus erectus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus pacificus	Bromus pacificus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus rigidus	Bromus rigidus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bromus scoparius	Bromus scoparius	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bryonia cretica	Bryonia cretica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Bursera hindsiana	Bursera hindsiana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Caesalpinia mexicana	Caesalpinia mexicana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Caesalpinia pulcherrima	Caesalpinia pulcherrima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+#Calandrinia ciliata	Calandrinia menziesii	JFP8, EXCLUDED, NOT IN CA, CA plants are Calandrinia menziesii
+Calla palustris	Calla palustris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Callitriche hermaphroditica	Callitriche hermaphroditica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Camassia quamash subsp. quamash	Camassia quamash subsp. quamash	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex albonigra	Carex albonigra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex brunnescens	Carex brunnescens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex brunnescens subsp. brunnescens	Carex brunnescens subsp. brunnescens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex capillaris	Carex capillaris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex cephalophora	Carex cephalophora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex deweyana	Carex deweyana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex garberi	Carex garberi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex geophila	Carex geophila	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex lanuginosa	Carex lanuginosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex micropoda	Carex micropoda	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex norvegica	Carex norvegica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex parryana	Carex parryana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex parryana var. unica	Carex parryana var. unica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex pityophila	Carex pityophila	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex prairea	Carex prairea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex pyrenaica	Carex pyrenaica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex pyrenaica subsp. pyrenaica	Carex pyrenaica subsp. pyrenaica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Carex retroflexa	Carex retroflexa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castela erecta	Castela erecta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castela erecta subsp. erecta	Castela erecta subsp. erecta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja angustifolia	Castilleja angustifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja chrymactis	Castilleja chrymactis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja fruticosa	Castilleja fruticosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja hispida	Castilleja hispida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja lanata	Castilleja lanata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Castilleja parviflora	Castilleja parviflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ceanothus greggii	Ceanothus greggii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Celtis laevigata	Celtis laevigata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Centaurea triumfettii	Centaurea triumfettii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cerastium semidecandrum	Cerastium semidecandrum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cestrum fasciculatum	Cestrum fasciculatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chamaesyce humistrata	Chamaesyce humistrata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chamerion angustifolium subsp. angustifolium	Chamerion angustifolium subsp. angustifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chamomilla suffruticosa	Chamomilla suffruticosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chenopodium berlandieri var. berlandieri	Chenopodium berlandieri var. berlandieri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chenopodium carnosulum	Chenopodium carnosulum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chenopodium carnosulum var. patagonicum	Chenopodium carnosulum var. patagonicum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Chenopodium polyspermum var. acutifolium	Chenopodium polyspermum var. acutifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cicuta maculata var. maculata	Cicuta maculata var. maculata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cirsium nidulum	Cirsium nidulum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Citrullus colocynthis	Citrullus colocynthis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Clarkia amoena subsp. lindleyi	Clarkia amoena subsp. lindleyi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Clematis drummondii	Clematis drummondii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Clitoria ternatea	Clitoria ternatea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cochlearia officinalis	Cochlearia officinalis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Convolvulus equitans	Convolvulus equitans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Conyza bilbaoana	Conyza bilbaoana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Coreopsis wrightii	Coreopsis wrightii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Corispermum hyssopifolium	Corispermum hyssopifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cotoneaster microphyllus	Cotoneaster microphyllus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Crepis rubra	Crepis rubra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Crepis runcinata subsp. glauca	Crepis runcinata subsp. glauca	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cressa cretica	Cressa cretica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cryptantha leucophaea	Cryptantha leucophaea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cryptantha sobolifera	Cryptantha sobolifera	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cryptantha spiculifera	Cryptantha spiculifera	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cupressus arizonica	Cupressus arizonica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cupressus arizonica subsp. arizonica	Cupressus arizonica subsp. arizonica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cupressus guadalupensis	Cupressus guadalupensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cuscuta epithymum	Cuscuta epithymum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cuscuta europaea	Cuscuta europaea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cuscuta pentagona	Cuscuta pentagona	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cuscuta umbellata	Cuscuta umbellata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cylindropuntia acanthocarpa var. major	Cylindropuntia acanthocarpa var. major	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Cyperus ligularis	Cyperus ligularis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Danthonia pilosa	Danthonia pilosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Delphinium ambiguum	Delphinium ambiguum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Descurainia obtusa	Descurainia obtusa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Dipogon lignosus	Dipogon lignosus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Distichlis palmeri	Distichlis palmeri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Downingia yina	Downingia yina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Draba paysonii	Draba paysonii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Draba stenoloba	Draba stenoloba	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Drymaria holosteoides	Drymaria holosteoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Echinochloa frumentacea	Echinochloa frumentacea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Echinochloa muricata var. muricata	Echinochloa muricata var. muricata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Echinochloa oryzicola var. mutica	Echinochloa oryzicola var. mutica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Echium lusitanicum	Echium lusitanicum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eleocharis equisetoides	Eleocharis equisetoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eleocharis erythropoda	Eleocharis erythropoda	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eleocharis lanceolata	Eleocharis lanceolata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eleocharis minima	Eleocharis minima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ephedra distachya	Ephedra distachya	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Epiphyllum chrysocardium	Epiphyllum chrysocardium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Equisetum X litorale	Equisetum X litorale	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eragrostis secundiflora	Eragrostis secundiflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erechtites hieraciifolius	Erechtites hieraciifolius	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erechtites hieraciifolius var. hieraciifolius	Erechtites hieraciifolius var. hieraciifolius	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eremochloa leersioides	Eremochloa leersioides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ericameria nauseosa subsp. nauseosa	Ericameria nauseosa subsp. nauseosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron acris	Erigeron acris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron acris var. kamtschaticus	Erigeron acris var. kamtschaticus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron concinnus var. condensatus	Erigeron concinnus var. condensatus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron decumbens	Erigeron decumbens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron disparipilus	Erigeron disparipilus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron peregrinus	Erigeron peregrinus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Erigeron ursinus	Erigeron ursinus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriocaulon microcephalum	Eriocaulon microcephalum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriochloa punctata	Eriochloa punctata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum alexanderae	Eriogonum alexanderae	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum crosbyae	Eriogonum crosbyae	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum douglasii var. douglasii	Eriogonum douglasii var. douglasii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum ericifolium	Eriogonum ericifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum foliosum	Eriogonum foliosum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum microtheca var. microtheca	Eriogonum microtheca var. microtheca	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum umbellatum var. hausknechtii	Eriogonum umbellatum var. hausknechtii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriogonum umbellatum var. umbellatum	Eriogonum umbellatum var. umbellatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eriophyllum lanatum var. lanatum	Eriophyllum lanatum var. lanatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Escallonia rubra	Escallonia rubra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eucalyptus X mortoniana	Eucalyptus X mortoniana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Eucephalus ledophyllus var. ledophyllus	Eucephalus ledophyllus var. ledophyllus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Euchiton japonicus	Euchiton japonicus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Euphorbia esula	Euphorbia esula	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Evax prolifera	Evax prolifera	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Evax verna	Evax verna	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Evax verna var. verna	Evax verna var. verna	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Festuca brachyphylla subsp. coloradensis	Festuca brachyphylla subsp. coloradensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Festuca ovina	Festuca ovina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Festuca temulenta subsp. remotum	Festuca temulenta subsp. remotum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ficus palmata	Ficus palmata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ficus pseudocarica	Ficus pseudocarica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Forestiera shrevei	Forestiera shrevei	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Frasera albicaulis var. albicaulis	Frasera albicaulis var. albicaulis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Frasera fastigiata	Frasera fastigiata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Freesia corymbosa	Freesia corymbosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Freesia refracta	Freesia refracta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Galinsoga quadriradiata	Galinsoga quadriradiata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gamochaeta americana	Gamochaeta americana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gamochaeta falcata	Gamochaeta falcata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gamochaeta purpurea	Gamochaeta purpurea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gastridium ventricosum	Gastridium ventricosum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gaura villosa	Gaura villosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gaura villosa subsp. villosa	Gaura villosa subsp. villosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Genista stenopetala	Genista stenopetala	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gentianopsis detonsa	Gentianopsis detonsa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gentianopsis detonsa var. elegans	Gentianopsis detonsa var. elegans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Geranium retrorsum	Geranium retrorsum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Geranium sibiricum	Geranium sibiricum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Glandularia bipinnatifida	Glandularia bipinnatifida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Glandularia bipinnatifida var. bipinnatifida	Glandularia bipinnatifida var. bipinnatifida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gnaphalium viscosum	Gnaphalium viscosum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gonocarpus chinensis	Gonocarpus chinensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Gonocarpus chinensis subsp. verrucosus	Gonocarpus chinensis subsp. verrucosus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Grindelia nuda	Grindelia nuda	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Grindelia nuda var. aphanactis	Grindelia nuda var. aphanactis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Grindelia squarrosa var. quasiperennis	Grindelia squarrosa var. quasiperennis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Habenaria dilatata	Habenaria dilatata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Hedera hibernica	Hedera hibernica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heliomeris longifolia	Heliomeris longifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heliotropium convolvulaceum var. convolvulaceum	Heliotropium convolvulaceum var. convolvulaceum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heliotropium procumbens	Heliotropium procumbens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heliotropium procumbens var. procumbens	Heliotropium procumbens var. procumbens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heterotheca villosa var. villosa	Heterotheca villosa var. villosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Heuchera chlorantha	Heuchera chlorantha	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Hibiscus moscheutos	Hibiscus moscheutos	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Horkelia fusca subsp. capitata	Horkelia fusca subsp. capitata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Hydrophyllum capitatum	Hydrophyllum capitatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Hypericum formosum	Hypericum formosum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Iliamna rivularis	Iliamna rivularis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Impatiens noli-tangere	Impatiens noli-tangere	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ipomoea nil	Ipomoea nil	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ipomopsis aggregata subsp. formosissima	Ipomopsis aggregata subsp. formosissima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Isoetes maritima	Isoetes maritima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ivesia arizonica var. saxosa	Ivesia arizonica var. saxosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ivesia cryptocaulis	Ivesia cryptocaulis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ivesia kingii var. eremica	Ivesia kingii var. eremica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Juglans nigra	Juglans nigra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Juncus arcticus	Juncus arcticus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Juncus brachyphyllus	Juncus brachyphyllus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Juniperus scopulorum	Juniperus scopulorum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Legousia speculum-veneris	Legousia speculum-veneris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lepidium ruderale	Lepidium ruderale	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lewisia columbiana	Lewisia columbiana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Linaria genistifolia	Linaria genistifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Linaria supina	Linaria supina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lipocarpha drummondii	Lipocarpha drummondii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lobelia dunnii var. dunnii	Lobelia dunnii var. dunnii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Logfia minima	Logfia minima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lonicera caerulea	Lonicera caerulea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus X alpestris	Lupinus X alpestris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus argenteus var. holosericeus	Lupinus argenteus var. holosericeus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus aridus	Lupinus aridus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus aridus subsp. aridus	Lupinus aridus subsp. aridus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus johannis-howellii	Lupinus johannis-howellii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lupinus sparsiflorus subsp. pondii	Lupinus sparsiflorus subsp. pondii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Luzula glabrata	Luzula glabrata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lycium pallidum var. pallidum	Lycium pallidum var. pallidum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lycurus phleoides	Lycurus phleoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lycurus phleoides var. phleoides	Lycurus phleoides var. phleoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Lycurus setosus	Lycurus setosus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Malus sylvestris	Malus sylvestris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Matricaria matricarioides	Matricaria matricarioides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Medicago tornata	Medicago tornata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mentzelia multiflora	Mentzelia multiflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mertensia ciliata var. ciliata	Mertensia ciliata var. ciliata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mertensia franciscana	Mertensia franciscana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mimulus parviflorus	Mimulus parviflorus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mirabilis longiflora	Mirabilis longiflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Mirabilis longiflora var. longiflora	Mirabilis longiflora var. longiflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Monarda punctata	Monarda punctata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Monarda punctata subsp. punctata	Monarda punctata subsp. punctata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Monarda punctata var. punctata	Monarda punctata var. punctata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Myosotis azorica	Myosotis azorica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Myosotis sylvatica	Myosotis sylvatica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Myosurus apetalus var. apetalus	Myosurus apetalus var. apetalus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Nothoscordum borbonicum	Nothoscordum borbonicum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Nuphar lutea	Nuphar lutea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Nuttallanthus canadensis	Nuttallanthus canadensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oenanthe pimpinelloides	Oenanthe pimpinelloides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oenothera hookeri	Oenothera hookeri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oenothera odorata	Oenothera odorata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Opuntia polyacantha var. rufispina	Opuntia polyacantha var. rufispina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Orobanche uniflora	Orobanche uniflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Orobanche uniflora var. uniflora	Orobanche uniflora var. uniflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oxalis albicans	Oxalis albicans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oxalis laxa	Oxalis laxa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Oxalis radicosa	Oxalis radicosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Panicum acuminatum var. acuminatum	Panicum acuminatum var. acuminatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Panicum dichotomum	Panicum dichotomum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Passiflora mollissima	Passiflora mollissima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Pericallis cruenta	Pericallis cruenta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phacelia ixodes	Phacelia ixodes	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phacelia scopulina	Phacelia scopulina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phacelia scopulina var. scopulina	Phacelia scopulina var. scopulina	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phacelia serrata	Phacelia serrata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Philadelphus serpyllifolius	Philadelphus serpyllifolius	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phlox caespitosa	Phlox caespitosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phlox viridis	Phlox viridis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phlox viridis subsp. longipes	Phlox viridis subsp. longipes	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Physalis angulata	Physalis angulata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Physalis cordata	Physalis cordata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Physalis hederifolia var. hederifolia	Physalis hederifolia var. hederifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Physalis subglabrata	Physalis subglabrata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Phytolacca octandra	Phytolacca octandra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Pinguicula vulgaris	Pinguicula vulgaris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plagiobothrys fulvus var. fulvus	Plagiobothrys fulvus var. fulvus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plagiobothrys glomeratus	Plagiobothrys glomeratus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plagiobothrys myosotoides	Plagiobothrys myosotoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plagiobothrys scouleri	Plagiobothrys scouleri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plantago heterophylla	Plantago heterophylla	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Plantago sempervirens	Plantago sempervirens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanthera X correllii	Platanthera X correllii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanthera hyperborea	Platanthera hyperborea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanthera hyperborea var. hyperborea	Platanthera hyperborea var. hyperborea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanthera limosa	Platanthera limosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanthera purpurascens	Platanthera purpurascens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Platanus wrightii	Platanus wrightii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Poa arctica	Poa arctica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Poa hansenii	Poa hansenii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Poa leibergii	Poa leibergii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polanisia dodecandra subsp. dodecandra	Polanisia dodecandra subsp. dodecandra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polemonium pulcherrimum subsp. delicatum	Polemonium pulcherrimum subsp. delicatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polygonum bellardii	Polygonum bellardii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polygonum erectum	Polygonum erectum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polygonum patulum	Polygonum patulum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Polypogon elongatus	Polypogon elongatus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Populus balsamifera	Populus balsamifera	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Porophyllum scoparium	Porophyllum scoparium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Potentilla brevifolia	Potentilla brevifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Potentilla concinna var. concinna	Potentilla concinna var. concinna	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Potentilla diversifolia	Potentilla diversifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Potentilla diversifolia var. diversifolia	Potentilla diversifolia var. diversifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Potentilla glandulosa subsp. ashlandica	Potentilla glandulosa subsp. ashlandica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Proboscidea parviflora subsp. parviflora	Proboscidea parviflora subsp. parviflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Proboscidea parviflora var. parviflora	Proboscidea parviflora var. parviflora	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Pseudognaphalium elegans	Pseudognaphalium elegans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Psilactis asteroides	Psilactis asteroides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Puccinellia maritima	Puccinellia maritima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Purshia mexicana	Purshia mexicana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Pyrola chlorantha	Pyrola chlorantha	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Quercus gambelii	Quercus gambelii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Quercus toumeyi	Quercus toumeyi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Quercus undulata	Quercus undulata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rhamnus rubra subsp. nevadensis	Rhamnus rubra subsp. nevadensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rhus glabra	Rhus glabra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rhynchospora kunthii	Rhynchospora kunthii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ribes leptanthum	Ribes leptanthum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rumex aquaticus	Rumex aquaticus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rumex maritimus	Rumex maritimus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rumex salicifolius var. mexicanus	Rumex salicifolius var. mexicanus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Rumex sanguineus	Rumex sanguineus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salicornia europaea	Salicornia europaea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salicornia maritima	Salicornia maritima	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salicornia utahensis	Salicornia utahensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salicornia virginica	Salicornia virginica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix arctica	Salix arctica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix bonplandiana	Salix bonplandiana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix commutata var. rubicunda	Salix commutata var. rubicunda	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix eriocephala	Salix eriocephala	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix eriocephala var. eriocephala	Salix eriocephala var. eriocephala	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix lucida	Salix lucida	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix reticulata	Salix reticulata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix reticulata subsp. reticulata	Salix reticulata subsp. reticulata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salix sessilifolia	Salix sessilifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salsola kali	Salsola kali	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Salsola kali subsp. pontica	Salsola kali subsp. pontica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sambucus nigra subsp. canadensis	Sambucus nigra subsp. canadensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Samolus ebracteatus	Samolus ebracteatus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Samolus valerandi	Samolus valerandi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saponaria ocymoides	Saponaria ocymoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saxifraga punctata	Saxifraga punctata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saxifraga punctata subsp. arguta	Saxifraga punctata subsp. arguta	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saxifraga reflexa	Saxifraga reflexa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saxifraga rivularis	Saxifraga rivularis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Saxifraga rufidula	Saxifraga rufidula	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Scirpus acutus var. acutus	Scirpus acutus var. acutus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Scirpus tuberosus	Scirpus tuberosus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sedum cockerellii	Sedum cockerellii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sedum dendroideum	Sedum dendroideum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Selaginella densa	Selaginella densa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Senna multijuga	Senna multijuga	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sesuvium portulacastrum	Sesuvium portulacastrum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Setaria geniculata	Setaria geniculata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sida abutifolia	Sida abutifolia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Silene drummondii	Silene drummondii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Silene plankii	Silene plankii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sisyrinchium angustifolium	Sisyrinchium angustifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sisyrinchium demissum	Sisyrinchium demissum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Solanum gayanum	Solanum gayanum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Solanum sarrachoides	Solanum sarrachoides	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Solidago canadensis	Solidago canadensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Solidago gigantea	Solidago gigantea	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sparaxis fragrans	Sparaxis fragrans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sparganium erectum	Sparganium erectum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sporobolus floridanus	Sporobolus floridanus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Sporobolus nealleyi	Sporobolus nealleyi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Stachys cooleyae	Stachys cooleyae	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Stachys palustris	Stachys palustris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Stellaria borealis subsp. borealis	Stellaria borealis subsp. borealis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Stipa formicarum	Stipa formicarum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Stipa williamsii	Stipa williamsii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Streptopus amplexifolius var. amplexifolius	Streptopus amplexifolius var. amplexifolius	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Styrax officinalis	Styrax officinalis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Suaeda depressa var. depressa	Suaeda depressa var. depressa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphoricarpos oreophilus	Symphoricarpos oreophilus	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphoricarpos oreophilus var. utahensis	Symphoricarpos oreophilus var. utahensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphyotrichum foliaceum var. foliaceum	Symphyotrichum foliaceum var. foliaceum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphyotrichum hendersonii	Symphyotrichum hendersonii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphyotrichum laeve	Symphyotrichum laeve	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphyotrichum laeve var. geyeri	Symphyotrichum laeve var. geyeri	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphyotrichum subulatum var. ligulatum	Symphyotrichum subulatum var. ligulatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Symphytum asperum	Symphytum asperum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Tamarix africana	Tamarix africana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Tamarix aralensis	Tamarix aralensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Taraxacum laevigatum	Taraxacum laevigatum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Teucrium canadense	Teucrium canadense	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Teucrium canadense var. occidentale	Teucrium canadense var. occidentale	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Thelesperma simplicifolium	Thelesperma simplicifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Thelesperma simplicifolium var. simplicifolium	Thelesperma simplicifolium var. simplicifolium	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Tolmiea menziesii	Tolmiea menziesii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Townsendia parryi	Townsendia parryi	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Tradescantia virginiana	Tradescantia virginiana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Trifolium gemellum	Trifolium gemellum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Trifolium macilentum	Trifolium macilentum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Trifolium variegatum var. pauciflorum	Trifolium variegatum var. pauciflorum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Tripleurospermum maritimum	Tripleurospermum maritimum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Utricularia vulgaris	Utricularia vulgaris	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Valeriana acutiloba	Valeriana acutiloba	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Valeriana dioica	Valeriana dioica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Valeriana dioica var. sylvatica	Valeriana dioica var. sylvatica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Vallesia glabra	Vallesia glabra	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Verbascum olympicum	Verbascum olympicum	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Verbena canescens	Verbena canescens	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Veronica chamaedrys	Veronica chamaedrys	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Vicia articulata	Vicia articulata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Vicia nigricans	Vicia nigricans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Viola lanceolata	Viola lanceolata	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Viola sororia	Viola sororia	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Viola vallicola	Viola vallicola	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Viola vallicola var. major	Viola vallicola var. major	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Vitis aestivalis	Vitis aestivalis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Volutaria canariensis	Volutaria canariensis	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Woodwardia radicans	Woodwardia radicans	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Xanthisma texanum var. drummondii	Xanthisma texanum var. drummondii	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Zeltnera calycosa	Zeltnera calycosa	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Zizania aquatica	Zizania aquatica	JFP8, EXCLUDED, NOT IN CALIFORNIA
+Ziziphus mauritiana	Ziziphus mauritiana	JFP8, EXCLUDED, NOT IN CALIFORNIA
+
+
+#JFP-8a, synonym
+Anagallis arvensis subsp. foemina	Lysimachia foemina	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Arabis fernaldiana	Boechera fernaldiana	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Arabis suffrutescens var. horizontalis	Boechera horizontalis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Arenaria pumicola	Eremogone pumicola	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Arenaria pumicola var. pumicola	Eremogone pumicola	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Asclepias capricornu	Asclepias asperula subsp. capricornu	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Aster foliaceus var. foliaceus	Symphyotrichum foliaceum var. foliaceum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Aster foliaceus var. lyallii	Symphyotrichum hendersonii	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Aster ledophyllus var. ledophyllus	Eucephalus ledophyllus var. ledophyllus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Aster subulatus var. ligulatus	Symphyotrichum subulatum var. ligulatum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Astragalus tephrodes var. remulcus	Astragalus tephrodes var. brachylobus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Betula pumila var. glandulifera	Betula pumila	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Carex hallii	Carex idahoa	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Carex parryana var. hallii	Carex parryana var. unica	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Centaurium calycosum	Zeltnera calycosa	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Chrysanthemum frutescens	Argyranthemum frutescens	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Chrysothamnus nauseosus subsp. nauseosus	Ericameria nauseosa var. nauseosa	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Chrysothamnus nauseosus var. nauseosus	Ericameria nauseosa var. nauseosa	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Cuscuta pentagona var. pentagona	Cuscuta pentagona	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium acuminatum subsp. acuminatum	Panicum acuminatum var. acuminatum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium acuminatum var. acuminatum	Panicum acuminatum var. acuminatum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium dichotomum	Panicum dichotomum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium lanuginosum	Panicum lanuginosum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium longiligulatum	Panicum longiligulatum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium villosissimum	Panicum villosissimum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Dichanthelium villosissimum var. villosissimum	Panicum villosissimum var. villosissimum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Epilobium angustifolium var. angustifolium	Chamerion angustifolium subsp. angustifolium	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Eriogonum beatleyae	Eriogonum rosense var. beatleyae	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Eriogonum ochrocephalum var. alexanderae	Eriogonum alexanderae	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Euphorbia esula var. esula	Euphorbia esula	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Gilia subacaulis	Aliciella subacaulis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Gnaphalium elegans	Pseudognaphalium elegans	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Gnaphalium japonicum	Euchiton japonicus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Gnaphalium purpureum	Gamochaeta purpurea	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Impatiens occidentalis	Impatiens noli-tangere	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Lewisia columbiana var. columbiana	Lewisia columbiana	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Limnanthes gracilis	Limnanthes alba subsp. gracilis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Limnanthes gracilis subsp. gracilis	Limnanthes alba subsp. gracilis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Linaria canadensis	Nuttallanthus canadensis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Linaria canadensis var. canadensis	Nuttallanthus canadensis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Lupinus holosericeus	Lupinus argenteus var. holosericeus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Matricaria maritima	Tripleurospermum maritimum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Mentzelia multiflora var. multiflora	Mentzelia multiflora subsp. multiflora	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Mimulus cusickii	Diplacus cusickii	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Mirabilis polyphylla	Mirabilis oligantha	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Nassella formicarum	Stipa formicarum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Nothoscordum inodorum	Allium neapolitanum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Obione phyllostegia	Atriplex phyllostegia	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Oenothera breviflora	Taraxia breviflora	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Oenothera contorta var. epilobioides	Oenothera dentata	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Oenothera scapoidea	Chylismia scapoidea subsp. scapoidea	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Opuntia acanthocarpa var. major	Cylindropuntia acanthocarpa var. major	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Opuntia echinocarpa var. major	Cylindropuntia acanthocarpa var. major	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Physalis longifolia var. subglabrata	Physalis subglabrata	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Plagiobothrys scouleri var. scouleri	Plagiobothrys scouleri	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Platanthera X media	Platanthera huronensis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Platanus racemosa var. wrightii	Platanus wrightii	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Ranunculus verecundus	Ranunculus gelidus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Ribes cereum var. pedicellare	Ribes reniforme	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Rytidosperma pilosum	Danthonia pilosa	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Sambucus mexicana	Sambucus nigra subsp. canadensis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Sarcocornia utahensis	Salicornia utahensis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Sedum rosea	Rhodiola rosea	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Stachys chamissonis var. cooleyae	Stachys cooleyae	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Swertia albicaulis var. albicaulis	Frasera albicaulis var. albicaulis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Swertia fastigiata	Frasera fastigiata	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Symphyotrichum divaricatum	Symphyotrichum subulatum var. ligulatum	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Trientalis borealis	Lysimachia borealis	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Trimorpha acris	Erigeron acris	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+
+#JFP-8b
+Alyssum minus var. strigosum	Alyssum strigosum	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Consolida ambigua	Consolida ambigua	(EXCLUDED SYNONYM in ICPN without entry in Current Name); EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Cuscuta denticulata var. veatchii	Cuscuta veatchii	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Dalea occidentalis	Dalea occidentalis	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Eriogonum rupicola	Eriogonum rupicola	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Geranium homeanum	Geranium homeanum	EXCLUDED, NOT IN CALIFORNIA, SYNONYM (EXCLUDED SYNONYM in ICPN without entry in Current Name)
+Ischaemum leersioides	Ischaemum leersioides	EXCLUDED, NOT IN CALIFORNIA, SYNONYM (EXCLUDED SYNONYM in ICPN without entry in Current Name)
+Koeleria cristata	Koeleria cristata	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Lathyrus bijugatus	Lathyrus bijugatus	EXCLUDED NOT IN CALIFORNIA, SYNONYM
+Lemna minor var. obscura	Lemna minor var. obscura	EXCLUDED, NOT IN CALIFORNIA, SYNONYM (EXCLUDED SYNONYM in ICPN without entry in Current Name)
+Marsdenia carterae	Marsdenia carterae		EXCLUDED, NOT IN CALIFORNIA, SYNONYM (EXCLUDED SYNONYM in ICPN without entry in Current Name)
+Medicago muricata	Medicago tornata	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Penstemon affinis	Penstemon affinis	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN
+Pseudognaphalium viscosum	Pseudognaphalium viscosum	EXCLUDED, NOT IN CALIFORNIA, SYNONYM (EXCLUDED SYNONYM in ICPN without entry in Current Name)
+Symphyotrichum foliaceum var. lyallii	Symphyotrichum hendersonii	EXCLUDED, NOT IN CALIFORNIA, REJECTED NAME ICPN

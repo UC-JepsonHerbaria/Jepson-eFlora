@@ -1,0 +1,239 @@
+#Format: name[tab]putative accepted name[tab]note
+
+#The following are ILLEG. names with the eFlora accepted names
+#Names extracted from the Notes field of the eFlora, many false positives, are culled from this output by make_synonymy_table.pl
+#ILLEG homonyms are commented out
+#Diplacus australis	Diplacus australis illeg. homonym	ILLEG in EFLORA
+#Diplacus grandiflorus	Diplacus grandiflorus illeg. homonym	ILLEG in EFLORA
+#Lewisia glandulosa	Lewisia glandulosa illeg. homonym	ILLEG in EFLORA
+Aconitum bulbiferum	Aconitum columbianum subsp. viviparum	ILLEG in EFLORA
+Aloe saponaria	Aloe maculata	ILLEG in EFLORA
+Antirrhinum glandulosum	Antirrhinum multiflorum	ILLEG in EFLORA
+Aristida ternipes var. hamulosa	Aristida ternipes var. gentilis	ILLEG in EFLORA
+Athyrium alpestre var. americanum	Athyrium distentifolium var. americanum	ILLEG in EFLORA
+Atriplex bracteosa	Atriplex serenana	UNABR ILLEG in EFLORA
+Atriplex halimoides	Atriplex lindleyi	UNABR ILLEG in EFLORA
+Atriplex spicata	Extriplex joaquinana	UNABR ILLEG in EFLORA
+Brodiaea grandiflora	Triteleia grandiflora	ILLEG in EFLORA
+Calandrinia pygmaea	Lewisia pygmaea	ILLEG in EFLORA
+Carex bifida	Carex serratodens	ILLEG in EFLORA
+Centaurea &times;pratensis	Centaurea jacea nothosubsp. pratensis	ILLEG in EFLORA
+Centaurea squarrosa	Centaurea virgata subsp. squarrosa	ILLEG in EFLORA
+Cordylanthus filifolius	Cordylanthus rigidus subsp. setiger	UNABR ILLEG in EFLORA
+Delphinium armeniacum	Delphinium nudicaule	ILLEG in EFLORA
+Delphinium pauciflorum	Delphinium nuttallianum	ILLEG in EFLORA
+Dentaria corymbosa	Cardamine pachystigma	UNABR ILLEG in EFLORA
+Dentaria corymbosa var. corymbosa	Cardamine pachystigma	NIEF ILLEG in EFLORA
+Dentaria corymbosa var. grata	Cardamine pachystigma	UNABR ILLEG in EFLORA
+Descurainia richardsonii	Descurainia incana	ILLEG in EFLORA
+Epilobium pygmaeum	Epilobium campestre	ILLEG in EFLORA
+Erigeron angustatus	Erigeron greenei	ILLEG in EFLORA
+Eriogonum cusickii	Eriogonum strictum var. proliferum	ILLEG in EFLORA
+Eriogonum geniculatum	Eriogonum heermannii var. heermannii	ILLEG in EFLORA
+Eriogonum latifolium var. affine	Eriogonum nudum var. oblongifolium	ILLEG in EFLORA
+Eriogonum nudum var. perturbum	Eriogonum nudum var. pauciflorum	ILLEG in EFLORA
+Eriogonum ovalifolium var. orthocaulon	Eriogonum ovalifolium var. purpureum	ILLEG in EFLORA
+Eriogonum strictum var. cusickianum	Eriogonum strictum var. proliferum	ILLEG in EFLORA
+Eriogonum tenellum	Eriogonum ovalifolium var. purpureum	ILLEG in EFLORA
+Eriogonum trichopodum	Eriogonum trichopes	ILLEG in EFLORA
+Eryngium globosum	Eryngium spinosepalum	UNABR ILLEG in EFLORA
+Eryngium globosum var. globosum	Eryngium spinosepalum	NIEF ILLEG in EFLORA
+Eryngium globosum var. medium	Eryngium castrense	UNABR ILLEG in EFLORA
+Filago germanica	Filago pyramidata var. pyramidata	UNABR ILLEG in EFLORA
+Fraxinus trifoliolata	Fraxinus parryi	ILLEG in EFLORA
+Fritillaria lanceolata	Fritillaria affinis	ILLEG in EFLORA
+Fritillaria lanceolata var. lanceolata	Fritillaria affinis	NIEF ILLEG in EFLORA
+Fritillaria lanceolata var. tristulis	Fritillaria affinis	ILLEG in EFLORA
+Fritillaria phaeanthera	Fritillaria eastwoodiae	ILLEG in EFLORA
+Gentiana humilis	Gentiana fremontii	ILLEG in EFLORA
+Geranium anemonifolium	Geranium palmatum	ILLEG in EFLORA
+Geranium pilosum	Geranium solanderi	ILLEG in EFLORA
+Gnaphalium bicolor	Pseudognaphalium biolettii	ILLEG in EFLORA
+Gnaphalium collinum	Euchiton gymnocephalus	ILLEG in EFLORA
+Hesperoscordum aridum	Triteleia hyacinthina	ILLEG in EFLORA
+Hutchinsia procumbens	Hornungia procumbens	ILLEG in EFLORA
+Hymenoclea salsola var. patula	Ambrosia salsola var. salsola	ILLEG in EFLORA
+Isolepis tenella	Isolepis levynsiana	ILLEG in EFLORA
+Juncus effusus var. australis	Juncus effusus subsp. austrocalifornicus	INED in EFLORA
+Koeleria gracilis	Koeleria macrantha	ILLEG in EFLORA
+Koeleria phleoides	Koeleria gerardi	ILLEG in EFLORA
+Krameria canescens	Krameria bicolor	ILLEG in EFLORA
+Lemna minima	Lemna minuta	ILLEG in EFLORA
+Leontodon taraxacoides	Leontodon saxatilis	ILLEG in EFLORA
+Leontodon taraxacoides subsp. longirostris	Leontodon saxatilis subsp. longirostris	ILLEG in EFLORA
+Leontodon taraxacoides subsp. taraxacoides	Leontodon saxatilis subsp. saxatilis	ILLEG in EFLORA
+Leptosiphon aureus (Nutt.) of various auth. non Benth.	Leptosiphon chrysanthus	ILLEG in EFLORA
+Leptosiphon aureus illeg. homonym	Leptosiphon chrysanthus	ILLEG in EFLORA
+Lilium washingtonianum var. purpureum	Lilium washingtonianum subsp. purpurascens	ILLEG in EFLORA
+Linum gallicum	Linum trigynum	ILLEG in EFLORA
+Mirabilis californica var. cordifolia	Mirabilis laevis var. crassifolia	ILLEG in EFLORA
+Mulgedium pulchellum	Lactuca tatarica subsp. pulchella	ILLEG in EFLORA
+Myosurus aristatus	Myosurus apetalus var. borealis	ILLEG in EFLORA
+Nemacaulis nuttallii	Nemacaulis denudata var. denudata	ILLEG in EFLORA
+Oenothera cruciata	Camissonia contorta	UNABR ILLEG in EFLORA
+Oenothera hirta	Camissoniopsis micrantha	UNABR ILLEG in EFLORA
+Persicaria polystachya	Persicaria wallichii	ILLEG in EFLORA
+Phalaris bulbosa	Phalaris coerulescens	UNABR ILLEG in EFLORA
+Poa purpurascens	Poa cusickii subsp. purpurascens	ILLEG in EFLORA
+Poa subaristata	Poa cusickii subsp. pallida	ILLEG in EFLORA
+Quercus dunnii	Quercus palmeri	ILLEG in EFLORA
+Rubus inermis	Rubus ulmifolius var. anoplothyrsus	ILLEG in EFLORA
+Saltugilia grinnellii	Saltugilia splendens	ILLEG in EFLORA
+Scirpus campestris	Bolboschoenus maritimus subsp. paludosus	ILLEG in EFLORA
+Scirpus carinatus	Isolepis carinata	ILLEG in EFLORA
+Scirpus marginatus	Eleocharis quadrangulata	ILLEG in EFLORA
+Sedum lanceolatum var. subalpinum	Sedum lanceolatum	ILLEG in EFLORA
+Silene montana subsp. bernardina	Silene bernardina	ILLEG in EFLORA
+Silene montana subsp. montana	Silene bernardina	ILLEG in EFLORA
+Silene montana var. rigidula	Silene bernardina	ILLEG in EFLORA
+Silene montana var. sierrae	Silene bernardina	ILLEG in EFLORA
+Sisyrinchium grandiflorum	Olsynium douglasii var. douglasii	ILLEG in EFLORA
+Triteleia gracilis	Triteleia montana	ILLEG in EFLORA
+Valeriana scouleri	Valeriana sitchensis subsp. scouleri	ILLEG in EFLORA
+Viola chrysantha	Viola douglasii	ILLEG in EFLORA
+Viola deltoidea	Viola glabella	ILLEG in EFLORA
+Viola sarmentosa	Viola sempervirens	ILLEG in EFLORA
+Yucca graminifolia	Hesperoyucca whipplei	ILLEG in EFLORA
+
+
+#The following are IN ED. names with putative eFlora accepted names
+#Names extracted from the Notes field of the eFlora, many false positives, are culled from this output by make_synonymy_table.pl
+#The following are IN ED. names with putative eFlora accepted names
+Allium monticola var. keckii	Allium monticola	INED in EFLORA
+Amsinckia menziesii var. intermedia	Amsinckia intermedia	INED in EFLORA
+Argyrochosma limitanea var. limitanea	Argyrochosma limitanea subsp. limitanea	INED in EFLORA
+Caulanthus heterophyllus var. pseudosimulans	Caulanthus heterophyllus	INED in EFLORA
+Cistus villosus var. corsicus	Cistus incanus	INED in EFLORA
+Cistus villosus var. tauricus	Cistus incanus	INED in EFLORA
+Cistus villosus var. undulatus	Cistus incanus	INED in EFLORA
+Citrullus colocynthis var. lanatus	Citrullus lanatus var. citroides	INED in EFLORA
+Cuscuta vivipara	Cuscuta nevadensis	UNABR INED in EFLORA
+Dodecatheon pulchellum subsp. monanthum	Primula pauciflora	INED in EFLORA
+Erysimum capitatum subsp. angustatum	Erysimum capitatum var. capitatum	INED in EFLORA
+Erysimum capitatum subsp. capitatum	Erysimum capitatum var. capitatum	INED in EFLORA
+Erysimum capitatum subsp. lompocense	Erysimum capitatum var. capitatum	INED in EFLORA
+Erysimum capitatum subsp. perenne	Erysimum perenne	INED in EFLORA
+Erysimum insulare subsp. suffrutescens	Erysimum suffrutescens	INED in EFLORA
+Erysimum menziesii subsp. concinnum	Erysimum concinnum	INED in EFLORA
+Erysimum menziesii subsp. eurekense	Erysimum menziesii	INED in EFLORA
+Erysimum menziesii subsp. yadonii	Erysimum menziesii	INED in EFLORA
+Fritillaria affinis var. tristulis	Fritillaria affinis	INED in EFLORA
+Guillenia lemmonii	Caulanthus anceps	INED in EFLORA
+Juncus effusus var. australis	Juncus effusus subsp. austrocalifornicus	INED in EFLORA
+Malva assurgentiflora subsp. assurgentiflora	Malva assurgentiflora	INED in EFLORA
+Malva assurgentiflora subsp. glabra	Malva assurgentiflora	INED in EFLORA
+Microsteris gracilis subsp. humilior	Microsteris gracilis	INED in EFLORA
+Plagiobothrys myosotoides subsp. verrucosus	Plagiobothrys verrucosus	INED in EFLORA
+Pseudobahia bahiifolia var. pinnatifida	Pseudobahia heermannii	INED in EFLORA
+Quercus celata	Quercus parvula var. shrevei	INED in EFLORA
+Rhamnus tomentella var. ursina	Frangula californica subsp. ursina	INED in EFLORA
+Ruppia spiralis	Ruppia cirrhosa	INED in EFLORA
+Sedum paradisum	Sedum obtusatum subsp. paradisum	INED in EFLORA
+Senna eremophila	Senna artemisioides	INED in EFLORA
+Triteleia grandiflora subsp. howellii	Triteleia grandiflora	INED in EFLORA
+
+
+#The following are INVALID names, NIEF, from CCH1
+X Chiranthofremontia lenzii	X Chiranthomontodendron lenzii	INVALID in TROPICOS
+Chiranthofremontia lenzii	X Chiranthomontodendron lenzii		INVALID in TROPICOS
+X Chiranthofremontia	X Chiranthomontodendron		INVALID in TROPICOS
+
+#The following are INVALID names with putative eFlora accepted names
+#Callitropsis nootkatensis	Callitropsis nootkatensis	INVALID in EFLORA
+Packera streptanthifolia var. rubricaulis	Packera streptanthifolia var. streptanthifolia	INVALID in EFLORA
+Toxicodendron triphyllum var. trilobatum	Rhus aromatica	INVALID in EFLORA
+Sanguisorba occidentalis	Poteridium annuum	INVALID in EFLORA
+
+
+#misapplied names, missing from ICPN and eFlora accepted names or synonyms, 
+#some updated from TO ADD file from REV_nomsyn_file_V2.pl
+#others added manually
+Triticum elongatum	Elymus ponticus	synonym of misapplied name
+#Grindelia camporum var. parviflora	Grindelia hirsutula
+#Grindelia robusta	Grindelia hirsutula
+Chamaesyce dendroides	Euphorbia dendroides	JFP 2b, unpublished, invalidly published, illegitimate, or rejected name for taxon naturalized in CA
+Bulbostylis microphylla	Brickellia microphylla var. microphylla	the genus Bulbostylis DC is Illeg.
+Stachys ajugoides var. cymosa	Stachys pycnantha	nomen inval. sensu IPNI
+Agrostis exarata var. ampla	Agrostis exarata
+
+
+
+#The following are SUPERFLUOUS names with putative eFlora accepted names
+Carex oregonensis	Carex halliana	SUPERFLUOUS in EFLORA
+Ceanothus arboreus var. glabra	Ceanothus arboreus	SUPERFLUOUS in EFLORA
+Ceanothus velutinus var. hookeri	Ceanothus velutinus	SUPERFLUOUS in EFLORA
+Chylismia heterochroma	Chylismia heterochroma	SUPERFLUOUS in EFLORA
+Cupressus goveniana subsp. pygmaea	Hesperocyparis pygmaea	SUPERFLUOUS in EFLORA
+Lonicera hispidula var. californica	Lonicera hispidula	SUPERFLUOUS in EFLORA
+Malva dendromorpha	Malva arborea	SUPERFLUOUS in EFLORA
+Malva linnaei	Malva pseudolavatera	SUPERFLUOUS in EFLORA
+Plantago indica	Plantago arenaria	SUPERFLUOUS in EFLORA
+Wolffia punctata	Wolffia borealis	UNABR SUPERFLUOUS in EFLORA
+Xanthocyparis nootkatensis	Callitropsis nootkatensis	SUPERFLUOUS in EFLORA
+
+
+#NIEF, mostly, some NOT in CA, NOT IN TAX_SYNS already
+#manually updated
+#Grindelia camporum var. parviflora	Grindelia hirsutula
+#Grindelia robusta	Grindelia hirsutula
+Acetosa hastatula	Rumex hastatulus	NOT in CA
+Actinea acaulis var. acaulis	Tetraneuris acaulis var. acaulis	NOT in CA?; NAME NOT in ICPN or EFLORA
+Agoseris glauca var. dasycephala	Agoseris glauca var. dasycephala	
+Allium neapolitanum	Nothoscordum inodorum	
+Anagallis arvensis subsp. foemina	Lysimachia foemina	
+Anagallis foemina	Lysimachia foemina	
+Andropogon saccharoides	Bothriochloa saccharoides	NOT in CA?
+Aster hendersonii	Symphyotrichum hendersonii	
+Carex parryana var. hallii	Carex parryana var. unica	
+Cupressus arizonica	Hesperocyparis arizonica	
+Cupressus arizonica subsp. arizonica	Hesperocyparis arizonica	
+Dichanthium saccharoides	Bothriochloa saccharoides	NOT in CA?
+Festuca nervosa	Poa nervosa	Festuca nervosa NOT in ICPN or EFLORA; NOT in CA; in EFLORA as Poa nervosa, misapplied in note under Poa wheeleri
+Gnaphalium jaliscense	Pseudognaphalium jaliscense	NOT in CA?; NAME NOT in ICPN or EFLORA; specimens reported for CA by Nesom Sida 19(4):1187 2001.
+Hastingsia bracteosa	Hastingsia bracteosa	NOT in CA?; NAME NOT in ICPN or EFLORA
+Horkelia fusca var. capitata	Horkelia fusca subsp. capitata	
+Hymenoxys acaulis var. acaulis	Tetraneuris acaulis var. acaulis	NOT in CA?; NAME NOT in ICPN or EFLORA
+Linanthastrum melingii	Leptosiphon melingii	NOT in CA; NAME NOT in ICPN or EFLORA; in EFLORA as note under Leptosiphon floribundus
+Linanthus melingii	Leptosiphon melingii	NOT in CA?; NAME NOT in ICPN or EFLORA
+Linaria canadensis	Nuttallanthus canadensis	
+Linaria canadensis var. canadensis	Nuttallanthus canadensis	
+Lophochloa cristata	Koeleria cristata	
+Lotus subpinnatus var. subpinnatus	Acmispon subpinnatus	NOT in CA, in EFLORA as Lotus subpinnatus, misapplied 
+Lotus subpinnatus var. subpinnatus	Acmispon subpinnatus	NOT in CA, in EFLORA/ICPN as Lotus subpinnatus, misapplied 
+Ludwigia peruviana	Ludwigia peruviana	NOT in CA?
+Lysimachia foemina	Lysimachia foemina	
+Mimulus parviflorus	Erythranthe parviflora	
+Muhlenbergia alopecuroides	Lycurus setosus	
+Nasturtium microphyllum	Nasturtium microphyllum	NOT in CA?; NAME NOT in ICPN or EFLORA
+Nuttallanthus canadensis	Nuttallanthus canadensis	
+Oenothera hirta	Ludwigia peruviana	NOT in CA?
+Oenothera hirta var. hirta	Ludwigia peruviana	NOT in CA?
+Opuntia littoralis var. martiniana	Opuntia martiniana	AZ taxon NOT in CA?; NAME NOT in ICPN or EFLORA
+Opuntia martiniana	Opuntia martiniana	AZ taxon NOT in CA?; NAME NOT in ICPN or EFLORA
+Orobanche uniflora	Aphyllon uniflorum	
+Pediomelum mephiticum	Pediomelum mephiticum	NAME NOT in ICPN;  NOT in CA in EFLORA as note under Pediomelum
+Penstemon davidsonii	Penstemon davidsonii	NOT in CA?; NAME NOT in ICPN, in EFLORA as note under P. rupicola only as a hybrid reference, but does not mention that hybrids occur in CA
+Penstemon menziesii var. davidsonii	Penstemon davidsonii	Penstemon menziesii var. davidsonii NOT in ICPN or EFLORA; NOT in CA?; in EFLORA as P. davidsonii in note under P. rupicola only as a hybrid reference
+Poa nervosa	Poa nervosa	Poa nervosa NOT in ICPN; NOT in CA, misapplied in note under Poa wheeleri
+Pseudognaphalium jaliscense	Pseudognaphalium jaliscense	NOT in CA?; NAME NOT in ICPN or EFLORA; specimens reported for CA by Nesom Sida 19(4):1187 2001.
+Psoralea mephitica	Pediomelum mephiticum	NAME NOT in ICPN or EFLORA; NOT in CA; synonym of Pediomelum mephiticum, in EFLORA as note under Pediomelum
+Rorippa microphylla	Nasturtium microphyllum	NOT in CA?; NAME NOT in ICPN or EFLORA
+Rostraria cristata	Koeleria cristata	
+Rumex engelmannii	Rumex hastatulus	NOT in CA
+Salix arctica subsp. petraea	Salix arctica	
+Sarcocornia utahensis	Salicornia utahensis	
+Schoenolirion bracteosum	Hastingsia bracteosa	NOT in CA?; NAME NOT in ICPN or EFLORA
+Schoenoplectus supinus subsp. hallii	Schoenoplectus hallii	Schoenoplectus hallii is not known from CA and CA records are a misidentification of S. saximontanus according to FNA
+Scirpus hallii	Schoenoplectus hallii	Schoenoplectus hallii is not known from CA and CA records are a misidentification of S. saximontanus according to FNA
+Scirpus maritimus var. tuberosus	Scirpus tuberosus	
+Scirpus supinus var. hallii	Schoenoplectus hallii	
+Tetraneuris acaulis var. acaulis	Tetraneuris acaulis var. acaulis	NOT in CA?; NAME NOT in ICPN or EFLORA
+Troximon glaucum var. dasycephalum	Agoseris glauca var. dasycephala	
+Agoseris glauca var. dasycephala	Agoseris glauca var. dasycephala	NOT in CA; MISAPPLIED IN EFLORA
+Zizania aquatica subsp. aquatica	Zizania aquatica	NOT in CA; NAME NOT in EFLORA; in ICPN as Zizania aquatica
+Zizania aquatica var. aquatica	Zizania aquatica	NOT in CA; NAME NOT in EFLORA; in ICPN as Zizania aquatica
+Viola purpurea var. quercetorum	Viola purpurea subsp. quercetorum	NIEF, probably not validly published by R.J. Little, no reference in TROPICOS
+
+
+
+

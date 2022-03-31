@@ -1,0 +1,106 @@
+#Format: name[tab]putative accepted name[tab]note
+#Problem names no longer considered to be present in CA, 
+#the accepted names in these are ambiguous.  
+#the 'IN PART' names may have one or more accepted names
+
+
+#The following are 'IN PART' names with ambiguously assigned eFlora accepted names
+Lomatium nelsonianum	Lomatium hallii	UNABR IN PART in EFLORA
+Monardella odoratissima subsp. glauca	Monardella follettii	UNABR IN PART in EFLORA
+Agropyron elongatum	Elymus ponticus	SYN IN PART in EFLORA
+Arabis platysperma var. platysperma	Boechera elkoensis	SYN IN PART in EFLORA
+Arctostaphylos cinerea	Arctostaphylos canescens subsp. canescens	SYN IN PART in EFLORA
+Atriplex phyllostegia	Stutzia covillei	SYN IN PART in EFLORA
+Calycadenia truncata subsp. microcephala	Calycadenia micrantha	SYN IN PART in EFLORA
+Caroxylon vermiculatum	Salsola damascena	SYN IN PART in EFLORA
+Cirsium canovirens	Cirsium cymosum var. canovirens	SYN IN PART in EFLORA
+Cirsium scariosum var. citrinum	Cirsium scariosum var. loncholepis	SYN IN PART in EFLORA
+Citrullus vulgaris	Citrullus lanatus var. citroides	SYN IN PART in EFLORA
+Claytonia parviflora subsp. parviflora	Claytonia parviflora subsp. utahensis	SYN IN PART in EFLORA
+Claytonia perfoliata subsp. perfoliata	Claytonia perfoliata subsp. intermontana	SYN IN PART in EFLORA
+Convolvulus nyctagineus	Calystegia atriplicifolia subsp. buttensis	SYN IN PART in EFLORA
+Downingia yina var. major	Downingia pulcherrima	SYN IN PART in EFLORA
+Downingia yina var. major	Downingia willamettensis	SYN IN PART in EFLORA
+Draba lemmonii	Draba longisquamosa	SYN IN PART in EFLORA
+Eriogonum umbellatum var. polyanthum	Eriogonum umbellatum var. dumosum	SYN IN PART in EFLORA
+Eriogonum umbellatum var. polyanthum	Eriogonum umbellatum var. modocense	SYN IN PART in EFLORA
+Helianthemum scoparium	Crocanthemum aldersonii	SYN IN PART in EFLORA
+Helianthemum scoparium	Crocanthemum scoparium	SYN IN PART in EFLORA
+Helianthemum scoparium	Crocanthemum scoparium var. scoparium	SYN IN PART in EFLORA
+Helianthemum scoparium	Crocanthemum scoparium var. vulgare	SYN IN PART in EFLORA
+Helianthemum scoparium	Crocanthemum suffrutescens	SYN IN PART in EFLORA
+Hordeum pusillum	Hordeum intercedens	SYN IN PART in EFLORA
+Juniperus communis var. montana	Juniperus communis var. jackii	SYN IN PART in EFLORA
+Juniperus communis var. montana	Juniperus communis var. saxatilis	SYN IN PART in EFLORA
+Jussiaea uruguayensis	Ludwigia grandiflora	SYN IN PART in EFLORA
+Jussiaea uruguayensis	Ludwigia hexapetala	SYN IN PART in EFLORA
+Koeleria cristata	Koeleria macrantha	SYN IN PART in EFLORA
+Lathyrus vestitus subsp. bolanderi	Lathyrus vestitus var. ochropetalus	SYN IN PART in EFLORA
+Lathyrus vestitus subsp. bolanderi	Lathyrus vestitus var. vestitus	SYN IN PART in EFLORA
+Lotus argophyllus var. ornithopus	Acmispon argophyllus var. argenteus	SYN IN PART in EFLORA
+Lupinus adsurgens var. lilacinus	Lupinus antoninus	SYN IN PART in EFLORA
+Lupinus adsurgens var. undulatus	Lupinus dalesiae	SYN IN PART in EFLORA
+Lupinus albicaulis var. silvestris	Lupinus elmeri	SYN IN PART in EFLORA
+Lupinus densiflorus var. lacteus	Lupinus microcarpus var. densiflorus	SYN IN PART in EFLORA
+Lupinus inyoensis	Lupinus argenteus var. heteranthus	SYN IN PART in EFLORA
+Lupinus inyoensis	Lupinus padre-crowleyi	SYN IN PART in EFLORA
+Lupinus polyphyllus var. humicola	Lupinus holmgrenianus	SYN IN PART in EFLORA
+Lupinus rivularis	Lupinus latifolius	SYN IN PART in EFLORA
+Luzula divaricata	Luzula parviflora subsp. fastigiata	SYN IN PART in EFLORA
+Machaeranthera pinnatifida subsp. gooddingii	Xanthisma spinulosum var. gooddingii	SYN IN PART in EFLORA
+Monardella lanceolata	Monardella breweri subsp. glandulifera	SYN IN PART in EFLORA
+Monardella lanceolata	Monardella breweri subsp. microcephala	SYN IN PART in EFLORA
+Monardella linoides subsp. linoides	Monardella linoides subsp. anemonoides	SYN IN PART in EFLORA
+Navarretia intertexta subsp. intertexta	Navarretia paradoxiclara	SYN IN PART in EFLORA
+Navarretia intertexta subsp. intertexta	Navarretia paradoxinota	SYN IN PART in EFLORA
+Navarretia sinistra subsp. sinistra	Navarretia linearifolia	SYN IN PART in EFLORA
+Navarretia sinistra subsp. sinistra	Navarretia linearifolia subsp. linearifolia	SYN IN PART in EFLORA
+Phacelia imbricata subsp. imbricata	Phacelia imbricata var. bernardina	SYN IN PART in EFLORA
+Phacelia imbricata subsp. imbricata	Phacelia imbricata var. imbricata	SYN IN PART in EFLORA
+Phacelia malvifolia	Phacelia malvifolia var. loasifolia	SYN IN PART in EFLORA
+Phacelia malvifolia	Phacelia malvifolia var. malvifolia	SYN IN PART in EFLORA
+Pinus aristata	Pinus longaeva	SYN IN PART in EFLORA
+Plagiobothrys scouleri	Plagiobothrys cognatus	SYN IN PART in EFLORA
+Plagiobothrys scouleri var. penicillatus	Plagiobothrys cusickii	SYN IN PART in EFLORA
+Plagiobothrys scouleri var. penicillatus	Plagiobothrys hispidulus	SYN IN PART in EFLORA
+Plagiobothrys scouleri var. penicillatus	Plagiobothrys nitens	SYN IN PART in EFLORA
+Plagiobothrys scouleri var. penicillatus	Plagiobothrys reticulatus var. rossianorum	SYN IN PART in EFLORA
+Psilocarphus globiferus	Psilocarphus chilensis	SYN IN PART in EFLORA
+Salsola paulsenii	Salsola gobicola	SYN IN PART in EFLORA
+Salsola tragus	Salsola australis	SYN IN PART in EFLORA
+Salsola tragus	Salsola gobicola	SYN IN PART in EFLORA
+Salsola vermiculata	Salsola damascena	SYN IN PART in EFLORA
+Scirpus americanus subsp. monophyllus	Schoenoplectus pungens var. longispicatus	SYN IN PART in EFLORA
+Scirpus maritimus	Bolboschoenus maritimus subsp. paludosus	SYN IN PART in EFLORA
+Scirpus pungens	Schoenoplectus pungens var. longispicatus	SYN IN PART in EFLORA
+Sidalcea setosa	Sidalcea oregana subsp. spicata	SYN IN PART in EFLORA
+Sitanion hystrix var. hystrix	Elymus elymoides var. elymoides	SYN IN PART in EFLORA
+Stachys ajugoides var. rigida	Stachys bergii	SYN IN PART in EFLORA
+Stachys ajugoides var. rigida	Stachys mexicana	SYN IN PART in EFLORA
+Stachys ajugoides var. rigida	Stachys rigida var. quercetorum	SYN IN PART in EFLORA
+Swertia albicaulis var. albicaulis	Frasera albicaulis var. modocensis	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes subsp. amplectens	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes subsp. curvipes	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes subsp. elegans	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes subsp. eradiatus	SYN IN PART in EFLORA
+#Thysanocarpus curvipes	Thysanocarpus curvipes subsp. longistylus	SYN IN PART in EFLORA
+Viola purpurea subsp. atriplicifolia	Viola purpurea subsp. venosa	SYN IN PART in EFLORA
+Viola purpurea subsp. xerophyta	Viola pinetorum subsp. grisea	SYN IN PART in EFLORA
+Viola purpurea subsp. xerophyta	Viola pinetorum subsp. pinetorum	SYN IN PART in EFLORA
+
+#The following are 'IN PART' MISAPPLIED names with ambiguously assigned eFlora accepted names
+Agrostis alba	Agrostis gigantea	UNABR SYN IN PART MISAPP in EFLORA
+Rhamnus californica var. obtusissima	Frangula californica subsp. californica	UNABR SYN IN PART MISAPP in EFLORA
+Rhamnus californica var. obtusissima	Frangula rubra	UNABR SYN IN PART MISAPP in EFLORA
+Agrostis alba var. alba	Agrostis stolonifera	SYN IN PART MISAPP in EFLORA
+Arctotheca calendula	Arctotheca prostrata	SYN IN PART MISAPP in EFLORA
+Castilleja pruinosa	Castilleja gleasoni	SYN IN PART MISAPP in EFLORA
+Cirsium canovirens	Cirsium inamoenum var. inamoenum	SYN IN PART MISAPP in EFLORA
+Cirsium undulatum	Cirsium canescens	SYN IN PART MISAPP in EFLORA
+Collinsia bartsiifolia var. davidsonii	Collinsia bartsiifolia var. stricta	SYN IN PART MISAPP in EFLORA
+Eriogonum umbellatum var. bahiiforme	Eriogonum umbellatum var. smallianum	SYN IN PART MISAPP in EFLORA
+Eryngium aristulatum var. aristulatum	Eryngium jepsonii	SYN IN PART MISAPP in EFLORA
+Linaria canadensis	Nuttallanthus texanus	SYN IN PART MISAPP in EFLORA
+Rhamnus californica var. obtusissima	Frangula rubra subsp. obtusissima	SYN IN PART MISAPP in EFLORA
+	

@@ -1,9 +1,7 @@
 #takes input from get_TJM2_names.pl
-open(IN, "/Users/davidbaxter/DATA/Interchange/TJM1_NAMES") || die;
+
+open(IN, "/Users/Shared/Jepson-Master/Interchange/input/TJM1_NAMES.txt") || die; #file not updated since 2014, no record how it was created
 #Abies	magnifica	Andr. Murray	var.	shastensis	Lemmon	PINACEAE
-
-my $LN = 0;
-
 while(<IN>){
 chomp;
 ($genus,$species,$binomial_author,$infra_rank, $infra)=split(/\t/);
@@ -14,12 +12,15 @@ $tjm1_name=~s/  / /g;
 $TJM1{$tjm1_name}++;
 }
 $/="";
-open(OUT, ">accepted_names.out");
+
+my $LN = 0;
+
+open(OUT, ">output/accepted_names.out");
 		print OUT  <<EOP;
 LN\tnativity\tfamily\tgenus\tspecies\tspecies_author\tinfraspecific_rank\tinfraspecific_epithet\tinfraspecific_author\tname_minus_authors\tname_plus_authors\texpanded_name\tsynonyms\tcommon\tTJM1/TJM2\tmajor_clade\tendemicity
 EOP
-open(OUT2, ">/Users/davidbaxter/DATA/eFlora/yellow_flag_processing/eflora_KML_Moe/data_inputs/eFlora_name_list.txt");#opens file for use in KML creation
-open(OUT3, ">eFlora_names_problems.txt");
+open(OUT2, ">output/eFlora_name_list.txt");#creates file for use in KML creation
+open(OUT3, ">output/eFlora_names_problems.txt");
 
 
 while(<>){
@@ -37,6 +38,8 @@ $nativity="";
 }
 if(s/\nCommon: (.+)//){
 $common=$1;
+$common =~ s/ \(Group[^)]+\)//;
+
 }
 else{
 $common="";
@@ -65,16 +68,16 @@ if(m/ENCELIA farinosa &times; /){
 	print OUT  <<EOP;
 $LN\tSPONTANEOUS HYBRID\tASTERACEAE\tEncelia\tfarinosa &times; E. frutescens\t\t\t\t\tEncelia farinosa &times; E. frutescens\tEncelia farinosa &times; E. frutescens\t\t\t\tTJM1\tEUDICOTS\t0
 EOP
-
+++$count;
 }
 #skip the one CULTIVATED PLANT from JFP-9 that has a species page
-if(m/Asclepias curassavica/i){
+elsif(m/Asclepias curassavica/i){
 	next;
 
 }
 
 #Downingia yina, Astragalus nuttallianus var. austrinus, Astragalus tephrodes var. brachylobus are JFP-8 taxa that are not in California and should not be on the accepted names list
-if(m/(Downingia yina|Astragalus nuttallianus var\. austrinus|Astragalus tephrodes var. brachylobus)/i){
+elsif(m/(Downingia yina|Astragalus nuttallianus var\. austrinus|Astragalus tephrodes var. brachylobus)/i){
 	next;
 
 }
@@ -82,14 +85,16 @@ if(m/(Downingia yina|Astragalus nuttallianus var\. austrinus|Astragalus tephrode
 #ANACARDIACEAE RHUS integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.
 #PLANTAGINACEAE KECKIELLA ternata (A. Gray) Straw
 #RANUNCULACEAE THALICTRUM sparsiflorum Fisch. & C.A. Mey.
-elsif(m/^[A-Z][A-Z-]+ [a-z&;-]+ (.*)/ &! m/^.* (subvar\.|var\.|subsp\.|f\.|nothosubsp\.) [a-z]/){
+elsif(m/^[A-Z][A-Z-]+ ([^ ]+)(.*)/ &! m/^.* (subvar\.|var\.|subsp\.|f\.|nothosubsp\.) [a-z]/){
 	if (m/RHUS integrifolia/){ #fix one problematic 'filius' author name that does not parse correctly
+++$count;
 		print OUT2	"Rhus integrifolia\n";
 		print OUT  <<EOP;
 $LN\tNATIVE\tANACARDIACEAE\tRhus\tintegrifolia\t(Nutt.) Benth. & Hook. filius ex Rothr.\t\t\t\tRhus integrifolia\tRhus integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.\t\t\tLEMONADE BERRY\tTJM2\tEUDICOTS\t0
 EOP
 		}
 	else{
+++$count;
 		$b_author=$binomial_author{"$name_atoms[1] $name_atoms[2]"}= join(" ",@name_atoms[3 .. $#name_atoms]);
 		$nan="$genus $species";
 		$fullname= "$nan $b_author";
@@ -120,6 +125,7 @@ EOP
 
 #AUTONYM
 elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.|nothosubsp\.) \2\b/){
+++$countBB;
 	$infra_rank=$4;
 	$infra=$2;
 	$b_author=$3;
@@ -161,12 +167,14 @@ EOP
 
 elsif(m/^([A-Z][A-Z-]+) ([^ ]+)(.*) (var\.|subsp\.|f\.|nothosubsp\.) ([^ ]+) (.*)/){
 	if (m/RHUS integrifolia/){ #fix one problematic filius author name that does not parse correctly
+++$count;
 		print OUT2	"Rhus integrifolia\n";
 		print OUT  <<EOP;
 $LN\tNATIVE\tANACARDIACEAE\tRhus\tintegrifolia\t(Nutt.) Benth. & Hook. filius ex Rothr.\t\t\t\tRhus integrifolia\tRhus integrifolia (Nutt.) Benth. & Hook. f. ex Rothr.\t\t\tLEMONADE BERRY\tTJM2\tEUDICOTS\t0
 EOP
 		}
 	else{
+++$count;
 		$infra_rank=$4;
 		$infra=$5;
 		$infra_author=$6;
@@ -207,13 +215,20 @@ EOP
 }
 
 else{
-	warn "problems---$aname\n$_\n\n";
-	print OUT3 "problems\t$aname\t$_\n";
+
+	if ($aname !~ m/[A-Z]+ACEAE/i){#skip families
+		warn "problems---$aname\n$_\n\n";
+		print OUT3 "problems\t$aname\t$_\n";
+	}
 }
 
 
 }
 
+print "TOTAL EFLORA TAXA 'Possibly NOT IN CA': $OOCA\n";
+print "TOTAL EFLORA TAXA (TABBIFY): $count\n";
+print "TOTAL EFLORA TAXA AUTONYM: $countBB\n";
+print "TOTAL EFLORA TAXA HYBRID: $countHH\n";
 close(IN);
 close(OUT);
 close(OUT2);

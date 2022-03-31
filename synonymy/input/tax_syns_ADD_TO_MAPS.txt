@@ -1,0 +1,91 @@
+#this is the original format of tax_syns_to_check  file
+#these names are to be used in synonymy lists for the eFlora maps
+#these should not be in synonymy reports because they conflict with eflora or ICPN accepted names in some manner (unresolved or not in CA)
+#without these combinations, some of the eflora maps only have a few records
+#the actual synonyms are added to the new file, tax_syns_to_check.txt
+#Format: synonym[tab]accepted name[tab]comment
+
+#misidentified specimens that are det. to a name now excluded from CA
+#manually updated
+Castilleja angustifolia	Castilleja chromosa
+
+
+#all previous subtaxa in California now a synonym and the new taxon recognized under one or more new names
+#all of these do not have the synonym in the eflora that maps to the new name
+Orobanche californica subsp. californica	Aphyllon californicum subsp. californicum
+Orobanche californica var. claremontensis	Aphyllon vallicolum
+Orobanche parishii subsp. parishii	Aphyllon parishii subsp. parishii
+
+
+#add synonym for species-level name when there are only a single subtaxon in the eFlora 
+#and there is only a subtaxon-level page with no additional species-level page, 
+#many specimens in CCH not determined to infra taxa for some of these,
+#manually updated
+Acer glabrum	Acer glabrum var. glabrum
+Agave shawii	Agave shawii var. shawii
+Anthoxanthum nitens	Anthoxanthum nitens subsp. nitens
+Arctostaphylos pringlei	Arctostaphylos pringlei subsp. drupacea
+Argyrochosma limitanea	Argyrochosma limitanea subsp. limitanea
+Asclepias asperula	Asclepias asperula subsp. asperula
+Asplenium trichomanes	Asplenium trichomanes subsp. trichomanes
+Athyrium filix-femina	Athyrium filix-femina var. cyclosorum
+Baccharis salicifolia	Baccharis salicifolia subsp. salicifolia
+Bebbia juncea	Bebbia juncea var. aspera
+Bolboschoenus maritimus	Bolboschoenus maritimus subsp. paludosus
+Brodiaea elegans	Brodiaea elegans subsp. elegans
+Calypso bulbosa	Calypso bulbosa var. occidentalis
+Centromadia parryi	Centromadia parryi subsp. parryi
+Centromadia pungens	Centromadia pungens subsp. pungens
+Chenopodium strictum	Chenopodium strictum var. glaucophyllum
+Chilopsis linearis	Chilopsis linearis subsp. arcuata
+Circaea alpina	Circaea alpina subsp. pacifica
+Cirsium ochrocentrum	Cirsium ochrocentrum subsp. ochrocentrum
+Coincya monensis	Coincya monensis subsp. recurvata
+Comandra umbellata	Comandra umbellata subsp. californica
+Cordylanthus kingii	Cordylanthus kingii subsp. helleri
+Coronilla valentina	Coronilla valentina subsp. glauca
+Corydalis aurea	Corydalis aurea subsp. aurea
+Corydalis caseana	Corydalis caseana subsp. caseana	
+Cryptantha muricata	Cryptantha muricata var. muricata
+Danthonia intermedia	Danthonia intermedia subsp. intermedia	
+Digitaria ciliaris	Digitaria ciliaris var. ciliaris
+Echinochloa crus-pavonis	Echinochloa crus-pavonis var. crus-pavonis
+Echinochloa muricata	Echinochloa muricata var. microstachya
+Eleocharis tenuis	Eleocharis tenuis var. tenuis
+Elymus lanceolatus	Elymus lanceolatus subsp. lanceolatus
+Equisetum telmateia	Equisetum telmateia subsp. braunii
+Erigeron chrysopsidis	Erigeron chrysopsidis var. austiniae
+Erigeron clokeyi	Erigeron clokeyi var. pinzliae
+Erigeron philadelphicus	Erigeron philadelphicus var. philadelphicus
+Eriogonum rosense	Eriogonum rosense var. rosense
+Eriogonum shockleyi	Eriogonum shockleyi var. shockleyi
+Filago pyramidata	Filago pyramidata var. pyramidata
+Freesia leichtlinii	Freesia leichtlinii subsp. alba
+Guilleminea densa	Guilleminea densa var. aggregata
+Helenium amarum	Helenium amarum var. amarum
+Hemizonia parryi	Centromadia parryi subsp. parryi
+Hemizonia pungens	Centromadia pungens subsp. pungens
+Hordeum jubatum	Hordeum jubatum subsp. jubatum
+Horkelia clevelandii	Horkelia clevelandii var. clevelandii
+Kochia scoparia	Kochia scoparia subsp. scoparia
+Linaria dalmatica	Linaria dalmatica subsp. dalmatica
+Linum lewisii	Linum lewisii var. lewisii
+Melinis repens	Melinis repens subsp. repens
+Mirabilis jalapa	Mirabilis jalapa var. jalapa
+Oxalis articulata	Oxalis articulata subsp. rubra
+Oxytheca dendroidea	Oxytheca dendroidea subsp. dendroidea
+Pectocarya linearis	Pectocarya linearis subsp. ferocula
+Pluchea odorata	Pluchea odorata var. odorata
+Populus fremontii	Populus fremontii subsp. fremontii
+Potentilla glaucophylla	Potentilla glaucophylla var. glaucophylla
+Pteridium aquilinum	Pteridium aquilinum var. pubescens
+Rhodiola integrifolia	Rhodiola integrifolia subsp. integrifolia
+Sagina maxima	Sagina maxima subsp. crassicaulis
+Senecio serra	Senecio serra var. serra
+Setaria pumila	Setaria pumila subsp. pumila
+Silene douglasii	Silene douglasii var. douglasii
+Solidago lepida	Solidago lepida var. salebrosa
+Spergularia platensis	Spergularia platensis var. platensis
+Synthyris missurica	Synthyris missurica subsp. missurica
+Tidestromia suffruticosa	Tidestromia suffruticosa var. oblongifolia
+Vicia americana	Vicia americana subsp. americana
