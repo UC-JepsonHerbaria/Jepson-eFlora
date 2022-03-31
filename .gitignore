@@ -12,9 +12,14 @@ eflora_database/output_NOV2021/
 eflora_database/output_FEB2022/
 eflora_database/output_JAN2021/
 eflora_database/output_MAR2022/
-
+JEPCODES/exploded_map.jpg
+JEPCODES/NCo-test.kml
+JEPCODES/Jepson_regionsV8_style.qml
 
 #generated files
+2021_FEB_archive/
+JEPCODES/GIS_Layers/
+JEPCODES/region_shapefiles/
 output/
 eflora_database/outputs/
 synonymy/output/
